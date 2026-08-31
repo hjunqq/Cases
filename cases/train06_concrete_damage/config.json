@@ -1149,5 +1149,9 @@
   "tem_pipe": [
     0,
     3
-  ]
+  ],
+  "_raw_guard": {
+    "materials": "fc07653a579537da8b0ba23f2b7cd9fbb8fe1bcb45db2774150baac2a7653ba6",
+    "tem_pipe": "7c131fd95efadcf93597f1a2013987488f734db930f130f0e470e3b115b3228a"
+  }
 }

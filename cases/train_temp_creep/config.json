@@ -2369,5 +2369,8 @@
   "_import_notes": [
     "1.opr: w*group=[1, 1, 1, 1] sizes output-group tables this generator does not write; the row was NOT imported",
     "1.tem: ntedge=1672 pulls records this generator does not write; npipe/algo_pipe were NOT imported"
-  ]
+  ],
+  "_raw_guard": {
+    "materials": "80d32f371247513afa3e641031b322dd686509479dafcf6829b3528584d4e67f"
+  }
 }

@@ -844,15 +844,18 @@ BLOCKED train02 / train02c_swc / train10 / train_vie_boundary(缺动力正向判
   `cases_commit` + `code_commit`——审计"门禁产物携带哈希"要求的落地。
 - 本地裸镜像 `/home/huijun/HSTAR_Next-cases.git` 作离机前的兜底副本。
 
-## 待使用者一步
+## 已闭合(2026-08-31 更正:无需新建仓库)
 
-gitea 关闭了 push-to-create(组织与个人均 403)。请在
-gitea.hydrosim.cn 建空仓 **HSTAR/HSTAR_Next-cases**(不要初始化 README),
-然后一条命令补推:
+使用者指出 gitea 主仓即在——submodule 指向**同一仓库的另一条孤立分支**
+是合法形态。cases 历史已推为主仓的 `cases-corpus` 分支(fa4bb81),
+`.gitmodules` 记同 URL + branch,gitlink 钉提交。
+
+**递归克隆实测通过**:
 
 ```bash
-git -C /home/huijun/HSTAR_Next/cases push -u origin master
+git clone --depth 1 --recurse-submodules --shallow-submodules \
+    https://gitea.hydrosim.cn/HSTAR/HSTAR_Next.git   # 328M,语料完整取回
 ```
 
-推送前克隆主仓的人无法取回 submodule(URL 已按目标地址写好);
-推送后 `git clone --recurse-submodules` 即可完整复现语料状态。
+注:`cases-corpus` 未推 github——语料含工程数据,是否公开是使用者的
+外发决策,不由本轮代办。github 侧克隆需可达 gitea 才能取 submodule。
