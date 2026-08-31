@@ -816,3 +816,43 @@ BLOCKED train02 / train02c_swc / train10 / train_vie_boundary(缺动力正向判
 ```
 
 **14 这个数字比 18 更值得信**——这正是两轮审计的全部意义。
+
+
+---
+
+# 附录 12：F5 处置——cases 纳入版本链(submodule,2026-08-31)
+
+## 之前的状态(审计 F5 属实)
+
+主仓把 `cases` 记录为 gitlink `e06c9b4e`,但无 `.gitmodules`、`cases/`
+无 `.git`,该对象在任何对象库中都不存在——15 个 config、两次退役、
+墓碑文件全部只活在本机目录里。
+
+## 现在
+
+- `cases/` 是真实 git 仓库:**4182 个文件入库**(输入 deck、config、
+  网格、判据证据 1.chk/1.act、退役墓碑),首提交 `719b314`,
+  当前 `41ca46e`。321M 内容压缩为 39M。
+- **大文件策略**(既有政策 + 审计哈希要求的折衷):纯再生态
+  (`1.flavia.res` 2.5G、`1.res` 300M、VTP 426M、`hstar.exe` 等)被
+  `.gitignore` 排除,但**每个被排除文件的 sha256+size 记入
+  `RESULTS-MANIFEST.tsv`(4684 行,已提交)**——结果哈希在链上,
+  字节不在。
+- 主仓 `.gitmodules` 登记 submodule,gitlink 指向 `41ca46e`
+  (一个真实存在的对象)。
+- 闸门输出新增 `data/gate-provenance.json`:每次运行盖章
+  `cases_commit` + `code_commit`——审计"门禁产物携带哈希"要求的落地。
+- 本地裸镜像 `/home/huijun/HSTAR_Next-cases.git` 作离机前的兜底副本。
+
+## 待使用者一步
+
+gitea 关闭了 push-to-create(组织与个人均 403)。请在
+gitea.hydrosim.cn 建空仓 **HSTAR/HSTAR_Next-cases**(不要初始化 README),
+然后一条命令补推:
+
+```bash
+git -C /home/huijun/HSTAR_Next/cases push -u origin master
+```
+
+推送前克隆主仓的人无法取回 submodule(URL 已按目标地址写好);
+推送后 `git clone --recurse-submodules` 即可完整复现语料状态。
