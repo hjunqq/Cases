@@ -1,0 +1,24 @@
+ irecover=           0
+ ikind=          15 nr_intrules=           4
+ igroup=           1 tvol=   15999.9040000000     
+ igroup=           1 tne=         300
+ igroup=           2 tvol=   1600.00000000000     
+ igroup=           2 tne=         400
+ igroup=           3 tvol=  0.800000000000000     
+ igroup=           3 tne=         410
+ ****** ntotv= ******         924
+ time: 18:50:22
+ in modf_element_lib
+ jgroup=           1 kinit_g=           2
+ jgroup=           2 kinit_g=           2
+ jgroup=           3 kinit_g=           2
+ speed=   2069.90099900277        3273.78351950286     
+ iblks=           1 runblks=           1
+ iblks=           1
+ time: 18:50:22
+ ninit=           2 iblks=           1 restart=           0
+ iinit=           1 text=STRESS                        
+ read_initial igroup=           1 kinit_g=           2
+ read_initial igroup=           2 kinit_g=           2
+ read_initial igroup=           3 kinit_g=           2
+ iinit=           2 text=CONCRETE                      

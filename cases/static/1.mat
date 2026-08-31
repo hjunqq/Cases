@@ -1,0 +1,60 @@
+ *(1.mat)输入材料信息material Property
+  0
+   10
+MATERIAL PROPERTIES-INPUT FOR 1 TO NMATS                                                                                                              
+NAME FOR MATERIAL---FOR COMMENTS                                                                                                                      
+FIRST:NAME---MECHANICAL, TEMPERATURE, ETC                                                                                                             
+FOR MECHNICAL, SECOND:PHASE---SOLID, FLUID, AIR OR OIL                                                                                                
+NUMBER OF PHASE                                                                                                                                       
+FOR SOLID: MATERIAL(CLASSICALEP,CAMCLAY,ETC),density,ratio,thick,e,nu                                                                                 
+FOR MATERISL: CLASSICALEP:CRITERIA(TC,VM,DP,MC),sigm0,hardening                                                                                       
+FOR MC OR DP: FRICT_ANGLE, DILAN_ANGLE                                                                                                                
+CAMCLAY    :Pc, lamda, Mg, Mf, D0, D1,gaama                                                                                                           
+FOR FLUID: (1) density,ratio,bulkw (2)permiability(1:ndimn)                                                                                           
+ 总的材料参数输入次数
+  3
+     material_serial         1
+          MECHANICAL               SOLID    1
+  1
+               SOLID
+ELASTIC_ISOTROPIC         0.240E+04      0.100E+01      0.100E+01      0.240E+11      0.167E+00      0.100E-04    0    0    0
+  0  0      0.100E+04
+     material_serial         2
+          MECHANICAL               SOLID    2
+  1
+               SOLID
+ELASTIC_ISOTROPIC         0.240E+04      0.100E+01      0.100E+01      0.800E+10      0.300E+00      0.100E-04    0    0    0
+  0  0      0.100E+04
+  material_serial         3                                       
+  'MECHANICAL','SOLID', 3                                                       
+   1		   ! NUMBER OF PHASES                                                   
+   'SOLID'                                                                      
+  'CLASSICALEP',0.240E+05,1.0,1.0,14.13e9,0.22,5e-6,0  0 0 0            ！！！改为弹塑材料，122为c值，下面一行123，为摩擦角度
+  0 0 0
+   MCJOINT, 1100000,0.0
+       45.  45.
+       0  0
+       0  0
+       0 0 
+       0.0 0 0. 0 
+          MECHANICAL                  SOLID        3
+  1
+               SOLID
+GOODMAN                   0.240E+04      0.100E+01      0.100E+01      0.240E+11      0.167E+00      0.100E-04    0    0    0
+  0  0      0.100E+04
+JANBU 301	287
+48 0.56 1E5 0.95 36.64800 1E1 1E4 1E6 1.2E5  1E5 1E1
+1E0
+   material 3                 !横缝                                             
+  'MECHANICAL','SOLID', 3                                                       
+   1		   ! NUMBER OF PHASES                                                   
+   'SOLID'                                                                      
+  'CLASSICALEP',0.240E+05,1.0,1.0,14.13e9,0.22,5e-6,0  0 0 0            ！！！改为弹塑材料，122为c值，下面一行123，为摩擦角度
+  0 0 0
+   MCJOINT, 0,0.0
+       45.  45.
+       0  0
+       0  0
+       0 0 
+       0.0 0 0. 0 
+

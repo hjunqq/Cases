@@ -1,0 +1,694 @@
+- id: dt_001
+  name: stdin EOF after a converged solution
+  severity: fatal
+  stage: s6_execution
+  failure_domain: runtime
+  symptom: >-
+    "The run prints a full converged Newton history and
+    '***********RESTART FILE IS UPDATED!*******', then dies with
+    'forrtl: severe (24): end-of-file during read, unit -4, file /proc/<pid>/fd/0'
+    and a non-zero exit code. The .flavia.res on disk is complete and correct."
+  diagnosis: >-
+    HSTAR still contains interactive prompts. Output.f90:3604-3605 prints
+    'give me the vdimn,coef1 and coef2?' and does read *,vdimn,coef1,coef2 whenever
+    winit /= 0 and at least one active U-field group exists -- which is most static cases,
+    because they write the initial-stress .inw file. With stdin closed the read hits EOF.
+    Fem.f90:378/385/417 do the same for submodel < 0, and Global.f90:767 has a bare pause
+    when ljdp /= 0 and type_nl /= 5.
+  remedy: >-
+    Feed stdin. tools/run_hstar.py does this automatically - default_stdin() reads winit and
+    submodel from the case's own .glb and sends '1 1.0 1.0' (vdimn=1, no rescaling of the
+    written initial stress) followed by blank lines for any pause. Value answers must come
+    first so a blank line is never consumed by a value read. For submodel < 0 supply the
+    sub-mesh group and element lists with --stdin-file. Alternatively set winit=0 in .glb if
+    you do not need the .inw file.
+  detection: >-
+    "grep -c 'end-of-file during read' hstar_run.log && grep -c 'fd/0' hstar_run.log"
+  cross_references: [docs/s6_execution.md, tools/run_hstar.py]
+
+- id: dt_002
+  name: gfortran cannot compile HSTAR
+  severity: fatal
+  stage: s0_build
+  failure_domain: dependency
+  symptom: >-
+    "Compilation fails on the first unit with errors about FORM='BINARY' being an invalid
+    specifier, an unknown PAUSE statement, or an unresolved TIME() reference."
+  diagnosis: >-
+    The source uses Intel Fortran extensions that GNU Fortran does not implement -
+    FORM='BINARY' (not the standard ACCESS='STREAM'), the deleted PAUSE statement, and the
+    Intel portability routine TIME(character). It also links Intel MKL PARDISO, VSL and the
+    RCI trust-region solver.
+  remedy: >-
+    Build with Intel ifx or ifort plus MKL. On this host, /opt/intel/oneapi/compiler/2025.3
+    (ifx 2025.3.3) and /opt/intel/oneapi/mkl/latest. Use the dependency-ordered build in
+    docs/s0_overview_and_build.md; compiling alphabetically fails because every unit uses the
+    global_var module defined in Global.f90.
+  detection: "which ifx || ls /opt/intel/oneapi/compiler/*/bin/ifx"
+  cross_references: [docs/s0_overview_and_build.md, preflight_check.py]
+
+- id: dt_003
+  name: end-of-file on a required input file
+  severity: fatal
+  stage: s1_case_layout
+  failure_domain: configuration
+  symptom: >-
+    "forrtl: severe (24): end-of-file during read on unit 1, 2, 3, 4, 5, 9 or 21, very early
+    in the run, often right after the first echo of the .glb header."
+  diagnosis: >-
+    Fortran OPEN creates a missing sequential file, so an absent .glb/.cor/.ele/.pre/.mat/
+    .loa/.man/.sol looks fine until the first READ. The same symptom appears when a header
+    (echo) line was deleted - those lines are consumed by read(unit,*)text and are positional
+    placeholders, so removing one shifts every later record and the file runs out early.
+  remedy: >-
+    Never hand-assemble a case. Copy a working one with
+    tools/build_case_from_template.py --template <name> --dest <dir>, then edit values in
+    place. If you must debug an existing case, compare its record sequence against
+    docs/input_preparation.md section 3 and against the same file in cases/static.
+  detection: >-
+    "for f in glb cor ele pre mat loa man sol; do test -s <probn>.$f || echo \"EMPTY: .$f\"; done"
+  cross_references: [docs/s1_case_layout_and_control.md, docs/input_preparation.md]
+
+- id: dt_004
+  name: .glb counts disagree with .cor/.ele
+  severity: fatal
+  stage: s2_mesh
+  failure_domain: configuration
+  symptom: >-
+    Either an end-of-file during the coordinate/element read, or a SIGSEGV inside the
+    stiffness assembly, or - worst - a run that completes with a structure smaller than the
+    mesh file describes.
+  diagnosis: >-
+    HSTAR allocates from npoin/nelem/ngroup in .glb and then reads exactly that many records.
+    Too few records in .cor/.ele is EOF; too many is silently ignored, so the extra elements
+    simply do not exist in the analysis. The same applies to nelgroup on each group
+    declaration line versus the group column of .ele.
+  remedy: >-
+    Run tools/build_mesh_files.py --case <dir> --check before every run; it compares record
+    counts against npoin/nelem, counts elements per group, and checks the node count per
+    element against the declared element index. write_mesh() keeps all of these in sync
+    automatically.
+  detection: "python3 tools/build_mesh_files.py --case <dir> --check"
+  cross_references: [docs/s2_mesh_and_geometry.md, tools/build_mesh_files.py]
+
+- id: dt_005
+  name: short control line swallows the next record
+  severity: silent
+  stage: s1_case_layout
+  failure_domain: configuration
+  symptom: >-
+    The run completes but the echoed control parameters are visibly wrong - a solver name
+    where an integer should be, nblks equal to a tolerance, or type_problem echoed as a
+    number.
+  diagnosis: >-
+    Every HSTAR input read is Fortran list-directed. A read of N items keeps consuming
+    records until it has N values, so a control line with one token too few silently absorbs
+    the following line and every record after it is shifted by one. There is no error.
+  remedy: >-
+    Count the tokens on the control line against the field list in
+    docs/input_preparation.md section 3.1. tools/_hstar_io.GlbDoc._bind raises a specific
+    error naming the record and the expected fields when a line is short, so simply loading
+    the case with any build_* tool detects it.
+  detection: "python3 tools/build_analysis_control.py --case <dir> --describe"
+  cross_references: [docs/input_preparation.md, tools/_hstar_io.py]
+
+- id: dt_006
+  name: "unit slip - E in MPa, coordinates in mm, density in t/m3"
+  severity: silent
+  stage: s3_materials
+  failure_domain: unit_conversion
+  symptom: >-
+    A perfectly converged run whose displacements are a million times too large or too small,
+    or whose stresses are in the wrong decade. Nothing in the log complains.
+  diagnosis: >-
+    HSTAR is unit-agnostic - there is no unit conversion and no range check anywhere in the
+    source. Whatever consistent system the analyst uses is accepted. Every shipped case uses
+    strict SI - m, Pa, kg/m3, N, s, degC - and mixing MPa for E with metres for coordinates
+    scales every displacement by 1e6.
+  remedy: >-
+    Use SI everywhere. tools/build_material_file.set_solid rejects E outside 1e3..1e13 Pa,
+    density outside 1..2e4 kg/m3 and nu outside (-1, 0.5); tools/build_loads rejects gravity
+    outside 0..100 m/s2; tools/validate_results.plausibility screens every output stream
+    against an order-of-magnitude band after the run.
+  detection: "python3 tools/validate_results.py --dir <run> --case <case>"
+  cross_references: [docs/input_preparation.md, docs/s3_materials_and_constitutive.md, docs/s8_validation.md]
+
+- id: dt_007
+  name: load block added without a matching .pre/.man/.sol record group
+  severity: fatal
+  stage: s1_case_layout
+  failure_domain: configuration
+  symptom: >-
+    Block 1 runs and writes output, then the run dies with
+    "forrtl: severe (24): end-of-file during read" at the start of block 2.
+  diagnosis: >-
+    .pre, .man and .sol each carry ONE COMPLETE RECORD GROUP PER LOAD BLOCK, and HSTAR reads
+    them sequentially as the block loop advances. cases/static has nblks=2 and its .pre
+    repeats the whole PRESCRIBE SET group twice. Raising nblks in .glb without appending the
+    matching groups leaves nothing to read for the later blocks.
+  remedy: >-
+    When you change nblks, extend all three files together. tools/build_analysis_control
+    .write_man and .write_sol take the block count from .glb and emit one group per block;
+    tools/build_boundary_conditions.write_pre refuses a blocks list whose length is not nblks.
+  detection: >-
+    "python3 -c \"import sys; sys.path.insert(0,'tools'); from build_boundary_conditions
+    import describe; print(describe('<case>')['nblks'], len(describe('<case>')['blocks']))\""
+  cross_references: [docs/s4_boundary_conditions_and_loads.md, tools/build_boundary_conditions.py]
+
+- id: dt_008
+  name: "gamawx in kN/m3 instead of N/m3"
+  severity: silent
+  stage: s4_boundary_conditions
+  failure_domain: unit_conversion
+  symptom: >-
+    Prescribed pressure or head boundary conditions produce pore pressures roughly 1000 times
+    smaller than expected; the seepage field looks almost uniform.
+  diagnosis: >-
+    The gamawx field on a .pre set record is the water unit weight used to convert a
+    prescribed head into a pressure. Every shipped case uses 0.980E+04, i.e. 9800 N/m3.
+    Entering 9.8 (kN/m3) divides every prescribed pressure by 1000.
+  remedy: >-
+    Use 9800 N/m3. tools/build_boundary_conditions.write_pre raises when a pressure DOF
+    (ifixvar 7, 8 or 9) is given a gamawx strictly between 0 and 1000.
+  detection: "python3 tools/build_boundary_conditions.py --case <dir> --describe | grep gamawx"
+  cross_references: [docs/s4_boundary_conditions_and_loads.md]
+
+- id: dt_009
+  name: SIGSEGV shortly after entering static_U
+  severity: fatal
+  stage: s6_execution
+  failure_domain: configuration
+  symptom: >-
+    "The log reaches ' in static_U**', prints 'tcurvegravity=', then
+    'forrtl: severe (174): SIGSEGV, segmentation fault occurred' with an all-Unknown
+    traceback."
+  diagnosis: >-
+    HSTAR dereferences pointers into arrays sized from the .glb counts. The usual causes are
+    a mesh/count mismatch (see dt_004), a node id in .ele outside 1..npoin, a group declaring
+    an element index whose auxiliary data file is empty (a beam index 20/21 with an empty
+    .bem has no section to read), or a case converted for a different HSTAR build.
+    VERIFIED 2026-08-26: cases/test_beam2d segfaults here under the legacy Linux binary. Its
+    .bem is empty, but it declares element index 1 (L2 bar), not a beam - so the root cause
+    there is NOT the empty .bem. That case was converted for the Easy_HSTAR rewrite and is
+    not a runnable legacy case; do not use it as a template.
+  remedy: >-
+    Run tools/build_mesh_files.py --check and tools/build_reinforcement.py --describe first;
+    both report the specific inconsistency. Start from a template listed in
+    tools/_hstar_io.TEMPLATES - all eleven were confirmed to parse, and ten of them to run to
+    EXIT=0, on 2026-08-26. To debug further, rebuild with
+    "ifx -O0 -g -traceback -check all" per docs/s0_overview_and_build.md.
+  detection: "grep -c 'SIGSEGV' hstar_run.log"
+  cross_references: [docs/s6_execution.md, tools/build_mesh_files.py, tools/build_reinforcement.py]
+
+- id: dt_010
+  name: reservoir level changed in only one of the two places
+  severity: silent
+  stage: s4_boundary_conditions
+  failure_domain: configuration
+  symptom: >-
+    Raising or lowering the reservoir changes the results far less than expected, or not at
+    all.
+  diagnosis: >-
+    The water surface appears twice - as cor0 on the hydrostatic edge-load record in .loa
+    (Load.f90:800) and as water_level(1:nblks) in .glb, which the step_water_pressure path
+    (cwater /= 0 in .man) uses. Which one is in force depends on how the case applies water
+    pressure, and editing only one leaves the other governing.
+  remedy: >-
+    Use tools/build_loads.set_reservoir_level(), which writes both. Then prove the change
+    took effect by re-running and diffing the DISPLACEMENT stream - see dt_024 for the
+    procedure.
+  detection: >-
+    "python3 tools/build_loads.py --case <dir> --describe | grep -A6 hydrostatic ;
+    grep -A1 water_level <probn>.glb"
+  cross_references: [docs/s4_boundary_conditions_and_loads.md, tools/build_loads.py]
+
+- id: dt_011
+  name: "hydrostatic pressure scaled twice - Pa in p0/p1 with fact=9810"
+  severity: silent
+  stage: s4_boundary_conditions
+  failure_domain: unit_conversion
+  symptom: >-
+    Water load about 9810 times too large; the structure displaces metres and the Newton loop
+    either diverges or converges to a nonsensical deformed shape.
+  diagnosis: >-
+    Load.f90:800 computes press = -(p0 + (cor0-x)/(cor0-cor1)*(p1-p0)) * fact. The shipped
+    cases put HEAD IN METRES in p0/p1 and the water unit weight 9810 N/m3 in fact
+    (cases/static ships "40 0 0 40 9810"). Entering p1 already in pascals while leaving fact
+    at 9810 multiplies the pressure by the unit weight a second time.
+  remedy: >-
+    Pick one convention - either head in metres with fact = 9810, or pressure in pascals with
+    fact = 1.0 - and check that p1 * fact equals the expected pressure at cor1.
+    tools/build_loads.py --describe prints cor0/cor1/p0/p1/fact with their units.
+  detection: "python3 tools/build_loads.py --case <dir> --describe"
+  cross_references: [docs/s4_boundary_conditions_and_loads.md]
+
+- id: dt_012
+  name: "excavation modelled with appear=0 instead of appear=-1"
+  severity: silent
+  stage: s9_staged_construction
+  failure_domain: configuration
+  symptom: >-
+    An excavation or demolition step produces far less heave / stress redistribution than
+    expected; the remaining structure barely moves.
+  diagnosis: >-
+    In APPEAR_PROCESS, 0 means "this group is not present in this block" - its stiffness,
+    mass and loads are simply absent. -1 means "kill it in this block" - HSTAR additionally
+    RELEASES the internal forces the group was carrying onto the remaining structure. Only
+    -1 models excavation; 0 models a group that was never built.
+  remedy: >-
+    Use -1 for the block in which material is removed, and 0 for later blocks.
+    tools/build_staged_construction.py --appear rejects any value other than 1, 0 or -1 and
+    prints the legend.
+  detection: "python3 tools/build_staged_construction.py --case <dir> --describe"
+  cross_references: [docs/s9_advanced_capabilities.md, tools/build_staged_construction.py]
+
+- id: dt_013
+  name: "thermal diffusivity in m2/h with a time step in seconds"
+  severity: silent
+  stage: s9_thermal
+  failure_domain: unit_conversion
+  symptom: >-
+    A transient thermal run reaches steady state within a handful of steps, or the
+    temperature field barely changes over the whole simulation - a factor of 3600 either way.
+  diagnosis: >-
+    The HEAT material record supplies alfa(1:ndimn), a thermal diffusivity expressed in
+    m2 per THE SAME TIME UNIT as ditime in .man. HSTAR performs no conversion and the two
+    are declared in different files, so a diffusivity in m2/h combined with ditime in
+    seconds is off by 3600.
+  remedy: >-
+    Decide the time unit once (seconds for dynamics, days for mass-concrete thermal) and use
+    it for ditime, for the HEAT alfa, for the pipe-cooling time_cooling, and for every time
+    curve in .loa. Record the choice in the run metadata.
+  detection: "python3 tools/build_thermal.py --case <dir> --describe"
+  cross_references: [docs/s9_advanced_capabilities.md, tools/build_thermal.py]
+
+- id: dt_014
+  name: prescribed temperature entered in kelvin
+  severity: silent
+  stage: s9_thermal
+  failure_domain: unit_conversion
+  symptom: >-
+    Thermal stresses two orders of magnitude too large; the temperature field sits around 300
+    instead of around 20.
+  diagnosis: >-
+    HSTAR's thermal expansion coefficient alfa on the SOLID material line is per degree
+    Celsius and the temperature boundary conditions in .tem are in degrees Celsius. A record
+    in kelvin adds a uniform 273.15 offset, which for a constrained structure is a large
+    spurious thermal strain.
+  remedy: >-
+    Convert to degrees Celsius. tools/build_thermal.write_tem rejects prescribed temperatures
+    outside -100..500 degC; tools/validate_results screens the TEMPERATURE output stream
+    against -60..200 degC.
+  detection: "python3 tools/parse_outputs.py --dir <run> | grep -A4 TEMPERATURE"
+  cross_references: [docs/s9_advanced_capabilities.md, docs/s8_validation.md]
+
+- id: dt_015
+  name: coupled u-p DOF declared with uncoupled elements
+  severity: silent
+  stage: s9_seepage
+  failure_domain: configuration
+  symptom: >-
+    A consolidation run converges normally but the PORE-PRESSURE output is zero everywhere,
+    and the displacements match a drained analysis.
+  diagnosis: >-
+    Setting lmdofn(7) or lmdofn(8) non-zero declares the pressure degree of freedom, but the
+    coupling matrices are only assembled by the COUPLED element types - indices 11-19 and 24
+    (T6C3, Q8C4, H10C4, B20C8, T3C3, Q4C4, H4C4, B8C8, L2C2, PR6C6). A group that still
+    declares plain Q4 (index 5) contributes no coupling, so the pressure field has no source.
+  remedy: >-
+    Change the group's element index to the coupled counterpart (Q4 -> Q4C4 = 16,
+    B8 -> B8C8 = 18, ...) with tools/build_mesh_files.set_group_field(case, g, "index", 16).
+    tools/build_seepage.set_coupled emits an explicit warning listing the offending groups.
+  detection: "python3 tools/build_seepage.py --case <dir> --describe"
+  cross_references: [docs/s9_advanced_capabilities.md, tools/build_seepage.py]
+
+- id: dt_016
+  name: "permeability given as intrinsic permeability in m2"
+  severity: silent
+  stage: s9_seepage
+  failure_domain: unit_conversion
+  symptom: >-
+    A transient seepage or consolidation run reports the initial condition essentially
+    unchanged at every step; pore pressure never dissipates.
+  diagnosis: >-
+    The FLUID phase of a material record takes permiability(1:ndimn) as a HYDRAULIC
+    CONDUCTIVITY in m/s, not an intrinsic permeability in m2. Typical values differ by about
+    seven orders of magnitude (1e-6 m/s versus 1e-13 m2), so the domain becomes effectively
+    impermeable.
+  remedy: >-
+    Convert with k = K * mu / (rho_w * g) or simply enter the conductivity directly. Sanity
+    check - sand 1e-2..1e-5 m/s, silt 1e-5..1e-8, clay 1e-8..1e-11, sound rock 1e-7..1e-11.
+  detection: "python3 tools/build_material_file.py --case <dir> --describe"
+  cross_references: [docs/s9_advanced_capabilities.md, docs/input_preparation.md]
+
+- id: dt_017
+  name: stale contact-state restart after a mesh change
+  severity: fatal
+  stage: s9_contact
+  failure_domain: initial_conditions
+  symptom: >-
+    A contact run that used to work crashes or produces nonsensical contact forces
+    immediately after the mesh was refined or the contact pairs renumbered.
+  diagnosis: >-
+    <probn>.ctt is an UNFORMATTED file holding the open/closed/slip state and contact forces
+    for the previous pair numbering. With restart_ctt /= 0 HSTAR reads it back and the array
+    sizes no longer match the new mesh.
+  remedy: >-
+    Set restart_ctt = 0, or clear the file, before the first run on a changed mesh -
+    tools/build_contact_joints.py --clear-state does exactly that. Reinstate restart_ctt only
+    once the pair numbering is stable.
+  detection: "ls -l <probn>.ctt   # non-zero size with restart_ctt /= 0 in .glb"
+  cross_references: [docs/s9_advanced_capabilities.md, tools/build_contact_joints.py]
+
+- id: dt_018
+  name: joint stiffness badly scaled
+  severity: degraded
+  stage: s9_contact
+  failure_domain: configuration
+  symptom: >-
+    Either negative (interpenetrating) gaps in the .ogw / .gdm output with a physically
+    impossible amount of closure, or PARDISO reporting tiny/zero pivots and the Newton loop
+    stalling.
+  diagnosis: >-
+    Goodman kn and ks are stiffnesses PER UNIT AREA in Pa/m. Too small and the joint behaves
+    like a soft layer that the blocks sink into; too large and the global matrix condition
+    number explodes because the joint stiffness dwarfs every solid element term.
+  remedy: >-
+    Scale kn to roughly 1e2..1e3 times (adjacent E) / (representative element size), and ks
+    to about kn/10. Change kn by one order of magnitude at a time and check that the
+    converged normal gap and the number of state iterations both stabilise.
+  detection: "python3 tools/parse_outputs.py --dir <run> | grep -i -E 'gap|contact'"
+  cross_references: [docs/s9_advanced_capabilities.md, docs/s3_materials_and_constitutive.md]
+
+- id: dt_019
+  name: "Newmark gamma > 1/2 copied into a seismic run"
+  severity: silent
+  stage: s5_analysis_control
+  failure_domain: configuration
+  symptom: >-
+    Peak accelerations and high-frequency content are visibly lower than a reference
+    solution; the response looks smooth and the peak arrives late.
+  diagnosis: >-
+    beeta1 is the Newmark gamma. gamma = 1/2 is the average-acceleration scheme with no
+    algorithmic damping; gamma > 1/2 introduces numerical damping that preferentially
+    attenuates high frequencies. cases/static ships 0.600 / 0.302, appropriate for a
+    quasi-static run and wrong for wave propagation or modal verification.
+  remedy: >-
+    Use beeta1 = 0.5, beeta2 = 0.25 for dynamics unless algorithmic damping is deliberate.
+    tools/build_dynamic_seismic.set_newmark also rejects any pair with
+    beta < (gamma + 1/2)^2 / 4, which is only conditionally stable.
+  detection: "python3 tools/build_dynamic_seismic.py --case <dir> --describe | grep -i newmark"
+  cross_references: [docs/s5_analysis_control_and_solvers.md, tools/build_dynamic_seismic.py]
+
+- id: dt_020
+  name: explicit integration diverges to NaN
+  severity: fatal
+  stage: s6_execution
+  failure_domain: runtime
+  symptom: >-
+    With type_solver='EXPLICIT' the displacements grow by orders of magnitude every few steps
+    and become NaN within a few hundred steps.
+  diagnosis: >-
+    The central-difference scheme is conditionally stable - the step must satisfy the CFL
+    condition set by the SMALLEST element and the highest wave speed. HSTAR performs no
+    step-size check.
+  remedy: >-
+    Estimate dt_crit = L_min / c, with c = sqrt(E(1-nu)/(rho(1+nu)(1-2nu))), and use
+    0.5..0.8 of it for ditime. Or switch to the implicit Newmark path
+    (type_solver='PARDISO', type_problem='F'), which is unconditionally stable at
+    gamma=0.5, beta=0.25.
+  detection: "grep -c -i 'NaN' hstar_run.log"
+  cross_references: [docs/s5_analysis_control_and_solvers.md, docs/s6_execution.md]
+
+- id: dt_021
+  name: strength-reduction factor of safety depends on miter
+  severity: silent
+  stage: s9_stability
+  failure_domain: validation
+  symptom: >-
+    Two MAT_DE runs of the same slope report different factors of safety, and the difference
+    tracks the maximum-iteration setting rather than anything physical.
+  diagnosis: >-
+    In the strength-reduction method the factor of safety is defined by NON-CONVERGENCE - the
+    reduction at which the Newton loop stops converging. miter in .man decides how hard HSTAR
+    tries before giving up, so a small miter declares failure early and reports a lower FoS.
+  remedy: >-
+    Fix miter (>= 200) and toler_force across every run you intend to compare, and report
+    both alongside the FoS. Use a fine reduction march (nstep >= 100) so the last converged
+    step brackets the true value tightly. tools/build_stability_analysis.set_strength_reduction
+    sets miter explicitly and says so in its return value.
+  detection: "python3 tools/build_stability_analysis.py --run-dir <run> --report-fos"
+  cross_references: [docs/s9_advanced_capabilities.md, tools/build_stability_analysis.py]
+
+- id: dt_022
+  name: FORM reliability run with an empty .sto
+  severity: silent
+  stage: s9_reliability
+  failure_domain: initial_conditions
+  symptom: >-
+    relis=1 produces a reliability index but the value does not respond to changing the
+    strength parameters, or beta is reported as an implausibly round number.
+  diagnosis: >-
+    <probn>.sto carries the random-variable statistics - distribution type, mean, standard
+    deviation and the correlation structure used by the MKL VSL multivariate Gaussian
+    generator. HSTAR does not error on an empty .sto; the design-point iteration simply has
+    nothing to move.
+  remedy: >-
+    Populate .sto before setting relis=1. tools/build_reliability.enable_form refuses to turn
+    FORM on when .sto is empty and says why.
+  detection: "test -s <probn>.sto || echo 'EMPTY .sto with relis=1'"
+  cross_references: [docs/s9_advanced_capabilities.md, tools/build_reliability.py]
+
+- id: dt_023
+  name: back-analysis observations in the wrong unit
+  severity: silent
+  stage: s9_back_analysis
+  failure_domain: unit_conversion
+  symptom: >-
+    The inversion converges cleanly but returns a modulus that is off by about three orders
+    of magnitude, and the reported residual is small.
+  diagnosis: >-
+    Observations in .obs / .obsc are in MODEL units - displacement in metres, temperature in
+    degrees Celsius, pore pressure in pascals. Monitoring data usually arrives in
+    millimetres. Levenberg-Marquardt minimises the residual it is given, so a factor of 1000
+    in the target is absorbed entirely by the parameter, and the fit looks excellent.
+  remedy: >-
+    Convert observations to model units before writing .obs. Then sanity-check the recovered
+    parameter against docs/s3_materials_and_constitutive.md - a concrete modulus outside
+    1e10..3e10 Pa or a rock modulus outside 1e9..3e10 Pa is a unit problem, not a discovery.
+  detection: "python3 tools/build_back_analysis.py --case <dir> --show-observations obs"
+  cross_references: [docs/s9_advanced_capabilities.md, tools/build_back_analysis.py]
+
+- id: dt_024
+  name: edge load silently contributes nothing
+  severity: silent
+  stage: s4_boundary_conditions
+  failure_domain: configuration
+  symptom: >-
+    An edge / surface pressure is present in .loa with a sensible magnitude, but changing it
+    - even setting its multiplier to zero - leaves the displacement field bit-identical.
+  diagnosis: >-
+    An edge load is accumulated into the tload of its PARENT ELEMENT (edges(iedge)%aelem,
+    Fem.f90:13340-13365), so it contributes only while that element's group is appear > 0 in
+    the block being solved, and only through the increment of its time-curve factor.
+    VERIFIED 2026-08-26 on cases/static - its water record "40 0 0 40 9810" produces a
+    bit-identical displacement field whether fact is 9810 or 0, so that shipped edge load is
+    inert. Do not assume a load is active because it is present in the file.
+  remedy: >-
+    Prove every load contributes, by perturbation - set its multiplier to zero, re-run, and
+    diff the DISPLACEMENT stream. If nothing changes, check (a) appear_process for the parent
+    element's group in that block, (b) that the load's time curve has a non-zero increment
+    over the step, and (c) that the load is declared in the block being run (runblks in inp).
+  detection: >-
+    "python3 tools/build_loads.py --case <copy> --water 40 0 0 40 0.0 &&
+    python3 tools/run_hstar.py --case <copy> --outdir <run2> &&
+    diff <(python3 tools/parse_outputs.py --dir <run1>) <(python3 tools/parse_outputs.py --dir <run2>)"
+  cross_references: [docs/s4_boundary_conditions_and_loads.md, docs/s9_advanced_capabilities.md]
+
+- id: dt_025
+  name: nodal stress compared against the point value at a boundary
+  severity: degraded
+  stage: s8_validation
+  failure_domain: validation
+  symptom: >-
+    A verification against an analytic stress solution shows an error of exactly half an
+    element's worth of stress at the outermost rows of nodes, while the interior matches
+    perfectly.
+  diagnosis: >-
+    The STRESS stream in .flavia.res is NODE-AVERAGED - average_appear(1:ngroup) selects
+    extrapolation (1) or direct averaging (2). At a free or fixed boundary a node has
+    elements on one side only, so the reported value is the adjoining element's average, not
+    the boundary point value.
+  remedy: >-
+    Compare interior nodes, or compare the domain mean. On this KI's 20-layer column
+    benchmark the interior sigma_yy matches -rho*g*(H-y) to 0.0 percent while the two
+    boundary rows are offset by exactly rho*g*dy/2 = 5886 Pa - the averaging, not an error.
+    validate_results.compare_benchmark deliberately compares the MEAN for this reason.
+  detection: "python3 tools/validate_results.py --dir <run> --benchmark confined_selfweight_column ..."
+  cross_references: [docs/s7_outputs_and_parsing.md, docs/s8_validation.md]
+
+- id: dt_026
+  name: result stream name truncated to 15 characters
+  severity: degraded
+  stage: s7_output_parsing
+  failure_domain: validation
+  symptom: >-
+    A post-processing script looking for 'acceleration_absolute', 'flow_charge' or
+    'Excess_PORE-PRESSURE' finds nothing, even though the corresponding gid_* flag is on.
+  diagnosis: >-
+    The result header is written with Fortran FORMAT 101 = (a15, i8, f12.5, 5i8). The name
+    field is 15 characters wide and TRUNCATES - 'acceleration_absolute' is written as
+    'acceleration_ab', 'flow_charge' as 'flow_charg', 'Excess_PORE-PRESSURE' as
+    'Excess_PORE-PR'.
+  remedy: >-
+    Match on the truncated spelling, or use tools/parse_outputs.py, whose RESULT_UNITS table
+    carries both spellings so no stream ever reports unit "unknown".
+  detection: >-
+    "python3 -c \"import sys; sys.path.insert(0,'tools'); from parse_outputs import parse_run;
+    print(sorted(parse_run('<run>')['results']))\""
+  cross_references: [docs/s7_outputs_and_parsing.md, tools/parse_outputs.py]
+
+- id: dt_027
+  name: "matrix re-formation interval read as a material id"
+  severity: degraded
+  stage: s5_analysis_control
+  failure_domain: configuration
+  symptom: >-
+    A thermal or non-linear case is reported as "off" because ntsmat/nthmat (or
+    nmass/nsmat/nhmat/nqmat) are 999, or the run is unexpectedly slow because they were set
+    to 0.
+  diagnosis: >-
+    These fields are MATRIX RE-FORMATION INTERVALS, not material record ids.
+    modf_time_order (Fem.f90:15480-15545) sets KxMAT = 1 when NxMAT == 0, or on the first
+    iteration of the first step of an increment, or when mod(istep, NxMAT) == 0. So 0 means
+    re-form every iteration, 1 every step, and 999 effectively only at the start of each
+    increment. What actually enables the heat equation is a group whose fieldid is 'T' plus
+    a HEAT material record.
+  remedy: >-
+    Leave them at the template's values unless you are deliberately trading cost against
+    accuracy. Use 0 for strongly non-linear material or contact, larger values for a nearly
+    linear problem. tools/build_thermal.py --describe spells out the meaning of each value
+    and reports the number of T-field groups.
+  detection: "python3 tools/build_thermal.py --case <dir> --describe"
+  cross_references: [docs/s5_analysis_control_and_solvers.md, tools/build_thermal.py]
+
+- id: dt_028
+  name: "UnicodeDecodeError reading .mat or .loa"
+  severity: fatal
+  stage: s3_materials
+  failure_domain: dependency
+  symptom: >-
+    "A Python tool raises 'UnicodeDecodeError: utf-8 codec can't decode byte 0xb2 ...' when
+    opening <probn>.mat, <probn>.loa or <probn>.tem."
+  diagnosis: >-
+    The shipped cases were authored on a Chinese Windows system; their comment lines are
+    GBK-encoded and the files are CRLF. Python's default UTF-8 codec cannot decode GBK bytes.
+  remedy: >-
+    Open HSTAR text files with encoding="latin-1", which is byte-transparent and round-trips
+    the GBK bytes untouched on write. Every tool in this KI does this through
+    tools/_hstar_io.read_lines / write_lines. Do NOT "fix" the files by transcoding them -
+    that changes their byte length and, for CRLF files, their line endings.
+  detection: >-
+    "python3 -c \"open('<probn>.mat', encoding='utf-8').read()\"   # raises if GBK present"
+  cross_references: [docs/input_preparation.md, tools/_hstar_io.py]
+
+- id: dt_029
+  name: character keyword absorbs the CR of a CRLF line
+  severity: silent
+  stage: s1_case_layout
+  failure_domain: configuration
+  symptom: >-
+    A solver, problem type or load type that was clearly set in .glb is ignored and HSTAR
+    takes a different branch - typically falling back to the default solver.
+  diagnosis: >-
+    The shipped cases are CRLF. Fortran list-directed input on Linux reads a trailing
+    carriage return as part of a CHARACTER token when that token is the last item on the
+    line, so type_solver becomes "PARDISO"//CR and never matches 'PARDISO'.
+  remedy: >-
+    Keep character keywords away from end-of-line, or normalise the whole file to one line
+    ending consistently. tools/_hstar_io.GlbDoc.set refuses to write a character field as the
+    last token of a CRLF line and explains why.
+  detection: "cat -A <probn>.glb | grep -n 'PARDISO\\^M\\$\\|PROFILE\\^M\\$\\|FIX\\^M\\$'"
+  cross_references: [docs/s1_case_layout_and_control.md, tools/_hstar_io.py]
+
+- id: dt_030
+  name: "Fortran repeat count or quoted keyword breaks a naive parser"
+  severity: fatal
+  stage: s1_case_layout
+  failure_domain: dependency
+  symptom: >-
+    "A tool raises ValueError: invalid literal for int() with base 10: '337*0' or reads
+    type_problem as \"'Q'\" including the quotes."
+  diagnosis: >-
+    HSTAR input is list-directed, so Fortran's repeat syntax (337*0, 4*1, 1000*-2) and
+    quoted character constants ('Q','PARDISO','MAT_DE') are legal and DO appear -
+    cases/train05_slope_stability/1.glb uses all of them. Comma is a separator and a bare
+    slash terminates the read.
+  remedy: >-
+    Tokenise the way Fortran does. tools/_hstar_io.raw_tokens handles quotes, commas, tabs, a
+    trailing '!' annotation and a terminating '/', and tools/_hstar_io.expand expands repeat
+    counts. Every KI tool goes through tokens() = expand(raw_tokens(...)).
+  detection: "grep -n -E '[0-9]+\\*[-0-9]' <probn>.glb"
+  cross_references: [docs/s1_case_layout_and_control.md, tools/_hstar_io.py]
+
+- id: dt_031
+  name: "PARDISO mtype does not match the matrix"
+  severity: fatal
+  stage: s5_analysis_control
+  failure_domain: configuration
+  symptom: >-
+    PARDISO reports zero or tiny pivots, or returns an error code, on a case whose PROFILE
+    solution is fine.
+  diagnosis: >-
+    mtype in <probn>.sol declares the matrix type - 2 real symmetric positive definite,
+    -2 real symmetric indefinite, 11 real unsymmetric. A u-p coupled system, a contact
+    problem or a system with prescribed-displacement multipliers is symmetric INDEFINITE, and
+    declaring it SPD makes the factorisation fail. nonsym /= 0 needs mtype = 11.
+  remedy: >-
+    Use mtype = -2, which is what every shipped case uses, and 11 only when nonsym /= 0.
+    tools/build_analysis_control.write_sol rejects any other value and names the three.
+  detection: "python3 tools/build_analysis_control.py --case <dir> --describe"
+  cross_references: [docs/s5_analysis_control_and_solvers.md, tools/build_analysis_control.py]
+
+- id: dt_032
+  name: "run executed in the case directory, silently restarting"
+  severity: silent
+  stage: s6_execution
+  failure_domain: initial_conditions
+  symptom: >-
+    A second run of the same case produces different results from the first, or starts
+    mid-way through the load history.
+  diagnosis: >-
+    HSTAR writes .rtt, .chk, .inw and every result file into the CURRENT DIRECTORY, next to
+    the inputs. With restart /= 0 in inp, the next run reads the previous run's .rtt and
+    resumes instead of starting fresh; with restart = 2 it only post-processes and stops.
+  remedy: >-
+    Always run from a copy. tools/run_hstar.py copies the case into a workspace and runs with
+    cwd=workspace, so the case directory is never mutated. If you must re-run in place, set
+    restart = 0 with tools/_hstar_io.set_inp and delete the stale .rtt.
+  detection: "grep -A1 'restart' <case>/inp"
+  cross_references: [docs/s6_execution.md, tools/run_hstar.py]
+
+- id: dt_033
+  name: "ki_tools_common is not importable on this host"
+  severity: warning
+  stage: s0_build
+  failure_domain: dependency
+  symptom: >-
+    "ModuleNotFoundError: No module named 'ki_tools_common' when a tool tries to import
+    all_metrics, load_daily_forcing, lookup_hwsd or detect_binary_type."
+  diagnosis: >-
+    Verified 2026-08-26 - /mnt/disk1/Hydrocraft_server/models/ki_tools_common/ki_tools_common
+    contains only the three KI generator scripts and ki_projection_common.py. There is no
+    metrics, load_forcing, soil_utils, landcover, validation, cross_platform or units
+    submodule to import, and the package is not on the interpreter path.
+  remedy: >-
+    Every tool in this KI wraps the import in try/except and falls back to
+    tools/_local_metrics.py, which provides all_metrics(obs, sim) with the identical
+    signature. Nothing needs changing when the shared library becomes available - the
+    preferred import is tried first. Note also that the forcing/soil/land-cover helpers are
+    not applicable to HSTAR at all - it is a structural FEM solver with no meteorological
+    driver.
+  detection: >-
+    "python3 -c \"import ki_tools_common.metrics\" 2>&1 | head -1"
+  cross_references: [docs/input_preparation.md, tools/_local_metrics.py]

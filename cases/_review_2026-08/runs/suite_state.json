@@ -1,0 +1,344 @@
+{
+ "train01_gravdam_static": {
+  "input_hash": "631afd46e7715edb",
+  "staged_files": 44,
+  "solve": {
+   "mode": "config",
+   "exit": 0,
+   "seconds": 0.3,
+   "input_hash": "631afd46e7715edb",
+   "skipped": "resume: result present and inputs unchanged"
+  },
+  "judge": {
+   "physics_ok": true,
+   "physics_problems": [],
+   "run_validity": "valid",
+   "deck_consistency": "consistent",
+   "reasons": [],
+   "validator": null,
+   "validator_status": "none registered",
+   "degraded_reasons": [],
+   "verdict": "PASS"
+  },
+  "judged_at_hash": "631afd46e7715edb"
+ },
+ "train03a_modal_dry": {
+  "input_hash": "5fcbd66288ccf0d4",
+  "staged_files": 35,
+  "solve": {
+   "mode": "config",
+   "exit": 0,
+   "seconds": 0.8,
+   "input_hash": "5fcbd66288ccf0d4"
+  },
+  "judge": {
+   "physics_ok": true,
+   "physics_problems": [],
+   "run_validity": "valid",
+   "deck_consistency": "consistent",
+   "reasons": [],
+   "validator": null,
+   "validator_status": "none registered",
+   "degraded_reasons": [],
+   "verdict": "PASS"
+  },
+  "judged_at_hash": "5fcbd66288ccf0d4"
+ },
+ "train03b_modal_ifs": {
+  "input_hash": "1fff36799ad0b938",
+  "staged_files": 36,
+  "solve": {
+   "mode": "config",
+   "exit": 0,
+   "seconds": 0.7,
+   "input_hash": "1fff36799ad0b938",
+   "skipped": "resume: result present and inputs unchanged"
+  },
+  "judge": {
+   "physics_ok": true,
+   "physics_problems": [],
+   "run_validity": "valid",
+   "deck_consistency": "consistent",
+   "reasons": [],
+   "validator": "gravdam_modal_reservoir",
+   "validator_status": "PASS",
+   "degraded_reasons": [],
+   "verdict": "PASS"
+  },
+  "judged_at_hash": "1fff36799ad0b938"
+ },
+ "train04_beam_faceload": {
+  "input_hash": "40597f3f5541890a",
+  "staged_files": 40,
+  "solve": {
+   "mode": "config",
+   "exit": 0,
+   "seconds": 0.2,
+   "input_hash": "40597f3f5541890a",
+   "skipped": "resume: result present and inputs unchanged"
+  },
+  "judge": {
+   "physics_ok": true,
+   "physics_problems": [],
+   "run_validity": "valid",
+   "deck_consistency": "consistent",
+   "reasons": [],
+   "validator": "beam_faceload_3d",
+   "validator_status": "PASS",
+   "degraded_reasons": [],
+   "verdict": "PASS"
+  },
+  "judged_at_hash": "40597f3f5541890a"
+ },
+ "train05_slope_stability": {
+  "input_hash": "5c28e4352d585ac5",
+  "staged_files": 42,
+  "solve": {
+   "mode": "legacy_deck",
+   "exit": 0,
+   "seconds": 0.5,
+   "input_hash": "5c28e4352d585ac5",
+   "skipped": "resume: result present and inputs unchanged"
+  },
+  "judge": {
+   "physics_ok": true,
+   "physics_problems": [],
+   "run_validity": "degraded",
+   "deck_consistency": "unverified",
+   "reasons": [],
+   "validator": "slope_known_surface",
+   "validator_status": "NOT_APPLICABLE",
+   "degraded_reasons": [
+    "solver_convergence: 200.5 > 1e-05 (worst step 8 after 20 iterations)"
+   ],
+   "expectation": "limit-state (kstab) analysis along a prescribed slip surface: the run is driven to the limit load, so the last increments do not settle",
+   "verdict": "PASS"
+  },
+  "judged_at_hash": "5c28e4352d585ac5"
+ },
+ "train05b_slope_srm": {
+  "input_hash": "ef0663b1016bfea2",
+  "staged_files": 35,
+  "solve": {
+   "mode": "legacy_deck",
+   "exit": 0,
+   "seconds": 16.1,
+   "input_hash": "ef0663b1016bfea2",
+   "skipped": "resume: result present and inputs unchanged"
+  },
+  "judge": {
+   "physics_ok": true,
+   "physics_problems": [],
+   "run_validity": "incomplete",
+   "deck_consistency": "unverified",
+   "reasons": [],
+   "validator": "slope_srm",
+   "validator_status": "PASS",
+   "degraded_reasons": [
+    "solver_convergence: 1.31 > 1e-05 (worst step 64 after 10 iterations)"
+   ],
+   "expectation": "strength reduction: material strength is scaled down until the slope fails, so the final increment is a collapse state by construction — the safety factor IS the step at which equilibrium stops existing",
+   "verdict": "PASS"
+  },
+  "judged_at_hash": "ef0663b1016bfea2"
+ },
+ "train06_concrete_damage": {
+  "input_hash": "102910fd410ac918",
+  "staged_files": 41,
+  "solve": {
+   "mode": "legacy_deck",
+   "exit": 0,
+   "seconds": 0.1,
+   "input_hash": "102910fd410ac918",
+   "skipped": "resume: result present and inputs unchanged"
+  },
+  "judge": {
+   "physics_ok": true,
+   "physics_problems": [],
+   "run_validity": "valid",
+   "deck_consistency": "unverified",
+   "reasons": [],
+   "validator": "concrete_damage",
+   "validator_status": "PASS",
+   "degraded_reasons": [],
+   "verdict": "PASS"
+  },
+  "judged_at_hash": "102910fd410ac918"
+ },
+ "train07_thermal_transient": {
+  "input_hash": "74a660453b8c078b",
+  "staged_files": 55,
+  "solve": {
+   "mode": "legacy_deck",
+   "exit": 0,
+   "seconds": 1.7,
+   "input_hash": "74a660453b8c078b"
+  },
+  "judge": {
+   "physics_ok": true,
+   "physics_problems": [],
+   "run_validity": "valid",
+   "deck_consistency": "unverified",
+   "reasons": [],
+   "validator": null,
+   "validator_status": "none registered",
+   "degraded_reasons": [],
+   "verdict": "PASS"
+  },
+  "judged_at_hash": "74a660453b8c078b"
+ },
+ "train07b_thermal_steady": {
+  "input_hash": "98374ca25cd8223b",
+  "staged_files": 3,
+  "solve": {
+   "mode": "incomplete_case",
+   "exit": "no_deck",
+   "seconds": 0.0,
+   "error": "case dir has neither config.json nor 1.glb",
+   "input_hash": "98374ca25cd8223b"
+  },
+  "judge": {
+   "verdict": "no_result"
+  },
+  "judged_at_hash": "98374ca25cd8223b"
+ },
+ "train09_rc_bond": {
+  "input_hash": "dae885f7d057c572",
+  "staged_files": 41,
+  "solve": {
+   "mode": "legacy_deck",
+   "exit": 0,
+   "seconds": 0.8,
+   "input_hash": "dae885f7d057c572"
+  },
+  "judge": {
+   "physics_ok": true,
+   "physics_problems": [],
+   "run_validity": "degraded",
+   "deck_consistency": "unverified",
+   "reasons": [],
+   "validator": "rc_bond",
+   "validator_status": "PASS",
+   "degraded_reasons": [
+    "solver_convergence: 0.03008 > 1e-05 (worst step 1 after 10 iterations)"
+   ],
+   "verdict": "PASS*"
+  },
+  "judged_at_hash": "dae885f7d057c572"
+ },
+ "train10_dynamic_vie": {
+  "input_hash": "8fe2ce5383752aa0",
+  "staged_files": 42,
+  "solve": {
+   "mode": "legacy_deck",
+   "exit": 0,
+   "seconds": 30.1,
+   "input_hash": "8fe2ce5383752aa0",
+   "skipped": "resume: result present and inputs unchanged"
+  },
+  "judge": {
+   "physics_ok": true,
+   "physics_problems": [],
+   "run_validity": "valid",
+   "deck_consistency": "unverified",
+   "reasons": [],
+   "validator": null,
+   "validator_status": "none registered",
+   "degraded_reasons": [],
+   "verdict": "PASS"
+  },
+  "judged_at_hash": "8fe2ce5383752aa0"
+ },
+ "train11_staged_foundation": {
+  "input_hash": "5cffd3e75580fede",
+  "staged_files": 34,
+  "solve": {
+   "mode": "legacy_deck",
+   "exit": 0,
+   "seconds": 0.2,
+   "input_hash": "5cffd3e75580fede",
+   "skipped": "resume: result present and inputs unchanged"
+  },
+  "judge": {
+   "physics_ok": true,
+   "physics_problems": [],
+   "run_validity": "valid",
+   "deck_consistency": "unverified",
+   "reasons": [],
+   "validator": "staged_foundation",
+   "validator_status": "PASS",
+   "degraded_reasons": [],
+   "verdict": "PASS"
+  },
+  "judged_at_hash": "5cffd3e75580fede"
+ },
+ "train12_seepage_steady": {
+  "input_hash": "5d140971794f8903",
+  "staged_files": 70,
+  "solve": {
+   "mode": "legacy_deck",
+   "exit": 0,
+   "seconds": 0.1,
+   "input_hash": "5d140971794f8903",
+   "skipped": "resume: result present and inputs unchanged"
+  },
+  "judge": {
+   "physics_ok": true,
+   "physics_problems": [],
+   "run_validity": "valid",
+   "deck_consistency": "unverified",
+   "reasons": [],
+   "validator": "seepage_steady",
+   "validator_status": "NOT_APPLICABLE",
+   "degraded_reasons": [],
+   "verdict": "PASS"
+  },
+  "judged_at_hash": "5d140971794f8903"
+ },
+ "train12b_seepage_transient": {
+  "input_hash": "0da5a8c6609a174b",
+  "staged_files": 6,
+  "solve": {
+   "mode": "config",
+   "exit": 0,
+   "seconds": 0.5,
+   "input_hash": "0da5a8c6609a174b",
+   "skipped": "resume: result present and inputs unchanged"
+  },
+  "judge": {
+   "physics_ok": true,
+   "physics_problems": [],
+   "run_validity": "valid",
+   "deck_consistency": "consistent",
+   "reasons": [],
+   "validator": null,
+   "validator_status": "none registered",
+   "degraded_reasons": [],
+   "verdict": "PASS"
+  },
+  "judged_at_hash": "0da5a8c6609a174b"
+ },
+ "train02_gravdam_seismic": {
+  "input_hash": "27556c111751635c",
+  "staged_files": 38,
+  "solve": {
+   "mode": "config",
+   "exit": 0,
+   "seconds": 37.1,
+   "input_hash": "27556c111751635c",
+   "skipped": "resume: result present and inputs unchanged"
+  },
+  "judge": {
+   "physics_ok": true,
+   "physics_problems": [],
+   "run_validity": "valid",
+   "deck_consistency": "consistent",
+   "reasons": [],
+   "validator": "gravdam_seismic_2block",
+   "validator_status": "PASS",
+   "degraded_reasons": [],
+   "verdict": "PASS"
+  },
+  "judged_at_hash": "27556c111751635c"
+ }
+}

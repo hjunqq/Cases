@@ -1,0 +1,186 @@
+[
+ {
+  "doi": "10.1016/j.engstruct.2019.05.072",
+  "status": "oa_green",
+  "title": "Concrete gravity dams model parameters updating using static measurements",
+  "text_path": "/home/server/knowledge-dissection-toolkit/paper_cache/10.1016_j.engstruct.2019.05.072.txt",
+  "serves": [
+   "DISPLACEMENT"
+  ],
+  "role": "benchmark",
+  "note": "Concrete gravity dam FE model-parameter updating from STATIC displacement measurements: reports the achievable agreement between an updated FE model and monitored crest displacement, which is the closest published analogue of an HSTAR back-analysis."
+ },
+ {
+  "doi": "10.1109/access.2020.2995592",
+  "status": "oa_gold",
+  "title": "The Prediction of Dam Displacement Time Series Using STL, Extra-Trees, and Stacked LSTM Neural Network",
+  "text_path": "/home/server/knowledge-dissection-toolkit/paper_cache/10.1109_access.2020.2995592.txt",
+  "serves": [
+   "DISPLACEMENT"
+  ],
+  "role": "threshold_convention",
+  "note": "Dam displacement time series decomposed into hydrostatic, seasonal and time-dependent components; reports RMSE / MAE / R2 achieved against plumb-line records."
+ },
+ {
+  "doi": "10.1109/access.2021.3049578",
+  "status": "oa_gold",
+  "title": "An Improved Random Forest Model for the Prediction of Dam Displacement",
+  "text_path": "/home/server/knowledge-dissection-toolkit/paper_cache/10.1109_access.2021.3049578.txt",
+  "serves": [
+   "DISPLACEMENT"
+  ],
+  "role": "threshold_convention",
+  "note": "Random-forest dam-displacement prediction with reported RMSE, MAE and R2 on real monitoring series."
+ },
+ {
+  "doi": "10.1016/j.asoc.2016.12.014",
+  "status": "oa_green",
+  "title": "Artificial neural networks for vibration based inverse parametric identifications: A review",
+  "text_path": "/home/server/knowledge-dissection-toolkit/paper_cache/10.1016_j.asoc.2016.12.014.txt",
+  "serves": [
+   "modal_frequency",
+   "DISPLACEMENT"
+  ],
+  "role": "calibration",
+  "note": "Vibration-based inverse parametric identification: how modal data constrain structural parameters, and the identification accuracy achieved."
+ },
+ {
+  "doi": "10.1007/s10706-017-0356-z",
+  "status": "oa_green",
+  "title": "Applications of Particle Swarm Optimization in Geotechnical Engineering: A Comprehensive Review",
+  "text_path": "/home/server/knowledge-dissection-toolkit/paper_cache/10.1007_s10706-017-0356-z.txt",
+  "serves": [
+   "factor_of_safety",
+   "DISPLACEMENT"
+  ],
+  "role": "calibration",
+  "note": "Survey of optimisation-based parameter identification and slope-stability search in geotechnical engineering; context for HSTAR's Bparameter / MAT_DE paths."
+ },
+ {
+  "doi": "10.3151/jact.2.141",
+  "status": "oa_gold",
+  "title": "State-of-the-Art Report on Control of Cracking in Early Age Concrete",
+  "text_path": "/home/server/knowledge-dissection-toolkit/paper_cache/10.3151_jact.2.141.txt",
+  "serves": [
+   "TEMPERATURE",
+   "STRESS"
+  ],
+  "role": "definition",
+  "note": "JCI state-of-the-art report on early-age concrete cracking: hydration heat, adiabatic temperature rise, pipe cooling and thermal-stress criteria - the physics HSTAR's HEAT material and pipe-cooling superposition implement."
+ },
+ {
+  "doi": "10.1016/j.compgeo.2015.04.016",
+  "status": "oa_green",
+  "title": "3D zero-thickness coupled interface finite element: Formulation and application",
+  "text_path": "/home/server/knowledge-dissection-toolkit/paper_cache/10.1016_j.compgeo.2015.04.016.txt",
+  "serves": [
+   "STRESS",
+   "PORE-PRESSURE"
+  ],
+  "role": "definition",
+  "note": "3D zero-thickness coupled interface finite element: the formulation family HSTAR's Goodman / MCJOINT interface elements belong to, including the hydro-mechanical coupling."
+ },
+ {
+  "doi": "10.1002/nme.1620360104",
+  "status": "oa_green",
+  "title": "On the numerical integration of interface elements",
+  "text_path": "/home/server/knowledge-dissection-toolkit/paper_cache/10.1002_nme.1620360104.txt",
+  "serves": [
+   "STRESS"
+  ],
+  "role": "definition",
+  "note": "Numerical integration of interface elements and the conditioning consequences of the normal/shear stiffness choice - the basis of triplet dt_018."
+ },
+ {
+  "doi": "10.1617/s11527-017-1010-1",
+  "status": "oa_gold",
+  "title": "The steel\u2013concrete interface",
+  "text_path": "/home/server/knowledge-dissection-toolkit/paper_cache/10.1617_s11527-017-1010-1.txt",
+  "serves": [
+   "STRESS",
+   "DISPLACEMENT"
+  ],
+  "role": "definition",
+  "note": "RILEM report on the steel-concrete interface: bond-slip mechanics behind HSTAR's five ikindks bond laws."
+ },
+ {
+  "doi": "10.1007/s10346-018-1022-0",
+  "status": "oa_green",
+  "title": "Displacement prediction of step-like landslide by applying a novel kernel extreme learning machine method",
+  "text_path": "/home/server/knowledge-dissection-toolkit/paper_cache/10.1007_s10346-018-1022-0.txt",
+  "serves": [
+   "DISPLACEMENT"
+  ],
+  "role": "supporting",
+  "note": "Step-like landslide displacement prediction; reports the metric conventions used for geotechnical displacement monitoring series."
+ },
+ {
+  "doi": "10.1007/s10346-023-02104-9",
+  "status": "oa_gold",
+  "title": "Landslide displacement forecasting using deep learning and monitoring data across selected sites",
+  "text_path": "/home/server/knowledge-dissection-toolkit/paper_cache/10.1007_s10346-023-02104-9.txt",
+  "serves": [
+   "DISPLACEMENT"
+  ],
+  "role": "supporting",
+  "note": "Landslide displacement forecasting from monitoring data; RMSE/MAE reporting practice."
+ },
+ {
+  "doi": "10.1177/14759217211036880",
+  "status": "oa_gold",
+  "title": "Machine learning and structural health monitoring overview with emerging technology and high-dimensional data source highlights",
+  "text_path": "/home/server/knowledge-dissection-toolkit/paper_cache/10.1177_14759217211036880.txt",
+  "serves": [
+   "DISPLACEMENT",
+   "acceleration",
+   "modal_frequency"
+  ],
+  "role": "supporting",
+  "note": "Structural health monitoring overview: what is actually measured on civil structures and at what precision, which bounds any comparison against HSTAR output."
+ },
+ {
+  "doi": "10.3390/app11062750",
+  "status": "oa_gold",
+  "title": "Recent Advancements in Non-Destructive Testing Techniques for Structural Health Monitoring",
+  "text_path": "/home/server/knowledge-dissection-toolkit/paper_cache/10.3390_app11062750.txt",
+  "serves": [
+   "STRESS",
+   "TEMPERATURE"
+  ],
+  "role": "supporting",
+  "note": "Non-destructive testing techniques for structural health monitoring of concrete - the measurement side of the stress and temperature comparisons."
+ },
+ {
+  "doi": "10.1038/s41524-022-00810-x",
+  "status": "oa_gold",
+  "title": "Machine learning in concrete science: applications, challenges, and best practices",
+  "text_path": "/home/server/knowledge-dissection-toolkit/paper_cache/10.1038_s41524-022-00810-x.txt",
+  "serves": [
+   "STRESS"
+  ],
+  "role": "supporting",
+  "note": "Machine learning in concrete science: ranges of concrete elastic and strength properties used for the regional defaults in docs/s3_materials_and_constitutive.md."
+ },
+ {
+  "doi": "10.1109/access.2020.2987324",
+  "status": "oa_gold",
+  "title": "Driven by Data or Derived Through Physics? A Review of Hybrid Physics Guided Machine Learning Techniques With Cyber-Physical System (CPS) Focus",
+  "text_path": "/home/server/knowledge-dissection-toolkit/paper_cache/10.1109_access.2020.2987324.txt",
+  "serves": [
+   "DISPLACEMENT"
+  ],
+  "role": "supporting",
+  "note": "Hybrid physics-guided and data-driven modelling: framing for combining an HSTAR forward model with a statistical dam-monitoring model."
+ },
+ {
+  "doi": "10.1016/j.scitotenv.2020.136854",
+  "status": "oa_green",
+  "title": "Resilience assessment framework for critical infrastructure in a multi-hazard environment: Case study on transport assets",
+  "text_path": "/home/server/knowledge-dissection-toolkit/paper_cache/10.1016_j.scitotenv.2020.136854.txt",
+  "serves": [
+   "factor_of_safety"
+  ],
+  "role": "supporting",
+  "note": "Resilience assessment of critical infrastructure under multi-hazard conditions; context for how a computed factor of safety is used in dam safety decisions."
+ }
+]

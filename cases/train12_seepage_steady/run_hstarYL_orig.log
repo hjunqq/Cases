@@ -1,0 +1,8 @@
+forrtl: severe (59): list-directed I/O syntax error, unit 43, file D:\Projects\HSTAR_Next\HSTAR_TestData\cases\train12_seepage_steady\inp
+Image              PC                Routine            Line        Source             
+hstar.exe          00007FF69BD2C9CA  Unknown               Unknown  Unknown
+hstar.exe          00007FF69BB93BE9  Unknown               Unknown  Unknown
+hstar.exe          00007FF69BD4947B  Unknown               Unknown  Unknown
+hstar.exe          00007FF6A0B19170  Unknown               Unknown  Unknown
+KERNEL32.DLL       00007FF9F162E8D7  Unknown               Unknown  Unknown
+ntdll.dll          00007FF9F2DEC53C  Unknown               Unknown  Unknown

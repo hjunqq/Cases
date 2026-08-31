@@ -1,0 +1,6 @@
+ *****CONTACT GAPS******
+ total time=  0.500000000000000     
+iblks=    1 iincs=    1 istep=    1 iiter=    2
+ total time=  0.500000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,,state,,ctforce

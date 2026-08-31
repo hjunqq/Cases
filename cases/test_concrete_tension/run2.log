@@ -1,0 +1,69 @@
+ ================================================
+   Easy_HSTAR - Finite Element Analysis
+ ================================================
+ 
+ Reading: 1.toml
+  Read 9 nodes
+  Read 4 elements
+ =============================================
+  HSTAR Problem Summary
+ =============================================
+  Version     :            1
+  Problem name: 1
+  Type        : Q
+  Dimensions  :            2
+  Nodes       :            9
+  Elements    :            4
+  Materials   :            1
+  Groups      :            1
+  Max DOF/node:            2
+  Blocks      :            1
+  Links       :            0
+  Solver      : PARDISO
+  Load type   : LOAD
+  Output      : VTK
+ 
+  Analysis blocks:
+   Block   1 type=static nincs=     1
+ 
+  Materials:
+   Mat   1 name=Concrete with damage type=MECHANICAL
+ =============================================
+ validate_problem: all checks passed
+ 
+ Input OK. Starting analysis...
+  ndimn=2, npoin=9, ntotv=18
+ 
+  === Block 1 / 1
+  iffix: free=14, BC=4, inactive=0
+  Neq = 14
+  NNZ = 136
+  Inc 1 Step 1
+    iter   1  R_force= 1.000E+00  resid= 2.449E+06
+    iter   2  R_force= 4.743E-01  R_disp= 1.000E+00  R_energy= 4.743E-01
+    iter   3  R_force= 6.313E-01  R_disp= 3.217E-01  R_energy= 2.995E-01
+    iter   4  R_force= 4.736E-01  R_disp= 2.998E-01  R_energy= 2.990E-01
+    iter   5  R_force= 3.552E-01  R_disp= 1.836E-01  R_energy= 1.682E-01
+    iter   6  R_force= 2.664E-01  R_disp= 1.210E-01  R_energy= 9.462E-02
+    iter   7  R_force= 1.998E-01  R_disp= 8.323E-02  R_energy= 5.322E-02
+    iter   8  R_force= 1.498E-01  R_disp= 5.875E-02  R_energy= 2.994E-02
+    iter   9  R_force= 1.124E-01  R_disp= 4.220E-02  R_energy= 1.684E-02
+    iter  10  R_force= 8.429E-02  R_disp= 3.068E-02  R_energy= 9.473E-03
+    iter  11  R_force= 6.322E-02  R_disp= 2.249E-02  R_energy= 5.328E-03
+    iter  12  R_force= 4.741E-02  R_disp= 1.659E-02  R_energy= 2.997E-03
+    iter  13  R_force= 3.556E-02  R_disp= 1.229E-02  R_energy= 1.686E-03
+    iter  14  R_force= 2.667E-02  R_disp= 9.133E-03  R_energy= 9.483E-04
+    iter  15  R_force= 2.000E-02  R_disp= 6.803E-03  R_energy= 5.334E-04
+    iter  16  R_force= 1.500E-02  R_disp= 5.077E-03  R_energy= 3.001E-04
+    iter  17  R_force= 1.125E-02  R_disp= 3.793E-03  R_energy= 1.688E-04
+    iter  18  R_force= 8.438E-03  R_disp= 2.837E-03  R_energy= 9.494E-05
+  Converged in 18 iterations
+  Max |Ux| =   1.2368E-04
+  Max |Uy| =   6.1690E-04
+  Max |sxx| =   9.3132E-10
+  Max |syy| =   7.9325E+06
+  Results written to ./1_easy.flavia.res
+  VTU: ./1_easy_b1.vtu
+  Restart saved: ./1_easy.rst
+ 
+ Analysis completed successfully.

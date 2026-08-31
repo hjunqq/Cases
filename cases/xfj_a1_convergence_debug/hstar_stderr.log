@@ -1,0 +1,11 @@
+ time: 22:01:27
+forrtl: severe (59): list-directed I/O syntax error, unit 44, file C:\Users\qhjun\OneDrive - HOHAHA\Doing\2026\论文\信赖域\hstardeback(参数反演）\hstar(programandexamples)\HSTAR\典型算例文件\xfj_new\A1_convergence_debug\1.btl
+Image              PC                Routine            Line        Source             
+hstar.exe          00007FF7098916FA  Unknown               Unknown  Unknown
+hstar.exe          00007FF70989083E  Unknown               Unknown  Unknown
+hstar.exe          00007FF7092C76D6  Unknown               Unknown  Unknown
+hstar.exe          00007FF7096EA89B  Unknown               Unknown  Unknown
+hstar.exe          00007FF7098A498B  Unknown               Unknown  Unknown
+hstar.exe          00007FF70E664BE0  Unknown               Unknown  Unknown
+KERNEL32.DLL       00007FFDD229E8D7  Unknown               Unknown  Unknown
+ntdll.dll          00007FFDD2BCC48C  Unknown               Unknown  Unknown

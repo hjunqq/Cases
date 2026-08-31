@@ -1,0 +1,45 @@
+ irecover=           0
+ ikind=          15 nr_intrules=           4
+ igroup=           1 tvol=   17039.9939999390     
+ igroup=           1 tne=         620
+ igroup=           2 tvol=   4543.31936115830     
+ igroup=           2 tne=         920
+ igroup=           3 tvol=   96500.0000000000     
+ igroup=           3 tne=        2420
+ igroup=           4 tvol=   1.54799987800000     
+ igroup=           4 tne=        2429
+ igroup=           5 tvol=  0.172000122000000     
+ igroup=           5 tne=        2430
+ ****** ntotv= ******        5084
+ time: 16:10:30
+ in modf_element_lib
+ jgroup=           1 kinit_g=           0
+ jgroup=           2 kinit_g=           0
+ jgroup=           3 kinit_g=           0
+ jgroup=           4 kinit_g=           0
+ jgroup=           5 kinit_g=           0
+ iblks=           1 runblks=           2
+ iblks=           1
+ time: 16:10:30
+ ninit=           0 iblks=           1 restart=           0
+ ikindks=           0
+ time(solve): 16:10:30
+ 单个方程中最大非零元素个数          12
+ Neq=        3049       Iseq(neq)=       27849
+ storage of PARDISO, sstore=       27849
+                                             
+ time(solve_set): 16:10:30
+ time(solve_pcg): 16:10:30
+ iblks=           2 runblks=           2
+ iblks=           2
+ time: 16:10:30
+ ninit=           0 iblks=           2 restart=           0
+ ikindks=           0
+ time(solve): 16:10:30
+ 单个方程中最大非零元素个数          16
+ Neq=        3731       Iseq(neq)=       33848
+ storage of PARDISO, sstore=       33848
+                                             
+ time(solve_set): 16:10:30
+ time(solve_pcg): 16:10:30
+ time: 16:10:30

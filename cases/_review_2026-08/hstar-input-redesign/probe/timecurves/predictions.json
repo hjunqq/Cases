@@ -1,0 +1,98 @@
+{
+  "probe_id": "timecurves-v1",
+  "question": "HARMONIC / WATERLEVEL / EXTRAPOLATION / ARCLENGTH 这四种 .loa 时间曲线类型，源码推出的记录布局是否真的被求解器接受？ARCLENGTH 是否如源码所示是死代码（tofor_arclength 从未 allocate）？",
+  "registered_at": "2026-08-28",
+  "registered_by": "Claude (open #11 一路)",
+
+  "known_before_registration": [
+    "Load.f90:147-223 是 .loa 曲线表的唯一 reader，select case(type_curve) 决定布局",
+    "Load.f90:164-211 分支：HARMONIC 1 条 6 实数记录；FOURIERSERIES 3 条；WATERLEVEL ntime 条 (t,f) 对；SEISMIC 1 条 4 实数；EXTRAPOLATION 1 条 3 值；ARCLENGTH 1 条 4 值(+nalgo==2 再 1 条)；default 1 条 ttime_curve",
+    "Load.f90:212-221 尾部 dfact_curve 记录：SEISMIC 有；ARCLENGTH/EXTRAPOLATION/HARMONIC/WATERLEVEL 无；其余有",
+    "_archive/hstarpre/sourcef90/fempre.f90:2664-2755 独立复现同一布局（number 1..15 → type_curve），是第二来源",
+    "Fem.f90:12601 WATERLEVEL 与 LINEAR/LNLINEAR 走同一段插值，求值完全相同",
+    "Fem.f90:12710-12715 ARCLENGTH/DISCONTROL/EXTRAPOLATION 在 dfact_time_curve 里 goto 1，不写 dfact",
+    "Global.f90:199 声明 tofor_arclength/delta_arclength 为 allocatable；全仓四棵源码树（hstarYLOrig/HSTAR, hstarYLOrig/next, HSTAR_Q, _archive/src）grep 不到任何 allocate",
+    "Fem.f90:13174 `if(type_load=='ARCLENGTH')tofor_arclength=0.` 位于 FORCE_EXTERNAL，静力 Q 路径必经",
+    "全仓 390 个 .loa 只出现 LINEAR(596)/SEISMIC(160)/WATERLEVEL(6)/DABT(1)，没有任何 HARMONIC/EXTRAPOLATION/ARCLENGTH/FOURIERSERIES 样例",
+    "cases/cases/test_arclength 名字叫 arclength，实际 type_load=LOAD、曲线为 LINEAR，与弧长法无关",
+    "基线算例 test_arclength：9 节点 4 单元 2D 静力，1.flavia.res 24 行、无时间戳，可逐字节比较"
+  ],
+  "not_yet_examined": [
+    "求解器是否真的接受 HARMONIC/WATERLEVEL/EXTRAPOLATION/ARCLENGTH 的记录布局（此前只有源码推断，无一次运行证据）",
+    "type_load='ARCLENGTH' 时未分配数组的实际后果（崩溃 / 静默 / 正常）"
+  ],
+
+  "method": {
+    "substrate": "cases/cases/test_arclength 原样复制到 /tmp/claude-1000/probe-timecurves/<variant>/，cases/ 只读",
+    "runner": "python3 fem-chat/harness/_solve_deck.py <dir>（run_pipeline 的求解步，含 MKL 注入与沙箱）",
+    "timeout_seconds": 300,
+    "control": "V0 必须 completed，否则全部结果作废",
+    "comparison": "1.flavia.res 逐字节文本相等（该文件无时间戳，基线已确认确定性）"
+  },
+
+  "variants": {
+    "V0_baseline": "原样不改",
+    "V1_harmonic_identity": "把唯一那条曲线换成 HARMONIC，参数 a0sin=1, asin=0, wsin=1, w0sin=0, dtbegin=0, dtend=1e9；无 dfact 行。数学上 dfact≡1，与基线 LINEAR(0,1)->(1,1) 恒等",
+    "V2_waterlevel_identity": "把唯一那条曲线换成 WATERLEVEL，两行 (t,f) 对：`0 1` 与 `1 1`。求值路径与 LINEAR 同一段",
+    "V3_extrapolation_unreferenced": "保留曲线1 LINEAR，追加曲线2 `1 EXTRAPOLATION 0 1` + `1 0.0 1.0`（nextr=1, ca=0, dx=1），无任何荷载引用它",
+    "V4_arclength_unreferenced": "保留曲线1 LINEAR，追加曲线2 `1 ARCLENGTH 0 1` + `0.0 0.1 1 5`（time_begin=0, fact_inc=0.1, nalgo=1, giter=5），type_load 仍为 LOAD",
+    "V5_arclength_active": "在 V4 基础上把 1.glb 的 TYPE_LOAD 由 LOAD 改为 ARCLENGTH"
+  },
+
+  "outcome_classification": {
+    "labels": [
+      "completed_identical",
+      "completed_different",
+      "read_error",
+      "crash",
+      "timeout",
+      "no_res"
+    ],
+    "rule": "completed_* 要求进程退出且 1.flavia.res 存在；identical 指与 V0 的 1.flavia.res 逐字节相等。read_error 指 run.log 含 forrtl 且提到 input/read/end-of-file。crash 指进程异常终止（负 returncode 或 run.log 含 severe/Segmentation）且非 read_error。"
+  },
+
+  "predictions": [
+    {
+      "id": "P1",
+      "variant": "V0_baseline",
+      "claim": "completed_identical（自比，必然），用于确认环境与确定性",
+      "expect": "completed_identical"
+    },
+    {
+      "id": "P2",
+      "variant": "V1_harmonic_identity",
+      "claim": "HARMONIC 的 6 实数记录 + 无 dfact 行的布局被接受；因 asin=0 且时间窗覆盖全程，dfact 恒为 1，结果与基线逐字节相同",
+      "expect": "completed_identical"
+    },
+    {
+      "id": "P3",
+      "variant": "V2_waterlevel_identity",
+      "claim": "WATERLEVEL 的 ntime 条 (t,f) 对布局被接受；Fem.f90:12601 与 LINEAR 同一段求值，结果与基线逐字节相同",
+      "expect": "completed_identical"
+    },
+    {
+      "id": "P4",
+      "variant": "V3_extrapolation_unreferenced",
+      "claim": "EXTRAPOLATION 的 3 值记录 + 无 dfact 行的布局被接受；无人引用则不影响结果",
+      "expect": "completed_identical"
+    },
+    {
+      "id": "P5",
+      "variant": "V4_arclength_unreferenced",
+      "claim": "ARCLENGTH 的 4 值记录（nalgo=1 时无附加行）+ 无 dfact 行的布局被接受；type_load 非 ARCLENGTH 时不触发未分配数组，结果与基线逐字节相同",
+      "expect": "completed_identical"
+    },
+    {
+      "id": "P6",
+      "variant": "V5_arclength_active",
+      "claim": "type_load='ARCLENGTH' 时 Fem.f90:13174 写入从未 allocate 的 tofor_arclength，运行不能正常完成",
+      "expect": "crash",
+      "fallback_if_wrong": "若竟然 completed，则说明编译器把未分配数组赋值当成空操作，弧长法就是『静默失效』而非『崩溃』——那比崩溃更危险，必须在 21-facts 里改写结论并标注"
+    }
+  ],
+
+  "what_would_falsify_the_source_reading": [
+    "P2/P3/P4/P5 任一出现 read_error → 我对 Load.f90:164-221 的布局解读是错的，21-facts 的对应表必须重写",
+    "P6 出现 completed_identical → ARCLENGTH 不是崩溃而是完全无效（tofor_arclength=0. 被当空操作，find_dfact_of_arclength 读到垃圾但静力单步未放大）"
+  ]
+}

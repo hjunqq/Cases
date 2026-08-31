@@ -1,0 +1,53 @@
+ ================================================
+   Easy_HSTAR - Finite Element Analysis
+ ================================================
+ 
+ Reading: 1_elastic.toml
+  Read 9 nodes
+  Read 4 elements
+ =============================================
+  HSTAR Problem Summary
+ =============================================
+  Version     :            1
+  Problem name: 1
+  Type        : Q
+  Dimensions  :            2
+  Nodes       :            9
+  Elements    :            4
+  Materials   :            1
+  Groups      :            1
+  Max DOF/node:            2
+  Blocks      :            1
+  Links       :            0
+  Solver      : PARDISO
+  Load type   : LOAD
+  Output      : VTK
+ 
+  Analysis blocks:
+   Block   1 type=static nincs=     1
+ 
+  Materials:
+   Mat   1 name=Concrete with damage type=MECHANICAL
+ =============================================
+ validate_problem: all checks passed
+ 
+ Input OK. Starting analysis...
+  ndimn=2, npoin=9, ntotv=18
+ 
+  === Block 1 / 1
+  iffix: free=14, BC=4, inactive=0
+  Neq = 14
+  NNZ = 136
+  Inc 1 Step 1
+    iter   1  R_force= 1.000E+00  resid= 2.449E+06
+    iter   2  R_force= 3.552E-16  R_disp= 1.000E+00  R_energy= 2.248E-16
+  Converged in 2 iterations
+  Max |Ux| =   3.1182E-05
+  Max |Uy| =   1.5554E-04
+  Max |sxx| =   1.2878E-09
+  Max |syy| =   2.0000E+06
+  Results written to ./1_easy.flavia.res
+  VTU: ./1_easy_b1.vtu
+  Restart saved: ./1_easy.rst
+ 
+ Analysis completed successfully.

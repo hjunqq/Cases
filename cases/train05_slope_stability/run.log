@@ -1,0 +1,3898 @@
+ time: 09:03:40
+ Input the problem name?
+ NPOIN  npoinb NELEM  NDIMN  NMATS  NGROUP NTLINK outplot KSTAB MAT_curve meshc 
+ r
+         322         322         285           2           4           4
+           0 GIDR                   1.00000000000000                0
+           0           0           0           0           0
+ NINIT                                                                          
+  
+           0           0           0           1           0           0
+           0           0           0           0           0 
+ FIX                                                          0           0
+           0           0           0           0           0
+ outinpunit=          37 outindunit=          54
+ TYPE_PROBLEM                                                                   
+  
+ Q                                                 
+ PARDISO                                           
+ LOAD                                                         4           0
+           0           0
+ type_layer1                                                                    
+  
+ NMASS                                                                          
+  
+         999         999         999         999         999           0
+         999           0         999           0           0
+ nfreeflownode                                                                  
+  
+ NTSMAT                                                                         
+  
+         999         999           0           0           0
+ lgroup=           1 neface=          10 node_face=           2
+ beeta1,beeta2,theta1=  0.500000000000000       0.250000000000000     
+   1.00000000000000     
+ equvs_process(1:ngroup)                                                        
+  
+ appear_level(1:ngroup)                                                         
+  
+ APPEAR_PROCESS(1-nblks                                                         
+  
+ appear_process=           1           1           1           1
+ MATNO_PROCESS(1-nblks                                                          
+  
+ iblks=           0 ngroup=           4 matno=           1           2
+           3           4
+ force_process=           0           0           0           0
+ uinitial=           0
+ 1-ILINKS(I0                                                                    
+  
+ 1-tLINKS(I0                                                                    
+  
+ text1=
+ 1-NGROUP--GROUP INFORMATION                                                    
+  
+                (3) for each field: nfdof-number of freedom,listdof(1:nfdof)    
+  
+ igroup=           1
+ name=q4        
+ igroup=           2
+ name=q4        
+ igroup=           3
+ name=q4        
+ igroup=           4
+ name=q4        
+ tne=         285
+ text_tension_joint=
+ tension_joint                                                                  
+  
+ text_tension_contact=
+ contact_joint                                                                  
+  
+ ground_inf=           0 /100=           0
+ nblks=           1
+ Input runblks, =?
+ time: 09:03:40
+ MATERIAL                                                                       
+  
+ NAME                                                                           
+  
+ FIRST:NAME---MECHANICAL                                                        
+  
+ FOR                                                                            
+  
+ NUMBER                                                                         
+  
+ FOR                                                                            
+  
+ FOR                                                                            
+  
+ FOR                                                                            
+  
+ CAMCLAY                                                                        
+  
+ FOR                                                                            
+  
+ jmat=           1
+ MECHANICAL                    SOLID                                    1
+ ELASTIC_ISOTROPIC                2000.00000000000        1.00000000000000     
+   1.00000000000000        10000000000.0000       0.350000000000000     
+  5.000000000000000E-006           0           0           0
+ jmat=           2
+ MECHANICAL                    SOLID                                    2
+ ELASTIC_ISOTROPIC                2000.00000000000        1.00000000000000     
+   1.00000000000000        10000000.0000000       0.495000000000000     
+  5.000000000000000E-006           0           0           0
+ jmat=           3
+ MECHANICAL                    SOLID                                    3
+ ELASTIC_ISOTROPIC                2000.00000000000        1.00000000000000     
+   1.00000000000000        10000000.0000000       0.495000000000000     
+  5.000000000000000E-006           0           0           0
+ jmat=           4
+ MECHANICAL                    SOLID                                    4
+ CLASSICALEP                      2000.00000000000        1.00000000000000     
+   1.00000000000000        10000000.0000000       0.495000000000000     
+  5.000000000000000E-006           0           0           0
+ ngaps                                                                          
+  
+ ngaps=           0
+ nrcsteel                                                                       
+  
+ nrcsteel=           0
+ nwcpipe                                                                        
+  
+ nwcpipe=           0
+ nifsgroup 
+ nifsgroup=           0
+ nabsfgroup
+ nabsfgroup=           0
+ nabssgroup
+ nabssgroup=           0
+ ifsnedge                                                                       
+                      
+ ifsnedge=           0
+ lblks=           0  blks_new=           1
+ lincs=           0  nincs=           0
+ lblks=           0  blks_new=           1
+ Bparameter=           0
+ lblks=           0 lincs=           0 ttime=  0.000000000000000E+000
+ ntime=           2 LINEAR                         0           2
+ ok waterlevel
+ nplgroup=           1
+ nedge=           0
+ iblks=           1 lineload=          12
+ iblks=           1
+ time: 09:03:40
+ a1
+ ifixset=           1 type_abc=
+ FIX                                               
+ ifixset=           2 type_abc=
+ FIX                                               
+ ifixset=           3 type_abc=
+ FIX                                               
+ outind=           0
+ edge_load_group     
+ edge_load_group=           0 delgroup=           0
+ gray=   9.81000000000000       0.000000000000000E+000  -1.00000000000000     
+  0.000000000000000E+000  -1.00000000000000     
+ tcurv=           0           0           0           0
+ ecwpipe=           0 iblks=           1 lblks+1=           1
+ ecwpipe=           0 iblks=           1 lblks+1=           1
+ 0         
+ ntedge=           0
+ 0         
+ npipe,algo_pipe=           0           0
+ linet=           8
+ time: 09:03:40
+ mtype                           
+          -2           4           0
+ isdefault                       
+           0
+ time: 09:03:40
+ time: 09:03:40
+  in static_U**
+ iincs=           1 lincs=           0
+ cwater,Qstatic=           0           0
+ istep=           1
+ outinp=           0
+ tcurvegravity=           0           0           0           0
+ ntelgroup=           0
+ Reordering completed ... 
+ Factorization completed ... 
+ time: 09:03:40
+                     istep=           1 iiter=           1
+                     conver_load check
+ resid=   1555006512.12400      retot=   1133063174874.97     
+ ratio1=  3.704580561342005E-002 ratio2=  1.665047285587004E-002
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           1
+ Factorization completed ... 
+ time: 09:03:40
+                     istep=           1 iiter=           2
+                     conver_load check
+ resid=   171103428553.493      retot=   1133073069396.73     
+ ratio1=  0.388597853411252      ratio2=  0.101635415376010     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           2
+ Factorization completed ... 
+ time: 09:03:40
+                     istep=           1 iiter=           3
+                     conver_load check
+ resid=   23180410556.9564      retot=   1133070595344.81     
+ ratio1=  0.143031626478584      ratio2=  6.080642725659441E-002
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           3
+ Factorization completed ... 
+ time: 09:03:40
+                     istep=           1 iiter=           4
+                     conver_load check
+ resid=   252261671423.680      retot=   1133071150518.17     
+ ratio1=  0.471842486100745      ratio2=  0.137086893222705     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           4
+ Factorization completed ... 
+ time: 09:03:40
+                     istep=           1 iiter=           5
+                     conver_load check
+ resid=   22505801823.3155      retot=   1133068693430.59     
+ ratio1=  0.140935086077133      ratio2=  5.927618594902396E-002
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           5
+ Factorization completed ... 
+ time: 09:03:40
+                     istep=           1 iiter=           6
+                     conver_load check
+ resid=   253221104215.043      retot=   1133068943415.83     
+ ratio1=  0.472739379829443      ratio2=  0.137326096741135     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           6
+ Factorization completed ... 
+ time: 09:03:40
+                     istep=           1 iiter=           7
+                     conver_load check
+ resid=   24501254612.8543      retot=   1133066172907.54     
+ ratio1=  0.147050506480166      ratio2=  6.363368403385952E-002
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           7
+ Factorization completed ... 
+ time: 09:03:40
+                     istep=           1 iiter=           8
+                     conver_load check
+ resid=   257323016430.438      retot=   1133069291055.87     
+ ratio1=  0.476552862131222      ratio2=  0.122317174314253     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           8
+ Factorization completed ... 
+ time: 09:03:40
+                     istep=           1 iiter=           9
+                     conver_load check
+ resid=   94696115725.0343      retot=   1133073699705.33     
+ ratio1=  0.289092618712564      ratio2=  0.147509406702346     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           9
+ Factorization completed ... 
+ time: 09:03:40
+                     istep=           1 iiter=          10
+                     conver_load check
+ resid=   367802823224.424      retot=   1133033192044.93     
+ ratio1=  0.569752465175967      ratio2=  0.182922131158817     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          10
+ Factorization completed ... 
+ time: 09:03:40
+                     istep=           1 iiter=          11
+                     conver_load check
+ resid=   401919410987.960      retot=   1133192111069.14     
+ ratio1=  0.595549301230181      ratio2=  0.248043101434881     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          11
+ Factorization completed ... 
+ time: 09:03:40
+                     istep=           1 iiter=          12
+                     conver_load check
+ resid=   599264540911.503      retot=   1132922466474.74     
+ ratio1=  0.727292645296695      ratio2=  0.351696840333548     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          12
+ Factorization completed ... 
+ time: 09:03:40
+                     istep=           1 iiter=          13
+                     conver_load check
+ resid=   870367977017.381      retot=   1134573165923.32     
+ ratio1=  0.875861018947163      ratio2=  0.338167296576567     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          13
+ Factorization completed ... 
+ time: 09:03:40
+                     istep=           1 iiter=          14
+                     conver_load check
+ resid=   771234018115.872      retot=   1132546333250.81     
+ ratio1=  0.825211173134259      ratio2=  0.326202893795707     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          14
+ Factorization completed ... 
+ time: 09:03:40
+                     istep=           1 iiter=          15
+                     conver_load check
+ resid=   1407829015529.51      retot=   1136967359507.25     
+ ratio1=   1.11275859485907      ratio2=  0.575968155751186     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          15
+ Factorization completed ... 
+ time: 09:03:40
+                     istep=           1 iiter=          16
+                     conver_load check
+ resid=   1207348269514.64      retot=   1132457226798.44     
+ ratio1=   1.03253641763791      ratio2=  0.334149864898000     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          16
+ Factorization completed ... 
+ time: 09:03:40
+                     istep=           1 iiter=          17
+                     conver_load check
+ resid=   1730292076857.55      retot=   1141368064318.06     
+ ratio1=   1.23125172280990      ratio2=  0.384800886859918     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          17
+ Factorization completed ... 
+ time: 09:03:40
+                     istep=           1 iiter=          18
+                     conver_load check
+ resid=   2061598625512.39      retot=   1132366200729.69     
+ ratio1=   1.34930027552243      ratio2=  0.582131068187934     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          18
+ Factorization completed ... 
+ time: 09:03:40
+                     istep=           1 iiter=          19
+                     conver_load check
+ resid=   2476827255208.77      retot=   1164675195738.52     
+ ratio1=   1.45829519846509      ratio2=  0.675573566456278     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          19
+ Factorization completed ... 
+ time: 09:03:40
+                     istep=           1 iiter=          20
+                     conver_load check
+ resid=   5219114545332.13      retot=   1132801888631.38     
+ ratio1=   2.14645324075651      ratio2=   1.06625811508283     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          20
+ ngvar in output=           7 nstre=           4
+ ***********RESTART FILE IS UPDATED!*******
+ istep=           2
+ outinp=           0
+ tcurvegravity=           0           0           0           0
+ ntelgroup=           0
+ Factorization completed ... 
+ time: 09:03:40
+                     istep=           2 iiter=           1
+                     conver_load check
+ resid=   1555006512.12400      retot=   1133063174874.97     
+ ratio1=  3.704580561342005E-002 ratio2=  1.665047285587004E-002
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           1
+ Factorization completed ... 
+ time: 09:03:40
+                     istep=           2 iiter=           2
+                     conver_load check
+ resid=   171103428553.493      retot=   1133073069396.73     
+ ratio1=  0.388597853411252      ratio2=  0.101635415376010     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           2
+ Factorization completed ... 
+ time: 09:03:40
+                     istep=           2 iiter=           3
+                     conver_load check
+ resid=   23180410556.9564      retot=   1133070595344.81     
+ ratio1=  0.143031626478584      ratio2=  6.080642725659441E-002
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           3
+ Factorization completed ... 
+ time: 09:03:40
+                     istep=           2 iiter=           4
+                     conver_load check
+ resid=   252261671423.680      retot=   1133071150518.17     
+ ratio1=  0.471842486100745      ratio2=  0.137086893222705     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           4
+ Factorization completed ... 
+ time: 09:03:40
+                     istep=           2 iiter=           5
+                     conver_load check
+ resid=   22505801823.3155      retot=   1133068693430.59     
+ ratio1=  0.140935086077133      ratio2=  5.927618594902396E-002
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           5
+ Factorization completed ... 
+ time: 09:03:40
+                     istep=           2 iiter=           6
+                     conver_load check
+ resid=   253221104215.043      retot=   1133068943415.83     
+ ratio1=  0.472739379829443      ratio2=  0.137326096741135     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           6
+ Factorization completed ... 
+ time: 09:03:40
+                     istep=           2 iiter=           7
+                     conver_load check
+ resid=   24501254612.8543      retot=   1133066172907.54     
+ ratio1=  0.147050506480166      ratio2=  6.363368403385952E-002
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           7
+ Factorization completed ... 
+ time: 09:03:40
+                     istep=           2 iiter=           8
+                     conver_load check
+ resid=   257323016430.438      retot=   1133069291055.87     
+ ratio1=  0.476552862131222      ratio2=  0.122317174314253     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           8
+ Factorization completed ... 
+ time: 09:03:40
+                     istep=           2 iiter=           9
+                     conver_load check
+ resid=   94696115725.0343      retot=   1133073699705.33     
+ ratio1=  0.289092618712564      ratio2=  0.147509406702346     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           9
+ Factorization completed ... 
+ time: 09:03:40
+                     istep=           2 iiter=          10
+                     conver_load check
+ resid=   367802823224.424      retot=   1133033192044.93     
+ ratio1=  0.569752465175967      ratio2=  0.182922131158817     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          10
+ Factorization completed ... 
+ time: 09:03:40
+                     istep=           2 iiter=          11
+                     conver_load check
+ resid=   401919410987.960      retot=   1133192111069.14     
+ ratio1=  0.595549301230181      ratio2=  0.248043101434881     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          11
+ Factorization completed ... 
+ time: 09:03:40
+                     istep=           2 iiter=          12
+                     conver_load check
+ resid=   599264540911.503      retot=   1132922466474.74     
+ ratio1=  0.727292645296695      ratio2=  0.351696840333548     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          12
+ Factorization completed ... 
+ time: 09:03:40
+                     istep=           2 iiter=          13
+                     conver_load check
+ resid=   870367977017.381      retot=   1134573165923.32     
+ ratio1=  0.875861018947163      ratio2=  0.338167296576567     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          13
+ Factorization completed ... 
+ time: 09:03:40
+                     istep=           2 iiter=          14
+                     conver_load check
+ resid=   771234018115.872      retot=   1132546333250.81     
+ ratio1=  0.825211173134259      ratio2=  0.326202893795707     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          14
+ Factorization completed ... 
+ time: 09:03:40
+                     istep=           2 iiter=          15
+                     conver_load check
+ resid=   1407829015529.51      retot=   1136967359507.25     
+ ratio1=   1.11275859485907      ratio2=  0.575968155751186     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          15
+ Factorization completed ... 
+ time: 09:03:40
+                     istep=           2 iiter=          16
+                     conver_load check
+ resid=   1207348269514.64      retot=   1132457226798.44     
+ ratio1=   1.03253641763791      ratio2=  0.334149864898000     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          16
+ Factorization completed ... 
+ time: 09:03:40
+                     istep=           2 iiter=          17
+                     conver_load check
+ resid=   1730292076857.55      retot=   1141368064318.06     
+ ratio1=   1.23125172280990      ratio2=  0.384800886859918     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          17
+ Factorization completed ... 
+ time: 09:03:40
+                     istep=           2 iiter=          18
+                     conver_load check
+ resid=   2061598625512.39      retot=   1132366200729.69     
+ ratio1=   1.34930027552243      ratio2=  0.582131068187934     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          18
+ Factorization completed ... 
+ time: 09:03:40
+                     istep=           2 iiter=          19
+                     conver_load check
+ resid=   2476827255208.77      retot=   1164675195738.52     
+ ratio1=   1.45829519846509      ratio2=  0.675573566456278     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          19
+ Factorization completed ... 
+ time: 09:03:40
+                     istep=           2 iiter=          20
+                     conver_load check
+ resid=   5219114545332.13      retot=   1132801888631.38     
+ ratio1=   2.14645324075651      ratio2=   1.06625811508283     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          20
+ ngvar in output=           7 nstre=           4
+ ***********RESTART FILE IS UPDATED!*******
+ istep=           3
+ outinp=           0
+ tcurvegravity=           0           0           0           0
+ ntelgroup=           0
+ Factorization completed ... 
+ time: 09:03:40
+                     istep=           3 iiter=           1
+                     conver_load check
+ resid=   1555006512.12400      retot=   1133063174874.97     
+ ratio1=  3.704580561342005E-002 ratio2=  1.665047285587004E-002
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           1
+ Factorization completed ... 
+ time: 09:03:40
+                     istep=           3 iiter=           2
+                     conver_load check
+ resid=   171103428553.493      retot=   1133073069396.73     
+ ratio1=  0.388597853411252      ratio2=  0.101635415376010     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           2
+ Factorization completed ... 
+ time: 09:03:40
+                     istep=           3 iiter=           3
+                     conver_load check
+ resid=   23180410556.9564      retot=   1133070595344.81     
+ ratio1=  0.143031626478584      ratio2=  6.080642725659441E-002
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           3
+ Factorization completed ... 
+ time: 09:03:40
+                     istep=           3 iiter=           4
+                     conver_load check
+ resid=   252261671423.680      retot=   1133071150518.17     
+ ratio1=  0.471842486100745      ratio2=  0.137086893222705     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           4
+ Factorization completed ... 
+ time: 09:03:40
+                     istep=           3 iiter=           5
+                     conver_load check
+ resid=   22505801823.3155      retot=   1133068693430.59     
+ ratio1=  0.140935086077133      ratio2=  5.927618594902396E-002
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           5
+ Factorization completed ... 
+ time: 09:03:40
+                     istep=           3 iiter=           6
+                     conver_load check
+ resid=   253221104215.043      retot=   1133068943415.83     
+ ratio1=  0.472739379829443      ratio2=  0.137326096741135     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           6
+ Factorization completed ... 
+ time: 09:03:40
+                     istep=           3 iiter=           7
+                     conver_load check
+ resid=   24501254612.8543      retot=   1133066172907.54     
+ ratio1=  0.147050506480166      ratio2=  6.363368403385952E-002
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           7
+ Factorization completed ... 
+ time: 09:03:40
+                     istep=           3 iiter=           8
+                     conver_load check
+ resid=   257323016430.438      retot=   1133069291055.87     
+ ratio1=  0.476552862131222      ratio2=  0.122317174314253     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           8
+ Factorization completed ... 
+ time: 09:03:40
+                     istep=           3 iiter=           9
+                     conver_load check
+ resid=   94696115725.0343      retot=   1133073699705.33     
+ ratio1=  0.289092618712564      ratio2=  0.147509406702346     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           9
+ Factorization completed ... 
+ time: 09:03:40
+                     istep=           3 iiter=          10
+                     conver_load check
+ resid=   367802823224.424      retot=   1133033192044.93     
+ ratio1=  0.569752465175967      ratio2=  0.182922131158817     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          10
+ Factorization completed ... 
+ time: 09:03:40
+                     istep=           3 iiter=          11
+                     conver_load check
+ resid=   401919410987.960      retot=   1133192111069.14     
+ ratio1=  0.595549301230181      ratio2=  0.248043101434881     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          11
+ Factorization completed ... 
+ time: 09:03:40
+                     istep=           3 iiter=          12
+                     conver_load check
+ resid=   599264540911.503      retot=   1132922466474.74     
+ ratio1=  0.727292645296695      ratio2=  0.351696840333548     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          12
+ Factorization completed ... 
+ time: 09:03:40
+                     istep=           3 iiter=          13
+                     conver_load check
+ resid=   870367977017.381      retot=   1134573165923.32     
+ ratio1=  0.875861018947163      ratio2=  0.338167296576567     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          13
+ Factorization completed ... 
+ time: 09:03:40
+                     istep=           3 iiter=          14
+                     conver_load check
+ resid=   771234018115.872      retot=   1132546333250.81     
+ ratio1=  0.825211173134259      ratio2=  0.326202893795707     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          14
+ Factorization completed ... 
+ time: 09:03:40
+                     istep=           3 iiter=          15
+                     conver_load check
+ resid=   1407829015529.51      retot=   1136967359507.25     
+ ratio1=   1.11275859485907      ratio2=  0.575968155751186     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          15
+ Factorization completed ... 
+ time: 09:03:40
+                     istep=           3 iiter=          16
+                     conver_load check
+ resid=   1207348269514.64      retot=   1132457226798.44     
+ ratio1=   1.03253641763791      ratio2=  0.334149864898000     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          16
+ Factorization completed ... 
+ time: 09:03:40
+                     istep=           3 iiter=          17
+                     conver_load check
+ resid=   1730292076857.55      retot=   1141368064318.06     
+ ratio1=   1.23125172280990      ratio2=  0.384800886859918     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          17
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=           3 iiter=          18
+                     conver_load check
+ resid=   2061598625512.39      retot=   1132366200729.69     
+ ratio1=   1.34930027552243      ratio2=  0.582131068187934     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          18
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=           3 iiter=          19
+                     conver_load check
+ resid=   2476827255208.77      retot=   1164675195738.52     
+ ratio1=   1.45829519846509      ratio2=  0.675573566456278     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          19
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=           3 iiter=          20
+                     conver_load check
+ resid=   5219114545332.13      retot=   1132801888631.38     
+ ratio1=   2.14645324075651      ratio2=   1.06625811508283     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          20
+ ngvar in output=           7 nstre=           4
+ ***********RESTART FILE IS UPDATED!*******
+ istep=           4
+ outinp=           0
+ tcurvegravity=           0           0           0           0
+ ntelgroup=           0
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=           4 iiter=           1
+                     conver_load check
+ resid=   1555006512.12400      retot=   1133063174874.97     
+ ratio1=  3.704580561342005E-002 ratio2=  1.665047285587004E-002
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           1
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=           4 iiter=           2
+                     conver_load check
+ resid=   171103428553.493      retot=   1133073069396.73     
+ ratio1=  0.388597853411252      ratio2=  0.101635415376010     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           2
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=           4 iiter=           3
+                     conver_load check
+ resid=   23180410556.9564      retot=   1133070595344.81     
+ ratio1=  0.143031626478584      ratio2=  6.080642725659441E-002
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           3
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=           4 iiter=           4
+                     conver_load check
+ resid=   252261671423.680      retot=   1133071150518.17     
+ ratio1=  0.471842486100745      ratio2=  0.137086893222705     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           4
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=           4 iiter=           5
+                     conver_load check
+ resid=   22505801823.3155      retot=   1133068693430.59     
+ ratio1=  0.140935086077133      ratio2=  5.927618594902396E-002
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           5
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=           4 iiter=           6
+                     conver_load check
+ resid=   253221104215.043      retot=   1133068943415.83     
+ ratio1=  0.472739379829443      ratio2=  0.137326096741135     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           6
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=           4 iiter=           7
+                     conver_load check
+ resid=   24501254612.8543      retot=   1133066172907.54     
+ ratio1=  0.147050506480166      ratio2=  6.363368403385952E-002
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           7
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=           4 iiter=           8
+                     conver_load check
+ resid=   257323016430.438      retot=   1133069291055.87     
+ ratio1=  0.476552862131222      ratio2=  0.122317174314253     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           8
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=           4 iiter=           9
+                     conver_load check
+ resid=   94696115725.0343      retot=   1133073699705.33     
+ ratio1=  0.289092618712564      ratio2=  0.147509406702346     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           9
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=           4 iiter=          10
+                     conver_load check
+ resid=   367802823224.424      retot=   1133033192044.93     
+ ratio1=  0.569752465175967      ratio2=  0.182922131158817     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          10
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=           4 iiter=          11
+                     conver_load check
+ resid=   401919410987.960      retot=   1133192111069.14     
+ ratio1=  0.595549301230181      ratio2=  0.248043101434881     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          11
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=           4 iiter=          12
+                     conver_load check
+ resid=   599264540911.503      retot=   1132922466474.74     
+ ratio1=  0.727292645296695      ratio2=  0.351696840333548     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          12
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=           4 iiter=          13
+                     conver_load check
+ resid=   870367977017.381      retot=   1134573165923.32     
+ ratio1=  0.875861018947163      ratio2=  0.338167296576567     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          13
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=           4 iiter=          14
+                     conver_load check
+ resid=   771234018115.872      retot=   1132546333250.81     
+ ratio1=  0.825211173134259      ratio2=  0.326202893795707     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          14
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=           4 iiter=          15
+                     conver_load check
+ resid=   1407829015529.51      retot=   1136967359507.25     
+ ratio1=   1.11275859485907      ratio2=  0.575968155751186     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          15
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=           4 iiter=          16
+                     conver_load check
+ resid=   1207348269514.64      retot=   1132457226798.44     
+ ratio1=   1.03253641763791      ratio2=  0.334149864898000     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          16
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=           4 iiter=          17
+                     conver_load check
+ resid=   1730292076857.55      retot=   1141368064318.06     
+ ratio1=   1.23125172280990      ratio2=  0.384800886859918     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          17
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=           4 iiter=          18
+                     conver_load check
+ resid=   2061598625512.39      retot=   1132366200729.69     
+ ratio1=   1.34930027552243      ratio2=  0.582131068187934     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          18
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=           4 iiter=          19
+                     conver_load check
+ resid=   2476827255208.77      retot=   1164675195738.52     
+ ratio1=   1.45829519846509      ratio2=  0.675573566456278     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          19
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=           4 iiter=          20
+                     conver_load check
+ resid=   5219114545332.13      retot=   1132801888631.38     
+ ratio1=   2.14645324075651      ratio2=   1.06625811508283     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          20
+ ngvar in output=           7 nstre=           4
+ ***********RESTART FILE IS UPDATED!*******
+ istep=           5
+ outinp=           0
+ tcurvegravity=           0           0           0           0
+ ntelgroup=           0
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=           5 iiter=           1
+                     conver_load check
+ resid=   1555006512.12400      retot=   1133063174874.97     
+ ratio1=  3.704580561342005E-002 ratio2=  1.665047285587004E-002
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           1
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=           5 iiter=           2
+                     conver_load check
+ resid=   171103428553.493      retot=   1133073069396.73     
+ ratio1=  0.388597853411252      ratio2=  0.101635415376010     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           2
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=           5 iiter=           3
+                     conver_load check
+ resid=   23180410556.9564      retot=   1133070595344.81     
+ ratio1=  0.143031626478584      ratio2=  6.080642725659441E-002
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           3
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=           5 iiter=           4
+                     conver_load check
+ resid=   252261671423.680      retot=   1133071150518.17     
+ ratio1=  0.471842486100745      ratio2=  0.137086893222705     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           4
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=           5 iiter=           5
+                     conver_load check
+ resid=   22505801823.3155      retot=   1133068693430.59     
+ ratio1=  0.140935086077133      ratio2=  5.927618594902396E-002
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           5
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=           5 iiter=           6
+                     conver_load check
+ resid=   253221104215.043      retot=   1133068943415.83     
+ ratio1=  0.472739379829443      ratio2=  0.137326096741135     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           6
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=           5 iiter=           7
+                     conver_load check
+ resid=   24501254612.8543      retot=   1133066172907.54     
+ ratio1=  0.147050506480166      ratio2=  6.363368403385952E-002
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           7
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=           5 iiter=           8
+                     conver_load check
+ resid=   257323016430.438      retot=   1133069291055.87     
+ ratio1=  0.476552862131222      ratio2=  0.122317174314253     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           8
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=           5 iiter=           9
+                     conver_load check
+ resid=   94696115725.0343      retot=   1133073699705.33     
+ ratio1=  0.289092618712564      ratio2=  0.147509406702346     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           9
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=           5 iiter=          10
+                     conver_load check
+ resid=   367802823224.424      retot=   1133033192044.93     
+ ratio1=  0.569752465175967      ratio2=  0.182922131158817     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          10
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=           5 iiter=          11
+                     conver_load check
+ resid=   401919410987.960      retot=   1133192111069.14     
+ ratio1=  0.595549301230181      ratio2=  0.248043101434881     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          11
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=           5 iiter=          12
+                     conver_load check
+ resid=   599264540911.503      retot=   1132922466474.74     
+ ratio1=  0.727292645296695      ratio2=  0.351696840333548     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          12
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=           5 iiter=          13
+                     conver_load check
+ resid=   870367977017.381      retot=   1134573165923.32     
+ ratio1=  0.875861018947163      ratio2=  0.338167296576567     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          13
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=           5 iiter=          14
+                     conver_load check
+ resid=   771234018115.872      retot=   1132546333250.81     
+ ratio1=  0.825211173134259      ratio2=  0.326202893795707     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          14
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=           5 iiter=          15
+                     conver_load check
+ resid=   1407829015529.51      retot=   1136967359507.25     
+ ratio1=   1.11275859485907      ratio2=  0.575968155751186     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          15
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=           5 iiter=          16
+                     conver_load check
+ resid=   1207348269514.64      retot=   1132457226798.44     
+ ratio1=   1.03253641763791      ratio2=  0.334149864898000     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          16
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=           5 iiter=          17
+                     conver_load check
+ resid=   1730292076857.55      retot=   1141368064318.06     
+ ratio1=   1.23125172280990      ratio2=  0.384800886859918     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          17
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=           5 iiter=          18
+                     conver_load check
+ resid=   2061598625512.39      retot=   1132366200729.69     
+ ratio1=   1.34930027552243      ratio2=  0.582131068187934     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          18
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=           5 iiter=          19
+                     conver_load check
+ resid=   2476827255208.77      retot=   1164675195738.52     
+ ratio1=   1.45829519846509      ratio2=  0.675573566456278     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          19
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=           5 iiter=          20
+                     conver_load check
+ resid=   5219114545332.13      retot=   1132801888631.38     
+ ratio1=   2.14645324075651      ratio2=   1.06625811508283     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          20
+ ngvar in output=           7 nstre=           4
+ ***********RESTART FILE IS UPDATED!*******
+ istep=           6
+ outinp=           0
+ tcurvegravity=           0           0           0           0
+ ntelgroup=           0
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=           6 iiter=           1
+                     conver_load check
+ resid=   1555006512.12400      retot=   1133063174874.97     
+ ratio1=  3.704580561342005E-002 ratio2=  1.665047285587004E-002
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           1
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=           6 iiter=           2
+                     conver_load check
+ resid=   171103428553.493      retot=   1133073069396.73     
+ ratio1=  0.388597853411252      ratio2=  0.101635415376010     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           2
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=           6 iiter=           3
+                     conver_load check
+ resid=   23180410556.9564      retot=   1133070595344.81     
+ ratio1=  0.143031626478584      ratio2=  6.080642725659441E-002
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           3
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=           6 iiter=           4
+                     conver_load check
+ resid=   252261671423.680      retot=   1133071150518.17     
+ ratio1=  0.471842486100745      ratio2=  0.137086893222705     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           4
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=           6 iiter=           5
+                     conver_load check
+ resid=   22505801823.3155      retot=   1133068693430.59     
+ ratio1=  0.140935086077133      ratio2=  5.927618594902396E-002
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           5
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=           6 iiter=           6
+                     conver_load check
+ resid=   253221104215.043      retot=   1133068943415.83     
+ ratio1=  0.472739379829443      ratio2=  0.137326096741135     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           6
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=           6 iiter=           7
+                     conver_load check
+ resid=   24501254612.8543      retot=   1133066172907.54     
+ ratio1=  0.147050506480166      ratio2=  6.363368403385952E-002
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           7
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=           6 iiter=           8
+                     conver_load check
+ resid=   257323016430.438      retot=   1133069291055.87     
+ ratio1=  0.476552862131222      ratio2=  0.122317174314253     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           8
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=           6 iiter=           9
+                     conver_load check
+ resid=   94696115725.0343      retot=   1133073699705.33     
+ ratio1=  0.289092618712564      ratio2=  0.147509406702346     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           9
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=           6 iiter=          10
+                     conver_load check
+ resid=   367802823224.424      retot=   1133033192044.93     
+ ratio1=  0.569752465175967      ratio2=  0.182922131158817     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          10
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=           6 iiter=          11
+                     conver_load check
+ resid=   401919410987.960      retot=   1133192111069.14     
+ ratio1=  0.595549301230181      ratio2=  0.248043101434881     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          11
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=           6 iiter=          12
+                     conver_load check
+ resid=   599264540911.503      retot=   1132922466474.74     
+ ratio1=  0.727292645296695      ratio2=  0.351696840333548     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          12
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=           6 iiter=          13
+                     conver_load check
+ resid=   870367977017.381      retot=   1134573165923.32     
+ ratio1=  0.875861018947163      ratio2=  0.338167296576567     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          13
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=           6 iiter=          14
+                     conver_load check
+ resid=   771234018115.872      retot=   1132546333250.81     
+ ratio1=  0.825211173134259      ratio2=  0.326202893795707     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          14
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=           6 iiter=          15
+                     conver_load check
+ resid=   1407829015529.51      retot=   1136967359507.25     
+ ratio1=   1.11275859485907      ratio2=  0.575968155751186     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          15
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=           6 iiter=          16
+                     conver_load check
+ resid=   1207348269514.64      retot=   1132457226798.44     
+ ratio1=   1.03253641763791      ratio2=  0.334149864898000     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          16
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=           6 iiter=          17
+                     conver_load check
+ resid=   1730292076857.55      retot=   1141368064318.06     
+ ratio1=   1.23125172280990      ratio2=  0.384800886859918     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          17
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=           6 iiter=          18
+                     conver_load check
+ resid=   2061598625512.39      retot=   1132366200729.69     
+ ratio1=   1.34930027552243      ratio2=  0.582131068187934     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          18
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=           6 iiter=          19
+                     conver_load check
+ resid=   2476827255208.77      retot=   1164675195738.52     
+ ratio1=   1.45829519846509      ratio2=  0.675573566456278     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          19
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=           6 iiter=          20
+                     conver_load check
+ resid=   5219114545332.13      retot=   1132801888631.38     
+ ratio1=   2.14645324075651      ratio2=   1.06625811508283     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          20
+ ngvar in output=           7 nstre=           4
+ ***********RESTART FILE IS UPDATED!*******
+ istep=           7
+ outinp=           0
+ tcurvegravity=           0           0           0           0
+ ntelgroup=           0
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=           7 iiter=           1
+                     conver_load check
+ resid=   1555006512.12400      retot=   1133063174874.97     
+ ratio1=  3.704580561342005E-002 ratio2=  1.665047285587004E-002
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           1
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=           7 iiter=           2
+                     conver_load check
+ resid=   171103428553.493      retot=   1133073069396.73     
+ ratio1=  0.388597853411252      ratio2=  0.101635415376010     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           2
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=           7 iiter=           3
+                     conver_load check
+ resid=   23180410556.9564      retot=   1133070595344.81     
+ ratio1=  0.143031626478584      ratio2=  6.080642725659441E-002
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           3
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=           7 iiter=           4
+                     conver_load check
+ resid=   252261671423.680      retot=   1133071150518.17     
+ ratio1=  0.471842486100745      ratio2=  0.137086893222705     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           4
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=           7 iiter=           5
+                     conver_load check
+ resid=   22505801823.3155      retot=   1133068693430.59     
+ ratio1=  0.140935086077133      ratio2=  5.927618594902396E-002
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           5
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=           7 iiter=           6
+                     conver_load check
+ resid=   253221104215.043      retot=   1133068943415.83     
+ ratio1=  0.472739379829443      ratio2=  0.137326096741135     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           6
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=           7 iiter=           7
+                     conver_load check
+ resid=   24501254612.8543      retot=   1133066172907.54     
+ ratio1=  0.147050506480166      ratio2=  6.363368403385952E-002
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           7
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=           7 iiter=           8
+                     conver_load check
+ resid=   257323016430.438      retot=   1133069291055.87     
+ ratio1=  0.476552862131222      ratio2=  0.122317174314253     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           8
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=           7 iiter=           9
+                     conver_load check
+ resid=   94696115725.0343      retot=   1133073699705.33     
+ ratio1=  0.289092618712564      ratio2=  0.147509406702346     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           9
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=           7 iiter=          10
+                     conver_load check
+ resid=   367802823224.424      retot=   1133033192044.93     
+ ratio1=  0.569752465175967      ratio2=  0.182922131158817     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          10
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=           7 iiter=          11
+                     conver_load check
+ resid=   401919410987.960      retot=   1133192111069.14     
+ ratio1=  0.595549301230181      ratio2=  0.248043101434881     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          11
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=           7 iiter=          12
+                     conver_load check
+ resid=   599264540911.503      retot=   1132922466474.74     
+ ratio1=  0.727292645296695      ratio2=  0.351696840333548     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          12
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=           7 iiter=          13
+                     conver_load check
+ resid=   870367977017.381      retot=   1134573165923.32     
+ ratio1=  0.875861018947163      ratio2=  0.338167296576567     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          13
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=           7 iiter=          14
+                     conver_load check
+ resid=   771234018115.872      retot=   1132546333250.81     
+ ratio1=  0.825211173134259      ratio2=  0.326202893795707     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          14
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=           7 iiter=          15
+                     conver_load check
+ resid=   1407829015529.51      retot=   1136967359507.25     
+ ratio1=   1.11275859485907      ratio2=  0.575968155751186     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          15
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=           7 iiter=          16
+                     conver_load check
+ resid=   1207348269514.64      retot=   1132457226798.44     
+ ratio1=   1.03253641763791      ratio2=  0.334149864898000     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          16
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=           7 iiter=          17
+                     conver_load check
+ resid=   1730292076857.55      retot=   1141368064318.06     
+ ratio1=   1.23125172280990      ratio2=  0.384800886859918     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          17
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=           7 iiter=          18
+                     conver_load check
+ resid=   2061598625512.39      retot=   1132366200729.69     
+ ratio1=   1.34930027552243      ratio2=  0.582131068187934     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          18
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=           7 iiter=          19
+                     conver_load check
+ resid=   2476827255208.77      retot=   1164675195738.52     
+ ratio1=   1.45829519846509      ratio2=  0.675573566456278     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          19
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=           7 iiter=          20
+                     conver_load check
+ resid=   5219114545332.13      retot=   1132801888631.38     
+ ratio1=   2.14645324075651      ratio2=   1.06625811508283     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          20
+ ngvar in output=           7 nstre=           4
+ ***********RESTART FILE IS UPDATED!*******
+ istep=           8
+ outinp=           0
+ tcurvegravity=           0           0           0           0
+ ntelgroup=           0
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=           8 iiter=           1
+                     conver_load check
+ resid=   1555006512.12400      retot=   1133063174874.97     
+ ratio1=  3.704580561342005E-002 ratio2=  1.665047285587004E-002
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           1
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=           8 iiter=           2
+                     conver_load check
+ resid=   171103428553.493      retot=   1133073069396.73     
+ ratio1=  0.388597853411252      ratio2=  0.101635415376010     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           2
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=           8 iiter=           3
+                     conver_load check
+ resid=   23180410556.9564      retot=   1133070595344.81     
+ ratio1=  0.143031626478584      ratio2=  6.080642725659441E-002
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           3
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=           8 iiter=           4
+                     conver_load check
+ resid=   252261671423.680      retot=   1133071150518.17     
+ ratio1=  0.471842486100745      ratio2=  0.137086893222705     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           4
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=           8 iiter=           5
+                     conver_load check
+ resid=   22505801823.3155      retot=   1133068693430.59     
+ ratio1=  0.140935086077133      ratio2=  5.927618594902396E-002
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           5
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=           8 iiter=           6
+                     conver_load check
+ resid=   253221104215.043      retot=   1133068943415.83     
+ ratio1=  0.472739379829443      ratio2=  0.137326096741135     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           6
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=           8 iiter=           7
+                     conver_load check
+ resid=   24501254612.8543      retot=   1133066172907.54     
+ ratio1=  0.147050506480166      ratio2=  6.363368403385952E-002
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           7
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=           8 iiter=           8
+                     conver_load check
+ resid=   257323016430.438      retot=   1133069291055.87     
+ ratio1=  0.476552862131222      ratio2=  0.122317174314253     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           8
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=           8 iiter=           9
+                     conver_load check
+ resid=   94696115725.0343      retot=   1133073699705.33     
+ ratio1=  0.289092618712564      ratio2=  0.147509406702346     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           9
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=           8 iiter=          10
+                     conver_load check
+ resid=   367802823224.424      retot=   1133033192044.93     
+ ratio1=  0.569752465175967      ratio2=  0.182922131158817     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          10
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=           8 iiter=          11
+                     conver_load check
+ resid=   401919410987.960      retot=   1133192111069.14     
+ ratio1=  0.595549301230181      ratio2=  0.248043101434881     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          11
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=           8 iiter=          12
+                     conver_load check
+ resid=   599264540911.503      retot=   1132922466474.74     
+ ratio1=  0.727292645296695      ratio2=  0.351696840333548     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          12
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=           8 iiter=          13
+                     conver_load check
+ resid=   870367977017.381      retot=   1134573165923.32     
+ ratio1=  0.875861018947163      ratio2=  0.338167296576567     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          13
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=           8 iiter=          14
+                     conver_load check
+ resid=   771234018115.872      retot=   1132546333250.81     
+ ratio1=  0.825211173134259      ratio2=  0.326202893795707     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          14
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=           8 iiter=          15
+                     conver_load check
+ resid=   1407829015529.51      retot=   1136967359507.25     
+ ratio1=   1.11275859485907      ratio2=  0.575968155751186     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          15
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=           8 iiter=          16
+                     conver_load check
+ resid=   1207348269514.64      retot=   1132457226798.44     
+ ratio1=   1.03253641763791      ratio2=  0.334149864898000     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          16
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=           8 iiter=          17
+                     conver_load check
+ resid=   1730292076857.55      retot=   1141368064318.06     
+ ratio1=   1.23125172280990      ratio2=  0.384800886859918     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          17
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=           8 iiter=          18
+                     conver_load check
+ resid=   2061598625512.39      retot=   1132366200729.69     
+ ratio1=   1.34930027552243      ratio2=  0.582131068187934     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          18
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=           8 iiter=          19
+                     conver_load check
+ resid=   2476827255208.77      retot=   1164675195738.52     
+ ratio1=   1.45829519846509      ratio2=  0.675573566456278     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          19
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=           8 iiter=          20
+                     conver_load check
+ resid=   5219114545332.13      retot=   1132801888631.38     
+ ratio1=   2.14645324075651      ratio2=   1.06625811508283     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          20
+ ngvar in output=           7 nstre=           4
+ ***********RESTART FILE IS UPDATED!*******
+ istep=           9
+ outinp=           0
+ tcurvegravity=           0           0           0           0
+ ntelgroup=           0
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=           9 iiter=           1
+                     conver_load check
+ resid=   1555006512.12400      retot=   1133063174874.97     
+ ratio1=  3.704580561342005E-002 ratio2=  1.665047285587004E-002
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           1
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=           9 iiter=           2
+                     conver_load check
+ resid=   171103428553.493      retot=   1133073069396.73     
+ ratio1=  0.388597853411252      ratio2=  0.101635415376010     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           2
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=           9 iiter=           3
+                     conver_load check
+ resid=   23180410556.9564      retot=   1133070595344.81     
+ ratio1=  0.143031626478584      ratio2=  6.080642725659441E-002
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           3
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=           9 iiter=           4
+                     conver_load check
+ resid=   252261671423.680      retot=   1133071150518.17     
+ ratio1=  0.471842486100745      ratio2=  0.137086893222705     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           4
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=           9 iiter=           5
+                     conver_load check
+ resid=   22505801823.3155      retot=   1133068693430.59     
+ ratio1=  0.140935086077133      ratio2=  5.927618594902396E-002
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           5
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=           9 iiter=           6
+                     conver_load check
+ resid=   253221104215.043      retot=   1133068943415.83     
+ ratio1=  0.472739379829443      ratio2=  0.137326096741135     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           6
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=           9 iiter=           7
+                     conver_load check
+ resid=   24501254612.8543      retot=   1133066172907.54     
+ ratio1=  0.147050506480166      ratio2=  6.363368403385952E-002
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           7
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=           9 iiter=           8
+                     conver_load check
+ resid=   257323016430.438      retot=   1133069291055.87     
+ ratio1=  0.476552862131222      ratio2=  0.122317174314253     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           8
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=           9 iiter=           9
+                     conver_load check
+ resid=   94696115725.0343      retot=   1133073699705.33     
+ ratio1=  0.289092618712564      ratio2=  0.147509406702346     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           9
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=           9 iiter=          10
+                     conver_load check
+ resid=   367802823224.424      retot=   1133033192044.93     
+ ratio1=  0.569752465175967      ratio2=  0.182922131158817     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          10
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=           9 iiter=          11
+                     conver_load check
+ resid=   401919410987.960      retot=   1133192111069.14     
+ ratio1=  0.595549301230181      ratio2=  0.248043101434881     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          11
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=           9 iiter=          12
+                     conver_load check
+ resid=   599264540911.503      retot=   1132922466474.74     
+ ratio1=  0.727292645296695      ratio2=  0.351696840333548     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          12
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=           9 iiter=          13
+                     conver_load check
+ resid=   870367977017.381      retot=   1134573165923.32     
+ ratio1=  0.875861018947163      ratio2=  0.338167296576567     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          13
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=           9 iiter=          14
+                     conver_load check
+ resid=   771234018115.872      retot=   1132546333250.81     
+ ratio1=  0.825211173134259      ratio2=  0.326202893795707     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          14
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=           9 iiter=          15
+                     conver_load check
+ resid=   1407829015529.51      retot=   1136967359507.25     
+ ratio1=   1.11275859485907      ratio2=  0.575968155751186     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          15
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=           9 iiter=          16
+                     conver_load check
+ resid=   1207348269514.64      retot=   1132457226798.44     
+ ratio1=   1.03253641763791      ratio2=  0.334149864898000     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          16
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=           9 iiter=          17
+                     conver_load check
+ resid=   1730292076857.55      retot=   1141368064318.06     
+ ratio1=   1.23125172280990      ratio2=  0.384800886859918     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          17
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=           9 iiter=          18
+                     conver_load check
+ resid=   2061598625512.39      retot=   1132366200729.69     
+ ratio1=   1.34930027552243      ratio2=  0.582131068187934     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          18
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=           9 iiter=          19
+                     conver_load check
+ resid=   2476827255208.77      retot=   1164675195738.52     
+ ratio1=   1.45829519846509      ratio2=  0.675573566456278     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          19
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=           9 iiter=          20
+                     conver_load check
+ resid=   5219114545332.13      retot=   1132801888631.38     
+ ratio1=   2.14645324075651      ratio2=   1.06625811508283     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          20
+ ngvar in output=           7 nstre=           4
+ ***********RESTART FILE IS UPDATED!*******
+ istep=          10
+ outinp=           0
+ tcurvegravity=           0           0           0           0
+ ntelgroup=           0
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          10 iiter=           1
+                     conver_load check
+ resid=   1555006512.12400      retot=   1133063174874.97     
+ ratio1=  3.704580561342005E-002 ratio2=  1.665047285587004E-002
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           1
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          10 iiter=           2
+                     conver_load check
+ resid=   171103428553.493      retot=   1133073069396.73     
+ ratio1=  0.388597853411252      ratio2=  0.101635415376010     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           2
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          10 iiter=           3
+                     conver_load check
+ resid=   23180410556.9564      retot=   1133070595344.81     
+ ratio1=  0.143031626478584      ratio2=  6.080642725659441E-002
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           3
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          10 iiter=           4
+                     conver_load check
+ resid=   252261671423.680      retot=   1133071150518.17     
+ ratio1=  0.471842486100745      ratio2=  0.137086893222705     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           4
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          10 iiter=           5
+                     conver_load check
+ resid=   22505801823.3155      retot=   1133068693430.59     
+ ratio1=  0.140935086077133      ratio2=  5.927618594902396E-002
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           5
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          10 iiter=           6
+                     conver_load check
+ resid=   253221104215.043      retot=   1133068943415.83     
+ ratio1=  0.472739379829443      ratio2=  0.137326096741135     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           6
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          10 iiter=           7
+                     conver_load check
+ resid=   24501254612.8543      retot=   1133066172907.54     
+ ratio1=  0.147050506480166      ratio2=  6.363368403385952E-002
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           7
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          10 iiter=           8
+                     conver_load check
+ resid=   257323016430.438      retot=   1133069291055.87     
+ ratio1=  0.476552862131222      ratio2=  0.122317174314253     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           8
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          10 iiter=           9
+                     conver_load check
+ resid=   94696115725.0343      retot=   1133073699705.33     
+ ratio1=  0.289092618712564      ratio2=  0.147509406702346     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           9
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          10 iiter=          10
+                     conver_load check
+ resid=   367802823224.424      retot=   1133033192044.93     
+ ratio1=  0.569752465175967      ratio2=  0.182922131158817     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          10
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          10 iiter=          11
+                     conver_load check
+ resid=   401919410987.960      retot=   1133192111069.14     
+ ratio1=  0.595549301230181      ratio2=  0.248043101434881     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          11
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          10 iiter=          12
+                     conver_load check
+ resid=   599264540911.503      retot=   1132922466474.74     
+ ratio1=  0.727292645296695      ratio2=  0.351696840333548     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          12
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          10 iiter=          13
+                     conver_load check
+ resid=   870367977017.381      retot=   1134573165923.32     
+ ratio1=  0.875861018947163      ratio2=  0.338167296576567     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          13
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          10 iiter=          14
+                     conver_load check
+ resid=   771234018115.872      retot=   1132546333250.81     
+ ratio1=  0.825211173134259      ratio2=  0.326202893795707     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          14
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          10 iiter=          15
+                     conver_load check
+ resid=   1407829015529.51      retot=   1136967359507.25     
+ ratio1=   1.11275859485907      ratio2=  0.575968155751186     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          15
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          10 iiter=          16
+                     conver_load check
+ resid=   1207348269514.64      retot=   1132457226798.44     
+ ratio1=   1.03253641763791      ratio2=  0.334149864898000     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          16
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          10 iiter=          17
+                     conver_load check
+ resid=   1730292076857.55      retot=   1141368064318.06     
+ ratio1=   1.23125172280990      ratio2=  0.384800886859918     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          17
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          10 iiter=          18
+                     conver_load check
+ resid=   2061598625512.39      retot=   1132366200729.69     
+ ratio1=   1.34930027552243      ratio2=  0.582131068187934     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          18
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          10 iiter=          19
+                     conver_load check
+ resid=   2476827255208.77      retot=   1164675195738.52     
+ ratio1=   1.45829519846509      ratio2=  0.675573566456278     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          19
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          10 iiter=          20
+                     conver_load check
+ resid=   5219114545332.13      retot=   1132801888631.38     
+ ratio1=   2.14645324075651      ratio2=   1.06625811508283     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          20
+ ngvar in output=           7 nstre=           4
+ ***********RESTART FILE IS UPDATED!*******
+ istep=          11
+ outinp=           0
+ tcurvegravity=           0           0           0           0
+ ntelgroup=           0
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          11 iiter=           1
+                     conver_load check
+ resid=   1555006512.12400      retot=   1133063174874.97     
+ ratio1=  3.704580561342005E-002 ratio2=  1.665047285587004E-002
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           1
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          11 iiter=           2
+                     conver_load check
+ resid=   171103428553.493      retot=   1133073069396.73     
+ ratio1=  0.388597853411252      ratio2=  0.101635415376010     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           2
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          11 iiter=           3
+                     conver_load check
+ resid=   23180410556.9564      retot=   1133070595344.81     
+ ratio1=  0.143031626478584      ratio2=  6.080642725659441E-002
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           3
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          11 iiter=           4
+                     conver_load check
+ resid=   252261671423.680      retot=   1133071150518.17     
+ ratio1=  0.471842486100745      ratio2=  0.137086893222705     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           4
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          11 iiter=           5
+                     conver_load check
+ resid=   22505801823.3155      retot=   1133068693430.59     
+ ratio1=  0.140935086077133      ratio2=  5.927618594902396E-002
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           5
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          11 iiter=           6
+                     conver_load check
+ resid=   253221104215.043      retot=   1133068943415.83     
+ ratio1=  0.472739379829443      ratio2=  0.137326096741135     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           6
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          11 iiter=           7
+                     conver_load check
+ resid=   24501254612.8543      retot=   1133066172907.54     
+ ratio1=  0.147050506480166      ratio2=  6.363368403385952E-002
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           7
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          11 iiter=           8
+                     conver_load check
+ resid=   257323016430.438      retot=   1133069291055.87     
+ ratio1=  0.476552862131222      ratio2=  0.122317174314253     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           8
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          11 iiter=           9
+                     conver_load check
+ resid=   94696115725.0343      retot=   1133073699705.33     
+ ratio1=  0.289092618712564      ratio2=  0.147509406702346     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           9
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          11 iiter=          10
+                     conver_load check
+ resid=   367802823224.424      retot=   1133033192044.93     
+ ratio1=  0.569752465175967      ratio2=  0.182922131158817     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          10
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          11 iiter=          11
+                     conver_load check
+ resid=   401919410987.960      retot=   1133192111069.14     
+ ratio1=  0.595549301230181      ratio2=  0.248043101434881     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          11
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          11 iiter=          12
+                     conver_load check
+ resid=   599264540911.503      retot=   1132922466474.74     
+ ratio1=  0.727292645296695      ratio2=  0.351696840333548     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          12
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          11 iiter=          13
+                     conver_load check
+ resid=   870367977017.381      retot=   1134573165923.32     
+ ratio1=  0.875861018947163      ratio2=  0.338167296576567     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          13
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          11 iiter=          14
+                     conver_load check
+ resid=   771234018115.872      retot=   1132546333250.81     
+ ratio1=  0.825211173134259      ratio2=  0.326202893795707     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          14
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          11 iiter=          15
+                     conver_load check
+ resid=   1407829015529.51      retot=   1136967359507.25     
+ ratio1=   1.11275859485907      ratio2=  0.575968155751186     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          15
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          11 iiter=          16
+                     conver_load check
+ resid=   1207348269514.64      retot=   1132457226798.44     
+ ratio1=   1.03253641763791      ratio2=  0.334149864898000     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          16
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          11 iiter=          17
+                     conver_load check
+ resid=   1730292076857.55      retot=   1141368064318.06     
+ ratio1=   1.23125172280990      ratio2=  0.384800886859918     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          17
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          11 iiter=          18
+                     conver_load check
+ resid=   2061598625512.39      retot=   1132366200729.69     
+ ratio1=   1.34930027552243      ratio2=  0.582131068187934     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          18
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          11 iiter=          19
+                     conver_load check
+ resid=   2476827255208.77      retot=   1164675195738.52     
+ ratio1=   1.45829519846509      ratio2=  0.675573566456278     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          19
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          11 iiter=          20
+                     conver_load check
+ resid=   5219114545332.13      retot=   1132801888631.38     
+ ratio1=   2.14645324075651      ratio2=   1.06625811508283     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          20
+ ngvar in output=           7 nstre=           4
+ ***********RESTART FILE IS UPDATED!*******
+ istep=          12
+ outinp=           0
+ tcurvegravity=           0           0           0           0
+ ntelgroup=           0
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          12 iiter=           1
+                     conver_load check
+ resid=   1555006512.12400      retot=   1133063174874.97     
+ ratio1=  3.704580561342005E-002 ratio2=  1.665047285587004E-002
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           1
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          12 iiter=           2
+                     conver_load check
+ resid=   171103428553.493      retot=   1133073069396.73     
+ ratio1=  0.388597853411252      ratio2=  0.101635415376010     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           2
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          12 iiter=           3
+                     conver_load check
+ resid=   23180410556.9564      retot=   1133070595344.81     
+ ratio1=  0.143031626478584      ratio2=  6.080642725659441E-002
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           3
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          12 iiter=           4
+                     conver_load check
+ resid=   252261671423.680      retot=   1133071150518.17     
+ ratio1=  0.471842486100745      ratio2=  0.137086893222705     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           4
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          12 iiter=           5
+                     conver_load check
+ resid=   22505801823.3155      retot=   1133068693430.59     
+ ratio1=  0.140935086077133      ratio2=  5.927618594902396E-002
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           5
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          12 iiter=           6
+                     conver_load check
+ resid=   253221104215.043      retot=   1133068943415.83     
+ ratio1=  0.472739379829443      ratio2=  0.137326096741135     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           6
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          12 iiter=           7
+                     conver_load check
+ resid=   24501254612.8543      retot=   1133066172907.54     
+ ratio1=  0.147050506480166      ratio2=  6.363368403385952E-002
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           7
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          12 iiter=           8
+                     conver_load check
+ resid=   257323016430.438      retot=   1133069291055.87     
+ ratio1=  0.476552862131222      ratio2=  0.122317174314253     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           8
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          12 iiter=           9
+                     conver_load check
+ resid=   94696115725.0343      retot=   1133073699705.33     
+ ratio1=  0.289092618712564      ratio2=  0.147509406702346     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           9
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          12 iiter=          10
+                     conver_load check
+ resid=   367802823224.424      retot=   1133033192044.93     
+ ratio1=  0.569752465175967      ratio2=  0.182922131158817     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          10
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          12 iiter=          11
+                     conver_load check
+ resid=   401919410987.960      retot=   1133192111069.14     
+ ratio1=  0.595549301230181      ratio2=  0.248043101434881     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          11
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          12 iiter=          12
+                     conver_load check
+ resid=   599264540911.503      retot=   1132922466474.74     
+ ratio1=  0.727292645296695      ratio2=  0.351696840333548     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          12
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          12 iiter=          13
+                     conver_load check
+ resid=   870367977017.381      retot=   1134573165923.32     
+ ratio1=  0.875861018947163      ratio2=  0.338167296576567     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          13
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          12 iiter=          14
+                     conver_load check
+ resid=   771234018115.872      retot=   1132546333250.81     
+ ratio1=  0.825211173134259      ratio2=  0.326202893795707     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          14
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          12 iiter=          15
+                     conver_load check
+ resid=   1407829015529.51      retot=   1136967359507.25     
+ ratio1=   1.11275859485907      ratio2=  0.575968155751186     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          15
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          12 iiter=          16
+                     conver_load check
+ resid=   1207348269514.64      retot=   1132457226798.44     
+ ratio1=   1.03253641763791      ratio2=  0.334149864898000     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          16
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          12 iiter=          17
+                     conver_load check
+ resid=   1730292076857.55      retot=   1141368064318.06     
+ ratio1=   1.23125172280990      ratio2=  0.384800886859918     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          17
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          12 iiter=          18
+                     conver_load check
+ resid=   2061598625512.39      retot=   1132366200729.69     
+ ratio1=   1.34930027552243      ratio2=  0.582131068187934     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          18
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          12 iiter=          19
+                     conver_load check
+ resid=   2476827255208.77      retot=   1164675195738.52     
+ ratio1=   1.45829519846509      ratio2=  0.675573566456278     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          19
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          12 iiter=          20
+                     conver_load check
+ resid=   5219114545332.13      retot=   1132801888631.38     
+ ratio1=   2.14645324075651      ratio2=   1.06625811508283     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          20
+ ngvar in output=           7 nstre=           4
+ ***********RESTART FILE IS UPDATED!*******
+ istep=          13
+ outinp=           0
+ tcurvegravity=           0           0           0           0
+ ntelgroup=           0
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          13 iiter=           1
+                     conver_load check
+ resid=   1555006512.12400      retot=   1133063174874.97     
+ ratio1=  3.704580561342005E-002 ratio2=  1.665047285587004E-002
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           1
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          13 iiter=           2
+                     conver_load check
+ resid=   171103428553.493      retot=   1133073069396.73     
+ ratio1=  0.388597853411252      ratio2=  0.101635415376010     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           2
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          13 iiter=           3
+                     conver_load check
+ resid=   23180410556.9564      retot=   1133070595344.81     
+ ratio1=  0.143031626478584      ratio2=  6.080642725659441E-002
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           3
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          13 iiter=           4
+                     conver_load check
+ resid=   252261671423.680      retot=   1133071150518.17     
+ ratio1=  0.471842486100745      ratio2=  0.137086893222705     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           4
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          13 iiter=           5
+                     conver_load check
+ resid=   22505801823.3155      retot=   1133068693430.59     
+ ratio1=  0.140935086077133      ratio2=  5.927618594902396E-002
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           5
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          13 iiter=           6
+                     conver_load check
+ resid=   253221104215.043      retot=   1133068943415.83     
+ ratio1=  0.472739379829443      ratio2=  0.137326096741135     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           6
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          13 iiter=           7
+                     conver_load check
+ resid=   24501254612.8543      retot=   1133066172907.54     
+ ratio1=  0.147050506480166      ratio2=  6.363368403385952E-002
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           7
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          13 iiter=           8
+                     conver_load check
+ resid=   257323016430.438      retot=   1133069291055.87     
+ ratio1=  0.476552862131222      ratio2=  0.122317174314253     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           8
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          13 iiter=           9
+                     conver_load check
+ resid=   94696115725.0343      retot=   1133073699705.33     
+ ratio1=  0.289092618712564      ratio2=  0.147509406702346     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           9
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          13 iiter=          10
+                     conver_load check
+ resid=   367802823224.424      retot=   1133033192044.93     
+ ratio1=  0.569752465175967      ratio2=  0.182922131158817     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          10
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          13 iiter=          11
+                     conver_load check
+ resid=   401919410987.960      retot=   1133192111069.14     
+ ratio1=  0.595549301230181      ratio2=  0.248043101434881     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          11
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          13 iiter=          12
+                     conver_load check
+ resid=   599264540911.503      retot=   1132922466474.74     
+ ratio1=  0.727292645296695      ratio2=  0.351696840333548     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          12
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          13 iiter=          13
+                     conver_load check
+ resid=   870367977017.381      retot=   1134573165923.32     
+ ratio1=  0.875861018947163      ratio2=  0.338167296576567     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          13
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          13 iiter=          14
+                     conver_load check
+ resid=   771234018115.872      retot=   1132546333250.81     
+ ratio1=  0.825211173134259      ratio2=  0.326202893795707     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          14
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          13 iiter=          15
+                     conver_load check
+ resid=   1407829015529.51      retot=   1136967359507.25     
+ ratio1=   1.11275859485907      ratio2=  0.575968155751186     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          15
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          13 iiter=          16
+                     conver_load check
+ resid=   1207348269514.64      retot=   1132457226798.44     
+ ratio1=   1.03253641763791      ratio2=  0.334149864898000     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          16
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          13 iiter=          17
+                     conver_load check
+ resid=   1730292076857.55      retot=   1141368064318.06     
+ ratio1=   1.23125172280990      ratio2=  0.384800886859918     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          17
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          13 iiter=          18
+                     conver_load check
+ resid=   2061598625512.39      retot=   1132366200729.69     
+ ratio1=   1.34930027552243      ratio2=  0.582131068187934     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          18
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          13 iiter=          19
+                     conver_load check
+ resid=   2476827255208.77      retot=   1164675195738.52     
+ ratio1=   1.45829519846509      ratio2=  0.675573566456278     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          19
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          13 iiter=          20
+                     conver_load check
+ resid=   5219114545332.13      retot=   1132801888631.38     
+ ratio1=   2.14645324075651      ratio2=   1.06625811508283     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          20
+ ngvar in output=           7 nstre=           4
+ ***********RESTART FILE IS UPDATED!*******
+ istep=          14
+ outinp=           0
+ tcurvegravity=           0           0           0           0
+ ntelgroup=           0
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          14 iiter=           1
+                     conver_load check
+ resid=   1555006512.12400      retot=   1133063174874.97     
+ ratio1=  3.704580561342005E-002 ratio2=  1.665047285587004E-002
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           1
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          14 iiter=           2
+                     conver_load check
+ resid=   171103428553.493      retot=   1133073069396.73     
+ ratio1=  0.388597853411252      ratio2=  0.101635415376010     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           2
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          14 iiter=           3
+                     conver_load check
+ resid=   23180410556.9564      retot=   1133070595344.81     
+ ratio1=  0.143031626478584      ratio2=  6.080642725659441E-002
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           3
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          14 iiter=           4
+                     conver_load check
+ resid=   252261671423.680      retot=   1133071150518.17     
+ ratio1=  0.471842486100745      ratio2=  0.137086893222705     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           4
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          14 iiter=           5
+                     conver_load check
+ resid=   22505801823.3155      retot=   1133068693430.59     
+ ratio1=  0.140935086077133      ratio2=  5.927618594902396E-002
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           5
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          14 iiter=           6
+                     conver_load check
+ resid=   253221104215.043      retot=   1133068943415.83     
+ ratio1=  0.472739379829443      ratio2=  0.137326096741135     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           6
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          14 iiter=           7
+                     conver_load check
+ resid=   24501254612.8543      retot=   1133066172907.54     
+ ratio1=  0.147050506480166      ratio2=  6.363368403385952E-002
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           7
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          14 iiter=           8
+                     conver_load check
+ resid=   257323016430.438      retot=   1133069291055.87     
+ ratio1=  0.476552862131222      ratio2=  0.122317174314253     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           8
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          14 iiter=           9
+                     conver_load check
+ resid=   94696115725.0343      retot=   1133073699705.33     
+ ratio1=  0.289092618712564      ratio2=  0.147509406702346     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           9
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          14 iiter=          10
+                     conver_load check
+ resid=   367802823224.424      retot=   1133033192044.93     
+ ratio1=  0.569752465175967      ratio2=  0.182922131158817     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          10
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          14 iiter=          11
+                     conver_load check
+ resid=   401919410987.960      retot=   1133192111069.14     
+ ratio1=  0.595549301230181      ratio2=  0.248043101434881     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          11
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          14 iiter=          12
+                     conver_load check
+ resid=   599264540911.503      retot=   1132922466474.74     
+ ratio1=  0.727292645296695      ratio2=  0.351696840333548     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          12
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          14 iiter=          13
+                     conver_load check
+ resid=   870367977017.381      retot=   1134573165923.32     
+ ratio1=  0.875861018947163      ratio2=  0.338167296576567     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          13
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          14 iiter=          14
+                     conver_load check
+ resid=   771234018115.872      retot=   1132546333250.81     
+ ratio1=  0.825211173134259      ratio2=  0.326202893795707     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          14
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          14 iiter=          15
+                     conver_load check
+ resid=   1407829015529.51      retot=   1136967359507.25     
+ ratio1=   1.11275859485907      ratio2=  0.575968155751186     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          15
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          14 iiter=          16
+                     conver_load check
+ resid=   1207348269514.64      retot=   1132457226798.44     
+ ratio1=   1.03253641763791      ratio2=  0.334149864898000     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          16
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          14 iiter=          17
+                     conver_load check
+ resid=   1730292076857.55      retot=   1141368064318.06     
+ ratio1=   1.23125172280990      ratio2=  0.384800886859918     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          17
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          14 iiter=          18
+                     conver_load check
+ resid=   2061598625512.39      retot=   1132366200729.69     
+ ratio1=   1.34930027552243      ratio2=  0.582131068187934     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          18
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          14 iiter=          19
+                     conver_load check
+ resid=   2476827255208.77      retot=   1164675195738.52     
+ ratio1=   1.45829519846509      ratio2=  0.675573566456278     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          19
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          14 iiter=          20
+                     conver_load check
+ resid=   5219114545332.13      retot=   1132801888631.38     
+ ratio1=   2.14645324075651      ratio2=   1.06625811508283     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          20
+ ngvar in output=           7 nstre=           4
+ ***********RESTART FILE IS UPDATED!*******
+ istep=          15
+ outinp=           0
+ tcurvegravity=           0           0           0           0
+ ntelgroup=           0
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          15 iiter=           1
+                     conver_load check
+ resid=   1555006512.12400      retot=   1133063174874.97     
+ ratio1=  3.704580561342005E-002 ratio2=  1.665047285587004E-002
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           1
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          15 iiter=           2
+                     conver_load check
+ resid=   171103428553.493      retot=   1133073069396.73     
+ ratio1=  0.388597853411252      ratio2=  0.101635415376010     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           2
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          15 iiter=           3
+                     conver_load check
+ resid=   23180410556.9564      retot=   1133070595344.81     
+ ratio1=  0.143031626478584      ratio2=  6.080642725659441E-002
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           3
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          15 iiter=           4
+                     conver_load check
+ resid=   252261671423.680      retot=   1133071150518.17     
+ ratio1=  0.471842486100745      ratio2=  0.137086893222705     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           4
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          15 iiter=           5
+                     conver_load check
+ resid=   22505801823.3155      retot=   1133068693430.59     
+ ratio1=  0.140935086077133      ratio2=  5.927618594902396E-002
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           5
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          15 iiter=           6
+                     conver_load check
+ resid=   253221104215.043      retot=   1133068943415.83     
+ ratio1=  0.472739379829443      ratio2=  0.137326096741135     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           6
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          15 iiter=           7
+                     conver_load check
+ resid=   24501254612.8543      retot=   1133066172907.54     
+ ratio1=  0.147050506480166      ratio2=  6.363368403385952E-002
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           7
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          15 iiter=           8
+                     conver_load check
+ resid=   257323016430.438      retot=   1133069291055.87     
+ ratio1=  0.476552862131222      ratio2=  0.122317174314253     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           8
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          15 iiter=           9
+                     conver_load check
+ resid=   94696115725.0343      retot=   1133073699705.33     
+ ratio1=  0.289092618712564      ratio2=  0.147509406702346     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           9
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          15 iiter=          10
+                     conver_load check
+ resid=   367802823224.424      retot=   1133033192044.93     
+ ratio1=  0.569752465175967      ratio2=  0.182922131158817     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          10
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          15 iiter=          11
+                     conver_load check
+ resid=   401919410987.960      retot=   1133192111069.14     
+ ratio1=  0.595549301230181      ratio2=  0.248043101434881     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          11
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          15 iiter=          12
+                     conver_load check
+ resid=   599264540911.503      retot=   1132922466474.74     
+ ratio1=  0.727292645296695      ratio2=  0.351696840333548     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          12
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          15 iiter=          13
+                     conver_load check
+ resid=   870367977017.381      retot=   1134573165923.32     
+ ratio1=  0.875861018947163      ratio2=  0.338167296576567     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          13
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          15 iiter=          14
+                     conver_load check
+ resid=   771234018115.872      retot=   1132546333250.81     
+ ratio1=  0.825211173134259      ratio2=  0.326202893795707     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          14
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          15 iiter=          15
+                     conver_load check
+ resid=   1407829015529.51      retot=   1136967359507.25     
+ ratio1=   1.11275859485907      ratio2=  0.575968155751186     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          15
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          15 iiter=          16
+                     conver_load check
+ resid=   1207348269514.64      retot=   1132457226798.44     
+ ratio1=   1.03253641763791      ratio2=  0.334149864898000     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          16
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          15 iiter=          17
+                     conver_load check
+ resid=   1730292076857.55      retot=   1141368064318.06     
+ ratio1=   1.23125172280990      ratio2=  0.384800886859918     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          17
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          15 iiter=          18
+                     conver_load check
+ resid=   2061598625512.39      retot=   1132366200729.69     
+ ratio1=   1.34930027552243      ratio2=  0.582131068187934     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          18
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          15 iiter=          19
+                     conver_load check
+ resid=   2476827255208.77      retot=   1164675195738.52     
+ ratio1=   1.45829519846509      ratio2=  0.675573566456278     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          19
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          15 iiter=          20
+                     conver_load check
+ resid=   5219114545332.13      retot=   1132801888631.38     
+ ratio1=   2.14645324075651      ratio2=   1.06625811508283     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          20
+ ngvar in output=           7 nstre=           4
+ ***********RESTART FILE IS UPDATED!*******
+ istep=          16
+ outinp=           0
+ tcurvegravity=           0           0           0           0
+ ntelgroup=           0
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          16 iiter=           1
+                     conver_load check
+ resid=   1555006512.12400      retot=   1133063174874.97     
+ ratio1=  3.704580561342005E-002 ratio2=  1.665047285587004E-002
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           1
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          16 iiter=           2
+                     conver_load check
+ resid=   171103428553.493      retot=   1133073069396.73     
+ ratio1=  0.388597853411252      ratio2=  0.101635415376010     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           2
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          16 iiter=           3
+                     conver_load check
+ resid=   23180410556.9564      retot=   1133070595344.81     
+ ratio1=  0.143031626478584      ratio2=  6.080642725659441E-002
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           3
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          16 iiter=           4
+                     conver_load check
+ resid=   252261671423.680      retot=   1133071150518.17     
+ ratio1=  0.471842486100745      ratio2=  0.137086893222705     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           4
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          16 iiter=           5
+                     conver_load check
+ resid=   22505801823.3155      retot=   1133068693430.59     
+ ratio1=  0.140935086077133      ratio2=  5.927618594902396E-002
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           5
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          16 iiter=           6
+                     conver_load check
+ resid=   253221104215.043      retot=   1133068943415.83     
+ ratio1=  0.472739379829443      ratio2=  0.137326096741135     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           6
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          16 iiter=           7
+                     conver_load check
+ resid=   24501254612.8543      retot=   1133066172907.54     
+ ratio1=  0.147050506480166      ratio2=  6.363368403385952E-002
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           7
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          16 iiter=           8
+                     conver_load check
+ resid=   257323016430.438      retot=   1133069291055.87     
+ ratio1=  0.476552862131222      ratio2=  0.122317174314253     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           8
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          16 iiter=           9
+                     conver_load check
+ resid=   94696115725.0343      retot=   1133073699705.33     
+ ratio1=  0.289092618712564      ratio2=  0.147509406702346     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           9
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          16 iiter=          10
+                     conver_load check
+ resid=   367802823224.424      retot=   1133033192044.93     
+ ratio1=  0.569752465175967      ratio2=  0.182922131158817     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          10
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          16 iiter=          11
+                     conver_load check
+ resid=   401919410987.960      retot=   1133192111069.14     
+ ratio1=  0.595549301230181      ratio2=  0.248043101434881     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          11
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          16 iiter=          12
+                     conver_load check
+ resid=   599264540911.503      retot=   1132922466474.74     
+ ratio1=  0.727292645296695      ratio2=  0.351696840333548     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          12
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          16 iiter=          13
+                     conver_load check
+ resid=   870367977017.381      retot=   1134573165923.32     
+ ratio1=  0.875861018947163      ratio2=  0.338167296576567     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          13
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          16 iiter=          14
+                     conver_load check
+ resid=   771234018115.872      retot=   1132546333250.81     
+ ratio1=  0.825211173134259      ratio2=  0.326202893795707     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          14
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          16 iiter=          15
+                     conver_load check
+ resid=   1407829015529.51      retot=   1136967359507.25     
+ ratio1=   1.11275859485907      ratio2=  0.575968155751186     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          15
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          16 iiter=          16
+                     conver_load check
+ resid=   1207348269514.64      retot=   1132457226798.44     
+ ratio1=   1.03253641763791      ratio2=  0.334149864898000     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          16
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          16 iiter=          17
+                     conver_load check
+ resid=   1730292076857.55      retot=   1141368064318.06     
+ ratio1=   1.23125172280990      ratio2=  0.384800886859918     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          17
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          16 iiter=          18
+                     conver_load check
+ resid=   2061598625512.39      retot=   1132366200729.69     
+ ratio1=   1.34930027552243      ratio2=  0.582131068187934     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          18
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          16 iiter=          19
+                     conver_load check
+ resid=   2476827255208.77      retot=   1164675195738.52     
+ ratio1=   1.45829519846509      ratio2=  0.675573566456278     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          19
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          16 iiter=          20
+                     conver_load check
+ resid=   5219114545332.13      retot=   1132801888631.38     
+ ratio1=   2.14645324075651      ratio2=   1.06625811508283     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          20
+ ngvar in output=           7 nstre=           4
+ ***********RESTART FILE IS UPDATED!*******
+ istep=          17
+ outinp=           0
+ tcurvegravity=           0           0           0           0
+ ntelgroup=           0
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          17 iiter=           1
+                     conver_load check
+ resid=   1555006512.12400      retot=   1133063174874.97     
+ ratio1=  3.704580561342005E-002 ratio2=  1.665047285587004E-002
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           1
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          17 iiter=           2
+                     conver_load check
+ resid=   171103428553.493      retot=   1133073069396.73     
+ ratio1=  0.388597853411252      ratio2=  0.101635415376010     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           2
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          17 iiter=           3
+                     conver_load check
+ resid=   23180410556.9564      retot=   1133070595344.81     
+ ratio1=  0.143031626478584      ratio2=  6.080642725659441E-002
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           3
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          17 iiter=           4
+                     conver_load check
+ resid=   252261671423.680      retot=   1133071150518.17     
+ ratio1=  0.471842486100745      ratio2=  0.137086893222705     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           4
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          17 iiter=           5
+                     conver_load check
+ resid=   22505801823.3155      retot=   1133068693430.59     
+ ratio1=  0.140935086077133      ratio2=  5.927618594902396E-002
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           5
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          17 iiter=           6
+                     conver_load check
+ resid=   253221104215.043      retot=   1133068943415.83     
+ ratio1=  0.472739379829443      ratio2=  0.137326096741135     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           6
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          17 iiter=           7
+                     conver_load check
+ resid=   24501254612.8543      retot=   1133066172907.54     
+ ratio1=  0.147050506480166      ratio2=  6.363368403385952E-002
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           7
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          17 iiter=           8
+                     conver_load check
+ resid=   257323016430.438      retot=   1133069291055.87     
+ ratio1=  0.476552862131222      ratio2=  0.122317174314253     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           8
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          17 iiter=           9
+                     conver_load check
+ resid=   94696115725.0343      retot=   1133073699705.33     
+ ratio1=  0.289092618712564      ratio2=  0.147509406702346     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           9
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          17 iiter=          10
+                     conver_load check
+ resid=   367802823224.424      retot=   1133033192044.93     
+ ratio1=  0.569752465175967      ratio2=  0.182922131158817     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          10
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          17 iiter=          11
+                     conver_load check
+ resid=   401919410987.960      retot=   1133192111069.14     
+ ratio1=  0.595549301230181      ratio2=  0.248043101434881     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          11
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          17 iiter=          12
+                     conver_load check
+ resid=   599264540911.503      retot=   1132922466474.74     
+ ratio1=  0.727292645296695      ratio2=  0.351696840333548     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          12
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          17 iiter=          13
+                     conver_load check
+ resid=   870367977017.381      retot=   1134573165923.32     
+ ratio1=  0.875861018947163      ratio2=  0.338167296576567     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          13
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          17 iiter=          14
+                     conver_load check
+ resid=   771234018115.872      retot=   1132546333250.81     
+ ratio1=  0.825211173134259      ratio2=  0.326202893795707     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          14
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          17 iiter=          15
+                     conver_load check
+ resid=   1407829015529.51      retot=   1136967359507.25     
+ ratio1=   1.11275859485907      ratio2=  0.575968155751186     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          15
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          17 iiter=          16
+                     conver_load check
+ resid=   1207348269514.64      retot=   1132457226798.44     
+ ratio1=   1.03253641763791      ratio2=  0.334149864898000     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          16
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          17 iiter=          17
+                     conver_load check
+ resid=   1730292076857.55      retot=   1141368064318.06     
+ ratio1=   1.23125172280990      ratio2=  0.384800886859918     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          17
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          17 iiter=          18
+                     conver_load check
+ resid=   2061598625512.39      retot=   1132366200729.69     
+ ratio1=   1.34930027552243      ratio2=  0.582131068187934     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          18
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          17 iiter=          19
+                     conver_load check
+ resid=   2476827255208.77      retot=   1164675195738.52     
+ ratio1=   1.45829519846509      ratio2=  0.675573566456278     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          19
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          17 iiter=          20
+                     conver_load check
+ resid=   5219114545332.13      retot=   1132801888631.38     
+ ratio1=   2.14645324075651      ratio2=   1.06625811508283     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          20
+ ngvar in output=           7 nstre=           4
+ ***********RESTART FILE IS UPDATED!*******
+ istep=          18
+ outinp=           0
+ tcurvegravity=           0           0           0           0
+ ntelgroup=           0
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          18 iiter=           1
+                     conver_load check
+ resid=   1555006512.12400      retot=   1133063174874.97     
+ ratio1=  3.704580561342005E-002 ratio2=  1.665047285587004E-002
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           1
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          18 iiter=           2
+                     conver_load check
+ resid=   171103428553.493      retot=   1133073069396.73     
+ ratio1=  0.388597853411252      ratio2=  0.101635415376010     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           2
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          18 iiter=           3
+                     conver_load check
+ resid=   23180410556.9564      retot=   1133070595344.81     
+ ratio1=  0.143031626478584      ratio2=  6.080642725659441E-002
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           3
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          18 iiter=           4
+                     conver_load check
+ resid=   252261671423.680      retot=   1133071150518.17     
+ ratio1=  0.471842486100745      ratio2=  0.137086893222705     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           4
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          18 iiter=           5
+                     conver_load check
+ resid=   22505801823.3155      retot=   1133068693430.59     
+ ratio1=  0.140935086077133      ratio2=  5.927618594902396E-002
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           5
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          18 iiter=           6
+                     conver_load check
+ resid=   253221104215.043      retot=   1133068943415.83     
+ ratio1=  0.472739379829443      ratio2=  0.137326096741135     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           6
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          18 iiter=           7
+                     conver_load check
+ resid=   24501254612.8543      retot=   1133066172907.54     
+ ratio1=  0.147050506480166      ratio2=  6.363368403385952E-002
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           7
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          18 iiter=           8
+                     conver_load check
+ resid=   257323016430.438      retot=   1133069291055.87     
+ ratio1=  0.476552862131222      ratio2=  0.122317174314253     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           8
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          18 iiter=           9
+                     conver_load check
+ resid=   94696115725.0343      retot=   1133073699705.33     
+ ratio1=  0.289092618712564      ratio2=  0.147509406702346     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           9
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          18 iiter=          10
+                     conver_load check
+ resid=   367802823224.424      retot=   1133033192044.93     
+ ratio1=  0.569752465175967      ratio2=  0.182922131158817     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          10
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          18 iiter=          11
+                     conver_load check
+ resid=   401919410987.960      retot=   1133192111069.14     
+ ratio1=  0.595549301230181      ratio2=  0.248043101434881     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          11
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          18 iiter=          12
+                     conver_load check
+ resid=   599264540911.503      retot=   1132922466474.74     
+ ratio1=  0.727292645296695      ratio2=  0.351696840333548     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          12
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          18 iiter=          13
+                     conver_load check
+ resid=   870367977017.381      retot=   1134573165923.32     
+ ratio1=  0.875861018947163      ratio2=  0.338167296576567     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          13
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          18 iiter=          14
+                     conver_load check
+ resid=   771234018115.872      retot=   1132546333250.81     
+ ratio1=  0.825211173134259      ratio2=  0.326202893795707     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          14
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          18 iiter=          15
+                     conver_load check
+ resid=   1407829015529.51      retot=   1136967359507.25     
+ ratio1=   1.11275859485907      ratio2=  0.575968155751186     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          15
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          18 iiter=          16
+                     conver_load check
+ resid=   1207348269514.64      retot=   1132457226798.44     
+ ratio1=   1.03253641763791      ratio2=  0.334149864898000     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          16
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          18 iiter=          17
+                     conver_load check
+ resid=   1730292076857.55      retot=   1141368064318.06     
+ ratio1=   1.23125172280990      ratio2=  0.384800886859918     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          17
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          18 iiter=          18
+                     conver_load check
+ resid=   2061598625512.39      retot=   1132366200729.69     
+ ratio1=   1.34930027552243      ratio2=  0.582131068187934     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          18
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          18 iiter=          19
+                     conver_load check
+ resid=   2476827255208.77      retot=   1164675195738.52     
+ ratio1=   1.45829519846509      ratio2=  0.675573566456278     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          19
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          18 iiter=          20
+                     conver_load check
+ resid=   5219114545332.13      retot=   1132801888631.38     
+ ratio1=   2.14645324075651      ratio2=   1.06625811508283     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          20
+ ngvar in output=           7 nstre=           4
+ ***********RESTART FILE IS UPDATED!*******
+ istep=          19
+ outinp=           0
+ tcurvegravity=           0           0           0           0
+ ntelgroup=           0
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          19 iiter=           1
+                     conver_load check
+ resid=   1555006512.12400      retot=   1133063174874.97     
+ ratio1=  3.704580561342005E-002 ratio2=  1.665047285587004E-002
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           1
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          19 iiter=           2
+                     conver_load check
+ resid=   171103428553.493      retot=   1133073069396.73     
+ ratio1=  0.388597853411252      ratio2=  0.101635415376010     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           2
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          19 iiter=           3
+                     conver_load check
+ resid=   23180410556.9564      retot=   1133070595344.81     
+ ratio1=  0.143031626478584      ratio2=  6.080642725659441E-002
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           3
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          19 iiter=           4
+                     conver_load check
+ resid=   252261671423.680      retot=   1133071150518.17     
+ ratio1=  0.471842486100745      ratio2=  0.137086893222705     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           4
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          19 iiter=           5
+                     conver_load check
+ resid=   22505801823.3155      retot=   1133068693430.59     
+ ratio1=  0.140935086077133      ratio2=  5.927618594902396E-002
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           5
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          19 iiter=           6
+                     conver_load check
+ resid=   253221104215.043      retot=   1133068943415.83     
+ ratio1=  0.472739379829443      ratio2=  0.137326096741135     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           6
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          19 iiter=           7
+                     conver_load check
+ resid=   24501254612.8543      retot=   1133066172907.54     
+ ratio1=  0.147050506480166      ratio2=  6.363368403385952E-002
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           7
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          19 iiter=           8
+                     conver_load check
+ resid=   257323016430.438      retot=   1133069291055.87     
+ ratio1=  0.476552862131222      ratio2=  0.122317174314253     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           8
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          19 iiter=           9
+                     conver_load check
+ resid=   94696115725.0343      retot=   1133073699705.33     
+ ratio1=  0.289092618712564      ratio2=  0.147509406702346     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           9
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          19 iiter=          10
+                     conver_load check
+ resid=   367802823224.424      retot=   1133033192044.93     
+ ratio1=  0.569752465175967      ratio2=  0.182922131158817     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          10
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          19 iiter=          11
+                     conver_load check
+ resid=   401919410987.960      retot=   1133192111069.14     
+ ratio1=  0.595549301230181      ratio2=  0.248043101434881     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          11
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          19 iiter=          12
+                     conver_load check
+ resid=   599264540911.503      retot=   1132922466474.74     
+ ratio1=  0.727292645296695      ratio2=  0.351696840333548     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          12
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          19 iiter=          13
+                     conver_load check
+ resid=   870367977017.381      retot=   1134573165923.32     
+ ratio1=  0.875861018947163      ratio2=  0.338167296576567     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          13
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          19 iiter=          14
+                     conver_load check
+ resid=   771234018115.872      retot=   1132546333250.81     
+ ratio1=  0.825211173134259      ratio2=  0.326202893795707     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          14
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          19 iiter=          15
+                     conver_load check
+ resid=   1407829015529.51      retot=   1136967359507.25     
+ ratio1=   1.11275859485907      ratio2=  0.575968155751186     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          15
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          19 iiter=          16
+                     conver_load check
+ resid=   1207348269514.64      retot=   1132457226798.44     
+ ratio1=   1.03253641763791      ratio2=  0.334149864898000     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          16
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          19 iiter=          17
+                     conver_load check
+ resid=   1730292076857.55      retot=   1141368064318.06     
+ ratio1=   1.23125172280990      ratio2=  0.384800886859918     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          17
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          19 iiter=          18
+                     conver_load check
+ resid=   2061598625512.39      retot=   1132366200729.69     
+ ratio1=   1.34930027552243      ratio2=  0.582131068187934     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          18
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          19 iiter=          19
+                     conver_load check
+ resid=   2476827255208.77      retot=   1164675195738.52     
+ ratio1=   1.45829519846509      ratio2=  0.675573566456278     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          19
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          19 iiter=          20
+                     conver_load check
+ resid=   5219114545332.13      retot=   1132801888631.38     
+ ratio1=   2.14645324075651      ratio2=   1.06625811508283     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          20
+ ngvar in output=           7 nstre=           4
+ ***********RESTART FILE IS UPDATED!*******
+ istep=          20
+ outinp=           0
+ tcurvegravity=           0           0           0           0
+ ntelgroup=           0
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          20 iiter=           1
+                     conver_load check
+ resid=   1555006512.12400      retot=   1133063174874.97     
+ ratio1=  3.704580561342005E-002 ratio2=  1.665047285587004E-002
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           1
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          20 iiter=           2
+                     conver_load check
+ resid=   171103428553.493      retot=   1133073069396.73     
+ ratio1=  0.388597853411252      ratio2=  0.101635415376010     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           2
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          20 iiter=           3
+                     conver_load check
+ resid=   23180410556.9564      retot=   1133070595344.81     
+ ratio1=  0.143031626478584      ratio2=  6.080642725659441E-002
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           3
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          20 iiter=           4
+                     conver_load check
+ resid=   252261671423.680      retot=   1133071150518.17     
+ ratio1=  0.471842486100745      ratio2=  0.137086893222705     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           4
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          20 iiter=           5
+                     conver_load check
+ resid=   22505801823.3155      retot=   1133068693430.59     
+ ratio1=  0.140935086077133      ratio2=  5.927618594902396E-002
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           5
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          20 iiter=           6
+                     conver_load check
+ resid=   253221104215.043      retot=   1133068943415.83     
+ ratio1=  0.472739379829443      ratio2=  0.137326096741135     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           6
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          20 iiter=           7
+                     conver_load check
+ resid=   24501254612.8543      retot=   1133066172907.54     
+ ratio1=  0.147050506480166      ratio2=  6.363368403385952E-002
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           7
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          20 iiter=           8
+                     conver_load check
+ resid=   257323016430.438      retot=   1133069291055.87     
+ ratio1=  0.476552862131222      ratio2=  0.122317174314253     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           8
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          20 iiter=           9
+                     conver_load check
+ resid=   94696115725.0343      retot=   1133073699705.33     
+ ratio1=  0.289092618712564      ratio2=  0.147509406702346     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=           9
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          20 iiter=          10
+                     conver_load check
+ resid=   367802823224.424      retot=   1133033192044.93     
+ ratio1=  0.569752465175967      ratio2=  0.182922131158817     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          10
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          20 iiter=          11
+                     conver_load check
+ resid=   401919410987.960      retot=   1133192111069.14     
+ ratio1=  0.595549301230181      ratio2=  0.248043101434881     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          11
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          20 iiter=          12
+                     conver_load check
+ resid=   599264540911.503      retot=   1132922466474.74     
+ ratio1=  0.727292645296695      ratio2=  0.351696840333548     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          12
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          20 iiter=          13
+                     conver_load check
+ resid=   870367977017.381      retot=   1134573165923.32     
+ ratio1=  0.875861018947163      ratio2=  0.338167296576567     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          13
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          20 iiter=          14
+                     conver_load check
+ resid=   771234018115.872      retot=   1132546333250.81     
+ ratio1=  0.825211173134259      ratio2=  0.326202893795707     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          14
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          20 iiter=          15
+                     conver_load check
+ resid=   1407829015529.51      retot=   1136967359507.25     
+ ratio1=   1.11275859485907      ratio2=  0.575968155751186     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          15
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          20 iiter=          16
+                     conver_load check
+ resid=   1207348269514.64      retot=   1132457226798.44     
+ ratio1=   1.03253641763791      ratio2=  0.334149864898000     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          16
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          20 iiter=          17
+                     conver_load check
+ resid=   1730292076857.55      retot=   1141368064318.06     
+ ratio1=   1.23125172280990      ratio2=  0.384800886859918     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          17
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          20 iiter=          18
+                     conver_load check
+ resid=   2061598625512.39      retot=   1132366200729.69     
+ ratio1=   1.34930027552243      ratio2=  0.582131068187934     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          18
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          20 iiter=          19
+                     conver_load check
+ resid=   2476827255208.77      retot=   1164675195738.52     
+ ratio1=   1.45829519846509      ratio2=  0.675573566456278     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          19
+ Factorization completed ... 
+ time: 09:03:41
+                     istep=          20 iiter=          20
+                     conver_load check
+ resid=   5219114545332.13      retot=   1132801888631.38     
+ ratio1=   2.14645324075651      ratio2=   1.06625811508283     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=          20 iiter=          20
+ ngvar in output=           7 nstre=           4
+ ***********RESTART FILE IS UPDATED!*******
+ time: 09:03:41
+ time: 09:03:40

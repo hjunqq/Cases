@@ -1,0 +1,8 @@
+ nincs,cdtest,earthquake_curve(1:ndimn)
+  1  0  0  0
+  0  0
+  0  0.0
+  -300.0  4  0  3  0
+  5  0.02  2  2  1000  1  1  0  0
+  3*1.0e-05
+  1  1

@@ -1,0 +1,10 @@
+# Easy_HSTAR boundary file — gravdam test case
+# Format: dof  value  nnodes
+#         node1 node2 ...
+1  0.0  6
+342 344 345 346 347 348
+1  0.0  6
+1 3 5 11 17 24
+2  0.0  26
+1 2 6 10 16 25 29 33 36 40 45 50 54 61 66 71 77 85 92 100
+110 151 201 251 305 342

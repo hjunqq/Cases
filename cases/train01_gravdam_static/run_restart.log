@@ -1,0 +1,58 @@
+ ================================================
+   Easy_HSTAR - Finite Element Analysis
+ ================================================
+ 
+ Reading: 1_restart.toml
+  Read 2705 nodes
+  Read 2562 elements
+ =============================================
+  HSTAR Problem Summary
+ =============================================
+  Version     :            1
+  Problem name: 1
+  Type        : Q
+  Dimensions  :            2
+  Nodes       :         2705
+  Elements    :         2562
+  Materials   :            2
+  Groups      :            2
+  Max DOF/node:            2
+  Blocks      :            2
+  Links       :            0
+  Solver      : PARDISO
+  Load type   : LOAD
+  Output      : GIDR
+ 
+  Analysis blocks:
+   Block   1 type=static nincs=     1
+   Block   2 type=static nincs=     1
+ 
+  Materials:
+   Mat   1 name=Foundation rock type=MECHANICAL
+   Mat   2 name=Dam concrete type=MECHANICAL
+ =============================================
+ validate_problem: all checks passed
+ 
+ Input OK. Starting analysis...
+  ndimn=2, npoin=2705, ntotv=5410
+  Water pressure 1: 45 edges
+  Restart loaded: ./1_easy.rst block=1
+  RESTART from block 1, continuing at block 2
+ 
+  === Block 2 / 2
+  iffix: free=5277, BC=133, inactive=0
+  Neq = 5277
+  NNZ = 91205
+  Inc 1 Step 1
+    iter   1  R_force= 3.100E+02  resid= 2.947E+09
+    iter   2  R_force= 4.337E-13  R_disp= 6.382E-01  R_energy= 8.105E-16
+  Converged in 2 iterations
+  Max |Ux| =   9.4871E-03
+  Max |Uy| =   1.3998E-02
+  Max |sxx| =   2.0456E+06
+  Max |syy| =   2.4044E+06
+  Results written to ./1_easy.flavia.res
+  VTU: ./1_easy_b2.vtu
+  Restart saved: ./1_easy.rst
+ 
+ Analysis completed successfully.

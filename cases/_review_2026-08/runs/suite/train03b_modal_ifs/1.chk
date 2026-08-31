@@ -1,0 +1,45 @@
+ irecover=           0
+ ikind=          15 nr_intrules=           4
+ igroup=           1 tvol=   19000.0000000000     
+ igroup=           1 tne=         960
+ igroup=           2 tvol=   875.000000000000     
+ igroup=           2 tne=        1600
+ igroup=           3 tvol=   3999.99999999997     
+ igroup=           3 tne=        2080
+ ****** ntotv= ******        3943
+ time: 08:27:39
+ in modf_element_lib
+ jgroup=           1 kinit_g=           0
+ jgroup=           2 kinit_g=           0
+ jgroup=           3 kinit_g=           0
+ iblks=           1 runblks=           1
+ iblks=           1
+ time: 08:27:39
+ ninit=           0 iblks=           1 restart=           0
+ ikindks=           0
+ time(solve): 08:27:39
+ No. of equations        =        3839
+ Max half band width     =         470
+ length half stiff matrix=      226832
+ time(solve_set): 08:27:39
+ time(solve_pcg): 08:27:39
+ igroup=           1 matno=           1 density=  0.000000000000000E+000 facts=
+  0.000000000000000E+000
+ igroup=           1 order_intx=           1 ngaus=           4
+ igroup=           2 matno=           2 density=   2500.00000000000      facts=
+   2500.00000000000     
+ igroup=           2 order_intx=           1 ngaus=           4
+ sum_M_elem_diag=   1166491.79906160     
+ sum_K_diag=   123243596530024.     
+ neq_layer1=        3319 neq=        3839
+  order=    1  omega= 0.20278E+02  freq= 0.32273E+01  period= 0.30985E+00 coefx= 0.19258E+01 coefy= 0.19549E+00 coefz= 0.00000E+00 mstar= 0.73341E+06 kstar= 0.30157E+09
+ irecover=           0
+  order=    2  omega= 0.54409E+02  freq= 0.86595E+01  period= 0.11548E+00 coefx= 0.39240E+00 coefy=-0.12202E+01 coefz= 0.00000E+00 mstar= 0.13036E+07 kstar= 0.38591E+10
+ irecover=           0
+  order=    3  omega= 0.63719E+02  freq= 0.10141E+02  period= 0.98608E-01 coefx= 0.12174E+01 coefy= 0.73865E+00 coefz= 0.00000E+00 mstar= 0.36437E+06 kstar= 0.14794E+10
+ irecover=           0
+  order=    4  omega= 0.13213E+03  freq= 0.21029E+02  period= 0.47552E-01 coefx= 0.58421E+00 coefy= 0.13429E+00 coefz= 0.00000E+00 mstar= 0.23940E+06 kstar= 0.41797E+10
+ irecover=           0
+  order=    5  omega= 0.21152E+03  freq= 0.33664E+02  period= 0.29705E-01 coefx= 0.58288E-01 coefy= 0.19094E+00 coefz= 0.00000E+00 mstar= 0.34365E+06 kstar= 0.15375E+11
+ irecover=           0
+ time: 08:27:40

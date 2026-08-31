@@ -1,0 +1,278 @@
+ time: 13:36:50
+ time: 13:36:50
+ Input the problem name?
+ NPOIN                                                                          
+  
+       35331       35331       28647           3           4          25
+           0 GIDR                  0.000000000000000E+000           0
+           0           0           0           0        9999
+ NINIT                                                                          
+  
+           0           0           0           1           0           0
+           0           0           1           0           0 
+ FIX                                                          0           0
+           0           0           0           0           0
+ outinpunit=          37 outindunit=          54
+ TYPE_PROBLEM                                                                   
+  
+ S                                                 
+ PARDISO                                           
+ LOAD                                                         5           0
+           0           0
+ type_layer1                                                                    
+  
+ NMASS                                                                          
+  
+           1           1           1           1           0           0
+           1           2           1           0           2
+ nfreeflownode                                                                  
+  
+ NTSMAT                                                                         
+  
+         999         999           0           0           0
+ beeta1,beeta2,theta1=  0.600000000000000       0.302000000000000     
+  0.600000000000000     
+ equvs_process(1:ngroup)                                                        
+  
+ appear_level(1:ngroup)                                                         
+  
+ APPEAR_PROCESS(1-0nblks                                                        
+  
+ appear_process=           1           1           1           1           1
+           1           1           1           1           1           1
+           1           1           1           1           1           1
+           1           1           1           1           1           1
+           1           1
+ MATNO_PROCESS(1-nblks                                                          
+  
+ iblks=           0 ngroup=          25 matno=           1           1
+           1           1           1           1           1           1
+           1           1           1           1           1           1
+           1           1           1           1           1           1
+           1           2           2           1           1
+ force_process=           0           0           0           0           0
+           0           0           0           0           0           0
+           0           0           0           0           0           0
+           0           0           0           0           0           0
+           0           0
+ uinitial=           0
+ 1-ILINKS(I0                                                                    
+  
+ 1-tLINKS(I0                                                                    
+  
+ text1=
+ 1-NGROUP--GROUP                                                                
+  
+ (3)                                                                            
+  
+ igroup=           1
+ name=B8        
+ igroup=           2
+ name=B8        
+ igroup=           3
+ name=B8        
+ igroup=           4
+ name=B8        
+ igroup=           5
+ name=B8        
+ igroup=           6
+ name=B8        
+ igroup=           7
+ name=B8        
+ igroup=           8
+ name=B8        
+ igroup=           9
+ name=B8        
+ igroup=          10
+ name=B8        
+ igroup=          11
+ name=B8        
+ igroup=          12
+ name=B8        
+ igroup=          13
+ name=B8        
+ igroup=          14
+ name=B8        
+ igroup=          15
+ name=B8        
+ igroup=          16
+ name=B8        
+ igroup=          17
+ name=B8        
+ igroup=          18
+ name=B8        
+ igroup=          19
+ name=B8        
+ igroup=          20
+ name=B8        
+ igroup=          21
+ name=B8        
+ igroup=          22
+ name=B8        
+ igroup=          23
+ name=B8        
+ igroup=          24
+ name=B8        
+ igroup=          25
+ name=B8        
+ tne=       28647
+ ntransnode,translg=          23          88
+ ntransnode,translg=          37          88
+ ntransnode,translg=          49          88
+ ntransnode,translg=          88          88
+ ntransnode,translg=         116          88
+ ntransnode,translg=         106          88
+ ntransnode,translg=         165          88
+ ntransnode,translg=         166          88
+ ntransnode,translg=         157          88
+ ntransnode,translg=         100          88
+ ntransnode,translg=         100          88
+ ntransnode,translg=          89          88
+ ntransnode,translg=          61          88
+ ntransnode,translg=          60          88
+ ntransnode,translg=          43          88
+ ntransnode,translg=          39          88
+ ntransnode,translg=          42          88
+ ntransnode,translg=          31          88
+ text_tension_joint=
+ tension_joint                                                                  
+  
+ text_tension_contact=
+ contact_joint                                                                  
+  
+ ground_inf=           0 /100=           0
+ nblks=           1
+ Input runblks, =?
+ time: 13:36:51
+ MATERIAL                                                                       
+  
+ NAME                                                                           
+  
+ FIRST:NAME---MECHANICAL                                                        
+  
+ FOR                                                                            
+  
+ NUMBER                                                                         
+  
+ FOR                                                                            
+  
+ FOR                                                                            
+  
+ FOR                                                                            
+  
+ CAMCLAY                                                                        
+  
+ FOR                                                                            
+  
+ jmat=           1
+ HEAT                          SOLID                                    1
+ jmat=           2
+ HEAT                          SOLID                                    2
+ jmat=           3
+ HEAT                          SOLID                                    3
+ jmat=           4
+ HEAT                          SOLID                                    4
+ ngaps                                                                          
+  
+ ngaps=           0
+ nrcsteel                                                                       
+  
+ nrcsteel=           0
+ nwcpipe                                                                        
+  
+ nwcpipe=           0
+ nifsgroup 
+ nifsgroup=           0
+ nabsgroup 
+ nabsfgroup=           0
+ nabssgroup
+ nabssgroup=           0
+ ifsnedge                                                                       
+                      
+ ifsnedge=           0
+ lblks=           0  blks_new=           1
+ lincs=           0  nincs=           0
+ lblks=           0  blks_new=           1
+ Bparameter=           0
+ lblks=           0 lincs=           0 ttime=  0.000000000000000E+000
+ ntime=           2 LINEAR                         0           2
+ ntime=           2 LINEAR                         0           2
+ ntime=         289 LINEAR                         0           2
+ ntime=         289 LINEAR                         0           2
+ ntime=         289 LINEAR                         0           2
+ ntime=         289 LINEAR                         0           2
+ ntime=         289 LINEAR                         0           2
+ ntime=         289 LINEAR                         0           2
+ ntime=         289 LINEAR                         0           2
+ ntime=         289 LINEAR                         0           2
+ ntime=         289 LINEAR                         0           2
+ ntime=         289 LINEAR                         0           2
+ ntime=         289 LINEAR                         0           2
+ ntime=         289 LINEAR                         0           2
+ ntime=         289 LINEAR                         0           2
+ ok waterlevel
+ nplgroup=           0
+ nedge=           0
+ iblks=           1 lineload=          51
+ iblks=           1
+ time: 13:36:51
+ a1
+ outind=           0
+ edge_load_group     
+ edge_load_group=           0 delgroup=           0
+ gray=   9.81000000000000       0.000000000000000E+000  0.000000000000000E+000
+  -1.00000000000000       0.000000000000000E+000  0.000000000000000E+000
+  -1.00000000000000     
+ tcurv=           0           0           0           0           0           0
+           0           0           0           0           0           0
+           0           0           0           0           0           0
+           0           0           0           0           0           0
+           0
+ ecwpipe=           2 iblks=           1 lblks+1=           1
+ ecwpipe=           2 iblks=           1 lblks+1=           1
+ 总的散热面
+ ntedge=        4580
+ ibeta_bar=           0 beta_bar=   15.7500000000000     
+ ibeta_bar=           0 beta_bar=   15.7500000000000     
+ ibeta_bar=           0 beta_bar=   15.7500000000000     
+ ibeta_bar=           0 beta_bar=   15.7500000000000     
+ ibeta_bar=           0 beta_bar=   15.7500000000000     
+ ibeta_bar=           0 beta_bar=   15.7500000000000     
+ ibeta_bar=           0 beta_bar=   15.7500000000000     
+ ibeta_bar=           0 beta_bar=   15.7500000000000     
+ ibeta_bar=           0 beta_bar=   15.7500000000000     
+ ibeta_bar=           0 beta_bar=   15.7500000000000     
+ ibeta_bar=           0 beta_bar=   15.7500000000000     
+ ibeta_bar=           0 beta_bar=   15.7500000000000     
+ ibeta_bar=           0 beta_bar=   15.7500000000000     
+ ibeta_bar=           0 beta_bar=   15.7500000000000     
+ algo_pipe=
+ npipe,algo_pipe=           0           0
+ linet=        4644
+ time: 13:36:51
+ mtype                           
+          -2           2           0
+ isdefault                       
+           0
+ time: 13:36:51
+ time: 13:36:51
+   time depend     iincs=           1 nincs=           1
+ time: 13:36:51
+ iblks=           1 iincs=           1 istep=           1
+ maxval(result_zero)=  0.000000000000000E+000
+ outinp=           0
+ iiter=           1
+Begin forming various matrix       at 2026-06-03 13:36:51 
+ ktsmat=           1
+Begin assemble golbal matrix       at 2026-06-03 13:36:51 
+forrtl: severe (174): SIGSEGV, segmentation fault occurred
+Image              PC                Routine            Line        Source             
+libc.so.6          00007F0163845330  Unknown               Unknown  Unknown
+hstar              0000000000722D66  Unknown               Unknown  Unknown
+hstar              00000000009142C5  Unknown               Unknown  Unknown
+hstar              0000000000892596  Unknown               Unknown  Unknown
+hstar              0000000000871516  Unknown               Unknown  Unknown
+hstar              0000000000407ABD  Unknown               Unknown  Unknown
+libc.so.6          00007F016382A1CA  Unknown               Unknown  Unknown
+libc.so.6          00007F016382A28B  __libc_start_main     Unknown  Unknown
+hstar              00000000004079D5  Unknown               Unknown  Unknown

@@ -1,0 +1,265 @@
+NPOIN  npoinb NELEM  NDIMN  NMATS  NGROUP NTLINK outplot  KSTAB   MAT_curve meshc rmesh  ,level_set_problem,ljdp,stab_matde              
+35331   35331   28647   3     6       25    0      GIDR  0.00000    0    0    0    0    0 9999
+valv1                                                                                                                                    
+ndivide                                                                                                                                  
+NINIT KINIT winit NBLKS NLINK NONSY OUTIP outir outiw neumn equvs,type_ABC,block_sta nbackf nbspring ebody outind nbackd  ninistn                
+  0     0     0    1     0     0     0     1      0    0     0   FIX            0      0        0     0      0      0  0
+TYPE_PROBLEM TYPE_SOLVER TYPE_LOAD TYPE_NL STABPW nlayer,kglb,state_change,Bparameter balgor upliftin                                    
+   Q         PARDISO   LOAD          5    0    0    0    0    0    0     0
+type_layer1                                                                                                                              
+NMASS NSMAT NHMAT NQMAT NLDFL KGMAT NSWKW UWCPL NGRAV nflow ECWPIPE                                                                      
+999    999    999  999   999  0       999   0   999    0         2
+nfreeflownode
+NTSMAT NTHMAT  KSTAT ground_inf src,nextrf,submodel                                                                                      
+       999       999         1         0         0         0         0
+MDOFN(/Ux Uy Uz Thxy Thyz Thzx P W A T)                                                                                                  
+         10
+         1         1         1         0         0         0         0         0         0         1
+         0         0         0         0         0         0         0         0         0         0
+BEETA1 BEETA2 THETA1                                                                                                                     
+     0.600     0.302     0.600
+equvs_process(1:ngroup)                                                                                                                  
+25*0
+appear_level(1:ngroup)                                                                                                                   
+25*0
+APPEAR_PROCESS(1-0nblks/1-ngroup) 
+24*1 0
+MATNO_PROCESS(1-nblks/1-ngroup)  
+9*1 3*5 8*6 1  2   3   4   1
+force_process(1:ngroup)                                                                                                                  
+25*0
+average_appear(1:ngroup) !=0 不参与应力平均，=1应力外推 =2 应力直接平均 =-1按原来方式外推 =-2按原来方式直接平均                          
+25*-2
+gid_u,gid_s,gid_ms,gid_f,gid_rot,gid_v,gid_a,gid_T,gid_P,gid_Pv,gid_ep,gid_Y,gid_FC,gid_Ns,gid_Ss,gid_mxy,gid_bem,gid_wh,gid_wv,gid_bcs  
+   1    1      0     1      0      0     0     1     0      0      0     0      0      0      0      0      0      0      0      0
+res_u,res_s,res_ms,res_f,res_rot,res_v,res_a,res_T,res_P,res_Pv,res_ep,res_Y,res_FC,res_Ns,res_Ss,res_Tv,res_Pa                          
+   0    0      0     0      0      0     0     0     0      0      0     0      0      0      0      0      0
+Icaddmass,swlifs2006,toth,ifswater,ifsgravity,absorb,alfa_p4,stiff_p4                                                                    
+     0   100.000   100.000     3     9.800     0.600   -10.000 0.100E+21
+ftcrack,coefMpa,ikindks,doubsig,ktan1,  ktan2,  nlocalbeam,ndimnrt,listglocbeam(1:nlocalbeam),lelenrt(1:ndimnrt)                         
+ 0.150E+07 0.100E+07     0     2 0.100E+09 0.100E+09     0     0
+ntrans,nlaymif,epsMIFb,gamaMIF,ifixvar0_inpb,camif,dxmif                                                                                 
+     0     0 0.100E+01 0.200E-01     2 0.198E+04 0.250E+02
+hdam                                                                                                                                     
+     0.000  0
+water_level                                                                                                                              
+   -99.000 -99
+modf_dis_blocks                                                                                                                          
+         0 0 
+uinitial                                                                                                                                 
+         0 0
+backf()%                                                                                                                                 
+1-ILINKS(I0, Freedom, node1,node2)                                                                                                       
+1-tLINKS(I0, node1,node2)                                                                                                                
+1-NGROUP--GROUP INFORMATION                                                                                                              
+INCLUDE (1) NAME KNAME INDEX CLASS NRFIELDS FIELDID SPECIAL                                                                              
+ SPTYPE NELGROUP MATNO TYPE_ALGO TYPE_STIFF TYPE_ECOINT ilayer,elcod_local group_inf uplift_ic liquj                                     
+		 (2) TYPE_MASS(1:NRFIELDS)(0-lumped)                                                                                                   
+		 (3) for each field: nfdof-number of freedom,listdof(1:nfdof)                                                                          
+B8   GROUP1     18 CO 2 UT    ST   PE           21  1  0  1  1  1 0.000E+00  0  0  0
+           0  0.000000000000000E+000  0.000000000000000E+000 0
+         0         0 3 1
+         3
+  1 2 3
+1
+10
+
+B8   GROUP2     18 CO 2 UT    ST   PE          164  1  0  1  1  1 0.000E+00  0  0  0
+           0  0.000000000000000E+000  0.000000000000000E+000 0
+         0         0 3 1
+         3
+ 1 2 3
+1
+10
+B8   GROUP3     18 CO 2 UT    ST   PE          262  1  0  1  1  1 0.000E+00  0  0  0
+           0  0.000000000000000E+000  0.000000000000000E+000 0
+         0         0 3 1
+         3
+          1 2 3
+1
+10
+B8   GROUP4     18 CO 2 UT    ST   PE          349  1  0  1  1  1 0.000E+00  0  0  0
+           0  0.000000000000000E+000  0.000000000000000E+000 0
+         0         0 3 1
+         3
+          1 2 3
+1
+10
+B8   GROUP5     18 CO 2 UT    ST   PE          452  1  0  1  1  1 0.000E+00  0  0  0
+           0  0.000000000000000E+000  0.000000000000000E+000 0
+         0         0 3 1
+         3
+          1 2 3
+1
+10
+
+B8   GROUP6     18 CO 2 UT    ST   PE          544  1  0  1  1  1 0.000E+00  0  0  0
+           0  0.000000000000000E+000  0.000000000000000E+000 0
+         0         0 3 1
+         3
+          1 2 3
+1
+10
+
+B8   GROUP7     18 CO 2 UT    ST   PE          828  1  0  1  1  1 0.000E+00  0  0  0
+           0  0.000000000000000E+000  0.000000000000000E+000 0
+         0         0 3 1
+         3
+          1 2 3
+1
+10
+
+B8   GROUP8     18 CO 2 UT    ST   PE         1304  1  0  1  1  1 0.000E+00  0  0  0
+           0  0.000000000000000E+000  0.000000000000000E+000 0
+         0         0 3 1
+         3
+          1 2 3
+1
+10
+
+B8   GROUP9     18 CO 2 UT    ST   PE         1274  1  0  1  1  1 0.000E+00  0  0  0
+           0  0.000000000000000E+000  0.000000000000000E+000 0
+         0         0 3 1
+         3
+          1 2 3
+1
+10
+
+B8   GROUP10    18 CO 2 UT    ST   PE         1274  5  0  1  1  1 0.000E+00  0  0  0
+           0  0.000000000000000E+000  0.000000000000000E+000 0
+         0         0 3 1
+         3
+          1 2 3
+1
+10
+
+B8   GROUP11    18 CO 2 UT    ST   PE         1168  5  0  1  1  1 0.000E+00  0  0  0
+           0  0.000000000000000E+000  0.000000000000000E+000 0
+         0         0 3 1
+         3
+          1 2 3
+1
+10
+
+B8   GROUP12    18 CO 2 UT    ST   PE         1212  5  0  1  1  1 0.000E+00  0  0  0
+           0  0.000000000000000E+000  0.000000000000000E+000 0
+         0         0 3 1
+         3
+          1 2 3
+1
+10
+
+B8   GROUP13    18 CO 2 UT    ST   PE         1212  6  0  1  1  1 0.000E+00  0  0  0
+           0  0.000000000000000E+000  0.000000000000000E+000 0
+         0         0 3 1
+         3
+          1 2 3
+1
+10
+
+B8   GROUP14    18 CO 2 UT    ST   PE         1148  6  0  1  1  1 0.000E+00  0  0  0
+           0  0.000000000000000E+000  0.000000000000000E+000 0
+         0         0 3 1
+         3
+          1 2 3
+1
+10
+
+B8   GROUP15    18 CO 2 UT    ST   PE          466  6  0  1  1  1 0.000E+00  0  0  0
+           0  0.000000000000000E+000  0.000000000000000E+000 0
+         0         0 3 1
+         3
+          1 2 3
+1
+10
+
+B8   GROUP16    18 CO 2 UT    ST   PE          434  6  0  1  1  1 0.000E+00  0  0  0
+           0  0.000000000000000E+000  0.000000000000000E+000 0
+         0         0 3 1
+         3
+          1 2 3
+1
+10
+
+B8   GROUP17    18 CO 2 UT    ST   PE          348  6  0  1  1  1 0.000E+00  0  0  0
+           0  0.000000000000000E+000  0.000000000000000E+000 0
+         0         0 3 1
+         3
+          1 2 3
+1
+10
+
+B8   GROUP18    18 CO 2 UT    ST   PE          352  6  0  1  1  1 0.000E+00  0  0  0
+           0  0.000000000000000E+000  0.000000000000000E+000 0
+         0         0 3 1
+         3
+          1 2 3
+1
+10
+
+B8   GROUP19    18 CO 2 UT    ST   PE          312  6  0  1  1  1 0.000E+00  0  0  0
+           0  0.000000000000000E+000  0.000000000000000E+000 0
+         0         0 3 1
+         3
+          1 2 3
+1
+10
+
+B8   GROUP20    18 CO 2 UT    ST   PE          238  6  0  1  1  1 0.000E+00  0  0  0
+           0  0.000000000000000E+000  0.000000000000000E+000 0
+         0         0 3 1
+         3
+          1 2 3
+1
+10
+
+B8   GROUP21    18 CO 2 UT    ST   PE           29  1  0  1  1  1 0.000E+00  0  0  0
+           0  0.000000000000000E+000  0.000000000000000E+000 0
+         0         0 3 1
+         3
+          1 2 3
+1
+10
+
+B8   GROUP22    18 CO 2 UT    ST   PE        12642  2  0  1  1  1 0.000E+00  0  1  0
+           0  0.000000000000000E+000  0.000000000000000E+000 0
+         0         0 3 1
+         3
+          1 2 3
+1
+10
+
+B8   GROUP23    18 CO 2 UT    ST   PE         2272  3  0  1  1  1 0.000E+00  0  1  0
+           0  0.000000000000000E+000  0.000000000000000E+000 0
+         0         0 3 1
+         3
+          1 2 3
+1
+10
+
+B8   GROUP24    18 CO 2 UT    ST   PE          309  4  0  1  1  1 0.000E+00  0  1  0
+           0  0.000000000000000E+000  0.000000000000000E+000 0
+         0         0 3 1
+         3
+          1 2 3
+1
+10
+
+B8   GROUP25    17  CO     2  UT   ST   PE          33  1  0  1  1  1 0.000E+00  0  0  0
+           0  0.000000000000000E+000  0.000000000000000E+000 0
+         0         0 3 1
+         3
+          1 2 3
+1
+10
+
+tension_joint                                                                                                                            
+         0
+contact_joint                                                                                                                            
+         0
+ngaps ngapb ctt_pe miter_bt   torbt iblkbt nonsbt xlwsol method_gapi miter_state type_solver_ctt restart_ctt damp_ctt istatec            
+  0     0     1     500     0.1E-05   1      0      0        0           1          PROFILE           0       0.0E+00    1
+ nrcsteel
+         0
+ nwcpipe
+         0

@@ -1,0 +1,114 @@
+ time: 08:52:56
+ time: 08:52:56
+ Input the problem name?
+ NPOIN                                                                          
+  
+        5628        5628        4720           3           1           1
+           0 GIDB                  0.000000000000000E+000           0
+           0           0           0           0       99999
+ NINIT                                                                          
+  
+           0           0           0           1           0           0
+           0          -1           0           0           0 
+ FIX                                                          0           0
+           0           0           0           0           0
+ outinpunit=          37 outindunit=          54
+ TYPE_PROBLEM                                                                   
+  
+ Q                                                 
+ PARDISO                                           
+ LOAD                                                        10           0
+           0           0
+ type_layer1                                                                    
+  
+ NMASS                                                                          
+  
+           1           1           1           1           0           0
+           1           0           1           0           2
+ nfreeflownode                                                                  
+  
+ NTSMAT                                                                         
+  
+         999         999           0           0           0
+ beeta1,beeta2,theta1=  0.500000000000000       0.250000000000000     
+  0.500000000000000     
+ equvs_process(1:ngroup)                                                        
+  
+ appear_level(1:ngroup)                                                         
+  
+ APPEAR_PROCESS                                                                 
+  
+ appear_process=           1
+ MATNO_PROCESS                                                                  
+  
+ iblks=           0 ngroup=           1 matno=           1
+ force_process=           0
+ uinitial=           0
+ 1-ILINKS(I0                                                                    
+  
+ 1-tLINKS(I0                                                                    
+  
+ text1=
+ 1-NGROUP--GROUP                                                                
+  
+ (3)                                                                            
+  
+ igroup=           1
+ name=B8        
+ tne=        4720
+ text_tension_joint=
+ tension_joint                                                                  
+  
+ text_tension_contact=
+ contact_joint                                                                  
+  
+ ground_inf=           0 /100=           0
+ nblks=           1
+ Input runblks, =?
+ time: 08:52:56
+ MATERIAL                                                                       
+  
+ NAME                                                                           
+  
+ FIRST:NAME---MECHANICAL                                                        
+  
+ FOR                                                                            
+  
+ NUMBER                                                                         
+  
+ FOR                                                                            
+  
+ FOR                                                                            
+  
+ FOR                                                                            
+  
+ CAMCLAY                                                                        
+  
+ FOR                                                                            
+  
+ jmat=           1
+ MECHANICAL                    SOLID                                    1
+ ELASTIC_ISOTROPIC               0.000000000000000E+000   1.00000000000000     
+   1.00000000000000        10000000000.0000       0.167000000000000     
+  1.000000000000000E-006           0           0           0
+ jmat=           2
+ HEAT                          SOLID                                    1
+ ngaps                                                                          
+  
+ ngaps=           0
+ nrcsteel                                                                       
+  
+ nrcsteel=           0
+ nwcpipe                                                                        
+  
+ nwcpipe=           0
+ nifsgroup 
+ nifsgroup=           0
+ nabsfgroup
+ nabsfgroup=           0
+ nabssgroup
+ nabssgroup=           0
+ ifsnedge                                                                       
+                      
+ ifsnedge=           0
+ stop for ierror/=0 ! ,ierror=           8

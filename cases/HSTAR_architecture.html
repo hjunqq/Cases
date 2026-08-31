@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HSTAR / Polaris 系统架构（含 T2 硬化）</title>
+<style>
+  :root{
+    --void:#0a0e17; --panel:#121826; --panel2:#0e1420; --line:#243049;
+    --ink:#e6ecf5; --mut:#8b98b0; --star:#56a8ff; --pass:#3ecf8e; --run:#f0a83c; --fail:#ff5c6c;
+    --mono:"Cascadia Code",ui-monospace,"SF Mono",Consolas,monospace;
+    --sans:"Segoe UI",system-ui,"Microsoft YaHei","PingFang SC",sans-serif;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--void);color:var(--ink);font-family:var(--sans);line-height:1.5;padding:32px 20px 64px;}
+  .wrap{max-width:1080px;margin:0 auto;}
+  h1{font-size:26px;margin:0 0 4px;letter-spacing:-.01em;}
+  .sub{color:var(--mut);font-size:14px;margin:0 0 6px;}
+  .legend{display:flex;flex-wrap:wrap;gap:14px;margin:14px 0 26px;font-size:12px;color:var(--mut);font-family:var(--mono);}
+  .legend b{color:var(--star);}
+  .t2{color:var(--star);}
+
+  .layer{border:1px solid var(--line);border-radius:14px;background:var(--panel);padding:16px 18px;margin:0 auto;position:relative;}
+  .layer + .arrow{margin:0 auto;}
+  .ltag{position:absolute;top:-9px;left:16px;background:var(--panel);padding:0 8px;font-family:var(--mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--mut);}
+  .row{display:flex;gap:14px;flex-wrap:wrap;justify-content:center;}
+  .box{border:1px solid var(--line);border-radius:10px;background:var(--panel2);padding:12px 14px;flex:1;min-width:220px;}
+  .box h3{margin:0 0 3px;font-size:15px;}
+  .box .port{font-family:var(--mono);font-size:11px;color:var(--star);}
+  .box ul{margin:8px 0 0;padding-left:16px;}
+  .box li{font-size:12.5px;color:var(--mut);margin-bottom:3px;}
+  .box li b{color:var(--ink);font-weight:600;}
+  .box li.hard{color:var(--ink);}
+  .box li.hard::marker{content:"★ ";color:var(--star);}
+  .hardbox{border-color:color-mix(in srgb,var(--star) 45%,var(--line));box-shadow:0 0 0 1px color-mix(in srgb,var(--star) 20%,transparent) inset;}
+  .hardbox h3 .star{color:var(--star);}
+
+  .arrow{width:2px;height:26px;background:linear-gradient(var(--star),color-mix(in srgb,var(--star) 30%,transparent));margin:6px auto;position:relative;}
+  .arrow::after{content:"▼";position:absolute;bottom:-6px;left:50%;transform:translateX(-50%);color:var(--star);font-size:11px;}
+  .arrow.lbl::before{content:attr(data-l);position:absolute;left:12px;top:50%;transform:translateY(-50%);white-space:nowrap;font-family:var(--mono);font-size:11px;color:var(--mut);}
+  .split{display:flex;gap:14px;justify-content:center;align-items:stretch;}
+  .split > .layer{flex:1;margin:0;}
+
+  .store{display:flex;gap:14px;flex-wrap:wrap;margin-top:22px;}
+  .chip{flex:1;min-width:200px;border:1px dashed var(--line);border-radius:10px;padding:11px 14px;background:var(--panel2);font-size:12.5px;color:var(--mut);}
+  .chip b{color:var(--ink);}
+  .chip .k{font-family:var(--mono);font-size:10px;color:var(--star);letter-spacing:.1em;text-transform:uppercase;display:block;margin-bottom:4px;}
+  .foot{margin-top:26px;color:var(--mut);font-size:12px;font-family:var(--mono);text-align:center;}
+  .win{border-color:color-mix(in srgb,var(--pass) 40%,var(--line));}
+  .win .port{color:var(--pass);}
+
+  /* --- detail sections --- */
+  .detail{margin-top:40px;border-top:1px solid var(--line);padding-top:28px;}
+  .detail h2{font-size:20px;margin:0 0 4px;}
+  .detail .d-sub{color:var(--mut);font-size:13px;margin:0 0 18px;}
+  .detail h2 .num{font-family:var(--mono);font-size:13px;color:var(--star);margin-right:8px;}
+
+  /* harness grid */
+  .hgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;}
+  .mod{border:1px solid var(--line);border-radius:10px;background:var(--panel2);padding:12px 14px;}
+  .mod.star{border-color:color-mix(in srgb,var(--star) 45%,var(--line));}
+  .mod .mname{font-family:var(--mono);font-size:13px;color:var(--star);font-weight:600;}
+  .mod .mdesc{font-size:12.5px;color:var(--mut);margin-top:5px;}
+  .mod .mfn{font-family:var(--mono);font-size:11px;color:var(--ink);}
+  .import-note{margin-top:16px;border:1px solid var(--line);border-left:3px solid var(--star);border-radius:10px;background:var(--panel);padding:14px 16px;font-size:13px;}
+  .import-note .r{margin:6px 0 0;color:var(--mut);}
+  .import-note .r b{color:var(--ink);}
+  .import-note .r .m{font-family:var(--mono);color:var(--star);font-size:12px;}
+  .import-note .concl{margin-top:10px;color:var(--pass);font-size:13px;}
+
+  /* langgraph spine + recovery */
+  .spine{display:flex;flex-wrap:wrap;align-items:center;gap:6px 4px;margin:4px 0 18px;}
+  .node{border:1px solid var(--line);border-radius:8px;background:var(--panel2);padding:6px 10px;font-size:12.5px;white-space:nowrap;}
+  .node.se{background:color-mix(in srgb,var(--mut) 16%,var(--panel2));font-family:var(--mono);font-size:11px;color:var(--mut);}
+  .node.star{border-color:color-mix(in srgb,var(--star) 50%,var(--line));}
+  .node.star b{color:var(--star);}
+  .node small{display:block;font-family:var(--mono);font-size:9.5px;color:var(--star);margin-top:2px;}
+  .sep{color:var(--star);font-size:12px;}
+  .recovery{border:1px solid color-mix(in srgb,var(--run) 40%,var(--line));border-radius:12px;background:color-mix(in srgb,var(--run) 7%,var(--panel));padding:14px 16px;}
+  .recovery .rt{font-family:var(--mono);font-size:12px;color:var(--run);text-transform:uppercase;letter-spacing:.1em;}
+  .recovery .rflow{margin:8px 0;font-size:13px;}
+  .recovery .rflow .m{font-family:var(--mono);color:var(--run);}
+  .branches{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px;}
+  .branch{border:1px solid var(--line);border-radius:8px;background:var(--panel2);padding:6px 10px;font-size:12px;}
+  .branch .b-n{font-family:var(--mono);color:var(--ink);font-size:11.5px;}
+  .branch .b-d{color:var(--mut);}
+  .branch.pause{border-color:color-mix(in srgb,var(--star) 45%,var(--line));}
+  .branch.pause .b-n{color:var(--star);}
+  .routes{margin-top:14px;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:8px;}
+  .route{font-size:12px;color:var(--mut);border-left:2px solid var(--line);padding-left:10px;}
+  .route .rn{font-family:var(--mono);color:var(--ink);font-size:11.5px;}
+
+  /* linkage lanes */
+  .lanes{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+  @media(max-width:720px){.lanes{grid-template-columns:1fr;}}
+  .lane{border:1px solid var(--line);border-radius:12px;background:var(--panel2);padding:14px 16px;}
+  .lane .lh{font-size:14px;font-weight:600;margin-bottom:3px;}
+  .lane .lh .tag{font-family:var(--mono);font-size:10px;color:var(--star);border:1px solid color-mix(in srgb,var(--star) 40%,var(--line));border-radius:999px;padding:1px 7px;margin-left:6px;vertical-align:middle;}
+  .lane .ld{font-size:12px;color:var(--mut);margin-bottom:9px;}
+  .chain{font-family:var(--mono);font-size:11.5px;line-height:1.85;color:var(--ink);}
+  .chain .ep{color:var(--star);}
+  .chain .svc{color:var(--pass);}
+  .chain .cmt{color:var(--mut);}
+  .lane .trig{margin-top:9px;font-size:12px;color:var(--mut);border-top:1px dashed var(--line);padding-top:8px;}
+  .lane .trig b{color:var(--run);}
+  .eps{display:flex;flex-wrap:wrap;gap:6px;margin-top:14px;}
+  .eps .ep{font-family:var(--mono);font-size:11px;border:1px solid var(--line);border-radius:6px;background:var(--panel2);padding:3px 8px;color:var(--ink);}
+  .eps .ep b{color:var(--star);}
+  .keybox{border:1px solid color-mix(in srgb,var(--pass) 40%,var(--line));border-left:3px solid var(--pass);border-radius:10px;background:color-mix(in srgb,var(--pass) 6%,var(--panel));padding:12px 16px;margin-bottom:16px;font-size:13px;}
+  .keybox b{color:var(--pass);}
+  .keybox .m{font-family:var(--mono);color:var(--ink);font-size:12px;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>HSTAR / Polaris 系统架构</h1>
+  <p class="sub">对话式 FEM 分析平台 · 单宿主部署(keepalive 守护)· 含 T2 生产化硬化</p>
+  <div class="legend">
+    <span><b>★</b> = T2 生产硬化(本次落地)</span>
+    <span>▼ = 请求/数据流</span>
+    <span>虚线框 = 存储/守护</span>
+  </div>
+
+  <!-- Windows -->
+  <div class="layer win" style="max-width:520px;">
+    <span class="ltag">Windows · Office-Q</span>
+    <div class="row">
+      <div class="box win">
+        <h3>Windows 工作站</h3>
+        <span class="port">Syncthing ← cases/cases</span>
+        <ul><li>train* 基准算例镜像 · <b>本架构图</b></li></ul>
+      </div>
+    </div>
+  </div>
+  <div class="arrow lbl" data-l="Syncthing 单向同步 (folder: hstar-train)"></div>
+
+  <!-- Polaris -->
+  <div class="layer">
+    <span class="ltag">前端</span>
+    <div class="row">
+      <div class="box">
+        <h3>Polaris</h3>
+        <span class="port">Next.js 16 · :4100</span>
+        <ul>
+          <li>会话轨道 · 分叉分支星图 · 星轨推理链</li>
+          <li>VTP 3D 视口(vtk.js)· 内联预览</li>
+          <li>算例库 · 批处理 · 反演 · 集群</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="arrow lbl" data-l="同源代理 rewrites: /api/fc/*→:3000 · /api/wf/*→:8800"></div>
+
+  <!-- backend split -->
+  <div class="split">
+    <div class="layer">
+      <span class="ltag">后端 API</span>
+      <div class="box hardbox">
+        <h3>fem-chat headless API</h3>
+        <span class="port">Next.js · :3000 · 75 routes</span>
+        <ul>
+          <li><b>/api/chat</b> 请求进入</li>
+          <li class="hard"><b>并发闸</b>(Semaphore)背压,防子进程耗尽</li>
+          <li>→ agent CLI 子进程(Claude Code · 订阅 OAuth)</li>
+          <li class="hard"><b>结构化日志 + 凭据 redaction</b></li>
+          <li>断连持久化(clientGone 续跑)</li>
+          <li>文件态:workspace/projects/branches/sessions</li>
+        </ul>
+      </div>
+    </div>
+    <div class="layer">
+      <span class="ltag">编排</span>
+      <div class="box">
+        <h3>workflow (LangGraph)</h3>
+        <span class="port">uvicorn · :8800</span>
+        <ul>
+          <li>supervisor · scheduler · 人审中断</li>
+          <li>run_solver tool ↓(经 run_pipeline)</li>
+          <li><span class="t2">P2 待</span>:持久队列 + Postgres checkpointer</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="arrow lbl" data-l="agent Bash → skills/run_pipeline.py(单一咽喉)"></div>
+
+  <!-- sandbox / solver -->
+  <div class="layer" style="max-width:760px;">
+    <span class="ltag">执行 · Ring 2</span>
+    <div class="row">
+      <div class="box hardbox">
+        <h3><span class="star">★</span> harness.sandbox — bwrap jail</h3>
+        <ul>
+          <li class="hard">只读 OS + Intel MKL + hstar 二进制;<b>job_dir 唯一可写</b></li>
+          <li class="hard"><b>线程闸</b>:每解上限 = 核数 // 并发(64→16),防超订</li>
+          <li class="hard">优雅降级:bwrap 不可用则直跑,不打断求解</li>
+          <li>→ <b>hstar</b> 求解器(MKL / PARDISO)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="foot" style="margin-top:10px;">★ 宿主前置:AppArmor bwrap profile 启用 userns(deploy/enable-sandbox.sh)—— 已在生产宿主验通</div>
+
+  <!-- stores / daemon -->
+  <div class="store">
+    <div class="chip"><span class="k">存储 · 状态</span><b>workspace/</b> projects · branches · sessions · results(文件态,P1 待迁 Postgres/MinIO)</div>
+    <div class="chip"><span class="k">存储 · 基准</span><b>cases/cases/</b> train* 基准算例 → 经 Syncthing 到 Windows</div>
+    <div class="chip"><span class="k">守护</span><b>keepalive.sh</b> setsid nohup 监督 :3000 + :8800,健康检查自动重启</div>
+  </div>
+
+  <!-- ============ 细化 1: harness ============ -->
+  <div class="detail">
+    <h2><span class="num">①</span>harness — 中立共享层如何发挥作用</h2>
+    <p class="d-sub">一个被 <b>chat 链路</b>(skills)和 <b>LangGraph 链路</b>(workflow)<b>共同 import</b> 的纯 Python 库 —— 配置合并、物理门控、回归基准、求解隔离的<b>单一真相源</b>。两条路都穿过它,结果口径不会分叉。</p>
+    <div class="hgrid">
+      <div class="mod">
+        <div class="mname">harness.dictmerge</div>
+        <div class="mfn">deep_merge()</div>
+        <div class="mdesc">配置 override 的深合并规则 —— 模板 + 覆盖 JSON 如何叠加,一处定义,两条路一致。</div>
+      </div>
+      <div class="mod">
+        <div class="mname">harness.gate</div>
+        <div class="mfn">physics_gate() · detect_crash_markers() · result_values()</div>
+        <div class="mdesc">物理门控 + 崩溃标记检测 + 结果取值 —— 判定一次求解"是否可信"的统一标准。</div>
+      </div>
+      <div class="mod">
+        <div class="mname">harness.benchmarks</div>
+        <div class="mfn">get_static_benchmark() · lookup / list</div>
+        <div class="mdesc">回归基准 + 容差(位移/应力的黄金值)—— 结果校验与"是否回退"的唯一依据。</div>
+      </div>
+      <div class="mod star">
+        <div class="mname">★ harness.sandbox</div>
+        <div class="mfn">run_solver() · thread_cap()</div>
+        <div class="mdesc">bwrap jail + 线程闸 —— 求解执行隔离。本次 T2 新增,是 solver 唯一执行咽喉。</div>
+      </div>
+    </div>
+    <div class="import-note">
+      <div style="font-family:var(--mono);font-size:11px;color:var(--star);letter-spacing:.1em;">两条链路的接入点</div>
+      <p class="r"><b>chat 链路：</b><span class="m">run_pipeline → harness.sandbox.run_solver</span>(执行);<span class="m">validate_results → harness.gate + benchmarks</span>(校验)</p>
+      <p class="r"><b>langgraph 链路：</b><span class="m">execute 节点 → run_solver → harness.sandbox</span>(执行);<span class="m">evaluate 节点 → validate_outputs → harness.gate + benchmarks</span>(校验)</p>
+      <p class="concl">⇒ 无论走对话还是自动编排,求解的"隔离方式"和"是否通过"用的是同一套代码 —— harness 是防两条路发散的中枢。</p>
+    </div>
+  </div>
+
+  <!-- ============ 细化 2: LangGraph ============ -->
+  <div class="detail">
+    <h2><span class="num">②</span>LangGraph — 如何编排(自愈式流水线)</h2>
+    <p class="d-sub">一条 <b>build → solve → validate</b> 主线,配一个<b>自愈环</b>:任一阶段失败/不达标都落到 failure_triage,由 improve_router 决定恢复策略(修数据 / 重网格 / 重参数 / 提代码补丁 / 人审 / 放弃)。带 LangGraph checkpointer 与人审中断。</p>
+
+    <div style="font-family:var(--mono);font-size:11px;color:var(--mut);margin-bottom:4px;">主线 (happy path)</div>
+    <div class="spine">
+      <span class="node se">START</span><span class="sep">▸</span>
+      <span class="node">intake</span><span class="sep">▸</span>
+      <span class="node">capability_gate</span><span class="sep">▸</span>
+      <span class="node">context_load</span><span class="sep">▸</span>
+      <span class="node">data_audit</span><span class="sep">▸</span>
+      <span class="node">mesh_workflow</span><span class="sep">▸</span>
+      <span class="node">parameter_workflow</span><span class="sep">▸</span>
+      <span class="node">preflight</span><span class="sep">▸</span>
+      <span class="node star">execute<b></b><small>★ harness.sandbox</small></span><span class="sep">▸</span>
+      <span class="node star">evaluate<small>★ harness.gate+bench</small></span><span class="sep">▸</span>
+      <span class="node">finalize</span><span class="sep">▸</span>
+      <span class="node se">END</span>
+    </div>
+
+    <div class="recovery">
+      <div class="rt">自愈环 · 任一阶段失败/不达标</div>
+      <div class="rflow">↯ 落到 <span class="m">failure_triage</span> 诊断病因 ▸ <span class="m">improve_router</span> 选恢复策略：</div>
+      <div class="branches">
+        <div class="branch"><span class="b-n">data_repair</span> <span class="b-d">修输入</span></div>
+        <div class="branch"><span class="b-n">mesh_workflow</span> <span class="b-d">重做网格</span></div>
+        <div class="branch"><span class="b-n">parameter_workflow</span> <span class="b-d">重建参数</span></div>
+        <div class="branch"><span class="b-n">code_patch_proposal</span> <span class="b-d">提代码补丁(自改进)</span></div>
+        <div class="branch pause"><span class="b-n">human_review ⏸</span> <span class="b-d">人审中断(interrupt)</span></div>
+        <div class="branch"><span class="b-n">finalize</span> <span class="b-d">放弃/收尾</span></div>
+      </div>
+    </div>
+
+    <div class="routes">
+      <div class="route"><span class="rn">capability_gate</span> → 能力未注册则 failure_triage</div>
+      <div class="route"><span class="rn">data_audit</span> → 输入坏则 data_repair</div>
+      <div class="route"><span class="rn">preflight</span> → runnable? 否则回 mesh / data_repair / triage</div>
+      <div class="route"><span class="rn">execute</span> → 崩溃则 failure_triage</div>
+      <div class="route"><span class="rn">evaluate</span> → 物理门控/基准不过则 failure_triage</div>
+      <div class="route"><span class="rn">code_patch_proposal</span> → human_review 批准后应用</div>
+    </div>
+    <p class="d-sub" style="margin-top:14px;">registries:capability / template / run / experience —— 编排中查"能不能做/用什么模板/历史怎么做的",成功经验回灌 context_load 形成少样本检索。</p>
+  </div>
+
+  <!-- ============ 细化 3: workflow ↔ 主服务联动 ============ -->
+  <div class="detail">
+    <h2><span class="num">③</span>workflow(:8800)与主服务(:3000)如何联动</h2>
+    <p class="d-sub">两条独立触发路径 —— agent 在对话内主动跑经验循环,或 UI/API 直接编排批处理与人审。</p>
+
+    <div class="keybox">
+      <b>关键:基础求解不碰 :8800。</b> 一次普通对话求解走 <span class="m">:3000 → agent → run_pipeline → harness.sandbox → solver</span>,与编排服务无关。<span class="m">:8800</span> 只在<b>经验循环 / 自改进 / 批处理 / 人审</b>时介入 —— 所以它挂了也不影响日常求解。
+    </div>
+
+    <div class="lanes">
+      <div class="lane">
+        <div class="lh">路径 A<span class="tag">agent 驱动 · 对话内</span></div>
+        <div class="ld">agent 依 CLAUDE.md/workflow.md 判断需要自改进/自动恢复时,用 Bash 跑 run_workflow.py。</div>
+        <div class="chain">
+          :3000 <span class="cmt">/api/chat</span> → agent Bash<br>
+          &nbsp;└→ <span class="cmt">skills/</span>run_workflow.py<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;├ <span class="ep">POST</span> <span class="svc">:8800</span>/workflows <span class="cmt">启动自愈环</span><br>
+          &nbsp;&nbsp;&nbsp;&nbsp;├ <span class="ep">GET</span> <span class="svc">:8800</span>/workflows/{id} <span class="cmt">轮询</span><br>
+          &nbsp;&nbsp;&nbsp;&nbsp;└ <span class="ep">POST</span> …/interrupt-response <span class="cmt">人审续跑</span>
+        </div>
+        <div class="trig"><b>触发</b>:改进某算例 · 求解失败自动恢复 · case_family 有注册基准 → 结果回写<b>经验库(KI)</b></div>
+      </div>
+
+      <div class="lane">
+        <div class="lh">路径 B<span class="tag">UI / API 驱动</span></div>
+        <div class="ld">Polaris(或外部)直接编排 workflow/batch,查状态、答人审。</div>
+        <div class="chain">
+          Polaris → <span class="cmt">/api/wf/*</span> ──直连──▶ <span class="svc">:8800</span>/*<br>
+          <span class="cmt">&nbsp;&nbsp;(healthz · workflows · batches)</span><br><br>
+          Polaris → <span class="cmt">/api/fc/*</span> → :3000<br>
+          &nbsp;└ <span class="cmt">/api/workflows · /api/batches</span><br>
+          &nbsp;&nbsp;&nbsp;└ fetch 代理 ──▶ <span class="svc">:8800</span>
+        </div>
+        <div class="trig"><b>用途</b>:运行列表/状态 · 人审响应 · <b>批处理</b>(跨算例 Supervisor:submit → children → resume)</div>
+      </div>
+    </div>
+
+    <div class="eps">
+      <span class="ep"><b>GET</b> /healthz</span>
+      <span class="ep"><b>POST</b> /workflows</span>
+      <span class="ep"><b>GET</b> /workflows/{id}</span>
+      <span class="ep"><b>POST</b> /workflows/{id}/interrupt-response</span>
+      <span class="ep"><b>POST</b> /batches</span>
+      <span class="ep"><b>GET</b> /batches/{id}</span>
+      <span class="ep"><b>POST</b> /batches/{id}/children/{cid}/interrupt-response</span>
+    </div>
+    <p class="d-sub" style="margin-top:14px;">回到 ①②:run_workflow 启动的 <span class="t2">LangGraph 自愈环</span>,其 execute/evaluate 节点又落到 <span class="t2">★ harness</span> 的 sandbox+gate —— 与对话链路同一套隔离与门控。三张图在此闭合。</p>
+  </div>
+
+  <div class="foot">HSTAR FEM 平台 · Fortran 求解器 + Python skills + Next.js 前端　|　★ T2 硬化:并发闸 · solver 沙箱 · 线程闸 · 结构化日志(均已上线并验证)</div>
+</div>
+</body>
+</html>

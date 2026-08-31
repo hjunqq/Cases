@@ -1,0 +1,23 @@
+(*.loa)输入各类加载曲线                                     
+         2
+    2   LINEAR                  0              2
+   0.00000E+00   0.10000E+01
+   0.10000E+01   0.10000E+01
+    3   LINEAR                  0              2
+   0.00000E+00   0.10000E+01   0.3000E+01
+   0.00000E+00   0.10000E+01   0.3000E+01
+ 集中荷载作用信息
+           0           0
+                               总的可能作用水荷载面数(nedge)
+         0
+                                      作用水荷载面数及分组数
+                                    edge_load_group,delgroup
+         0         0
+                              Define body force in each BLKS
+   0.98100E+01   0.00000E+00  -0.10000E+01   0.00000E+00  -0.10000E+01
+                                   Time_curve_for_each_group    1
+         1         0         0
+                              输入梁上作用荷载信息\nbeamload
+         0
+                             输入板上作用荷载信息\nplateload
+         0

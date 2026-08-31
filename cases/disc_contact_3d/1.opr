@@ -1,0 +1,9 @@
+ Irecover wgroup !irecover=-1,element averge stress;=1,nodal stress by groups
+                !=2, nodal stress in whole domain, =0, stress at gauss point.
+  0  0  0  0  0
+ following is for whether the stress of the group is listed in the result
+ following is the beginning node and the ending node;
+ one line for each group
+ following is for elements(e1:e2,istre)
+ following is for gaps of contact elements(e1:e2)
+ following is for Sn and St of joint elements(e1:e2)

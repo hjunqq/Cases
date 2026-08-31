@@ -1,0 +1,58 @@
+ ================================================
+   Easy_HSTAR - Finite Element Analysis
+ ================================================
+ 
+ Reading: 1.toml
+  Read 5628 nodes
+  Read 4720 elements
+ =============================================
+  HSTAR Problem Summary
+ =============================================
+  Version     :            1
+  Problem name: 1
+  Type        : S
+  Dimensions  :            3
+  Nodes       :         5628
+  Elements    :         4720
+  Materials   :            1
+  Groups      :            1
+  Max DOF/node:           10
+  Blocks      :            1
+  Links       :            0
+  Solver      : PARDISO
+  Load type   : LOAD
+  Output      : GIDB
+ 
+  Analysis blocks:
+   Block   1 type=static nincs=     3
+ 
+  Materials:
+   Mat   1 name=Concrete thermal type=HEAT
+ =============================================
+ validate_problem: all checks passed
+ 
+ Input OK. Starting analysis...
+  Thermal: free=5624, BC=4, inactive=0
+  Total heat capacity =  3.036E+01
+  Inc 1 dt=  0.0500 nstep=20
+  Step    4 t=   0.200 T_min=-5.748E-02 T_max= 1.000E+00
+  Step    8 t=   0.400 T_min=-5.923E-02 T_max= 1.000E+00
+  Step   12 t=   0.600 T_min=-6.181E-02 T_max= 1.000E+00
+  Step   16 t=   0.800 T_min=-6.123E-02 T_max= 1.000E+00
+  Step   20 t=   1.000 T_min=-5.923E-02 T_max= 1.000E+00
+  Inc 2 dt=  0.1000 nstep=10
+  Step    2 t=   0.200 T_min=-5.616E-02 T_max= 1.000E+00
+  Step    4 t=   0.400 T_min=-5.340E-02 T_max= 1.000E+00
+  Step    6 t=   0.600 T_min=-5.093E-02 T_max= 1.000E+00
+  Step    8 t=   0.800 T_min=-4.875E-02 T_max= 1.000E+00
+  Step   10 t=   1.000 T_min=-4.680E-02 T_max= 1.000E+00
+  Inc 3 dt=  0.5000 nstep=16
+  Step    3 t=   1.500 T_min=-3.829E-02 T_max= 1.000E+00
+  Step    6 t=   3.000 T_min=-3.100E-02 T_max= 1.000E+00
+  Step    9 t=   4.500 T_min=-2.886E-02 T_max= 1.000E+00
+  Step   12 t=   6.000 T_min=-2.436E-02 T_max= 1.000E+00
+  Step   15 t=   7.500 T_min=-2.339E-02 T_max= 1.000E+00
+  Step   16 t=   8.000 T_min=-2.117E-02 T_max= 1.000E+00
+ Thermal analysis completed.
+ 
+ Analysis completed successfully.

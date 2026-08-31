@@ -1,0 +1,526 @@
+{
+  "type_problem": "Q",
+  "solver": "PROFILE",
+  "ndimn": 2,
+  "nblks": 1,
+  "groups": [
+    {
+      "name": "Soil",
+      "nelgroup": 2430,
+      "matno": 1,
+      "nnode": 4,
+      "elem_type": "Q4",
+      "elem_name": "Q4",
+      "elem_index": 5,
+      "class": "CO",
+      "nrfields": 1,
+      "field": "W",
+      "special": "ST",
+      "sptype": "PE",
+      "type_algo": 0,
+      "type_stiff": 1,
+      "type_ecoint": 1,
+      "ilayer": 1,
+      "elcod_local": 0.0,
+      "group_inf": 0,
+      "uplift_ic": 0,
+      "liquj": 0,
+      "type_mass": [
+        0
+      ],
+      "alfa": 0.0,
+      "beta": 0.0,
+      "order_time": [
+        0,
+        0
+      ],
+      "fields": [
+        {
+          "nfdof": 1,
+          "listdof": [
+            8
+          ]
+        }
+      ]
+    }
+  ],
+  "materials": [
+    {
+      "id": 1,
+      "type": "SEEPAGE",
+      "fluid_density": 1000.0,
+      "porosity": 0.44,
+      "bulk_w": 2200000000.0,
+      "permeability": [
+        1e-05,
+        1e-05
+      ]
+    }
+  ],
+  "blocks": {
+    "appear": [
+      [
+        1
+      ]
+    ],
+    "gravity": [
+      9.81,
+      0.0,
+      -1.0,
+      0.0,
+      -1.0
+    ],
+    "increments": [
+      [
+        {
+          "miter": 5,
+          "ditime": 1.0,
+          "noutn": 1,
+          "noutf": 1,
+          "nstep": 1,
+          "inc_step": 1,
+          "nresta": 1,
+          "nmcon": 0,
+          "nbasef": 0
+        }
+      ]
+    ],
+    "matno_process": [
+      [
+        1
+      ]
+    ],
+    "force_process": [
+      0
+    ],
+    "average_appear": [
+      2
+    ],
+    "earthquake_curve": [
+      0,
+      0
+    ],
+    "time_curve_for_each_group": [
+      1
+    ]
+  },
+  "boundary": {
+    "fixsets": [
+      {
+        "dof": 8,
+        "nodes": [
+          1656,
+          1658,
+          1661,
+          1665,
+          1669,
+          1679,
+          1688,
+          1699,
+          1709,
+          1719,
+          1735,
+          1751,
+          1767,
+          1782,
+          1799,
+          1819,
+          1840,
+          1866,
+          1898,
+          1944,
+          1991,
+          2040,
+          2075,
+          2103,
+          2130,
+          2155,
+          2182,
+          2207,
+          2235,
+          2260,
+          2287,
+          2298,
+          2310,
+          2321,
+          2333,
+          2345,
+          2355,
+          2366,
+          2376,
+          2386,
+          2395,
+          2409,
+          2421,
+          2431,
+          2442,
+          2452,
+          2462,
+          2472,
+          2481,
+          2489,
+          2496,
+          2498,
+          2500,
+          2502,
+          2504,
+          2506,
+          2507,
+          2508,
+          2509,
+          2510,
+          2511,
+          2532
+        ],
+        "value": 100.0,
+        "time_curve": 2,
+        "jfixvar": 2,
+        "f5": 0,
+        "tfixvar": 0.0,
+        "gamawx": 0.0,
+        "nextr": 0
+      },
+      {
+        "dof": 8,
+        "nodes": [
+          1,
+          3,
+          6,
+          12,
+          18,
+          28,
+          37,
+          51,
+          63,
+          79,
+          97,
+          119,
+          138,
+          162,
+          185,
+          213,
+          238,
+          270,
+          299,
+          333,
+          365,
+          403,
+          440,
+          478,
+          516,
+          559,
+          601,
+          645,
+          693,
+          737,
+          787
+        ],
+        "value": 0.0,
+        "time_curve": 3,
+        "jfixvar": 2,
+        "f5": 0,
+        "tfixvar": 0.0,
+        "gamawx": 0.0,
+        "nextr": 0
+      }
+    ],
+    "nline": 2
+  },
+  "added_mass": {
+    "icaddmass": 0,
+    "swlifs2006": 50.0,
+    "water_level": 50.0,
+    "ifswater": 2,
+    "ifsgravity": 9.8,
+    "absorb": 0.6,
+    "alfa_p4": 10.0,
+    "stiff_p4": 1e+20
+  },
+  "mif": {
+    "ntrans": 0,
+    "nlaymif": 0,
+    "epsMIFb": 1.0,
+    "gamaMIF": 0.02,
+    "ifixvar0_inpb": 2,
+    "camif": 1980.0,
+    "dxmif": 25.0
+  },
+  "gid": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0
+  ],
+  "res": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "newmark": [
+    0.5,
+    0.25,
+    1.0
+  ],
+  "glb_rows": {
+    "header": {
+      "npoinb": "2543",
+      "nmats": "1",
+      "outplot": "GIDR",
+      "kstab": "0.0",
+      "mat_curve": "0",
+      "level_set_problem": "0",
+      "ljdp": "0",
+      "stab_matde": "99999",
+      "ntlink": "0",
+      "meshc": "0",
+      "rmesh": "0"
+    },
+    "run_flags": {
+      "ninit": 0,
+      "kinit": 0,
+      "winit": 0,
+      "nlinks": 0,
+      "nonsym": 0,
+      "outinp": 0,
+      "outintr": 0,
+      "outintw": 0,
+      "neuman": 0,
+      "equvs": 0,
+      "block_stab": 0,
+      "nbackf": 0,
+      "nbspring": 0,
+      "ebody": 0,
+      "outind": 0,
+      "nbackdt": 0,
+      "ninistn": 0
+    },
+    "type_row": {
+      "type_load": "LOAD",
+      "stabpw": "0",
+      "nlayer": "0",
+      "kglb": "0",
+      "state_change": "0",
+      "bparameter": "0",
+      "balgor": "0",
+      "upliftin": "0"
+    },
+    "counts": [
+      "1",
+      "1",
+      "1",
+      "1",
+      "0",
+      "0",
+      "1",
+      "0",
+      "1",
+      "0",
+      "0"
+    ],
+    "hdam": [
+      "0.000"
+    ],
+    "water_level": [
+      "-99.000"
+    ],
+    "modf_dis_blocks": [
+      "0"
+    ],
+    "uinitial": [
+      "0"
+    ],
+    "bond": {
+      "ftcrack": "1.500E+06",
+      "coefMpa": "1.0e6",
+      "ikindks": 0,
+      "doubsig": 2,
+      "ktan1": "1.0e8",
+      "ktan2": "1.0e8",
+      "nlocalbeam": 0,
+      "ndimnrt": 0,
+      "listglocbeam": [],
+      "lelenrt": []
+    }
+  },
+  "type_nl": 5,
+  "mat_raw": {
+    "nmats": 1,
+    "prelude": [
+      " material property curves",
+      "  0",
+      "  10",
+      "COMMENT",
+      "COMMENT",
+      "COMMENT",
+      "COMMENT",
+      "COMMENT",
+      "COMMENT",
+      "COMMENT",
+      "COMMENT",
+      "COMMENT",
+      "COMMENT",
+      " nmats",
+      "  1"
+    ],
+    "blocks": [
+      [
+        "     material_serial         1",
+        "          MECHANICAL           WATER     1",
+        "  1",
+        "               FLUID",
+        "       1.000E+03  0.44       2.200E+09",
+        "  0       1.000E-05       1.000E-05"
+      ]
+    ]
+  },
+  "nmats": 1,
+  "contact_raw": [
+    "ngaps ngapb ctt_pe miter_bt torbt iblkbt nonsbt xlwsol method_gapi miter_state type_solver_ctt restart_ctt damp_ctt istatec",
+    "  0  0  1  500  1.0E-05  1  0  0  0  1  PROFILE  0  0.0  1"
+  ],
+  "nrt_raw": [
+    " The interpolation groups: transgroup",
+    " ntransnode and translg for each transgroup",
+    "       0"
+  ],
+  "tem_raw": [
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "edge difine",
+    "0",
+    "edge temperature",
+    "bondary",
+    "0"
+  ],
+  "mdofn": 8,
+  "lmdofn": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1
+  ],
+  "order_time_mdofn": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "time_curves": [
+    {
+      "type": "LINEAR",
+      "nline": 2,
+      "times": [
+        0.0,
+        1.0
+      ],
+      "values": [
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "type": "LINEAR",
+      "nline": 2,
+      "times": [
+        0.0,
+        1.0
+      ],
+      "values": [
+        100.0,
+        100.0
+      ]
+    },
+    {
+      "type": "LINEAR",
+      "nline": 2,
+      "times": [
+        0.0,
+        1.0
+      ],
+      "values": [
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "edge_loads": [
+    {
+      "counts": [
+        0,
+        0
+      ],
+      "rows": []
+    }
+  ],
+  "runblks": 1,
+  "opr": [
+    999,
+    0,
+    0,
+    0,
+    0
+  ],
+  "tem_pipe": [
+    0,
+    0
+  ]
+}

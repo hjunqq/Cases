@@ -1,0 +1,31 @@
+ material property curves
+  0
+  10
+MATERIAL PROPERTIES-INPUT FOR 1 TO NMATS
+NAME FOR MATERIAL---FOR COMMENTS
+FIRST:NAME---MECHANICAL, TEMPERATURE, ETC
+FOR MECHNICAL, SECOND:PHASE---SOLID, FLUID, AIR OR OIL
+NUMBER OF PHASE
+FOR SOLID: MATERIAL(CLASSICALEP,CAMCLAY,ETC),density,ratio,thick,e,nu
+FOR MATERISL: CLASSICALEP:CRITERIA(TC,VM,DP,MC),sigm0,hardening
+FOR MC OR DP: FRICT_ANGLE, DILAN_ANGLE
+CAMCLAY    :Pc, lamda, Mg, Mf, D0, D1,gaama
+FOR FLUID: (1) density,ratio,bulkw (2)permiability(1:ndimn)
+ nmats
+  2
+     material_serial         1
+          MECHANICAL           SOLID         1
+  1
+               SOLID
+ELASTIC_ISOTROPIC       2.500E+03       1.000E+00       1.000E+00       2.000E+10       2.500E-01       1.000E-05  0  0  0
+  0  0       1.000E+03
+     material_serial         2
+          MECHANICAL           SOLID         2
+  1
+               SOLID
+CLASSICALEP             2.000E+03       1.000E+00       1.000E+00       5.000E+07       3.500E-01       1.000E-05  0  0  0
+  0  0       1.000E+03
+  MC  5.0e4  0.0
+  30.0  15.0
+  0.0
+  0.0  0.0

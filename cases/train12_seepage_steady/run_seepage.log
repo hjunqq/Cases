@@ -1,0 +1,40 @@
+ ================================================
+   Easy_HSTAR - Finite Element Analysis
+ ================================================
+ 
+ Reading: 1.toml
+  Read 2543 nodes
+  Read 2430 elements
+ =============================================
+  HSTAR Problem Summary
+ =============================================
+  Version     :            1
+  Problem name: 1
+  Type        : Q
+  Dimensions  :            2
+  Nodes       :         2543
+  Elements    :         2430
+  Materials   :            1
+  Groups      :            5
+  Max DOF/node:            8
+  Blocks      :            1
+  Links       :            0
+  Solver      : PARDISO
+  Load type   : LOAD
+  Output      : GIDR
+ 
+  Analysis blocks:
+   Block   1 type=static nincs=     1
+ 
+  Materials:
+   Mat   1 name=Porous medium type=MECHANICAL
+ =============================================
+ validate_problem: all checks passed
+ 
+ Input OK. Starting analysis...
+  Seepage: free=1539, BC=42, inactive=962
+  Max |h| =   1.0000E+02
+  h range:  -1.5042E+01 ~   1.0000E+02
+ Seepage analysis completed.
+ 
+ Analysis completed successfully.

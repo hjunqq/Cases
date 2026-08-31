@@ -1,0 +1,107 @@
+=== SCALAR CONTROL ===
+npoin     =        315
+npoinb    =        315
+nelem     =        160
+ndimn     =          3
+nmats     =          1
+ngroup    =          1
+mdofn     =          8
+cdofn     =          3
+ntotv     =        945
+nblks     =          1
+nlinks    =          0
+ntlink    =          0
+nonsym    =          0
+ninit     =          0
+kinit     =          0
+winit     =          0
+kstab     =   0.000000000000E+00
+mat_curve =          0
+meshc     =          0
+rmesh     =          0
+outplot   = GIDR
+type_problem = Q
+type_solver  = PARDISO
+type_load    = LOAD
+type_ABC     = FIX
+type_nl   =          1
+stabpw    =          0
+nlayer    =          0
+state_change =          0
+Bparameter=          0
+upliftin  =          0
+nmass     =          1
+nsmat     =          1
+nhmat     =          1
+nqmat     =          1
+uwcpl     =          0
+ngrav     =          1
+nflow     =          0
+ntsmat    =        999
+nthmat    =        999
+kstat     =          0
+nextrf    =          0
+submodel  =          0
+beeta1    =   5.000000000000E-01
+beeta2    =   2.500000000000E-01
+theta1    =   1.000000000000E+00
+runblks   =          1
+outinp    =          0
+outintr   =          0
+outintw   =          0
+equvs     =          0
+block_stab=          0
+nbackf    =          0
+ngaps     =          0
+ngapb     =          0
+nforce    =          0
+Icaddmass =   0.000000000000E+00
+swlifs2006=   5.000000000000E+01
+toth      =   5.000000000000E+01
+ifsgravity=   9.800000000000E+00
+ftcrack   =   1.500000000000E+06
+coefMpa   =   1.000000000000E+06
+=== DOF ARRAYS ===
+lmdofn =    1   2   3   0   0   0   0   0
+lcdofn =    1   2   3
+order_time_mdofn =    0   0   0   0   0   0   0   0
+=== BLOCK ARRAYS ===
+hdam =   0.000000E+00
+water_level =  -9.900000E+01
+modf_dis =      0
+uinitial =      0
+appear_process(  1) =    1
+matno_process(  1) =    1
+=== OUTPUT ===
+gid_flags =   1  1  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+res_flags =   0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+equvs_proc =    0
+force_proc =    1
+avg_appear =   -2
+=== COORDINATES ===
+coord_shape =        315
+coord(     1) =   0.000000000000E+00  2.000000000000E-01  0.000000000000E+00
+coord(     2) =   0.000000000000E+00  1.500000100000E-01  0.000000000000E+00
+coord(     3) =   0.000000000000E+00  2.000000000000E-01  5.000000000000E-02
+coord(   313) =   1.000000000000E+00  0.000000000000E+00  0.000000000000E+00
+coord(   314) =   1.000000000000E+00  0.000000000000E+00  5.000000000000E-02
+coord(   315) =   1.000000000000E+00  0.000000000000E+00  1.000000000000E-01
+=== GROUPS ===
+group(  1): name=B8 index=     9 class=CO fieldid=U     160   1
+group(  1): elcod_local/alfa/beta =   0.000000E+00  0.000000E+00  0.000000E+00
+group(  1): type_mass =    0
+group(  1): dof( 1): nfdof=  3 listdof=   1   2   3
+=== ELEMENTS ===
+elem(     1): group=  1 nodes=    34    30    28    32    53    50    45    47
+elem(     2): group=  1 nodes=    42    34    32    38    60    53    47    57
+elem(     3): group=  1 nodes=    55    42    38    52    72    60    57    69
+elem(   158): group=  1 nodes=   276   260   257   273   277   263   259   274
+elem(   159): group=  1 nodes=   290   276   273   288   292   277   274   289
+elem(   160): group=  1 nodes=   306   290   288   303   308   292   289   304
+=== NODFN ===
+nodfn(:,     1) =        1       2       3
+nodfn(:,     2) =        4       5       6
+nodfn(:,     3) =        7       8       9
+nodfn(:,   313) =      937     938     939
+nodfn(:,   314) =      940     941     942
+nodfn(:,   315) =      943     944     945

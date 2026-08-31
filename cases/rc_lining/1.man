@@ -1,0 +1,4 @@
+  nincs
+  1
+  100      0.02   1   50  50   1   1   0   0 !miter,ditime,noutn,noutf,nstep,inc_step,nresta,cwater,Qstatic
+ 11*1.e-5

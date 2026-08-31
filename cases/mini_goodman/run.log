@@ -1,0 +1,72 @@
+ time: 19:51:11
+ Input the problem name?
+ NPOIN                                                                          
+  
+          21          21          12           2           3           3
+           0 GIDR                  0.000000000000000E+000           0
+           0           0           0           0       99999
+ NINIT                                                                          
+  
+           0           0           0           1           0           0
+           0           0           0           0           0 
+ FIX                                                          0           0
+           0           0           0           0           0
+ outinpunit=          37 outindunit=          54
+ TYPE_PROBLEM                                                                   
+  
+ Q                                                 
+ PROFILE                                           
+ LOAD                                                         5           0
+           0           0
+ type_layer1                                                                    
+  
+ NMASS                                                                          
+  
+           1           1           1           1           0           0
+           1           0           1           0           0
+ nfreeflownode                                                                  
+  
+ NTSMAT                                                                         
+  
+         999         999           0           0           0
+ beeta1,beeta2,theta1=  0.500000000000000       0.250000000000000     
+   1.00000000000000     
+ equvs_process(1:ngroup)                                                        
+  
+ appear_level(1:ngroup)                                                         
+  
+ APPEAR_PROCESS                                                                 
+  
+ appear_process=           1           1           1
+ MATNO_PROCESS                                                                  
+  
+ iblks=           0 ngroup=           3 matno=           1           3
+           2
+ force_process=           0           0           0
+ uinitial=           0
+ 1-ILINKS(I0                                                                    
+  
+ 1-tLINKS(I0                                                                    
+  
+ text1=
+ 1-NGROUP--GROUP                                                                
+  
+ (3)                                                                            
+  
+ igroup=           1
+ name=Q4        
+ igroup=           2
+ name=Q4        
+ group(igroup)%point_direct=           0           0
+ time: 19:51:11
+forrtl: severe (174): SIGSEGV, segmentation fault occurred
+Image              PC                Routine            Line        Source             
+libc.so.6          000073B08C245330  Unknown               Unknown  Unknown
+hstar              00000000004088D4  Unknown               Unknown  Unknown
+hstar              00000000004209AC  Unknown               Unknown  Unknown
+hstar              0000000000468486  Unknown               Unknown  Unknown
+hstar              000000000086DFB5  Unknown               Unknown  Unknown
+hstar              0000000000407ABD  Unknown               Unknown  Unknown
+libc.so.6          000073B08C22A1CA  Unknown               Unknown  Unknown
+libc.so.6          000073B08C22A28B  __libc_start_main     Unknown  Unknown
+hstar              00000000004079D5  Unknown               Unknown  Unknown

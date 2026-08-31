@@ -1,0 +1,106 @@
+{
+  "probe_id": "bparameter-semantics-v1",
+  "predictions_sha256": "76c1986fd4125576c95404010a4e4309759ea2930d812685f447f7c92f63c868",
+  "results": [
+    {
+      "id": "P1",
+      "verdict": "PASS",
+      "detail": {
+        "values": {
+          "train01_gravdam_static": "0",
+          "train02_gravdam_seismic": "0",
+          "train02c_dbg": "0",
+          "train02c_seismic_wave_compare": "0",
+          "train03a_modal_dry": "0",
+          "train03b_modal_ifs": "0",
+          "train04_beam_faceload": "0",
+          "train05_slope_stability": "0",
+          "train05b_slope_srm": "0",
+          "train06_concrete_damage": "0",
+          "train07_thermal_transient": "0",
+          "train09_rc_bond": "0",
+          "train10_dynamic_vie": "0",
+          "train11_staged_foundation": "0",
+          "train12_seepage_steady": "0",
+          "train_temp_creep": "0"
+        },
+        "skipped_old_format": [
+          {
+            "case": "train_contact_nonlinear",
+            "fields": 9
+          },
+          {
+            "case": "train_seepage",
+            "fields": 9
+          },
+          {
+            "case": "train_seepage_stress",
+            "fields": 9
+          },
+          {
+            "case": "train_slope_unknown",
+            "fields": 10
+          },
+          {
+            "case": "train_vie_boundary",
+            "fields": 9
+          }
+        ]
+      }
+    },
+    {
+      "id": "P2",
+      "verdict": "PASS",
+      "detail": {
+        "time_dependent": {
+          "total_paths": 126,
+          "without_neg12": 108
+        },
+        "STATIC_U": {
+          "total_paths": 0,
+          "without_neg12": 0
+        }
+      }
+    },
+    {
+      "id": "P3",
+      "verdict": "FALSIFIED",
+      "detail": {
+        "count": 0,
+        "sample": []
+      }
+    },
+    {
+      "id": "P4",
+      "verdict": "PASS",
+      "detail": {
+        "read_statements": [
+          "Global.f90:753"
+        ],
+        "decks": [
+          ".glb"
+        ]
+      }
+    },
+    {
+      "id": "P5",
+      "verdict": "PASS",
+      "detail": {
+        "count": 3,
+        "predicates": [
+          "(Bparameter>0.and.Bparameter<=2).and.balgor<=1",
+          "(Bparameter>0.and.Bparameter<=2).and.balgor==2",
+          "Bparameter==-1.or.Bparameter==-2"
+        ]
+      }
+    },
+    {
+      "id": "P6",
+      "verdict": "PASS",
+      "detail": {
+        "count": 0,
+        "violating_paths": []
+      }
+    }
+  ]
+}

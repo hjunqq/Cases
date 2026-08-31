@@ -1,0 +1,73 @@
+ 'NPOIN npoinb NELEM NDIMN NMATS NGROUP NTLINK outplot KSTAB MAT_curve meshc rmesh level_set_problem ljdp stab_matde'
+   5628 5628 4720 3 1 1 0 GIDR 0 0 0 0 0 0 99999
+   remesh limited values(first,second)
+   remesh information
+ 'NINIT KINIT winit NBLKS NLINKS NONSYM OUTINP outintr outintw neuman equvs type_ABC block_stab nbackf nbspring ebody outind nbackdT ninistn'
+   0 0 0 1 0 1 0 0 -1 0 0 FIX 0 0 0 0 0 0 0   !legacy outint=-1 -> outintw
+ 'TYPE_PROBLEM TYPE_SOLVER TYPE_LOAD TYPE_NL STABPW nlayer kglb state_change Bparameter balgor upliftin'
+ '   S','PARDISO','LOAD',10,0,0,0,0,0,0,0   !legacy trailing dropped: nforce=0 ngptrans=1 dynaB=0 (no such names in current source)
+   type_layer1 type_layer2 solver_iter
+ 'NMASS NSMAT NHMAT NQMAT NLDFL KGMAT NSWKW UWCPL NGRAV nflow ECWPIPE'
+   999 999 999 999 999 0 999 0 999 0 2   !ECWPIPE=2 (Temper.f90:1107 conventional algorithm): 0 leaves group%water_pipe unallocated (Temper.f90:75-77) while Fem.f90:15307 dereferences it; 1 needs per-group cooling records absent from .tem
+ nfreeflownode
+ 'NTSMAT NTHMAT KSTAT ground_inf src nextrf submodel'
+   999 999 0 0 0 0 0
+ 'MDOFN(/Ux Uy Uz Thxy Thyz Thzx P W A T)'
+ 10
+ 0 0 0 0 0 0 0 0 0 1
+ 0 0 0 0 0 0 0 0 0 1	 !order to time
+ BEETA1 BEETA2 THETA1
+  .5     0.25    0.5
+ equvs_process(1:ngroup)
+ 100*0
+ appear_level(1:ngroup)
+ 100*0
+  APPEAR_PROCESS(1-nblks/1-ngroup)
+1*1  0*0
+  MATNO_PROCESS(1-nblks/1-ngroup)  ! 
+1
+ force_process(1:ngroup)
+ 100*0
+ average_appear(1:ngroup)
+ 100*0
+ gid_u,gid_s,gid_ms,gid_f,gid_rot,gid_v,gid_a,gid_T,gid_P,gid_Pv,gid_ep,gid_Y,gid_FC,gid_Ns,gid_Ss,gid_Mxy,gid_bem,gid_wh,gid_wv,gid_bcs
+ 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0
+ res_u,res_s,res_ms,res_f,res_rot,res_v,res_a,res_T,res_P,res_Pv,res_ep,res_Y,res_FC,res_Ns,res_Ss,res_Tv,res_Pa
+ 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0
+ Icaddmass,swlifs2006,toth,ifswater,ifsgravity,absorb,alfa_p4,stiff_p4
+0          10         10    2         9.8      1.0   0 0
+ ftcrack,coefMpa,ikindks,doubsig,ktan1,ktan2,nlocalbeam,ndimnrt
+ 0. 0. 0 0 0. 0. 0 0
+ ntrans,nlaymif,epsMIFb,gamaMIF,ifixvar0_inpb,camif,dxmif
+ 0       3        1.0e0   0.02     2         1000   10
+ hdam
+ 50*0.0
+ water_level(1:nblks)
+  100*0
+ modf_dis_blocks(1:nblks)
+ 10*0
+ uinitial
+ 200*0
+ 'nbackf-info (Global.f90:1015)'
+ '1-ILINKS(I0, Freedom, node1,node2)'
+ '1-tLINKS(I0, node1,node2)'
+ '1-NGROUP--GROUP INFORMATION'
+ 'INCLUDE (1) NAME KNAME INDEX CLASS NRFIELDS FIELDID SPECIAL'
+ ' SPTYPE NELGROUP MATNO TYPE_ALGO TYPE_STIFF TYPE_ECOINT ilayer,elcod_local group_inf'
+ '		 (2) TYPE_MASS(1:NRFIELDS)(0-lumped)'
+ '		 (3) for each field: nfdof-number of freedom,listdof(1:nfdof)'
+B8,'  1',9,CO,1,T,ST,PE,4720,1,0,1,1,1,0,0,0,0   !legacy 4 trailing zeros dropped
+ 0   0   0   0
+  0 1   !order_time(:,1): Fem.f90:16330-16333 sets (0,1) for fieldid==T and type_problem==S
+ 1
+ 10
+tension_joint
+0
+ contact_joint
+ 0
+ ngaps ngapb contactpe miter_bt tor_bt iblks_bt nonsbt xlwsol method_gapi miter_state type_solver_ctt restart_ctt damp_ctt istatec
+ 0 0 0 200 1.0e-6 1 0 0 0 0 PROFILE 0 0.0 0   !legacy ngapb=2 zeroed (Global.f90:3334 returns before allocating gapb; :4869 dereferences it); legacy icgap0=0 dropped
+ nrcsteel
+ 0
+ nwcpipe
+ 0

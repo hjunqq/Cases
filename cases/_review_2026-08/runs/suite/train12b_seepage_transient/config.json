@@ -1,0 +1,138 @@
+{
+  "_name": "非稳态渗流分析",
+  "type_problem": "S",
+  "solver": "PROFILE",
+  "seepage": true,
+  "nblks": 1,
+  "groups": [
+    {
+      "name": "Soil",
+      "nelgroup": 600,
+      "matno": 1
+    }
+  ],
+  "materials": [
+    {
+      "id": 1,
+      "type": "SEEPAGE",
+      "fluid_density": 1000,
+      "porosity": 0.44,
+      "bulk_w": 2200000000.0,
+      "permeability": [
+        1e-05,
+        1e-05
+      ]
+    }
+  ],
+  "blocks": {
+    "appear": [
+      [
+        1
+      ]
+    ],
+    "gravity": [
+      9.81,
+      0,
+      -1,
+      0,
+      -1
+    ],
+    "theta1": 0.6,
+    "increments": [
+      [
+        {
+          "miter": 5,
+          "ditime": 3600,
+          "nstep": 24
+        }
+      ]
+    ]
+  },
+  "boundary": {
+    "seepage": {
+      "regions": [
+        {
+          "nodes": [
+            1321,
+            1357,
+            1394,
+            1440,
+            1482,
+            1525,
+            1572,
+            1619,
+            1670,
+            1718,
+            1768,
+            1814,
+            1862,
+            1938,
+            2024,
+            2087,
+            2131,
+            2173,
+            2212,
+            2251,
+            2287
+          ],
+          "head": 100.0
+        },
+        {
+          "nodes": [
+            787,
+            790,
+            793,
+            796,
+            802,
+            808,
+            815,
+            825,
+            833,
+            841,
+            857,
+            866,
+            875,
+            895,
+            907,
+            924,
+            938,
+            955,
+            971,
+            988,
+            1010
+          ],
+          "head": 0.0
+        }
+      ]
+    }
+  },
+  "_completed": "补全 via seepage_transient template; BCs = train12b original up/downstream node-sets (head 100/0). Original 1.pre also referenced a transient head-curve (id 10000) whose time-history data is NOT in the case — completed as constant-head transient-to-steady. Run: quick_analysis.py . (Mode A).",
+  "time_curves": [
+    {
+      "type": "LINEAR",
+      "times": [
+        0,
+        1
+      ],
+      "values": [
+        1,
+        1
+      ]
+    },
+    {
+      "type": "LINEAR",
+      "times": [
+        0,
+        1
+      ],
+      "values": [
+        100.0,
+        100.0
+      ]
+    }
+  ],
+  "_seep_tc_map": {
+    "region_0": 2,
+    "region_1": 1
+  }
+}

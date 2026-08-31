@@ -1,0 +1,4 @@
+ nforce,ngaps,nforce_gaps,nsafety_gaps
+       0       0       0       0
+goodman element group for stifness
+0 0 0 20*1

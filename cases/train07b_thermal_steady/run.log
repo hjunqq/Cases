@@ -1,0 +1,40 @@
+ ================================================
+   Easy_HSTAR - Finite Element Analysis
+ ================================================
+ 
+ Reading: 1.toml
+  Read 5628 nodes
+  Read 4720 elements
+ =============================================
+  HSTAR Problem Summary
+ =============================================
+  Version     :            1
+  Problem name: 1
+  Type        : S
+  Dimensions  :            3
+  Nodes       :         5628
+  Elements    :         4720
+  Materials   :            1
+  Groups      :            1
+  Max DOF/node:           10
+  Blocks      :            1
+  Links       :            0
+  Solver      : PARDISO
+  Load type   : LOAD
+  Output      : GIDB
+ 
+  Analysis blocks:
+   Block   1 type=static nincs=     1
+ 
+  Materials:
+   Mat   1 name=Concrete type=HEAT
+ =============================================
+ validate_problem: all checks passed
+ 
+ Input OK. Starting analysis...
+  Thermal: free=5624, BC=4, inactive=0
+  Total heat capacity =  3.036E+01
+  T range:  1.000E+00 ~  1.000E+00
+ Steady thermal completed.
+ 
+ Analysis completed successfully.

@@ -1,0 +1,338 @@
+'NPOIN  npoinb NELEM  NDIMN  NMATS  NGROUP NTLINK outplot KSTAB MAT_curve meshc rmesh'level_set_problem,ljdp ,stab_matde   
+ 14549  14549  12005    3      16     51     0       GIDR    0.       0       0      0        0         0       9999          
+ valv1 valv2
+ ndivide,ndefault(1:abs(rmesh)) !for remeshing
+  'NINIT KINIT NBLKS   NLINKS NONSYM OUTINP outinr outinw neuman equvs,type_ABC,block_sta nbackf nbspring ebody outind'
+  0       0    4     0      0      0      0       0        0     0     FIX         0       0      0        0     0
+ 'TYPE_PROBLEM TYPE_SOLVER TYPE_LOAD TYPE_NL STABPW nlayer,kglb,state_change,Bparameter'
+    'Q'        'PARDISO'     'LOAD'      5      0      0     0      0         0
+  type_layer1 type_layer2 solver_iter
+ 'NMASS NSMAT NHMAT NQMAT NLDFL KGMAT NSWKW UWCPL NGRAV nflow ECWPIPE' !uwcpl=0,drained(w);1,undrained(u-pw);
+   999   999   999   999   999   0	   999	  0	   999   0     0       ! =2,drained(u-pw); 
+  nfreeflownode
+  'NTSMAT NTHMAT  KSTAT ground_inf src nextrf relic sblock '  ! kstat=0-2, the contact state or Sn are cheched in kstat iterations
+   999     999	  0	     0         0    0      0      0
+ 'MDOFN(/Ux Uy Uz Thxy Thyz Thzx P W A T)'
+ 6
+ 1 1 1 1 1 1 0 0 0 0 
+ 0 0 0 0 0 0 0 0 0 0  !order to time
+ BEETA1 BEETA2 THETA1 
+ 0.5     0.25    0.5
+ equvs_process(1:ngroup)
+1000*0
+appear_level(1:ngroup)
+1000*0  
+ APPEAR_PROCESS(1-0nblks/1-ngroup)
+1 1 1 1 1 1 1 1 0 0 0 0 0 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0 0 0 1 1 1 1 1 1 1 0 0 1 1
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 1 1 1 1 1 1 1 1 0 1 1
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+ MATNO_PROCESS(1-nblks/1-ngroup)
+1 2 3 4 5 6 7 8 9 10 11 12 13 11 12 9 10 11 12 13 13 13 10 10 11 12 13 11 12 13 11 12 13 11 12 13 9 9 13 14 15 15 15 15 15 15 15 15 15 9 9
+1 2 3 4 5 6 7 8 9 10 11 12 13 11 12 9 10 11 12 13 13 13 10 10 11 12 13 11 12 13 11 12 13 11 12 13 9 9 13 14 15 15 15 15 15 15 15 15 15 9 9
+1 2 3 4 5 6 7 8 9 10 11 12 13 11 12 9 10 11 12 13 13 13 10 10 11 12 13 11 12 13 11 12 13 11 12 13 9 9 13 14 15 15 15 15 15 15 15 15 15 9 9
+1 2 3 4 5 6 7 8 9 10 11 12 13 11 12 9 10 11 12 13 13 13 10 10 11 12 13 11 12 13 11 12 13 11 12 13 9 9 13 14 15 15 15 15 15 15 15 15 15 9 9
+ force_process(1:ngroup)
+1000*0
+average_appear(1:ngroup) !=0 不参与应力平均，=1应力外推 =2 应力直接平均 =-1按原来方式外推 =-2按原来方式直接平均
+1000*-2
+gid_u,gid_s,gid_ms,gid_f,gid_rot,gid_v,gid_a,gid_T,gid_P,gid_Pv,gid_ep,gid_Y,gid_FC,gid_Ns,gid_Ss,gid_mxy,gid_bem
+1        1     1     1      0       0    0     0     0     0       0     0       0     0     0       0       0
+res_u,res_s,res_ms,res_f,res_rot,res_v,res_a,res_T,res_P,res_Pv,res_ep,res_Y,res_FC,res_Ns,res_Ss,res_mxy
+1        1     1     1      0       0    0     0     0     0       0     0       0     0     0      0
+Icaddmass,swlifs2006,toth,ifswater,ifsgravity,absorb,alfa_p4,stiff_p4
+0          100         100    3         9.8      0.6   -10       1.0e20 
+ftcrack,coefMpa,ikindks,doubsig,ktan1,  ktan2,  nlocalbeam,ndimnrt,listglocbeam(1:nlocalbeam),lelenrt(1:ndimnrt) 
+1.5e6    1.0e6    0       1     1.0e8   1.0e8     0          0          0                         0                             
+ntrans,nlaymif,epsMIFb,gamaMIF,ifixvar0_inpb,camif,dxmif
+0       0        1.0e0   0.02     2 	        1979   25  
+ hdam
+51*0
+modf_dis_blocks
+100*0
+ uinitial
+0 1 0 0
+backf()%  !输入与nbackf/=0时的相关内容(当nbackf/=0时)
+ '1-ILINKS(I0, Freedom, node1,node2)'
+ '1-tLINKS(I0, node1,node2)'
+ '1-NGROUP--GROUP INFORMATION'
+ 'INCLUDE (1) NAME KNAME INDEX CLASS NRFIELDS FIELDID SPECIAL'
+ ' SPTYPE NELGROUP MATNO TYPE_ALGO TYPE_STIFF TYPE_ECOINT ilayer,elcod_local aogroup_inf'
+ '		 (2) TYPE_MASS(1:NRFIELDS)(0-lumped)'
+ '		 (3) for each field: nfdof-number of freedom,listdof(1:nfdof)'
+B8,'  1',9,CO,1,U,ST,PE,  762,1,0,1,1,1,0,0
+ 0   0    0.0    0.0   
+ 0 0 
+ 3
+ 1  2 3
+B8,'  2',9,CO,1,U,ST,PE,  762,2,0,1,1,1,0,0
+ 0   0    0.0    0.0
+ 0 0 
+ 3
+ 1  2 3
+B8,'  3',9,CO,1,U,ST,PE,  762,3,0,1,1,1,0,0
+ 0   0    0.0    0.0
+ 0 0 
+ 3
+ 1  2 3
+B8,'  4',9,CO,1,U,ST,PE, 2182,4,0,1,1,1,0,0
+ 0   0    0.0    0.0
+ 0 0 
+ 3
+ 1  2 3
+B8,'  5',9,CO,1,U,ST,PE,  701,5,0,1,1,1,0,0
+ 0   0    0.0    0.0
+ 0 0 
+ 3
+ 1  2 3
+B8,'  6',9,CO,1,U,ST,PE, 2594,6,0,1,1,1,0,0
+ 0   0    0.0    0.0
+ 0 0 
+ 3
+ 1  2 3
+B8,'  7',9,CO,1,U,ST,PE,  217,7,0,1,1,1,0,0
+ 0   0    0.0    0.0
+ 0 0 
+ 3
+ 1  2 3
+B8,'  8',9,CO,1,U,ST,PE,  108,8,0,1,1,1,0,0
+ 0   0    0.0    0.0
+ 0 0 
+ 3
+ 1  2 3
+B8,'  9',9,CO,1,U,ST,PE,  336,9,0,1,1,1,0,0
+ 0   0    0.0    0.0
+ 0 0 
+ 3
+ 1  2 3
+B8,' 10',9,CO,1,U,ST,PE,    9,10,0,1,1,1,0,0
+ 0   0    0.0    0.0
+ 0 0 
+ 3
+ 1  2 3
+B8,' 11',9,CO,1,U,ST,PE,   15,11,0,1,1,1,0,0
+ 0   0    0.0    0.0
+ 0 0 
+ 3
+ 1  2 3
+B8,' 12',9,CO,1,U,ST,PE,   15,12,0,1,1,1,0,0
+ 0   0    0.0    0.0
+ 0 0 
+ 3
+ 1  2 3
+B8,' 13',9,CO,1,U,ST,PE,   15,13,0,1,1,1,0,0
+ 0   0    0.0    0.0
+ 0 0 
+ 3
+ 1  2 3
+B8,' 14',9,CO,1,U,ST,PE,   36,11,0,1,1,1,0,0
+ 0   0    0.0    0.0
+ 0 0 
+ 3
+ 1  2 3
+B8,' 15',9,CO,1,U,ST,PE,   36,12,0,1,1,1,0,0
+ 0   0    0.0    0.0
+ 0 0 
+ 3
+ 1  2 3
+B8,' 16',9,CO,1,U,ST,PE,   72,9,0,1,1,1,0,0
+ 0   0    0.0    0.0
+ 0 0 
+ 3
+ 1  2 3
+B8,' 17',9,CO,1,U,ST,PE,   18,10,0,1,1,1,0,0
+ 0   0    0.0    0.0
+ 0 0 
+ 3
+ 1  2 3
+B8,' 18',9,CO,1,U,ST,PE,   30,11,0,1,1,1,0,0
+ 0   0    0.0    0.0
+ 0 0 
+ 3
+ 1  2 3
+B8,' 19',9,CO,1,U,ST,PE,   30,12,0,1,1,1,0,0
+ 0   0    0.0    0.0
+ 0 0 
+ 3
+ 1  2 3
+B8,' 20',9,CO,1,U,ST,PE,   30,13,0,1,1,1,0,0
+ 0   0    0.0    0.0
+ 0 0 
+ 3
+ 1  2 3
+B8,' 21',9,CO,1,U,ST,PE,   36,13,0,1,1,1,0,0
+ 0   0    0.0    0.0
+ 0 0 
+ 3
+ 1  2 3
+B8,' 22',9,CO,1,U,ST,PE,   45,13,0,1,1,1,0,0
+ 0   0    0.0    0.0
+ 0 0 
+ 3
+ 1  2 3
+B8,' 23',9,CO,1,U,ST,PE,   81,10,0,1,1,1,0,0
+ 0   0    0.0    0.0
+ 0 0 
+ 3
+ 1  2 3
+B8,' 24',9,CO,1,U,ST,PE,  162,10,0,1,1,1,0,0
+ 0   0    0.0    0.0
+ 0 0 
+ 3
+ 1  2 3
+B8,' 25',9,CO,1,U,ST,PE,    9,11,0,1,1,1,0,0
+ 0   0    0.0    0.0
+ 0 0 
+ 3
+ 1  2 3
+B8,' 26',9,CO,1,U,ST,PE,    9,12,0,1,1,1,0,0
+ 0   0    0.0    0.0
+ 0 0 
+ 3
+ 1  2 3
+B8,' 27',9,CO,1,U,ST,PE,    9,13,0,1,1,1,0,0
+ 0   0    0.0    0.0
+ 0 0 
+ 3
+ 1  2 3
+B8,' 28',9,CO,1,U,ST,PE,    9,10,0,1,1,1,0,0
+ 0   0    0.0    0.0
+ 0 0 
+ 3
+ 1  2 3
+B8,' 29',9,CO,1,U,ST,PE,    9,10,0,1,1,1,0,0
+ 0   0    0.0    0.0
+ 0 0 
+ 3
+ 1  2 3
+B8,' 30',9,CO,1,U,ST,PE,    9,10,0,1,1,1,0,0
+ 0   0    0.0    0.0
+ 0 0 
+ 3
+ 1  2 3
+B8,' 31',9,CO,1,U,ST,PE,    9,11,0,1,1,1,0,0
+ 0   0    0.0    0.0
+ 0 0 
+ 3
+ 1  2 3
+B8,' 32',9,CO,1,U,ST,PE,    9,12,0,1,1,1,0,0
+ 0   0    0.0    0.0
+ 0 0 
+ 3
+ 1  2 3
+B8,' 33',9,CO,1,U,ST,PE,    9,13,0,1,1,1,0,0
+ 0   0    0.0    0.0
+ 0 0 
+ 3
+ 1  2 3
+B8,' 34',9,CO,1,U,ST,PE,    9,11,0,1,1,1,0,0
+ 0   0    0.0    0.0
+ 0 0 
+ 3
+ 1  2 3
+B8,' 35',9,CO,1,U,ST,PE,    9,12,0,1,1,1,0,0
+ 0   0    0.0    0.0
+ 0 0 
+ 3
+ 1  2 3
+B8,' 36',9,CO,1,U,ST,PE,    9,13,0,1,1,1,0,0
+ 0   0    0.0    0.0
+ 0 0 
+ 3
+ 1  2 3
+B8,' 37',9,CO,1,U,ST,PE,   75,9,0,1,1,1,0,0
+ 0   0    0.0    0.0
+ 0 0 
+ 3
+ 1  2 3
+B8,' 38',9,CO,1,U,ST,PE,  649,9,0,1,1,1,0,0
+ 0   0    0.0    0.0
+ 0 0 
+ 3
+ 1  2 3
+B8,' 39',9,CO,1,U,ST,PE,  110,13,0,1,1,1,0,0
+ 0   0    0.0    0.0
+ 0 0 
+ 3
+ 1  2 3
+B8,' 40',9,CO,1,U,ST,PE,  336,14,0,1,1,1,0,0
+ 0   0    0.0    0.0
+ 0 0 
+ 3
+ 1  2 3
+B8,' 41',9,CO,1,U,ST,PE,  397,15,0,1,1,1,0.04,0
+ 0   0    0.0    0.0
+ 0 0 
+ 3
+ 1  2 3
+B8,' 42',9,CO,1,U,ST,PE,  7,15,0,1,1,1,0.04,0
+ 0   0    0.0    0.0
+ 0 0 
+ 3
+ 1  2 3
+B8,' 43',9,CO,1,U,ST,PE,  7,15,0,1,1,1,0.04,0
+ 0   0    0.0    0.0
+ 0 0 
+ 3
+ 1  2 3
+B8,' 44',9,CO,1,U,ST,PE,  7,15,0,1,1,1,0.04,0
+ 0   0    0.0    0.0
+ 0 0 
+ 3
+ 1  2 3
+B8,' 45',9,CO,1,U,ST,PE,  7,15,0,1,1,1,0.04,0
+ 0   0    0.0    0.0
+ 0 0 
+ 3
+ 1  2 3
+B8,' 46',9,CO,1,U,ST,PE,  27,15,0,1,1,1,0.04,0
+ 0   0    0.0    0.0
+ 0 0 
+ 3
+ 1  2 3
+B8,' 47',9,CO,1,U,ST,PE,  54,15,0,1,1,1,0.04,0
+ 0   0    0.0    0.0
+ 0 0 
+ 3
+ 1  2 3
+B8,' 48',9,CO,1,U,ST,PE,  258,15,0,1,1,1,0.04,0
+ 0   0    0.0    0.0
+ 0 0 
+ 3
+ 1  2 3
+B8,' 49',9,CO,1,U,ST,PE,  135,15,0,1,1,1,0.04,0
+ 0   0    0.0    0.0
+ 0 0 
+ 3
+ 1  2 3
+L2 '    50' 20,BM,1,U,ST,PS  315     9    0,1,1,1,0,0,0,0
+0 0   0.    0. 
+0 0  
+1011 1013
+ 6
+ 1 2 3 4 5 6
+L2 '    51' 20,BM,1,U,ST,PS  459     9    0,1,1,1,0,0,0,0
+0 0   0.    0. 
+0 0    
+1011 1013
+ 6
+ 1 2 3 4 5 6
+tension_joint
+0
+contact_joint
+0
+
+ngaps,ngapb contactpe  miter_bt  tor_bt   iblks_bt   nonsbt xlwsol method_gapi miter_state type_solver_ctt restart_ctt,damp_ctt istatec
+ 0     0       1         500       1.0e-6      1       0      0         0          1         'PROFILE'         0         0.        1
+
+
+L2 '    41' 20,BM,1,U,ST,PS  315     9    0,1,1,1,0,0,0,0
+0 0   0.    0. 
+0 0                                                                        
+ 3
+ 1 2 4 
+ L2 '    42' 20,BM,1,U,ST,PS  459     9    0,1,1,1,0,0,0,0
+0 0   0.    0. 
+0 0                                                                        
+ 3
+ 1 2 4 

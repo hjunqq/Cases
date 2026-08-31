@@ -1,0 +1,231 @@
+{
+  "predictions_sha256": "d8c82b9b592f345c911ee449bcc995232bca703c4fe5de1d2cc268a9a8cae570",
+  "controls_ok": true,
+  "results_void": false,
+  "score": "2/5",
+  "verdicts": [
+    {
+      "id": "C1",
+      "role": "CONTROL",
+      "verdict": "PASS",
+      "voids_all_if_falsified": true,
+      "evidence": {
+        "fachv_max_1(t02_on)": 0.0,
+        "fachv_max_2(t02_on)": 0.316860000000001,
+        "fachv_max_1(t02_off)": 0.0,
+        "fachv_max_2(t02_off)": 0.0,
+        "reldiff_y(off vs on)": 1.0,
+        "threshold": 0.1
+      }
+    },
+    {
+      "id": "C2",
+      "role": "CONTROL",
+      "verdict": "PASS",
+      "voids_all_if_falsified": true,
+      "evidence": {
+        "n_steps(base)": 250,
+        "n_steps(rep)": 250,
+        "bit_identical": true,
+        "first_x_mismatch": null
+      }
+    },
+    {
+      "id": "P1",
+      "role": "prediction",
+      "verdict": "PASS",
+      "voids_all_if_falsified": false,
+      "evidence": {
+        "fachv_max_1": 0.0,
+        "fachv_max_2": 0.0,
+        "fachv_lines": 500
+      }
+    },
+    {
+      "id": "P2",
+      "role": "prediction",
+      "verdict": "PASS",
+      "voids_all_if_falsified": false,
+      "evidence": {
+        "solved": true,
+        "fachv_max_1": 3.16860000000001,
+        "fachv_max_2": 0.0,
+        "fachv_lines": 500
+      }
+    },
+    {
+      "id": "P3",
+      "role": "prediction",
+      "verdict": "FALSIFIED",
+      "voids_all_if_falsified": false,
+      "evidence": {
+        "reldiff_x": 0.0,
+        "threshold": 0.05,
+        "peak_x(base)": 0.35015988,
+        "peak_x(var)": 0.35015988,
+        "rms_x(base)": 0.17726546512758887,
+        "rms_x(var)": 0.17726546512758887
+      }
+    },
+    {
+      "id": "P4",
+      "role": "prediction",
+      "verdict": "FALSIFIED",
+      "voids_all_if_falsified": false,
+      "evidence": {
+        "peak_x(base)": 0.35015988,
+        "peak_x(var)": 0.35015988,
+        "ratio": 1.0
+      }
+    },
+    {
+      "id": "P5",
+      "role": "prediction",
+      "verdict": "FALSIFIED",
+      "voids_all_if_falsified": false,
+      "evidence": {
+        "solved(vie_base)": false,
+        "solved(vie_var)": false,
+        "fachv_max_1(vie_base)": 0.0,
+        "fachv_max_1(vie_var)": 0.0,
+        "reldiff_x": NaN,
+        "threshold": 0.05,
+        "peak_x(vie_base)": NaN,
+        "peak_x(vie_var)": NaN
+      }
+    }
+  ],
+  "metrics": {
+    "t10_base": {
+      "case": "train10_dynamic_vie",
+      "probe_node": 2511,
+      "solved": true,
+      "n_steps": 250,
+      "fachv_max_1": 0.0,
+      "fachv_max_2": 0.0,
+      "fachv_lines": 500,
+      "peak_x": 0.35015988,
+      "peak_y": 0.061642993,
+      "rms_x": 0.17726546512758887,
+      "rms_y": 0.022875653708947404,
+      "peak_ux": 0.35015988,
+      "peak_uy": 0.061642993,
+      "rms_ux": 0.17726546512758887,
+      "rms_uy": 0.022875653708947404,
+      "series_extracted": true
+    },
+    "t10_base_rep": {
+      "case": "train10_dynamic_vie",
+      "probe_node": 2511,
+      "solved": true,
+      "n_steps": 250,
+      "fachv_max_1": 0.0,
+      "fachv_max_2": 0.0,
+      "fachv_lines": 500,
+      "peak_x": 0.35015988,
+      "peak_y": 0.061642993,
+      "rms_x": 0.17726546512758887,
+      "rms_y": 0.022875653708947404,
+      "peak_ux": 0.35015988,
+      "peak_uy": 0.061642993,
+      "rms_ux": 0.17726546512758887,
+      "rms_uy": 0.022875653708947404,
+      "series_extracted": true
+    },
+    "t10_var": {
+      "case": "train10_dynamic_vie",
+      "probe_node": 2511,
+      "solved": true,
+      "n_steps": 250,
+      "fachv_max_1": 3.16860000000001,
+      "fachv_max_2": 0.0,
+      "fachv_lines": 500,
+      "peak_x": 0.35015988,
+      "peak_y": 0.061642993,
+      "rms_x": 0.17726546512758887,
+      "rms_y": 0.022875653708947404,
+      "peak_ux": 0.35015988,
+      "peak_uy": 0.061642993,
+      "rms_ux": 0.17726546512758887,
+      "rms_uy": 0.022875653708947404,
+      "series_extracted": true
+    },
+    "t02_on": {
+      "case": "train02_gravdam_seismic",
+      "probe_node": 1689,
+      "solved": true,
+      "n_steps": 250,
+      "fachv_max_1": 0.0,
+      "fachv_max_2": 0.316860000000001,
+      "fachv_lines": 500,
+      "peak_x": 0.00012704601,
+      "peak_y": 0.00013784055,
+      "rms_x": 3.8370940981258015e-05,
+      "rms_y": 4.268340033775568e-05,
+      "peak_ux": 0.00012704601,
+      "peak_uy": 0.00013784055,
+      "rms_ux": 3.8370940981258015e-05,
+      "rms_uy": 4.268340033775568e-05,
+      "series_extracted": true
+    },
+    "t02_off": {
+      "case": "train02_gravdam_seismic",
+      "probe_node": 1689,
+      "solved": true,
+      "n_steps": 250,
+      "fachv_max_1": 0.0,
+      "fachv_max_2": 0.0,
+      "fachv_lines": 500,
+      "peak_x": 0.0,
+      "peak_y": 0.0,
+      "rms_x": 0.0,
+      "rms_y": 0.0,
+      "peak_ux": 0.0,
+      "peak_uy": 0.0,
+      "rms_ux": 0.0,
+      "rms_uy": 0.0,
+      "series_extracted": true
+    },
+    "vie_base": {
+      "case": "vie",
+      "probe_node": 301,
+      "solved": false,
+      "n_steps": 0,
+      "fachv_max_1": 0.0,
+      "fachv_max_2": 0.0,
+      "fachv_lines": 0,
+      "peak_x": NaN,
+      "peak_y": NaN,
+      "rms_x": NaN,
+      "rms_y": NaN,
+      "peak_ux": NaN,
+      "peak_uy": NaN,
+      "rms_ux": NaN,
+      "rms_uy": NaN,
+      "series_extracted": false
+    },
+    "vie_var": {
+      "case": "vie",
+      "probe_node": 301,
+      "solved": false,
+      "n_steps": 0,
+      "fachv_max_1": 0.0,
+      "fachv_max_2": 0.0,
+      "fachv_lines": 0,
+      "peak_x": NaN,
+      "peak_y": NaN,
+      "rms_x": NaN,
+      "rms_y": NaN,
+      "peak_ux": NaN,
+      "peak_uy": NaN,
+      "rms_ux": NaN,
+      "rms_uy": NaN,
+      "series_extracted": false
+    }
+  },
+  "probe_nodes": {
+    "vie": 301,
+    "train02_gravdam_seismic": 1689,
+    "train10_dynamic_vie": 2511
+  }
+}

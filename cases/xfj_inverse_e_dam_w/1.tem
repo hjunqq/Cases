@@ -1,0 +1,84 @@
+ temprescibed for group 1	 time0,temp0,temp_var_curve	
+ 0 0 0
+ temprescibed for group 2	 time0,temp0,temp_var_curve	
+0 0 0                     
+temprescibed for group 3	 time0,temp0,temp_var_curve	
+0 0 0                     
+temprescibed for group 4	 time0,temp0,temp_var_curve	
+0 0 0                     
+temprescibed for group 5	 time0,temp0,temp_var_curve	
+0 0 0     
+ temprescibed for group 1	 time0,temp0,temp_var_curve	
+ 0 0 0
+ temprescibed for group 2	 time0,temp0,temp_var_curve	
+0 0 0                     
+temprescibed for group 3	 time0,temp0,temp_var_curve	
+0 0 0                     
+temprescibed for group 4	 time0,temp0,temp_var_curve	
+0 0 0                     
+temprescibed for group 5	 time0,temp0,temp_var_curve	
+0 0 0     
+ temprescibed for group 1	 time0,temp0,temp_var_curve	
+ 0 0 0
+ temprescibed for group 2	 time0,temp0,temp_var_curve	
+0 0 0                     
+temprescibed for group 3	 time0,temp0,temp_var_curve	
+0 0 0                     
+temprescibed for group 4	 time0,temp0,temp_var_curve	
+0 0 0                     
+temprescibed for group 5	 time0,temp0,temp_var_curve	
+0 0 0     
+ temprescibed for group 1	 time0,temp0,temp_var_curve	
+ 0 0 0
+ temprescibed for group 2	 time0,temp0,temp_var_curve	
+0 0 0                     
+temprescibed for group 3	 time0,temp0,temp_var_curve	
+0 0 0                     
+temprescibed for group 4	 time0,temp0,temp_var_curve	
+0 0 0                     
+temprescibed for group 5	 time0,temp0,temp_var_curve	
+0 0 0     
+ temprescibed for group 1	 time0,temp0,temp_var_curve	
+ 0 0 0
+ temprescibed for group 2	 time0,temp0,temp_var_curve	
+0 0 0                     
+temprescibed for group 3	 time0,temp0,temp_var_curve	
+0 0 0                     
+temprescibed for group 4	 time0,temp0,temp_var_curve	
+0 0 0                     
+temprescibed for group 5	 time0,temp0,temp_var_curve	
+0 0 0     
+
+ 竖向温度变化组数
+           0
+ edge define           1   block 1
+      0   !总边界单元数
+ntelgroup 
+ntelgroup
+0
+npipe,algo_pipe
+npipe,algo_pipe
+0 0
+
+
+
+ 竖向温度变化组数
+           0
+                               总的散热面数(nedge)及面元信息
+    0
+                    总的散热面数(nedge)及表面气温曲线\tesurf
+                                             按照1:nsurf输入
+    0
+                                                冷却水管信息
+                               algo_pipe=3，冷却效应直接解法
+    0    3
+
+
+                               总的散热面数(nedge)及面元信息
+    0
+                    总的散热面数(nedge)及表面气温曲线\tesurf
+                                             按照1:nsurf输入
+    0
+                                                冷却水管信息
+                               algo_pipe=3，冷却效应直接解法
+    0    3

@@ -1,0 +1,29 @@
+// Syncthing ignore — folder "hstar-train" now points at the repo's cases/cases.
+// Goal: sync ONLY the train* benchmark cases (live from the repo, no stale copy).
+//
+// First match wins. Ignore junk/symlinks first, then whitelist train*, then
+// ignore everything else (the ~2.5G of non-benchmark cases + their /mnt/share links).
+
+// 1.loa is a case-alias symlink (-> 1.LOA); Windows FS is case-insensitive so
+// 1.LOA alone suffices, and syncing the symlink just causes conflicts.
+**/1.loa
+
+// stray build/backup artifacts that must never reach Windows
+**/.next
+**/_stale_legacy_*
+
+// whitelist the benchmark cases (dir + all contents)
+!/train*/**
+!/train*
+
+// whitelist the architecture diagram (opens in any Windows browser)
+!/HSTAR_architecture.html
+
+// whitelist the 2026-08 architecture review reports (~350 KB, docs only).
+// Mirrors fem-chat/docs/research/ so the reports are readable on Windows.
+// The two .html files open directly in a browser; the rest is Markdown.
+!/_review_2026-08/**
+!/_review_2026-08
+
+// ignore all other top-level entries (other cases, loose files, .stfolder marker)
+*

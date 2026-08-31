@@ -1,0 +1,186 @@
+ time: 16:56:13
+ time: 16:56:13
+ Input the problem name?
+ NPOIN                                                                          
+  
+        2543        2543        2430           2           1           5
+           0 GIDR                  0.000000000000000E+000           0
+           0           0           0           0       99999
+ NINIT                                                                          
+  
+           0           0           0           1           0           0
+           0           0           0           0           0 
+ FIX                                                          0           0
+           0           0           0           0           0
+ outinpunit=          37 outindunit=          54
+ TYPE_PROBLEM                                                                   
+  
+ Q                                                 
+ PROFILE                                           
+ LOAD                                                         5           0
+           0           0
+ type_layer1                                                                    
+  
+ NMASS                                                                          
+  
+         999         999         999         999         999           0
+         999           0         999           0           0
+ nfreeflownode                                                                  
+  
+ NTSMAT                                                                         
+  
+         999         999           0           0           0
+ beeta1,beeta2,theta1=  0.500000000000000       0.250000000000000     
+   1.00000000000000     
+ equvs_process(1:ngroup)                                                        
+  
+ appear_level(1:ngroup)                                                         
+  
+ APPEAR_PROCESS                                                                 
+  
+ appear_process=           0           0           1           0           0
+ MATNO_PROCESS                                                                  
+  
+ iblks=           0 ngroup=           5 matno=           1           1
+           1           1           1
+ force_process=           0           0           0           0           0
+ uinitial=           0
+ 1-ILINKS(I0                                                                    
+  
+ 1-tLINKS(I0                                                                    
+  
+ text1=
+ 1-NGROUP--GROUP                                                                
+  
+ (3)                                                                            
+  
+ igroup=           1
+ name=Q4        
+ igroup=           2
+ name=Q4        
+ igroup=           3
+ name=Q4        
+ igroup=           4
+ name=Q4        
+ igroup=           5
+ name=Q4        
+ tne=        2430
+ text_tension_joint=
+ tension_joint                                                                  
+  
+ text_tension_contact=
+ contact_joint                                                                  
+  
+ ground_inf=           0 /100=           0
+ nblks=           1
+ Input runblks, =?
+ time: 16:56:14
+ MATERIAL                                                                       
+  
+ NAME                                                                           
+  
+ FIRST:NAME---MECHANICAL                                                        
+  
+ FOR                                                                            
+  
+ NUMBER                                                                         
+  
+ FOR                                                                            
+  
+ FOR                                                                            
+  
+ FOR                                                                            
+  
+ CAMCLAY                                                                        
+  
+ FOR                                                                            
+  
+ jmat=           1
+ MECHANICAL                    WATER                                    1
+ density,ratio,bulkw,c=   1000.00000000000       0.440000000000000     
+   2044900000.00000       6.951367649062636E-310
+ per=  1.000000000000000E-005  1.000000000000000E-005
+ ngaps                                                                          
+  
+ ngaps=           0
+ nrcsteel                                                                       
+  
+ nrcsteel=           0
+ nwcpipe                                                                        
+  
+ nwcpipe=           0
+ nifsgroup 
+ nifsgroup=           0
+ nabsfgroup
+ nabsfgroup=           0
+ nabssgroup
+ nabssgroup=           0
+ ifsnedge                                                                       
+                      
+ ifsnedge=           0
+ lblks=           0  blks_new=           1
+ lincs=           0  nincs=           0
+ lblks=           0  blks_new=           1
+ Bparameter=           0
+ lblks=           0 lincs=           0 ttime=  0.000000000000000E+000
+ ntime=           2 LINEAR                         0           2
+ ntime=           2 LINEAR                         0           2
+ ok waterlevel
+ nplgroup=           0
+ nedge=           0
+ iblks=           1 lineload=          12
+ iblks=           1
+ time: 16:56:14
+ a1
+ ifixset=           1 type_abc=
+ FIX                                               
+ ifixset=           2 type_abc=
+ FIX                                               
+ outind=           0
+ edge_load_group     
+ edge_load_group=           0 delgroup=           0
+ gray=   9.81000000000000       0.000000000000000E+000  -1.00000000000000     
+  0.000000000000000E+000  -1.00000000000000     
+ tcurv=           1           1           1           1           1
+ ecwpipe=           0 iblks=           1 lblks+1=           1
+ ecwpipe=           0 iblks=           1 lblks+1=           1
+ 0         
+ ntedge=           0
+ 0         
+ npipe,algo_pipe=           0           0
+ linet=           8
+ time: 16:56:14
+ time: 16:56:14
+ time: 16:56:14
+  to static_u_pw
+ static_U_Pw
+ outinp=           0
+ ntelgroup=           0
+ iblks=           1 iincs=           1 istep=           1 idiv=           1 
+ iiter=           1
+ time: 16:56:14
+                     istep=           1 iiter=           1
+                     conver_load check
+ resid=  1.655721448498597E-021 retot=   569894.953721890     
+ ratio1=  5.390092666732446E-014 ratio2=  6.602957467562054E-014
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           0
+                    conver_nodal_value check
+               Convergence check for pressure(Pw)
+ ratio1=  0.999999688284540      ratio2=   1.00000000000000     
+                            not converged for checki=           4
+ iblks=           1 iincs=           1 istep=           1 idiv=           1 
+ iiter=           2
+ time: 16:56:14
+                     istep=           1 iiter=           2
+                     conver_load check
+ resid=  1.316267810467324E-022 retot=   569894.953721899     
+ ratio1=  1.519759002382554E-014 ratio2=  1.625472948009536E-014
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           0
+                    conver_nodal_value check
+               Convergence check for pressure(Pw)
+ ratio1=  1.618508738294913E-014 ratio2=  1.725498300229390E-014
+ nchek=           0
+ ***********RESTART FILE IS UPDATED!*******
+ time: 16:56:14

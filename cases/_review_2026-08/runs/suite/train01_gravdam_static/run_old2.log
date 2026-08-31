@@ -1,0 +1,56 @@
+ time: 09:07:57
+ time: 09:07:57
+ Input the problem name?
+ NPOIN                                                                          
+  
+        2705        2705        2562           2           2           2
+           0 GIDR                  0.000000000000000E+000           0
+           0           0           0           0       99999
+ NINIT                                                                          
+  
+           0           0           0           2           0           0
+           0           0           0           0           0 
+ FIX                                                          0           0
+           0           0           0           0           0
+ outinpunit=          37 outindunit=          54
+ TYPE_PROBLEM                                                                   
+  
+ Q                                                 
+ PARDISO                                           
+ LOAD                                                         5           0
+           0           0
+ type_layer1                                                                    
+  
+ NMASS                                                                          
+  
+           1           1           1           1           0           0
+           1           0           1           0           0
+ nfreeflownode                                                                  
+  
+ NTSMAT                                                                         
+  
+         999         999           0           0           0
+ beeta1,beeta2,theta1=  0.500000000000000       0.250000000000000     
+   1.00000000000000     
+ equvs_process                                                                  
+  
+ appear_level                                                                   
+  
+ APPEAR_PROCESS                                                                 
+  
+ appear_process=           0           1
+ appear_process=           1           1
+ MATNO_PROCESS                                                                  
+  
+ iblks=           0 ngroup=           2 matno=           1           2
+ iblks=           0 ngroup=           2 matno=           1           2
+ force_process=           0           0
+forrtl: severe (59): list-directed I/O syntax error, unit 1, file D:\Projects\HSTAR_Next\HSTAR_TestData\cases\train01_gravdam_static\1.glb
+Image              PC                Routine            Line        Source             
+hstar.exe          00007FF69BD2C9CA  Unknown               Unknown  Unknown
+hstar.exe          00007FF69B742C2D  Unknown               Unknown  Unknown
+hstar.exe          00007FF69BB93EAB  Unknown               Unknown  Unknown
+hstar.exe          00007FF69BD4947B  Unknown               Unknown  Unknown
+hstar.exe          00007FF6A0B19170  Unknown               Unknown  Unknown
+KERNEL32.DLL       00007FF9F162E8D7  Unknown               Unknown  Unknown
+ntdll.dll          00007FF9F2DEC53C  Unknown               Unknown  Unknown

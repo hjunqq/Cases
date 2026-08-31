@@ -1,0 +1,103 @@
+ irecover=           0
+ ikind=          15 nr_intrules=           4
+ igroup=           1 tvol=   15999.9040000000     
+ igroup=           1 tne=         300
+ igroup=           2 tvol=   1600.00000000000     
+ igroup=           2 tne=         400
+ igroup=           3 tvol=  8.000000000000002E-002
+ igroup=           3 tne=         410
+ ****** ntotv= ******         924
+ time: 17:36:38
+ in modf_element_lib
+ jgroup=           1 kinit_g=           0
+ jgroup=           2 kinit_g=           0
+ jgroup=           3 kinit_g=           0
+ iblks=           1 runblks=           2
+ iblks=           1
+ time: 17:36:38
+ ninit=           0 iblks=           1 restart=           0
+ ikindks=           0
+ time(solve): 17:36:38
+ 单个方程中最大非零元素个数          14
+ Neq=         871       Iseq(neq)=        7596
+ storage of PARDISO, sstore=        7596
+                                             
+ time(solve_set): 17:36:38
+ time(solve_pcg): 17:36:38
+ igroup=           1 matno=           1 density=  0.000000000000000E+000 facts=
+  0.000000000000000E+000
+ igroup=           1 order_intx=           1 ngaus=           4
+ igroup=           2 matno=           2 density=   2400.00000000000      facts=
+   2400.00000000000     
+ igroup=           2 order_intx=           1 ngaus=           4
+ igroup=           3 matno=           2 density=   2400.00000000000      facts=
+   2400.00000000000     
+ igroup=           3 order_intx=           1 ngaus=           4
+ sum_M_elem_diag=   1889674.93970368     
+ sum_K_diag=   402944472390334.     
+  order=    1  omega= 0.25644E+02  freq= 0.40813E+01  period= 0.24502E+00 coefx= 0.13659E+01 coefy= 0.43471E-11 coefz= 0.00000E+00 mstar= 0.15169E+07 kstar= 0.99753E+09
+ irecover=           0
+  order=    2  omega= 0.56247E+02  freq= 0.89521E+01  period= 0.11171E+00 coefx=-0.33407E-05 coefy=-0.12268E+01 coefz= 0.00000E+00 mstar= 0.24033E+07 kstar= 0.76036E+10
+ irecover=           0
+  order=    3  omega= 0.71849E+02  freq= 0.11435E+02  period= 0.87450E-01 coefx= 0.77943E+00 coefy=-0.15995E-04 coefz= 0.00000E+00 mstar= 0.12892E+07 kstar= 0.66552E+10
+ irecover=           0
+  order=    4  omega= 0.12846E+03  freq= 0.20444E+02  period= 0.48913E-01 coefx=-0.16976E+00 coefy= 0.45328E-03 coefz= 0.00000E+00 mstar= 0.24987E+07 kstar= 0.41219E+11
+ irecover=           0
+  order=    5  omega= 0.12993E+03  freq= 0.20678E+02  period= 0.48360E-01 coefx=-0.39662E-02 coefy=-0.89504E-01 coefz= 0.00000E+00 mstar= 0.55426E+06 kstar= 0.93563E+10
+ irecover=           0
+  order=    6  omega= 0.14074E+03  freq= 0.22399E+02  period= 0.44645E-01 coefx= 0.11745E-08 coefy= 0.26664E+00 coefz= 0.00000E+00 mstar= 0.14327E+07 kstar= 0.28378E+11
+ irecover=           0
+  order=    7  omega= 0.16576E+03  freq= 0.26382E+02  period= 0.37904E-01 coefx=-0.33473E+00 coefy= 0.34681E-12 coefz= 0.00000E+00 mstar= 0.79960E+06 kstar= 0.21971E+11
+ irecover=           0
+  order=    8  omega= 0.18582E+03  freq= 0.29573E+02  period= 0.33814E-01 coefx=-0.20943E-10 coefy= 0.21715E+00 coefz= 0.00000E+00 mstar= 0.75850E+06 kstar= 0.26189E+11
+ irecover=           0
+  order=    9  omega= 0.20403E+03  freq= 0.32472E+02  period= 0.30796E-01 coefx= 0.17024E-01 coefy= 0.79097E-02 coefz= 0.00000E+00 mstar= 0.11055E+07 kstar= 0.45999E+11
+ irecover=           0
+  order=   10  omega= 0.20623E+03  freq= 0.32822E+02  period= 0.30467E-01 coefx= 0.74346E-03 coefy=-0.20157E+00 coefz= 0.00000E+00 mstar= 0.10153E+07 kstar= 0.43181E+11
+ irecover=           0
+  order=   11  omega= 0.21177E+03  freq= 0.33705E+02  period= 0.29669E-01 coefx=-0.25995E-07 coefy=-0.10462E+00 coefz= 0.00000E+00 mstar= 0.93662E+06 kstar= 0.42006E+11
+ irecover=           0
+  order=   12  omega= 0.22488E+03  freq= 0.35790E+02  period= 0.27941E-01 coefx=-0.21895E+00 coefy=-0.51750E-10 coefz= 0.00000E+00 mstar= 0.34823E+06 kstar= 0.17610E+11
+ irecover=           0
+  order=   13  omega= 0.25594E+03  freq= 0.40733E+02  period= 0.24550E-01 coefx= 0.78288E-01 coefy=-0.66520E-05 coefz= 0.00000E+00 mstar= 0.12430E+07 kstar= 0.81421E+11
+ irecover=           0
+  order=   14  omega= 0.26171E+03  freq= 0.41652E+02  period= 0.24008E-01 coefx= 0.63328E-04 coefy= 0.26636E-01 coefz= 0.00000E+00 mstar= 0.41620E+06 kstar= 0.28506E+11
+ irecover=           0
+  order=   15  omega= 0.26878E+03  freq= 0.42777E+02  period= 0.23377E-01 coefx=-0.92446E-01 coefy=-0.12220E-01 coefz= 0.00000E+00 mstar= 0.11974E+07 kstar= 0.86499E+11
+ irecover=           0
+  order=   16  omega= 0.26868E+03  freq= 0.42762E+02  period= 0.23385E-01 coefx= 0.34655E-01 coefy=-0.58911E-01 coefz= 0.00000E+00 mstar= 0.66219E+06 kstar= 0.47803E+11
+ irecover=           0
+  order=   17  omega= 0.28713E+03  freq= 0.45698E+02  period= 0.21883E-01 coefx=-0.10243E-01 coefy=-0.14577E-09 coefz= 0.00000E+00 mstar= 0.92881E+06 kstar= 0.76574E+11
+ irecover=           0
+  order=   18  omega= 0.30747E+03  freq= 0.48936E+02  period= 0.20435E-01 coefx= 0.44981E-01 coefy= 0.20938E-03 coefz= 0.00000E+00 mstar= 0.63802E+06 kstar= 0.60315E+11
+ irecover=           0
+  order=   19  omega= 0.30809E+03  freq= 0.49034E+02  period= 0.20394E-01 coefx= 0.16126E-01 coefy=-0.11146E-02 coefz= 0.00000E+00 mstar= 0.33565E+06 kstar= 0.31859E+11
+ irecover=           0
+  order=   20  omega= 0.32056E+03  freq= 0.51018E+02  period= 0.19601E-01 coefx=-0.13334E+00 coefy= 0.12350E-04 coefz= 0.00000E+00 mstar= 0.21574E+06 kstar= 0.22168E+11
+ irecover=           0
+ iblks=           2 runblks=           2
+ iblks=           2
+ time: 17:36:39
+ ninit=           0 iblks=           2 restart=           0
+ ikindks=           0
+ time(solve): 17:36:39
+ 单个方程中最大非零元素个数          14
+ Neq=         871       Iseq(neq)=        7596
+ storage of PARDISO, sstore=        7596
+                                             
+ time(solve_set): 17:36:39
+ time(solve_pcg): 17:36:39
+ igroup=           1 matno=           1 density=  0.000000000000000E+000 facts=
+  0.000000000000000E+000
+ igroup=           1 order_intx=           1 ngaus=           4
+ igroup=           2 matno=           2 density=   2400.00000000000      facts=
+   2400.00000000000     
+ igroup=           2 order_intx=           1 ngaus=           4
+ igroup=           3 matno=           2 density=   2400.00000000000      facts=
+   2400.00000000000     
+ igroup=           3 order_intx=           1 ngaus=           4
+ sum_M_elem_diag=   119928335148.298     
+ sum_K_diag=   402944472390334.     
+  order=    1  omega= 0.25643E+02  freq= 0.40812E+01  period= 0.24502E+00 coefx= 0.13659E+01 coefy= 0.67732E-03 coefz= 0.00000E+00 mstar= 0.15169E+07 kstar= 0.99755E+09
+ irecover=           0
+ time: 17:36:39

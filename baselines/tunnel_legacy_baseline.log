@@ -1,0 +1,1762 @@
+ time: 11:40:22
+ time: 11:40:22
+ Input the problem name?
+ NPOIN                                                                          
+  
+         680         680         600           2           5           7
+           0 GIDR                  0.000000000000000E+000           0
+           0           0           0           0        9999
+ NINIT                                                                          
+  
+           0           0           0           1           0           0
+           0           0           0           0           0 
+ FIX                                                          0           0
+           0           0           0           0           0
+ outinpunit=          37 outindunit=          54
+ TYPE_PROBLEM                                                                   
+  
+ Q                                                 
+ PARDISO                                           
+ LOAD                                                         5           0
+           0           0
+ type_layer1                                                                    
+  
+ NMASS                                                                          
+  
+         999         999         999         999         999           0
+         999           0         999           0           0
+ nfreeflownode                                                                  
+  
+ NTSMAT                                                                         
+  
+         999         999           0           0           0
+ beeta1,beeta2,theta1=  0.500000000000000       0.250000000000000     
+  0.500000000000000     
+ equvs_process(1:ngroup)                                                        
+  
+ appear_level(1:ngroup)                                                         
+  
+ APPEAR_PROCESS(1-0nblks                                                        
+  
+ appear_process=           1           1           1           1           1
+           1           1
+ MATNO_PROCESS(1-nblks                                                          
+  
+ iblks=           0 ngroup=           7 matno=           1           2
+           4           5           4           5           3
+ force_process=           0           0           0           0           0
+           0           0
+ uinitial=           0
+ 1-ILINKS(I0                                                                    
+  
+ 1-tLINKS(I0                                                                    
+  
+ text1=
+ 1-NGROUP--GROUP                                                                
+  
+ (3)                                                                            
+  
+ igroup=           1
+ name=Q4        
+ igroup=           2
+ name=Q4        
+ igroup=           3
+ name=L2        
+ igroup=           4
+ name=L2        
+ igroup=           5
+ name=L2        
+ igroup=           6
+ name=L2        
+ igroup=           7
+ name=Q4        
+ tne=         600
+ ntransnode,translg=          60          99
+ text_tension_joint=
+ tension_joint                                                                  
+  
+ text_tension_contact=
+ contact_joint                                                                  
+  
+ ground_inf=           0 /100=           0
+ nblks=           1
+ Input runblks, =?
+ time: 11:40:22
+ MATERIAL                                                                       
+  
+ NAME                                                                           
+  
+ FIRST:NAME---MECHANICAL                                                        
+  
+ FOR                                                                            
+  
+ NUMBER                                                                         
+  
+ FOR                                                                            
+  
+ FOR                                                                            
+  
+ FOR                                                                            
+  
+ CAMCLAY                                                                        
+  
+ FOR                                                                            
+  
+ jmat=           1
+ MECHANICAL                    SOLID                                    1
+ ELASTIC_ISOTROPIC               0.000000000000000E+000   1.00000000000000     
+   1.00000000000000        8000000000.00000       0.300000000000000     
+  1.000000000000000E-005           0           0           0
+ jmat=           2
+ MECHANICAL                    SOLID                                    2
+ CONCRETE                         2400.00000000000        1.00000000000000     
+   1.00000000000000        24000000000.0000       0.167000000000000     
+  1.000000000000000E-005           0           0           0
+ jmat=           3
+ MECHANICAL                    SOLID                                    3
+ ELASTIC_ISOTROPIC               0.000000000000000E+000   1.00000000000000     
+   1.00000000000000        8000000000.00000       0.300000000000000     
+  1.000000000000000E-005           0           0           0
+ jmat=           4
+ MECHANICAL                    SOLID                                    4
+ ELASTIC_ISOTROPIC               0.000000000000000E+000   1.00000000000000     
+   1.00000000000000        210000000000.000       0.167000000000000     
+  1.000000000000000E-005           0           0           0
+ jmat=           5
+ MECHANICAL                    SOLID                                    5
+ ELASTIC_ISOTROPIC               0.000000000000000E+000   1.00000000000000     
+   1.00000000000000        210000000000.000       0.167000000000000     
+  1.000000000000000E-005           0           0           0
+ jmat=           6
+ GEOMETRY                      ROD_or_BEAM                              4
+ ngaps                                                                          
+  
+ ngaps=           0
+ nrcsteel                                                                       
+  
+ nrcsteel=           0
+ nwcpipe                                                                        
+  
+ nwcpipe=           0
+ nifsgroup 
+ nifsgroup=           0
+ nabsgroup 
+ nabsfgroup=           0
+ nabssgroup
+ nabssgroup=           0
+ ifsnedge                                                                       
+                      
+ ifsnedge=           0
+ lblks=           0  blks_new=           1
+ lincs=           0  nincs=           0
+ lblks=           0  blks_new=           1
+ Bparameter=           0
+ >>> State dumped to state_legacy.dat
+ lblks=           0 lincs=           0 ttime=  0.000000000000000E+000
+ ntime=           2 LINEAR                         0           2
+ ntime=           2 LINEAR                         0           2
+ ok waterlevel
+ nplgroup=           0
+ nedge=          80
+ iblks=           1 lineload=          94
+ iblks=           1
+ time: 11:40:22
+ a1
+ ifixset=           1 type_abc=
+ FIX                                               
+ ifixset=           2 type_abc=
+ FIX                                               
+ ifixset=           3 type_abc=
+ FIX                                               
+ ifixset=           4 type_abc=
+ FIX                                               
+ outind=           0
+ edge_load_group     
+ edge_load_group=          80 delgroup=           1
+ gray=   9.81000000000000       0.000000000000000E+000  -1.00000000000000     
+  0.000000000000000E+000  -1.00000000000000     
+ tcurv=           0           1           0           0           0           0
+           0
+ ecwpipe=           0 iblks=           1 lblks+1=           1
+ ecwpipe=           0 iblks=           1 lblks+1=           1
+ 总的散热面
+ ntedge=           0
+ algo_pipe=
+ npipe,algo_pipe=           0           3
+ linet=           8
+ time: 11:40:22
+ >>> DEBUG: calling solve(SET), solveunit=           8
+ mtype                           
+          -2           2           0
+ isdefault                       
+           0
+ >>> DEBUG: solve(SET) returned
+ time: 11:40:22
+ time: 11:40:22
+  in static_U**
+ iincs=           1 lincs=           0
+ cwater,Qstatic=           0           0
+ istep=           1
+ outinp=           0
+ tcurvegravity=           0           1           0           0           0
+           0           0
+ ntelgroup=           0
+ Reordering completed ... 
+ Factorization completed ... 
+ time: 11:40:22
+                     istep=           1 iiter=           1
+                     conver_load check
+ resid=   11.9452401266714      retot=   573395449088.224     
+ ratio1=  4.564259428664751E-006 ratio2=  1.276638443727676E-005
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=           1
+ time: 11:40:22
+                     istep=           1 iiter=           2
+                     conver_load check
+ resid=  6.021367790391091E-006 retot=   573395449081.475     
+ ratio1=  3.240562908012509E-009 ratio2=  9.306211612309338E-009
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           0
+                    conver_nodal_value check
+               Convergence check for displacement
+ ratio1=  8.771490478641749E-009 ratio2=  7.204952851235273E-008
+ nchek=           0
+ ***********RESTART FILE IS UPDATED!*******
+ istep=           2
+ outinp=           0
+ tcurvegravity=           0           1           0           0           0
+           0           0
+ ntelgroup=           0
+ Factorization completed ... 
+ time: 11:40:22
+                     istep=           2 iiter=           1
+                     conver_load check
+ resid=   10.8835927531412      retot=   1939743454563.18     
+ ratio1=  2.368721455653959E-006 ratio2=  8.334431973293936E-006
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           0
+                    conver_nodal_value check
+               Convergence check for displacement
+ ratio1=  0.443848402117020      ratio2=  0.393468350764642     
+                            not converged for checki=           1
+ miter=         100 iiter=           1
+ time: 11:40:22
+                     istep=           2 iiter=           2
+                     conver_load check
+ resid=  5.315799792060236E-006 retot=   1939743454558.41     
+ ratio1=  1.655435104290331E-009 ratio2=  6.000471439044464E-009
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           0
+                    conver_nodal_value check
+               Convergence check for displacement
+ ratio1=  5.030771345136505E-009 ratio2=  4.327442298194598E-008
+ nchek=           0
+ ***********RESTART FILE IS UPDATED!*******
+ istep=           3
+ outinp=           0
+ tcurvegravity=           0           1           0           0           0
+           0           0
+ ntelgroup=           0
+ Factorization completed ... 
+ time: 11:40:22
+                     istep=           3 iiter=           1
+                     conver_load check
+ resid=   10.9069472896216      retot=   4190927213706.30     
+ ratio1=  1.613230959769381E-006 ratio2=  6.272678175351609E-006
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           0
+                    conver_nodal_value check
+               Convergence check for displacement
+ ratio1=  0.311244610760629      ratio2=  0.285962942957201     
+                            not converged for checki=           1
+ miter=         100 iiter=           1
+ time: 11:40:22
+                     istep=           3 iiter=           2
+                     conver_load check
+ resid=  5.338554529046845E-006 retot=   4190927213701.39     
+ ratio1=  1.128643493850888E-009 ratio2=  4.521021202167169E-009
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           0
+                    conver_nodal_value check
+               Convergence check for displacement
+ ratio1=  3.533913935774234E-009 ratio2=  3.150653952502595E-008
+ nchek=           0
+ ***********RESTART FILE IS UPDATED!*******
+ istep=           4
+ outinp=           0
+ tcurvegravity=           0           1           0           0           0
+           0           0
+ ntelgroup=           0
+ Factorization completed ... 
+ time: 11:40:22
+                     istep=           4 iiter=           1
+                     conver_load check
+ resid=   10.9300744192074      retot=   7326946726514.36     
+ ratio1=  1.221377858024124E-006 ratio2=  5.030881079125840E-006
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           0
+                    conver_nodal_value check
+               Convergence check for displacement
+ ratio1=  0.238572880228643      ratio2=  0.224597327935298     
+                            not converged for checki=           1
+ miter=         100 iiter=           1
+ time: 11:40:22
+                     istep=           4 iiter=           2
+                     conver_load check
+ resid=  5.361422208525092E-006 retot=   7326946726509.28     
+ ratio1=  8.554182028370409E-010 ratio2=  3.629974439870217E-009
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           0
+                    conver_nodal_value check
+               Convergence check for displacement
+ ratio1=  2.713562135009681E-009 ratio2=  2.478953680460811E-008
+ nchek=           0
+ ***********RESTART FILE IS UPDATED!*******
+ istep=           5
+ outinp=           0
+ tcurvegravity=           0           1           0           0           0
+           0           0
+ ntelgroup=           0
+ Factorization completed ... 
+ time: 11:40:22
+                     istep=           5 iiter=           1
+                     conver_load check
+ resid=   806170842.414711      retot=   11347801992986.2     
+ ratio1=  8.428643179074366E-003 ratio2=  5.547176800103909E-002
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=           1
+ time: 11:40:22
+                     istep=           5 iiter=           2
+                     conver_load check
+ resid=   25660285.0214323      retot=   11350060305891.9     
+ ratio1=  1.503597702590055E-003 ratio2=  9.759532405938793E-003
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=           2
+ time: 11:40:22
+                     istep=           5 iiter=           3
+                     conver_load check
+ resid=   1208275.82682867      retot=   11350450956648.0     
+ ratio1=  3.262695058642820E-004 ratio2=  1.906601279352025E-003
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=           3
+ time: 11:40:22
+                     istep=           5 iiter=           4
+                     conver_load check
+ resid=   58294.5633699739      retot=   11350531999900.0     
+ ratio1=  7.166480412240779E-005 ratio2=  4.099745458109248E-004
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=           4
+ time: 11:40:22
+                     istep=           5 iiter=           5
+                     conver_load check
+ resid=   2981.28965265824      retot=   11350548991126.8     
+ ratio1=  1.620666490638409E-005 ratio2=  9.390009846824356E-005
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=           5
+ time: 11:40:22
+                     istep=           5 iiter=           6
+                     conver_load check
+ resid=   184.909128814111      retot=   11350552549760.3     
+ ratio1=  4.036181378443322E-006 ratio2=  2.308895797175022E-005
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=           6
+ time: 11:40:22
+                     istep=           5 iiter=           7
+                     conver_load check
+ resid=   16.1658580460309      retot=   11350553290612.1     
+ ratio1=  1.193413274996337E-006 ratio2=  6.221205234237527E-006
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           0
+                    conver_nodal_value check
+               Convergence check for displacement
+ ratio1=  3.930871529326300E-007 ratio2=  1.596724920098690E-006
+ nchek=           0
+ ***********RESTART FILE IS UPDATED!*******
+ istep=           6
+ outinp=           0
+ tcurvegravity=           0           1           0           0           0
+           0           0
+ ntelgroup=           0
+ Factorization completed ... 
+ time: 11:40:22
+                     istep=           6 iiter=           1
+                     conver_load check
+ resid=   3059958033.50984      retot=   16259108108981.0     
+ ratio1=  1.371858680953309E-002 ratio2=  6.146664069202869E-002
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=           1
+ time: 11:40:22
+                     istep=           6 iiter=           2
+                     conver_load check
+ resid=   375084749.915926      retot=   16268696324807.1     
+ ratio1=  4.801625972718857E-003 ratio2=  2.298348632022421E-002
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=           2
+ time: 11:40:22
+                     istep=           6 iiter=           3
+                     conver_load check
+ resid=   67289499.1075822      retot=   16270656584178.9     
+ ratio1=  2.033626106050976E-003 ratio2=  1.048635212818104E-002
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=           3
+ time: 11:40:22
+                     istep=           6 iiter=           4
+                     conver_load check
+ resid=   13153917.2424743      retot=   16271102479796.3     
+ ratio1=  8.991229070945129E-004 ratio2=  4.802450299627475E-003
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=           4
+ time: 11:40:22
+                     istep=           6 iiter=           5
+                     conver_load check
+ resid=   2569838.04398013      retot=   16271213526288.9     
+ ratio1=  3.974137644958345E-004 ratio2=  2.176322088290483E-003
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=           5
+ time: 11:40:22
+                     istep=           6 iiter=           6
+                     conver_load check
+ resid=   454287.724031545      retot=   16271245848411.6     
+ ratio1=  1.670917844637401E-004 ratio2=  9.488075546553335E-004
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=           6
+ time: 11:40:22
+                     istep=           6 iiter=           7
+                     conver_load check
+ resid=   96114.4835451269      retot=   16271259338844.3     
+ ratio1=  7.685707191465706E-005 ratio2=  4.191501603877744E-004
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=           7
+ time: 11:40:22
+                     istep=           6 iiter=           8
+                     conver_load check
+ resid=   21862.3772919103      retot=   16271264151961.2     
+ ratio1=  3.665540688539251E-005 ratio2=  1.882197235330980E-004
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=           8
+ time: 11:40:22
+                     istep=           6 iiter=           9
+                     conver_load check
+ resid=   5237.89373946462      retot=   16271265975276.0     
+ ratio1=  1.794186851709738E-005 ratio2=  8.613661178205396E-005
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=           9
+ time: 11:40:22
+                     istep=           6 iiter=          10
+                     conver_load check
+ resid=   1299.99709595258      retot=   16271266709695.8     
+ ratio1=  8.938414888340912E-006 ratio2=  4.014648450010533E-005
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=          10
+ time: 11:40:22
+                     istep=           6 iiter=          11
+                     conver_load check
+ resid=   329.850008285891      retot=   16271267021462.1     
+ ratio1=  4.502436158938964E-006 ratio2=  1.902329366301456E-005
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=          11
+ time: 11:40:22
+                     istep=           6 iiter=          12
+                     conver_load check
+ resid=   84.7772456664885      retot=   16271267159544.8     
+ ratio1=  2.282595534920181E-006 ratio2=  9.148685486742953E-006
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           0
+                    conver_nodal_value check
+               Convergence check for displacement
+ ratio1=  8.796192712737338E-008 ratio2=  6.530117280497819E-007
+ nchek=           0
+ ***********RESTART FILE IS UPDATED!*******
+ istep=           7
+ outinp=           0
+ tcurvegravity=           0           1           0           0           0
+           0           0
+ ntelgroup=           0
+ Factorization completed ... 
+ time: 11:40:22
+                     istep=           7 iiter=           1
+                     conver_load check
+ resid=   36638458160.5180      retot=   22076375579881.7     
+ ratio1=  4.073846936707499E-002 ratio2=  7.186272087506196E-002
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=           1
+ time: 11:40:22
+                     istep=           7 iiter=           2
+                     conver_load check
+ resid=   981899646.998210      retot=   22141091374320.2     
+ ratio1=  6.659383716321615E-003 ratio2=  2.045217538330956E-002
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=           2
+ time: 11:40:22
+                     istep=           7 iiter=           3
+                     conver_load check
+ resid=   114870268.541696      retot=   22150190346123.4     
+ ratio1=  2.277272946481650E-003 ratio2=  9.789894571134890E-003
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=           3
+ time: 11:40:22
+                     istep=           7 iiter=           4
+                     conver_load check
+ resid=   26389742.6677177      retot=   22152191297025.8     
+ ratio1=  1.091463535688267E-003 ratio2=  4.973484540894796E-003
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=           4
+ time: 11:40:22
+                     istep=           7 iiter=           5
+                     conver_load check
+ resid=   7332864.72991814      retot=   22152710001994.2     
+ ratio1=  5.753384588482008E-004 ratio2=  2.570451071595532E-003
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=           5
+ time: 11:40:22
+                     istep=           7 iiter=           6
+                     conver_load check
+ resid=   2107531.66265909      retot=   22152853322199.7     
+ ratio1=  3.084410820500171E-004 ratio2=  1.340921415336473E-003
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=           6
+ time: 11:40:22
+                     istep=           7 iiter=           7
+                     conver_load check
+ resid=   609176.951441774      retot=   22152894544634.8     
+ ratio1=  1.658274763789440E-004 ratio2=  7.048945861207016E-004
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=           7
+ time: 11:40:22
+                     istep=           7 iiter=           8
+                     conver_load check
+ resid=   176890.607993705      retot=   22152906985639.6     
+ ratio1=  8.935873772170985E-005 ratio2=  3.730623954034244E-004
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=           8
+ time: 11:40:22
+                     istep=           7 iiter=           9
+                     conver_load check
+ resid=   51679.5124426368      retot=   22152911031602.3     
+ ratio1=  4.829962981889127E-005 ratio2=  1.985996178878343E-004
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=           9
+ time: 11:40:22
+                     istep=           7 iiter=          10
+                     conver_load check
+ resid=   15199.8355365633      retot=   22152912455660.1     
+ ratio1=  2.619413303063880E-005 ratio2=  1.062492889482470E-004
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=          10
+ time: 11:40:22
+                     istep=           7 iiter=          11
+                     conver_load check
+ resid=   4498.91524449493      retot=   22152913006873.8     
+ ratio1=  1.425077504951753E-005 ratio2=  5.707956018645149E-005
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=          11
+ time: 11:40:22
+                     istep=           7 iiter=          12
+                     conver_load check
+ resid=   1338.93770749021      retot=   22152913241681.9     
+ ratio1=  7.774362070487909E-006 ratio2=  3.077208019496349E-005
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=          12
+ time: 11:40:22
+                     istep=           7 iiter=          13
+                     conver_load check
+ resid=   400.294025931589      retot=   22152913350138.5     
+ ratio1=  4.250833846728668E-006 ratio2=  1.663888361757711E-005
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=          13
+ time: 11:40:22
+                     istep=           7 iiter=          14
+                     conver_load check
+ resid=   120.107981932822      retot=   22152913403303.6     
+ ratio1=  2.328469266628105E-006 ratio2=  9.019796633248095E-006
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           0
+                    conver_nodal_value check
+               Convergence check for displacement
+ ratio1=  6.552665082682104E-008 ratio2=  5.734573512358945E-007
+ nchek=           0
+ ***********RESTART FILE IS UPDATED!*******
+ istep=           8
+ outinp=           0
+ tcurvegravity=           0           1           0           0           0
+           0           0
+ ntelgroup=           0
+ Factorization completed ... 
+ time: 11:40:22
+                     istep=           8 iiter=           1
+                     conver_load check
+ resid=   93914391545.5267      retot=   28910266180512.6     
+ ratio1=  5.699542932991416E-002 ratio2=  7.602606605992764E-002
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=           1
+ time: 11:40:22
+                     istep=           8 iiter=           2
+                     conver_load check
+ resid=   4525444909.39848      retot=   29108618750618.8     
+ ratio1=  1.246866171106704E-002 ratio2=  2.323845908164102E-002
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=           2
+ time: 11:40:22
+                     istep=           8 iiter=           3
+                     conver_load check
+ resid=   377039464.270773      retot=   29141714695066.1     
+ ratio1=  3.596962033730854E-003 ratio2=  9.641477480028851E-003
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=           3
+ time: 11:40:22
+                     istep=           8 iiter=           4
+                     conver_load check
+ resid=   69223840.4324356      retot=   29147793259544.1     
+ ratio1=  1.541079362415770E-003 ratio2=  4.937597232153940E-003
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=           4
+ time: 11:40:22
+                     istep=           8 iiter=           5
+                     conver_load check
+ resid=   18195113.3243693      retot=   29149077464251.9     
+ ratio1=  7.900689154947630E-004 ratio2=  2.781857696431771E-003
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=           5
+ time: 11:40:22
+                     istep=           8 iiter=           6
+                     conver_load check
+ resid=   5398238.62297953      retot=   29149391221468.3     
+ ratio1=  4.303395828518217E-004 ratio2=  1.562127062212501E-003
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=           6
+ time: 11:40:22
+                     istep=           8 iiter=           7
+                     conver_load check
+ resid=   1695705.47715480      retot=   29149477823083.3     
+ ratio1=  2.411902911740419E-004 ratio2=  8.770351534647427E-004
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=           7
+ time: 11:40:22
+                     istep=           8 iiter=           8
+                     conver_load check
+ resid=   550601.706931046      retot=   29149504186626.8     
+ ratio1=  1.374368493427401E-004 ratio2=  4.932327767892278E-004
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=           8
+ time: 11:40:22
+                     istep=           8 iiter=           9
+                     conver_load check
+ resid=   182359.981335681      retot=   29149513012632.8     
+ ratio1=  7.909501590904122E-005 ratio2=  2.840988563258355E-004
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=           9
+ time: 11:40:22
+                     istep=           8 iiter=          10
+                     conver_load check
+ resid=   61090.4345465318      retot=   29149516300734.9     
+ ratio1=  4.577948796698496E-005 ratio2=  1.661075252570981E-004
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=          10
+ time: 11:40:22
+                     istep=           8 iiter=          11
+                     conver_load check
+ resid=   20591.0620754729      retot=   29149517675390.7     
+ ratio1=  2.657808508446974E-005 ratio2=  9.706299872087011E-005
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=          11
+ time: 11:40:22
+                     istep=           8 iiter=          12
+                     conver_load check
+ resid=   6960.90845447943      retot=   29149518314777.2     
+ ratio1=  1.545315888146230E-005 ratio2=  5.707023028894334E-005
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=          12
+ time: 11:40:22
+                     istep=           8 iiter=          13
+                     conver_load check
+ resid=   2355.79108370211      retot=   29149518637887.3     
+ ratio1=  8.989855128855904E-006 ratio2=  3.367872558161303E-005
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=          13
+ time: 11:40:22
+                     istep=           8 iiter=          14
+                     conver_load check
+ resid=   797.352143675059      retot=   29149518810547.8     
+ ratio1=  5.230092718870581E-006 ratio2=  1.980157383624008E-005
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=          14
+ time: 11:40:22
+                     istep=           8 iiter=          15
+                     conver_load check
+ resid=   269.759390983894      retot=   29149518906015.7     
+ ratio1=  3.042093726887902E-006 ratio2=  1.160926861564977E-005
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=          15
+ time: 11:40:22
+                     istep=           8 iiter=          16
+                     conver_load check
+ resid=   91.2029261613879      retot=   29149518959854.4     
+ ratio1=  1.768840568000059E-006 ratio2=  6.791116804120830E-006
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           0
+                    conver_nodal_value check
+               Convergence check for displacement
+ ratio1=  5.573232607003343E-008 ratio2=  4.031067897038507E-007
+ nchek=           0
+ ***********RESTART FILE IS UPDATED!*******
+ istep=           9
+ outinp=           0
+ tcurvegravity=           0           1           0           0           0
+           0           0
+ ntelgroup=           0
+ Factorization completed ... 
+ time: 11:40:22
+                     istep=           9 iiter=           1
+                     conver_load check
+ resid=   142309729379.746      retot=   36987779379473.1     
+ ratio1=  6.202805554612714E-002 ratio2=  7.676358650414647E-002
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=           1
+ time: 11:40:22
+                     istep=           9 iiter=           2
+                     conver_load check
+ resid=   8247416846.39653      retot=   37307882232841.2     
+ ratio1=  1.486820957829109E-002 ratio2=  1.958188311586752E-002
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=           2
+ time: 11:40:22
+                     istep=           9 iiter=           3
+                     conver_load check
+ resid=   609941783.429268      retot=   37357663503970.5     
+ ratio1=  4.040678898850874E-003 ratio2=  1.054736210064600E-002
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=           3
+ time: 11:40:22
+                     istep=           9 iiter=           4
+                     conver_load check
+ resid=   119053554.005213      retot=   37365510260764.5     
+ ratio1=  1.784989737766452E-003 ratio2=  6.383794867751319E-003
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=           4
+ time: 11:40:22
+                     istep=           9 iiter=           5
+                     conver_load check
+ resid=   38703600.2342482      retot=   37366924635168.3     
+ ratio1=  1.017728659595396E-003 ratio2=  3.828061956731717E-003
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=           5
+ time: 11:40:22
+                     istep=           9 iiter=           6
+                     conver_load check
+ resid=   14084023.6298285      retot=   37367256743240.6     
+ ratio1=  6.139284571833061E-004 ratio2=  2.282657089593804E-003
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=           6
+ time: 11:40:22
+                     istep=           9 iiter=           7
+                     conver_load check
+ resid=   5258693.89303474      retot=   37367358497700.5     
+ ratio1=  3.751394578125348E-004 ratio2=  1.358453999248756E-003
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=           7
+ time: 11:40:22
+                     istep=           9 iiter=           8
+                     conver_load check
+ resid=   1974398.79556890      retot=   37367396949942.1     
+ ratio1=  2.298640296948327E-004 ratio2=  8.388009220696660E-004
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=           8
+ time: 11:40:22
+                     istep=           9 iiter=           9
+                     conver_load check
+ resid=   741546.427538306      retot=   37367413818663.0     
+ ratio1=  1.408713422648322E-004 ratio2=  5.175853571581412E-004
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=           9
+ time: 11:40:22
+                     istep=           9 iiter=          10
+                     conver_load check
+ resid=   278195.902254368      retot=   37367422077015.3     
+ ratio1=  8.628370703358669E-005 ratio2=  3.187767389138258E-004
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=          10
+ time: 11:40:22
+                     istep=           9 iiter=          11
+                     conver_load check
+ resid=   104208.491482374      retot=   37367426452474.5     
+ ratio1=  5.280863723553292E-005 ratio2=  1.966682039856649E-004
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=          11
+ time: 11:40:22
+                     istep=           9 iiter=          12
+                     conver_load check
+ resid=   38974.3841131258      retot=   37367428896738.4     
+ ratio1=  3.229557506387011E-005 ratio2=  1.215692642729220E-004
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=          12
+ time: 11:40:22
+                     istep=           9 iiter=          13
+                     conver_load check
+ resid=   14555.1825071562      retot=   37367430308201.4     
+ ratio1=  1.973613972295569E-005 ratio2=  7.489640796878952E-005
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=          13
+ time: 11:40:22
+                     istep=           9 iiter=          14
+                     conver_load check
+ resid=   5428.45687591380      retot=   37367431139667.7     
+ ratio1=  1.205290059042005E-005 ratio2=  4.602346680881276E-005
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=          14
+ time: 11:40:22
+                     istep=           9 iiter=          15
+                     conver_load check
+ resid=   2022.17552291761      retot=   37367431635286.1     
+ ratio1=  7.356357053319134E-006 ratio2=  2.822444307607624E-005
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=          15
+ time: 11:40:22
+                     istep=           9 iiter=          16
+                     conver_load check
+ resid=   752.501349689241      retot=   37367431932798.1     
+ ratio1=  4.487526389909539E-006 ratio2=  1.728162129848215E-005
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=          16
+ time: 11:40:22
+                     istep=           9 iiter=          17
+                     conver_load check
+ resid=   279.769211892669      retot=   37367432112153.5     
+ ratio1=  2.736234614696831E-006 ratio2=  1.056812382458988E-005
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=          17
+ time: 11:40:22
+                     istep=           9 iiter=          18
+                     conver_load check
+ resid=   103.932105940265      retot=   37367432220566.0     
+ ratio1=  1.667739580287986E-006 ratio2=  6.456163718756091E-006
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           0
+                    conver_nodal_value check
+               Convergence check for displacement
+ ratio1=  6.046869059834937E-008 ratio2=  4.473987508888470E-007
+ nchek=           0
+ ***********RESTART FILE IS UPDATED!*******
+ istep=          10
+ outinp=           0
+ tcurvegravity=           0           1           0           0           0
+           0           0
+ ntelgroup=           0
+ Factorization completed ... 
+ time: 11:40:22
+                     istep=          10 iiter=           1
+                     conver_load check
+ resid=   187221964876.148      retot=   46373740853071.0     
+ ratio1=  6.353928654693260E-002 ratio2=  7.450011918355233E-002
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=           1
+ time: 11:40:22
+                     istep=          10 iiter=           2
+                     conver_load check
+ resid=   10857375341.6833      retot=   46785191539648.8     
+ ratio1=  1.523379896107161E-002 ratio2=  2.200260858897872E-002
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=           2
+ time: 11:40:22
+                     istep=          10 iiter=           3
+                     conver_load check
+ resid=   1000231262.94372      retot=   46840507229146.2     
+ ratio1=  4.621036699590493E-003 ratio2=  1.421063337457944E-002
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=           3
+ time: 11:40:22
+                     istep=          10 iiter=           4
+                     conver_load check
+ resid=   291729362.105268      retot=   46847672663159.4     
+ ratio1=  2.495433844448692E-003 ratio2=  9.046702191541448E-003
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=           4
+ time: 11:40:22
+                     istep=          10 iiter=           5
+                     conver_load check
+ resid=   117214458.256827      retot=   46848770154930.9     
+ ratio1=  1.581763300806525E-003 ratio2=  5.712154765285886E-003
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=           5
+ time: 11:40:22
+                     istep=          10 iiter=           6
+                     conver_load check
+ resid=   48772789.3045608      retot=   46849037260908.5     
+ ratio1=  1.020324843918046E-003 ratio2=  3.726777892703443E-003
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=           6
+ time: 11:40:22
+                     istep=          10 iiter=           7
+                     conver_load check
+ resid=   20387186.2001710      retot=   46849150567094.8     
+ ratio1=  6.596715952306477E-004 ratio2=  2.433647032434274E-003
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=           7
+ time: 11:40:22
+                     istep=          10 iiter=           8
+                     conver_load check
+ resid=   8520437.84744068      retot=   46849213453477.0     
+ ratio1=  4.264614747658682E-004 ratio2=  1.585715353769999E-003
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=           8
+ time: 11:40:22
+                     istep=          10 iiter=           9
+                     conver_load check
+ resid=   3555557.66748292      retot=   46849251246096.0     
+ ratio1=  2.754879049345745E-004 ratio2=  1.035785911841620E-003
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=           9
+ time: 11:40:22
+                     istep=          10 iiter=          10
+                     conver_load check
+ resid=   1480912.34189238      retot=   46849274702636.9     
+ ratio1=  1.777924196214561E-004 ratio2=  6.761603604002229E-004
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=          10
+ time: 11:40:22
+                     istep=          10 iiter=          11
+                     conver_load check
+ resid=   615642.660500041      retot=   46849289475202.3     
+ ratio1=  1.146338421600127E-004 ratio2=  4.395508542623319E-004
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=          11
+ time: 11:40:22
+                     istep=          10 iiter=          12
+                     conver_load check
+ resid=   255488.812217795      retot=   46849298844252.9     
+ ratio1=  7.384726166743189E-005 ratio2=  2.848491108806815E-004
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=          12
+ time: 11:40:22
+                     istep=          10 iiter=          13
+                     conver_load check
+ resid=   105863.397807490      retot=   46849304807407.8     
+ ratio1=  4.753585821818379E-005 ratio2=  1.841618593914802E-004
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=          13
+ time: 11:40:22
+                     istep=          10 iiter=          14
+                     conver_load check
+ resid=   43806.6029313436      retot=   46849308610169.5     
+ ratio1=  3.057864204578683E-005 ratio2=  1.188516913572504E-004
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=          14
+ time: 11:40:22
+                     istep=          10 iiter=          15
+                     conver_load check
+ resid=   18106.5805803065      retot=   46849311038085.0     
+ ratio1=  1.965923511146492E-005 ratio2=  7.659672972725396E-005
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=          15
+ time: 11:40:22
+                     istep=          10 iiter=          16
+                     conver_load check
+ resid=   7476.71966448738      retot=   46849312589447.0     
+ ratio1=  1.263292556381200E-005 ratio2=  4.931142145333462E-005
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=          16
+ time: 11:40:22
+                     istep=          10 iiter=          17
+                     conver_load check
+ resid=   3084.81351929595      retot=   46849313581296.9     
+ ratio1=  8.114520124986540E-006 ratio2=  3.171888715479463E-005
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=          17
+ time: 11:40:22
+                     istep=          10 iiter=          18
+                     conver_load check
+ resid=   1271.88053504137      retot=   46849314215714.6     
+ ratio1=  5.210405713964801E-006 ratio2=  2.038911466814862E-005
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=          18
+ time: 11:40:22
+                     istep=          10 iiter=          19
+                     conver_load check
+ resid=   524.096868078110      retot=   46849314621655.3     
+ ratio1=  3.344676827481959E-006 ratio2=  1.309929897315529E-005
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=          19
+ time: 11:40:22
+                     istep=          10 iiter=          20
+                     conver_load check
+ resid=   215.856753449051      retot=   46849314881479.0     
+ ratio1=  2.146501509983902E-006 ratio2=  8.412267341827841E-006
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           0
+                    conver_nodal_value check
+               Convergence check for displacement
+ ratio1=  9.327499198245726E-008 ratio2=  6.774731055564200E-007
+ nchek=           0
+ ***********RESTART FILE IS UPDATED!*******
+ istep=          11
+ outinp=           0
+ tcurvegravity=           0           1           0           0           0
+           0           0
+ ntelgroup=           0
+ Factorization completed ... 
+ time: 11:40:22
+                     istep=          11 iiter=           1
+                     conver_load check
+ resid=   10128491662.2607      retot=   47244914424596.4     
+ ratio1=  1.464181294003340E-002 ratio2=  3.753321356202599E-002
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=           1
+ time: 11:40:22
+                     istep=          11 iiter=           2
+                     conver_load check
+ resid=   2210686294.33535      retot=   47293041474091.7     
+ ratio1=  6.836989877491304E-003 ratio2=  2.459210011885171E-002
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=           2
+ time: 11:40:22
+                     istep=          11 iiter=           3
+                     conver_load check
+ resid=   885848842.276652      retot=   47299805889159.9     
+ ratio1=  4.327630089496428E-003 ratio2=  1.627686142177101E-002
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=           3
+ time: 11:40:22
+                     istep=          11 iiter=           4
+                     conver_load check
+ resid=   381130561.944244      retot=   47301367271569.5     
+ ratio1=  2.838572822623001E-003 ratio2=  1.083090700755690E-002
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=           4
+ time: 11:40:22
+                     istep=          11 iiter=           5
+                     conver_load check
+ resid=   149725198.819484      retot=   47301996199907.0     
+ ratio1=  1.779130130705725E-003 ratio2=  7.049645312283924E-003
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=           5
+ time: 11:40:22
+                     istep=          11 iiter=           6
+                     conver_load check
+ resid=   59784761.5157074      retot=   47302410151004.4     
+ ratio1=  1.124225976286342E-003 ratio2=  4.552333398349974E-003
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=           6
+ time: 11:40:22
+                     istep=          11 iiter=           7
+                     conver_load check
+ resid=   24173320.4123676      retot=   47302669875191.3     
+ ratio1=  7.148671281005265E-004 ratio2=  2.999951922622090E-003
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=           7
+ time: 11:40:22
+                     istep=          11 iiter=           8
+                     conver_load check
+ resid=   9797917.11128793      retot=   47302827233511.7     
+ ratio1=  4.551172862211700E-004 ratio2=  1.952964426859054E-003
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=           8
+ time: 11:40:22
+                     istep=          11 iiter=           9
+                     conver_load check
+ resid=   3818664.56964141      retot=   47302923023697.5     
+ ratio1=  2.841265165053310E-004 ratio2=  1.260584781402441E-003
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=           9
+ time: 11:40:22
+                     istep=          11 iiter=          10
+                     conver_load check
+ resid=   1506266.82114376      retot=   47302988442007.1     
+ ratio1=  1.784459376102675E-004 ratio2=  8.079719765996646E-004
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=          10
+ time: 11:40:22
+                     istep=          11 iiter=          11
+                     conver_load check
+ resid=   595681.143055490      retot=   47303028988481.6     
+ ratio1=  1.122179809620208E-004 ratio2=  5.142185625712892E-004
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=          11
+ time: 11:40:22
+                     istep=          11 iiter=          12
+                     conver_load check
+ resid=   235531.695381525      retot=   47303053704961.4     
+ ratio1=  7.056349611658735E-005 ratio2=  3.256317286871538E-004
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=          12
+ time: 11:40:22
+                     istep=          11 iiter=          13
+                     conver_load check
+ resid=   93057.2819480502      retot=   47303068856425.9     
+ ratio1=  4.435376826603937E-005 ratio2=  2.055357397687784E-004
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=          13
+ time: 11:40:22
+                     istep=          11 iiter=          14
+                     conver_load check
+ resid=   36733.1750017284      retot=   47303078199496.2     
+ ratio1=  2.786663520921443E-005 ratio2=  1.294516017824787E-004
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=          14
+ time: 11:40:22
+                     istep=          11 iiter=          15
+                     conver_load check
+ resid=   14487.2145412725      retot=   47303083985200.1     
+ ratio1=  1.750038962341791E-005 ratio2=  8.141155045965812E-005
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=          15
+ time: 11:40:22
+                     istep=          11 iiter=          16
+                     conver_load check
+ resid=   5709.08333940064      retot=   47303087578581.4     
+ ratio1=  1.098597096428631E-005 ratio2=  5.114649180485404E-005
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=          16
+ time: 11:40:22
+                     istep=          11 iiter=          17
+                     conver_load check
+ resid=   2248.26387769342      retot=   47303089815076.5     
+ ratio1=  6.894120763602390E-006 ratio2=  3.210888974758283E-005
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=          17
+ time: 11:40:22
+                     istep=          11 iiter=          18
+                     conver_load check
+ resid=   884.854124234228      retot=   47303091209213.2     
+ ratio1=  4.325049462404742E-006 ratio2=  2.014663102209090E-005
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=          18
+ time: 11:40:22
+                     istep=          11 iiter=          19
+                     conver_load check
+ resid=   348.080786674189      retot=   47303092079263.4     
+ ratio1=  2.712659358223118E-006 ratio2=  1.263598735641978E-005
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=          19
+ time: 11:40:22
+                     istep=          11 iiter=          20
+                     conver_load check
+ resid=   136.869934518816      retot=   47303092622715.8     
+ ratio1=  1.701019381706021E-006 ratio2=  7.923003606238785E-006
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           0
+                    conver_nodal_value check
+               Convergence check for displacement
+ ratio1=  1.025180421054939E-007 ratio2=  6.758448164243206E-007
+ nchek=           0
+ ***********RESTART FILE IS UPDATED!*******
+ istep=          12
+ outinp=           0
+ tcurvegravity=           0           1           0           0           0
+           0           0
+ ntelgroup=           0
+ Factorization completed ... 
+ time: 11:40:22
+                     istep=          12 iiter=           1
+                     conver_load check
+ resid=   7544952428.49003      retot=   47532245434900.6     
+ ratio1=  1.259894231372667E-002 ratio2=  4.698937343489382E-002
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=           1
+ time: 11:40:22
+                     istep=          12 iiter=           2
+                     conver_load check
+ resid=   2535857798.71862      retot=   47562561269987.8     
+ ratio1=  7.301798287361957E-003 ratio2=  2.960811649406877E-002
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=           2
+ time: 11:40:22
+                     istep=          12 iiter=           3
+                     conver_load check
+ resid=   886133720.895971      retot=   47568835702905.2     
+ ratio1=  4.316068918973952E-003 ratio2=  1.858933025118672E-002
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=           3
+ time: 11:40:22
+                     istep=          12 iiter=           4
+                     conver_load check
+ resid=   320092737.544852      retot=   47571539558544.1     
+ ratio1=  2.593966165203620E-003 ratio2=  1.137021789917320E-002
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=           4
+ time: 11:40:22
+                     istep=          12 iiter=           5
+                     conver_load check
+ resid=   109116896.230901      retot=   47572894435679.9     
+ ratio1=  1.514489317265755E-003 ratio2=  6.826619381192546E-003
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=           5
+ time: 11:40:22
+                     istep=          12 iiter=           6
+                     conver_load check
+ resid=   37985358.7414985      retot=   47573644200705.2     
+ ratio1=  8.935624414536522E-004 ratio2=  4.063808577822083E-003
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=           6
+ time: 11:40:22
+                     istep=          12 iiter=           7
+                     conver_load check
+ resid=   13290516.0059175      retot=   47574054373921.1     
+ ratio1=  5.285497102715617E-004 ratio2=  2.402408357017939E-003
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=           7
+ time: 11:40:22
+                     istep=          12 iiter=           8
+                     conver_load check
+ resid=   4654013.67145532      retot=   47574280418218.5     
+ ratio1=  3.127718891779199E-004 ratio2=  1.415218400136658E-003
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=           8
+ time: 11:40:22
+                     istep=          12 iiter=           9
+                     conver_load check
+ resid=   1587910.24809458      retot=   47574406516351.1     
+ ratio1=  1.826948420118000E-004 ratio2=  8.322202663320355E-004
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=           9
+ time: 11:40:22
+                     istep=          12 iiter=          10
+                     conver_load check
+ resid=   538306.776119116      retot=   47574480075390.0     
+ ratio1=  1.063721403637572E-004 ratio2=  4.875614582107007E-004
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=          10
+ time: 11:40:22
+                     istep=          12 iiter=          11
+                     conver_load check
+ resid=   183745.562892391      retot=   47574522919513.8     
+ ratio1=  6.214714887758769E-005 ratio2=  2.846163868278746E-004
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=          11
+ time: 11:40:22
+                     istep=          12 iiter=          12
+                     conver_load check
+ resid=   62796.7178128952      retot=   47574547326168.5     
+ ratio1=  3.633131691939754E-005 ratio2=  1.659171045049874E-004
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=          12
+ time: 11:40:22
+                     istep=          12 iiter=          13
+                     conver_load check
+ resid=   21454.7302799543      retot=   47574561228039.4     
+ ratio1=  2.123606929398354E-005 ratio2=  9.667994504206743E-005
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=          13
+ time: 11:40:22
+                     istep=          12 iiter=          14
+                     conver_load check
+ resid=   7324.92138315050      retot=   47574569180330.5     
+ ratio1=  1.240835048039815E-005 ratio2=  5.632936991704503E-005
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=          14
+ time: 11:40:22
+                     istep=          12 iiter=          15
+                     conver_load check
+ resid=   2498.92924742405      retot=   47574573748139.4     
+ ratio1=  7.247521745743578E-006 ratio2=  3.281958790968519E-005
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=          15
+ time: 11:40:22
+                     istep=          12 iiter=          16
+                     conver_load check
+ resid=   851.927606724413      retot=   47574576380732.1     
+ ratio1=  4.231690348636282E-006 ratio2=  1.912259970635173E-005
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=          16
+ time: 11:40:22
+                     istep=          12 iiter=          17
+                     conver_load check
+ resid=   290.262018833391      retot=   47574577901985.9     
+ ratio1=  2.470060745604230E-006 ratio2=  1.114247649821952E-005
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=          17
+ time: 11:40:22
+                     istep=          12 iiter=          18
+                     conver_load check
+ resid=   98.8459246533464      retot=   47574578782837.5     
+ ratio1=  1.441424529070117E-006 ratio2=  6.492903872015553E-006
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           0
+                    conver_nodal_value check
+               Convergence check for displacement
+ ratio1=  9.663968957710023E-008 ratio2=  4.924887162406084E-007
+ nchek=           0
+ ***********RESTART FILE IS UPDATED!*******
+ istep=          13
+ outinp=           0
+ tcurvegravity=           0           1           0           0           0
+           0           0
+ ntelgroup=           0
+ Factorization completed ... 
+ time: 11:40:23
+                     istep=          13 iiter=           1
+                     conver_load check
+ resid=   7244644106.53328      retot=   47712183853847.7     
+ ratio1=  1.232235964590933E-002 ratio2=  5.151807615917815E-002
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=           1
+ time: 11:40:23
+                     istep=          13 iiter=           2
+                     conver_load check
+ resid=   2003635399.40294      retot=   47735152351666.3     
+ ratio1=  6.478734629588011E-003 ratio2=  2.852540890506455E-002
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=           2
+ time: 11:40:23
+                     istep=          13 iiter=           3
+                     conver_load check
+ resid=   577873166.721054      retot=   47742682955853.9     
+ ratio1=  3.479067491265662E-003 ratio2=  1.510772915768300E-002
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=           3
+ time: 11:40:23
+                     istep=          13 iiter=           4
+                     conver_load check
+ resid=   172047346.331307      retot=   47746146071497.4     
+ ratio1=  1.898256204397112E-003 ratio2=  8.036497592451734E-003
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=           4
+ time: 11:40:23
+                     istep=          13 iiter=           5
+                     conver_load check
+ resid=   51801231.8198004      retot=   47747866781435.5     
+ ratio1=  1.041581018652912E-003 ratio2=  4.289029688801458E-003
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=           5
+ time: 11:40:23
+                     istep=          13 iiter=           6
+                     conver_load check
+ resid=   15653560.5346932      retot=   47748739062411.8     
+ ratio1=  5.725660785894878E-004 ratio2=  2.295440302750219E-003
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=           6
+ time: 11:40:23
+                     istep=          13 iiter=           7
+                     conver_load check
+ resid=   4730502.47253680      retot=   47749187659475.5     
+ ratio1=  3.147535544197995E-004 ratio2=  1.231501872441930E-003
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=           7
+ time: 11:40:23
+                     istep=          13 iiter=           8
+                     conver_load check
+ resid=   1418003.68679678      retot=   47749420688310.2     
+ ratio1=  1.723275154338014E-004 ratio2=  6.560235677808008E-004
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=           8
+ time: 11:40:23
+                     istep=          13 iiter=           9
+                     conver_load check
+ resid=   405914.481472414      retot=   47749543456320.3     
+ ratio1=  9.220036938839654E-005 ratio2=  3.421876906978959E-004
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=           9
+ time: 11:40:23
+                     istep=          13 iiter=          10
+                     conver_load check
+ resid=   116709.674084428      retot=   47749611076982.1     
+ ratio1=  4.943886693890398E-005 ratio2=  1.851916340599419E-004
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=          10
+ time: 11:40:23
+                     istep=          13 iiter=          11
+                     conver_load check
+ resid=   33543.1896214602      retot=   47749646825088.7     
+ ratio1=  2.650434626806412E-005 ratio2=  9.982193644886437E-005
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=          11
+ time: 11:40:23
+                     istep=          13 iiter=          12
+                     conver_load check
+ resid=   9625.63015868540      retot=   47749665604046.1     
+ ratio1=  1.419807343909732E-005 ratio2=  5.368770216391045E-005
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=          12
+ time: 11:40:23
+                     istep=          13 iiter=          13
+                     conver_load check
+ resid=   2757.40630764291      retot=   47749675474748.1     
+ ratio1=  7.599152678092749E-006 ratio2=  2.882996988012299E-005
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=          13
+ time: 11:40:23
+                     istep=          13 iiter=          14
+                     conver_load check
+ resid=   788.624594815971      retot=   47749680672073.6     
+ ratio1=  4.063964661528909E-006 ratio2=  1.546193494975300E-005
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=          14
+ time: 11:40:23
+                     istep=          13 iiter=          15
+                     conver_load check
+ resid=   225.230037831938      retot=   47749683413494.8     
+ ratio1=  2.171840395705074E-006 ratio2=  8.283556076873554E-006
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           0
+                    conver_nodal_value check
+               Convergence check for displacement
+ ratio1=  2.462133941269754E-007 ratio2=  7.730785625806521E-007
+ nchek=           0
+ ***********RESTART FILE IS UPDATED!*******
+ istep=          14
+ outinp=           0
+ tcurvegravity=           0           1           0           0           0
+           0           0
+ ntelgroup=           0
+ Factorization completed ... 
+ time: 11:40:23
+                     istep=          14 iiter=           1
+                     conver_load check
+ resid=   5700204936.08772      retot=   47838818987953.4     
+ ratio1=  1.091578593143990E-002 ratio2=  4.377246934947241E-002
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=           1
+ time: 11:40:23
+                     istep=          14 iiter=           2
+                     conver_load check
+ resid=   1498929459.22397      retot=   47859046495624.7     
+ ratio1=  5.596397792740444E-003 ratio2=  2.172581122885075E-002
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=           2
+ time: 11:40:23
+                     istep=          14 iiter=           3
+                     conver_load check
+ resid=   410853700.641781      retot=   47866742181824.5     
+ ratio1=  2.929723714028734E-003 ratio2=  1.079275261689779E-002
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=           3
+ time: 11:40:23
+                     istep=          14 iiter=           4
+                     conver_load check
+ resid=   114333953.170663      retot=   47870255456274.7     
+ ratio1=  1.545449211664593E-003 ratio2=  5.396410533849255E-003
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=           4
+ time: 11:40:23
+                     istep=          14 iiter=           5
+                     conver_load check
+ resid=   31985664.4254193      retot=   47871939807890.4     
+ ratio1=  8.174047844303016E-004 ratio2=  2.896686935523294E-003
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=           5
+ time: 11:40:23
+                     istep=          14 iiter=           6
+                     conver_load check
+ resid=   8637441.43265699      retot=   47872765074167.7     
+ ratio1=  4.247645864742718E-004 ratio2=  1.538740089047434E-003
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=           6
+ time: 11:40:23
+                     istep=          14 iiter=           7
+                     conver_load check
+ resid=   2334910.92105259      retot=   47873181776935.7     
+ ratio1=  2.208457326229614E-004 ratio2=  8.314619101272349E-004
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=           7
+ time: 11:40:23
+                     istep=          14 iiter=           8
+                     conver_load check
+ resid=   630932.139834228      retot=   47873391540004.0     
+ ratio1=  1.148006184444225E-004 ratio2=  4.434054238001571E-004
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=           8
+ time: 11:40:23
+                     istep=          14 iiter=           9
+                     conver_load check
+ resid=   170149.038028450      retot=   47873497288534.8     
+ ratio1=  5.961659552591534E-005 ratio2=  2.343242454799023E-004
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=           9
+ time: 11:40:23
+                     istep=          14 iiter=          10
+                     conver_load check
+ resid=   45785.8162579663      retot=   47873550786058.8     
+ ratio1=  3.092556625176329E-005 ratio2=  1.230472851708264E-004
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=          10
+ time: 11:40:23
+                     istep=          14 iiter=          11
+                     conver_load check
+ resid=   12295.8128526808      retot=   47873577939862.7     
+ ratio1=  1.602620445106275E-005 ratio2=  6.431869611201347E-005
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=          11
+ time: 11:40:23
+                     istep=          14 iiter=          12
+                     conver_load check
+ resid=   3296.28943632356      retot=   47873591760760.8     
+ ratio1=  8.297832488395475E-006 ratio2=  3.350690168512033E-005
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=          12
+ time: 11:40:23
+                     istep=          14 iiter=          13
+                     conver_load check
+ resid=   882.391198785628      retot=   47873598811439.9     
+ ratio1=  4.293214088234219E-006 ratio2=  1.741115492196198E-005
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=          13
+ time: 11:40:23
+                     istep=          14 iiter=          14
+                     conver_load check
+ resid=   235.930446024653      retot=   47873602414973.4     
+ ratio1=  2.219953818803806E-006 ratio2=  9.029823842259619E-006
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           0
+                    conver_nodal_value check
+               Convergence check for displacement
+ ratio1=  3.075043039840821E-007 ratio2=  9.312063679135324E-007
+ nchek=           0
+ ***********RESTART FILE IS UPDATED!*******
+ istep=          15
+ outinp=           0
+ tcurvegravity=           0           1           0           0           0
+           0           0
+ ntelgroup=           0
+ Factorization completed ... 
+ time: 11:40:23
+                     istep=          15 iiter=           1
+                     conver_load check
+ resid=   4750403920.82703      retot=   47936788476569.2     
+ ratio1=  9.954760177275285E-003 ratio2=  3.817759061674278E-002
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=           1
+ time: 11:40:23
+                     istep=          15 iiter=           2
+                     conver_load check
+ resid=   1170731239.38084      retot=   47954545119586.1     
+ ratio1=  4.940987050140104E-003 ratio2=  1.811622665484451E-002
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=           2
+ time: 11:40:23
+                     istep=          15 iiter=           3
+                     conver_load check
+ resid=   288895502.151145      retot=   47961894039194.7     
+ ratio1=  2.454269371290747E-003 ratio2=  8.643656513522311E-003
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=           3
+ time: 11:40:23
+                     istep=          15 iiter=           4
+                     conver_load check
+ resid=   71219754.5940654      retot=   47965319619268.1     
+ ratio1=  1.218530951567320E-003 ratio2=  4.160208620203366E-003
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=           4
+ time: 11:40:23
+                     istep=          15 iiter=           5
+                     conver_load check
+ resid=   17500892.9630023      retot=   47966960300958.1     
+ ratio1=  6.040306904246462E-004 ratio2=  2.117613952433402E-003
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=           5
+ time: 11:40:23
+                     istep=          15 iiter=           6
+                     conver_load check
+ resid=   4286272.93717788      retot=   47967748328893.3     
+ ratio1=  2.989270696461352E-004 ratio2=  1.065410494637156E-003
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=           6
+ time: 11:40:23
+                     istep=          15 iiter=           7
+                     conver_load check
+ resid=   1046654.49148063      retot=   47968128375769.1     
+ ratio1=  1.477152330521128E-004 ratio2=  5.316705970822035E-004
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=           7
+ time: 11:40:23
+                     istep=          15 iiter=           8
+                     conver_load check
+ resid=   255014.583940498      retot=   47968312255499.9     
+ ratio1=  7.291305408998527E-005 ratio2=  2.637853147920847E-004
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=           8
+ time: 11:40:23
+                     istep=          15 iiter=           9
+                     conver_load check
+ resid=   62051.4014217178      retot=   47968401481519.3     
+ ratio1=  3.596649972569386E-005 ratio2=  1.303336114697673E-004
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=           9
+ time: 11:40:23
+                     istep=          15 iiter=          10
+                     conver_load check
+ resid=   15091.3489609208      retot=   47968444868694.0     
+ ratio1=  1.773724689653351E-005 ratio2=  6.420475750978661E-005
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=          10
+ time: 11:40:23
+                     istep=          15 iiter=          11
+                     conver_load check
+ resid=   3671.30561375522      retot=   47968465997737.1     
+ ratio1=  8.748474979367524E-006 ratio2=  3.156064975938808E-005
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=          11
+ time: 11:40:23
+                     istep=          15 iiter=          12
+                     conver_load check
+ resid=   893.960357124419      retot=   47968476298383.1     
+ ratio1=  4.316991250332317E-006 ratio2=  1.549009609494877E-005
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ miter=         100 iiter=          12
+ time: 11:40:23
+                     istep=          15 iiter=          13
+                     conver_load check
+ resid=   218.012442621153      retot=   47968481323989.8     
+ ratio1=  2.131879511990403E-006 ratio2=  7.594184625825915E-006
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           0
+                    conver_nodal_value check
+               Convergence check for displacement
+ ratio1=  4.095852454026965E-007 ratio2=  1.220541210457210E-006
+ nchek=           0
+ ***********RESTART FILE IS UPDATED!*******
+ time: 11:40:23

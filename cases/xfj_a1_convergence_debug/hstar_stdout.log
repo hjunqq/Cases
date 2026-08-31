@@ -1,0 +1,142 @@
+ time: 22:01:27
+ Input the problem name?
+ NPOIN                                                                          
+  
+       35331       35331       28647           3           6          25
+           0 GIDR                  0.000000000000000E+000           0
+           0           0           0           0        9999
+ NINIT                                                                          
+  
+           0           0           0           1           0           0
+           0          -1           0           0           0 
+ FIX                                                          0           0
+           0           0           0           0           0
+ outinpunit=          37 outindunit=          54
+ TYPE_PROBLEM                                                                   
+  
+ Q                                                 
+ PARDISO                                           
+ LOAD                                                         5           0
+           0           0
+ type_layer1                                                                    
+  
+ NMASS                                                                          
+  
+         999         999         999         999         999           0
+         999           0         999           0           2
+ nfreeflownode                                                                  
+  
+ NTSMAT                                                                         
+  
+         999         999           1           0           0
+ beeta1,beeta2,theta1=  0.600000000000000       0.302000000000000     
+  0.600000000000000     
+ equvs_process(1:ngroup)                                                        
+  
+ appear_level(1:ngroup)                                                         
+  
+ APPEAR_PROCESS(1-0nblks                                                        
+  
+ appear_process=           1           1           1           1           1
+           1           1           1           1           1           1
+           1           1           1           1           1           1
+           1           1           1           1           1           1
+           1           0
+ MATNO_PROCESS(1-nblks                                                          
+  
+ iblks=           0 ngroup=          25 matno=           1           1
+           1           1           1           1           1           1
+           1           5           5           5           6           6
+           6           6           6           6           6           6
+           1           2           3           4           1
+ force_process=           0           0           0           0           0
+           0           0           0           0           0           0
+           0           0           0           0           0           0
+           0           0           0           0           0           0
+           0           0
+ uinitial=           0
+ 1-ILINKS(I0                                                                    
+  
+ 1-tLINKS(I0                                                                    
+  
+ text1=
+ 1-NGROUP--GROUP                                                                
+  
+ (3)                                                                            
+  
+ igroup=           1
+ name=B8        
+ igroup=           2
+ name=B8        
+ igroup=           3
+ name=B8        
+ igroup=           4
+ name=B8        
+ igroup=           5
+ name=B8        
+ igroup=           6
+ name=B8        
+ igroup=           7
+ name=B8        
+ igroup=           8
+ name=B8        
+ igroup=           9
+ name=B8        
+ igroup=          10
+ name=B8        
+ igroup=          11
+ name=B8        
+ igroup=          12
+ name=B8        
+ igroup=          13
+ name=B8        
+ igroup=          14
+ name=B8        
+ igroup=          15
+ name=B8        
+ igroup=          16
+ name=B8        
+ igroup=          17
+ name=B8        
+ igroup=          18
+ name=B8        
+ igroup=          19
+ name=B8        
+ igroup=          20
+ name=B8        
+ igroup=          21
+ name=B8        
+ igroup=          22
+ name=B8        
+ igroup=          23
+ name=B8        
+ igroup=          24
+ name=B8        
+ igroup=          25
+ name=B8        
+ tne=       28647
+ ntransnode,translg=          23          88
+ ntransnode,translg=          37          88
+ ntransnode,translg=          49          88
+ ntransnode,translg=          88          88
+ ntransnode,translg=         116          88
+ ntransnode,translg=         106          88
+ ntransnode,translg=         165          88
+ ntransnode,translg=         166          88
+ ntransnode,translg=         157          88
+ ntransnode,translg=         100          88
+ ntransnode,translg=          90          88
+ ntransnode,translg=          89          88
+ ntransnode,translg=          61          88
+ ntransnode,translg=          60          88
+ ntransnode,translg=          43          88
+ ntransnode,translg=          39          88
+ ntransnode,translg=          42          88
+ ntransnode,translg=          31          88
+ text_tension_joint=
+ tension_joint                                                                  
+  
+ text_tension_contact=
+ contact_joint                                                                  
+  
+ ground_inf=           0 /100=           0

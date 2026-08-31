@@ -1,0 +1,139 @@
+ irecover=           0
+ ikind=          15 nr_intrules=           4
+ igroup=           1 tvol=   15999.9040000000     
+ igroup=           1 tne=         300
+ igroup=           2 tvol=   1600.00000000000     
+ igroup=           2 tne=         400
+ igroup=           3 tvol=  8.000000000000002E-002
+ igroup=           3 tne=         410
+ ****** ntotv= ******         924
+ time: 18:50:07
+ in modf_element_lib
+ jgroup=           1 kinit_g=           0
+ jgroup=           2 kinit_g=           0
+ jgroup=           3 kinit_g=           0
+ iblks=           1 runblks=           2
+ iblks=           1
+ time: 18:50:07
+ ninit=           0 iblks=           1 restart=           0
+ ikindks=           0
+ time(solve): 18:50:07
+ 单个方程中最大非零元素个数          12
+ Neq=         629       Iseq(neq)=        5429
+ storage of PARDISO, sstore=        5429
+                                             
+ time(solve_set): 18:50:07
+ time(solve_pcg): 18:50:07
+ force_external***,edge_load_group=          10
+ body force
+ interia force***
+ contact_state********************
+ in predict
+igroup=    1 ifield=1 ikh=1 ielem=     1 order_time=0  coef= 1.00000
+     0.12002E+11     0.38599E+10    -0.68603E+10    -0.12815E+10    -0.60009E+10    -0.38599E+10     0.85947E+09     0.12815E+10
+     0.38599E+10     0.12002E+11     0.12815E+10     0.85947E+09    -0.38599E+10    -0.60009E+10    -0.12815E+10    -0.68603E+10
+    -0.68603E+10     0.12815E+10     0.12002E+11    -0.38599E+10     0.85947E+09    -0.12815E+10    -0.60009E+10     0.38599E+10
+    -0.12815E+10     0.85947E+09    -0.38599E+10     0.12002E+11     0.12815E+10    -0.68603E+10     0.38599E+10    -0.60009E+10
+    -0.60009E+10    -0.38599E+10     0.85947E+09     0.12815E+10     0.12002E+11     0.38599E+10    -0.68603E+10    -0.12815E+10
+    -0.38599E+10    -0.60009E+10    -0.12815E+10    -0.68603E+10     0.38599E+10     0.12002E+11     0.12815E+10     0.85947E+09
+     0.85947E+09    -0.12815E+10    -0.60009E+10     0.38599E+10    -0.68603E+10     0.12815E+10     0.12002E+11    -0.38599E+10
+     0.12815E+10    -0.68603E+10     0.38599E+10    -0.60009E+10    -0.12815E+10     0.85947E+09    -0.38599E+10     0.12002E+11
+ time: 18:50:07
+ 
+         Convergence check for Residual force,ttime=,   1.00000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           1 iiter=           1
+ resid=  2.994435297825938E-007 retot=   70840597.2234778     
+ratio for residu norm= 0.4227E-14
+ max_refor=  6.053596735000610E-008 max_tofor=   14314743.1263224     
+ratio for residu maxm= 0.4229E-14
+ 
+               Convergence check for displacement
+ max_tatf=  2.928997754581878E-003 max_itif=  2.928997754581878E-003
+ iiter=           1 tatfn=  3.938711231213218E-002 itifn=
+  3.938711231213218E-002
+ratio for norm= 0.1000E+01
+ max_tatf=  2.928997754581878E-003 max_itif=  2.928997754581878E-003
+ratio for maxm= 0.1000E+01
+                    not converged for checki=           1
+ time: 18:50:07
+ 
+         Convergence check for Residual force,ttime=,   1.00000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           1 iiter=           2
+ resid=  1.827290936836813E-007 retot=   70840597.2234780     
+ratio for residu norm= 0.2579E-14
+ max_refor=  3.445893526077271E-008 max_tofor=   14314743.1263225     
+ratio for residu maxm= 0.2407E-14
+ 
+               Convergence check for displacement
+ max_tatf=  2.928997754581901E-003 max_itif=  2.765264444253807E-017
+ iiter=           2 tatfn=  3.938711231213225E-002 itifn=
+  2.597211677009379E-016
+ratio for norm= 0.6594E-14
+ max_tatf=  2.928997754581901E-003 max_itif=  2.765264444253807E-017
+ratio for maxm= 0.9441E-14
+               Convergence check for pressure(Pw)
+ contact_state********************
+ iforce=           1
+ fresi=  0.000000000000000E+000 ftang=  0.000000000000000E+000
+ k_safety=                     NaN area_sum=  0.000000000000000E+000
+ irecover=           0
+ iblks=           2 runblks=           2
+ iblks=           2
+ time: 18:50:07
+ ninit=           0 iblks=           2 restart=           0
+ ikindks=           0
+ time(solve): 18:50:07
+ 单个方程中最大非零元素个数          14
+ Neq=         871       Iseq(neq)=        7596
+ storage of PARDISO, sstore=        7596
+                                             
+ time(solve_set): 18:50:07
+ time(solve_pcg): 18:50:07
+ force_external***,edge_load_group=          10
+ body force
+ interia force***
+ contact_state********************
+ in predict
+ time: 18:50:07
+ 
+         Convergence check for Residual force,ttime=,   2.00000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           2 iincs=           1 istep=           1 iiter=           1
+ resid=  3.887386248566869E-005 retot=   85067477.6374916     
+ratio for residu norm= 0.4570E-12
+ max_refor=  1.790269743651152E-005 max_tofor=   20198186.9750310     
+ratio for residu maxm= 0.8864E-12
+ 
+               Convergence check for displacement
+ max_tatf=  2.890828219539643E-002 max_itif=  2.890828219539643E-002
+ iiter=           1 tatfn=  0.226230384009691      itifn=
+  0.226230384009691     
+ratio for norm= 0.1000E+01
+ max_tatf=  2.890828219539643E-002 max_itif=  2.890828219539643E-002
+ratio for maxm= 0.1000E+01
+                    not converged for checki=           1
+ time: 18:50:07
+ 
+         Convergence check for Residual force,ttime=,   2.00000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           2 iincs=           1 istep=           1 iiter=           2
+ resid=  2.591618585437735E-005 retot=   85067477.6374956     
+ratio for residu norm= 0.3047E-12
+ max_refor=  9.316951036453247E-006 max_tofor=   20198186.9750330     
+ratio for residu maxm= 0.4613E-12
+ 
+               Convergence check for displacement
+ max_tatf=  2.890828219540440E-002 max_itif=  8.068398153978063E-015
+ iiter=           2 tatfn=  0.226230384009760      itifn=
+  7.232524571331139E-014
+ratio for norm= 0.3197E-12
+ max_tatf=  2.890828219540440E-002 max_itif=  8.068398153978063E-015
+ratio for maxm= 0.2791E-12
+               Convergence check for pressure(Pw)
+ contact_state********************
+ iforce=           1
+ fresi=  0.000000000000000E+000 ftang=  0.000000000000000E+000
+ k_safety=                     NaN area_sum=  0.000000000000000E+000
+ irecover=           0

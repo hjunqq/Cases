@@ -1,0 +1,9 @@
+nforce,ngaps,nforce_gaps,nsafety_gaps
+0 0 0 0
+1:nforce
+lgroup,neface,node_face , nliste
+  5      211     4           1
+surface_force(iforce)%list
+61  69 70  336  337     
+       1189     13282     12912     12911     13280         
+       1190     13286     12916     12912     13282         

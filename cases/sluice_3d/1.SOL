@@ -1,0 +1,16 @@
+mtype,ncpu,msglvl, !mtype can be -2    !GLB  ?  PARDISO?    §Õ   §Þ   NBLKS         §Õ    
+  2    8     0
+isdefault  !0=use default;1=not use default
+    0
+mtype,ncpu,msglvl, !mtype can be -2    !GLB  ?  PARDISO?    §Õ   §Þ   NBLKS         §Õ    
+  2    8     0
+isdefault  !0=use default;1=not use default
+    0 
+ mtype,ncpu,msglvl, !mtype can be -2    !GLB  ?  PARDISO?    §Õ   §Þ   NBLKS         §Õ    
+  2    8     0
+isdefault  !0=use default;1=not use default
+    0
+ mtype,ncpu,msglvl, !mtype can be -2    !GLB  ?  PARDISO?    §Õ   §Þ   NBLKS         §Õ    
+  2    8     0
+isdefault  !0=use default;1=not use default
+    0

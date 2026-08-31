@@ -1,0 +1,98 @@
+{
+  "_name": "两端固支梁面荷载 (3D · B8 · 内力基准)",
+  "type_problem": "Q",
+  "solver": "PARDISO",
+  "ndimn": 3,
+  "nblks": 1,
+  "groups": [
+    {
+      "name": "Beam",
+      "nelgroup": 160,
+      "matno": 1,
+      "nnode": 8
+    }
+  ],
+  "materials": [
+    {
+      "id": 1,
+      "type": "ELASTIC",
+      "E": 30000000000.0,
+      "nu": 0.167,
+      "density": 0.0
+    }
+  ],
+  "blocks": {
+    "appear": [
+      [
+        1
+      ]
+    ],
+    "gravity": [
+      9.81,
+      0,
+      0,
+      -1,
+      0,
+      0,
+      -1
+    ],
+    "increments": [
+      [
+        {
+          "miter": 5,
+          "ditime": 1.0,
+          "nstep": 1
+        }
+      ]
+    ]
+  },
+  "time_curves": [
+    {
+      "type": "LINEAR",
+      "times": [
+        0,
+        1
+      ],
+      "values": [
+        1,
+        1
+      ]
+    }
+  ],
+  "boundary": {
+    "ends_fix_all": true
+  },
+  "surface_pressure": {
+    "where": "y_max",
+    "pressure": 100000.0,
+    "block": 1
+  },
+  "internal_force_sections": {
+    "axis": "x",
+    "stations": [
+      0.05,
+      0.1,
+      0.15,
+      0.2,
+      0.25,
+      0.3,
+      0.35,
+      0.4,
+      0.45,
+      0.5,
+      0.55,
+      0.6,
+      0.65,
+      0.7,
+      0.75,
+      0.8,
+      0.85,
+      0.9,
+      0.95
+    ],
+    "side": "min",
+    "groups": [
+      1
+    ]
+  }
+}

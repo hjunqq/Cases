@@ -1,0 +1,2032 @@
+ irecover=           0
+ ikind=          15 nr_intrules=           4
+ igroup=           1 tvol=   143400.000000000     
+ igroup=           1 tne=         120
+ igroup=           2 tvol=   4300.00000000000     
+ igroup=           2 tne=         316
+ ****** ntotv= ******         714
+ time: 14:31:17
+ in modf_element_lib
+ jgroup=           1 kinit_g=           0
+ jgroup=           2 kinit_g=           0
+ iblks=           1 runblks=           1
+ iblks=           1
+ time: 14:31:17
+ ninit=           0 iblks=           1 restart=           0
+ ikindks=           0
+ time(solve): 14:31:17
+ No. of equations        =         679
+ Max half band width     =          44
+ length half stiff matrix=       24132
+ time(solve_set): 14:31:17
+ time(solve_pcg): 14:31:17
+ igroup=           1 matno=           1 density=   2400.00000000000      facts=
+   2400.00000000000     
+ igroup=           1 order_intx=           1 ngaus=           4
+ igroup=           2 matno=           2 density=   2300.00000000000      facts=
+   2300.00000000000     
+ igroup=           2 order_intx=           1 ngaus=           4
+ sum_M_elem_diag=   176527925.820941     
+ sum_K_diag=   57367245535286.7     
+ neq_layer1=         679 neq=         679
+  order=    1  omega= 0.13843E+02  freq= 0.22031E+01  period= 0.45390E+00 coefx= 0.24324E+01 coefy= 0.60795E+01 coefz= 0.00000E+00 mstar= 0.22845E+07 kstar= 0.49223E+09
+ irecover=           0
+  order=    2  omega= 0.15731E+02  freq= 0.25037E+01  period= 0.39941E+00 coefx= 0.10780E+00 coefy=-0.50589E+01 coefz= 0.00000E+00 mstar= 0.49275E+07 kstar= 0.12194E+10
+ irecover=           0
+  order=    3  omega= 0.16675E+02  freq= 0.26539E+01  period= 0.37680E+00 coefx= 0.25793E+01 coefy=-0.17096E+01 coefz= 0.00000E+00 mstar= 0.10758E+08 kstar= 0.32958E+10
+ irecover=           0
+  order=    4  omega= 0.21614E+02  freq= 0.34400E+01  period= 0.29069E+00 coefx=-0.52599E+01 coefy=-0.32800E+00 coefz= 0.00000E+00 mstar= 0.60173E+07 kstar= 0.27943E+10
+ irecover=           0
+  order=    5  omega= 0.24090E+02  freq= 0.38341E+01  period= 0.26082E+00 coefx=-0.17374E+00 coefy= 0.23072E+00 coefz= 0.00000E+00 mstar= 0.58501E+08 kstar= 0.34434E+11
+ irecover=           0
+  order=    6  omega= 0.23396E+02  freq= 0.37235E+01  period= 0.26856E+00 coefx=-0.25149E+01 coefy=-0.68824E+00 coefz= 0.00000E+00 mstar= 0.46117E+07 kstar= 0.39594E+10
+ irecover=           0
+  order=    7  omega= 0.28795E+02  freq= 0.45828E+01  period= 0.21821E+00 coefx= 0.52898E+01 coefy= 0.31688E+01 coefz= 0.00000E+00 mstar= 0.22620E+07 kstar= 0.12484E+10
+ irecover=           0
+  order=    8  omega= 0.20364E+02  freq= 0.32410E+01  period= 0.30855E+00 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=    9  omega= 0.14399E+02  freq= 0.22917E+01  period= 0.43636E+00 coefx= 0.52887E+01 coefy= 0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=   10  omega= 0.10182E+02  freq= 0.16205E+01  period= 0.61710E+00 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=   11  omega= 0.71996E+01  freq= 0.11459E+01  period= 0.87271E+00 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=   12  omega= 0.50909E+01  freq= 0.81024E+00  period= 0.12342E+01 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=   13  omega= 0.35998E+01  freq= 0.57293E+00  period= 0.17454E+01 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=   14  omega= 0.25454E+01  freq= 0.40512E+00  period= 0.24684E+01 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=   15  omega= 0.17999E+01  freq= 0.28646E+00  period= 0.34908E+01 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=   16  omega= 0.12727E+01  freq= 0.20256E+00  period= 0.49368E+01 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=   17  omega= 0.89995E+00  freq= 0.14323E+00  period= 0.69817E+01 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=   18  omega= 0.63636E+00  freq= 0.10128E+00  period= 0.98736E+01 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=   19  omega= 0.44998E+00  freq= 0.71616E-01  period= 0.13963E+02 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=   20  omega= 0.31818E+00  freq= 0.50640E-01  period= 0.19747E+02 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=   21  omega= 0.22499E+00  freq= 0.35808E-01  period= 0.27927E+02 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=   22  omega= 0.15909E+00  freq= 0.25320E-01  period= 0.39494E+02 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=   23  omega= 0.11249E+00  freq= 0.17904E-01  period= 0.55853E+02 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=   24  omega= 0.79545E-01  freq= 0.12660E-01  period= 0.78989E+02 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=   25  omega= 0.56247E-01  freq= 0.89520E-02  period= 0.11171E+03 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=   26  omega= 0.39773E-01  freq= 0.63300E-02  period= 0.15798E+03 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=   27  omega= 0.28124E-01  freq= 0.44760E-02  period= 0.22341E+03 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=   28  omega= 0.19886E-01  freq= 0.31650E-02  period= 0.31595E+03 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=   29  omega= 0.14062E-01  freq= 0.22380E-02  period= 0.44683E+03 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=   30  omega= 0.99432E-02  freq= 0.15825E-02  period= 0.63191E+03 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=   31  omega= 0.70309E-02  freq= 0.11190E-02  period= 0.89366E+03 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=   32  omega= 0.49716E-02  freq= 0.79125E-03  period= 0.12638E+04 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=   33  omega= 0.35154E-02  freq= 0.55950E-03  period= 0.17873E+04 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=   34  omega= 0.24858E-02  freq= 0.39563E-03  period= 0.25276E+04 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=   35  omega= 0.17577E-02  freq= 0.27975E-03  period= 0.35746E+04 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=   36  omega= 0.12429E-02  freq= 0.19781E-03  period= 0.50553E+04 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=   37  omega= 0.87886E-03  freq= 0.13987E-03  period= 0.71492E+04 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=   38  omega= 0.62145E-03  freq= 0.98907E-04  period= 0.10111E+05 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=   39  omega= 0.43943E-03  freq= 0.69937E-04  period= 0.14298E+05 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=   40  omega= 0.31072E-03  freq= 0.49453E-04  period= 0.20221E+05 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=   41  omega= 0.21971E-03  freq= 0.34969E-04  period= 0.28597E+05 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=   42  omega= 0.15536E-03  freq= 0.24727E-04  period= 0.40442E+05 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=   43  omega= 0.10986E-03  freq= 0.17484E-04  period= 0.57194E+05 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=   44  omega= 0.77681E-04  freq= 0.12363E-04  period= 0.80884E+05 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=   45  omega= 0.54929E-04  freq= 0.87422E-05  period= 0.11439E+06 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=   46  omega= 0.38840E-04  freq= 0.61817E-05  period= 0.16177E+06 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=   47  omega= 0.27464E-04  freq= 0.43711E-05  period= 0.22878E+06 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=   48  omega= 0.19420E-04  freq= 0.30908E-05  period= 0.32354E+06 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=   49  omega= 0.13732E-04  freq= 0.21855E-05  period= 0.45755E+06 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=   50  omega= 0.97101E-05  freq= 0.15454E-05  period= 0.64708E+06 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=   51  omega= 0.68661E-05  freq= 0.10928E-05  period= 0.91510E+06 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=   52  omega= 0.48551E-05  freq= 0.77271E-06  period= 0.12942E+07 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=   53  omega= 0.34330E-05  freq= 0.54639E-06  period= 0.18302E+07 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=   54  omega= 0.24275E-05  freq= 0.38635E-06  period= 0.25883E+07 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=   55  omega= 0.17165E-05  freq= 0.27319E-06  period= 0.36604E+07 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=   56  omega= 0.12138E-05  freq= 0.19318E-06  period= 0.51766E+07 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=   57  omega= 0.85826E-06  freq= 0.13660E-06  period= 0.73208E+07 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=   58  omega= 0.60688E-06  freq= 0.96588E-07  period= 0.10353E+08 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=   59  omega= 0.42913E-06  freq= 0.68298E-07  period= 0.14642E+08 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=   60  omega= 0.30344E-06  freq= 0.48294E-07  period= 0.20706E+08 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=   61  omega= 0.21457E-06  freq= 0.34149E-07  period= 0.29283E+08 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=   62  omega= 0.15172E-06  freq= 0.24147E-07  period= 0.41413E+08 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=   63  omega= 0.10728E-06  freq= 0.17075E-07  period= 0.58567E+08 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=   64  omega= 0.75860E-07  freq= 0.12074E-07  period= 0.82826E+08 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=   65  omega= 0.53641E-07  freq= 0.85373E-08  period= 0.11713E+09 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=   66  omega= 0.37930E-07  freq= 0.60368E-08  period= 0.16565E+09 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=   67  omega= 0.26821E-07  freq= 0.42686E-08  period= 0.23427E+09 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=   68  omega= 0.18965E-07  freq= 0.30184E-08  period= 0.33130E+09 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=   69  omega= 0.13410E-07  freq= 0.21343E-08  period= 0.46853E+09 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=   70  omega= 0.94825E-08  freq= 0.15092E-08  period= 0.66261E+09 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=   71  omega= 0.67052E-08  freq= 0.10672E-08  period= 0.93707E+09 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=   72  omega= 0.47413E-08  freq= 0.75460E-09  period= 0.13252E+10 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=   73  omega= 0.33526E-08  freq= 0.53358E-09  period= 0.18741E+10 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=   74  omega= 0.23706E-08  freq= 0.37730E-09  period= 0.26504E+10 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=   75  omega= 0.16763E-08  freq= 0.26679E-09  period= 0.37483E+10 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=   76  omega= 0.11853E-08  freq= 0.18865E-09  period= 0.53008E+10 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=   77  omega= 0.83815E-09  freq= 0.13340E-09  period= 0.74965E+10 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=   78  omega= 0.59266E-09  freq= 0.94325E-10  period= 0.10602E+11 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=   79  omega= 0.41907E-09  freq= 0.66698E-10  period= 0.14993E+11 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=   80  omega= 0.29633E-09  freq= 0.47162E-10  period= 0.21203E+11 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=   81  omega= 0.20954E-09  freq= 0.33349E-10  period= 0.29986E+11 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=   82  omega= 0.14816E-09  freq= 0.23581E-10  period= 0.42407E+11 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=   83  omega= 0.10477E-09  freq= 0.16674E-10  period= 0.59972E+11 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=   84  omega= 0.74082E-10  freq= 0.11791E-10  period= 0.84813E+11 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=   85  omega= 0.52384E-10  freq= 0.83372E-11  period= 0.11994E+12 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=   86  omega= 0.37041E-10  freq= 0.58953E-11  period= 0.16963E+12 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=   87  omega= 0.26192E-10  freq= 0.41686E-11  period= 0.23989E+12 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=   88  omega= 0.18521E-10  freq= 0.29476E-11  period= 0.33925E+12 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=   89  omega= 0.13096E-10  freq= 0.20843E-11  period= 0.47978E+12 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=   90  omega= 0.92603E-11  freq= 0.14738E-11  period= 0.67851E+12 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=   91  omega= 0.65480E-11  freq= 0.10421E-11  period= 0.95955E+12 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=   92  omega= 0.46301E-11  freq= 0.73691E-12  period= 0.13570E+13 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=   93  omega= 0.32740E-11  freq= 0.52107E-12  period= 0.19191E+13 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=   94  omega= 0.23151E-11  freq= 0.36846E-12  period= 0.27140E+13 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=   95  omega= 0.16370E-11  freq= 0.26054E-12  period= 0.38382E+13 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=   96  omega= 0.11575E-11  freq= 0.18423E-12  period= 0.54281E+13 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=   97  omega= 0.81850E-12  freq= 0.13027E-12  period= 0.76764E+13 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=   98  omega= 0.57877E-12  freq= 0.92114E-13  period= 0.10856E+14 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=   99  omega= 0.40925E-12  freq= 0.65134E-13  period= 0.15353E+14 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  100  omega= 0.28938E-12  freq= 0.46057E-13  period= 0.21712E+14 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  101  omega= 0.20463E-12  freq= 0.32567E-13  period= 0.30706E+14 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  102  omega= 0.14469E-12  freq= 0.23028E-13  period= 0.43425E+14 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  103  omega= 0.10231E-12  freq= 0.16284E-13  period= 0.61412E+14 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  104  omega= 0.72346E-13  freq= 0.11514E-13  period= 0.86849E+14 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  105  omega= 0.51156E-13  freq= 0.81418E-14  period= 0.12282E+15 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  106  omega= 0.36173E-13  freq= 0.57571E-14  period= 0.17370E+15 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  107  omega= 0.25578E-13  freq= 0.40709E-14  period= 0.24565E+15 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  108  omega= 0.18087E-13  freq= 0.28786E-14  period= 0.34740E+15 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  109  omega= 0.12789E-13  freq= 0.20354E-14  period= 0.49129E+15 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  110  omega= 0.90433E-14  freq= 0.14393E-14  period= 0.69479E+15 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  111  omega= 0.63945E-14  freq= 0.10177E-14  period= 0.98258E+15 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  112  omega= 0.45216E-14  freq= 0.71964E-15  period= 0.13896E+16 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  113  omega= 0.31973E-14  freq= 0.50886E-15  period= 0.19652E+16 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  114  omega= 0.22608E-14  freq= 0.35982E-15  period= 0.27792E+16 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  115  omega= 0.15986E-14  freq= 0.25443E-15  period= 0.39303E+16 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  116  omega= 0.11304E-14  freq= 0.17991E-15  period= 0.55583E+16 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  117  omega= 0.79932E-15  freq= 0.12722E-15  period= 0.78607E+16 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  118  omega= 0.56520E-15  freq= 0.89955E-16  period= 0.11117E+17 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  119  omega= 0.39966E-15  freq= 0.63608E-16  period= 0.15721E+17 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  120  omega= 0.28260E-15  freq= 0.44977E-16  period= 0.22233E+17 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  121  omega= 0.19983E-15  freq= 0.31804E-16  period= 0.31443E+17 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  122  omega= 0.14130E-15  freq= 0.22489E-16  period= 0.44467E+17 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  123  omega= 0.99915E-16  freq= 0.15902E-16  period= 0.62885E+17 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  124  omega= 0.70650E-16  freq= 0.11244E-16  period= 0.88933E+17 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  125  omega= 0.49957E-16  freq= 0.79510E-17  period= 0.12577E+18 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  126  omega= 0.35325E-16  freq= 0.56222E-17  period= 0.17787E+18 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  127  omega= 0.24979E-16  freq= 0.39755E-17  period= 0.25154E+18 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  128  omega= 0.17663E-16  freq= 0.28111E-17  period= 0.35573E+18 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  129  omega= 0.12489E-16  freq= 0.19877E-17  period= 0.50308E+18 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  130  omega= 0.88313E-17  freq= 0.14055E-17  period= 0.71147E+18 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  131  omega= 0.62447E-17  freq= 0.99387E-18  period= 0.10062E+19 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  132  omega= 0.44157E-17  freq= 0.70277E-18  period= 0.14229E+19 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  133  omega= 0.31223E-17  freq= 0.49694E-18  period= 0.20123E+19 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  134  omega= 0.22078E-17  freq= 0.35139E-18  period= 0.28459E+19 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  135  omega= 0.15612E-17  freq= 0.24847E-18  period= 0.40247E+19 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  136  omega= 0.11039E-17  freq= 0.17569E-18  period= 0.56917E+19 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  137  omega= 0.78058E-18  freq= 0.12423E-18  period= 0.80493E+19 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  138  omega= 0.55196E-18  freq= 0.87847E-19  period= 0.11383E+20 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  139  omega= 0.39029E-18  freq= 0.62117E-19  period= 0.16099E+20 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  140  omega= 0.27598E-18  freq= 0.43923E-19  period= 0.22767E+20 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  141  omega= 0.19515E-18  freq= 0.31058E-19  period= 0.32197E+20 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  142  omega= 0.13799E-18  freq= 0.21962E-19  period= 0.45534E+20 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  143  omega= 0.97573E-19  freq= 0.15529E-19  period= 0.64395E+20 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  144  omega= 0.68995E-19  freq= 0.10981E-19  period= 0.91068E+20 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  145  omega= 0.48787E-19  freq= 0.77646E-20  period= 0.12879E+21 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  146  omega= 0.34497E-19  freq= 0.54904E-20  period= 0.18214E+21 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  147  omega= 0.24393E-19  freq= 0.38823E-20  period= 0.25758E+21 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  148  omega= 0.17249E-19  freq= 0.27452E-20  period= 0.36427E+21 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  149  omega= 0.12197E-19  freq= 0.19412E-20  period= 0.51516E+21 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  150  omega= 0.86243E-20  freq= 0.13726E-20  period= 0.72854E+21 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  151  omega= 0.60983E-20  freq= 0.97058E-21  period= 0.10303E+22 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  152  omega= 0.43122E-20  freq= 0.68630E-21  period= 0.14571E+22 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  153  omega= 0.30492E-20  freq= 0.48529E-21  period= 0.20606E+22 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  154  omega= 0.21561E-20  freq= 0.34315E-21  period= 0.29142E+22 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  155  omega= 0.15246E-20  freq= 0.24264E-21  period= 0.41213E+22 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  156  omega= 0.10780E-20  freq= 0.17158E-21  period= 0.58283E+22 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  157  omega= 0.76229E-21  freq= 0.12132E-21  period= 0.82425E+22 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  158  omega= 0.53902E-21  freq= 0.85788E-22  period= 0.11657E+23 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  159  omega= 0.38114E-21  freq= 0.60661E-22  period= 0.16485E+23 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  160  omega= 0.26951E-21  freq= 0.42894E-22  period= 0.23313E+23 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  161  omega= 0.19057E-21  freq= 0.30331E-22  period= 0.32970E+23 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  162  omega= 0.13475E-21  freq= 0.21447E-22  period= 0.46627E+23 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  163  omega= 0.95286E-22  freq= 0.15165E-22  period= 0.65940E+23 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  164  omega= 0.67377E-22  freq= 0.10723E-22  period= 0.93253E+23 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  165  omega= 0.47643E-22  freq= 0.75826E-23  period= 0.13188E+24 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  166  omega= 0.33689E-22  freq= 0.53617E-23  period= 0.18651E+24 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  167  omega= 0.23822E-22  freq= 0.37913E-23  period= 0.26376E+24 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  168  omega= 0.16844E-22  freq= 0.26809E-23  period= 0.37301E+24 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  169  omega= 0.11911E-22  freq= 0.18957E-23  period= 0.52752E+24 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  170  omega= 0.84222E-23  freq= 0.13404E-23  period= 0.74603E+24 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  171  omega= 0.59554E-23  freq= 0.94783E-24  period= 0.10550E+25 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  172  omega= 0.42111E-23  freq= 0.67022E-24  period= 0.14921E+25 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  173  omega= 0.29777E-23  freq= 0.47391E-24  period= 0.21101E+25 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  174  omega= 0.21055E-23  freq= 0.33511E-24  period= 0.29841E+25 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  175  omega= 0.14888E-23  freq= 0.23696E-24  period= 0.42202E+25 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  176  omega= 0.10528E-23  freq= 0.16755E-24  period= 0.59682E+25 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  177  omega= 0.74442E-24  freq= 0.11848E-24  period= 0.84403E+25 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  178  omega= 0.52639E-24  freq= 0.83777E-25  period= 0.11936E+26 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  179  omega= 0.37221E-24  freq= 0.59239E-25  period= 0.16881E+26 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  180  omega= 0.26319E-24  freq= 0.41889E-25  period= 0.23873E+26 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  181  omega= 0.18611E-24  freq= 0.29620E-25  period= 0.33761E+26 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  182  omega= 0.13160E-24  freq= 0.20944E-25  period= 0.47746E+26 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  183  omega= 0.93053E-25  freq= 0.14810E-25  period= 0.67523E+26 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  184  omega= 0.65798E-25  freq= 0.10472E-25  period= 0.95491E+26 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  185  omega= 0.46526E-25  freq= 0.74049E-26  period= 0.13505E+27 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  186  omega= 0.32899E-25  freq= 0.52361E-26  period= 0.19098E+27 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  187  omega= 0.23263E-25  freq= 0.37025E-26  period= 0.27009E+27 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  188  omega= 0.16450E-25  freq= 0.26180E-26  period= 0.38197E+27 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  189  omega= 0.11632E-25  freq= 0.18512E-26  period= 0.54018E+27 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  190  omega= 0.82248E-26  freq= 0.13090E-26  period= 0.76393E+27 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  191  omega= 0.58158E-26  freq= 0.92561E-27  period= 0.10804E+28 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  192  omega= 0.41124E-26  freq= 0.65451E-27  period= 0.15279E+28 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  193  omega= 0.29079E-26  freq= 0.46281E-27  period= 0.21607E+28 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  194  omega= 0.20562E-26  freq= 0.32725E-27  period= 0.30557E+28 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  195  omega= 0.14540E-26  freq= 0.23140E-27  period= 0.43215E+28 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  196  omega= 0.10281E-26  freq= 0.16363E-27  period= 0.61115E+28 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  197  omega= 0.72698E-27  freq= 0.11570E-27  period= 0.86429E+28 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  198  omega= 0.51405E-27  freq= 0.81814E-28  period= 0.12223E+29 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  199  omega= 0.36349E-27  freq= 0.57851E-28  period= 0.17286E+29 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  200  omega= 0.25702E-27  freq= 0.40907E-28  period= 0.24446E+29 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  201  omega= 0.18174E-27  freq= 0.28925E-28  period= 0.34572E+29 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  202  omega= 0.12851E-27  freq= 0.20453E-28  period= 0.48892E+29 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  203  omega= 0.90872E-28  freq= 0.14463E-28  period= 0.69143E+29 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  204  omega= 0.64256E-28  freq= 0.10227E-28  period= 0.97783E+29 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  205  omega= 0.45436E-28  freq= 0.72314E-29  period= 0.13829E+30 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  206  omega= 0.32128E-28  freq= 0.51133E-29  period= 0.19557E+30 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  207  omega= 0.22718E-28  freq= 0.36157E-29  period= 0.27657E+30 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  208  omega= 0.16064E-28  freq= 0.25567E-29  period= 0.39113E+30 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  209  omega= 0.11359E-28  freq= 0.18078E-29  period= 0.55315E+30 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  210  omega= 0.80320E-29  freq= 0.12783E-29  period= 0.78227E+30 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  211  omega= 0.56795E-29  freq= 0.90392E-30  period= 0.11063E+31 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  212  omega= 0.40160E-29  freq= 0.63917E-30  period= 0.15645E+31 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  213  omega= 0.28397E-29  freq= 0.45196E-30  period= 0.22126E+31 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  214  omega= 0.20080E-29  freq= 0.31958E-30  period= 0.31291E+31 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  215  omega= 0.14199E-29  freq= 0.22598E-30  period= 0.44252E+31 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  216  omega= 0.10040E-29  freq= 0.15979E-30  period= 0.62581E+31 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  217  omega= 0.70994E-30  freq= 0.11299E-30  period= 0.88503E+31 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  218  omega= 0.50200E-30  freq= 0.79896E-31  period= 0.12516E+32 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  219  omega= 0.35497E-30  freq= 0.56495E-31  period= 0.17701E+32 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  220  omega= 0.25100E-30  freq= 0.39948E-31  period= 0.25033E+32 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  221  omega= 0.17748E-30  freq= 0.28248E-31  period= 0.35401E+32 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  222  omega= 0.12550E-30  freq= 0.19974E-31  period= 0.50065E+32 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  223  omega= 0.88742E-31  freq= 0.14124E-31  period= 0.70803E+32 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  224  omega= 0.62750E-31  freq= 0.99870E-32  period= 0.10013E+33 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  225  omega= 0.44371E-31  freq= 0.70619E-32  period= 0.14161E+33 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  226  omega= 0.31375E-31  freq= 0.49935E-32  period= 0.20026E+33 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  227  omega= 0.22186E-31  freq= 0.35309E-32  period= 0.28321E+33 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  228  omega= 0.15688E-31  freq= 0.24968E-32  period= 0.40052E+33 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  229  omega= 0.11093E-31  freq= 0.17655E-32  period= 0.56642E+33 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  230  omega= 0.78438E-32  freq= 0.12484E-32  period= 0.80104E+33 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  231  omega= 0.55464E-32  freq= 0.88274E-33  period= 0.11328E+34 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  232  omega= 0.39219E-32  freq= 0.62419E-33  period= 0.16021E+34 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  233  omega= 0.27732E-32  freq= 0.44137E-33  period= 0.22657E+34 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  234  omega= 0.19609E-32  freq= 0.31209E-33  period= 0.32042E+34 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  235  omega= 0.13866E-32  freq= 0.22068E-33  period= 0.45314E+34 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  236  omega= 0.98047E-33  freq= 0.15605E-33  period= 0.64083E+34 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  237  omega= 0.69330E-33  freq= 0.11034E-33  period= 0.90627E+34 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  238  omega= 0.49024E-33  freq= 0.78024E-34  period= 0.12817E+35 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  239  omega= 0.34665E-33  freq= 0.55171E-34  period= 0.18125E+35 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  240  omega= 0.24512E-33  freq= 0.39012E-34  period= 0.25633E+35 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  241  omega= 0.17332E-33  freq= 0.27585E-34  period= 0.36251E+35 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  242  omega= 0.12256E-33  freq= 0.19506E-34  period= 0.51267E+35 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  243  omega= 0.86662E-34  freq= 0.13793E-34  period= 0.72502E+35 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  244  omega= 0.61279E-34  freq= 0.97529E-35  period= 0.10253E+36 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  245  omega= 0.43331E-34  freq= 0.68964E-35  period= 0.14500E+36 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  246  omega= 0.30640E-34  freq= 0.48765E-35  period= 0.20507E+36 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  247  omega= 0.21666E-34  freq= 0.34482E-35  period= 0.29001E+36 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  248  omega= 0.15320E-34  freq= 0.24382E-35  period= 0.41013E+36 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  249  omega= 0.10833E-34  freq= 0.17241E-35  period= 0.58002E+36 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  250  omega= 0.76599E-35  freq= 0.12191E-35  period= 0.82027E+36 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  251  omega= 0.54164E-35  freq= 0.86205E-36  period= 0.11600E+37 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  252  omega= 0.38300E-35  freq= 0.60956E-36  period= 0.16405E+37 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  253  omega= 0.27082E-35  freq= 0.43102E-36  period= 0.23201E+37 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  254  omega= 0.19150E-35  freq= 0.30478E-36  period= 0.32811E+37 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  255  omega= 0.13541E-35  freq= 0.21551E-36  period= 0.46401E+37 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  256  omega= 0.95749E-36  freq= 0.15239E-36  period= 0.65621E+37 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  257  omega= 0.67705E-36  freq= 0.10776E-36  period= 0.92802E+37 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  258  omega= 0.47875E-36  freq= 0.76195E-37  period= 0.13124E+38 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  259  omega= 0.33852E-36  freq= 0.53878E-37  period= 0.18560E+38 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  260  omega= 0.23937E-36  freq= 0.38097E-37  period= 0.26249E+38 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  261  omega= 0.16926E-36  freq= 0.26939E-37  period= 0.37121E+38 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  262  omega= 0.11969E-36  freq= 0.19049E-37  period= 0.52497E+38 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  263  omega= 0.84631E-37  freq= 0.13469E-37  period= 0.74242E+38 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  264  omega= 0.59843E-37  freq= 0.95244E-38  period= 0.10499E+39 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  265  omega= 0.42316E-37  freq= 0.67347E-38  period= 0.14848E+39 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  266  omega= 0.29922E-37  freq= 0.47622E-38  period= 0.20999E+39 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  267  omega= 0.21158E-37  freq= 0.33674E-38  period= 0.29697E+39 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  268  omega= 0.14961E-37  freq= 0.23811E-38  period= 0.41998E+39 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  269  omega= 0.10579E-37  freq= 0.16837E-38  period= 0.59394E+39 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  270  omega= 0.74804E-38  freq= 0.11905E-38  period= 0.83995E+39 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  271  omega= 0.52894E-38  freq= 0.84184E-39  period= 0.11879E+40 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  272  omega= 0.37402E-38  freq= 0.59527E-39  period= 0.16799E+40 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  273  omega= 0.26447E-38  freq= 0.42092E-39  period= 0.23757E+40 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  274  omega= 0.18701E-38  freq= 0.29764E-39  period= 0.33598E+40 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  275  omega= 0.13224E-38  freq= 0.21046E-39  period= 0.47515E+40 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  276  omega= 0.93505E-39  freq= 0.14882E-39  period= 0.67196E+40 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  277  omega= 0.66118E-39  freq= 0.10523E-39  period= 0.95030E+40 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  278  omega= 0.46753E-39  freq= 0.74409E-40  period= 0.13439E+41 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  279  omega= 0.33059E-39  freq= 0.52615E-40  period= 0.19006E+41 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  280  omega= 0.23376E-39  freq= 0.37205E-40  period= 0.26878E+41 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  281  omega= 0.16530E-39  freq= 0.26308E-40  period= 0.38012E+41 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  282  omega= 0.11688E-39  freq= 0.18602E-40  period= 0.53757E+41 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  283  omega= 0.82648E-40  freq= 0.13154E-40  period= 0.76024E+41 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  284  omega= 0.58441E-40  freq= 0.93011E-41  period= 0.10751E+42 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  285  omega= 0.41324E-40  freq= 0.65769E-41  period= 0.15205E+42 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  286  omega= 0.29220E-40  freq= 0.46506E-41  period= 0.21503E+42 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  287  omega= 0.20662E-40  freq= 0.32884E-41  period= 0.30410E+42 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  288  omega= 0.14610E-40  freq= 0.23253E-41  period= 0.43006E+42 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  289  omega= 0.10331E-40  freq= 0.16442E-41  period= 0.60819E+42 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  290  omega= 0.73051E-41  freq= 0.11626E-41  period= 0.86011E+42 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  291  omega= 0.51655E-41  freq= 0.82211E-42  period= 0.12164E+43 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  292  omega= 0.36525E-41  freq= 0.58132E-42  period= 0.17202E+43 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  293  omega= 0.25827E-41  freq= 0.41106E-42  period= 0.24328E+43 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  294  omega= 0.18263E-41  freq= 0.29066E-42  period= 0.34404E+43 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  295  omega= 0.12914E-41  freq= 0.20553E-42  period= 0.48655E+43 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  296  omega= 0.91314E-42  freq= 0.14533E-42  period= 0.68809E+43 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  297  omega= 0.64568E-42  freq= 0.10276E-42  period= 0.97310E+43 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  298  omega= 0.45657E-42  freq= 0.72665E-43  period= 0.13762E+44 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  299  omega= 0.32284E-42  freq= 0.51382E-43  period= 0.19462E+44 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  300  omega= 0.22828E-42  freq= 0.36333E-43  period= 0.27524E+44 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  301  omega= 0.16142E-42  freq= 0.25691E-43  period= 0.38924E+44 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  302  omega= 0.11414E-42  freq= 0.18166E-43  period= 0.55047E+44 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  303  omega= 0.80711E-43  freq= 0.12845E-43  period= 0.77848E+44 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  304  omega= 0.57071E-43  freq= 0.90831E-44  period= 0.11009E+45 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  305  omega= 0.40355E-43  freq= 0.64227E-44  period= 0.15570E+45 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  306  omega= 0.28535E-43  freq= 0.45416E-44  period= 0.22019E+45 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  307  omega= 0.20178E-43  freq= 0.32114E-44  period= 0.31139E+45 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  308  omega= 0.14268E-43  freq= 0.22708E-44  period= 0.44038E+45 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  309  omega= 0.10089E-43  freq= 0.16057E-44  period= 0.62279E+45 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  310  omega= 0.71339E-44  freq= 0.11354E-44  period= 0.88075E+45 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  311  omega= 0.50444E-44  freq= 0.80284E-45  period= 0.12456E+46 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  312  omega= 0.35669E-44  freq= 0.56770E-45  period= 0.17615E+46 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  313  omega= 0.25222E-44  freq= 0.40142E-45  period= 0.24911E+46 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  314  omega= 0.17835E-44  freq= 0.28385E-45  period= 0.35230E+46 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  315  omega= 0.12611E-44  freq= 0.20071E-45  period= 0.49823E+46 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  316  omega= 0.89173E-45  freq= 0.14192E-45  period= 0.70460E+46 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  317  omega= 0.63055E-45  freq= 0.10036E-45  period= 0.99646E+46 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  318  omega= 0.44587E-45  freq= 0.70962E-46  period= 0.14092E+47 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  319  omega= 0.31528E-45  freq= 0.50178E-46  period= 0.19929E+47 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  320  omega= 0.22293E-45  freq= 0.35481E-46  period= 0.28184E+47 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  321  omega= 0.15764E-45  freq= 0.25089E-46  period= 0.39858E+47 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  322  omega= 0.11147E-45  freq= 0.17740E-46  period= 0.56368E+47 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  323  omega= 0.78819E-46  freq= 0.12544E-46  period= 0.79717E+47 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  324  omega= 0.55733E-46  freq= 0.88702E-47  period= 0.11274E+48 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  325  omega= 0.39409E-46  freq= 0.62722E-47  period= 0.15943E+48 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  326  omega= 0.27867E-46  freq= 0.44351E-47  period= 0.22547E+48 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  327  omega= 0.19705E-46  freq= 0.31361E-47  period= 0.31887E+48 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  328  omega= 0.13933E-46  freq= 0.22176E-47  period= 0.45095E+48 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  329  omega= 0.98524E-47  freq= 0.15681E-47  period= 0.63773E+48 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  330  omega= 0.69667E-47  freq= 0.11088E-47  period= 0.90189E+48 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  331  omega= 0.49262E-47  freq= 0.78403E-48  period= 0.12755E+49 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  332  omega= 0.34833E-47  freq= 0.55439E-48  period= 0.18038E+49 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  333  omega= 0.24631E-47  freq= 0.39201E-48  period= 0.25509E+49 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  334  omega= 0.17417E-47  freq= 0.27720E-48  period= 0.36076E+49 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  335  omega= 0.12315E-47  freq= 0.19601E-48  period= 0.51019E+49 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  336  omega= 0.87083E-48  freq= 0.13860E-48  period= 0.72151E+49 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  337  omega= 0.61577E-48  freq= 0.98003E-49  period= 0.10204E+50 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  338  omega= 0.43542E-48  freq= 0.69299E-49  period= 0.14430E+50 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  339  omega= 0.30789E-48  freq= 0.49002E-49  period= 0.20407E+50 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  340  omega= 0.21771E-48  freq= 0.34649E-49  period= 0.28861E+50 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  341  omega= 0.15394E-48  freq= 0.24501E-49  period= 0.40815E+50 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  342  omega= 0.10885E-48  freq= 0.17325E-49  period= 0.57721E+50 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  343  omega= 0.76972E-49  freq= 0.12250E-49  period= 0.81630E+50 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  344  omega= 0.54427E-49  freq= 0.86623E-50  period= 0.11544E+51 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  345  omega= 0.38486E-49  freq= 0.61252E-50  period= 0.16326E+51 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  346  omega= 0.27214E-49  freq= 0.43312E-50  period= 0.23088E+51 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  347  omega= 0.19243E-49  freq= 0.30626E-50  period= 0.32652E+51 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  348  omega= 0.13607E-49  freq= 0.21656E-50  period= 0.46177E+51 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  349  omega= 0.96214E-50  freq= 0.15313E-50  period= 0.65304E+51 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  350  omega= 0.68034E-50  freq= 0.10828E-50  period= 0.92354E+51 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  351  omega= 0.48107E-50  freq= 0.76565E-51  period= 0.13061E+52 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  352  omega= 0.34017E-50  freq= 0.54140E-51  period= 0.18471E+52 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  353  omega= 0.24054E-50  freq= 0.38283E-51  period= 0.26122E+52 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  354  omega= 0.17008E-50  freq= 0.27070E-51  period= 0.36941E+52 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  355  omega= 0.12027E-50  freq= 0.19141E-51  period= 0.52243E+52 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  356  omega= 0.85042E-51  freq= 0.13535E-51  period= 0.73883E+52 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  357  omega= 0.60134E-51  freq= 0.95706E-52  period= 0.10449E+53 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  358  omega= 0.42521E-51  freq= 0.67675E-52  period= 0.14777E+53 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  359  omega= 0.30067E-51  freq= 0.47853E-52  period= 0.20897E+53 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  360  omega= 0.21261E-51  freq= 0.33837E-52  period= 0.29553E+53 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  361  omega= 0.15034E-51  freq= 0.23927E-52  period= 0.41795E+53 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  362  omega= 0.10630E-51  freq= 0.16919E-52  period= 0.59106E+53 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  363  omega= 0.75168E-52  freq= 0.11963E-52  period= 0.83589E+53 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  364  omega= 0.53151E-52  freq= 0.84593E-53  period= 0.11821E+54 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  365  omega= 0.37584E-52  freq= 0.59816E-53  period= 0.16718E+54 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  366  omega= 0.26576E-52  freq= 0.42297E-53  period= 0.23643E+54 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  367  omega= 0.18792E-52  freq= 0.29908E-53  period= 0.33436E+54 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  368  omega= 0.13288E-52  freq= 0.21148E-53  period= 0.47285E+54 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  369  omega= 0.93959E-53  freq= 0.14954E-53  period= 0.66871E+54 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  370  omega= 0.66439E-53  freq= 0.10574E-53  period= 0.94570E+54 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  371  omega= 0.46980E-53  freq= 0.74771E-54  period= 0.13374E+55 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  372  omega= 0.33220E-53  freq= 0.52871E-54  period= 0.18914E+55 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  373  omega= 0.23490E-53  freq= 0.37385E-54  period= 0.26748E+55 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  374  omega= 0.16610E-53  freq= 0.26435E-54  period= 0.37828E+55 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  375  omega= 0.11745E-53  freq= 0.18693E-54  period= 0.53497E+55 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  376  omega= 0.83049E-54  freq= 0.13218E-54  period= 0.75656E+55 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  377  omega= 0.58725E-54  freq= 0.93463E-55  period= 0.10699E+56 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  378  omega= 0.41525E-54  freq= 0.66088E-55  period= 0.15131E+56 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  379  omega= 0.29362E-54  freq= 0.46732E-55  period= 0.21399E+56 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  380  omega= 0.20762E-54  freq= 0.33044E-55  period= 0.30262E+56 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  381  omega= 0.14681E-54  freq= 0.23366E-55  period= 0.42798E+56 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  382  omega= 0.10381E-54  freq= 0.16522E-55  period= 0.60525E+56 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  383  omega= 0.73406E-55  freq= 0.11683E-55  period= 0.85595E+56 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  384  omega= 0.51906E-55  freq= 0.82611E-56  period= 0.12105E+57 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  385  omega= 0.36703E-55  freq= 0.58415E-56  period= 0.17119E+57 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  386  omega= 0.25953E-55  freq= 0.41305E-56  period= 0.24210E+57 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  387  omega= 0.18351E-55  freq= 0.29207E-56  period= 0.34238E+57 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  388  omega= 0.12976E-55  freq= 0.20653E-56  period= 0.48420E+57 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  389  omega= 0.91757E-56  freq= 0.14604E-56  period= 0.68476E+57 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  390  omega= 0.64882E-56  freq= 0.10326E-56  period= 0.96840E+57 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  391  omega= 0.45879E-56  freq= 0.73018E-57  period= 0.13695E+58 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  392  omega= 0.32441E-56  freq= 0.51632E-57  period= 0.19368E+58 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  393  omega= 0.22939E-56  freq= 0.36509E-57  period= 0.27390E+58 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  394  omega= 0.16221E-56  freq= 0.25816E-57  period= 0.38736E+58 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  395  omega= 0.11470E-56  freq= 0.18255E-57  period= 0.54781E+58 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  396  omega= 0.81103E-57  freq= 0.12908E-57  period= 0.77472E+58 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  397  omega= 0.57348E-57  freq= 0.91273E-58  period= 0.10956E+59 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  398  omega= 0.40551E-57  freq= 0.64540E-58  period= 0.15494E+59 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  399  omega= 0.28674E-57  freq= 0.45636E-58  period= 0.21912E+59 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  400  omega= 0.20276E-57  freq= 0.32270E-58  period= 0.30989E+59 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  401  omega= 0.14337E-57  freq= 0.22818E-58  period= 0.43825E+59 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  402  omega= 0.10138E-57  freq= 0.16135E-58  period= 0.61978E+59 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  403  omega= 0.71685E-58  freq= 0.11409E-58  period= 0.87649E+59 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  404  omega= 0.50689E-58  freq= 0.80674E-59  period= 0.12396E+60 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  405  omega= 0.35843E-58  freq= 0.57045E-59  period= 0.17530E+60 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  406  omega= 0.25345E-58  freq= 0.40337E-59  period= 0.24791E+60 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  407  omega= 0.17921E-58  freq= 0.28523E-59  period= 0.35060E+60 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  408  omega= 0.12672E-58  freq= 0.20169E-59  period= 0.49582E+60 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  409  omega= 0.89607E-59  freq= 0.14261E-59  period= 0.70120E+60 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  410  omega= 0.63361E-59  freq= 0.10084E-59  period= 0.99164E+60 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  411  omega= 0.44803E-59  freq= 0.71307E-60  period= 0.14024E+61 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  412  omega= 0.31681E-59  freq= 0.50422E-60  period= 0.19833E+61 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  413  omega= 0.22402E-59  freq= 0.35653E-60  period= 0.28048E+61 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  414  omega= 0.15840E-59  freq= 0.25211E-60  period= 0.39666E+61 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  415  omega= 0.11201E-59  freq= 0.17827E-60  period= 0.56096E+61 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  416  omega= 0.79202E-60  freq= 0.12605E-60  period= 0.79331E+61 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  417  omega= 0.56004E-60  freq= 0.89133E-61  period= 0.11219E+62 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  418  omega= 0.39601E-60  freq= 0.63027E-61  period= 0.15866E+62 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  419  omega= 0.28002E-60  freq= 0.44567E-61  period= 0.22438E+62 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  420  omega= 0.19800E-60  freq= 0.31513E-61  period= 0.31732E+62 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  421  omega= 0.14001E-60  freq= 0.22283E-61  period= 0.44877E+62 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  422  omega= 0.99002E-61  freq= 0.15757E-61  period= 0.63465E+62 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  423  omega= 0.70005E-61  freq= 0.11142E-61  period= 0.89753E+62 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  424  omega= 0.49501E-61  freq= 0.78784E-62  period= 0.12693E+63 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  425  omega= 0.35003E-61  freq= 0.55708E-62  period= 0.17951E+63 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  426  omega= 0.24751E-61  freq= 0.39392E-62  period= 0.25386E+63 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  427  omega= 0.17501E-61  freq= 0.27854E-62  period= 0.35901E+63 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  428  omega= 0.12375E-61  freq= 0.19696E-62  period= 0.50772E+63 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  429  omega= 0.87507E-62  freq= 0.13927E-62  period= 0.71802E+63 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  430  omega= 0.61876E-62  freq= 0.98480E-63  period= 0.10154E+64 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  431  omega= 0.43753E-62  freq= 0.69636E-63  period= 0.14360E+64 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  432  omega= 0.30938E-62  freq= 0.49240E-63  period= 0.20309E+64 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  433  omega= 0.21877E-62  freq= 0.34818E-63  period= 0.28721E+64 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  434  omega= 0.15469E-62  freq= 0.24620E-63  period= 0.40618E+64 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  435  omega= 0.10938E-62  freq= 0.17409E-63  period= 0.57442E+64 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  436  omega= 0.77346E-63  freq= 0.12310E-63  period= 0.81235E+64 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  437  omega= 0.54692E-63  freq= 0.87044E-64  period= 0.11488E+65 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  438  omega= 0.38673E-63  freq= 0.61550E-64  period= 0.16247E+65 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  439  omega= 0.27346E-63  freq= 0.43522E-64  period= 0.22977E+65 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  440  omega= 0.19336E-63  freq= 0.30775E-64  period= 0.32494E+65 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  441  omega= 0.13673E-63  freq= 0.21761E-64  period= 0.45954E+65 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  442  omega= 0.96682E-64  freq= 0.15387E-64  period= 0.64988E+65 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  443  omega= 0.68364E-64  freq= 0.10881E-64  period= 0.91907E+65 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  444  omega= 0.48341E-64  freq= 0.76937E-65  period= 0.12998E+66 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  445  omega= 0.34182E-64  freq= 0.54403E-65  period= 0.18381E+66 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  446  omega= 0.24170E-64  freq= 0.38469E-65  period= 0.25995E+66 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  447  omega= 0.17091E-64  freq= 0.27201E-65  period= 0.36763E+66 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  448  omega= 0.12085E-64  freq= 0.19234E-65  period= 0.51991E+66 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  449  omega= 0.85456E-65  freq= 0.13601E-65  period= 0.73526E+66 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  450  omega= 0.60426E-65  freq= 0.96171E-66  period= 0.10398E+67 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  451  omega= 0.42728E-65  freq= 0.68003E-66  period= 0.14705E+67 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  452  omega= 0.30213E-65  freq= 0.48086E-66  period= 0.20796E+67 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  453  omega= 0.21364E-65  freq= 0.34002E-66  period= 0.29410E+67 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  454  omega= 0.15107E-65  freq= 0.24043E-66  period= 0.41592E+67 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  455  omega= 0.10682E-65  freq= 0.17001E-66  period= 0.58821E+67 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  456  omega= 0.75533E-66  freq= 0.12021E-66  period= 0.83185E+67 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  457  omega= 0.53410E-66  freq= 0.85004E-67  period= 0.11764E+68 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  458  omega= 0.37766E-66  freq= 0.60107E-67  period= 0.16637E+68 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  459  omega= 0.26705E-66  freq= 0.42502E-67  period= 0.23528E+68 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  460  omega= 0.18883E-66  freq= 0.30054E-67  period= 0.33274E+68 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  461  omega= 0.13352E-66  freq= 0.21251E-67  period= 0.47056E+68 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  462  omega= 0.94416E-67  freq= 0.15027E-67  period= 0.66548E+68 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  463  omega= 0.66762E-67  freq= 0.10626E-67  period= 0.94113E+68 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  464  omega= 0.47208E-67  freq= 0.75134E-68  period= 0.13310E+69 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  465  omega= 0.33381E-67  freq= 0.53128E-68  period= 0.18823E+69 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  466  omega= 0.23604E-67  freq= 0.37567E-68  period= 0.26619E+69 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  467  omega= 0.16691E-67  freq= 0.26564E-68  period= 0.37645E+69 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  468  omega= 0.11802E-67  freq= 0.18783E-68  period= 0.53238E+69 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  469  omega= 0.83453E-68  freq= 0.13282E-68  period= 0.75290E+69 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  470  omega= 0.59010E-68  freq= 0.93917E-69  period= 0.10648E+70 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  471  omega= 0.41726E-68  freq= 0.66410E-69  period= 0.15058E+70 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  472  omega= 0.29505E-68  freq= 0.46959E-69  period= 0.21295E+70 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  473  omega= 0.20863E-68  freq= 0.33205E-69  period= 0.30116E+70 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  474  omega= 0.14752E-68  freq= 0.23479E-69  period= 0.42591E+70 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  475  omega= 0.10432E-68  freq= 0.16602E-69  period= 0.60232E+70 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  476  omega= 0.73762E-69  freq= 0.11740E-69  period= 0.85181E+70 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  477  omega= 0.52158E-69  freq= 0.83012E-70  period= 0.12046E+71 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  478  omega= 0.36881E-69  freq= 0.58698E-70  period= 0.17036E+71 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  479  omega= 0.26079E-69  freq= 0.41506E-70  period= 0.24093E+71 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  480  omega= 0.18441E-69  freq= 0.29349E-70  period= 0.34073E+71 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  481  omega= 0.13039E-69  freq= 0.20753E-70  period= 0.48186E+71 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  482  omega= 0.92203E-70  freq= 0.14675E-70  period= 0.68145E+71 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  483  omega= 0.65197E-70  freq= 0.10377E-70  period= 0.96372E+71 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  484  omega= 0.46102E-70  freq= 0.73373E-71  period= 0.13629E+72 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  485  omega= 0.32599E-70  freq= 0.51883E-71  period= 0.19274E+72 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  486  omega= 0.23051E-70  freq= 0.36686E-71  period= 0.27258E+72 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  487  omega= 0.16299E-70  freq= 0.25941E-71  period= 0.38549E+72 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  488  omega= 0.11525E-70  freq= 0.18343E-71  period= 0.54516E+72 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  489  omega= 0.81497E-71  freq= 0.12971E-71  period= 0.77097E+72 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  490  omega= 0.57627E-71  freq= 0.91716E-72  period= 0.10903E+73 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  491  omega= 0.40748E-71  freq= 0.64853E-72  period= 0.15419E+73 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  492  omega= 0.28813E-71  freq= 0.45858E-72  period= 0.21806E+73 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  493  omega= 0.20374E-71  freq= 0.32427E-72  period= 0.30839E+73 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  494  omega= 0.14407E-71  freq= 0.22929E-72  period= 0.43613E+73 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  495  omega= 0.10187E-71  freq= 0.16213E-72  period= 0.61678E+73 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  496  omega= 0.72034E-72  freq= 0.11465E-72  period= 0.87226E+73 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  497  omega= 0.50935E-72  freq= 0.81066E-73  period= 0.12336E+74 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  498  omega= 0.36017E-72  freq= 0.57323E-73  period= 0.17445E+74 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  499  omega= 0.25468E-72  freq= 0.40533E-73  period= 0.24671E+74 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  500  omega= 0.18008E-72  freq= 0.28661E-73  period= 0.34890E+74 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  501  omega= 0.12734E-72  freq= 0.20267E-73  period= 0.49342E+74 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  502  omega= 0.90042E-73  freq= 0.14331E-73  period= 0.69780E+74 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  503  omega= 0.63669E-73  freq= 0.10133E-73  period= 0.98685E+74 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  504  omega= 0.45021E-73  freq= 0.71653E-74  period= 0.13956E+75 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  505  omega= 0.31835E-73  freq= 0.50667E-74  period= 0.19737E+75 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  506  omega= 0.22511E-73  freq= 0.35827E-74  period= 0.27912E+75 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  507  omega= 0.15917E-73  freq= 0.25333E-74  period= 0.39474E+75 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  508  omega= 0.11255E-73  freq= 0.17913E-74  period= 0.55824E+75 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  509  omega= 0.79587E-74  freq= 0.12667E-74  period= 0.78948E+75 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  510  omega= 0.56276E-74  freq= 0.89567E-75  period= 0.11165E+76 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  511  omega= 0.39793E-74  freq= 0.63333E-75  period= 0.15790E+76 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  512  omega= 0.28138E-74  freq= 0.44783E-75  period= 0.22330E+76 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  513  omega= 0.19897E-74  freq= 0.31667E-75  period= 0.31579E+76 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  514  omega= 0.14069E-74  freq= 0.22392E-75  period= 0.44660E+76 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  515  omega= 0.99483E-75  freq= 0.15833E-75  period= 0.63158E+76 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  516  omega= 0.70345E-75  freq= 0.11196E-75  period= 0.89319E+76 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  517  omega= 0.49742E-75  freq= 0.79166E-76  period= 0.12632E+77 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  518  omega= 0.35173E-75  freq= 0.55979E-76  period= 0.17864E+77 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  519  omega= 0.24871E-75  freq= 0.39583E-76  period= 0.25263E+77 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  520  omega= 0.17586E-75  freq= 0.27990E-76  period= 0.35728E+77 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  521  omega= 0.12435E-75  freq= 0.19792E-76  period= 0.50526E+77 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  522  omega= 0.87932E-76  freq= 0.13995E-76  period= 0.71455E+77 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  523  omega= 0.62177E-76  freq= 0.98958E-77  period= 0.10105E+78 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  524  omega= 0.43966E-76  freq= 0.69974E-77  period= 0.14291E+78 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  525  omega= 0.31089E-76  freq= 0.49479E-77  period= 0.20211E+78 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  526  omega= 0.21983E-76  freq= 0.34987E-77  period= 0.28582E+78 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  527  omega= 0.15544E-76  freq= 0.24740E-77  period= 0.40421E+78 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  528  omega= 0.10991E-76  freq= 0.17493E-77  period= 0.57164E+78 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  529  omega= 0.77721E-77  freq= 0.12370E-77  period= 0.80842E+78 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  530  omega= 0.54957E-77  freq= 0.87467E-78  period= 0.11433E+79 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  531  omega= 0.38861E-77  freq= 0.61849E-78  period= 0.16168E+79 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  532  omega= 0.27479E-77  freq= 0.43734E-78  period= 0.22866E+79 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  533  omega= 0.19430E-77  freq= 0.30924E-78  period= 0.32337E+79 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  534  omega= 0.13739E-77  freq= 0.21867E-78  period= 0.45731E+79 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  535  omega= 0.97152E-78  freq= 0.15462E-78  period= 0.64674E+79 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  536  omega= 0.68697E-78  freq= 0.10933E-78  period= 0.91463E+79 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  537  omega= 0.48576E-78  freq= 0.77311E-79  period= 0.12935E+80 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  538  omega= 0.34348E-78  freq= 0.54667E-79  period= 0.18293E+80 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  539  omega= 0.24288E-78  freq= 0.38655E-79  period= 0.25870E+80 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  540  omega= 0.17174E-78  freq= 0.27334E-79  period= 0.36585E+80 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  541  omega= 0.12144E-78  freq= 0.19328E-79  period= 0.51739E+80 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  542  omega= 0.85871E-79  freq= 0.13667E-79  period= 0.73170E+80 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  543  omega= 0.60720E-79  freq= 0.96639E-80  period= 0.10348E+81 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  544  omega= 0.42935E-79  freq= 0.68334E-80  period= 0.14634E+81 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  545  omega= 0.30360E-79  freq= 0.48319E-80  period= 0.20696E+81 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  546  omega= 0.21468E-79  freq= 0.34167E-80  period= 0.29268E+81 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  547  omega= 0.15180E-79  freq= 0.24160E-80  period= 0.41391E+81 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  548  omega= 0.10734E-79  freq= 0.17083E-80  period= 0.58536E+81 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  549  omega= 0.75900E-80  freq= 0.12080E-80  period= 0.82783E+81 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  550  omega= 0.53669E-80  freq= 0.85417E-81  period= 0.11707E+82 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  551  omega= 0.37950E-80  freq= 0.60399E-81  period= 0.16557E+82 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  552  omega= 0.26835E-80  freq= 0.42709E-81  period= 0.23414E+82 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  553  omega= 0.18975E-80  freq= 0.30200E-81  period= 0.33113E+82 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  554  omega= 0.13417E-80  freq= 0.21354E-81  period= 0.46829E+82 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  555  omega= 0.94875E-81  freq= 0.15100E-81  period= 0.66226E+82 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  556  omega= 0.67087E-81  freq= 0.10677E-81  period= 0.93658E+82 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  557  omega= 0.47437E-81  freq= 0.75499E-82  period= 0.13245E+83 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  558  omega= 0.33543E-81  freq= 0.53386E-82  period= 0.18732E+83 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  559  omega= 0.23719E-81  freq= 0.37749E-82  period= 0.26490E+83 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  560  omega= 0.16772E-81  freq= 0.26693E-82  period= 0.37463E+83 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  561  omega= 0.11859E-81  freq= 0.18875E-82  period= 0.52981E+83 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  562  omega= 0.83858E-82  freq= 0.13346E-82  period= 0.74926E+83 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  563  omega= 0.59297E-82  freq= 0.94374E-83  period= 0.10596E+84 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  564  omega= 0.41929E-82  freq= 0.66732E-83  period= 0.14985E+84 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  565  omega= 0.29648E-82  freq= 0.47187E-83  period= 0.21192E+84 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  566  omega= 0.20965E-82  freq= 0.33366E-83  period= 0.29970E+84 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  567  omega= 0.14824E-82  freq= 0.23593E-83  period= 0.42385E+84 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  568  omega= 0.10482E-82  freq= 0.16683E-83  period= 0.59941E+84 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  569  omega= 0.74121E-83  freq= 0.11797E-83  period= 0.84769E+84 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  570  omega= 0.52411E-83  freq= 0.83415E-84  period= 0.11988E+85 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  571  omega= 0.37060E-83  freq= 0.58984E-84  period= 0.16954E+85 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  572  omega= 0.26206E-83  freq= 0.41708E-84  period= 0.23976E+85 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  573  omega= 0.18530E-83  freq= 0.29492E-84  period= 0.33908E+85 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  574  omega= 0.13103E-83  freq= 0.20854E-84  period= 0.47953E+85 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  575  omega= 0.92651E-84  freq= 0.14746E-84  period= 0.67815E+85 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  576  omega= 0.65514E-84  freq= 0.10427E-84  period= 0.95906E+85 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  577  omega= 0.46326E-84  freq= 0.73729E-85  period= 0.13563E+86 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  578  omega= 0.32757E-84  freq= 0.52135E-85  period= 0.19181E+86 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  579  omega= 0.23163E-84  freq= 0.36865E-85  period= 0.27126E+86 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  580  omega= 0.16379E-84  freq= 0.26067E-85  period= 0.38362E+86 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  581  omega= 0.11581E-84  freq= 0.18432E-85  period= 0.54252E+86 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  582  omega= 0.81893E-85  freq= 0.13034E-85  period= 0.76724E+86 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  583  omega= 0.57907E-85  freq= 0.92162E-86  period= 0.10850E+87 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  584  omega= 0.40946E-85  freq= 0.65168E-86  period= 0.15345E+87 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  585  omega= 0.28953E-85  freq= 0.46081E-86  period= 0.21701E+87 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  586  omega= 0.20473E-85  freq= 0.32584E-86  period= 0.30690E+87 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  587  omega= 0.14477E-85  freq= 0.23040E-86  period= 0.43402E+87 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  588  omega= 0.10237E-85  freq= 0.16292E-86  period= 0.61380E+87 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  589  omega= 0.72384E-86  freq= 0.11520E-86  period= 0.86804E+87 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  590  omega= 0.51183E-86  freq= 0.81460E-87  period= 0.12276E+88 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  591  omega= 0.36192E-86  freq= 0.57601E-87  period= 0.17361E+88 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  592  omega= 0.25591E-86  freq= 0.40730E-87  period= 0.24552E+88 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  593  omega= 0.18096E-86  freq= 0.28801E-87  period= 0.34722E+88 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  594  omega= 0.12796E-86  freq= 0.20365E-87  period= 0.49104E+88 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  595  omega= 0.90480E-87  freq= 0.14400E-87  period= 0.69443E+88 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  596  omega= 0.63979E-87  freq= 0.10183E-87  period= 0.98207E+88 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  597  omega= 0.45240E-87  freq= 0.72001E-88  period= 0.13889E+89 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  598  omega= 0.31989E-87  freq= 0.50913E-88  period= 0.19641E+89 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  599  omega= 0.22620E-87  freq= 0.36001E-88  period= 0.27777E+89 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  600  omega= 0.15995E-87  freq= 0.25456E-88  period= 0.39283E+89 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  601  omega= 0.11310E-87  freq= 0.18000E-88  period= 0.55554E+89 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  602  omega= 0.79973E-88  freq= 0.12728E-88  period= 0.78566E+89 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  603  omega= 0.56550E-88  freq= 0.90002E-89  period= 0.11111E+90 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  604  omega= 0.39987E-88  freq= 0.63641E-89  period= 0.15713E+90 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  605  omega= 0.28275E-88  freq= 0.45001E-89  period= 0.22222E+90 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  606  omega= 0.19993E-88  freq= 0.31820E-89  period= 0.31426E+90 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  607  omega= 0.14137E-88  freq= 0.22500E-89  period= 0.44444E+90 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  608  omega= 0.99967E-89  freq= 0.15910E-89  period= 0.62853E+90 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  609  omega= 0.70687E-89  freq= 0.11250E-89  period= 0.88887E+90 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  610  omega= 0.49983E-89  freq= 0.79551E-90  period= 0.12571E+91 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  611  omega= 0.35344E-89  freq= 0.56251E-90  period= 0.17777E+91 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  612  omega= 0.24992E-89  freq= 0.39776E-90  period= 0.25141E+91 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  613  omega= 0.17672E-89  freq= 0.28126E-90  period= 0.35555E+91 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  614  omega= 0.12496E-89  freq= 0.19888E-90  period= 0.50282E+91 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  615  omega= 0.88359E-90  freq= 0.14063E-90  period= 0.71110E+91 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  616  omega= 0.62479E-90  freq= 0.99439E-91  period= 0.10056E+92 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  617  omega= 0.44179E-90  freq= 0.70314E-91  period= 0.14222E+92 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  618  omega= 0.31240E-90  freq= 0.49719E-91  period= 0.20113E+92 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  619  omega= 0.22090E-90  freq= 0.35157E-91  period= 0.28444E+92 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  620  omega= 0.15620E-90  freq= 0.24860E-91  period= 0.40226E+92 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  621  omega= 0.11045E-90  freq= 0.17578E-91  period= 0.56888E+92 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  622  omega= 0.78099E-91  freq= 0.12430E-91  period= 0.80451E+92 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  623  omega= 0.55224E-91  freq= 0.87892E-92  period= 0.11378E+93 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  624  omega= 0.39050E-91  freq= 0.62149E-92  period= 0.16090E+93 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  625  omega= 0.27612E-91  freq= 0.43946E-92  period= 0.22755E+93 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  626  omega= 0.19525E-91  freq= 0.31075E-92  period= 0.32181E+93 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  627  omega= 0.13806E-91  freq= 0.21973E-92  period= 0.45510E+93 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  628  omega= 0.97624E-92  freq= 0.15537E-92  period= 0.64361E+93 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  629  omega= 0.69030E-92  freq= 0.10987E-92  period= 0.91020E+93 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  630  omega= 0.48812E-92  freq= 0.77687E-93  period= 0.12872E+94 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  631  omega= 0.34515E-92  freq= 0.54933E-93  period= 0.18204E+94 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  632  omega= 0.24406E-92  freq= 0.38843E-93  period= 0.25744E+94 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  633  omega= 0.17258E-92  freq= 0.27466E-93  period= 0.36408E+94 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  634  omega= 0.12203E-92  freq= 0.19422E-93  period= 0.51489E+94 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  635  omega= 0.86288E-93  freq= 0.13733E-93  period= 0.72816E+94 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  636  omega= 0.61015E-93  freq= 0.97108E-94  period= 0.10298E+95 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  637  omega= 0.43144E-93  freq= 0.68666E-94  period= 0.14563E+95 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  638  omega= 0.30507E-93  freq= 0.48554E-94  period= 0.20596E+95 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  639  omega= 0.21572E-93  freq= 0.34333E-94  period= 0.29127E+95 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  640  omega= 0.15254E-93  freq= 0.24277E-94  period= 0.41191E+95 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  641  omega= 0.10786E-93  freq= 0.17166E-94  period= 0.58253E+95 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  642  omega= 0.76269E-94  freq= 0.12139E-94  period= 0.82382E+95 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  643  omega= 0.53930E-94  freq= 0.85832E-95  period= 0.11651E+96 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  644  omega= 0.38134E-94  freq= 0.60693E-95  period= 0.16476E+96 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  645  omega= 0.26965E-94  freq= 0.42916E-95  period= 0.23301E+96 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  646  omega= 0.19067E-94  freq= 0.30346E-95  period= 0.32953E+96 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  647  omega= 0.13483E-94  freq= 0.21458E-95  period= 0.46602E+96 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  648  omega= 0.95336E-95  freq= 0.15173E-95  period= 0.65906E+96 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  649  omega= 0.67413E-95  freq= 0.10729E-95  period= 0.93205E+96 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  650  omega= 0.47668E-95  freq= 0.75866E-96  period= 0.13181E+97 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  651  omega= 0.33706E-95  freq= 0.53645E-96  period= 0.18641E+97 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  652  omega= 0.23834E-95  freq= 0.37933E-96  period= 0.26362E+97 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  653  omega= 0.16853E-95  freq= 0.26823E-96  period= 0.37282E+97 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  654  omega= 0.11917E-95  freq= 0.18966E-96  period= 0.52725E+97 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  655  omega= 0.84266E-96  freq= 0.13411E-96  period= 0.74564E+97 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  656  omega= 0.59585E-96  freq= 0.94832E-97  period= 0.10545E+98 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  657  omega= 0.42133E-96  freq= 0.67057E-97  period= 0.14913E+98 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  658  omega= 0.29792E-96  freq= 0.47416E-97  period= 0.21090E+98 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  659  omega= 0.21066E-96  freq= 0.33528E-97  period= 0.29826E+98 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  660  omega= 0.14896E-96  freq= 0.23708E-97  period= 0.42180E+98 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  661  omega= 0.10533E-96  freq= 0.16764E-97  period= 0.59651E+98 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  662  omega= 0.74481E-97  freq= 0.11854E-97  period= 0.84359E+98 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  663  omega= 0.52666E-97  freq= 0.83821E-98  period= 0.11930E+99 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  664  omega= 0.37241E-97  freq= 0.59270E-98  period= 0.16872E+99 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  665  omega= 0.26333E-97  freq= 0.41910E-98  period= 0.23860E+99 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  666  omega= 0.18620E-97  freq= 0.29635E-98  period= 0.33744E+99 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  667  omega= 0.13167E-97  freq= 0.20955E-98  period= 0.47721E+99 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  668  omega= 0.93101E-98  freq= 0.14818E-98  period= 0.67488E+99 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  669  omega= 0.65833E-98  freq= 0.10478E-98  period= 0.95442E+99 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  670  omega= 0.46551E-98  freq= 0.74088E-99  period= 0.13498+100 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  671  omega= 0.32916E-98  freq= 0.52388E-99  period= 0.19088+100 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  672  omega= 0.23275E-98  freq= 0.37044E-99  period= 0.26995+100 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  673  omega= 0.16458E-98  freq= 0.26194E-99  period= 0.38177+100 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  674  omega= 0.11638E-98  freq= 0.18522E-99  period= 0.53990+100 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  675  omega= 0.82291E-99  freq= 0.13097E-99  period= 0.76353+100 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  676  omega= 0.58188E-99  freq= 0.92610-100  period= 0.10798+101 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  677  omega= 0.41145E-99  freq= 0.65485-100  period= 0.15271+101 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  678  omega= 0.29094E-99  freq= 0.46305-100  period= 0.21596+101 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  679  omega= 0.20573E-99  freq= 0.32742-100  period= 0.30541+101 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  680  omega= 0.14547E-99  freq= 0.23152-100  period= 0.43192+101 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  681  omega= 0.10286E-99  freq= 0.16371-100  period= 0.61083+101 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  682  omega= 0.72735-100  freq= 0.11576-100  period= 0.86384+101 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  683  omega= 0.51432-100  freq= 0.81856-101  period= 0.12217+102 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  684  omega= 0.36368-100  freq= 0.57881-101  period= 0.17277+102 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  685  omega= 0.25716-100  freq= 0.40928-101  period= 0.24433+102 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  686  omega= 0.18184-100  freq= 0.28941-101  period= 0.34554+102 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  687  omega= 0.12858-100  freq= 0.20464-101  period= 0.48866+102 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  688  omega= 0.90919-101  freq= 0.14470-101  period= 0.69107+102 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  689  omega= 0.64290-101  freq= 0.10232-101  period= 0.97732+102 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  690  omega= 0.45460-101  freq= 0.72351-102  period= 0.13821+103 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  691  omega= 0.32145-101  freq= 0.51160-102  period= 0.19546+103 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  692  omega= 0.22730-101  freq= 0.36176-102  period= 0.27643+103 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  693  omega= 0.16072-101  freq= 0.25580-102  period= 0.39093+103 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  694  omega= 0.11365-101  freq= 0.18088-102  period= 0.55286+103 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  695  omega= 0.80362-102  freq= 0.12790-102  period= 0.78186+103 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  696  omega= 0.56825-102  freq= 0.90439-103  period= 0.11057+104 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  697  omega= 0.40181-102  freq= 0.63950-103  period= 0.15637+104 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  698  omega= 0.28412-102  freq= 0.45220-103  period= 0.22114+104 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  699  omega= 0.20091-102  freq= 0.31975-103  period= 0.31274+104 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  700  omega= 0.14206-102  freq= 0.22610-103  period= 0.44229+104 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  701  omega= 0.10045-102  freq= 0.15988-103  period= 0.62549+104 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  702  omega= 0.71031-103  freq= 0.11305-103  period= 0.88457+104 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  703  omega= 0.50226-103  freq= 0.79938-104  period= 0.12510+105 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  704  omega= 0.35515-103  freq= 0.56524-104  period= 0.17691+105 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  705  omega= 0.25113-103  freq= 0.39969-104  period= 0.25019+105 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  706  omega= 0.17758-103  freq= 0.28262-104  period= 0.35383+105 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  707  omega= 0.12557-103  freq= 0.19984-104  period= 0.50039+105 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  708  omega= 0.88788-104  freq= 0.14131-104  period= 0.70766+105 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  709  omega= 0.62783-104  freq= 0.99922-105  period= 0.10008+106 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  710  omega= 0.44394-104  freq= 0.70656-105  period= 0.14153+106 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  711  omega= 0.31391-104  freq= 0.49961-105  period= 0.20016+106 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  712  omega= 0.22197-104  freq= 0.35328-105  period= 0.28306+106 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  713  omega= 0.15696-104  freq= 0.24981-105  period= 0.40031+106 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  714  omega= 0.11099-104  freq= 0.17664-105  period= 0.56613+106 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  715  omega= 0.78479-105  freq= 0.12490-105  period= 0.80062+106 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  716  omega= 0.55493-105  freq= 0.88319-106  period= 0.11323+107 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  717  omega= 0.39239-105  freq= 0.62451-106  period= 0.16012+107 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  718  omega= 0.27746-105  freq= 0.44160-106  period= 0.22645+107 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  719  omega= 0.19620-105  freq= 0.31226-106  period= 0.32025+107 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  720  omega= 0.13873-105  freq= 0.22080-106  period= 0.45290+107 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  721  omega= 0.98098-106  freq= 0.15613-106  period= 0.64050+107 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  722  omega= 0.69366-106  freq= 0.11040-106  period= 0.90580+107 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  723  omega= 0.49049-106  freq= 0.78064-107  period= 0.12810+108 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  724  omega= 0.34683-106  freq= 0.55200-107  period= 0.18116+108 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  725  omega= 0.24525-106  freq= 0.39032-107  period= 0.25620+108 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  726  omega= 0.17341-106  freq= 0.27600-107  period= 0.36232+108 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  727  omega= 0.12262-106  freq= 0.19516-107  period= 0.51240+108 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  728  omega= 0.86707-107  freq= 0.13800-107  period= 0.72464+108 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  729  omega= 0.61311-107  freq= 0.97580-108  period= 0.10248+109 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  730  omega= 0.43354-107  freq= 0.69000-108  period= 0.14493+109 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  731  omega= 0.30656-107  freq= 0.48790-108  period= 0.20496+109 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  732  omega= 0.21677-107  freq= 0.34500-108  period= 0.28986+109 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  733  omega= 0.15328-107  freq= 0.24395-108  period= 0.40992+109 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  734  omega= 0.10838-107  freq= 0.17250-108  period= 0.57971+109 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  735  omega= 0.76639-108  freq= 0.12198-108  period= 0.81984+109 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  736  omega= 0.54192-108  freq= 0.86249-109  period= 0.11594+110 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  737  omega= 0.38320-108  freq= 0.60988-109  period= 0.16397+110 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  738  omega= 0.27096-108  freq= 0.43125-109  period= 0.23189+110 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  739  omega= 0.19160-108  freq= 0.30494-109  period= 0.32794+110 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  740  omega= 0.13548-108  freq= 0.21562-109  period= 0.46377+110 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  741  omega= 0.95799-109  freq= 0.15247-109  period= 0.65587+110 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  742  omega= 0.67740-109  freq= 0.10781-109  period= 0.92754+110 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  743  omega= 0.47900-109  freq= 0.76234-110  period= 0.13117+111 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  744  omega= 0.33870-109  freq= 0.53906-110  period= 0.18551+111 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  745  omega= 0.23950-109  freq= 0.38117-110  period= 0.26235+111 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  746  omega= 0.16935-109  freq= 0.26953-110  period= 0.37102+111 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  747  omega= 0.11975-109  freq= 0.19059-110  period= 0.52470+111 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  748  omega= 0.84675-110  freq= 0.13476-110  period= 0.74203+111 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  749  omega= 0.59874-110  freq= 0.95293-111  period= 0.10494+112 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  750  omega= 0.42338-110  freq= 0.67382-111  period= 0.14841+112 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  751  omega= 0.29937-110  freq= 0.47647-111  period= 0.20988+112 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  752  omega= 0.21169-110  freq= 0.33691-111  period= 0.29681+112 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  753  omega= 0.14969-110  freq= 0.23823-111  period= 0.41976+112 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  754  omega= 0.10584-110  freq= 0.16846-111  period= 0.59363+112 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  755  omega= 0.74843-111  freq= 0.11912-111  period= 0.83951+112 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  756  omega= 0.52922-111  freq= 0.84228-112  period= 0.11873+113 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  757  omega= 0.37421-111  freq= 0.59558-112  period= 0.16790+113 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  758  omega= 0.26461-111  freq= 0.42114-112  period= 0.23745+113 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  759  omega= 0.18711-111  freq= 0.29779-112  period= 0.33581+113 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  760  omega= 0.13230-111  freq= 0.21057-112  period= 0.47490+113 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  761  omega= 0.93554-112  freq= 0.14890-112  period= 0.67161+113 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  762  omega= 0.66152-112  freq= 0.10529-112  period= 0.94980+113 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  763  omega= 0.46777-112  freq= 0.74448-113  period= 0.13432+114 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  764  omega= 0.33076-112  freq= 0.52643-113  period= 0.18996+114 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  765  omega= 0.23388-112  freq= 0.37224-113  period= 0.26864+114 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  766  omega= 0.16538-112  freq= 0.26321-113  period= 0.37992+114 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  767  omega= 0.11694-112  freq= 0.18612-113  period= 0.53729+114 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  768  omega= 0.82691-113  freq= 0.13161-113  period= 0.75984+114 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  769  omega= 0.58471-113  freq= 0.93060-114  period= 0.10746+115 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  770  omega= 0.41345-113  freq= 0.65803-114  period= 0.15197+115 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  771  omega= 0.29236-113  freq= 0.46530-114  period= 0.21492+115 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  772  omega= 0.20673-113  freq= 0.32902-114  period= 0.30394+115 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  773  omega= 0.14618-113  freq= 0.23265-114  period= 0.42983+115 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  774  omega= 0.10336-113  freq= 0.16451-114  period= 0.60787+115 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  775  omega= 0.73089-114  freq= 0.11632-114  period= 0.85966+115 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  776  omega= 0.51682-114  freq= 0.82254-115  period= 0.12157+116 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  777  omega= 0.36544-114  freq= 0.58162-115  period= 0.17193+116 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  778  omega= 0.25841-114  freq= 0.41127-115  period= 0.24315+116 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  779  omega= 0.18272-114  freq= 0.29081-115  period= 0.34387+116 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  780  omega= 0.12920-114  freq= 0.20563-115  period= 0.48630+116 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  781  omega= 0.91361-115  freq= 0.14541-115  period= 0.68773+116 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  782  omega= 0.64602-115  freq= 0.10282-115  period= 0.97260+116 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  783  omega= 0.45681-115  freq= 0.72703-116  period= 0.13755+117 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  784  omega= 0.32301-115  freq= 0.51409-116  period= 0.19452+117 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  785  omega= 0.22840-115  freq= 0.36351-116  period= 0.27509+117 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  786  omega= 0.16151-115  freq= 0.25704-116  period= 0.38904+117 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  787  omega= 0.11420-115  freq= 0.18176-116  period= 0.55018+117 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  788  omega= 0.80753-116  freq= 0.12852-116  period= 0.77808+117 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  789  omega= 0.57101-116  freq= 0.90879-117  period= 0.11004+118 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  790  omega= 0.40376-116  freq= 0.64261-117  period= 0.15562+118 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  791  omega= 0.28550-116  freq= 0.45439-117  period= 0.22007+118 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  792  omega= 0.20188-116  freq= 0.32130-117  period= 0.31123+118 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  793  omega= 0.14275-116  freq= 0.22720-117  period= 0.44015+118 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  794  omega= 0.10094-116  freq= 0.16065-117  period= 0.62246+118 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  795  omega= 0.71376-117  freq= 0.11360-117  period= 0.88030+118 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  796  omega= 0.50470-117  freq= 0.80326-118  period= 0.12449+119 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  797  omega= 0.35688-117  freq= 0.56799-118  period= 0.17606+119 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  798  omega= 0.25235-117  freq= 0.40163-118  period= 0.24899+119 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  799  omega= 0.17844-117  freq= 0.28400-118  period= 0.35212+119 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  800  omega= 0.12618-117  freq= 0.20082-118  period= 0.49797+119 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  801  omega= 0.89220-118  freq= 0.14200-118  period= 0.70424+119 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  802  omega= 0.63088-118  freq= 0.10041-118  period= 0.99594+119 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  803  omega= 0.44610-118  freq= 0.70999-119  period= 0.14085+120 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  804  omega= 0.31544-118  freq= 0.50204-119  period= 0.19919+120 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  805  omega= 0.22305-118  freq= 0.35499-119  period= 0.28169+120 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  806  omega= 0.15772-118  freq= 0.25102-119  period= 0.39838+120 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  807  omega= 0.11152-118  freq= 0.17750-119  period= 0.56339+120 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  808  omega= 0.78860-119  freq= 0.12551-119  period= 0.79675+120 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  809  omega= 0.55762-119  freq= 0.88749-120  period= 0.11268+121 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  810  omega= 0.39430-119  freq= 0.62755-120  period= 0.15935+121 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  811  omega= 0.27881-119  freq= 0.44374-120  period= 0.22536+121 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  812  omega= 0.19715-119  freq= 0.31377-120  period= 0.31870+121 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  813  omega= 0.13941-119  freq= 0.22187-120  period= 0.45071+121 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  814  omega= 0.98575-120  freq= 0.15689-120  period= 0.63740+121 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  815  omega= 0.69703-120  freq= 0.11094-120  period= 0.90142+121 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  816  omega= 0.49287-120  freq= 0.78443-121  period= 0.12748+122 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  817  omega= 0.34851-120  freq= 0.55468-121  period= 0.18028+122 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  818  omega= 0.24644-120  freq= 0.39222-121  period= 0.25496+122 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  819  omega= 0.17426-120  freq= 0.27734-121  period= 0.36057+122 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  820  omega= 0.12322-120  freq= 0.19611-121  period= 0.50992+122 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  821  omega= 0.87129-121  freq= 0.13867-121  period= 0.72114+122 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  822  omega= 0.61609-121  freq= 0.98054-122  period= 0.10198+123 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  823  omega= 0.43564-121  freq= 0.69335-122  period= 0.14423+123 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  824  omega= 0.30805-121  freq= 0.49027-122  period= 0.20397+123 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  825  omega= 0.21782-121  freq= 0.34667-122  period= 0.28846+123 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  826  omega= 0.15402-121  freq= 0.24514-122  period= 0.40794+123 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  827  omega= 0.10891-121  freq= 0.17334-122  period= 0.57691+123 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  828  omega= 0.77012-122  freq= 0.12257-122  period= 0.81587+123 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  829  omega= 0.54455-122  freq= 0.86669-123  period= 0.11538+124 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  830  omega= 0.38506-122  freq= 0.61284-123  period= 0.16317+124 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  831  omega= 0.27228-122  freq= 0.43334-123  period= 0.23076+124 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  832  omega= 0.19253-122  freq= 0.30642-123  period= 0.32635+124 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  833  omega= 0.13614-122  freq= 0.21667-123  period= 0.46153+124 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  834  omega= 0.96265-123  freq= 0.15321-123  period= 0.65270+124 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  835  omega= 0.68069-123  freq= 0.10834-123  period= 0.92306+124 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  836  omega= 0.48132-123  freq= 0.76605-124  period= 0.13054+125 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  837  omega= 0.34035-123  freq= 0.54168-124  period= 0.18461+125 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  838  omega= 0.24066-123  freq= 0.38302-124  period= 0.26108+125 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  839  omega= 0.17017-123  freq= 0.27084-124  period= 0.36922+125 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  840  omega= 0.12033-123  freq= 0.19151-124  period= 0.52216+125 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  841  omega= 0.85087-124  freq= 0.13542-124  period= 0.73845+125 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  842  omega= 0.60165-124  freq= 0.95756-125  period= 0.10443+126 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  843  omega= 0.42543-124  freq= 0.67710-125  period= 0.14769+126 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  844  omega= 0.30083-124  freq= 0.47878-125  period= 0.20886+126 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  845  omega= 0.21272-124  freq= 0.33855-125  period= 0.29538+126 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  846  omega= 0.15041-124  freq= 0.23939-125  period= 0.41773+126 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  847  omega= 0.10636-124  freq= 0.16927-125  period= 0.59076+126 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  848  omega= 0.75207-125  freq= 0.11970-125  period= 0.83546+126 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  849  omega= 0.53179-125  freq= 0.84637-126  period= 0.11815+127 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  850  omega= 0.37603-125  freq= 0.59848-126  period= 0.16709+127 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  851  omega= 0.26590-125  freq= 0.42319-126  period= 0.23630+127 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  852  omega= 0.18802-125  freq= 0.29924-126  period= 0.33418+127 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  853  omega= 0.13295-125  freq= 0.21159-126  period= 0.47260+127 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  854  omega= 0.94008-126  freq= 0.14962-126  period= 0.66836+127 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  855  omega= 0.66474-126  freq= 0.10580-126  period= 0.94521+127 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  856  omega= 0.47004-126  freq= 0.74810-127  period= 0.13367+128 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  857  omega= 0.33237-126  freq= 0.52898-127  period= 0.18904+128 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  858  omega= 0.23502-126  freq= 0.37405-127  period= 0.26735+128 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  859  omega= 0.16618-126  freq= 0.26449-127  period= 0.37808+128 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  860  omega= 0.11751-126  freq= 0.18702-127  period= 0.53469+128 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  861  omega= 0.83092-127  freq= 0.13225-127  period= 0.75617+128 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  862  omega= 0.58755-127  freq= 0.93512-128  period= 0.10694+129 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  863  omega= 0.41546-127  freq= 0.66123-128  period= 0.15123+129 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  864  omega= 0.29378-127  freq= 0.46756-128  period= 0.21388+129 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  865  omega= 0.20773-127  freq= 0.33061-128  period= 0.30247+129 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  866  omega= 0.14689-127  freq= 0.23378-128  period= 0.42775+129 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  867  omega= 0.10387-127  freq= 0.16531-128  period= 0.60493+129 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  868  omega= 0.73444-128  freq= 0.11689-128  period= 0.85551+129 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  869  omega= 0.51933-128  freq= 0.82654-129  period= 0.12099+130 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  870  omega= 0.36722-128  freq= 0.58445-129  period= 0.17110+130 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  871  omega= 0.25966-128  freq= 0.41327-129  period= 0.24197+130 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  872  omega= 0.18361-128  freq= 0.29222-129  period= 0.34220+130 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  873  omega= 0.12983-128  freq= 0.20663-129  period= 0.48395+130 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  874  omega= 0.91805-129  freq= 0.14611-129  period= 0.68440+130 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  875  omega= 0.64916-129  freq= 0.10332-129  period= 0.96789+130 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  876  omega= 0.45903-129  freq= 0.73056-130  period= 0.13688+131 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  877  omega= 0.32458-129  freq= 0.51659-130  period= 0.19358+131 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  878  omega= 0.22951-129  freq= 0.36528-130  period= 0.27376+131 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  879  omega= 0.16229-129  freq= 0.25829-130  period= 0.38716+131 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  880  omega= 0.11476-129  freq= 0.18264-130  period= 0.54752+131 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  881  omega= 0.81145-130  freq= 0.12915-130  period= 0.77432+131 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  882  omega= 0.57378-130  freq= 0.91320-131  period= 0.10950+132 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  883  omega= 0.40572-130  freq= 0.64573-131  period= 0.15486+132 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  884  omega= 0.28689-130  freq= 0.45660-131  period= 0.21901+132 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  885  omega= 0.20286-130  freq= 0.32287-131  period= 0.30973+132 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  886  omega= 0.14345-130  freq= 0.22830-131  period= 0.43802+132 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  887  omega= 0.10143-130  freq= 0.16143-131  period= 0.61945+132 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  888  omega= 0.71723-131  freq= 0.11415-131  period= 0.87604+132 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  889  omega= 0.50716-131  freq= 0.80716-132  period= 0.12389+133 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  890  omega= 0.35861-131  freq= 0.57075-132  period= 0.17521+133 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  891  omega= 0.25358-131  freq= 0.40358-132  period= 0.24778+133 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  892  omega= 0.17931-131  freq= 0.28538-132  period= 0.35042+133 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  893  omega= 0.12679-131  freq= 0.20179-132  period= 0.49556+133 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  894  omega= 0.89653-132  freq= 0.14269-132  period= 0.70083+133 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  895  omega= 0.63394-132  freq= 0.10090-132  period= 0.99112+133 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  896  omega= 0.44827-132  freq= 0.71344-133  period= 0.14017+134 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  897  omega= 0.31697-132  freq= 0.50448-133  period= 0.19822+134 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  898  omega= 0.22413-132  freq= 0.35672-133  period= 0.28033+134 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  899  omega= 0.15849-132  freq= 0.25224-133  period= 0.39645+134 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  900  omega= 0.11207-132  freq= 0.17836-133  period= 0.56066+134 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  901  omega= 0.79243-133  freq= 0.12612-133  period= 0.79290+134 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  902  omega= 0.56033-133  freq= 0.89180-134  period= 0.11213+135 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  903  omega= 0.39622-133  freq= 0.63060-134  period= 0.15858+135 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  904  omega= 0.28017-133  freq= 0.44590-134  period= 0.22427+135 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  905  omega= 0.19811-133  freq= 0.31530-134  period= 0.31716+135 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  906  omega= 0.14008-133  freq= 0.22295-134  period= 0.44853+135 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  907  omega= 0.99054-134  freq= 0.15765-134  period= 0.63432+135 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  908  omega= 0.70042-134  freq= 0.11147-134  period= 0.89706+135 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  909  omega= 0.49527-134  freq= 0.78825-135  period= 0.12686+136 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  910  omega= 0.35021-134  freq= 0.55737-135  period= 0.17941+136 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  911  omega= 0.24763-134  freq= 0.39412-135  period= 0.25373+136 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  912  omega= 0.17510-134  freq= 0.27869-135  period= 0.35883+136 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  913  omega= 0.12382-134  freq= 0.19706-135  period= 0.50746+136 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  914  omega= 0.87552-135  freq= 0.13934-135  period= 0.71765+136 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  915  omega= 0.61909-135  freq= 0.98531-136  period= 0.10149+137 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  916  omega= 0.43776-135  freq= 0.69672-136  period= 0.14353+137 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  917  omega= 0.30954-135  freq= 0.49265-136  period= 0.20298+137 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  918  omega= 0.21888-135  freq= 0.34836-136  period= 0.28706+137 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  919  omega= 0.15477-135  freq= 0.24633-136  period= 0.40596+137 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  920  omega= 0.10944-135  freq= 0.17418-136  period= 0.57412+137 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  921  omega= 0.77386-136  freq= 0.12316-136  period= 0.81193+137 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  922  omega= 0.54720-136  freq= 0.87090-137  period= 0.11482+138 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  923  omega= 0.38693-136  freq= 0.61582-137  period= 0.16239+138 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  924  omega= 0.27360-136  freq= 0.43545-137  period= 0.22965+138 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  925  omega= 0.19346-136  freq= 0.30791-137  period= 0.32477+138 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  926  omega= 0.13680-136  freq= 0.21772-137  period= 0.45930+138 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  927  omega= 0.96732-137  freq= 0.15395-137  period= 0.64954+138 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  928  omega= 0.68400-137  freq= 0.10886-137  period= 0.91859+138 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  929  omega= 0.48366-137  freq= 0.76977-138  period= 0.12991+139 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  930  omega= 0.34200-137  freq= 0.54431-138  period= 0.18372+139 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  931  omega= 0.24183-137  freq= 0.38489-138  period= 0.25982+139 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  932  omega= 0.17100-137  freq= 0.27216-138  period= 0.36744+139 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  933  omega= 0.12092-137  freq= 0.19244-138  period= 0.51963+139 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  934  omega= 0.85500-138  freq= 0.13608-138  period= 0.73487+139 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  935  omega= 0.60458-138  freq= 0.96221-139  period= 0.10393+140 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  936  omega= 0.42750-138  freq= 0.68039-139  period= 0.14697+140 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  937  omega= 0.30229-138  freq= 0.48111-139  period= 0.20785+140 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  938  omega= 0.21375-138  freq= 0.34019-139  period= 0.29395+140 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  939  omega= 0.15114-138  freq= 0.24055-139  period= 0.41571+140 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  940  omega= 0.10688-138  freq= 0.17010-139  period= 0.58790+140 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  941  omega= 0.75572-139  freq= 0.12028-139  period= 0.83142+140 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  942  omega= 0.53438-139  freq= 0.85049-140  period= 0.11758+141 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  943  omega= 0.37786-139  freq= 0.60138-140  period= 0.16628+141 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  944  omega= 0.26719-139  freq= 0.42524-140  period= 0.23516+141 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  945  omega= 0.18893-139  freq= 0.30069-140  period= 0.33257+141 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  946  omega= 0.13359-139  freq= 0.21262-140  period= 0.47032+141 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  947  omega= 0.94465-140  freq= 0.15035-140  period= 0.66513+141 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  948  omega= 0.66797-140  freq= 0.10631-140  period= 0.94064+141 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  949  omega= 0.47233-140  freq= 0.75173-141  period= 0.13303+142 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  950  omega= 0.33398-140  freq= 0.53155-141  period= 0.18813+142 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  951  omega= 0.23616-140  freq= 0.37587-141  period= 0.26605+142 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  952  omega= 0.16699-140  freq= 0.26578-141  period= 0.37626+142 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  953  omega= 0.11808-140  freq= 0.18793-141  period= 0.53211+142 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  954  omega= 0.83496-141  freq= 0.13289-141  period= 0.75251+142 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  955  omega= 0.59041-141  freq= 0.93966-142  period= 0.10642+143 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  956  omega= 0.41748-141  freq= 0.66444-142  period= 0.15050+143 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  957  omega= 0.29520-141  freq= 0.46983-142  period= 0.21284+143 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  958  omega= 0.20874-141  freq= 0.33222-142  period= 0.30100+143 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  959  omega= 0.14760-141  freq= 0.23492-142  period= 0.42568+143 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  960  omega= 0.10437-141  freq= 0.16611-142  period= 0.60201+143 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  961  omega= 0.73801-142  freq= 0.11746-142  period= 0.85137+143 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  962  omega= 0.52185-142  freq= 0.83055-143  period= 0.12040+144 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  963  omega= 0.36900-142  freq= 0.58729-143  period= 0.17027+144 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  964  omega= 0.26093-142  freq= 0.41528-143  period= 0.24080+144 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  965  omega= 0.18450-142  freq= 0.29364-143  period= 0.34055+144 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  966  omega= 0.13046-142  freq= 0.20764-143  period= 0.48161+144 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  967  omega= 0.92251-143  freq= 0.14682-143  period= 0.68110+144 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  968  omega= 0.65231-143  freq= 0.10382-143  period= 0.96321+144 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  969  omega= 0.46126-143  freq= 0.73411-144  period= 0.13622+145 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  970  omega= 0.32616-143  freq= 0.51910-144  period= 0.19264+145 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  971  omega= 0.23063-143  freq= 0.36706-144  period= 0.27244+145 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  972  omega= 0.16308-143  freq= 0.25955-144  period= 0.38529+145 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  973  omega= 0.11531-143  freq= 0.18353-144  period= 0.54488+145 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  974  omega= 0.81539-144  freq= 0.12977-144  period= 0.77057+145 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  975  omega= 0.57657-144  freq= 0.91764-145  period= 0.10898+146 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  976  omega= 0.40770-144  freq= 0.64887-145  period= 0.15411+146 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  977  omega= 0.28828-144  freq= 0.45882-145  period= 0.21795+146 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  978  omega= 0.20385-144  freq= 0.32443-145  period= 0.30823+146 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  979  omega= 0.14414-144  freq= 0.22941-145  period= 0.43590+146 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  980  omega= 0.10192-144  freq= 0.16222-145  period= 0.61646+146 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  981  omega= 0.72071-145  freq= 0.11470-145  period= 0.87180+146 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  982  omega= 0.50962-145  freq= 0.81109-146  period= 0.12329+147 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  983  omega= 0.36036-145  freq= 0.57352-146  period= 0.17436+147 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  984  omega= 0.25481-145  freq= 0.40554-146  period= 0.24658+147 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  985  omega= 0.18018-145  freq= 0.28676-146  period= 0.34872+147 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  986  omega= 0.12741-145  freq= 0.20277-146  period= 0.49317+147 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  987  omega= 0.90089-146  freq= 0.14338-146  period= 0.69744+147 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  988  omega= 0.63703-146  freq= 0.10139-146  period= 0.98633+147 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  989  omega= 0.45044-146  freq= 0.71691-147  period= 0.13949+148 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  990  omega= 0.31851-146  freq= 0.50693-147  period= 0.19727+148 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  991  omega= 0.22522-146  freq= 0.35845-147  period= 0.27898+148 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  992  omega= 0.15926-146  freq= 0.25346-147  period= 0.39453+148 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  993  omega= 0.11261-146  freq= 0.17923-147  period= 0.55795+148 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  994  omega= 0.79628-147  freq= 0.12673-147  period= 0.78907+148 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  995  omega= 0.56306-147  freq= 0.89613-148  period= 0.11159+149 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  996  omega= 0.39814-147  freq= 0.63366-148  period= 0.15781+149 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  997  omega= 0.28153-147  freq= 0.44807-148  period= 0.22318+149 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  998  omega= 0.19907-147  freq= 0.31683-148  period= 0.31563+149 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order=  999  omega= 0.14076-147  freq= 0.22403-148  period= 0.44636+149 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+  order= 1000  omega= 0.99535-148  freq= 0.15842-148  period= 0.63125+149 coefx=-0.52887E+01 coefy=-0.31725E+01 coefz= 0.00000E+00 mstar= 0.22617E+07 kstar= 0.12480E+10
+ irecover=           0
+ time: 14:31:23

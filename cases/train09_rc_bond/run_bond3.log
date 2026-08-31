@@ -1,0 +1,56 @@
+ ================================================
+   Easy_HSTAR - Finite Element Analysis
+ ================================================
+ 
+ Reading: 1.toml
+  Read 3672 nodes
+  Read 3100 elements
+ =============================================
+  HSTAR Problem Summary
+ =============================================
+  Version     :            1
+  Problem name: 1
+  Type        : Q
+  Dimensions  :            3
+  Nodes       :         3672
+  Elements    :         3100
+  Materials   :            2
+  Groups      :            4
+  Max DOF/node:            3
+  Blocks      :            1
+  Links       :            0
+  Solver      : PARDISO
+  Load type   : LOAD
+  Output      : GIDR
+ 
+  Analysis blocks:
+   Block   1 type=static nincs=     1
+ 
+  Materials:
+   Mat   1 name=C25 concrete type=MECHANICAL
+   Mat   2 name=Steel rebar type=MECHANICAL
+ =============================================
+ validate_problem: all checks passed
+ 
+ Input OK. Starting analysis...
+  ndimn=3, npoin=3672, ntotv=11016
+ 
+  === Block 1 / 1
+  iffix: free=10620, BC=396, inactive=0
+  Neq = 10620
+  NNZ = 658188
+  Inc 1 Step 1
+    iter   1  R_force= 1.000E+00  resid= 6.896E+01
+    iter   2  R_force= 3.114E-12  R_disp= 1.000E+00  R_energy= 1.162E-13
+  Converged in 2 iterations
+  Max |Ux| =   1.5908E-06
+  Max |Uy| =   1.2949E-07
+  Max |Uz| =   1.1399E-05
+  Max |sxx| =   1.7967E+05
+  Max |syy| =   3.1058E+04
+  Results written to ./1_easy.flavia.res
+  VTK(ascii): ./1_easy_b1.vtk
+  VTK(binary): ./1_easy_b1_bin.vtk
+  VTU: ./1_easy_b1.vtu
+ 
+ Analysis completed successfully.

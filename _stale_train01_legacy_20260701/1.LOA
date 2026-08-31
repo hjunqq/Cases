@@ -1,0 +1,68 @@
+ (*.loa) Load data
+  1
+  2  LINEAR  0  2
+  0  1
+  1  1
+ Define point load
+  0  0
+ Define edges for whole analysis
+  33
+ sedge nnode index vdimn
+  33  2  1  0
+  1  2704  2705  451
+  2  2702  2704  452
+  3  2700  2702  453
+  4  2698  2700  454
+  5  2696  2698  455
+  6  2692  2696  456
+  7  2689  2692  457
+  8  2685  2689  458
+  9  2680  2685  459
+  10  2675  2680  460
+  11  2670  2675  461
+  12  2667  2670  462
+  13  2661  2667  463
+  14  2654  2661  464
+  15  2652  2654  465
+  16  2646  2652  466
+  17  2640  2646  467
+  18  2635  2640  468
+  19  2628  2635  469
+  20  2624  2628  470
+  21  2619  2624  471
+  22  2614  2619  472
+  23  2609  2614  473
+  24  2603  2609  474
+  25  2601  2603  475
+  26  2598  2601  476
+  27  2593  2598  477
+  28  2589  2593  478
+  29  2587  2589  479
+  30  2585  2587  480
+  31  2583  2585  481
+  32  2581  2583  482
+  33  2580  2581  483
+ Define edge load in each BLKS
+ edge_load_group,delgroup
+  0  0
+ Define body force in each BLKS
+  9.81000E+00  0.00000E+00  -1.00000E+00  0.00000E+00  -1.00000E+00
+ Time_curve_for_each_group  1
+  1  1
+ nbeamload
+  0
+ nplateload
+  0
+ Define edge load in each BLKS
+ edge_load_group,delgroup
+  33  1
+  1  33  1  2  0
+  50.0  0  0  50.0  9810
+ Define body force in each BLKS
+  9.81000E+00  0.00000E+00  -1.00000E+00  0.00000E+00  -1.00000E+00
+ Time_curve_for_each_group  1
+  1  1
+ nbeamload
+  0
+ nplateload
+  0

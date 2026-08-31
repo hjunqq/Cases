@@ -1,0 +1,26 @@
+'TIME CURVE in each BLKS'   !! BLOCK 1  只有地基计算
+3                ! ntcurve  (migrated: curves 2/3 carry the ifixvar=8 head values)
+2,'LINEAR',0,2 (nline)  !    ntime for curve 2
+0. 1.    !
+1. 1.       !
+2,'LINEAR',0,2   ! curve2 = upstream head H=100 m (block format: times / factors)
+0. 1.
+100. 100.
+2,'LINEAR',0,2   ! curve3 = downstream head H=0 m
+0. 1.
+0. 0.
+'Define  point load in each BLKS'
+0  0
+'Define edges for whole analysis'
+0  0               !nelgroup,delgroup----number of edges for load in this BLKS'Define edge load in each BLKS'	
+ 'Define edge load in each BLKS'
+ 'NELGROUP/[iedge,itcurve/press(1:ndimn,inode=1:nnode)]'
+0 0                !nelgroup,delgroup----number of edges for load in this BLKS
+'Define body force in each BLKS'
+9.81,0., -1.,  0 -1.      !gravity acceleration(m/s2), factg(1:ndimn)
+'Time curve for each group', 1 (nline)	    !tcurvegravity(1:ngroup)
+  0  0  1  0  0
+nbeamload
+0
+nplateload
+0

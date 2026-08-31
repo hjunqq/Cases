@@ -1,0 +1,71 @@
+NINCS
+1  0 0 0  !miter,ditime,noutn,noutf,nstep,inc_step,nresta
+10 0.5 1 1 1 1 1 1 0 !miter,dtime,noutn,noutf,nstep,nresta cwater	 
+11*1.e-5  !toler_force,toler_var(1:mdofn)
+
+
+NINCS
+1  0 0 0  !miter,ditime,noutn,noutf,nstep,inc_step,nresta
+20 0.005 1 1 200 1 1 1 0 !miter,dtime,noutn,noutf,nstep,nresta cwater	 
+11*1.e-5  !toler_force,toler_var(1:mdofn)
+
+
+
+
+
+100 0.02 1 1 2 1 1 1 !miter,dtime,noutn,noutf,nstep,nresta	 
+
+miter,nstoch,ditime 
+ 2       5    0.02
+9*1.e-5  !toler_force,toler_var(1:mdofn)
+FRICT
+1  !ncmat
+4  !listmc
+1
+COHES
+1  !ncmat
+4  !listmc
+2
+GFRICT
+1  !ncmat
+12 13  !listmc
+1 1 
+GCOHES
+1  !ncmat
+12 13  !listmc
+2 2 
+GFT0
+1  !ncmat
+12 13 !listmc
+3 3
+edge_load_group,delgroup								
+0  0
+
+
+
+
+
+miter,nstoch,ditime 
+5      2    0.02
+9*1.e-5  !toler_force,toler_var(1:mdofn)
+FRICT
+1  !ncmat
+3  !listmc
+1
+COHES
+1  !ncmat
+3  !listmc
+2
+edge_load_group,delgroup								
+0  0
+
+NINCS
+1  0 0
+100 0.0 1 1 1 1 1 !miter,dtime,noutn,noutf,nstep,inc_step,nresta	  !! for TC,VM, .0025 for MC,DP
+9*1.e-5  !toler_force,toler_var(1:mdofn)
+
+
+
+
+
+ 

@@ -1,0 +1,21 @@
+  material property curves
+  0
+
+  10           ! lines for comments           
+ 'MATERIAL PROPERTIES-INPUT FOR 1 TO NMATS'
+ 'NAME FOR MATERIAL---FOR COMMENTS'
+ 'FIRST:NAME---MECHANICAL, TEMPERATURE, ETC'
+ 'FOR MECHNICAL, SECOND:PHASE---SOLID, FLUID, AIR OR OIL '
+ '               NUMBER OF PHASE'
+ 'FOR SOLID: MATERIAL(CLASSICALEP,CAMCLAY,ETC),density,ratio,thick,e,nu'
+ 'FOR MATERISL: CLASSICALEP:CRITERIA(TC,VM,DP,MC),sigm0,hening'
+ '                FOR MC OR DP: FRICT_ANGLE, DILAN_ANGLE'ard
+ '              CAMCLAY    :Pc, lamda, Mg, Mf, D0, D1,gaama'
+ 'FOR FLUID: (1) density,ratio,bulkw (2)permiability(1:ndimn)'
+
+ nmats
+ 1
+ material 1 
+ 'HEAT','SOLID', 1
+     3*.0708, 3, 4,0
+ 0   !ialfa  Material.f90:976 (used only under Bparameter/=0)

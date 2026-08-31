@@ -1,0 +1,20 @@
+ irecover=           0
+ ikind=          15 nr_intrules=           4
+ igroup=           1 tvol=   3.00000000000000     
+ igroup=           1 tne=           3
+ ****** ntotv= ******           8
+ time: 19:49:57
+ in modf_element_lib
+ jgroup=           1 kinit_g=           0
+ iblks=           1 runblks=           1
+ iblks=           1
+ time: 19:49:57
+ ninit=           0 iblks=           1 restart=           0
+ ikindks=           0
+ time(solve): 19:49:57
+ No. of equations        =           6
+ Max half band width     =           4
+ length half stiff matrix=          17
+ time(solve_set): 19:49:57
+ time(solve_pcg): 19:49:57
+ Increment step=           1

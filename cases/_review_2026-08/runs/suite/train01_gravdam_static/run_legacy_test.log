@@ -1,0 +1,48 @@
+ >>> TOML input mode: 1.toml
+ validate_problem: all checks passed
+ >>> TOML input loaded successfully
+ time: 11:16:20
+ time: 11:16:20
+ outinpunit=          37 outindunit=          54
+ beeta1,beeta2,theta1=  0.500000000000000       0.250000000000000     
+   1.00000000000000     
+ igroup=           1
+ name=Q4        
+ igroup=           2
+ name=Q4        
+ tne=        2562
+ ground_inf=           0 /100=           0
+ >>> TOML: init_from_problem complete, no .glb generated
+ nblks=           2
+ time: 11:16:20
+ MATERIAL PROPERTIES-INPUT FOR 1 TO NMATS                                       
+  
+ NAME FOR MATERIAL---FOR COMMENTS                                               
+  
+ FIRST:NAME---MECHANICAL, TEMPERATURE, ETC                                      
+  
+ FOR MECHNICAL, SECOND:PHASE---SOLID, FLUID, AIR OR OIL                         
+  
+                NUMBER OF PHASE                                                 
+  
+ FOR SOLID: MATERIAL(CLASSICALEP,CAMCLAY,ETC),density,ratio,thick,e,nu          
+  
+ FOR MATERISL: CLASSICALEP:CRITERIA(TC,VM,DP,MC),sigm0,hening                   
+  
+                 FOR MC OR DP: FRICT_ANGLE, DILAN_ANGLE                         
+  
+               CAMCLAY    :Pc, lamda, Mg, Mf, D0, D1,gaama                      
+  
+ FOR FLUID: (1) density,ratio,bulkw (2)permiability(1:ndimn)                    
+  
+forrtl: severe (64): input conversion error, unit 5, file D:\Projects\HSTAR_Next\HSTAR_TestData\cases\train01_gravdam_static\1.mat
+Image              PC                Routine            Line        Source             
+hstar_legacy.exe   00007FF7195572DA  Unknown               Unknown  Unknown
+hstar_legacy.exe   00007FF71955641E  Unknown               Unknown  Unknown
+hstar_legacy.exe   00007FF7181ACED3  Unknown               Unknown  Unknown
+hstar_legacy.exe   00007FF71875A601  Unknown               Unknown  Unknown
+hstar_legacy.exe   00007FF718761E88  Unknown               Unknown  Unknown
+hstar_legacy.exe   00007FF7195622BB  Unknown               Unknown  Unknown
+hstar_legacy.exe   00007FF71D845C90  Unknown               Unknown  Unknown
+KERNEL32.DLL       00007FF9F162E8D7  Unknown               Unknown  Unknown
+ntdll.dll          00007FF9F2DEC53C  Unknown               Unknown  Unknown

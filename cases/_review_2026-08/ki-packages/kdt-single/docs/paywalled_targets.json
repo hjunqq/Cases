@@ -1,0 +1,545 @@
+[
+  {
+    "doi": "10.1155/2013/709430",
+    "title": "Comparison between Duncan and Chang\u2019s EB Model and the Generalized Plasticity Model in the Analysis of a High Earth-Rockfill Dam",
+    "serves": [
+      "stress",
+      "displacement"
+    ],
+    "role": "definition",
+    "year": 2013,
+    "venue": "Journal of Applied Mathematics",
+    "status": "fetch_failed",
+    "text_path": null,
+    "note": "OpenAlex reports OA but no machine-readable full text could be retrieved from the best OA location"
+  },
+  {
+    "doi": "10.1002/nag.3476",
+    "title": "Inspection of two sophisticated models for sand based on generalized plasticity: Monotonic loading and Monte Carlo analysis",
+    "serves": [
+      "stress",
+      "displacement"
+    ],
+    "role": "definition",
+    "year": 2022,
+    "venue": "International Journal for Numerical and Analytical Methods in Geomechanics",
+    "status": "fetch_failed",
+    "text_path": null,
+    "note": "OpenAlex reports OA but no machine-readable full text could be retrieved from the best OA location"
+  },
+  {
+    "doi": "10.1016/j.ijsolstr.2017.03.005",
+    "title": "Fractional order plasticity model for granular soils subjected to monotonic triaxial compression",
+    "serves": [
+      "stress",
+      "displacement"
+    ],
+    "role": "definition",
+    "year": 2017,
+    "venue": "International Journal of Solids and Structures",
+    "status": "fetch_failed",
+    "text_path": null,
+    "note": "OpenAlex reports OA but no machine-readable full text could be retrieved from the best OA location"
+  },
+  {
+    "doi": "10.1016/j.engstruct.2015.01.047",
+    "title": "Thermal displacements of concrete dams: Accounting for water temperature in statistical models",
+    "serves": [
+      "temperature",
+      "stress"
+    ],
+    "role": "benchmark",
+    "year": 2015,
+    "venue": "Engineering Structures",
+    "status": "fetch_failed",
+    "text_path": null,
+    "note": "OpenAlex reports OA but no machine-readable full text could be retrieved from the best OA location"
+  },
+  {
+    "doi": "10.1016/j.jrmge.2013.12.003",
+    "title": "Discrete modeling of rock joints with a smooth-joint contact model",
+    "serves": [
+      "joint_stress",
+      "displacement"
+    ],
+    "role": "definition",
+    "year": 2013,
+    "venue": "Journal of Rock Mechanics and Geotechnical Engineering",
+    "status": "fetch_failed",
+    "text_path": null,
+    "note": "OpenAlex reports OA but no machine-readable full text could be retrieved from the best OA location"
+  },
+  {
+    "doi": "10.1002/stc.2074",
+    "title": "A statistical model of deformation during the construction of a concrete face rockfill dam",
+    "serves": [
+      "displacement"
+    ],
+    "role": "calibration",
+    "year": 2017,
+    "venue": "Structural Control and Health Monitoring",
+    "status": "fetch_failed",
+    "text_path": null,
+    "note": "OpenAlex reports OA but no machine-readable full text could be retrieved from the best OA location"
+  },
+  {
+    "doi": "10.1016/j.sandf.2021.09.007",
+    "title": "Strength and stiffness parameters for hardening soil model of rockfill materials",
+    "serves": [
+      "displacement"
+    ],
+    "role": "calibration",
+    "year": 2021,
+    "venue": "SOILS AND FOUNDATIONS",
+    "status": "fetch_failed",
+    "text_path": null,
+    "note": "OpenAlex reports OA but no machine-readable full text could be retrieved from the best OA location"
+  },
+  {
+    "doi": "10.1016/j.sandf.2021.10.004",
+    "title": "3D analysis of the 174-m high Quxue asphalt-core rockfill dam in a narrow canyon",
+    "serves": [
+      "displacement"
+    ],
+    "role": "calibration",
+    "year": 2021,
+    "venue": "SOILS AND FOUNDATIONS",
+    "status": "fetch_failed",
+    "text_path": null,
+    "note": "OpenAlex reports OA but no machine-readable full text could be retrieved from the best OA location"
+  },
+  {
+    "doi": "10.3390/w13213072",
+    "title": "Influences on the Seismic Response of a Gravity Dam with Different Foundation and Reservoir Modeling Assumptions",
+    "serves": [
+      "natural_frequency",
+      "displacement"
+    ],
+    "role": "benchmark",
+    "year": 2021,
+    "venue": "Water",
+    "status": "fetch_failed",
+    "text_path": null,
+    "note": "OpenAlex reports OA but no machine-readable full text could be retrieved from the best OA location"
+  },
+  {
+    "doi": "10.1016/j.apm.2010.03.019",
+    "title": "Non-linear seismic response of concrete gravity dams to near-fault ground motions including dam-water-sediment-foundation interaction",
+    "serves": [
+      "natural_frequency",
+      "displacement"
+    ],
+    "role": "benchmark",
+    "year": 2010,
+    "venue": "Applied Mathematical Modelling",
+    "status": "fetch_failed",
+    "text_path": null,
+    "note": "OpenAlex reports OA but no machine-readable full text could be retrieved from the best OA location"
+  },
+  {
+    "doi": "10.1080/13632469.2018.1453409",
+    "title": "The Effects of Dam\u2013Reservoir Interaction on the Nonlinear Seismic Response of Earth Dams",
+    "serves": [
+      "natural_frequency",
+      "displacement"
+    ],
+    "role": "benchmark",
+    "year": 2018,
+    "venue": "Journal of Earthquake Engineering",
+    "status": "fetch_failed",
+    "text_path": null,
+    "note": "OpenAlex reports OA but no machine-readable full text could be retrieved from the best OA location"
+  },
+  {
+    "doi": "10.1016/j.compgeo.2021.104364",
+    "title": "A direct time-domain procedure for the seismic analysis of dam\u2013foundation\u2013reservoir systems using the scaled boundary finite element method",
+    "serves": [
+      "natural_frequency",
+      "displacement"
+    ],
+    "role": "benchmark",
+    "year": 2021,
+    "venue": "Computers and Geotechnics",
+    "status": "fetch_failed",
+    "text_path": null,
+    "note": "OpenAlex reports OA but no machine-readable full text could be retrieved from the best OA location"
+  },
+  {
+    "doi": "10.2172/759450",
+    "title": "Code Verification by the Method of Manufactured Solutions",
+    "serves": [
+      "displacement",
+      "stress"
+    ],
+    "role": "threshold_convention",
+    "year": 2000,
+    "venue": null,
+    "status": "fetch_failed",
+    "text_path": null,
+    "note": "OpenAlex reports OA but no machine-readable full text could be retrieved from the best OA location"
+  },
+  {
+    "doi": "10.2172/835920",
+    "title": "Concepts of Model Verification and Validation",
+    "serves": [
+      "displacement",
+      "stress"
+    ],
+    "role": "threshold_convention",
+    "year": 2004,
+    "venue": null,
+    "status": "fetch_failed",
+    "text_path": null,
+    "note": "OpenAlex reports OA but no machine-readable full text could be retrieved from the best OA location"
+  },
+  {
+    "doi": "10.1063/1.3565032",
+    "title": "Markov models of molecular kinetics: Generation and validation",
+    "serves": [
+      "displacement",
+      "stress"
+    ],
+    "role": "threshold_convention",
+    "year": 2011,
+    "venue": "The Journal of Chemical Physics",
+    "status": "fetch_failed",
+    "text_path": null,
+    "note": "OpenAlex reports OA but no machine-readable full text could be retrieved from the best OA location"
+  },
+  {
+    "doi": "10.1111/mice.13141",
+    "title": "Inverse analysis of deformation moduli for high arch dams using the displacement reconstruction technique and multi\u2010objective optimization",
+    "serves": [
+      "displacement"
+    ],
+    "role": "benchmark",
+    "year": 2023,
+    "venue": "Computer-Aided Civil and Infrastructure Engineering",
+    "status": "fetch_failed",
+    "text_path": null,
+    "note": "OpenAlex reports OA but no machine-readable full text could be retrieved from the best OA location"
+  },
+  {
+    "doi": "10.1155/2015/817241",
+    "title": "Zoning Modulus Inversion Method for Concrete Dams Based on Chaos Genetic Optimization Algorithm",
+    "serves": [
+      "displacement"
+    ],
+    "role": "benchmark",
+    "year": 2015,
+    "venue": "Mathematical Problems in Engineering",
+    "status": "fetch_failed",
+    "text_path": null,
+    "note": "OpenAlex reports OA but no machine-readable full text could be retrieved from the best OA location"
+  },
+  {
+    "doi": "10.1002/uog.5256",
+    "title": "Reliability, repeatability and reproducibility: analysis of measurement errors in continuous variables",
+    "serves": [
+      "safety_factor"
+    ],
+    "role": "definition",
+    "year": 2008,
+    "venue": "Ultrasound in Obstetrics and Gynecology",
+    "status": "fetch_failed",
+    "text_path": null,
+    "note": "OpenAlex reports OA but no machine-readable full text could be retrieved from the best OA location"
+  },
+  {
+    "doi": "10.1016/j.apm.2017.09.017",
+    "title": "A hybrid self-adaptive conjugate first order reliability method for robust structural reliability analysis",
+    "serves": [
+      "safety_factor"
+    ],
+    "role": "definition",
+    "year": 2017,
+    "venue": "Applied Mathematical Modelling",
+    "status": "fetch_failed",
+    "text_path": null,
+    "note": "OpenAlex reports OA but no machine-readable full text could be retrieved from the best OA location"
+  },
+  {
+    "doi": "10.1007/s10346-011-0303-7",
+    "title": "Evaluation of slope stability by finite element method using observed displacement of landslide",
+    "serves": [
+      "safety_factor"
+    ],
+    "role": "benchmark",
+    "year": 2011,
+    "venue": "Landslides",
+    "status": "fetch_failed",
+    "text_path": null,
+    "note": "OpenAlex reports OA but no machine-readable full text could be retrieved from the best OA location"
+  },
+  {
+    "doi": "10.1016/j.jrmge.2020.05.011",
+    "title": "Improved prediction of slope stability using a hybrid stacking ensemble method based on finite element analysis and field data",
+    "serves": [
+      "safety_factor"
+    ],
+    "role": "benchmark",
+    "year": 2020,
+    "venue": "Journal of Rock Mechanics and Geotechnical Engineering",
+    "status": "fetch_failed",
+    "text_path": null,
+    "note": "OpenAlex reports OA but no machine-readable full text could be retrieved from the best OA location"
+  },
+  {
+    "doi": "10.1016/j.jrmge.2018.09.002",
+    "title": "Finite element analyses of slope stability problems using non-associated plasticity",
+    "serves": [
+      "safety_factor"
+    ],
+    "role": "benchmark",
+    "year": 2018,
+    "venue": "Journal of Rock Mechanics and Geotechnical Engineering",
+    "status": "fetch_failed",
+    "text_path": null,
+    "note": "OpenAlex reports OA but no machine-readable full text could be retrieved from the best OA location"
+  },
+  {
+    "doi": "10.1016/j.compgeo.2024.106593",
+    "title": "An efficient strength reduction method for finite element slope stability analysis",
+    "serves": [
+      "safety_factor"
+    ],
+    "role": "benchmark",
+    "year": 2024,
+    "venue": "Computers and Geotechnics",
+    "status": "fetch_failed",
+    "text_path": null,
+    "note": "OpenAlex reports OA but no machine-readable full text could be retrieved from the best OA location"
+  },
+  {
+    "doi": "10.1016/j.aqpro.2015.02.110",
+    "title": "Seepage and Stability Analyses of Earth Dam Using Finite Element Method",
+    "serves": [
+      "pore_pressure"
+    ],
+    "role": "benchmark",
+    "year": 2015,
+    "venue": "Aquatic Procedia",
+    "status": "fetch_failed",
+    "text_path": null,
+    "note": "OpenAlex reports OA but no machine-readable full text could be retrieved from the best OA location"
+  },
+  {
+    "doi": "10.1061/(asce)0733-9429(2005)131:6(431)",
+    "title": "Case Study: Finite Element Method and Artificial Neural Network Models for Flow through Jeziorsko Earthfill Dam in Poland",
+    "serves": [
+      "pore_pressure"
+    ],
+    "role": "benchmark",
+    "year": 2005,
+    "venue": "Journal of Hydraulic Engineering",
+    "status": "fetch_failed",
+    "text_path": null,
+    "note": "OpenAlex reports OA but no machine-readable full text could be retrieved from the best OA location"
+  },
+  {
+    "doi": "10.1016/j.ijsolstr.2005.05.038",
+    "title": "An energy release rate-based plastic-damage model for concrete",
+    "serves": [
+      "damage",
+      "stress"
+    ],
+    "role": "definition",
+    "year": 2005,
+    "venue": "International Journal of Solids and Structures",
+    "status": "fetch_failed",
+    "text_path": null,
+    "note": "OpenAlex reports OA but no machine-readable full text could be retrieved from the best OA location"
+  },
+  {
+    "doi": "10.1016/j.ijsolstr.2018.02.004",
+    "title": "A novel positive/negative projection in energy norm for the damage modeling of quasi-brittle solids",
+    "serves": [
+      "damage",
+      "stress"
+    ],
+    "role": "definition",
+    "year": 2018,
+    "venue": "International Journal of Solids and Structures",
+    "status": "fetch_failed",
+    "text_path": null,
+    "note": "OpenAlex reports OA but no machine-readable full text could be retrieved from the best OA location"
+  },
+  {
+    "doi": "10.1016/j.cam.2016.06.003",
+    "title": "A nonconforming finite element method for the Biot\u2019s consolidation model in poroelasticity",
+    "serves": [
+      "pore_pressure",
+      "displacement"
+    ],
+    "role": "definition",
+    "year": 2016,
+    "venue": "Journal of Computational and Applied Mathematics",
+    "status": "fetch_failed",
+    "text_path": null,
+    "note": "OpenAlex reports OA but no machine-readable full text could be retrieved from the best OA location"
+  },
+  {
+    "doi": "10.1002/nag.645",
+    "title": "Effective stress concept in unsaturated soils: Clarification and validation of a unified framework",
+    "serves": [
+      "pore_pressure",
+      "displacement"
+    ],
+    "role": "definition",
+    "year": 2007,
+    "venue": "International Journal for Numerical and Analytical Methods in Geomechanics",
+    "status": "fetch_failed",
+    "text_path": null,
+    "note": "OpenAlex reports OA but no machine-readable full text could be retrieved from the best OA location"
+  },
+  {
+    "doi": "10.1016/j.wse.2017.06.004",
+    "title": "Thermal field in water pipe cooling concrete hydrostructures simulated with singular boundary method",
+    "serves": [
+      "temperature"
+    ],
+    "role": "benchmark",
+    "year": 2017,
+    "venue": "Water Science and Engineering",
+    "status": "fetch_failed",
+    "text_path": null,
+    "note": "OpenAlex reports OA but no machine-readable full text could be retrieved from the best OA location"
+  },
+  {
+    "doi": "10.1016/j.csite.2024.105456",
+    "title": "Optimization of cooling system parameters with temperature field of mass concrete during hydration",
+    "serves": [
+      "temperature"
+    ],
+    "role": "benchmark",
+    "year": 2024,
+    "venue": "Case Studies in Thermal Engineering",
+    "status": "fetch_failed",
+    "text_path": null,
+    "note": "OpenAlex reports OA but no machine-readable full text could be retrieved from the best OA location"
+  },
+  {
+    "doi": "10.1002/0470091355.ecm026",
+    "title": "Models and Finite Elements for Thin\u2010Walled Structures",
+    "serves": [
+      "displacement",
+      "stress"
+    ],
+    "role": "benchmark",
+    "year": 2004,
+    "venue": null,
+    "status": "fetch_failed",
+    "text_path": null,
+    "note": "OpenAlex lists an OA location but no machine-readable full text could be retrieved (403 or non-text landing page)"
+  },
+  {
+    "doi": "10.1016/j.ijsolstr.2012.06.009",
+    "title": "Shape sensing of 3D frame structures using an inverse Finite Element Method",
+    "serves": [
+      "displacement",
+      "stress"
+    ],
+    "role": "benchmark",
+    "year": 2012,
+    "venue": "International Journal of Solids and Structures",
+    "status": "fetch_failed",
+    "text_path": null,
+    "note": "OpenAlex lists an OA location but no machine-readable full text could be retrieved (403 or non-text landing page)"
+  },
+  {
+    "doi": "10.3390/polym12040818",
+    "title": "Application of the Finite Element Method in the Analysis of Composite Materials: A Review",
+    "serves": [
+      "displacement",
+      "stress"
+    ],
+    "role": "benchmark",
+    "year": 2020,
+    "venue": "Polymers",
+    "status": "fetch_failed",
+    "text_path": null,
+    "note": "OpenAlex lists an OA location but no machine-readable full text could be retrieved (403 or non-text landing page)"
+  },
+  {
+    "doi": "10.1115/1.1523350",
+    "title": "Boundary Element Programming in Mechanics",
+    "serves": [
+      "displacement",
+      "stress"
+    ],
+    "role": "benchmark",
+    "year": 2003,
+    "venue": "Applied Mechanics Reviews",
+    "status": "fetch_failed",
+    "text_path": null,
+    "note": "OpenAlex lists an OA location but no machine-readable full text could be retrieved (403 or non-text landing page)"
+  },
+  {
+    "doi": "10.2172/793406",
+    "title": "Verification and Validation in Computational Fluid Dynamics",
+    "serves": [
+      "displacement",
+      "stress"
+    ],
+    "role": "threshold_convention",
+    "year": 2002,
+    "venue": null,
+    "status": "fetch_failed",
+    "text_path": null,
+    "note": "OpenAlex lists an OA location but no machine-readable full text could be retrieved (403 or non-text landing page)"
+  },
+  {
+    "doi": "10.2172/901974",
+    "title": "Verification and validation benchmarks.",
+    "serves": [
+      "displacement",
+      "stress"
+    ],
+    "role": "threshold_convention",
+    "year": 2007,
+    "venue": null,
+    "status": "fetch_failed",
+    "text_path": null,
+    "note": "OpenAlex lists an OA location but no machine-readable full text could be retrieved (403 or non-text landing page)"
+  },
+  {
+    "doi": "10.1016/j.ymeth.2020.01.011",
+    "title": "In silico trials: Verification, validation and uncertainty quantification of predictive models used in the regulatory evaluation of biomedical products",
+    "serves": [
+      "displacement",
+      "stress"
+    ],
+    "role": "threshold_convention",
+    "year": 2020,
+    "venue": "Methods",
+    "status": "fetch_failed",
+    "text_path": null,
+    "note": "OpenAlex lists an OA location but no machine-readable full text could be retrieved (403 or non-text landing page)"
+  },
+  {
+    "doi": "10.1088/0965-0393/17/4/043001",
+    "title": "A review of extended/generalized finite element methods for material modeling",
+    "serves": [
+      "displacement"
+    ],
+    "role": "threshold_convention",
+    "year": 2009,
+    "venue": "Modelling and Simulation in Materials Science and Engineering",
+    "status": "fetch_failed",
+    "text_path": null,
+    "note": "OpenAlex lists an OA location but no machine-readable full text could be retrieved (403 or non-text landing page)"
+  },
+  {
+    "doi": "10.1016/s0898-1221(00)00317-5",
+    "title": "Goal-oriented error estimation and adaptivity for the finite element method",
+    "serves": [
+      "displacement"
+    ],
+    "role": "threshold_convention",
+    "year": 2001,
+    "venue": "Computers & Mathematics with Applications",
+    "status": "fetch_failed",
+    "text_path": null,
+    "note": "OpenAlex lists an OA location but no machine-readable full text could be retrieved (403 or non-text landing page)"
+  }
+]

@@ -1,0 +1,90 @@
+ (*.loa) Load data   ! migrated: part A merged once, part B kept per block
+  1
+2,'LINEAR',0,2 (nline)  !    ntime for curve 2
+0. 1.    !
+1. 1.       !
+ Define point load
+0  0
+ Define edges for whole analysis
+  51
+ 'sedge,nnode,index,vdimn'                   
+  31  2  1  0   ! 32  4  5 shiti
+         1      2063      2074       601         2
+         2      2050      2063       602         2
+         3      2031      2050       603         2
+         4      2015      2031       604         2
+         5      1997      2015       605         2
+         6      1979      1997       606         2
+         7      1961      1979       607         2
+         8      1943      1961       608         2
+         9      1926      1943       609         2
+        10      1907      1926       610         2
+        11      2543      1335       701         2
+        12      1335      1353       711         2
+        13      1353      1375       721         2
+        14      1375      1391       731         2
+        15      1391      1414       741         2
+        16      1414      1434       751         2
+        17      1434      1455       761         2
+        18      1455      1478       771         2
+        19      1478      1500       781         2
+        20      1500      1522       791         2
+        21      1522      1558       801         2
+        22      1558      1595       811         2
+        23      1595      1633       821         2
+        24      1633      1673       831         2
+        25      1673      1710       841         2
+        26      1710      1748       851         2
+        27      1748      1783       861         2
+        28      1783      1817       871         2
+        29      1817      1851       881         2
+        30      1851      1907       891         2
+        31      1321      2543      2421         5
+ 'sedge,nnode,index,vdimn'                   
+  20  2  1  0
+         1      2287      2251      2081         3
+         2      2251      2212      2082         3
+         3      2212      2173      2083         3
+         4      2173      2131      2084         3
+         5      2131      2087      2085         3
+         6      2087      2024      2086         3
+         7      2024      1938      2087         3
+         8      1938      1862      2088         3
+         9      1862      1814      2089         3
+        10      1814      1768      2090         3
+        11      1768      1718      2091         3
+        12      1718      1670      2092         3
+        13      1670      1619      2093         3
+        14      1619      1572      2094         3
+        15      1572      1525      2095         3
+        16      1525      1482      2096         3
+        17      1482      1440      2097         3
+        18      1440      1394      2098         3
+        19      1394      1357      2099         3
+        20      1357      1321      2100         3       
+ Define edge load in each BLKS
+ edge_load_group,delgroup
+0 0                !nelgroup,delgroup----number of edges for load in this BLKS
+'Define body force in each BLKS'
+9.81,0., -1.,  0 -1.      !gravity acceleration(m/s2), factg(1:ndimn)
+'Time curve for each group', 1 (nline)	    !tcurvegravity(1:ngroup)
+  0  0  1  0  0
+nbeamload
+0
+nplateload
+0
+ Define edge load in each BLKS
+ edge_load_group,delgroup
+51 2                !nelgroup,delgroup----number of edges for load in this BLKS
+  1  31  1  2  0
+110 0 0 110 9.8e3
+  32  51  1  1  0
+110 0 110 110 9.8e3
+'Define body force in each BLKS'
+9.81,0., -1.,  0 -1.      !gravity acceleration(m/s2), factg(1:ndimn)
+'Time curve for each group', 1 (nline)	    !tcurvegravity(1:ngroup)
+  0  1  1  1  1
+nbeamload
+0
+nplateload
+0

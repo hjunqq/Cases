@@ -1,0 +1,20 @@
+ (*.loa) Load data
+  1
+  2  LINEAR  0  2
+  0  1
+  1  1
+ Define point load
+  0  0
+ Define edges for whole analysis
+  0
+ Define edge load in each BLKS
+ edge_load_group,delgroup
+  0  0
+ Define body force in each BLKS
+  9.81000E+00  0.00000E+00  -1.00000E+00  0.00000E+00  -1.00000E+00
+ Time_curve_for_each_group  1
+  1
+ nbeamload
+  0
+ nplateload
+  0

@@ -1,0 +1,31 @@
+ *(1.mat)输入材料信息material Property
+ 2
+         7           LINEAR      0.200E+01
+   0.300E+01   0.700E+01   0.140E+02   0.280E+02   0.650E+02   0.900E+02   0.180E+03
+   0.136E-05   0.321E-05   0.498E-05   0.558E-05   0.620E-05   0.791E-05   0.755E-05
+
+         3           LINEAR     
+   0  50e-6   400e-6
+   0  20e-6   30e-6
+
+
+   10
+MATERIAL PROPERTIES-INPUT FOR 1 TO NMATS                                                                                                              
+NAME FOR MATERIAL---FOR COMMENTS                                                                                                                      
+FIRST:NAME---MECHANICAL, TEMPERATURE, ETC                                                                                                             
+FOR MECHNICAL, SECOND:PHASE---SOLID, FLUID, AIR OR OIL                                                                                                
+NUMBER OF PHASE                                                                                                                                       
+FOR SOLID: MATERIAL(CLASSICALEP,CAMCLAY,ETC),density,ratio,thick,e,nu                                                                                 
+FOR MATERISL: CLASSICALEP:CRITERIA(TC,VM,DP,MC),sigm0,hardening                                                                                       
+FOR MC OR DP: FRICT_ANGLE, DILAN_ANGLE                                                                                                                
+CAMCLAY    :Pc, lamda, Mg, Mf, D0, D1,gaama                                                                                                           
+FOR FLUID: (1) density,ratio,bulkw (2)permiability(1:ndimn)                                                                                           
+ 总的材料参数输入次数
+  1
+     material_serial         1  
+          MECHANICAL               SOLID    1
+  1
+               SOLID
+CONCRETE         2400     0.100E+01      0.100E+01      31.7E+09      0.2E+00      0.600E-05    0    0    0
+  0  0   0   0.100E+04
+  0.013  0.1177   0.7509  0.2460  34.8E6  0.1  100  0.1 6 0 0 3 2 2.723 0 !分别为四参数、抗压强度、拉压强度比、断裂能、特征长度、混凝土类型(icr),iyd,vpiter,icp,epeqcurve,alphat,irevert

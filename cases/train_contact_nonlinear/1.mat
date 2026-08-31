@@ -1,0 +1,48 @@
+ material property curves
+ 0
+ 
+ 10           ! lines for comments
+'MATERIAL PROPERTIES-INPUT FOR 1 TO NMATS'
+'NAME FOR MATERIAL---FOR COMMENTS'
+'FIRST:NAME---MECHANICAL, TEMPERATURE, ETC'
+'FOR MECHNICAL, SECOND:PHASE---SOLID, FLUID, AIR OR OIL '
+'               NUMBER OF PHASE'
+'FOR SOLID: MATERIAL(CLASSICALEP,CAMCLAY,ETC),density,ratio,thick,e,nu'
+'FOR MATERISL: CLASSICALEP:CRITERIA(TC,VM,DP,MC),sigm0,hening'
+'                FOR MC OR DP: FRICT_ANGLE, DILAN_ANGLE'ard
+'              CAMCLAY    :Pc, lamda, Mg, Mf, D0, D1,gaama'
+'FOR FLUID: (1) density,ratio,bulkw (2)permiability(1:ndimn)' 
+ nmats
+  5
+material 1                 !水                                             
+  'MECHANICAL','SOLID', 1                                                       
+   1		   ! NUMBER OF PHASES                                                   
+   'SOLID'                                                                      
+   'ELASTIC_ISOTROPIC',2300,1.0,1.0,10e9,0.18,5e-6,0 ,0,0
+   0  0  1000.
+material 2                 !混凝土                                             
+  'MECHANICAL','SOLID', 2                                                       
+   1		   ! NUMBER OF PHASES                                                   
+   'SOLID'                                                                      
+   'ELASTIC_ISOTROPIC',2500,1.0,1.0,25e9,0.167,5e-6,0 ,0,0
+   0  0  1000.
+material 3                 !地基                                             
+  'MECHANICAL','SOLID', 3                                                       
+   1		   ! NUMBER OF PHASES                                                   
+   'SOLID'                                                                      
+   'ELASTIC_ISOTROPIC',0,1.0,1.0,10e9,0.18,5e-6,0 ,0,0
+   0  0  1000.
+material 4                 !接触面                                             
+  'MECHANICAL','SOLID', 4                                                       
+   1		   ! NUMBER OF PHASES                                                   
+   'SOLID'                                                                      
+   'GOODMAN',2300,1.0,1.0,10e9,0.18,5e-6,0 ,0,0
+   0  0  1000.
+   XX 1 1  0  0
+material 5                 !接触面                                             
+  'MECHANICAL','SOLID', 5                                                       
+   1		   ! NUMBER OF PHASES                                                   
+   'SOLID'                                                                      
+   'ELASTIC_ISOTROPIC',2300,1.0,1.0,10e9,0.18,5e-6,0 ,0,0
+   0  0  1000.
+    

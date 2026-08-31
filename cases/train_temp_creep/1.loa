@@ -1,0 +1,39 @@
+==========TIME CURVE in each BLKS for block       1==========
+ 7
+2,'LINEAR',0,2   !(nline)  1常用曲线
+0. 1000.
+1.0  1.0
+2,'LINEAR',0,2   !(nline)  2气温
+0.  1000.
+ 20.0 20.0
+1,'DABT',0,2   !(nline)   3绝热温升曲线
+25
+2
+2,'LINEAR',0,2   !(nline)  4入仓温度
+0. 1000.
+ 20.0 20.0
+2,'LINEAR',0,2   !(nline)  5冷却水温曲线
+0. 1000.
+ 15.0 15.0
+2,'LINEAR',0,2   !(nline)  6通水流量曲线
+0. 1000.
+16.08  16.08
+4,'LINEAR',0,2   !(nline)  7通水流量曲线
+   0.      0         20.00      1000
+  0  16.08  16.08  0
+'Define  point load in each BLKS'
+0     0          ! nplgroup---number of groups
+'Define edges for whole analysis'
+0 0                !nelgroup,delgroup----number of edges for load in this BLKS
+'Define edge load in each BLKS'
+'NELGROUP/[iedge,itcurve/press(1:ndimn,inode=1:nnode)]'
+0 0                  !nelgroup,delgroup----number of edges for load in this BLKS
+'Define body force in each BLKS'
+9.81 0 0 -1 0 0 -1    !gravity acceleration(m/s2), factg(1:ndimn)
+'Time curve for each group', 1 (nline)	    !tcurvegravity(1:ngroup)
+1*0
+nbeamload
+0 0
+ nplateload,itcurve,water
+     0     0     0
+0.0 0.0    0.0 0.0   0.0

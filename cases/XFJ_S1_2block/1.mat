@@ -1,0 +1,54 @@
+ *(1.mat)输入材料信息material Property
+  0
+   10
+MATERIAL PROPERTIES-INPUT FOR 1 TO NMATS                                                                                                              
+NAME FOR MATERIAL---FOR COMMENTS                                                                                                                      
+FIRST:NAME---MECHANICAL, TEMPERATURE, ETC                                                                                                             
+FOR MECHNICAL, SECOND:PHASE---SOLID, FLUID, AIR OR OIL                                                                                                
+NUMBER OF PHASE                                                                                                                                       
+FOR SOLID: MATERIAL(CLASSICALEP,CAMCLAY,ETC),density,ratio,thick,e,nu                                                                                 
+FOR MATERISL: CLASSICALEP:CRITERIA(TC,VM,DP,MC),sigm0,hardening                                                                                       
+FOR MC OR DP: FRICT_ANGLE, DILAN_ANGLE                                                                                                                
+CAMCLAY    :Pc, lamda, Mg, Mf, D0, D1,gaama                                                                                                           
+FOR FLUID: (1) density,ratio,bulkw (2)permiability(1:ndimn)                                                                                           
+ 总的材料参数输入次数
+  7
+     material_serial         1  一期混凝土
+          MECHANICAL               SOLID    1
+  1
+               SOLID
+ELASTIC_ISOTROPIC         0.240E+04      0.100E+01      0.100E+01      0.220E+11      0.17E+00      0.100E-04    0    0    0
+  0  0      0.100E+04 
+     material_serial         2  地基
+          MECHANICAL               SOLID    2
+  1
+               SOLID
+ELASTIC_ISOTROPIC         0.000E+04       0.100E+01      0.100E+01      0.220E+11      0.300E+00      0.100E-04    0    0    0
+  0  0      0.100E+04
+     material_serial         3  一期、二期、三期加固
+          MECHANICAL               SOLID    3
+  1
+               SOLID
+ELASTIC_ISOTROPIC         0.240E+00      0.100E+01      0.100E+01      0.230E+11      0.17E+00      0.100E-04    0    0    0
+  0  0      0.100E+04
+     material_serial         4  二期加固
+          MECHANICAL             SOLID    4
+  1
+               SOLID
+ELASTIC_ISOTROPIC         0.240E+04      0.100E+01      0.100E+01      0.230E+11      0.17E+00      0.100E-04    0    0    0
+  0  0      0.100E+04
+     material_serial         5   水
+          MECHANICAL               WATER    5
+  1
+   'FLUID'
+   1000.,1.,2044900.e3 1430
+   0   3*1.e-3  
+     material_serial         6  钢筋
+          MECHANICAL               SOLID    6
+  1
+               SOLID
+ELASTIC_ISOTROPIC         0.000E+00      0.100E+01      0.100E+01      0.210E+12      0.167E+00      0.100E-04    0    0    0
+  0  0      0.100E+04
+     material_serial         7
+            GEOMETRY         ROD_or_BEAM    6
+   4021e-6   0.000E+00   0.000E+00   0.000E+00

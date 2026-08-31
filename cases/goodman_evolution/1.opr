@@ -1,0 +1,12 @@
+ Irecover wpgroup,wegroup,wggroup,wjgroup !irecover=-1,element averge stress;=1,nodal stress by groups
+                                          !=2, nodal stress in whole domain, =0, stress at gauss point.
+  0  1  0  0  0
+ 1:npgroup input
+ groupbi,wpgroup1,wpgroup2,wstep
+ 0 2 0 0    
+ 43 0 1
+ 127 0 1
+ one line for each group
+ following is for elements(e1:e2,istre)
+ following is for gaps of contact elements(e1:e2)
+ following is for Sn and St of joint elements(e1:e2)

@@ -1,0 +1,8 @@
+# Simply supported: w=0 on boundary (DOF 3)
+3 0.0 8
+1 2 3 4 6 7 8 9
+# Fix corner node 1 in x,y to prevent rigid body
+1 0.0 1
+1
+2 0.0 1
+1

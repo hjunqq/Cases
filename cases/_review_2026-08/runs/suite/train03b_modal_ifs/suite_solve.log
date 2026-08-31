@@ -1,0 +1,84 @@
+=== Found config.json in . ===
+  3 groups, 3 materials, type=E
+
+=== Running pipeline ===
+=== HSTAR FEM Pipeline ===
+Job dir: .
+
+--- Step 2: Generating input files ---
+OK: 12 files generated: ['1.glb', '1.mat', '1.LOA', '1.man', '1.sol', '1.flavia.msh', '1.ftr', '1.opr', '1.nrt', '1.tem', '1.ifs', 'inp']
+
+--- Step 3: Running solver ---
+Sandbox: jailed (bwrap)
+Exit code: 0
+RESTART count: 5
+Crash: False
+
+--- Step 4: Parsing results ---
+Block 1: 1705 nodes (1705 active)
+  Ux: -6.780 ~ 1000.000 mm
+  Uy: -108.498 ~ 265.377 mm
+  Nodal force / reaction (2185 nodes):
+    x: 0.000E+00 ~ 0.000E+00  y: 0.000E+00 ~ 0.000E+00  N
+    Σx=0.000E+00  Σy=0.000E+00  N
+  Stress (2185 gauss points, 4 components):
+    Sxx: -7.254E+07 ~ 5.924E+07 Pa
+    Syy: -1.116E+08 ~ 1.714E+08 Pa
+Block 2: 1705 nodes (1705 active)
+  Ux: -350.629 ~ 248.133 mm
+  Uy: -1000.000 ~ 0.000 mm
+  Nodal force / reaction (2185 nodes):
+    x: 0.000E+00 ~ 0.000E+00  y: 0.000E+00 ~ 0.000E+00  N
+    Σx=0.000E+00  Σy=0.000E+00  N
+  Stress (2185 gauss points, 4 components):
+    Sxx: -1.734E+08 ~ 3.223E+07 Pa
+    Syy: -4.026E+08 ~ 3.543E+07 Pa
+Block 3: 1705 nodes (1705 active)
+  Ux: -1000.000 ~ 336.690 mm
+  Uy: -258.303 ~ 311.742 mm
+  Nodal force / reaction (2185 nodes):
+    x: 0.000E+00 ~ 0.000E+00  y: 0.000E+00 ~ 0.000E+00  N
+    Σx=0.000E+00  Σy=0.000E+00  N
+  Stress (2185 gauss points, 4 components):
+    Sxx: -6.265E+07 ~ 9.844E+07 Pa
+    Syy: -3.119E+08 ~ 2.817E+08 Pa
+Block 4: 1705 nodes (1705 active)
+  Ux: -349.083 ~ 1000.000 mm
+  Uy: -279.461 ~ 450.307 mm
+  Nodal force / reaction (2185 nodes):
+    x: 0.000E+00 ~ 0.000E+00  y: 0.000E+00 ~ 0.000E+00  N
+    Σx=0.000E+00  Σy=0.000E+00  N
+  Stress (2185 gauss points, 4 components):
+    Sxx: -1.738E+08 ~ 8.782E+07 Pa
+    Syy: -6.925E+08 ~ 8.413E+08 Pa
+Block 5: 1705 nodes (1705 active)
+  Ux: -374.348 ~ 326.108 mm
+  Uy: -1000.000 ~ 611.063 mm
+  Nodal force / reaction (2185 nodes):
+    x: 0.000E+00 ~ 0.000E+00  y: 0.000E+00 ~ 0.000E+00  N
+    Σx=0.000E+00  Σy=0.000E+00  N
+  Stress (2185 gauss points, 4 components):
+    Sxx: -2.362E+08 ~ 1.882E+08 Pa
+    Syy: -1.362E+09 ~ 3.517E+08 Pa
+  Modal frequencies (5 modes from 1.chk):
+    Mode 1: ω=2.0278E+01 rad/s, f=3.2273 Hz, T=3.0985E-01 s
+    Mode 2: ω=5.4409E+01 rad/s, f=8.6595 Hz, T=1.1548E-01 s
+    Mode 3: ω=6.3719E+01 rad/s, f=10.1410 Hz, T=9.8608E-02 s
+    Mode 4: ω=1.3213E+02 rad/s, f=21.0290 Hz, T=4.7552E-02 s
+    Mode 5: ω=2.1152E+02 rad/s, f=33.6640 Hz, T=2.9705E-02 s
+
+--- Step 5: Converting to VTP ---
+Mesh: 2185 nodes, 2080 elements, 3 groups
+Results: 15 data blocks
+Steps (blocks): 5
+  → result_b1.vtp
+  → result_b2.vtp
+  → result_b3.vtp
+  → result_b4.vtp
+  → result_b5.vtp
+VTP files: ['result_b1.vtp', 'result_b2.vtp', 'result_b3.vtp', 'result_b4.vtp', 'result_b5.vtp']
+
+已生成可视化文件：result_b1.vtp, result_b2.vtp, result_b3.vtp, result_b4.vtp, result_b5.vtp
+BC overlay: bc_overlay.vtp
+
+=== Pipeline complete ===

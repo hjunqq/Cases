@@ -1,0 +1,63 @@
+{
+  "probe_id": "ast-construct-mismatch-v1",
+  "question": "open #9 — deck_ast.py 全仓 40 处构造失配（7445 个 end 中 0.54%）出在哪、为什么、修完影响多大？",
+  "registered_at": "2026-08-28",
+  "registered_by": "Claude",
+
+  "known_before_registration": [
+    "闭合扫描报告 40 处失配，占 7445 个 end 构造的 0.54%",
+    "此前已修过一类：行首数字语句标号（100 if(...)then），修前失配更多",
+    "AST 当前 5/5 通过验收，Deck ABI 909 条（记录×路径条件），树含 1203 条 READ"
+  ],
+  "not_yet_examined": [
+    "这 40 处具体在哪些文件哪些行",
+    "它们的语法形态",
+    "修复后 AST 与 Deck ABI 会怎么变"
+  ],
+
+  "method": "扫描全部 *.f90，用栈匹配构造开闭；对每处失配记录 (文件, 行, end 类型, 栈顶, 前文最近的疑似未识别开构造)；按语法形态归类。",
+
+  "predictions": [
+    {
+      "id": "P1",
+      "claim": "40 处失配可归入不超过 5 种语法形态",
+      "confidence": "medium",
+      "falsified_if": "归类后形态数 > 5"
+    },
+    {
+      "id": "P2",
+      "claim": "至少一种形态与 goto / 语句标号 / labeled continue 相关",
+      "confidence": "medium",
+      "falsified_if": "没有任何一处与语句标号或 goto 相关"
+    },
+    {
+      "id": "P3",
+      "claim": "40 处失配没有一处落在 5 项验收所覆盖的子程序内（global_data / FEM90 的调度段 / external_load_1,_2 / stiff_* 四个 / .man 静力 reader）",
+      "confidence": "medium",
+      "falsified_if": "任一处落在这些子程序内",
+      "note": "若被证伪，说明 5/5 验收通过是侥幸，AST 的可信度要重估"
+    },
+    {
+      "id": "P4",
+      "claim": "识别并修复形态后，失配数降到 0",
+      "confidence": "low-medium",
+      "falsified_if": "修复后仍有失配",
+      "note": "若无法降到 0，须给出剩余项的具体原因，不得含糊"
+    },
+    {
+      "id": "P5",
+      "claim": "修复后 tools/verify_ast.py 仍然 5/5 通过",
+      "confidence": "high",
+      "falsified_if": "任一项验收失败",
+      "note": "回归守卫"
+    },
+    {
+      "id": "P6",
+      "claim": "修复后 Deck ABI 的 (记录×路径条件) 条数会变化（即此前的树确实在某处是错的）",
+      "confidence": "medium-high",
+      "falsified_if": "条数与 909 完全相同"
+    }
+  ],
+
+  "judging_rule": "由 judge.py 机械判定。运行前校验 predictions.json 的 sha256。修仪器合规，改预测不合规。"
+}

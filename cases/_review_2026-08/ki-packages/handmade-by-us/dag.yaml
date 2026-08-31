@@ -1,0 +1,238 @@
+# KISS-format KI descriptor — experimental trial package.
+# Only sections with real content are filled. `processes` is deliberately thin
+# (HSTAR is one monolithic binary, not a module chain) — see the trial report.
+template_version: "3.5"
+
+identity:
+  model_id: "HSTAR"
+  name: "HSTAR (YL mainline)"
+  long_name: "HSTAR structural finite-element solver, YL branch"
+  ki_class: forward_model
+  language: fortran
+  repo_url: "in-tree: /home/huijun/HSTAR_Next/hstarYLOrig/HSTAR"
+  license: "proprietary / in-house"
+  model_class: "structural_solid_mechanics"
+  scientific_reference_version: "YL mainline, binary built 2026-06-30"
+  is_family_dag: false
+  case_family: "gravdam_static_2block"
+  description: >
+    Monolithic Fortran FEM solver for solid mechanics, seepage, and heat
+    transfer, driven by a fixed-layout ASCII deck (1.glb / 1.mat / 1.LOA /
+    1.man / 1.cor / 1.ele). This KI package covers exactly one case family:
+    2D plane-strain linear-elastic static analysis of a concrete gravity dam
+    on a conforming rock foundation, self-weight applied in two construction
+    stages plus hydrostatic pressure on the vertical upstream face.
+    Analysis type is selected by the single character `type_problem`
+    (Q static / E modal / F dynamic / S transient-thermal-seepage); this
+    family is Q.
+  implementation:
+    id: "hstar-yl-2026-06-30"
+    version: "YL mainline"
+    provenance: >
+      Prebuilt x86-64 Linux binary at
+      hstarYLOrig/HSTAR/x64/Release/hstar, resolved by
+      skills/run_pipeline.py:57 (HSTAR_EXE, env-overridable). Dynamically
+      linked against Intel oneAPI MKL .so.2 sonames. A second source tree
+      HSTAR_Q/ exists in the repo and is NOT this solver — its output blocks
+      differ (e.g. acceleration_absolute is YL-only). Do not mix decks or
+      benchmarks between the two.
+    binary_sha_note: "not pinned; preflight reports mtime+size instead"
+  toolchain:
+    deck_generator: "fem-chat/skills/generator.py"
+    launcher: "fem-chat/skills/run_pipeline.py (via quick_analysis.py)"
+    mesh_generator: "fem-chat/skills/gen_gravdam.py"
+    runtime_resolver: "fem-chat/skills/intel_runtime.py"
+    gate: "fem-chat/harness/gate.py:physics_gate"
+
+boundary:
+  scope_in:
+    - "2D plane-strain static (type_problem=Q) stress/displacement of a concrete gravity dam on a conforming rock foundation"
+    - "Staged construction via the `appear` matrix: stage 1 foundation only, stage 2 foundation + dam body"
+    - "Self-weight from a gravity vector [g, gx_dir..., gy_dir...] of length 1+2*ndimn"
+    - "Linearly-varying hydrostatic pressure on a list of upstream-face edges, applied in a chosen construction block"
+    - "Isotropic linear-elastic materials (ELASTIC: E, nu, density), one per element group"
+    - "Preset boundary conditions for dam-like geometry: bottom fixed in Y, both lateral sides fixed in X"
+    - "Outputs: DISPLACEMENT, STRESS, and (since 2026-08-25) nodal forces tofor via gid_f"
+  scope_out:
+    - "Uplift pressure on the dam-foundation interface — NOT modelled. The conforming mesh shares interface nodes; there is no interface pressure DOF. A gravity-dam stability check that needs uplift cannot use this family."
+    - "Joints / interfaces with relative slip — needs GOODMAN or MCJOINT material and element index 20; that is the gravdam_goodman_joint family, not this one."
+    - "Cracking, damage, plasticity — this family is ELASTIC only. CONCRETE / CLASSICALEP exist in the generator but change the required output switches and the convergence controls."
+    - "Seepage / pore pressure coupling — type_problem=S, a FLUID/SEEPAGE material and dof-8 head BCs. Also note: a seepage mesh must NOT contain upstream reservoir-water elements."
+    - "Dynamics, seismic, modal — F and E respectively. Running this family's deck with type_problem left at Q after a copy is the single most common silent mistake (hstar_type_problem_mismatch)."
+    - "Thermal fields and thermal stress — S; and the U+T coupled path is HSTAR_Q, a different binary."
+    - "3D — this is the 2D family. The 3D sibling is gravdam_static_3d_2block; element index and the gravity-vector length both change."
+    - "Reservoir fluid-structure interaction (added mass or W-field water elements) — modal-only, templates gravdam_modal_reservoir / gravdam_modal_fsi."
+    - "Tetrahedral / wedge / quadratic meshes — the generator's elem_info() has no mapping for them and silently emits a 2D quad (see hazard elem_info_silent_quad_fallback). Only 2D T3/Q4 and 3D B8 are real."
+    - "Abaqus .inp or any non-HSTAR deck — never, under any circumstance."
+  spatial: "2-D unstructured quadrilateral finite-element mesh (plane strain)"
+  temporal: "quasi-static — 'steps' are construction stages, not physical time"
+  closure: "force equilibrium (Ku = f); global nodal-force sum is the closure check"
+  notes: >
+    The two 'blocks' (nblks=2) are construction stages, not time steps: block 1
+    solves with only the foundation present, block 2 adds the dam body and the
+    water load. increments.ditime=1.0 is a bookkeeping pseudo-time. Anything
+    that reads the result as a time history is misreading it.
+
+inputs:
+  parameters:
+    - category: parameters
+      name: "Mesh geometry and element groups"
+      unit: "m (coordinates); integer node/element ids"
+      source_kind: "parametric generator gen_gravdam.py"
+      model_input_format: "1.cor (node_id x y), 1.ele (elem_id n1 n2 n3 n4 [group])"
+      notes: >
+        Group 1 MUST be the foundation and group 2 the dam body — the template's
+        materials array is positional (see hazard gravdam_group_order_reversed,
+        which actually happened and was fixed repo-wide). Element groups are
+        auto-filled into the config's __MESH__ placeholders by
+        quick_analysis.py from inspect_mesh.
+    - category: parameters
+      name: "Upstream-face edge list"
+      unit: "list of [n1, n2, elem_id]"
+      source_kind: "gravdam_meta.json written by gen_gravdam.py"
+      model_input_format: "config water_pressure.edges_list, or use_meta_edges:true to resolve it"
+      notes: >
+        Orientation matters: n1->n2 normal must point +x, into the dam.
+        Auto-detecting 'the global x_min face' picks the FOUNDATION's left
+        edge instead (dt_hstar_004). If gravdam_meta.json is missing,
+        use_meta_edges resolves to an EMPTY list with only a warning
+        (dt_hstar_005) — the run then completes with no water at all.
+    - category: parameters
+      name: "Elastic material properties"
+      unit: "E in Pa; nu dimensionless; density in kg/m^3"
+      source_kind: "engineering specification"
+      model_input_format: "config materials[] -> 1.mat, type ELASTIC"
+      notes: >
+        Template defaults: foundation E=1.0e10 nu=0.25 rho=2600 (rock),
+        dam E=2.5e10 nu=0.167 rho=2400 (concrete). E is in Pa — an E given in
+        MPa or GPa is 1e6/1e9 too small and produces displacements orders of
+        magnitude too large, with no error (dt_hstar_010).
+    - category: parameters
+      name: "Analysis-control switches"
+      unit: "mixed"
+      source_kind: "template"
+      model_input_format: "config type_problem / solver / nblks / blocks.increments -> 1.glb, 1.man"
+      notes: >
+        type_problem='Q' for static. solver 'PROFILE' auto-switches to PARDISO
+        above npoin=5000 (and above npoin=1000 for type F). miter=5 and nstep=1
+        per block are enough for a linear-elastic solve; they are NOT enough for
+        any nonlinear material.
+  boundary_conditions:
+    - category: boundary_conditions
+      name: "Displacement restraints"
+      unit: "boolean presets"
+      source_kind: "template"
+      model_input_format: "config boundary.bottom_fix_uy / sides_fix_ux -> fixset rows"
+      notes: >
+        This preset pair is correct for dams and retaining walls ONLY. Stacking
+        it on top of an explicit node_fixes list over-constrains the model and
+        was the root cause of a cantilever behaving as fixed-fixed
+        (dt_hstar_007).
+    - category: boundary_conditions
+      name: "Hydrostatic pressure on the upstream face"
+      unit: "water_level in m; gamma_w in N/m^3"
+      source_kind: "reservoir operating level"
+      model_input_format: "config water_pressure{water_level, gamma_w, block, use_meta_edges} -> 1.LOA face loads"
+      notes: >
+        gamma_w=9810 N/m^3 (NOT 1000 — that would be a density, giving a 9.81x
+        under-load with no error, dt_hstar_011). block=2 puts the water in
+        construction stage 2. water_level is measured from y=0, the
+        dam-foundation interface.
+  initial_conditions:
+    - category: initial_conditions
+      name: "None"
+      unit: "-"
+      source_kind: "-"
+      model_input_format: "-"
+      notes: "Quasi-static; the stage-1 state is the initial condition for stage 2, produced internally by the appear matrix."
+
+processes:
+  modules:
+    - name: "Deck generation"
+      role: preprocessor
+      brief: >
+        generator.py renders config -> fixed-layout ASCII. The gid_*/res_* switch
+        rows in 1.glb are POSITION-dependent: one inserted or renamed switch in
+        the solver's read statement shifts every later flag, with no error.
+        Guarded by the solver_contract_glb_switches test in skills/test_skills.py.
+    - name: "Assembly + linear solve"
+      role: process_solver
+      brief: >
+        Monolithic Fortran. PROFILE (skyline) or PARDISO. For this family the
+        choice is performance-only, but for FSI configs PARDISO silently drops
+        the nifsgroup coupling, so run_pipeline refuses to auto-switch those.
+    - name: "Result output"
+      role: postprocessor
+      brief: >
+        Writes ASCII 1.flavia.res (blocks selected by gid_*) and binary 1.res
+        (res_*). The toolchain reads ONLY the ASCII file — there is no 1.res
+        reader anywhere in the repo, so res_* switches are effectively inert.
+        Modal frequencies, when applicable, go to 1.chk, not 1.flavia.res.
+
+safety:
+  hazards:
+    - id: "water_edges_reversed"
+      kind: "geometry_semantic"
+      description: "Water pressure applied to the foundation's left edge instead of the dam's upstream face, because edges were auto-detected by global x_min rather than taken from gravdam_meta.json. Crest displaces upstream (-x)."
+      severity: "silent"
+      triplet: dt_hstar_004
+    - id: "water_edges_silently_empty"
+      kind: "load_dropped"
+      description: "water_pressure.use_meta_edges=true but gravdam_meta.json absent: run_pipeline.py:290 prints one WARNING and sets edges_list=[]. The solve completes, settles under gravity, and reports plausible numbers with ZERO water load. Nothing downstream flags it."
+      severity: "silent"
+      triplet: dt_hstar_005
+    - id: "gravdam_group_order_reversed"
+      kind: "material_assignment_semantic"
+      description: "Mesh element group 1 is the dam instead of the foundation (or the template's materials array is ordered the other way). Rock properties get assigned to concrete and vice versa. Occurred for real; fixed across skills + train01/02 + the LangGraph capability."
+      severity: "silent"
+      triplet: dt_hstar_006
+    - id: "hstar_type_problem_mismatch"
+      kind: "control_semantic"
+      description: "type_problem left at the copied template's value. Q where E/F/S was intended yields a perfectly clean static result for a question nobody asked."
+      severity: "silent"
+      triplet: dt_hstar_003
+    - id: "elem_info_silent_quad_fallback"
+      kind: "element_type_silent_fallback"
+      description: "generator.py elem_info() maps only (2,2)/(2,3)->L2, (3,2)->T3, (4,2)->Q4, (8,3)->B8. EVERY other (nnode,ndimn) combination falls through to ('Q4', 5) — a 2D quadrilateral. Verified: tet (4,3), quadratic tet (10,3), B20 (20,3), wedge (6,3), 2D-8-node (8,2) all become index 5. Meanwhile workflow/capability/registry.yaml advertises tet support."
+      severity: "silent"
+      triplet: dt_hstar_012
+    - id: "camclay_dead_config"
+      kind: "material_dead_config"
+      description: "generator.py:188,196 list CAMCLAY among the plastic materials (setting gid_ep and has_nonlinear) but _gen_mat has no CAMCLAY branch. A CAMCLAY material silently falls through to the generic ELASTIC path: plastic output switches on, elastic material underneath."
+      severity: "silent"
+      triplet: dt_hstar_013
+    - id: "res_switches_inert"
+      kind: "output_no_consumer"
+      description: "res_* switches write binary 1.res, for which the repo has no reader at all (flavia_to_vtu.py and run_pipeline.py both read only ASCII 1.flavia.res). Enabling them enlarges the file and changes nothing observable."
+      severity: "degraded"
+      triplet: null
+    - id: "glb_switch_row_positional_drift"
+      kind: "deck_format_positional"
+      description: "The gid_* and res_* rows in 1.glb are read positionally by Global.f90. If the solver adds, renames or reorders one switch, every subsequent flag in generator output is off by one, silently. Ratcheted by the solver_contract_glb_switches test."
+      severity: "silent"
+      triplet: null
+    - id: "hstar_results_clobbered"
+      kind: "workspace_semantic"
+      description: "A second analysis run in the same job dir overwrites 1.flavia.res. The earlier result is simply gone; nothing warns."
+      severity: "silent"
+      triplet: dt_hstar_008
+    - id: "hstar_overconstrained"
+      kind: "boundary_semantic"
+      description: "Preset boundary flags (sides_fix_ux / bottom_fix_uy / bottom_fix_xyz) stacked on an explicit node_fixes list. The model is stiffer than intended; results are plausible but wrong."
+      severity: "silent"
+      triplet: dt_hstar_007
+    - id: "hstar_mkl_soname_missing"
+      kind: "runtime_environment"
+      description: "Solver spawned directly, bypassing intel_runtime path injection. Immediate hard failure — the one hazard in this list that cannot pass unnoticed."
+      severity: "fatal"
+      triplet: dt_hstar_001
+    - id: "modulus_unit_MPa_not_Pa"
+      kind: "unit_conversion"
+      description: "Young's modulus given in MPa or GPa instead of Pa. Displacements come out 1e6 / 1e9 too large; the solve converges normally."
+      severity: "silent"
+      triplet: dt_hstar_010
+    - id: "gamma_w_density_not_weight"
+      kind: "unit_conversion"
+      description: "gamma_w set to 1000 (a density in kg/m^3) instead of 9810 (unit weight in N/m^3). Water load is 9.81x too small; result still looks like a loaded dam."
+      severity: "silent"
+      triplet: dt_hstar_011

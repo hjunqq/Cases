@@ -1,0 +1,5 @@
+ nincs
+ 1 0 3 0 0 !nincs,cdtest,earthquake_curve(1:ndimn)
+  0 0 !nstepjq,nstepjp
+ 5 0.01 1 1 1000 1 1 0 0 !miter,ditime,noutn,noutf,nstep,inc_step,nresta,nmcon,nbasef
+ 11*1.e-5

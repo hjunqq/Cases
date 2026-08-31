@@ -1,0 +1,52 @@
+Iafile icond ipdchk ising
+ 0     0      1      1
+ Iafile icond ipdchk ising
+ 0     0      1      1
+ Iafile icond ipdchk ising
+ 0     0      1      1
+ Iafile icond ipdchk ising
+ 0     0      1      1
+ Iafile icond ipdchk ising
+ 0     0      1      1
+ Iafile icond ipdchk ising
+ 0     0      1      1
+ Iafile icond ipdchk ising
+ 0     0      1      1
+
+
+
+
+mtype,ncpu,msglvl,
+  -2    8     0
+isdefault  !0=use default;1=not use default
+    0  
+miter_ssorpbcg,torler_ssorpbcg,omig_ssorpbcg
+1000              1.0E-10       1.3
+miter_ssorpbcg,torler_ssorpbcg,omig_ssorpbcg
+1000              1.0E-10       1.3
+Iafile icond ipdchk ising
+ 0     0      1      1
+ Iafile icond ipdchk ising
+ 0     0      1      1
+ Iafile icond ipdchk ising
+ 0     0      1      1
+ Iafile icond ipdchk ising
+ 0     0      1      1
+miter_ssorpbcg,torler_ssorpbcg,omig_ssorpbcg
+10000              1.0E-20       1.3
+
+miter_ssorpbcg,torler_ssorpbcg,omig_ssorpbcg
+1000              1.0E-10       1.3
+miter_ssorpbcg,torler_ssorpbcg,omig_ssorpbcg
+1000              1.0E-10       1.3
+Iafile icond ipdchk ising
+ 0     0      1      1
+ Iafile icond ipdchk ising
+ 0     0      1      1
+ Iafile icond ipdchk ising
+ 0     0      1      1
+ Iafile icond ipdchk ising
+ 0     0      1      1
+miter_ssorpbcg,torler_ssorpbcg,omig_ssorpbcg
+10000              1.0E-20       1.3
+

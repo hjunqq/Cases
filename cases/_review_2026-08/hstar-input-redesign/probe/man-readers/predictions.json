@@ -1,0 +1,59 @@
+{
+  "probe_id": "man-reader-layout-v1",
+  "question": "open-questions #8 — .man 的 17 个 reader 里，12 个静力 reader 的记录布局是否一致？",
+  "registered_at": "2026-08-28",
+  "registered_by": "Claude",
+  "known_before_registration": [
+    ".man 有 17 个 reader（由 tools/extract_dispatch.py 已提取）",
+    "time_dependent 首记录 = nincs, cdtest, earthquake_curve(1:ndimn)  [Fem.f90:8525]",
+    "explicit 首记录 = nincs, earthquake_curve(1:ndimn)                [Fem.f90:9959]",
+    "frequency_analysis 首记录 = nincs, fachv                          [Fem.f90:9819]",
+    "STATIC_U / STATIC_U_reli / STATIC_rigid_1 / STATIC_U_PW 各 15 条 READ（只知条数，未看内容）",
+    "hstarpre prepare_man_file 在 type_problem=='Q' 分支只写 nincs"
+  ],
+  "not_yet_examined": [
+    "任何静力 reader 的 READ 序列内容",
+    "response_spectrum / back_analysis / GHM2ADINA 等的记录布局",
+    "既有 train* 算例 .man 首记录的实际内容"
+  ],
+  "predictions": [
+    {
+      "id": "P1",
+      "claim": "STATIC_U / STATIC_U_reli / STATIC_rigid_1 / STATIC_U_PW 四者的首记录变量列表完全相同",
+      "confidence": "medium-high",
+      "falsified_if": "任意两者的首记录变量列表不同"
+    },
+    {
+      "id": "P2",
+      "claim": "上述静力 reader 的首记录只读 nincs 一个变量（与 hstarpre 的 Q 分支一致）",
+      "confidence": "medium",
+      "falsified_if": "首记录读入变量数 != 1"
+    },
+    {
+      "id": "P3",
+      "claim": "全部静力 reader（STATIC_* 与 back_analysis 系列）首记录布局彼此相同",
+      "confidence": "low-medium",
+      "falsified_if": "静力 reader 中出现两种以上不同的首记录布局"
+    },
+    {
+      "id": "P4",
+      "claim": "没有任何静力 reader 读取 earthquake_curve",
+      "confidence": "high",
+      "falsified_if": "任一 STATIC_* 或 back_* reader 的 READ 中出现 earthquake_curve"
+    },
+    {
+      "id": "P5",
+      "claim": "17 个 reader 的首记录布局去重后不超过 5 种",
+      "confidence": "medium",
+      "falsified_if": "去重后 > 5 种"
+    },
+    {
+      "id": "P6",
+      "claim": "每个既有 train* 算例的 .man 首记录 token 数，与其 (type_problem, type_solver) 所选 reader 的预期字段数一致",
+      "confidence": "medium",
+      "falsified_if": "任一算例不一致",
+      "note": "这是回读检验，参照物是既有 deck，不是上一步的产物"
+    }
+  ],
+  "judging_rule": "由 judge.py 机械判定。Claude 不得在看到结果后修改本文件；本文件的 sha256 在运行前记录于 verdict.json。"
+}

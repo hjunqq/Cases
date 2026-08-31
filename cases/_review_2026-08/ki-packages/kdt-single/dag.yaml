@@ -1,0 +1,561 @@
+# HSTAR — knowledge DAG
+#
+# NOTE ON PROVENANCE: the toolkit's `ki_dag_generator` (5 readers -> synthesis
+# -> 7 verifiers) is not installed on this host --
+#   $ ls /home/server/knowledge-dissection-toolkit
+#   ls: cannot access ...: No such file or directory
+# This file therefore follows the locked 7-block template by hand, from the
+# model sources (Fem.f90, Global.f90, Output.f90, Material.f90, Elements.f90),
+# the two GEHOMadrid manuals, and 93 working case directories.  Every output
+# below was observed in an actual run of the Linux build on 2026-08-26.
+
+identity:
+  model_id: HSTAR
+  long_name: >
+    HSTAR — finite-element solver for hydraulic and geotechnical structures
+    (concrete dams, sluices, slopes, tunnels, reinforced-concrete members).
+  lineage: >
+    Direct descendant of GEHOMadrid (M. Pastor, Tonchun Li, P. Mira, 1997);
+    Hohai University fork that added contact/joint mechanics, concrete damage,
+    parameter inversion, structural reliability, cooling-pipe modelling and the
+    Intel MKL PARDISO solver path.
+  domain: structural_fem
+  language: fortran90
+  implementation: >
+    ~80 000 lines across 17 compilation units. Built here with Intel ifx 2025.3
+    + oneMKL; the shipped project file is Visual Studio / Intel Fortran
+    (hstar.vfproj). No CLI arguments — the run is selected by the `inp` file in
+    the current working directory.
+  scientific_reference_version: >
+    GEHOMadrid Beta 1.0 user manual (Hohai University Institute of Hydraulic
+    Structures, April 2004) plus the companion temperature-field manual;
+    HSTAR source revisions through 2025-07.
+  spatial_dimension: [1, 2, 3]
+  discretisation: >
+    Isoparametric Lagrange finite elements, 26-entry element library
+    (l2 l3 t3 t6 q4 q8 h4 h10 b8 b20 pr6 + two-field *cN variants + beam,
+    steel bar and thin-film elements), Gauss quadrature.
+
+boundary:
+  inside_the_model:
+    - equilibrium / momentum balance of the solid skeleton, static and dynamic
+    - constitutive integration (elastic, Duncan-Chang, Mohr-Coulomb,
+      Drucker-Prager, Cam-Clay, Pastor-Zienkiewicz generalised plasticity,
+      concrete damage, creep and ageing modulus)
+    - Fourier heat conduction with convection surfaces, adiabatic hydration
+      rise and embedded cooling pipes
+    - Darcy seepage, steady and transient, and Biot u-p coupling
+    - contact / joint kinematics (gap, Goodman, thin-layer, MCJOINT)
+    - Newmark and explicit time integration; modal extraction; response spectrum
+    - staged construction and excavation by element birth-death
+    - parameter inversion (Gauss-Newton and MKL trust-region) and FORM
+      reliability
+  outside_the_model:
+    - mesh generation (an external mesher or tools/write_mesh.py supplies
+      `*.cor` / `*.ele`)
+    - reservoir hydrodynamics beyond added mass / compressible acoustic water
+    - hydrological forcing of any kind — HSTAR has no meteorological interface
+    - chemical processes (ASR, sulphate attack, corrosion kinetics)
+    - fracture propagation with remeshing (level-set tracking only)
+  coupling_direction: >
+    Thermal -> stress and seepage -> stress are SEQUENTIAL (one-way) through the
+    binary `*.oit` / `*.oip` intermediates; displacement and pore pressure can
+    alternatively be solved MONOLITHICALLY through the two-field `*cN` elements
+    (`uwcpl` = 1 undrained / 2 drained).
+
+inputs:
+  forcing:
+    - name: gravity_body_force
+      unit: m s-2
+      file: "*.loa"
+      description: >
+        Gravitational acceleration and its direction cosines applied as a body
+        force to the solid continuum; scaled per element group by a time curve.
+    - name: surface_pressure
+      unit: Pa
+      file: "*.loa"
+      description: >
+        Normal pressure on boundary faces of the solid — hydrostatic reservoir
+        load, silt pressure, or any traction. Positive is compression onto the
+        face.
+    - name: nodal_point_load
+      unit: N
+      file: "*.loa"
+      description: Concentrated force applied at named nodes of the mesh.
+    - name: seismic_acceleration_time_history
+      unit: m s-2
+      file: "*.loa (SEISMIC time curve)"
+      description: >
+        Ground acceleration record driving the base of the structural model in
+        a transient dynamic run.
+    - name: ambient_air_temperature
+      unit: degC
+      file: "*.loa (SIN or LINEAR time curve) + *.tem"
+      description: >
+        Air temperature bounding the convection surfaces of the concrete solid,
+        T = a + b*sin(pi*(c*t + d)/180).
+    - name: adiabatic_hydration_rise
+      unit: degC
+      file: "*.loa (DABT time curve)"
+      description: >
+        Adiabatic temperature rise of fresh concrete, theta = a*t/(b + t),
+        acting as an internal heat source in the solid.
+    - name: prescribed_nodal_value
+      unit: "m | degC | m head"
+      file: "*.pre"
+      description: >
+        Dirichlet condition on any degree of freedom — support displacement of
+        the solid, surface temperature of the solid, or piezometric head of the
+        pore water.
+    - name: reservoir_water_level
+      unit: m
+      file: "*.glb (water_level)"
+      description: >
+        Elevation of the reservoir free surface in the mesh datum, driving
+        uplift pressure under the dam base.
+    - name: observed_monitoring_series
+      unit: "m | degC"
+      file: "*.obs"
+      description: >
+        Measured displacement or temperature series at instrument points, used
+        only by the inverse-analysis capability.
+  parameters:
+    - name: youngs_modulus
+      unit: Pa
+      file: "*.mat"
+      description: Elastic modulus of the solid material.
+    - name: poissons_ratio
+      unit: "1"
+      file: "*.mat"
+    - name: mass_density
+      unit: kg m-3
+      file: "*.mat"
+      description: Bulk density of the solid material.
+    - name: thermal_expansion_coefficient
+      unit: degC-1
+      file: "*.mat"
+    - name: thermal_diffusivity
+      unit: m2 day-1
+      file: "*.mat (HEAT/SOLID)"
+      description: >
+        Thermal diffusivity a = lambda/(c*rho) of the solid, per coordinate
+        direction. Expressed per DAY, matching `ditime` in `*.man`.
+    - name: surface_heat_transfer_ratio
+      unit: m day-1
+      file: "*.tem (beta_bar)"
+      description: beta/(c*rho) for a convection surface of the solid.
+    - name: permeability
+      unit: m s-1
+      file: "*.mat (FLUID phase)"
+      description: Darcy permeability of the porous solid skeleton.
+    - name: cohesion
+      unit: Pa
+      file: "*.mat"
+    - name: friction_angle
+      unit: degree
+      file: "*.mat"
+    - name: dilation_angle
+      unit: degree
+      file: "*.mat"
+    - name: joint_normal_stiffness
+      unit: Pa m-1
+      file: "*.glb contact block / *.mat GOODMAN"
+    - name: joint_shear_stiffness
+      unit: Pa m-1
+      file: "*.glb contact block / *.mat GOODMAN"
+    - name: tensile_strength
+      unit: Pa
+      file: "*.mat / *.glb (ftcrack)"
+    - name: creep_compliance_parameters
+      unit: "Pa-1, day-1"
+      file: "*.mat (icreep block)"
+    - name: rayleigh_damping_alpha
+      unit: s-1
+      file: "*.glb group stanza"
+    - name: rayleigh_damping_beta
+      unit: s
+      file: "*.glb group stanza"
+    - name: newmark_gamma
+      unit: "1"
+      file: "*.glb (BEETA1)"
+    - name: newmark_beta
+      unit: "1"
+      file: "*.glb (BEETA2)"
+    - name: theta_time_factor
+      unit: "1"
+      file: "*.glb (THETA1)"
+    - name: time_step
+      unit: "s (dynamics) | day (thermal, creep, staging)"
+      file: "*.man (ditime)"
+    - name: force_convergence_tolerance
+      unit: "1"
+      file: "*.man (toler_force)"
+    - name: strength_reduction_target
+      unit: "1"
+      file: "*.glb (kstab)"
+      description: Target limit-state / safety factor for a stability run.
+
+outputs:
+  - name: displacement_field
+    unit: m
+    validation_rank: 1
+    emitted_in: "*.flavia.res block DISPLACEMENT; *.opw; *.dis"
+    description: >
+      Displacement vector of the solid structural continuum (concrete, rock or
+      soil skeleton) at every mesh node, per output step.
+    observability:
+      comparable_obs_shapes:
+        - dam_displacement_timeseries
+        - point_displacement_survey
+        - structural_deflection_profile
+      determining_metric: max_relative_error
+      secondary_metrics: [rmse, nse, pbias]
+      typical_instruments: [plumb line, inverted plumb line, extensometer,
+                            geodetic survey point, LVDT]
+  - name: stress_field
+    unit: Pa
+    validation_rank: 2
+    emitted_in: "*.flavia.res block STRESS (SIGXX SIGYY SIGXY SIGZZ / 6 in 3-D);
+                 *.gpv at Gauss points; *.oew element averages"
+    description: >
+      Cauchy stress tensor in the solid structural continuum (concrete, rock or
+      soil skeleton), smoothed to nodes and raw at Gauss points.
+    observability:
+      comparable_obs_shapes:
+        - concrete_stress_meter_timeseries
+        - strain_gauge_derived_stress
+      determining_metric: max_relative_error
+      secondary_metrics: [rmse, r]
+      typical_instruments: [embedded concrete stress meter, strain gauge rosette]
+  - name: temperature_field
+    unit: degC
+    validation_rank: 3
+    emitted_in: "*.flavia.res block TEMPERATURE; binary *.oit (nodal delta-T)"
+    description: >
+      Temperature of the solid concrete / rock continuum at every mesh node,
+      including hydration heat and pipe cooling.
+    observability:
+      comparable_obs_shapes:
+        - concrete_temperature_timeseries
+        - embedded_thermometer_profile
+      determining_metric: rmse
+      secondary_metrics: [max_relative_error, nse, r]
+      typical_instruments: [embedded resistance thermometer, thermocouple string]
+  - name: pore_pressure_field
+    unit: Pa
+    validation_rank: 4
+    emitted_in: "*.flavia.res blocks PORE-PRESSURE / Excess_PORE-PRESSURE;
+                 binary *.oip"
+    description: >
+      Pore water pressure within the porous solid skeleton (dam foundation,
+      embankment or rock mass); the excess block reports the departure from the
+      steady state.
+    observability:
+      comparable_obs_shapes:
+        - piezometer_head_timeseries
+        - phreatic_surface_profile
+      determining_metric: rmse
+      secondary_metrics: [nse, pbias]
+      typical_instruments: [vibrating-wire piezometer, standpipe, uplift gauge]
+  - name: joint_relative_displacement
+    unit: m
+    validation_rank: 5
+    emitted_in: "*.ctr (contact gaps); *.gdm (Goodman elements);
+                 *.ojw (joint normal and tangential stress)"
+    description: >
+      Normal opening and tangential slip across a construction joint, contact
+      interface or rock discontinuity in the solid structure.
+    observability:
+      comparable_obs_shapes:
+        - joint_meter_timeseries
+        - crack_opening_displacement
+      determining_metric: max_relative_error
+      secondary_metrics: [rmse]
+      typical_instruments: [joint meter, crack meter, three-directional jointmeter]
+  - name: natural_frequency
+    unit: Hz
+    validation_rank: 6
+    emitted_in: "*.chk (frequency_analysis, type_problem='W')"
+    description: >
+      Natural vibration frequency of the structural solid, optionally including
+      Westergaard added mass from the reservoir water.
+    observability:
+      comparable_obs_shapes:
+        - ambient_vibration_modal_frequency
+        - forced_vibration_test_frequency
+      determining_metric: max_relative_error
+      secondary_metrics: [rmse]
+      typical_instruments: [accelerometer array, ambient vibration survey]
+  - name: support_reaction
+    unit: N
+    validation_rank: 7
+    emitted_in: "*.act (sets with outfix=1)"
+    description: >
+      Reaction force at constrained nodes of the solid structure; its sum is the
+      global equilibrium check against the applied load.
+    observability:
+      comparable_obs_shapes:
+        - anchor_load_cell_timeseries
+        - foundation_reaction_estimate
+      determining_metric: relative_error
+      secondary_metrics: [rmse]
+      typical_instruments: [anchor load cell, jack pressure gauge]
+  - name: safety_factor
+    unit: "1"
+    validation_rank: 8
+    emitted_in: "*.chk (safety_factor when kstab/=0); *.fai"
+    description: >
+      Limit-state or strength-reduction factor of the solid slope / structure,
+      from the kstab limit-state search or the MAT_DE strength-reduction sweep.
+    observability:
+      comparable_obs_shapes:
+        - limit_equilibrium_factor_of_safety
+        - observed_slope_failure_state
+      determining_metric: relative_error
+      secondary_metrics: []
+      typical_instruments: [back-calculated from an observed failure]
+  - name: principal_stress
+    unit: Pa
+    emitted_in: "*.flavia.res block PRINCIPALSTRESS"
+    description: >
+      Principal values of the Cauchy stress tensor in the solid continuum.
+      Derived from stress_field; not independently observable.
+  - name: plastic_strain
+    unit: "1"
+    emitted_in: "*.flavia.res block PLASTICSTRAIN"
+    description: >
+      Accumulated equivalent plastic strain in the solid continuum, marking the
+      yielded zone. Model-internal; no direct instrument.
+  - name: concrete_damage_index
+    unit: "1"
+    emitted_in: "*.gpv (Gauss-point state when material CONCRETE is active)"
+    description: >
+      Ghrib-Tinawi scalar damage variable of the concrete solid, 0 intact to 1
+      fully cracked. Model-internal.
+  - name: bar_axial_force
+    unit: N
+    emitted_in: "*.bar"
+    description: >
+      Axial force and bond slip of embedded reinforcement / anchor bars in the
+      concrete solid.
+  - name: reliability_index
+    unit: "1"
+    emitted_in: "*.chk (relis / sysrelis runs)"
+    description: >
+      Hasofer-Lind first-order reliability index beta of the solid structure
+      for the declared limit state.
+  - name: inverted_parameters
+    unit: "as the inverted property"
+    emitted_in: "*.chk (Bparameter runs); *.obsc"
+    description: >
+      Material parameter vector recovered by fitting the simulated response of
+      the solid to the observed monitoring series.
+  - name: restart_state
+    unit: "n/a"
+    emitted_in: "*.rtt (unformatted)"
+    description: >
+      Complete internal state of the solid model at the last saved step, for
+      restarting. Not a physical quantity.
+
+states:
+  - name: nodal_solution_vector
+    unit: "m | degC | Pa"
+    description: >
+      Current value of every active degree of freedom of the solid model
+      (displacements, rotations, pore pressure, temperature).
+    persisted_in: "*.rtt"
+  - name: gauss_point_state
+    unit: mixed
+    description: >
+      Per-Gauss-point stress, strain, plastic internal variables, damage,
+      saturation, porosity, void ratio and creep memory of the solid.
+    persisted_in: "*.rtt, *.gpv"
+  - name: contact_state
+    unit: "categorical"
+    description: >
+      Open / closed / sliding flag and stored gap of every contact pair in the
+      solid structure; iterated in the outer contact loop.
+    persisted_in: "*.ctt, *.rtt"
+  - name: element_activation_state
+    unit: "boolean"
+    description: >
+      Which element groups are active in the current run block (staged
+      construction / excavation of the solid).
+    persisted_in: "*.glb APPEAR_PROCESS + *.rtt"
+  - name: creep_memory
+    unit: "1"
+    description: >
+      Kelvin-chain internal strains carrying the loading history of the ageing
+      concrete solid.
+    persisted_in: "*.rtt"
+  - name: accumulated_time
+    unit: "s | day"
+    description: Simulated time accumulated across all run blocks.
+    persisted_in: "*.rtt"
+
+influence:
+  - from: youngs_modulus
+    to: displacement_field
+    sign: negative
+    strength: strong
+    note: >
+      Displacement scales as 1/E for a linear elastic solid. This is why an E
+      given in MPa rather than Pa inflates every displacement by 1e6 while the
+      run still converges cleanly.
+  - from: mass_density
+    to: displacement_field
+    sign: positive
+    strength: strong
+    note: through the self-weight body force
+  - from: gravity_body_force
+    to: support_reaction
+    sign: positive
+    strength: strong
+    note: their sum must cancel — the global equilibrium check
+  - from: surface_pressure
+    to: stress_field
+    sign: positive
+    strength: strong
+  - from: thermal_diffusivity
+    to: temperature_field
+    sign: positive
+    strength: strong
+    note: >
+      Controls how fast the interior follows the surface; a value in m2/s while
+      `ditime` counts days over-diffuses by 86400x and flattens the field.
+  - from: adiabatic_hydration_rise
+    to: temperature_field
+    sign: positive
+    strength: strong
+  - from: temperature_field
+    to: stress_field
+    sign: positive
+    strength: strong
+    note: >
+      One-way through `*.oit` and the thermal expansion coefficient; the two
+      passes must share an identical `*.man`.
+  - from: thermal_expansion_coefficient
+    to: stress_field
+    sign: positive
+    strength: strong
+  - from: permeability
+    to: pore_pressure_field
+    sign: negative
+    strength: strong
+    note: higher permeability dissipates excess pressure faster
+  - from: pore_pressure_field
+    to: displacement_field
+    sign: positive
+    strength: moderate
+    note: Terzaghi effective stress; only when uwcpl>0 or outinp=1
+  - from: reservoir_water_level
+    to: support_reaction
+    sign: negative
+    strength: moderate
+    note: uplift reduces the effective self weight of the blocks
+  - from: joint_normal_stiffness
+    to: joint_relative_displacement
+    sign: negative
+    strength: strong
+  - from: cohesion
+    to: safety_factor
+    sign: positive
+    strength: strong
+  - from: friction_angle
+    to: safety_factor
+    sign: positive
+    strength: strong
+  - from: mass_density
+    to: natural_frequency
+    sign: negative
+    strength: strong
+    note: f ~ sqrt(K/M); Westergaard added mass lowers every mode
+  - from: youngs_modulus
+    to: natural_frequency
+    sign: positive
+    strength: strong
+  - from: time_step
+    to: displacement_field
+    sign: none
+    strength: weak
+    note: >
+      Newmark with gamma=0.5, beta=0.25 is unconditionally stable, so a coarse
+      step smears the response rather than blowing it up — a silent error.
+  - from: element_activation_state
+    to: stress_field
+    sign: none
+    strength: strong
+    note: >
+      A group excluded by APPEAR_PROCESS contributes neither stiffness nor
+      weight; the run converges on a structure that is not the one intended.
+  - from: force_convergence_tolerance
+    to: displacement_field
+    sign: none
+    strength: moderate
+    note: >
+      HSTAR does NOT abort on non-convergence — it prints "not converged" and
+      proceeds to the next load step with whatever it has.
+  - from: observed_monitoring_series
+    to: inverted_parameters
+    sign: none
+    strength: strong
+
+safety:
+  - id: silent_non_convergence
+    severity: silent
+    description: >
+      When the iteration cap `miter` is reached without meeting `toler_force`,
+      HSTAR writes "not converged for checki" to `*.chk` and CONTINUES to the
+      next load step. Exit status stays 0 and results are written.
+    guard: >
+      parse_results.py reports `convergence.not_converged`; validate_results.py
+      fails the run_health layer when the final force residual ratio is not
+      small.
+  - id: unit_free_input
+    severity: silent
+    description: >
+      HSTAR performs no unit conversion or range checking on any input. E in
+      MPa, density in t/m3 or diffusivity in m2/s all give a converged run with
+      wrong numbers.
+    guard: >
+      write_materials.py range-checks every parameter; validate_results.py
+      checks |u|max against the model size.
+  - id: list_directed_record_drift
+    severity: fatal_or_silent
+    description: >
+      Every input file is read list-directed. A record with too few tokens makes
+      the reader continue onto the NEXT record; a missing heading record shifts
+      the whole file. The result is either a Fortran EOF/syntax error or a
+      silent misparse.
+    guard: >
+      All `.glb` edits are anchored token replacements on a cloned template;
+      generated files are record-counted after writing.
+  - id: load_never_applied
+    severity: silent
+    description: >
+      An empty face list, a gravity time-curve id of 0, or a group excluded by
+      APPEAR_PROCESS all produce a converged run with no applied load.
+    guard: >
+      write_loads.py refuses an edge-load group with no faces; the equilibrium
+      layer of validate_results.py compares reactions to the applied resultant.
+  - id: oit_step_mismatch
+    severity: silent
+    description: >
+      `*.oit` is a positional binary stream. If the thermal-stress pass uses a
+      different step count from the thermal pass it reads the wrong record and
+      applies the wrong thermal load.
+    guard: write_thermal.py --ref-man compares the two `*.man` files token-wise.
+  - id: no_provenance_in_outputs
+    severity: warning
+    description: >
+      Result files carry no header identifying the case, the parameters or the
+      binary. Reusing a working directory silently mixes runs.
+    guard: >
+      run_hstar.py always runs in a fresh temp workspace and writes
+      run_report.json alongside the collected outputs.
+  - id: windows_only_build_assumptions
+    severity: fatal
+    description: >
+      The shipped project links gidpost.lib, HDF5 and zlib and uses Intel
+      extensions (FORM='BINARY', buffered=/blocksize=). gfortran cannot build it.
+    guard: build_hstar.py --check-only reports missing compiler/MKL/stub.

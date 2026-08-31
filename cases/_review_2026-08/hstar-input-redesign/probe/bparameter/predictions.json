@@ -1,0 +1,63 @@
+{
+  "probe_id": "bparameter-semantics-v1",
+  "question": "open #10 — Bparameter 的完整语义：它从哪读、有哪些分支、决定了什么、既有算例取什么值？",
+  "registered_at": "2026-08-28",
+  "registered_by": "Claude",
+
+  "known_before_registration": [
+    "AST 显示 Bparameter 是路径条件中最外层的开关",
+    "已见守卫形态：Bparameter==-1.or.Bparameter==-2、(Bparameter>0.and.Bparameter<=2).and.balgor<=1",
+    "Bparameter>0 的子树里出现 RCI_REQUEST（MKL 信赖域），疑为参数反演外循环",
+    "Global.f90:753 读 11 项，Bparameter 是第 9 项",
+    "已知 Load.f90:139 与 Fem.f90:2391 用 Bparameter/=0 触发 rewind"
+  ],
+  "not_yet_examined": [
+    "既有算例的 .glb 里 Bparameter 实际取什么值",
+    "通往常规 reader（time_dependent / STATIC_U）的全部路径条件",
+    "Bparameter>0 子树里是否有仅在反演下才读的 deck 记录"
+  ],
+
+  "method": "全部基于 data/deck-ast.json（已 100% 闭合、5/5 验收）与 cases/cases/train* 的 .glb。判定脚本机械执行。",
+
+  "predictions": [
+    {
+      "id": "P1",
+      "claim": "所有采用 11 字段 TYPE_PROBLEM 记录的既有 train* 算例，其 Bparameter 均为 0",
+      "confidence": "medium-high",
+      "falsified_if": "存在任一算例 Bparameter != 0"
+    },
+    {
+      "id": "P2",
+      "claim": "存在通往 time_dependent 或 STATIC_U 的路径，其条件中不含 Bparameter∈{-1,-2} 的要求",
+      "confidence": "medium-high",
+      "falsified_if": "通往这两个 reader 的每一条路径都要求 Bparameter==-1 或 -2",
+      "note": "若被证伪，则与 P1 矛盾（既有算例 Bparameter=0 却能跑），说明 AST 的路径条件有误，须先查 AST"
+    },
+    {
+      "id": "P3",
+      "claim": "存在只在 Bparameter>0 分支下才可达的 deck READ（即反演专属记录）",
+      "confidence": "medium",
+      "falsified_if": "Bparameter>0 分支下的每一条 READ 在别处也可达"
+    },
+    {
+      "id": "P4",
+      "claim": "Bparameter 在全部源码中只被 deck 读入一次，且来自 .glb",
+      "confidence": "high",
+      "falsified_if": "有第二条 READ 读入 Bparameter，或来源不是 .glb"
+    },
+    {
+      "id": "P5",
+      "claim": "守卫中出现的、含 Bparameter 的互异谓词不超过 8 个",
+      "confidence": "medium",
+      "falsified_if": "互异谓词 > 8"
+    },
+    {
+      "id": "P6",
+      "claim": "RCI_REQUEST 只出现在 Bparameter>0 的路径条件之下",
+      "confidence": "medium-high",
+      "falsified_if": "存在含 RCI_REQUEST 的路径其条件不含 Bparameter>0 类谓词"
+    }
+  ],
+
+  "judging_rule": "由 judge.py 机械判定。运行前校验 predictions.json 的 sha256。修仪器合规，改预测不合规。"
+}

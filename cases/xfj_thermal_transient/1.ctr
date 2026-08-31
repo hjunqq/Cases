@@ -1,0 +1,2023 @@
+ *****CONTACT GAPS******
+ total time=   1.00000000000000     
+iblks=    1 iincs=    1 istep=    1 iiter=    2
+ total time=   1.00000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   2.00000000000000     
+iblks=    1 iincs=    1 istep=    2 iiter=    2
+ total time=   2.00000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   3.00000000000000     
+iblks=    1 iincs=    1 istep=    3 iiter=    2
+ total time=   3.00000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   4.00000000000000     
+iblks=    1 iincs=    1 istep=    4 iiter=    2
+ total time=   4.00000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   5.00000000000000     
+iblks=    1 iincs=    1 istep=    5 iiter=    2
+ total time=   5.00000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   6.00000000000000     
+iblks=    1 iincs=    1 istep=    6 iiter=    2
+ total time=   6.00000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   7.00000000000000     
+iblks=    1 iincs=    1 istep=    7 iiter=    2
+ total time=   7.00000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   8.00000000000000     
+iblks=    1 iincs=    1 istep=    8 iiter=    2
+ total time=   8.00000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   9.00000000000000     
+iblks=    1 iincs=    1 istep=    9 iiter=    2
+ total time=   9.00000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   10.0000000000000     
+iblks=    1 iincs=    1 istep=   10 iiter=    2
+ total time=   10.0000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   11.0000000000000     
+iblks=    1 iincs=    1 istep=   11 iiter=    2
+ total time=   11.0000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   12.0000000000000     
+iblks=    1 iincs=    1 istep=   12 iiter=    2
+ total time=   12.0000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   13.0000000000000     
+iblks=    1 iincs=    1 istep=   13 iiter=    2
+ total time=   13.0000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   14.0000000000000     
+iblks=    1 iincs=    1 istep=   14 iiter=    2
+ total time=   14.0000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   15.0000000000000     
+iblks=    1 iincs=    1 istep=   15 iiter=    2
+ total time=   15.0000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   16.0000000000000     
+iblks=    1 iincs=    1 istep=   16 iiter=    2
+ total time=   16.0000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   17.0000000000000     
+iblks=    1 iincs=    1 istep=   17 iiter=    2
+ total time=   17.0000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   18.0000000000000     
+iblks=    1 iincs=    1 istep=   18 iiter=    2
+ total time=   18.0000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   19.0000000000000     
+iblks=    1 iincs=    1 istep=   19 iiter=    2
+ total time=   19.0000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   20.0000000000000     
+iblks=    1 iincs=    1 istep=   20 iiter=    2
+ total time=   20.0000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   21.0000000000000     
+iblks=    1 iincs=    1 istep=   21 iiter=    2
+ total time=   21.0000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   22.0000000000000     
+iblks=    1 iincs=    1 istep=   22 iiter=    2
+ total time=   22.0000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   23.0000000000000     
+iblks=    1 iincs=    1 istep=   23 iiter=    2
+ total time=   23.0000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   24.0000000000000     
+iblks=    1 iincs=    1 istep=   24 iiter=    2
+ total time=   24.0000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   25.0000000000000     
+iblks=    1 iincs=    1 istep=   25 iiter=    2
+ total time=   25.0000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   26.0000000000000     
+iblks=    1 iincs=    1 istep=   26 iiter=    2
+ total time=   26.0000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   27.0000000000000     
+iblks=    1 iincs=    1 istep=   27 iiter=    2
+ total time=   27.0000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   28.0000000000000     
+iblks=    1 iincs=    1 istep=   28 iiter=    2
+ total time=   28.0000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   29.0000000000000     
+iblks=    1 iincs=    1 istep=   29 iiter=    2
+ total time=   29.0000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   30.0000000000000     
+iblks=    1 iincs=    1 istep=   30 iiter=    2
+ total time=   30.0000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   31.0000000000000     
+iblks=    1 iincs=    1 istep=   31 iiter=    2
+ total time=   31.0000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   32.0000000000000     
+iblks=    1 iincs=    1 istep=   32 iiter=    2
+ total time=   32.0000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   33.0000000000000     
+iblks=    1 iincs=    1 istep=   33 iiter=    2
+ total time=   33.0000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   34.0000000000000     
+iblks=    1 iincs=    1 istep=   34 iiter=    2
+ total time=   34.0000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   35.0000000000000     
+iblks=    1 iincs=    1 istep=   35 iiter=    2
+ total time=   35.0000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   36.0000000000000     
+iblks=    1 iincs=    1 istep=   36 iiter=    2
+ total time=   36.0000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   37.0000000000000     
+iblks=    1 iincs=    1 istep=   37 iiter=    2
+ total time=   37.0000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   38.0000000000000     
+iblks=    1 iincs=    1 istep=   38 iiter=    2
+ total time=   38.0000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   39.0000000000000     
+iblks=    1 iincs=    1 istep=   39 iiter=    2
+ total time=   39.0000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   40.0000000000000     
+iblks=    1 iincs=    1 istep=   40 iiter=    2
+ total time=   40.0000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   41.0000000000000     
+iblks=    1 iincs=    1 istep=   41 iiter=    2
+ total time=   41.0000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   42.0000000000000     
+iblks=    1 iincs=    1 istep=   42 iiter=    2
+ total time=   42.0000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   43.0000000000000     
+iblks=    1 iincs=    1 istep=   43 iiter=    2
+ total time=   43.0000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   44.0000000000000     
+iblks=    1 iincs=    1 istep=   44 iiter=    2
+ total time=   44.0000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   45.0000000000000     
+iblks=    1 iincs=    1 istep=   45 iiter=    2
+ total time=   45.0000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   46.0000000000000     
+iblks=    1 iincs=    1 istep=   46 iiter=    2
+ total time=   46.0000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   47.0000000000000     
+iblks=    1 iincs=    1 istep=   47 iiter=    2
+ total time=   47.0000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   48.0000000000000     
+iblks=    1 iincs=    1 istep=   48 iiter=    2
+ total time=   48.0000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   49.0000000000000     
+iblks=    1 iincs=    1 istep=   49 iiter=    2
+ total time=   49.0000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   50.0000000000000     
+iblks=    1 iincs=    1 istep=   50 iiter=    2
+ total time=   50.0000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   51.0000000000000     
+iblks=    1 iincs=    1 istep=   51 iiter=    2
+ total time=   51.0000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   52.0000000000000     
+iblks=    1 iincs=    1 istep=   52 iiter=    2
+ total time=   52.0000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   53.0000000000000     
+iblks=    1 iincs=    1 istep=   53 iiter=    2
+ total time=   53.0000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   54.0000000000000     
+iblks=    1 iincs=    1 istep=   54 iiter=    2
+ total time=   54.0000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   55.0000000000000     
+iblks=    1 iincs=    1 istep=   55 iiter=    2
+ total time=   55.0000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   56.0000000000000     
+iblks=    1 iincs=    1 istep=   56 iiter=    2
+ total time=   56.0000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   57.0000000000000     
+iblks=    1 iincs=    1 istep=   57 iiter=    2
+ total time=   57.0000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   58.0000000000000     
+iblks=    1 iincs=    1 istep=   58 iiter=    2
+ total time=   58.0000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   59.0000000000000     
+iblks=    1 iincs=    1 istep=   59 iiter=    2
+ total time=   59.0000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   60.0000000000000     
+iblks=    1 iincs=    1 istep=   60 iiter=    2
+ total time=   60.0000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   61.0000000000000     
+iblks=    1 iincs=    1 istep=   61 iiter=    2
+ total time=   61.0000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   62.0000000000000     
+iblks=    1 iincs=    1 istep=   62 iiter=    2
+ total time=   62.0000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   63.0000000000000     
+iblks=    1 iincs=    1 istep=   63 iiter=    2
+ total time=   63.0000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   64.0000000000000     
+iblks=    1 iincs=    1 istep=   64 iiter=    2
+ total time=   64.0000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   65.0000000000000     
+iblks=    1 iincs=    1 istep=   65 iiter=    2
+ total time=   65.0000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   66.0000000000000     
+iblks=    1 iincs=    1 istep=   66 iiter=    2
+ total time=   66.0000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   67.0000000000000     
+iblks=    1 iincs=    1 istep=   67 iiter=    2
+ total time=   67.0000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   68.0000000000000     
+iblks=    1 iincs=    1 istep=   68 iiter=    2
+ total time=   68.0000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   69.0000000000000     
+iblks=    1 iincs=    1 istep=   69 iiter=    2
+ total time=   69.0000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   70.0000000000000     
+iblks=    1 iincs=    1 istep=   70 iiter=    2
+ total time=   70.0000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   71.0000000000000     
+iblks=    1 iincs=    1 istep=   71 iiter=    2
+ total time=   71.0000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   72.0000000000000     
+iblks=    1 iincs=    1 istep=   72 iiter=    2
+ total time=   72.0000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   73.0000000000000     
+iblks=    1 iincs=    1 istep=   73 iiter=    2
+ total time=   73.0000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   74.0000000000000     
+iblks=    1 iincs=    1 istep=   74 iiter=    2
+ total time=   74.0000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   75.0000000000000     
+iblks=    1 iincs=    1 istep=   75 iiter=    2
+ total time=   75.0000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   76.0000000000000     
+iblks=    1 iincs=    1 istep=   76 iiter=    2
+ total time=   76.0000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   77.0000000000000     
+iblks=    1 iincs=    1 istep=   77 iiter=    2
+ total time=   77.0000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   78.0000000000000     
+iblks=    1 iincs=    1 istep=   78 iiter=    2
+ total time=   78.0000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   79.0000000000000     
+iblks=    1 iincs=    1 istep=   79 iiter=    2
+ total time=   79.0000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   80.0000000000000     
+iblks=    1 iincs=    1 istep=   80 iiter=    2
+ total time=   80.0000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   81.0000000000000     
+iblks=    1 iincs=    1 istep=   81 iiter=    2
+ total time=   81.0000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   82.0000000000000     
+iblks=    1 iincs=    1 istep=   82 iiter=    2
+ total time=   82.0000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   83.0000000000000     
+iblks=    1 iincs=    1 istep=   83 iiter=    2
+ total time=   83.0000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   84.0000000000000     
+iblks=    1 iincs=    1 istep=   84 iiter=    2
+ total time=   84.0000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   85.0000000000000     
+iblks=    1 iincs=    1 istep=   85 iiter=    2
+ total time=   85.0000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   86.0000000000000     
+iblks=    1 iincs=    1 istep=   86 iiter=    2
+ total time=   86.0000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   87.0000000000000     
+iblks=    1 iincs=    1 istep=   87 iiter=    2
+ total time=   87.0000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   88.0000000000000     
+iblks=    1 iincs=    1 istep=   88 iiter=    2
+ total time=   88.0000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   89.0000000000000     
+iblks=    1 iincs=    1 istep=   89 iiter=    2
+ total time=   89.0000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   90.0000000000000     
+iblks=    1 iincs=    1 istep=   90 iiter=    2
+ total time=   90.0000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   91.0000000000000     
+iblks=    1 iincs=    1 istep=   91 iiter=    2
+ total time=   91.0000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   92.0000000000000     
+iblks=    1 iincs=    1 istep=   92 iiter=    2
+ total time=   92.0000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   93.0000000000000     
+iblks=    1 iincs=    1 istep=   93 iiter=    2
+ total time=   93.0000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   94.0000000000000     
+iblks=    1 iincs=    1 istep=   94 iiter=    2
+ total time=   94.0000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   95.0000000000000     
+iblks=    1 iincs=    1 istep=   95 iiter=    2
+ total time=   95.0000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   96.0000000000000     
+iblks=    1 iincs=    1 istep=   96 iiter=    2
+ total time=   96.0000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   97.0000000000000     
+iblks=    1 iincs=    1 istep=   97 iiter=    2
+ total time=   97.0000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   98.0000000000000     
+iblks=    1 iincs=    1 istep=   98 iiter=    2
+ total time=   98.0000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   99.0000000000000     
+iblks=    1 iincs=    1 istep=   99 iiter=    2
+ total time=   99.0000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   100.000000000000     
+iblks=    1 iincs=    1 istep=  100 iiter=    2
+ total time=   100.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   101.000000000000     
+iblks=    1 iincs=    1 istep=  101 iiter=    2
+ total time=   101.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   102.000000000000     
+iblks=    1 iincs=    1 istep=  102 iiter=    2
+ total time=   102.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   103.000000000000     
+iblks=    1 iincs=    1 istep=  103 iiter=    2
+ total time=   103.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   104.000000000000     
+iblks=    1 iincs=    1 istep=  104 iiter=    2
+ total time=   104.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   105.000000000000     
+iblks=    1 iincs=    1 istep=  105 iiter=    2
+ total time=   105.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   106.000000000000     
+iblks=    1 iincs=    1 istep=  106 iiter=    2
+ total time=   106.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   107.000000000000     
+iblks=    1 iincs=    1 istep=  107 iiter=    2
+ total time=   107.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   108.000000000000     
+iblks=    1 iincs=    1 istep=  108 iiter=    2
+ total time=   108.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   109.000000000000     
+iblks=    1 iincs=    1 istep=  109 iiter=    2
+ total time=   109.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   110.000000000000     
+iblks=    1 iincs=    1 istep=  110 iiter=    2
+ total time=   110.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   111.000000000000     
+iblks=    1 iincs=    1 istep=  111 iiter=    2
+ total time=   111.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   112.000000000000     
+iblks=    1 iincs=    1 istep=  112 iiter=    2
+ total time=   112.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   113.000000000000     
+iblks=    1 iincs=    1 istep=  113 iiter=    2
+ total time=   113.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   114.000000000000     
+iblks=    1 iincs=    1 istep=  114 iiter=    2
+ total time=   114.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   115.000000000000     
+iblks=    1 iincs=    1 istep=  115 iiter=    2
+ total time=   115.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   116.000000000000     
+iblks=    1 iincs=    1 istep=  116 iiter=    2
+ total time=   116.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   117.000000000000     
+iblks=    1 iincs=    1 istep=  117 iiter=    2
+ total time=   117.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   118.000000000000     
+iblks=    1 iincs=    1 istep=  118 iiter=    2
+ total time=   118.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   119.000000000000     
+iblks=    1 iincs=    1 istep=  119 iiter=    2
+ total time=   119.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   120.000000000000     
+iblks=    1 iincs=    1 istep=  120 iiter=    2
+ total time=   120.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   121.000000000000     
+iblks=    1 iincs=    1 istep=  121 iiter=    2
+ total time=   121.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   122.000000000000     
+iblks=    1 iincs=    1 istep=  122 iiter=    2
+ total time=   122.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   123.000000000000     
+iblks=    1 iincs=    1 istep=  123 iiter=    2
+ total time=   123.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   124.000000000000     
+iblks=    1 iincs=    1 istep=  124 iiter=    2
+ total time=   124.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   125.000000000000     
+iblks=    1 iincs=    1 istep=  125 iiter=    2
+ total time=   125.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   126.000000000000     
+iblks=    1 iincs=    1 istep=  126 iiter=    2
+ total time=   126.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   127.000000000000     
+iblks=    1 iincs=    1 istep=  127 iiter=    2
+ total time=   127.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   128.000000000000     
+iblks=    1 iincs=    1 istep=  128 iiter=    2
+ total time=   128.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   129.000000000000     
+iblks=    1 iincs=    1 istep=  129 iiter=    2
+ total time=   129.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   130.000000000000     
+iblks=    1 iincs=    1 istep=  130 iiter=    2
+ total time=   130.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   131.000000000000     
+iblks=    1 iincs=    1 istep=  131 iiter=    2
+ total time=   131.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   132.000000000000     
+iblks=    1 iincs=    1 istep=  132 iiter=    2
+ total time=   132.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   133.000000000000     
+iblks=    1 iincs=    1 istep=  133 iiter=    2
+ total time=   133.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   134.000000000000     
+iblks=    1 iincs=    1 istep=  134 iiter=    2
+ total time=   134.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   135.000000000000     
+iblks=    1 iincs=    1 istep=  135 iiter=    2
+ total time=   135.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   136.000000000000     
+iblks=    1 iincs=    1 istep=  136 iiter=    2
+ total time=   136.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   137.000000000000     
+iblks=    1 iincs=    1 istep=  137 iiter=    2
+ total time=   137.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   138.000000000000     
+iblks=    1 iincs=    1 istep=  138 iiter=    2
+ total time=   138.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   139.000000000000     
+iblks=    1 iincs=    1 istep=  139 iiter=    2
+ total time=   139.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   140.000000000000     
+iblks=    1 iincs=    1 istep=  140 iiter=    2
+ total time=   140.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   141.000000000000     
+iblks=    1 iincs=    1 istep=  141 iiter=    2
+ total time=   141.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   142.000000000000     
+iblks=    1 iincs=    1 istep=  142 iiter=    2
+ total time=   142.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   143.000000000000     
+iblks=    1 iincs=    1 istep=  143 iiter=    2
+ total time=   143.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   144.000000000000     
+iblks=    1 iincs=    1 istep=  144 iiter=    2
+ total time=   144.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   145.000000000000     
+iblks=    1 iincs=    1 istep=  145 iiter=    2
+ total time=   145.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   146.000000000000     
+iblks=    1 iincs=    1 istep=  146 iiter=    2
+ total time=   146.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   147.000000000000     
+iblks=    1 iincs=    1 istep=  147 iiter=    2
+ total time=   147.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   148.000000000000     
+iblks=    1 iincs=    1 istep=  148 iiter=    2
+ total time=   148.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   149.000000000000     
+iblks=    1 iincs=    1 istep=  149 iiter=    2
+ total time=   149.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   150.000000000000     
+iblks=    1 iincs=    1 istep=  150 iiter=    2
+ total time=   150.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   151.000000000000     
+iblks=    1 iincs=    1 istep=  151 iiter=    2
+ total time=   151.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   152.000000000000     
+iblks=    1 iincs=    1 istep=  152 iiter=    2
+ total time=   152.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   153.000000000000     
+iblks=    1 iincs=    1 istep=  153 iiter=    2
+ total time=   153.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   154.000000000000     
+iblks=    1 iincs=    1 istep=  154 iiter=    2
+ total time=   154.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   155.000000000000     
+iblks=    1 iincs=    1 istep=  155 iiter=    2
+ total time=   155.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   156.000000000000     
+iblks=    1 iincs=    1 istep=  156 iiter=    2
+ total time=   156.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   157.000000000000     
+iblks=    1 iincs=    1 istep=  157 iiter=    2
+ total time=   157.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   158.000000000000     
+iblks=    1 iincs=    1 istep=  158 iiter=    2
+ total time=   158.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   159.000000000000     
+iblks=    1 iincs=    1 istep=  159 iiter=    2
+ total time=   159.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   160.000000000000     
+iblks=    1 iincs=    1 istep=  160 iiter=    2
+ total time=   160.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   161.000000000000     
+iblks=    1 iincs=    1 istep=  161 iiter=    2
+ total time=   161.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   162.000000000000     
+iblks=    1 iincs=    1 istep=  162 iiter=    2
+ total time=   162.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   163.000000000000     
+iblks=    1 iincs=    1 istep=  163 iiter=    2
+ total time=   163.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   164.000000000000     
+iblks=    1 iincs=    1 istep=  164 iiter=    2
+ total time=   164.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   165.000000000000     
+iblks=    1 iincs=    1 istep=  165 iiter=    2
+ total time=   165.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   166.000000000000     
+iblks=    1 iincs=    1 istep=  166 iiter=    2
+ total time=   166.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   167.000000000000     
+iblks=    1 iincs=    1 istep=  167 iiter=    2
+ total time=   167.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   168.000000000000     
+iblks=    1 iincs=    1 istep=  168 iiter=    2
+ total time=   168.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   169.000000000000     
+iblks=    1 iincs=    1 istep=  169 iiter=    2
+ total time=   169.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   170.000000000000     
+iblks=    1 iincs=    1 istep=  170 iiter=    2
+ total time=   170.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   171.000000000000     
+iblks=    1 iincs=    1 istep=  171 iiter=    2
+ total time=   171.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   172.000000000000     
+iblks=    1 iincs=    1 istep=  172 iiter=    2
+ total time=   172.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   173.000000000000     
+iblks=    1 iincs=    1 istep=  173 iiter=    2
+ total time=   173.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   174.000000000000     
+iblks=    1 iincs=    1 istep=  174 iiter=    2
+ total time=   174.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   175.000000000000     
+iblks=    1 iincs=    1 istep=  175 iiter=    2
+ total time=   175.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   176.000000000000     
+iblks=    1 iincs=    1 istep=  176 iiter=    2
+ total time=   176.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   177.000000000000     
+iblks=    1 iincs=    1 istep=  177 iiter=    2
+ total time=   177.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   178.000000000000     
+iblks=    1 iincs=    1 istep=  178 iiter=    2
+ total time=   178.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   179.000000000000     
+iblks=    1 iincs=    1 istep=  179 iiter=    2
+ total time=   179.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   180.000000000000     
+iblks=    1 iincs=    1 istep=  180 iiter=    2
+ total time=   180.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   181.000000000000     
+iblks=    1 iincs=    1 istep=  181 iiter=    2
+ total time=   181.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   182.000000000000     
+iblks=    1 iincs=    1 istep=  182 iiter=    2
+ total time=   182.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   183.000000000000     
+iblks=    1 iincs=    1 istep=  183 iiter=    2
+ total time=   183.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   184.000000000000     
+iblks=    1 iincs=    1 istep=  184 iiter=    2
+ total time=   184.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   185.000000000000     
+iblks=    1 iincs=    1 istep=  185 iiter=    2
+ total time=   185.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   186.000000000000     
+iblks=    1 iincs=    1 istep=  186 iiter=    2
+ total time=   186.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   187.000000000000     
+iblks=    1 iincs=    1 istep=  187 iiter=    2
+ total time=   187.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   188.000000000000     
+iblks=    1 iincs=    1 istep=  188 iiter=    2
+ total time=   188.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   189.000000000000     
+iblks=    1 iincs=    1 istep=  189 iiter=    2
+ total time=   189.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   190.000000000000     
+iblks=    1 iincs=    1 istep=  190 iiter=    2
+ total time=   190.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   191.000000000000     
+iblks=    1 iincs=    1 istep=  191 iiter=    2
+ total time=   191.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   192.000000000000     
+iblks=    1 iincs=    1 istep=  192 iiter=    2
+ total time=   192.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   193.000000000000     
+iblks=    1 iincs=    1 istep=  193 iiter=    2
+ total time=   193.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   194.000000000000     
+iblks=    1 iincs=    1 istep=  194 iiter=    2
+ total time=   194.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   195.000000000000     
+iblks=    1 iincs=    1 istep=  195 iiter=    2
+ total time=   195.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   196.000000000000     
+iblks=    1 iincs=    1 istep=  196 iiter=    2
+ total time=   196.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   197.000000000000     
+iblks=    1 iincs=    1 istep=  197 iiter=    2
+ total time=   197.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   198.000000000000     
+iblks=    1 iincs=    1 istep=  198 iiter=    2
+ total time=   198.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   199.000000000000     
+iblks=    1 iincs=    1 istep=  199 iiter=    2
+ total time=   199.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   200.000000000000     
+iblks=    1 iincs=    1 istep=  200 iiter=    2
+ total time=   200.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   201.000000000000     
+iblks=    1 iincs=    1 istep=  201 iiter=    2
+ total time=   201.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   202.000000000000     
+iblks=    1 iincs=    1 istep=  202 iiter=    2
+ total time=   202.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   203.000000000000     
+iblks=    1 iincs=    1 istep=  203 iiter=    2
+ total time=   203.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   204.000000000000     
+iblks=    1 iincs=    1 istep=  204 iiter=    2
+ total time=   204.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   205.000000000000     
+iblks=    1 iincs=    1 istep=  205 iiter=    2
+ total time=   205.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   206.000000000000     
+iblks=    1 iincs=    1 istep=  206 iiter=    2
+ total time=   206.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   207.000000000000     
+iblks=    1 iincs=    1 istep=  207 iiter=    2
+ total time=   207.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   208.000000000000     
+iblks=    1 iincs=    1 istep=  208 iiter=    2
+ total time=   208.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   209.000000000000     
+iblks=    1 iincs=    1 istep=  209 iiter=    2
+ total time=   209.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   210.000000000000     
+iblks=    1 iincs=    1 istep=  210 iiter=    2
+ total time=   210.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   211.000000000000     
+iblks=    1 iincs=    1 istep=  211 iiter=    2
+ total time=   211.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   212.000000000000     
+iblks=    1 iincs=    1 istep=  212 iiter=    2
+ total time=   212.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   213.000000000000     
+iblks=    1 iincs=    1 istep=  213 iiter=    2
+ total time=   213.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   214.000000000000     
+iblks=    1 iincs=    1 istep=  214 iiter=    2
+ total time=   214.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   215.000000000000     
+iblks=    1 iincs=    1 istep=  215 iiter=    2
+ total time=   215.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   216.000000000000     
+iblks=    1 iincs=    1 istep=  216 iiter=    2
+ total time=   216.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   217.000000000000     
+iblks=    1 iincs=    1 istep=  217 iiter=    2
+ total time=   217.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   218.000000000000     
+iblks=    1 iincs=    1 istep=  218 iiter=    2
+ total time=   218.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   219.000000000000     
+iblks=    1 iincs=    1 istep=  219 iiter=    2
+ total time=   219.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   220.000000000000     
+iblks=    1 iincs=    1 istep=  220 iiter=    2
+ total time=   220.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   221.000000000000     
+iblks=    1 iincs=    1 istep=  221 iiter=    2
+ total time=   221.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   222.000000000000     
+iblks=    1 iincs=    1 istep=  222 iiter=    2
+ total time=   222.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   223.000000000000     
+iblks=    1 iincs=    1 istep=  223 iiter=    2
+ total time=   223.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   224.000000000000     
+iblks=    1 iincs=    1 istep=  224 iiter=    2
+ total time=   224.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   225.000000000000     
+iblks=    1 iincs=    1 istep=  225 iiter=    2
+ total time=   225.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   226.000000000000     
+iblks=    1 iincs=    1 istep=  226 iiter=    2
+ total time=   226.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   227.000000000000     
+iblks=    1 iincs=    1 istep=  227 iiter=    2
+ total time=   227.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   228.000000000000     
+iblks=    1 iincs=    1 istep=  228 iiter=    2
+ total time=   228.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   229.000000000000     
+iblks=    1 iincs=    1 istep=  229 iiter=    2
+ total time=   229.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   230.000000000000     
+iblks=    1 iincs=    1 istep=  230 iiter=    2
+ total time=   230.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   231.000000000000     
+iblks=    1 iincs=    1 istep=  231 iiter=    2
+ total time=   231.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   232.000000000000     
+iblks=    1 iincs=    1 istep=  232 iiter=    2
+ total time=   232.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   233.000000000000     
+iblks=    1 iincs=    1 istep=  233 iiter=    2
+ total time=   233.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   234.000000000000     
+iblks=    1 iincs=    1 istep=  234 iiter=    2
+ total time=   234.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   235.000000000000     
+iblks=    1 iincs=    1 istep=  235 iiter=    2
+ total time=   235.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   236.000000000000     
+iblks=    1 iincs=    1 istep=  236 iiter=    2
+ total time=   236.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   237.000000000000     
+iblks=    1 iincs=    1 istep=  237 iiter=    2
+ total time=   237.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   238.000000000000     
+iblks=    1 iincs=    1 istep=  238 iiter=    2
+ total time=   238.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   239.000000000000     
+iblks=    1 iincs=    1 istep=  239 iiter=    2
+ total time=   239.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   240.000000000000     
+iblks=    1 iincs=    1 istep=  240 iiter=    2
+ total time=   240.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   241.000000000000     
+iblks=    1 iincs=    1 istep=  241 iiter=    2
+ total time=   241.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   242.000000000000     
+iblks=    1 iincs=    1 istep=  242 iiter=    2
+ total time=   242.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   243.000000000000     
+iblks=    1 iincs=    1 istep=  243 iiter=    2
+ total time=   243.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   244.000000000000     
+iblks=    1 iincs=    1 istep=  244 iiter=    2
+ total time=   244.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   245.000000000000     
+iblks=    1 iincs=    1 istep=  245 iiter=    2
+ total time=   245.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   246.000000000000     
+iblks=    1 iincs=    1 istep=  246 iiter=    2
+ total time=   246.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   247.000000000000     
+iblks=    1 iincs=    1 istep=  247 iiter=    2
+ total time=   247.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   248.000000000000     
+iblks=    1 iincs=    1 istep=  248 iiter=    2
+ total time=   248.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   249.000000000000     
+iblks=    1 iincs=    1 istep=  249 iiter=    2
+ total time=   249.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   250.000000000000     
+iblks=    1 iincs=    1 istep=  250 iiter=    2
+ total time=   250.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   251.000000000000     
+iblks=    1 iincs=    1 istep=  251 iiter=    2
+ total time=   251.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   252.000000000000     
+iblks=    1 iincs=    1 istep=  252 iiter=    2
+ total time=   252.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   253.000000000000     
+iblks=    1 iincs=    1 istep=  253 iiter=    2
+ total time=   253.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   254.000000000000     
+iblks=    1 iincs=    1 istep=  254 iiter=    2
+ total time=   254.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   255.000000000000     
+iblks=    1 iincs=    1 istep=  255 iiter=    2
+ total time=   255.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   256.000000000000     
+iblks=    1 iincs=    1 istep=  256 iiter=    2
+ total time=   256.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   257.000000000000     
+iblks=    1 iincs=    1 istep=  257 iiter=    2
+ total time=   257.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   258.000000000000     
+iblks=    1 iincs=    1 istep=  258 iiter=    2
+ total time=   258.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   259.000000000000     
+iblks=    1 iincs=    1 istep=  259 iiter=    2
+ total time=   259.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   260.000000000000     
+iblks=    1 iincs=    1 istep=  260 iiter=    2
+ total time=   260.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   261.000000000000     
+iblks=    1 iincs=    1 istep=  261 iiter=    2
+ total time=   261.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   262.000000000000     
+iblks=    1 iincs=    1 istep=  262 iiter=    2
+ total time=   262.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   263.000000000000     
+iblks=    1 iincs=    1 istep=  263 iiter=    2
+ total time=   263.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   264.000000000000     
+iblks=    1 iincs=    1 istep=  264 iiter=    2
+ total time=   264.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   265.000000000000     
+iblks=    1 iincs=    1 istep=  265 iiter=    2
+ total time=   265.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   266.000000000000     
+iblks=    1 iincs=    1 istep=  266 iiter=    2
+ total time=   266.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   267.000000000000     
+iblks=    1 iincs=    1 istep=  267 iiter=    2
+ total time=   267.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   268.000000000000     
+iblks=    1 iincs=    1 istep=  268 iiter=    2
+ total time=   268.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   269.000000000000     
+iblks=    1 iincs=    1 istep=  269 iiter=    2
+ total time=   269.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   270.000000000000     
+iblks=    1 iincs=    1 istep=  270 iiter=    2
+ total time=   270.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   271.000000000000     
+iblks=    1 iincs=    1 istep=  271 iiter=    2
+ total time=   271.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   272.000000000000     
+iblks=    1 iincs=    1 istep=  272 iiter=    2
+ total time=   272.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   273.000000000000     
+iblks=    1 iincs=    1 istep=  273 iiter=    2
+ total time=   273.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   274.000000000000     
+iblks=    1 iincs=    1 istep=  274 iiter=    2
+ total time=   274.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   275.000000000000     
+iblks=    1 iincs=    1 istep=  275 iiter=    2
+ total time=   275.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   276.000000000000     
+iblks=    1 iincs=    1 istep=  276 iiter=    2
+ total time=   276.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   277.000000000000     
+iblks=    1 iincs=    1 istep=  277 iiter=    2
+ total time=   277.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   278.000000000000     
+iblks=    1 iincs=    1 istep=  278 iiter=    2
+ total time=   278.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   279.000000000000     
+iblks=    1 iincs=    1 istep=  279 iiter=    2
+ total time=   279.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   280.000000000000     
+iblks=    1 iincs=    1 istep=  280 iiter=    2
+ total time=   280.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   281.000000000000     
+iblks=    1 iincs=    1 istep=  281 iiter=    2
+ total time=   281.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   282.000000000000     
+iblks=    1 iincs=    1 istep=  282 iiter=    2
+ total time=   282.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   283.000000000000     
+iblks=    1 iincs=    1 istep=  283 iiter=    2
+ total time=   283.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   284.000000000000     
+iblks=    1 iincs=    1 istep=  284 iiter=    2
+ total time=   284.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   285.000000000000     
+iblks=    1 iincs=    1 istep=  285 iiter=    2
+ total time=   285.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   286.000000000000     
+iblks=    1 iincs=    1 istep=  286 iiter=    2
+ total time=   286.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   287.000000000000     
+iblks=    1 iincs=    1 istep=  287 iiter=    2
+ total time=   287.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   288.000000000000     
+iblks=    1 iincs=    1 istep=  288 iiter=    2
+ total time=   288.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)
+ *****CONTACT GAPS******
+ total time=   289.000000000000     
+iblks=    1 iincs=    1 istep=  289 iiter=    2
+ total time=   289.000000000000     
+ BLOCK RIGID MOVEMENT
+ igaps,ipairs,pairnod(1:2),state,,ctforce(1:ndimn),gap,dxyz(1:ndimn),kxyz(1:ndim
+ n)

@@ -1,0 +1,1153 @@
+{
+  "type_problem": "Q",
+  "solver": "PARDISO",
+  "ndimn": 3,
+  "nblks": 2,
+  "groups": [
+    {
+      "name": "Foundation",
+      "nelgroup": 150,
+      "matno": 1,
+      "nnode": 8,
+      "elem_type": "B8",
+      "elem_name": "B8",
+      "elem_index": 9,
+      "class": "CO",
+      "nrfields": 1,
+      "field": "U",
+      "special": "ST",
+      "sptype": "PE",
+      "type_algo": 0,
+      "type_stiff": 1,
+      "type_ecoint": 1,
+      "ilayer": 1,
+      "elcod_local": 0.0,
+      "group_inf": 0,
+      "uplift_ic": 0,
+      "liquj": 0,
+      "type_mass": [
+        0
+      ],
+      "alfa": 0.0,
+      "beta": 0.0,
+      "order_time": [
+        0,
+        0
+      ],
+      "fields": [
+        {
+          "nfdof": 3,
+          "listdof": [
+            1,
+            2,
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "name": "DamConcrete",
+      "nelgroup": 70,
+      "matno": 2,
+      "nnode": 8,
+      "elem_type": "B8",
+      "elem_name": "B8",
+      "elem_index": 9,
+      "class": "CO",
+      "nrfields": 1,
+      "field": "U",
+      "special": "ST",
+      "sptype": "PE",
+      "type_algo": 0,
+      "type_stiff": 1,
+      "type_ecoint": 1,
+      "ilayer": 1,
+      "elcod_local": 0.0,
+      "group_inf": 0,
+      "uplift_ic": 0,
+      "liquj": 0,
+      "type_mass": [
+        0
+      ],
+      "alfa": 0.0,
+      "beta": 0.0,
+      "order_time": [
+        0,
+        0
+      ],
+      "fields": [
+        {
+          "nfdof": 3,
+          "listdof": [
+            1,
+            2,
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Interface",
+      "nelgroup": 10,
+      "matno": 3,
+      "nnode": 8,
+      "elem_type": "B8",
+      "elem_name": "B8",
+      "elem_index": 9,
+      "class": "CO",
+      "nrfields": 1,
+      "field": "U",
+      "special": "ST",
+      "sptype": "PE",
+      "type_algo": 0,
+      "type_stiff": 1,
+      "type_ecoint": 1,
+      "ilayer": 1,
+      "elcod_local": 0.0,
+      "group_inf": 0,
+      "uplift_ic": 0,
+      "liquj": 0,
+      "type_mass": [
+        0
+      ],
+      "alfa": 0.0,
+      "beta": 0.0,
+      "order_time": [
+        0,
+        0
+      ],
+      "fields": [
+        {
+          "nfdof": 3,
+          "listdof": [
+            1,
+            2,
+            3
+          ]
+        }
+      ]
+    }
+  ],
+  "materials": [
+    {
+      "id": 1,
+      "type": "ELASTIC",
+      "density": 2300.0,
+      "E": 30000000000.0,
+      "nu": 0.18,
+      "alfa": 1e-05
+    },
+    {
+      "id": 2,
+      "type": "CONCRETE",
+      "density": 2500.0,
+      "E": 25000000000.0,
+      "nu": 0.167
+    },
+    {
+      "id": 3,
+      "type": "ELASTIC",
+      "density": 2300.0,
+      "E": 30000000000.0,
+      "nu": 0.18,
+      "alfa": 1e-05
+    }
+  ],
+  "blocks": {
+    "appear": [
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        1,
+        1,
+        1
+      ]
+    ],
+    "gravity": [
+      9.81,
+      0.0,
+      0.0,
+      -1.0,
+      0.0,
+      0.0,
+      -1.0
+    ],
+    "increments": [
+      [
+        {
+          "miter": 20,
+          "ditime": 1.0,
+          "noutn": 1,
+          "noutf": 1,
+          "nstep": 1,
+          "inc_step": 1,
+          "nresta": 1,
+          "nmcon": 0,
+          "nbasef": 0
+        }
+      ],
+      [
+        {
+          "miter": 20,
+          "ditime": 1.0,
+          "noutn": 1,
+          "noutf": 1,
+          "nstep": 1,
+          "inc_step": 1,
+          "nresta": 1,
+          "nmcon": 0,
+          "nbasef": 0
+        }
+      ]
+    ],
+    "matno_process": [
+      [
+        1,
+        2,
+        3
+      ],
+      [
+        1,
+        2,
+        3
+      ]
+    ],
+    "force_process": [
+      0,
+      0,
+      0
+    ],
+    "average_appear": [
+      2,
+      2,
+      2
+    ],
+    "earthquake_curve": [
+      0,
+      0,
+      0
+    ],
+    "time_curve_for_each_group": [
+      1,
+      1,
+      1
+    ]
+  },
+  "boundary": {
+    "fixsets": [
+      {
+        "dof": 1,
+        "nodes": [
+          1,
+          2,
+          3,
+          5,
+          6,
+          9,
+          13,
+          16,
+          17,
+          28,
+          31,
+          33,
+          46,
+          48,
+          50,
+          69,
+          72,
+          77,
+          397,
+          398,
+          399,
+          400,
+          401,
+          402,
+          403,
+          404,
+          405,
+          406,
+          407,
+          408,
+          409,
+          410,
+          411,
+          412,
+          413,
+          414
+        ],
+        "value": 0.0,
+        "time_curve": 1,
+        "jfixvar": 0,
+        "f5": 0,
+        "tfixvar": 0.0,
+        "gamawx": 0.0,
+        "nextr": 0
+      },
+      {
+        "dof": 3,
+        "nodes": [
+          1,
+          2,
+          3,
+          4,
+          7,
+          8,
+          14,
+          15,
+          18,
+          29,
+          30,
+          32,
+          47,
+          49,
+          51,
+          67,
+          73,
+          78,
+          100,
+          101,
+          102,
+          118,
+          119,
+          120,
+          139,
+          140,
+          141,
+          166,
+          167,
+          168,
+          191,
+          193,
+          195,
+          229,
+          230,
+          231,
+          274,
+          275,
+          276,
+          313,
+          314,
+          315,
+          379,
+          380,
+          381,
+          397,
+          398,
+          399
+        ],
+        "value": 0.0,
+        "time_curve": 1,
+        "jfixvar": 0,
+        "f5": 0,
+        "tfixvar": 0.0,
+        "gamawx": 0.0,
+        "nextr": 0
+      },
+      {
+        "dof": 2,
+        "nodes": [
+          3,
+          8,
+          9,
+          12,
+          17,
+          18,
+          23,
+          24,
+          27,
+          32,
+          33,
+          38,
+          39,
+          44,
+          45,
+          50,
+          51,
+          56,
+          57,
+          60,
+          65,
+          66,
+          75,
+          76,
+          77,
+          78,
+          83,
+          84,
+          89,
+          90,
+          93,
+          98,
+          99,
+          102,
+          105,
+          108,
+          113,
+          114,
+          117,
+          120,
+          125,
+          126,
+          129,
+          132,
+          135,
+          138,
+          141,
+          146,
+          147,
+          150,
+          156,
+          159,
+          165,
+          168,
+          171,
+          174,
+          177,
+          180,
+          189,
+          195,
+          198,
+          204,
+          207,
+          210,
+          219,
+          231,
+          234,
+          237,
+          240,
+          249,
+          258,
+          273,
+          276,
+          279,
+          284,
+          291,
+          297,
+          309,
+          315,
+          318,
+          330,
+          345,
+          366,
+          378,
+          381,
+          384,
+          387,
+          390,
+          393,
+          396,
+          399,
+          402,
+          405,
+          408,
+          411,
+          414,
+          417,
+          420,
+          423,
+          426,
+          429,
+          432,
+          1,
+          4,
+          5,
+          10,
+          13,
+          14,
+          19,
+          20,
+          25,
+          28,
+          29,
+          34,
+          35,
+          40,
+          41,
+          46,
+          47,
+          52,
+          53,
+          58,
+          61,
+          62,
+          67,
+          68,
+          69,
+          70,
+          79,
+          80,
+          85,
+          86,
+          91,
+          94,
+          95,
+          100,
+          103,
+          106,
+          109,
+          110,
+          115,
+          118,
+          121,
+          122,
+          127,
+          130,
+          133,
+          136,
+          139,
+          142,
+          143,
+          148,
+          154,
+          157,
+          163,
+          166,
+          169,
+          172,
+          175,
+          178,
+          187,
+          191,
+          196,
+          202,
+          205,
+          208,
+          217,
+          229,
+          232,
+          235,
+          238,
+          247,
+          255,
+          270,
+          274,
+          277,
+          280,
+          289,
+          295,
+          307,
+          313,
+          316,
+          328,
+          343,
+          362,
+          376,
+          379,
+          382,
+          385,
+          388,
+          391,
+          394,
+          397,
+          400,
+          403,
+          406,
+          409,
+          412,
+          415,
+          418,
+          421,
+          424,
+          427,
+          430
+        ],
+        "value": 0.0,
+        "time_curve": 1,
+        "jfixvar": 0,
+        "f5": 0,
+        "tfixvar": 0.0,
+        "gamawx": 0.0,
+        "nextr": 0
+      }
+    ],
+    "nline": 300
+  },
+  "added_mass": {
+    "icaddmass": 0,
+    "swlifs2006": 50.0,
+    "water_level": 50.0,
+    "ifswater": 3,
+    "ifsgravity": 9.8,
+    "absorb": 0.6,
+    "alfa_p4": 10.0,
+    "stiff_p4": 1e+20
+  },
+  "mif": {
+    "ntrans": 0,
+    "nlaymif": 0,
+    "epsMIFb": 1.0,
+    "gamaMIF": 0.02,
+    "ifixvar0_inpb": 2,
+    "camif": 1980.0,
+    "dxmif": 25.0
+  },
+  "gid": [
+    1,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "res": [
+    1,
+    1,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "newmark": [
+    0.5,
+    0.25,
+    1.0
+  ],
+  "glb_rows": {
+    "header": {
+      "npoinb": "432",
+      "nmats": "3",
+      "outplot": "GIDR",
+      "kstab": "0.0",
+      "mat_curve": "0",
+      "level_set_problem": "0",
+      "ljdp": "0",
+      "stab_matde": "99999",
+      "ntlink": "0",
+      "meshc": "0",
+      "rmesh": "0"
+    },
+    "run_flags": {
+      "ninit": 0,
+      "kinit": 0,
+      "winit": 0,
+      "nlinks": 0,
+      "nonsym": 0,
+      "outinp": 0,
+      "outintr": 0,
+      "outintw": 0,
+      "neuman": 0,
+      "equvs": 0,
+      "block_stab": 0,
+      "nbackf": 0,
+      "nbspring": 0,
+      "ebody": 0,
+      "outind": 0,
+      "nbackdt": 0,
+      "ninistn": 0
+    },
+    "type_row": {
+      "type_load": "LOAD",
+      "stabpw": "0",
+      "nlayer": "0",
+      "kglb": "0",
+      "state_change": "0",
+      "bparameter": "0",
+      "balgor": "0",
+      "upliftin": "0"
+    },
+    "counts": [
+      "1",
+      "1",
+      "1",
+      "1",
+      "0",
+      "0",
+      "1",
+      "0",
+      "1",
+      "0",
+      "0"
+    ],
+    "hdam": [
+      "0.000",
+      "0.000"
+    ],
+    "water_level": [
+      "-99.000",
+      "-99.000"
+    ],
+    "modf_dis_blocks": [
+      "0",
+      "0"
+    ],
+    "uinitial": [
+      "0",
+      "1"
+    ],
+    "bond": {
+      "ftcrack": "1.500E+06",
+      "coefMpa": "1.0e6",
+      "ikindks": 3,
+      "doubsig": 2,
+      "ktan1": "1.0e8",
+      "ktan2": "1.0e8",
+      "nlocalbeam": 0,
+      "ndimnrt": 0,
+      "listglocbeam": [],
+      "lelenrt": []
+    }
+  },
+  "type_nl": 5,
+  "mat_raw": {
+    "nmats": 3,
+    "prelude": [
+      " material property curves",
+      "  0",
+      "  10",
+      "COMMENT",
+      "COMMENT",
+      "COMMENT",
+      "COMMENT",
+      "COMMENT",
+      "COMMENT",
+      "COMMENT",
+      "COMMENT",
+      "COMMENT",
+      "COMMENT",
+      " nmats",
+      "  3"
+    ],
+    "blocks": [
+      [
+        "     material_serial         1",
+        "          MECHANICAL           SOLID     1",
+        "  1",
+        "               SOLID",
+        "ELASTIC_ISOTROPIC       2.300E+03       1.000E+00       1.000E+00       3.000E+10       1.800E-01       1.000E-05  0  0  0",
+        "  0  0       1.000E+03"
+      ],
+      [
+        "     material_serial         2",
+        "          MECHANICAL           SOLID     2",
+        "  1",
+        "               SOLID",
+        "CONCRETE       2.500E+03       1.000E+00       1.000E+00       2.500E+10       1.670E-01       1.000E-05  0  0  0",
+        "  0  0  0       1.000E+03",
+        "  0.0132  0.1239  0.7469  0.2456       1.700E+07  0.10294  67.0  0.619  5  0  0  3  2  2.723  0"
+      ],
+      [
+        "     material_serial         3",
+        "          MECHANICAL           SOLID     3",
+        "  1",
+        "               SOLID",
+        "ELASTIC_ISOTROPIC       2.300E+03       1.000E+00       1.000E+00       3.000E+10       1.800E-01       1.000E-05  0  0  0",
+        "  0  0       1.000E+03"
+      ]
+    ]
+  },
+  "nmats": 3,
+  "contact_raw": [
+    "ngaps ngapb ctt_pe miter_bt torbt iblkbt nonsbt xlwsol method_gapi miter_state type_solver_ctt restart_ctt damp_ctt istatec",
+    "  0  0  1  500  1.0E-05  1  0  0  0  1  PROFILE  0  0.0  1"
+  ],
+  "nrt_raw": [
+    " The interpolation groups: transgroup",
+    " ntransnode and translg for each transgroup",
+    "       0"
+  ],
+  "tem_raw": [
+    " temperature prescribed data",
+    "  0",
+    " surface convection edges (nedge)",
+    "  0",
+    " surface convection (type 2)",
+    " surface list (1:nsurf)",
+    "  0",
+    " pipe cooling info",
+    " algo_pipe=3",
+    "  0  3",
+    "",
+    "  0",
+    "  0",
+    "  0",
+    "  0",
+    "  0",
+    "  0",
+    "  0",
+    "  0",
+    "  0",
+    "  0",
+    "  0",
+    "  0",
+    "  0",
+    "  0",
+    "  0",
+    "  0",
+    "  0",
+    "  0",
+    "  0",
+    "  0"
+  ],
+  "mdofn": 3,
+  "lmdofn": [
+    1,
+    1,
+    1
+  ],
+  "order_time_mdofn": [
+    0,
+    0,
+    0
+  ],
+  "time_curves": [
+    {
+      "type": "LINEAR",
+      "nline": 2,
+      "times": [
+        0.0,
+        1.0
+      ],
+      "values": [
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "type": "LINEAR",
+      "nline": 2,
+      "times": [
+        0.0,
+        1.0
+      ],
+      "values": [
+        1.0,
+        3.0
+      ]
+    }
+  ],
+  "edge_definitions": [
+    {
+      "sedge": 30,
+      "nnode": 4,
+      "index": 5,
+      "vdimn": 0,
+      "rows": [
+        [
+          1,
+          430,
+          250,
+          251,
+          431,
+          155
+        ],
+        [
+          2,
+          431,
+          251,
+          252,
+          432,
+          160
+        ],
+        [
+          3,
+          250,
+          262,
+          263,
+          251,
+          165
+        ],
+        [
+          4,
+          251,
+          263,
+          264,
+          252,
+          170
+        ],
+        [
+          5,
+          262,
+          286,
+          287,
+          263,
+          175
+        ],
+        [
+          6,
+          263,
+          287,
+          288,
+          264,
+          180
+        ],
+        [
+          7,
+          286,
+          301,
+          302,
+          287,
+          185
+        ],
+        [
+          8,
+          287,
+          302,
+          303,
+          288,
+          190
+        ],
+        [
+          9,
+          301,
+          340,
+          341,
+          302,
+          195
+        ],
+        [
+          10,
+          302,
+          341,
+          342,
+          303,
+          200
+        ],
+        [
+          11,
+          359,
+          373,
+          374,
+          360,
+          201
+        ],
+        [
+          12,
+          360,
+          374,
+          375,
+          364,
+          206
+        ],
+        [
+          13,
+          340,
+          359,
+          360,
+          341,
+          211
+        ],
+        [
+          14,
+          341,
+          360,
+          364,
+          342,
+          216
+        ],
+        [
+          15,
+          431,
+          236,
+          235,
+          430,
+          221
+        ],
+        [
+          16,
+          432,
+          237,
+          236,
+          431,
+          226
+        ],
+        [
+          17,
+          431,
+          236,
+          235,
+          430,
+          221
+        ],
+        [
+          18,
+          235,
+          205,
+          427,
+          430,
+          221
+        ],
+        [
+          19,
+          205,
+          175,
+          424,
+          427,
+          222
+        ],
+        [
+          20,
+          175,
+          157,
+          421,
+          424,
+          223
+        ],
+        [
+          21,
+          157,
+          136,
+          418,
+          421,
+          224
+        ],
+        [
+          22,
+          124,
+          416,
+          415,
+          121,
+          225
+        ],
+        [
+          23,
+          136,
+          121,
+          415,
+          418,
+          225
+        ],
+        [
+          24,
+          432,
+          237,
+          236,
+          431,
+          226
+        ],
+        [
+          25,
+          432,
+          429,
+          207,
+          237,
+          226
+        ],
+        [
+          26,
+          429,
+          426,
+          177,
+          207,
+          227
+        ],
+        [
+          27,
+          426,
+          423,
+          159,
+          177,
+          228
+        ],
+        [
+          28,
+          423,
+          420,
+          138,
+          159,
+          229
+        ],
+        [
+          29,
+          126,
+          417,
+          416,
+          124,
+          230
+        ],
+        [
+          30,
+          420,
+          417,
+          126,
+          138,
+          230
+        ]
+      ]
+    }
+  ],
+  "edge_loads": [
+    {
+      "counts": [
+        0,
+        0
+      ],
+      "rows": []
+    },
+    {
+      "counts": [
+        30,
+        2
+      ],
+      "rows": [
+        {
+          "b0": 1,
+          "b1": 16,
+          "time_curve": 1,
+          "water": 3,
+          "extra": 0,
+          "values": [
+            190.0,
+            0.0,
+            0.0,
+            190.0,
+            9800.0
+          ]
+        },
+        {
+          "b0": 17,
+          "b1": 30,
+          "time_curve": 1,
+          "water": 2,
+          "extra": 0,
+          "values": [
+            0.0,
+            200.0,
+            50.0,
+            10.0,
+            9800.0
+          ]
+        }
+      ]
+    }
+  ],
+  "runblks": 2,
+  "opr": [
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "tem_pipe": [
+    0,
+    3
+  ]
+}

@@ -1,0 +1,150 @@
+ irecover=           0
+ ikind=          15 nr_intrules=           4
+ igroup=           1 tvol=   787.500001278590     
+ igroup=           1 tne=         450
+ igroup=           2 tvol=   18999.9999999999     
+ igroup=           2 tne=        2562
+ ****** ntotv= ******        5410
+ time: 23:20:45
+ in modf_element_lib
+ jgroup=           1 kinit_g=           0
+ jgroup=           2 kinit_g=           0
+ iblks=           1 runblks=           2
+ iblks=           1
+ time: 23:20:45
+ ninit=           0 iblks=           1 restart=           0
+ ikindks=           0
+ time(solve): 23:20:45
+ No. of equations        =        1012
+ Max half band width     =          64
+ length half stiff matrix=       37762
+ time(solve_set): 23:20:45
+ time(solve_pcg): 23:20:45
+ Increment step=           1
+ cwater=           0 delgroup=           0
+ force_external***,edge_load_group=           0
+ body force
+ interia force***
+ contact_state********************
+ in predict
+igroup=    1 ifield=1 ikh=1 ielem=     1 order_time=0  coef= 1.00000
+     0.12277E+11    -0.39992E+10    -0.68436E+10    -0.13241E+10    -0.61249E+10     0.40100E+10     0.69129E+09     0.13134E+10
+    -0.39992E+10     0.23006E+11     0.13456E+10    -0.20980E+11     0.40100E+10    -0.11461E+11    -0.13564E+10     0.94347E+10
+    -0.68436E+10     0.13456E+10     0.12431E+11     0.40423E+10     0.64167E+09    -0.13565E+10    -0.62295E+10    -0.40315E+10
+    -0.13241E+10    -0.20980E+11     0.40423E+10     0.23361E+11     0.13133E+10     0.93416E+10    -0.40315E+10    -0.11723E+11
+    -0.61249E+10     0.40100E+10     0.64167E+09     0.13133E+10     0.12327E+11    -0.39992E+10    -0.68436E+10    -0.13241E+10
+     0.40100E+10    -0.11461E+11    -0.13565E+10     0.93416E+10    -0.39992E+10     0.23099E+11     0.13456E+10    -0.20980E+11
+     0.69129E+09    -0.13564E+10    -0.62295E+10    -0.40315E+10    -0.68436E+10     0.13456E+10     0.12382E+11     0.40422E+10
+     0.13134E+10     0.94347E+10    -0.40315E+10    -0.11723E+11    -0.13241E+10    -0.20980E+11     0.40422E+10     0.23268E+11
+ residu_f1
+ time: 23:20:45
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,   1.00000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           1 iiter=           1
+ resid=   66992873.4350763      retot=   9641234.31358768     
+ratio for residu norm= 0.6949E+01
+ max_refor=   11695507.4558350      max_tofor=   214050.439866240     
+ratio for residu maxm= 0.5464E+02
+ time: 23:20:45
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,   1.00000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           1 iiter=           2
+ resid=   75851191.2959527      retot=   9641234.31358768     
+ratio for residu norm= 0.7867E+01
+ max_refor=   14222562.8191238      max_tofor=   214050.439866240     
+ratio for residu maxm= 0.6644E+02
+ time: 23:20:45
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,   1.00000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           1 iiter=           3
+ resid=   79506861.7044059      retot=   9641234.31358768     
+ratio for residu norm= 0.8247E+01
+ max_refor=   11997433.8780617      max_tofor=   214050.439866240     
+ratio for residu maxm= 0.5605E+02
+ time: 23:20:45
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,   1.00000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           1 iiter=           4
+ resid=   90748126.2790472      retot=   9641234.31358768     
+ratio for residu norm= 0.9413E+01
+ max_refor=   11692151.0177351      max_tofor=   214050.439866240     
+ratio for residu maxm= 0.5462E+02
+ time: 23:20:45
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,   1.00000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           1 iiter=           5
+ resid=   109016220.084571      retot=   9641234.31358768     
+ratio for residu norm= 0.1131E+02
+ max_refor=   22170737.4360582      max_tofor=   214050.439866240     
+ratio for residu maxm= 0.1036E+03
+ contact_state********************
+ irecover=           0
+ iblks=           2 runblks=           2
+ iblks=           2
+ time: 23:20:45
+ ninit=           0 iblks=           2 restart=           0
+ ikindks=           0
+ time(solve): 23:20:45
+ No. of equations        =        5277
+ Max half band width     =         254
+ length half stiff matrix=      573638
+ time(solve_set): 23:20:45
+ time(solve_pcg): 23:20:45
+ Increment step=           1
+ cwater=           0 delgroup=           1
+ force_external***,edge_load_group=          33
+ body force
+ interia force***
+ contact_state********************
+ in predict
+ residu_f1
+ time: 23:20:45
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,   2.00000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           2 iincs=           1 istep=           1 iiter=           1
+ resid=  2.251284234072056E-005 retot=   58470436.2344321     
+ratio for residu norm= 0.3850E-12
+ max_refor=  4.706962499767542E-006 max_tofor=   7473333.87970933     
+ratio for residu maxm= 0.6298E-12
+ 
+               Convergence check for displacement
+ max_tatf=  0.119507785502093      max_itif=  0.119507785502093     
+ iiter=           1 tatfn=   1.17650863469810      itifn=
+   1.17650863469810     
+ratio for norm= 0.1000E+01
+ max_tatf=  0.119507785502093      max_itif=  0.119507785502093     
+ratio for maxm= 0.1000E+01
+                    not converged for checki=           1
+ time: 23:20:45
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,   2.00000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           2 iincs=           1 istep=           1 iiter=           2
+ resid=  5.957958097542808E-006 retot=   58470436.2344337     
+ratio for residu norm= 0.1019E-12
+ max_refor=  1.577514922246337E-006 max_tofor=   7473333.87970994     
+ratio for residu maxm= 0.2111E-12
+ 
+               Convergence check for displacement
+ max_tatf=  0.119507785502315      max_itif=  2.223720682904573E-013
+ iiter=           2 tatfn=   1.17650863470047      itifn=
+  2.425701502491294E-012
+ratio for norm= 0.2062E-11
+ max_tatf=  0.119507785502315      max_itif=  2.223720682904573E-013
+ratio for maxm= 0.1861E-11
+ contact_state********************
+ irecover=           0
+ time: 23:20:45

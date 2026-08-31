@@ -1,0 +1,93 @@
+package:
+  name: HSTAR
+  version: null
+  language: fortran
+pipeline:
+  stages:
+  - s0_overview_and_build.md
+  - s1_case_layout_and_control.md
+  - s2_mesh_and_geometry.md
+  - s3_materials_and_constitutive.md
+  - s4_boundary_conditions_and_loads.md
+  - s5_analysis_control_and_solvers.md
+  - s6_execution.md
+  - s7_outputs_and_parsing.md
+  - s8_validation.md
+  - s9_advanced_capabilities.md
+validation:
+  tier: analytic
+  tier_justification: 'Compared against a closed-form elasticity solution, not against
+    independent field observations. HSTAR is a structural/geotechnical FEM solver
+    and no dam-monitoring dataset (plumb-line, thermometer or piezometer series) for
+    any modelled structure is mounted on this host, so tier "real" is not available.
+    The comparison is a genuine analytic benchmark driven through the FULL KI pipeline
+    with the real compiled binary: build_case_from_template -> build_mesh_files ->
+    build_boundary_conditions -> build_material_file -> build_loads -> run_hstar ->
+    parse_outputs -> validate_results.'
+  benchmark: 'Confined self-weight elastic column (oedometer condition): u(y) = -rho
+    g (H^2-(H-y)^2)/(2 E_oed), E_oed = E(1-nu)/((1+nu)(1-2nu)); sigma_yy(y) = -rho
+    g (H-y); sigma_xx = K0 sigma_yy, K0 = nu/(1-nu). E=2.5e10 Pa, nu=0.20, rho=2400
+    kg/m3, g=9.81 m/s2, H=10 m, 20 Q4 plane-strain layers (42 nodes).'
+  metrics:
+    n_nodes_compared: 42
+    u_top_analytic_m: -4.23792e-05
+    u_top_hstar_m: -4.23792e-05
+    max_abs_disp_error_m: 6.776263578034403e-21
+    max_rel_disp_error_pct: 1.5989597675355843e-14
+    max_rel_sigma_yy_error_interior_pct: 0.0
+    equilibrium_residual_ratio: 5.434e-15
+    plausibility_screen_passed: true
+tools:
+  files:
+  - preflight_check.py
+  - tools/_hstar_io.py
+  - tools/_local_metrics.py
+  - tools/build_analysis_control.py
+  - tools/build_back_analysis.py
+  - tools/build_boundary_conditions.py
+  - tools/build_case_from_template.py
+  - tools/build_contact_joints.py
+  - tools/build_dynamic_seismic.py
+  - tools/build_loads.py
+  - tools/build_material_file.py
+  - tools/build_mesh_files.py
+  - tools/build_reinforcement.py
+  - tools/build_reliability.py
+  - tools/build_seepage.py
+  - tools/build_stability_analysis.py
+  - tools/build_staged_construction.py
+  - tools/build_thermal.py
+  - tools/parse_outputs.py
+  - tools/run_hstar.py
+  - tools/validate_results.py
+outputs:
+  observable:
+  - DISPLACEMENT
+  - TEMPERATURE
+  - PORE-PRESSURE
+  - WATER-HEAD
+  - modal_frequency
+  - acceleration
+  - STRESS
+  - factor_of_safety
+  all:
+  - DISPLACEMENT
+  - TEMPERATURE
+  - PORE-PRESSURE
+  - WATER-HEAD
+  - modal_frequency
+  - acceleration
+  - STRESS
+  - factor_of_safety
+  - velocity
+  - PRINCIPALSTRESS
+  - PLASTICSTRAIN
+  - Yield
+  - tofor
+  - uplift-PRESSURE
+  - reliability_index
+  - equilibrium_residual_ratio
+summary:
+  total_tools: 21
+  total_diagnostic_triplets: 33
+  total_stage_docs: 10

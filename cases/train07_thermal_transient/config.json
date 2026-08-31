@@ -1,0 +1,442 @@
+{
+  "type_problem": "S",
+  "solver": "PARDISO",
+  "ndimn": 3,
+  "nblks": 1,
+  "groups": [
+    {
+      "name": "Concrete",
+      "nelgroup": 4720,
+      "matno": 1,
+      "nnode": 8,
+      "elem_type": "B8",
+      "elem_name": "B8",
+      "elem_index": 9,
+      "class": "CO",
+      "nrfields": 1,
+      "field": "T",
+      "special": "ST",
+      "sptype": "PE",
+      "type_algo": 0,
+      "type_stiff": 1,
+      "type_ecoint": 1,
+      "ilayer": 0,
+      "elcod_local": 0.0,
+      "group_inf": 0,
+      "uplift_ic": 0,
+      "liquj": 0,
+      "type_mass": [
+        0
+      ],
+      "alfa": 0.0,
+      "beta": 0.0,
+      "order_time": [
+        0,
+        1
+      ],
+      "fields": [
+        {
+          "nfdof": 1,
+          "listdof": [
+            10
+          ]
+        }
+      ]
+    }
+  ],
+  "materials": [
+    {
+      "id": 1,
+      "type": "ELASTIC",
+      "density": 0.0,
+      "ratio": 1.0,
+      "thickness": 1.0,
+      "E": 10000000000.0,
+      "nu": 0.167,
+      "alfa": 1e-06
+    },
+    {
+      "id": 1,
+      "type": "HEAT"
+    }
+  ],
+  "blocks": {
+    "appear": [
+      [
+        1
+      ]
+    ],
+    "gravity": [
+      0.0,
+      0.0,
+      0.0,
+      -1.0,
+      0.0,
+      0.0,
+      -1.0
+    ],
+    "increments": [
+      [
+        {
+          "miter": 5,
+          "ditime": 0.05,
+          "noutn": 1,
+          "noutf": 1,
+          "nstep": 20,
+          "inc_step": 1,
+          "nresta": 1,
+          "nmcon": 0,
+          "nbasef": 0
+        },
+        {
+          "miter": 5,
+          "ditime": 0.1,
+          "noutn": 1,
+          "noutf": 1,
+          "nstep": 10,
+          "inc_step": 1,
+          "nresta": 1,
+          "nmcon": 0,
+          "nbasef": 0
+        },
+        {
+          "miter": 5,
+          "ditime": 0.5,
+          "noutn": 1,
+          "noutf": 1,
+          "nstep": 16,
+          "inc_step": 1,
+          "nresta": 1,
+          "nmcon": 0,
+          "nbasef": 0
+        }
+      ]
+    ],
+    "matno_process": [
+      [
+        1
+      ]
+    ],
+    "force_process": [
+      0
+    ],
+    "average_appear": [
+      2
+    ],
+    "earthquake_curve": [
+      0,
+      0,
+      0
+    ],
+    "time_curve_for_each_group": [
+      1
+    ]
+  },
+  "boundary": {
+    "fixsets": [
+      {
+        "dof": 10,
+        "nodes": [
+          257,
+          258,
+          259,
+          260
+        ],
+        "value": 1.0,
+        "time_curve": 1,
+        "jfixvar": 0,
+        "f5": 1,
+        "tfixvar": 0.0,
+        "gamawx": 0.0,
+        "nextr": 0
+      }
+    ],
+    "nline": 1
+  },
+  "added_mass": {
+    "icaddmass": 0,
+    "swlifs2006": 50.0,
+    "water_level": 50.0,
+    "ifswater": 2,
+    "ifsgravity": 9.8,
+    "absorb": 0.6,
+    "alfa_p4": 10.0,
+    "stiff_p4": 1e+20
+  },
+  "mif": {
+    "ntrans": 0,
+    "nlaymif": 0,
+    "epsMIFb": 1.0,
+    "gamaMIF": 0.02,
+    "ifixvar0_inpb": 2,
+    "camif": 1980.0,
+    "dxmif": 25.0
+  },
+  "gid": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "res": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "newmark": [
+    0.5,
+    0.25,
+    0.5
+  ],
+  "glb_rows": {
+    "header": {
+      "npoinb": "5628",
+      "nmats": "1",
+      "outplot": "GIDR",
+      "kstab": "0.0",
+      "mat_curve": "0",
+      "level_set_problem": "0",
+      "ljdp": "0",
+      "stab_matde": "99999",
+      "ntlink": "0",
+      "meshc": "0",
+      "rmesh": "0"
+    },
+    "run_flags": {
+      "ninit": 0,
+      "kinit": 0,
+      "winit": 0,
+      "nlinks": 0,
+      "nonsym": 0,
+      "outinp": 0,
+      "outintr": 0,
+      "outintw": 0,
+      "neuman": 0,
+      "equvs": 0,
+      "block_stab": 0,
+      "nbackf": 0,
+      "nbspring": 0,
+      "ebody": 0,
+      "outind": 0,
+      "nbackdt": 0,
+      "ninistn": 0
+    },
+    "type_row": {
+      "type_load": "LOAD",
+      "stabpw": "0",
+      "nlayer": "0",
+      "kglb": "0",
+      "state_change": "0",
+      "bparameter": "0",
+      "balgor": "0",
+      "upliftin": "0"
+    },
+    "counts": [
+      "1",
+      "1",
+      "1",
+      "1",
+      "0",
+      "0",
+      "1",
+      "0",
+      "1",
+      "0",
+      "2"
+    ],
+    "hdam": [
+      "0.000"
+    ],
+    "water_level": [
+      "-99.000"
+    ],
+    "modf_dis_blocks": [
+      "0"
+    ],
+    "uinitial": [
+      "0"
+    ],
+    "bond": {
+      "ftcrack": "1.500E+06",
+      "coefMpa": "1.000E+06",
+      "ikindks": 0,
+      "doubsig": 2,
+      "ktan1": "1.000E+08",
+      "ktan2": "1.000E+08",
+      "nlocalbeam": 0,
+      "ndimnrt": 0,
+      "listglocbeam": [],
+      "lelenrt": []
+    }
+  },
+  "type_nl": 10,
+  "mat_raw": {
+    "nmats": 2,
+    "prelude": [
+      " material property curves",
+      "  0",
+      "  10",
+      "MATERIAL PROPERTIES-INPUT FOR 1 TO NMATS",
+      "NAME FOR MATERIAL---FOR COMMENTS",
+      "FIRST:NAME---MECHANICAL, TEMPERATURE, ETC",
+      "FOR MECHNICAL, SECOND:PHASE---SOLID, FLUID, AIR OR OIL",
+      "NUMBER OF PHASE",
+      "FOR SOLID: MATERIAL(CLASSICALEP,CAMCLAY,ETC),density,ratio,thick,e,nu",
+      "FOR MATERISL: CLASSICALEP:CRITERIA(TC,VM,DP,MC),sigm0,hardening",
+      "FOR MC OR DP: FRICT_ANGLE, DILAN_ANGLE",
+      "CAMCLAY    :Pc, lamda, Mg, Mf, D0, D1,gaama",
+      "FOR FLUID: (1) density,ratio,bulkw (2)permiability(1:ndimn)",
+      " nmats",
+      "  2"
+    ],
+    "blocks": [
+      [
+        "     material_serial         1",
+        "          MECHANICAL           SOLID         1",
+        "  1",
+        "               SOLID",
+        "ELASTIC_ISOTROPIC          0.000E+00       1.000E+00       1.000E+00       1.000E+10       1.670E-01       1.000E-06  0  0  0",
+        "  0  0  0  1000."
+      ],
+      [
+        "     material_serial         2",
+        "          HEAT                 SOLID         1",
+        "  1.0  1.0  1.0  0  0  0",
+        "  0"
+      ]
+    ]
+  },
+  "nmats": 1,
+  "contact_raw": [
+    "ngaps ngapb ctt_pe miter_bt torbt iblkbt nonsbt xlwsol method_gapi miter_state type_solver_ctt restart_ctt damp_ctt istatec",
+    "  0  0  1  500  1.0E-05  1  0  0  0  1  PROFILE  0  0.0  1"
+  ],
+  "nrt_raw": [
+    " The interpolation groups: transgroup",
+    " ntransnode and translg for each transgroup",
+    "       0"
+  ],
+  "tem_raw": [
+    " temperature prescribed data",
+    "  0",
+    " surface convection edges (nedge)",
+    "  0",
+    " surface convection (type 2)",
+    " surface list (1:nsurf)",
+    "  0",
+    " pipe cooling info",
+    " algo_pipe=3",
+    "  0  3",
+    "",
+    "  0",
+    "  0",
+    "  0",
+    "  0",
+    "  0",
+    "  0",
+    "  0",
+    "  0",
+    "  0",
+    "  0",
+    "  0",
+    "  0",
+    "  0",
+    "  0",
+    "  0",
+    "  0",
+    "  0",
+    "  0",
+    "  0",
+    "  0"
+  ],
+  "mdofn": 10,
+  "lmdofn": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1
+  ],
+  "order_time_mdofn": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1
+  ],
+  "time_curves": [
+    {
+      "type": "LINEAR",
+      "nline": 2,
+      "times": [
+        0.0,
+        1000.0
+      ],
+      "values": [
+        1.0,
+        1.0
+      ]
+    }
+  ],
+  "edge_loads": [
+    {
+      "counts": [
+        0,
+        0
+      ],
+      "rows": []
+    }
+  ],
+  "runblks": 1,
+  "opr": [
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "tem_pipe": [
+    0,
+    3
+  ]
+}

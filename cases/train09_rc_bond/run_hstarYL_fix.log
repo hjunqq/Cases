@@ -1,0 +1,145 @@
+ time: 08:45:51
+ time: 08:45:51
+ Input the problem name?
+ NPOIN                                                                          
+  
+        3672        3672        3100           3           2           4
+           0 GIDR                  0.000000000000000E+000           0
+           0           0           0           0        9999
+ NINIT                                                                          
+  
+           0           0           0           1           0           0
+           0           0           0           0           0 
+ FIX                                                          0           0
+           0           0           0           0           0
+ outinpunit=          37 outindunit=          54
+ TYPE_PROBLEM                                                                   
+  
+ Q                                                 
+ PARDISO                                           
+ LOAD                                                         1           0
+           0           0
+ type_layer1                                                                    
+  
+ NMASS                                                                          
+  
+           1           1           1           1           0           0
+           1           0           1           0           0
+ nfreeflownode                                                                  
+  
+ NTSMAT                                                                         
+  
+         999         999           0           0           0
+ beeta1,beeta2,theta1=  0.500000000000000       0.250000000000000     
+   1.00000000000000     
+ equvs_process(1:ngroup)                                                        
+  
+ appear_level(1:ngroup)                                                         
+  
+ APPEAR_PROCESS                                                                 
+  
+ appear_process=           1           0           1           1
+ MATNO_PROCESS                                                                  
+  
+ iblks=           0 ngroup=           4 matno=           1           2
+           2           2
+ force_process=           0           0           0           0
+ uinitial=           0
+ 1-ILINKS(I0                                                                    
+  
+ 1-tLINKS(I0                                                                    
+  
+ text1=
+ 1-NGROUP--GROUP                                                                
+  
+ (3)                                                                            
+  
+ igroup=           1
+ name=B8        
+ igroup=           2
+ name=L2        
+ igroup=           3
+ name=L2        
+ igroup=           4
+ name=L2        
+ tne=        3100
+ text_tension_joint=
+ tension_joint                                                                  
+  
+ text_tension_contact=
+ contact_joint                                                                  
+  
+ ground_inf=           0 /100=           0
+ nblks=           1
+ Input runblks, =?
+ time: 08:45:51
+ MATERIAL                                                                       
+  
+ NAME                                                                           
+  
+ FIRST:NAME---MECHANICAL                                                        
+  
+ FOR                                                                            
+  
+ NUMBER                                                                         
+  
+ FOR                                                                            
+  
+ FOR                                                                            
+  
+ FOR                                                                            
+  
+ CAMCLAY                                                                        
+  
+ FOR                                                                            
+  
+ jmat=           1
+ MECHANICAL                    SOLID                                    1
+ ELASTIC_ISOTROPIC                2400.00000000000        1.00000000000000     
+   1.00000000000000        28000000000.0000       0.167000000000000     
+  1.000000000000000E-005           0           0           0
+ jmat=           2
+ MECHANICAL                    SOLID                                    2
+ ELASTIC_ISOTROPIC                7800.00000000000        1.00000000000000     
+  8.042000000000000E-004   200000000000.000       0.230000000000000     
+  1.000000000000000E-005           0           0           0
+ ngaps                                                                          
+  
+ ngaps=           0
+ nrcsteel                                                                       
+  
+ nrcsteel=           0
+ nwcpipe                                                                        
+  
+ nwcpipe=           0
+ nifsgroup 
+ nifsgroup=           0
+ nabsfgroup
+ nabsfgroup=           0
+ nabssgroup
+ nabssgroup=           0
+ ifsnedge                                                                       
+                      
+ ifsnedge=           0
+ lblks=           0  blks_new=           1
+ lincs=           0  nincs=           0
+ lblks=           0  blks_new=           1
+ Bparameter=           0
+ lblks=           0 lincs=           0 ttime=  0.000000000000000E+000
+ ntime=           2 LINEAR                         0           2
+ ok waterlevel
+ nplgroup=           0
+ nedge=           0
+ iblks=           1 lineload=           9
+ iblks=           1
+ time: 08:45:51
+ a1
+forrtl: severe (157): Program Exception - access violation
+Image              PC                Routine            Line        Source             
+hstar.exe          00007FF69B808439  Unknown               Unknown  Unknown
+hstar.exe          00007FF69BBBA4F7  Unknown               Unknown  Unknown
+hstar.exe          00007FF69BB97FAA  Unknown               Unknown  Unknown
+hstar.exe          00007FF69BD4947B  Unknown               Unknown  Unknown
+hstar.exe          00007FF6A0B19170  Unknown               Unknown  Unknown
+KERNEL32.DLL       00007FF9F162E8D7  Unknown               Unknown  Unknown
+ntdll.dll          00007FF9F2DEC53C  Unknown               Unknown  Unknown

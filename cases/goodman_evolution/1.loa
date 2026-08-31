@@ -1,0 +1,597 @@
+(*.loa)输入各类加载曲线                                     
+         3
+    2   LINEAR                  0              2
+   0.00000E+00   0.10000E+01
+   0.10000E+01   0.10000E+01
+    2   LINEAR                  0              2
+   0.00000E+00   0.10000E+01
+   0.00000E+00   0.10000E+01
+   4   LINEAR                  0              2
+   0.00000E+00   40.      80.     120
+   1.             1.      0.4     0.2
+
+  集中荷载作用信息
+           0           0
+                               总的可能作用水荷载面数(nedge)
+        24
+                                     sedge,nnode,index,vdimn
+        24         2         1         0
+        1         1        46        20         
+        2        45        44        41         
+        3        46        45        51         
+        4       141       140       137         
+        5       140       139       139         
+        6      1268       143       147         
+        7       143       142       149         
+        8       142       141       151         
+        9       136       135       212         
+       10       135       134       214         
+       11       139       138       235         
+       12       137       136       240         
+       13       138       137       243         
+       14       131       130       315         
+       15       130       129       320         
+       16       134       133       335         
+       17       133       132       340         
+       18       132       131       345         
+       19       128       127       391         
+       20       129       128       396         
+       21       127       126       420         
+       22       126       125       440         
+       23       125         1       460         
+       24        85      1268      1176         
+                                      作用水荷载面数及分组数
+                                    edge_load_group,delgroup
+0   0
+                              Define body force in each BLKS
+   0.98100E+01   0.00000E+00  -0.10000E+01   0.00000E+00  -0.10000E+01
+                                   Time_curve_for_each_group    1
+         23*1       
+                              输入梁上作用荷载信息\nbeamload
+         0
+                             输入板上作用荷载信息\nplateload
+         0
+                                       作用水荷载面数及分组数
+                                    edge_load_group,delgroup
+        0         0
+                              Define body force in each BLKS
+   0.98100E+01   0.00000E+00  -0.10000E+01   0.00000E+00  -0.10000E+01
+                                   Time_curve_for_each_group    1
+         23*1      
+                              输入梁上作用荷载信息\nbeamload
+         0
+                             输入板上作用荷载信息\nplateload
+         0
+                              作用水荷载面数及分组数
+                                    edge_load_group,delgroup
+        24         1
+         1        24         1         2         0
+   90   0.00000E+00   0.00000E+00   90   0.98100E+04
+                              Define body force in each BLKS
+   0.98100E+01   0.00000E+00  -0.10000E+01   0.00000E+00  -0.10000E+01
+                                   Time_curve_for_each_group    1
+         23*1      
+                              输入梁上作用荷载信息\nbeamload
+         0
+                             输入板上作用荷载信息\nplateload
+         0
+                                       作用水荷载面数及分组数
+                                    edge_load_group,delgroup
+        24         1
+         1        24         1         2         0
+   90   0.00000E+00   0.00000E+00   90   0.98100E+04
+                              Define body force in each BLKS
+   0.98100E+01   0.00000E+00  -0.10000E+01   0.00000E+00  -0.10000E+01
+                                   Time_curve_for_each_group    1
+         23*1      
+                              输入梁上作用荷载信息\nbeamload
+         0
+                             输入板上作用荷载信息\nplateload
+         0
+                                       作用水荷载面数及分组数
+                                    edge_load_group,delgroup
+        24         1
+         1        24         1         2         0
+   90   0.00000E+00   0.00000E+00   90   0.98100E+04
+                              Define body force in each BLKS
+   0.98100E+01   0.00000E+00  -0.10000E+01   0.00000E+00  -0.10000E+01
+                                   Time_curve_for_each_group    1
+         23*1      
+                              输入梁上作用荷载信息\nbeamload
+         0
+                             输入板上作用荷载信息\nplateload
+         0
+ 作用水荷载面数及分组数
+                                    edge_load_group,delgroup
+        24         1
+         1        24         1         2         0
+   90   0.00000E+00   0.00000E+00   90   0.98100E+04
+                              Define body force in each BLKS
+   0.98100E+01   0.00000E+00  -0.10000E+01   0.00000E+00  -0.10000E+01
+                                   Time_curve_for_each_group    1
+         23*1      
+                              输入梁上作用荷载信息\nbeamload
+         0
+                             输入板上作用荷载信息\nplateload
+         0
+                                       作用水荷载面数及分组数
+                                    edge_load_group,delgroup
+        24         1
+         1        24         1         2         0
+   90   0.00000E+00   0.00000E+00   90   0.98100E+04
+                              Define body force in each BLKS
+   0.98100E+01   0.00000E+00  -0.10000E+01   0.00000E+00  -0.10000E+01
+                                   Time_curve_for_each_group    1
+         23*1      
+                              输入梁上作用荷载信息\nbeamload
+         0
+                             输入板上作用荷载信息\nplateload
+         0
+                                       作用水荷载面数及分组数
+                                    edge_load_group,delgroup
+        24         1
+         1        24         1         2         0
+   90   0.00000E+00   0.00000E+00   90   0.98100E+04
+                              Define body force in each BLKS
+   0.98100E+01   0.00000E+00  -0.10000E+01   0.00000E+00  -0.10000E+01
+                                   Time_curve_for_each_group    1
+         23*1      
+                              输入梁上作用荷载信息\nbeamload
+         0
+                             输入板上作用荷载信息\nplateload
+         0
+                                       作用水荷载面数及分组数
+                                    edge_load_group,delgroup
+        24         1
+         1        24         1         2         0
+   90   0.00000E+00   0.00000E+00   90   0.98100E+04
+                              Define body force in each BLKS
+   0.98100E+01   0.00000E+00  -0.10000E+01   0.00000E+00  -0.10000E+01
+                                   Time_curve_for_each_group    1
+         23*1      
+                              输入梁上作用荷载信息\nbeamload
+         0
+                             输入板上作用荷载信息\nplateload
+         0
+ 作用水荷载面数及分组数
+                                    edge_load_group,delgroup
+        24         1
+         1        24         1         2         0
+   90   0.00000E+00   0.00000E+00   90   0.98100E+04
+                              Define body force in each BLKS
+   0.98100E+01   0.00000E+00  -0.10000E+01   0.00000E+00  -0.10000E+01
+                                   Time_curve_for_each_group    1
+         23*1      
+                              输入梁上作用荷载信息\nbeamload
+         0
+                             输入板上作用荷载信息\nplateload
+         0
+                                       作用水荷载面数及分组数
+                                    edge_load_group,delgroup
+        24         1
+         1        24         1         2         0
+   90   0.00000E+00   0.00000E+00   90   0.98100E+04
+                              Define body force in each BLKS
+   0.98100E+01   0.00000E+00  -0.10000E+01   0.00000E+00  -0.10000E+01
+                                   Time_curve_for_each_group    1
+         23*1     
+                              输入梁上作用荷载信息\nbeamload
+         0
+                             输入板上作用荷载信息\nplateload
+         0
+                                       作用水荷载面数及分组数
+                                    edge_load_group,delgroup
+        24         1
+         1        24         1         2         0
+   90   0.00000E+00   0.00000E+00   90   0.98100E+04
+                              Define body force in each BLKS
+   0.98100E+01   0.00000E+00  -0.10000E+01   0.00000E+00  -0.10000E+01
+                                   Time_curve_for_each_group    1
+         23*1      
+                              输入梁上作用荷载信息\nbeamload
+         0
+                             输入板上作用荷载信息\nplateload
+         0
+                                       作用水荷载面数及分组数
+                                    edge_load_group,delgroup
+        24         1
+         1        24         1         2         0
+   90   0.00000E+00   0.00000E+00   90   0.98100E+04
+                              Define body force in each BLKS
+   0.98100E+01   0.00000E+00  -0.10000E+01   0.00000E+00  -0.10000E+01
+                                   Time_curve_for_each_group    1
+         23*1      
+                              输入梁上作用荷载信息\nbeamload
+         0
+                             输入板上作用荷载信息\nplateload
+         0
+ 作用水荷载面数及分组数
+                                    edge_load_group,delgroup
+        24         1
+         1        24         1         2         0
+   90   0.00000E+00   0.00000E+00   90   0.98100E+04
+                              Define body force in each BLKS
+   0.98100E+01   0.00000E+00  -0.10000E+01   0.00000E+00  -0.10000E+01
+                                   Time_curve_for_each_group    1
+         23*1      
+                              输入梁上作用荷载信息\nbeamload
+         0
+                             输入板上作用荷载信息\nplateload
+         0
+                                       作用水荷载面数及分组数
+                                    edge_load_group,delgroup
+        24         1
+         1        24         1         2         0
+   90   0.00000E+00   0.00000E+00   90   0.98100E+04
+                              Define body force in each BLKS
+   0.98100E+01   0.00000E+00  -0.10000E+01   0.00000E+00  -0.10000E+01
+                                   Time_curve_for_each_group    1
+         23*1      
+                              输入梁上作用荷载信息\nbeamload
+         0
+                             输入板上作用荷载信息\nplateload
+         0
+                                       作用水荷载面数及分组数
+                                    edge_load_group,delgroup
+        24         1
+         1        24         1         2         0
+   90   0.00000E+00   0.00000E+00   90   0.98100E+04
+                              Define body force in each BLKS
+   0.98100E+01   0.00000E+00  -0.10000E+01   0.00000E+00  -0.10000E+01
+                                   Time_curve_for_each_group    1
+         23*1      
+                              输入梁上作用荷载信息\nbeamload
+         0
+                             输入板上作用荷载信息\nplateload
+         0
+                                       作用水荷载面数及分组数
+                                    edge_load_group,delgroup
+        24         1
+         1        24         1         2         0
+   90   0.00000E+00   0.00000E+00   90   0.98100E+04
+                              Define body force in each BLKS
+   0.98100E+01   0.00000E+00  -0.10000E+01   0.00000E+00  -0.10000E+01
+                                   Time_curve_for_each_group    1
+         23*1      
+                              输入梁上作用荷载信息\nbeamload
+         0
+                             输入板上作用荷载信息\nplateload
+         0
+ 作用水荷载面数及分组数
+                                    edge_load_group,delgroup
+        24         1
+         1        24         1         2         0
+   90   0.00000E+00   0.00000E+00   90   0.98100E+04
+                              Define body force in each BLKS
+   0.98100E+01   0.00000E+00  -0.10000E+01   0.00000E+00  -0.10000E+01
+                                   Time_curve_for_each_group    1
+         23*1     
+                              输入梁上作用荷载信息\nbeamload
+         0
+                             输入板上作用荷载信息\nplateload
+         0
+                                       作用水荷载面数及分组数
+                                    edge_load_group,delgroup
+        24         1
+         1        24         1         2         0
+   90   0.00000E+00   0.00000E+00   90   0.98100E+04
+                              Define body force in each BLKS
+   0.98100E+01   0.00000E+00  -0.10000E+01   0.00000E+00  -0.10000E+01
+                                   Time_curve_for_each_group    1
+         23*1     
+                              输入梁上作用荷载信息\nbeamload
+         0
+                             输入板上作用荷载信息\nplateload
+         0
+                                       作用水荷载面数及分组数
+                                    edge_load_group,delgroup
+        24         1
+         1        24         1         2         0
+   90   0.00000E+00   0.00000E+00   90   0.98100E+04
+                              Define body force in each BLKS
+   0.98100E+01   0.00000E+00  -0.10000E+01   0.00000E+00  -0.10000E+01
+                                   Time_curve_for_each_group    1
+         23*1      
+                              输入梁上作用荷载信息\nbeamload
+         0
+                             输入板上作用荷载信息\nplateload
+         0
+                                       作用水荷载面数及分组数
+                                    edge_load_group,delgroup
+        24         1
+         1        24         1         2         0
+   90   0.00000E+00   0.00000E+00   90   0.98100E+04
+                              Define body force in each BLKS
+   0.98100E+01   0.00000E+00  -0.10000E+01   0.00000E+00  -0.10000E+01
+                                   Time_curve_for_each_group    1
+         23*1      
+                              输入梁上作用荷载信息\nbeamload
+         0
+                             输入板上作用荷载信息\nplateload
+         0
+ 作用水荷载面数及分组数
+                                    edge_load_group,delgroup
+        24         1
+         1        24         1         2         0
+   90   0.00000E+00   0.00000E+00   90   0.98100E+04
+                              Define body force in each BLKS
+   0.98100E+01   0.00000E+00  -0.10000E+01   0.00000E+00  -0.10000E+01
+                                   Time_curve_for_each_group    1
+         23*1      
+                              输入梁上作用荷载信息\nbeamload
+         0
+                             输入板上作用荷载信息\nplateload
+         0
+                                       作用水荷载面数及分组数
+                                    edge_load_group,delgroup
+        24         1
+         1        24         1         2         0
+   90   0.00000E+00   0.00000E+00   90   0.98100E+04
+                              Define body force in each BLKS
+   0.98100E+01   0.00000E+00  -0.10000E+01   0.00000E+00  -0.10000E+01
+                                   Time_curve_for_each_group    1
+         23*1     
+                              输入梁上作用荷载信息\nbeamload
+         0
+                             输入板上作用荷载信息\nplateload
+         0
+                                       作用水荷载面数及分组数
+                                    edge_load_group,delgroup
+        24         1
+         1        24         1         2         0
+   90   0.00000E+00   0.00000E+00   90   0.98100E+04
+                              Define body force in each BLKS
+   0.98100E+01   0.00000E+00  -0.10000E+01   0.00000E+00  -0.10000E+01
+                                   Time_curve_for_each_group    1
+         23*1     
+                              输入梁上作用荷载信息\nbeamload
+         0
+                             输入板上作用荷载信息\nplateload
+         0
+                                       作用水荷载面数及分组数
+                                    edge_load_group,delgroup
+        24         1
+         1        24         1         2         0
+   90   0.00000E+00   0.00000E+00   90   0.98100E+04
+                              Define body force in each BLKS
+   0.98100E+01   0.00000E+00  -0.10000E+01   0.00000E+00  -0.10000E+01
+                                   Time_curve_for_each_group    1
+         23*1      
+                              输入梁上作用荷载信息\nbeamload
+         0
+                             输入板上作用荷载信息\nplateload
+         0
+ 作用水荷载面数及分组数
+                                    edge_load_group,delgroup
+        24         1
+         1        24         1         2         0
+   90   0.00000E+00   0.00000E+00   90   0.98100E+04
+                              Define body force in each BLKS
+   0.98100E+01   0.00000E+00  -0.10000E+01   0.00000E+00  -0.10000E+01
+                                   Time_curve_for_each_group    1
+         23*1      
+                              输入梁上作用荷载信息\nbeamload
+         0
+                             输入板上作用荷载信息\nplateload
+         0
+                                       作用水荷载面数及分组数
+                                    edge_load_group,delgroup
+        24         1
+         1        24         1         2         0
+   90   0.00000E+00   0.00000E+00   90   0.98100E+04
+                              Define body force in each BLKS
+   0.98100E+01   0.00000E+00  -0.10000E+01   0.00000E+00  -0.10000E+01
+                                   Time_curve_for_each_group    1
+         23*1      
+                              输入梁上作用荷载信息\nbeamload
+         0
+                             输入板上作用荷载信息\nplateload
+         0
+                                       作用水荷载面数及分组数
+                                    edge_load_group,delgroup
+        24         1
+         1        24         1         2         0
+   90   0.00000E+00   0.00000E+00   90   0.98100E+04
+                              Define body force in each BLKS
+   0.98100E+01   0.00000E+00  -0.10000E+01   0.00000E+00  -0.10000E+01
+                                   Time_curve_for_each_group    1
+         23*1      
+                              输入梁上作用荷载信息\nbeamload
+         0
+                             输入板上作用荷载信息\nplateload
+         0
+                                       作用水荷载面数及分组数
+                                    edge_load_group,delgroup
+        24         1
+         1        24         1         2         0
+   90   0.00000E+00   0.00000E+00   90   0.98100E+04
+                              Define body force in each BLKS
+   0.98100E+01   0.00000E+00  -0.10000E+01   0.00000E+00  -0.10000E+01
+                                   Time_curve_for_each_group    1
+         23*1     
+                              输入梁上作用荷载信息\nbeamload
+         0
+                             输入板上作用荷载信息\nplateload
+         0
+ 作用水荷载面数及分组数
+                                    edge_load_group,delgroup
+        24         1
+         1        24         1         2         0
+   90   0.00000E+00   0.00000E+00   90   0.98100E+04
+                              Define body force in each BLKS
+   0.98100E+01   0.00000E+00  -0.10000E+01   0.00000E+00  -0.10000E+01
+                                   Time_curve_for_each_group    1
+         23*1     
+                              输入梁上作用荷载信息\nbeamload
+         0
+                             输入板上作用荷载信息\nplateload
+         0
+                                       作用水荷载面数及分组数
+                                    edge_load_group,delgroup
+        24         1
+         1        24         1         2         0
+   90   0.00000E+00   0.00000E+00   90   0.98100E+04
+                              Define body force in each BLKS
+   0.98100E+01   0.00000E+00  -0.10000E+01   0.00000E+00  -0.10000E+01
+                                   Time_curve_for_each_group    1
+         23*1      
+                              输入梁上作用荷载信息\nbeamload
+         0
+                             输入板上作用荷载信息\nplateload
+         0
+                                       作用水荷载面数及分组数
+                                    edge_load_group,delgroup
+        24         1
+         1        24         1         2         0
+   90   0.00000E+00   0.00000E+00   90   0.98100E+04
+                              Define body force in each BLKS
+   0.98100E+01   0.00000E+00  -0.10000E+01   0.00000E+00  -0.10000E+01
+                                   Time_curve_for_each_group    1
+         23*1      
+                              输入梁上作用荷载信息\nbeamload
+         0
+                             输入板上作用荷载信息\nplateload
+         0
+                                       作用水荷载面数及分组数
+                                    edge_load_group,delgroup
+        24         1
+         1        24         1         2         0
+   90   0.00000E+00   0.00000E+00   90   0.98100E+04
+                              Define body force in each BLKS
+   0.98100E+01   0.00000E+00  -0.10000E+01   0.00000E+00  -0.10000E+01
+                                   Time_curve_for_each_group    1
+         23*1      
+                              输入梁上作用荷载信息\nbeamload
+         0
+                             输入板上作用荷载信息\nplateload
+         0
+ 作用水荷载面数及分组数
+                                    edge_load_group,delgroup
+        24         1
+         1        24         1         2         0
+   90   0.00000E+00   0.00000E+00   90   0.98100E+04
+                              Define body force in each BLKS
+   0.98100E+01   0.00000E+00  -0.10000E+01   0.00000E+00  -0.10000E+01
+                                   Time_curve_for_each_group    1
+         23*1      
+                              输入梁上作用荷载信息\nbeamload
+         0
+                             输入板上作用荷载信息\nplateload
+         0
+                                       作用水荷载面数及分组数
+                                    edge_load_group,delgroup
+        24         1
+         1        24         1         2         0
+   90   0.00000E+00   0.00000E+00   90   0.98100E+04
+                              Define body force in each BLKS
+   0.98100E+01   0.00000E+00  -0.10000E+01   0.00000E+00  -0.10000E+01
+                                   Time_curve_for_each_group    1
+         23*1      
+                              输入梁上作用荷载信息\nbeamload
+         0
+                             输入板上作用荷载信息\nplateload
+         0
+                                       作用水荷载面数及分组数
+                                    edge_load_group,delgroup
+        24         1
+         1        24         1         2         0
+   90   0.00000E+00   0.00000E+00   90   0.98100E+04
+                              Define body force in each BLKS
+   0.98100E+01   0.00000E+00  -0.10000E+01   0.00000E+00  -0.10000E+01
+                                   Time_curve_for_each_group    1
+         23*1      
+                              输入梁上作用荷载信息\nbeamload
+         0
+                             输入板上作用荷载信息\nplateload
+         0
+                                       作用水荷载面数及分组数
+                                    edge_load_group,delgroup
+        24         1
+         1        24         1         2         0
+   90   0.00000E+00   0.00000E+00   90   0.98100E+04
+                              Define body force in each BLKS
+   0.98100E+01   0.00000E+00  -0.10000E+01   0.00000E+00  -0.10000E+01
+                                   Time_curve_for_each_group    1
+         23*1      
+                              输入梁上作用荷载信息\nbeamload
+         0
+                             输入板上作用荷载信息\nplateload
+         0
+ 作用水荷载面数及分组数
+                                    edge_load_group,delgroup
+        24         1
+         1        24         1         2         0
+   90   0.00000E+00   0.00000E+00   90   0.98100E+04
+                              Define body force in each BLKS
+   0.98100E+01   0.00000E+00  -0.10000E+01   0.00000E+00  -0.10000E+01
+                                   Time_curve_for_each_group    1
+         23*1      
+                              输入梁上作用荷载信息\nbeamload
+         0
+                             输入板上作用荷载信息\nplateload
+         0
+                                       作用水荷载面数及分组数
+                                    edge_load_group,delgroup
+        24         1
+         1        24         1         2         0
+   90   0.00000E+00   0.00000E+00   90   0.98100E+04
+                              Define body force in each BLKS
+   0.98100E+01   0.00000E+00  -0.10000E+01   0.00000E+00  -0.10000E+01
+                                   Time_curve_for_each_group    1
+        23*1      
+                              输入梁上作用荷载信息\nbeamload
+         0
+                             输入板上作用荷载信息\nplateload
+         0
+                                       作用水荷载面数及分组数
+                                    edge_load_group,delgroup
+        24         1
+         1        24         1         2         0
+   90   0.00000E+00   0.00000E+00   90   0.98100E+04
+                              Define body force in each BLKS
+   0.98100E+01   0.00000E+00  -0.10000E+01   0.00000E+00  -0.10000E+01
+                                   Time_curve_for_each_group    1
+         23*1      
+                              输入梁上作用荷载信息\nbeamload
+         0
+                             输入板上作用荷载信息\nplateload
+         0
+                                       作用水荷载面数及分组数
+                                    edge_load_group,delgroup
+        24         1
+         1        24         1         2         0
+   90   0.00000E+00   0.00000E+00   90   0.98100E+04
+                              Define body force in each BLKS
+   0.98100E+01   0.00000E+00  -0.10000E+01   0.00000E+00  -0.10000E+01
+                                   Time_curve_for_each_group    1
+         23*1      
+                              输入梁上作用荷载信息\nbeamload
+         0
+                             输入板上作用荷载信息\nplateload
+         0
+ 作用水荷载面数及分组数
+                                    edge_load_group,delgroup
+        24         1
+         1        24         1         2         0
+   90   0.00000E+00   0.00000E+00   90   0.98100E+04
+                              Define body force in each BLKS
+   0.98100E+01   0.00000E+00  -0.10000E+01   0.00000E+00  -0.10000E+01
+                                   Time_curve_for_each_group    1
+         23*1      
+                              输入梁上作用荷载信息\nbeamload
+         0
+                             输入板上作用荷载信息\nplateload
+         0
+                                       作用水荷载面数及分组数
+                                    edge_load_group,delgroup
+        24         1
+         1        24         1         2         0
+   90   0.00000E+00   0.00000E+00   90   0.98100E+04
+                              Define body force in each BLKS
+   0.98100E+01   0.00000E+00  -0.10000E+01   0.00000E+00  -0.10000E+01
+                                   Time_curve_for_each_group    1
+         23*1      
+                              输入梁上作用荷载信息\nbeamload
+         0
+                             输入板上作用荷载信息\nplateload
+         0

@@ -1,0 +1,1811 @@
+ time: 12:19:58
+ time: 12:19:58
+ Input the problem name?
+ NPOIN                                                                          
+  
+        5628        5628        4720           3           1           1
+           0 GIDB                  0.000000000000000E+000           0
+           0           0           0           0       99999
+ NINIT                                                                          
+  
+           0           0           0           1           0           0
+           0           0           0           0           0 
+ FIX                                                          0           0
+           0           0           0           0           0
+ outinpunit=          37 outindunit=          54
+ TYPE_PROBLEM                                                                   
+  
+ S                                                 
+ PARDISO                                           
+ LOAD                                                        10           0
+           0           0
+ type_layer1                                                                    
+  
+ NMASS                                                                          
+  
+           1           1           1           1           0           0
+           1           0           1           0           2
+ nfreeflownode                                                                  
+  
+ NTSMAT                                                                         
+  
+         999         999           0           0           0
+ beeta1,beeta2,theta1=  0.500000000000000       0.250000000000000     
+  0.500000000000000     
+ equvs_process(1:ngroup)                                                        
+  
+ appear_level(1:ngroup)                                                         
+  
+ APPEAR_PROCESS                                                                 
+  
+ appear_process=           1
+ MATNO_PROCESS                                                                  
+  
+ iblks=           0 ngroup=           1 matno=           1
+ force_process=           0
+ uinitial=           0
+ 1-ILINKS(I0                                                                    
+  
+ 1-tLINKS(I0                                                                    
+  
+ text1=
+ 1-NGROUP--GROUP                                                                
+  
+ (3)                                                                            
+  
+ igroup=           1
+ name=B8        
+ tne=        4720
+ text_tension_joint=
+ tension_joint                                                                  
+  
+ text_tension_contact=
+ contact_joint                                                                  
+  
+ ground_inf=           0 /100=           0
+ nblks=           1
+ Input runblks, =?
+ time: 12:19:58
+ MATERIAL                                                                       
+  
+ NAME                                                                           
+  
+ FIRST:NAME---MECHANICAL                                                        
+  
+ FOR                                                                            
+  
+ NUMBER                                                                         
+  
+ FOR                                                                            
+  
+ FOR                                                                            
+  
+ FOR                                                                            
+  
+ CAMCLAY                                                                        
+  
+ FOR                                                                            
+  
+ jmat=           1
+ MECHANICAL                    SOLID                                    1
+ ELASTIC_ISOTROPIC               0.000000000000000E+000   1.00000000000000     
+   1.00000000000000        10000000000.0000       0.167000000000000     
+  1.000000000000000E-006           0           0           0
+ jmat=           2
+ HEAT                          SOLID                                    1
+ ngaps                                                                          
+  
+ ngaps=           0
+ nrcsteel                                                                       
+  
+ nrcsteel=           0
+ nwcpipe                                                                        
+  
+ nwcpipe=           0
+ nifsgroup 
+ nifsgroup=           0
+ nabsfgroup
+ nabsfgroup=           0
+ nabssgroup
+ nabssgroup=           0
+ ifsnedge                                                                       
+                      
+ ifsnedge=           0
+ lblks=           0  blks_new=           1
+ lincs=           0  nincs=           0
+ lblks=           0  blks_new=           1
+ Bparameter=           0
+ lblks=           0 lincs=           0 ttime=  0.000000000000000E+000
+ ntime=           2 LINEAR                         0           2
+ ok waterlevel
+ nplgroup=           0
+ nedge=           0
+ iblks=           1 lineload=           9
+ iblks=           1
+ time: 12:19:58
+ a1
+ ifixset=           1 type_abc=
+ FIX                                               
+ outind=           0
+ edge_load_group     
+ edge_load_group=           0 delgroup=           0
+ gray=  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
+  -1.00000000000000       0.000000000000000E+000  0.000000000000000E+000
+  -1.00000000000000     
+ tcurv=           1
+ ecwpipe=           2 iblks=           1 lblks+1=           1
+ ecwpipe=           2 iblks=           1 lblks+1=           1
+ surface   
+ ntedge=           0
+ algo_pipe=
+ npipe,algo_pipe=           0           3
+ linet=           8
+ time: 12:19:58
+ mtype                           
+          -2           4           0
+ isdefault                       
+           0
+ time: 12:19:58
+ time: 12:19:58
+   time depend     iincs=           1 nincs=           3
+ time: 12:19:58
+ iblks=           1 iincs=           1 istep=           1
+ maxval(result_zero)=  0.000000000000000E+000
+ outinp=           0
+ iiter=           1
+Begin forming various matrix       at 2026-03-29 12:19:58 
+ ktsmat=           1
+Begin assemble golbal matrix       at 2026-03-29 12:19:58 
+ ntelgroup=           0
+Begin factorize global matrix      at 2026-03-29 12:19:58 
+ Reordering completed ... 
+ Factorization completed ... 
+Begin solution global equation     at 2026-03-29 12:19:58 
+                     istep=           1 iiter=           1
+                     conver_load check
+ resid=  4.606267930951288E-032 retot=  2.167273332700544E-002
+ ratio1=  1.457866492511281E-015 ratio2=  1.414017089426182E-015
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           0
+                    conver_nodal_value check
+               Convergence check for temperature
+ ratio1=  0.709936693472726      ratio2=  0.711131531492517     
+                            not converged for checki=           6
+ iiter=           2
+Begin forming various matrix       at 2026-03-29 12:19:58 
+ ktsmat=           0
+ ntelgroup=           0
+Begin solution global equation     at 2026-03-29 12:19:58 
+                     istep=           1 iiter=           2
+                     conver_load check
+ resid=  1.894970383747179E-032 retot=  2.167273332700545E-002
+ ratio1=  9.350705299067716E-016 ratio2=  1.131213671540946E-015
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           0
+                    conver_nodal_value check
+               Convergence check for temperature
+ ratio1=  4.352179821016830E-016 ratio2=  5.119361053097512E-016
+ ***********RESTART FILE IS UPDATED!*******
+ time: 12:19:58
+ iblks=           1 iincs=           1 istep=           2
+ outinp=           0
+ iiter=           1
+Begin forming various matrix       at 2026-03-29 12:19:58 
+ ktsmat=           0
+Begin assemble golbal matrix       at 2026-03-29 12:19:58 
+ ntelgroup=           0
+Begin factorize global matrix      at 2026-03-29 12:19:58 
+ Factorization completed ... 
+Begin solution global equation     at 2026-03-29 12:19:58 
+                     istep=           2 iiter=           1
+                     conver_load check
+ resid=  2.577281917785316E-031 retot=  1.099348447988605E-002
+ ratio1=  4.841871725042975E-015 ratio2=  4.434017124287879E-015
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           0
+                    conver_nodal_value check
+               Convergence check for temperature
+ ratio1=   1.13809858122362      ratio2=   1.33979402111278     
+                            not converged for checki=           6
+ iiter=           2
+Begin forming various matrix       at 2026-03-29 12:19:58 
+ ktsmat=           0
+ ntelgroup=           0
+Begin solution global equation     at 2026-03-29 12:19:58 
+                     istep=           2 iiter=           2
+                     conver_load check
+ resid=  2.129151764891811E-032 retot=  1.099348447988610E-002
+ ratio1=  1.391667950053898E-015 ratio2=  1.786842721727948E-015
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           0
+                    conver_nodal_value check
+               Convergence check for temperature
+ ratio1=  9.369757829038635E-016 ratio2=  1.264864415575509E-015
+ ***********RESTART FILE IS UPDATED!*******
+ time: 12:19:58
+ iblks=           1 iincs=           1 istep=           3
+ outinp=           0
+ iiter=           1
+Begin forming various matrix       at 2026-03-29 12:19:58 
+ ktsmat=           0
+Begin assemble golbal matrix       at 2026-03-29 12:19:58 
+ ntelgroup=           0
+Begin factorize global matrix      at 2026-03-29 12:19:58 
+ Factorization completed ... 
+Begin solution global equation     at 2026-03-29 12:19:58 
+                     istep=           3 iiter=           1
+                     conver_load check
+ resid=  1.370068929061663E-031 retot=  1.629315428917365E-002
+ ratio1=  2.899803859949635E-015 ratio2=  2.881134491867915E-015
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           0
+                    conver_nodal_value check
+               Convergence check for temperature
+ ratio1=   1.00893812957645      ratio2=   1.21210864378621     
+                            not converged for checki=           6
+ iiter=           2
+Begin forming various matrix       at 2026-03-29 12:19:58 
+ ktsmat=           0
+ ntelgroup=           0
+Begin solution global equation     at 2026-03-29 12:19:58 
+                     istep=           3 iiter=           2
+                     conver_load check
+ resid=  1.489768741586527E-032 retot=  1.629315428917365E-002
+ ratio1=  9.562178438915427E-016 ratio2=  8.154154222267690E-016
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           0
+                    conver_nodal_value check
+               Convergence check for temperature
+ ratio1=  7.056506887530357E-016 ratio2=  9.676079912296430E-016
+ ***********RESTART FILE IS UPDATED!*******
+ time: 12:19:58
+ iblks=           1 iincs=           1 istep=           4
+ outinp=           0
+ iiter=           1
+Begin forming various matrix       at 2026-03-29 12:19:58 
+ ktsmat=           0
+Begin assemble golbal matrix       at 2026-03-29 12:19:58 
+ ntelgroup=           0
+Begin factorize global matrix      at 2026-03-29 12:19:58 
+ Factorization completed ... 
+Begin solution global equation     at 2026-03-29 12:19:58 
+                     istep=           4 iiter=           1
+                     conver_load check
+ resid=  3.459691925488002E-031 retot=  1.179664001731493E-002
+ ratio1=  5.415512350064536E-015 ratio2=  5.813698107461220E-015
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           0
+                    conver_nodal_value check
+               Convergence check for temperature
+ ratio1=  0.861152720168190      ratio2=   1.12939887504055     
+                            not converged for checki=           6
+ iiter=           2
+Begin forming various matrix       at 2026-03-29 12:19:58 
+ ktsmat=           0
+ ntelgroup=           0
+Begin solution global equation     at 2026-03-29 12:19:58 
+                     istep=           4 iiter=           2
+                     conver_load check
+ resid=  2.821629872261668E-032 retot=  1.179664001731497E-002
+ ratio1=  1.546574548475922E-015 ratio2=  1.533283017352408E-015
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           0
+                    conver_nodal_value check
+               Convergence check for temperature
+ ratio1=  9.971280568647162E-016 ratio2=  1.818932172235862E-015
+ ***********RESTART FILE IS UPDATED!*******
+ time: 12:19:58
+ iblks=           1 iincs=           1 istep=           5
+ outinp=           0
+ iiter=           1
+Begin forming various matrix       at 2026-03-29 12:19:58 
+ ktsmat=           0
+Begin assemble golbal matrix       at 2026-03-29 12:19:58 
+ ntelgroup=           0
+Begin factorize global matrix      at 2026-03-29 12:19:58 
+ Factorization completed ... 
+Begin solution global equation     at 2026-03-29 12:19:58 
+                     istep=           5 iiter=           1
+                     conver_load check
+ resid=  1.726785320716393E-031 retot=  1.478766392468535E-002
+ ratio1=  3.417192056050167E-015 ratio2=  3.537790820141623E-015
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           0
+                    conver_nodal_value check
+               Convergence check for temperature
+ ratio1=  0.801721348874312      ratio2=   1.06652320041692     
+                            not converged for checki=           6
+ iiter=           2
+Begin forming various matrix       at 2026-03-29 12:19:58 
+ ktsmat=           0
+ ntelgroup=           0
+Begin solution global equation     at 2026-03-29 12:19:58 
+                     istep=           5 iiter=           2
+                     conver_load check
+ resid=  2.018709745771500E-032 retot=  1.478766392468532E-002
+ ratio1=  1.168388177574102E-015 ratio2=  1.084161702946628E-015
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           0
+                    conver_nodal_value check
+               Convergence check for temperature
+ ratio1=  7.489270697346502E-016 ratio2=  7.240465956170338E-016
+ ***********RESTART FILE IS UPDATED!*******
+ time: 12:19:58
+ iblks=           1 iincs=           1 istep=           6
+ outinp=           0
+ iiter=           1
+Begin forming various matrix       at 2026-03-29 12:19:58 
+ ktsmat=           0
+Begin assemble golbal matrix       at 2026-03-29 12:19:58 
+ ntelgroup=           0
+Begin factorize global matrix      at 2026-03-29 12:19:59 
+ Factorization completed ... 
+Begin solution global equation     at 2026-03-29 12:19:59 
+                     istep=           6 iiter=           1
+                     conver_load check
+ resid=  1.915236487208197E-031 retot=  1.208719181534481E-002
+ ratio1=  3.980599612480198E-015 ratio2=  3.281941863967095E-015
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           0
+                    conver_nodal_value check
+               Convergence check for temperature
+ ratio1=  0.729150657925248      ratio2=   1.01851187883279     
+                            not converged for checki=           6
+ iiter=           2
+Begin forming various matrix       at 2026-03-29 12:19:59 
+ ktsmat=           0
+ ntelgroup=           0
+Begin solution global equation     at 2026-03-29 12:19:59 
+                     istep=           6 iiter=           2
+                     conver_load check
+ resid=  2.430522313163149E-032 retot=  1.208719181534483E-002
+ ratio1=  1.418035486183940E-015 ratio2=  1.704085198598299E-015
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           0
+                    conver_nodal_value check
+               Convergence check for temperature
+ ratio1=  8.157086333830594E-016 ratio2=  1.000833410137809E-015
+ ***********RESTART FILE IS UPDATED!*******
+ time: 12:19:58
+ iblks=           1 iincs=           1 istep=           7
+ outinp=           0
+ iiter=           1
+Begin forming various matrix       at 2026-03-29 12:19:59 
+ ktsmat=           0
+Begin assemble golbal matrix       at 2026-03-29 12:19:59 
+ ntelgroup=           0
+Begin factorize global matrix      at 2026-03-29 12:19:59 
+ Factorization completed ... 
+Begin solution global equation     at 2026-03-29 12:19:59 
+                     istep=           7 iiter=           1
+                     conver_load check
+ resid=  1.071408459908908E-031 retot=  1.399904622260472E-002
+ ratio1=  2.766484949585749E-015 ratio2=  2.815025030056075E-015
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           0
+                    conver_nodal_value check
+               Convergence check for temperature
+ ratio1=  0.692268974907788      ratio2=  0.979824592640710     
+                            not converged for checki=           6
+ iiter=           2
+Begin forming various matrix       at 2026-03-29 12:19:59 
+ ktsmat=           0
+ ntelgroup=           0
+Begin solution global equation     at 2026-03-29 12:19:59 
+                     istep=           7 iiter=           2
+                     conver_load check
+ resid=  3.878974774187339E-032 retot=  1.399904622260471E-002
+ ratio1=  1.664597560746157E-015 ratio2=  1.290219805442368E-015
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           0
+                    conver_nodal_value check
+               Convergence check for temperature
+ ratio1=  6.388494482832762E-016 ratio2=  6.824598538978450E-016
+ ***********RESTART FILE IS UPDATED!*******
+ time: 12:19:58
+ iblks=           1 iincs=           1 istep=           8
+ outinp=           0
+ iiter=           1
+Begin forming various matrix       at 2026-03-29 12:19:59 
+ ktsmat=           0
+Begin assemble golbal matrix       at 2026-03-29 12:19:59 
+ ntelgroup=           0
+Begin factorize global matrix      at 2026-03-29 12:19:59 
+ Factorization completed ... 
+Begin solution global equation     at 2026-03-29 12:19:59 
+                     istep=           8 iiter=           1
+                     conver_load check
+ resid=  1.043461375096149E-031 retot=  1.214354969029566E-002
+ ratio1=  2.931334380945566E-015 ratio2=  3.085414385514277E-015
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           0
+                    conver_nodal_value check
+               Convergence check for temperature
+ ratio1=  0.647878440022279      ratio2=  0.948273322313416     
+                            not converged for checki=           6
+ iiter=           2
+Begin forming various matrix       at 2026-03-29 12:19:59 
+ ktsmat=           0
+ ntelgroup=           0
+Begin solution global equation     at 2026-03-29 12:19:59 
+                     istep=           8 iiter=           2
+                     conver_load check
+ resid=  2.661562628248851E-032 retot=  1.214354969029562E-002
+ ratio1=  1.480456045559980E-015 ratio2=  1.574191013017491E-015
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           0
+                    conver_nodal_value check
+               Convergence check for temperature
+ ratio1=  4.752999450944879E-016 ratio2=  6.692950113758662E-016
+ ***********RESTART FILE IS UPDATED!*******
+ time: 12:19:58
+ iblks=           1 iincs=           1 istep=           9
+ outinp=           0
+ iiter=           1
+Begin forming various matrix       at 2026-03-29 12:19:59 
+ ktsmat=           0
+Begin assemble golbal matrix       at 2026-03-29 12:19:59 
+ ntelgroup=           0
+Begin factorize global matrix      at 2026-03-29 12:19:59 
+ Factorization completed ... 
+Begin solution global equation     at 2026-03-29 12:19:59 
+                     istep=           9 iiter=           1
+                     conver_load check
+ resid=  8.102619303871088E-032 retot=  1.349906385110369E-002
+ ratio1=  2.449970704860097E-015 ratio2=  2.717376517132454E-015
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           0
+                    conver_nodal_value check
+               Convergence check for temperature
+ ratio1=  0.620707978226553      ratio2=  0.921531268304814     
+                            not converged for checki=           6
+ iiter=           2
+Begin forming various matrix       at 2026-03-29 12:19:59 
+ ktsmat=           0
+ ntelgroup=           0
+Begin solution global equation     at 2026-03-29 12:19:59 
+                     istep=           9 iiter=           2
+                     conver_load check
+ resid=  1.857977340509970E-032 retot=  1.349906385110368E-002
+ ratio1=  1.173190076387014E-015 ratio2=  1.194451216321959E-015
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           0
+                    conver_nodal_value check
+               Convergence check for temperature
+ ratio1=  5.111748919786899E-016 ratio2=  7.080300650487939E-016
+ ***********RESTART FILE IS UPDATED!*******
+ time: 12:19:58
+ iblks=           1 iincs=           1 istep=          10
+ outinp=           0
+ iiter=           1
+Begin forming various matrix       at 2026-03-29 12:19:59 
+ ktsmat=           0
+Begin assemble golbal matrix       at 2026-03-29 12:19:59 
+ ntelgroup=           0
+Begin factorize global matrix      at 2026-03-29 12:19:59 
+ Factorization completed ... 
+Begin solution global equation     at 2026-03-29 12:19:59 
+                     istep=          10 iiter=           1
+                     conver_load check
+ resid=  8.220726121835822E-032 retot=  1.209443970960833E-002
+ ratio1=  2.607127153519292E-015 ratio2=  2.145241981001984E-015
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           0
+                    conver_nodal_value check
+               Convergence check for temperature
+ ratio1=  0.588977266265856      ratio2=  0.898619805321437     
+                            not converged for checki=           6
+ iiter=           2
+Begin forming various matrix       at 2026-03-29 12:19:59 
+ ktsmat=           0
+ ntelgroup=           0
+Begin solution global equation     at 2026-03-29 12:19:59 
+                     istep=          10 iiter=           2
+                     conver_load check
+ resid=  1.901749839089739E-032 retot=  1.209443970960834E-002
+ ratio1=  1.253960386765966E-015 ratio2=  1.261907047648226E-015
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           0
+                    conver_nodal_value check
+               Convergence check for temperature
+ ratio1=  3.378364516012561E-016 ratio2=  5.598813830976699E-016
+ ***********RESTART FILE IS UPDATED!*******
+ time: 12:19:58
+ iblks=           1 iincs=           1 istep=          11
+ outinp=           0
+ iiter=           1
+Begin forming various matrix       at 2026-03-29 12:19:59 
+ ktsmat=           0
+Begin assemble golbal matrix       at 2026-03-29 12:19:59 
+ ntelgroup=           0
+Begin factorize global matrix      at 2026-03-29 12:19:59 
+ Factorization completed ... 
+Begin solution global equation     at 2026-03-29 12:19:59 
+                     istep=          11 iiter=           1
+                     conver_load check
+ resid=  1.005125289487764E-031 retot=  1.314288588158237E-002
+ ratio1=  2.765443128557459E-015 ratio2=  1.997371361100049E-015
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           0
+                    conver_nodal_value check
+               Convergence check for temperature
+ ratio1=  0.566755520632674      ratio2=  0.878353088540703     
+                            not converged for checki=           6
+ iiter=           2
+Begin forming various matrix       at 2026-03-29 12:19:59 
+ ktsmat=           0
+ ntelgroup=           0
+Begin solution global equation     at 2026-03-29 12:19:59 
+                     istep=          11 iiter=           2
+                     conver_load check
+ resid=  2.856324604619379E-032 retot=  1.314288588158237E-002
+ ratio1=  1.474206806332944E-015 ratio2=  1.392107312281853E-015
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           0
+                    conver_nodal_value check
+               Convergence check for temperature
+ ratio1=  5.299757027010759E-016 ratio2=  6.318340737214191E-016
+ ***********RESTART FILE IS UPDATED!*******
+ time: 12:19:58
+ iblks=           1 iincs=           1 istep=          12
+ outinp=           0
+ iiter=           1
+Begin forming various matrix       at 2026-03-29 12:19:59 
+ ktsmat=           0
+Begin assemble golbal matrix       at 2026-03-29 12:19:59 
+ ntelgroup=           0
+Begin factorize global matrix      at 2026-03-29 12:19:59 
+ Factorization completed ... 
+Begin solution global equation     at 2026-03-29 12:19:59 
+                     istep=          12 iiter=           1
+                     conver_load check
+ resid=  1.434388562609215E-031 retot=  1.199842168265725E-002
+ ratio1=  3.457572905299056E-015 ratio2=  3.547449433663064E-015
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           0
+                    conver_nodal_value check
+               Convergence check for temperature
+ ratio1=  0.541679319642973      ratio2=  0.860291288815491     
+                            not converged for checki=           6
+ iiter=           2
+Begin forming various matrix       at 2026-03-29 12:19:59 
+ ktsmat=           0
+ ntelgroup=           0
+Begin solution global equation     at 2026-03-29 12:19:59 
+                     istep=          12 iiter=           2
+                     conver_load check
+ resid=  2.618477510158829E-032 retot=  1.199842168265722E-002
+ ratio1=  1.477278453356373E-015 ratio2=  1.456988160254475E-015
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           0
+                    conver_nodal_value check
+               Convergence check for temperature
+ ratio1=  4.955068152049755E-016 ratio2=  5.705331291597063E-016
+ ***********RESTART FILE IS UPDATED!*******
+ time: 12:19:58
+ iblks=           1 iincs=           1 istep=          13
+ outinp=           0
+ iiter=           1
+Begin forming various matrix       at 2026-03-29 12:19:59 
+ ktsmat=           0
+Begin assemble golbal matrix       at 2026-03-29 12:19:59 
+ ntelgroup=           0
+Begin factorize global matrix      at 2026-03-29 12:19:59 
+ Factorization completed ... 
+Begin solution global equation     at 2026-03-29 12:19:59 
+                     istep=          13 iiter=           1
+                     conver_load check
+ resid=  1.218778764867266E-031 retot=  1.286691327078157E-002
+ ratio1=  3.077692686902064E-015 ratio2=  4.587904019507591E-015
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           0
+                    conver_nodal_value check
+               Convergence check for temperature
+ ratio1=  0.522504445406692      ratio2=  0.843765311121819     
+                            not converged for checki=           6
+ iiter=           2
+Begin forming various matrix       at 2026-03-29 12:19:59 
+ ktsmat=           0
+ ntelgroup=           0
+Begin solution global equation     at 2026-03-29 12:19:59 
+                     istep=          13 iiter=           2
+                     conver_load check
+ resid=  2.638951192880767E-032 retot=  1.286691327078154E-002
+ ratio1=  1.432116974099186E-015 ratio2=  1.468129286242433E-015
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           0
+                    conver_nodal_value check
+               Convergence check for temperature
+ ratio1=  4.333540144052608E-016 ratio2=  8.457237499837400E-016
+ ***********RESTART FILE IS UPDATED!*******
+ time: 12:19:58
+ iblks=           1 iincs=           1 istep=          14
+ outinp=           0
+ iiter=           1
+Begin forming various matrix       at 2026-03-29 12:19:59 
+ ktsmat=           0
+Begin assemble golbal matrix       at 2026-03-29 12:19:59 
+ ntelgroup=           0
+Begin factorize global matrix      at 2026-03-29 12:20:00 
+ Factorization completed ... 
+Begin solution global equation     at 2026-03-29 12:20:00 
+                     istep=          14 iiter=           1
+                     conver_load check
+ resid=  1.732791787473364E-031 retot=  1.188304332065786E-002
+ ratio1=  3.818645564364374E-015 ratio2=  3.294099863816284E-015
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           0
+                    conver_nodal_value check
+               Convergence check for temperature
+ ratio1=  0.501490948527076      ratio2=  0.828587882777491     
+                            not converged for checki=           6
+ iiter=           2
+Begin forming various matrix       at 2026-03-29 12:20:00 
+ ktsmat=           0
+ ntelgroup=           0
+Begin solution global equation     at 2026-03-29 12:20:00 
+                     istep=          14 iiter=           2
+                     conver_load check
+ resid=  4.451309713782244E-032 retot=  1.188304332065788E-002
+ ratio1=  1.935441576460707E-015 ratio2=  2.036931316755962E-015
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           0
+                    conver_nodal_value check
+               Convergence check for temperature
+ ratio1=  5.835639283759009E-016 ratio2=  8.218122110581132E-016
+ ***********RESTART FILE IS UPDATED!*******
+ time: 12:19:58
+ iblks=           1 iincs=           1 istep=          15
+ outinp=           0
+ iiter=           1
+Begin forming various matrix       at 2026-03-29 12:20:00 
+ ktsmat=           0
+Begin assemble golbal matrix       at 2026-03-29 12:20:00 
+ ntelgroup=           0
+Begin factorize global matrix      at 2026-03-29 12:20:00 
+ Factorization completed ... 
+Begin solution global equation     at 2026-03-29 12:20:00 
+                     istep=          15 iiter=           1
+                     conver_load check
+ resid=  9.949569591957661E-032 retot=  1.263942074483490E-002
+ ratio1=  2.805682746685780E-015 ratio2=  2.314503966390536E-015
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           0
+                    conver_nodal_value check
+               Convergence check for temperature
+ ratio1=  0.484512224305528      ratio2=  0.814352852674337     
+                            not converged for checki=           6
+ iiter=           2
+Begin forming various matrix       at 2026-03-29 12:20:00 
+ ktsmat=           0
+ ntelgroup=           0
+Begin solution global equation     at 2026-03-29 12:20:00 
+                     istep=          15 iiter=           2
+                     conver_load check
+ resid=  2.268419312400109E-032 retot=  1.263942074483490E-002
+ ratio1=  1.339670772526377E-015 ratio2=  9.258015865562150E-016
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           0
+                    conver_nodal_value check
+               Convergence check for temperature
+ ratio1=  4.640679874485224E-016 ratio2=  6.806568470598882E-016
+ ***********RESTART FILE IS UPDATED!*******
+ time: 12:19:58
+ iblks=           1 iincs=           1 istep=          16
+ outinp=           0
+ iiter=           1
+Begin forming various matrix       at 2026-03-29 12:20:00 
+ ktsmat=           0
+Begin assemble golbal matrix       at 2026-03-29 12:20:00 
+ ntelgroup=           0
+Begin factorize global matrix      at 2026-03-29 12:20:00 
+ Factorization completed ... 
+Begin solution global equation     at 2026-03-29 12:20:00 
+                     istep=          16 iiter=           1
+                     conver_load check
+ resid=  1.026744119742798E-031 retot=  1.176154201912046E-002
+ ratio1=  2.954601948570794E-015 ratio2=  2.431317698738870E-015
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           0
+                    conver_nodal_value check
+               Convergence check for temperature
+ ratio1=  0.466311232988193      ratio2=  0.800995070486345     
+                            not converged for checki=           6
+ iiter=           2
+Begin forming various matrix       at 2026-03-29 12:20:00 
+ ktsmat=           0
+ ntelgroup=           0
+Begin solution global equation     at 2026-03-29 12:20:00 
+                     istep=          16 iiter=           2
+                     conver_load check
+ resid=  2.527561670180453E-032 retot=  1.176154201912042E-002
+ ratio1=  1.465948617165359E-015 ratio2=  8.957486258511642E-016
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           0
+                    conver_nodal_value check
+               Convergence check for temperature
+ ratio1=  5.573739738380152E-016 ratio2=  9.692635758302284E-016
+ ***********RESTART FILE IS UPDATED!*******
+ time: 12:19:58
+ iblks=           1 iincs=           1 istep=          17
+ outinp=           0
+ iiter=           1
+Begin forming various matrix       at 2026-03-29 12:20:00 
+ ktsmat=           0
+Begin assemble golbal matrix       at 2026-03-29 12:20:00 
+ ntelgroup=           0
+Begin factorize global matrix      at 2026-03-29 12:20:00 
+ Factorization completed ... 
+Begin solution global equation     at 2026-03-29 12:20:00 
+                     istep=          17 iiter=           1
+                     conver_load check
+ resid=  9.246516067239463E-032 retot=  1.244332397304562E-002
+ ratio1=  2.725968669741433E-015 ratio2=  2.488181371135481E-015
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           0
+                    conver_nodal_value check
+               Convergence check for temperature
+ ratio1=  0.451082083802477      ratio2=  0.788251723758390     
+                            not converged for checki=           6
+ iiter=           2
+Begin forming various matrix       at 2026-03-29 12:20:00 
+ ktsmat=           0
+ ntelgroup=           0
+Begin solution global equation     at 2026-03-29 12:20:00 
+                     istep=          17 iiter=           2
+                     conver_load check
+ resid=  4.366386613215287E-032 retot=  1.244332397304563E-002
+ ratio1=  1.873237697984890E-015 ratio2=  1.741726959794837E-015
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           0
+                    conver_nodal_value check
+               Convergence check for temperature
+ ratio1=  4.407705262562897E-016 ratio2=  5.742989406287414E-016
+ ***********RESTART FILE IS UPDATED!*******
+ time: 12:19:58
+ iblks=           1 iincs=           1 istep=          18
+ outinp=           0
+ iiter=           1
+Begin forming various matrix       at 2026-03-29 12:20:00 
+ ktsmat=           0
+Begin assemble golbal matrix       at 2026-03-29 12:20:00 
+ ntelgroup=           0
+Begin factorize global matrix      at 2026-03-29 12:20:00 
+ Factorization completed ... 
+Begin solution global equation     at 2026-03-29 12:20:00 
+                     istep=          18 iiter=           1
+                     conver_load check
+ resid=  9.465775051500709E-032 retot=  1.164026898568346E-002
+ ratio1=  2.851652368777683E-015 ratio2=  2.251006677969890E-015
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           0
+                    conver_nodal_value check
+               Convergence check for temperature
+ ratio1=  0.435014722834305      ratio2=  0.776117096120768     
+                            not converged for checki=           6
+ iiter=           2
+Begin forming various matrix       at 2026-03-29 12:20:00 
+ ktsmat=           0
+ ntelgroup=           0
+Begin solution global equation     at 2026-03-29 12:20:00 
+                     istep=          18 iiter=           2
+                     conver_load check
+ resid=  2.522990010635693E-032 retot=  1.164026898568347E-002
+ ratio1=  1.472232014270628E-015 ratio2=  1.607861912835636E-015
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           0
+                    conver_nodal_value check
+               Convergence check for temperature
+ ratio1=  3.137820524866789E-016 ratio2=  5.133649610345030E-016
+ ***********RESTART FILE IS UPDATED!*******
+ time: 12:19:58
+ iblks=           1 iincs=           1 istep=          19
+ outinp=           0
+ iiter=           1
+Begin forming various matrix       at 2026-03-29 12:20:00 
+ ktsmat=           0
+Begin assemble golbal matrix       at 2026-03-29 12:20:00 
+ ntelgroup=           0
+Begin factorize global matrix      at 2026-03-29 12:20:00 
+ Factorization completed ... 
+Begin solution global equation     at 2026-03-29 12:20:00 
+                     istep=          19 iiter=           1
+                     conver_load check
+ resid=  1.399278707573948E-031 retot=  1.226888651369552E-002
+ ratio1=  3.377143681297271E-015 ratio2=  3.821356077357967E-015
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           0
+                    conver_nodal_value check
+               Convergence check for temperature
+ ratio1=  0.421257032852186      ratio2=  0.764410598392134     
+                            not converged for checki=           6
+ iiter=           2
+Begin forming various matrix       at 2026-03-29 12:20:00 
+ ktsmat=           0
+ ntelgroup=           0
+Begin solution global equation     at 2026-03-29 12:20:00 
+                     istep=          19 iiter=           2
+                     conver_load check
+ resid=  2.985737813998719E-032 retot=  1.226888651369551E-002
+ ratio1=  1.559995191086963E-015 ratio2=  1.252903631920646E-015
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           0
+                    conver_nodal_value check
+               Convergence check for temperature
+ ratio1=  3.533467471790486E-016 ratio2=  8.038429214975452E-016
+ ***********RESTART FILE IS UPDATED!*******
+ time: 12:19:58
+ iblks=           1 iincs=           1 istep=          20
+ outinp=           0
+ iiter=           1
+Begin forming various matrix       at 2026-03-29 12:20:00 
+ ktsmat=           0
+Begin assemble golbal matrix       at 2026-03-29 12:20:00 
+ ntelgroup=           0
+Begin factorize global matrix      at 2026-03-29 12:20:00 
+ Factorization completed ... 
+Begin solution global equation     at 2026-03-29 12:20:00 
+                     istep=          20 iiter=           1
+                     conver_load check
+ resid=  1.810516429651098E-031 retot=  1.152216800366114E-002
+ ratio1=  3.964004450702226E-015 ratio2=  4.525027110354189E-015
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           0
+                    conver_nodal_value check
+               Convergence check for temperature
+ ratio1=  0.406908702695682      ratio2=  0.753154757873389     
+                            not converged for checki=           6
+ iiter=           2
+Begin forming various matrix       at 2026-03-29 12:20:00 
+ ktsmat=           0
+ ntelgroup=           0
+Begin solution global equation     at 2026-03-29 12:20:00 
+                     istep=          20 iiter=           2
+                     conver_load check
+ resid=  3.381093630136039E-032 retot=  1.152216800366116E-002
+ ratio1=  1.713016306432330E-015 ratio2=  2.133227066309832E-015
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           0
+                    conver_nodal_value check
+               Convergence check for temperature
+ ratio1=  6.701470416014127E-016 ratio2=  1.056043208769116E-015
+ ***********RESTART FILE IS UPDATED!*******
+   time depend     iincs=           2 nincs=           3
+ time: 12:19:58
+ iblks=           1 iincs=           2 istep=           1
+ outinp=           0
+ iiter=           1
+Begin forming various matrix       at 2026-03-29 12:20:00 
+ ktsmat=           1
+Begin assemble golbal matrix       at 2026-03-29 12:20:00 
+ ntelgroup=           0
+Begin factorize global matrix      at 2026-03-29 12:20:00 
+ Factorization completed ... 
+Begin solution global equation     at 2026-03-29 12:20:00 
+                     istep=           1 iiter=           1
+                     conver_load check
+ resid=  3.916150646336810E-031 retot=  1.204852425244656E-002
+ ratio1=  5.701153927652463E-015 ratio2=  5.626176154332676E-015
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           0
+                    conver_nodal_value check
+               Convergence check for temperature
+ ratio1=  0.779392588805561      ratio2=   1.48975631960432     
+                            not converged for checki=           6
+ iiter=           2
+Begin forming various matrix       at 2026-03-29 12:20:00 
+ ktsmat=           0
+ ntelgroup=           0
+Begin solution global equation     at 2026-03-29 12:20:00 
+                     istep=           1 iiter=           2
+                     conver_load check
+ resid=  3.532901751433239E-032 retot=  1.204852425244655E-002
+ ratio1=  1.712374894538086E-015 ratio2=  1.201093785756415E-015
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           0
+                    conver_nodal_value check
+               Convergence check for temperature
+ ratio1=  4.231543846777379E-016 ratio2=  6.601062985084335E-016
+ ***********RESTART FILE IS UPDATED!*******
+ time: 12:19:58
+ iblks=           1 iincs=           2 istep=           2
+ outinp=           0
+ iiter=           1
+Begin forming various matrix       at 2026-03-29 12:20:01 
+ ktsmat=           0
+Begin assemble golbal matrix       at 2026-03-29 12:20:01 
+ ntelgroup=           0
+Begin factorize global matrix      at 2026-03-29 12:20:01 
+ Factorization completed ... 
+Begin solution global equation     at 2026-03-29 12:20:01 
+                     istep=           2 iiter=           1
+                     conver_load check
+ resid=  2.752238845883689E-031 retot=  1.127702820984624E-002
+ ratio1=  4.940213597958946E-015 ratio2=  4.459596535989429E-015
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           0
+                    conver_nodal_value check
+               Convergence check for temperature
+ ratio1=  0.748361530720483      ratio2=   1.47907291067048     
+                            not converged for checki=           6
+ iiter=           2
+Begin forming various matrix       at 2026-03-29 12:20:01 
+ ktsmat=           0
+ ntelgroup=           0
+Begin solution global equation     at 2026-03-29 12:20:01 
+                     istep=           2 iiter=           2
+                     conver_load check
+ resid=  2.899068142790035E-032 retot=  1.127702820984629E-002
+ ratio1=  1.603363077520610E-015 ratio2=  9.801311068108632E-016
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           0
+                    conver_nodal_value check
+               Convergence check for temperature
+ ratio1=  9.855738215107783E-016 ratio2=  1.545013253525032E-015
+ ***********RESTART FILE IS UPDATED!*******
+ time: 12:19:58
+ iblks=           1 iincs=           2 istep=           3
+ outinp=           0
+ iiter=           1
+Begin forming various matrix       at 2026-03-29 12:20:01 
+ ktsmat=           0
+Begin assemble golbal matrix       at 2026-03-29 12:20:01 
+ ntelgroup=           0
+Begin factorize global matrix      at 2026-03-29 12:20:01 
+ Factorization completed ... 
+Begin solution global equation     at 2026-03-29 12:20:01 
+                     istep=           3 iiter=           1
+                     conver_load check
+ resid=  2.661046308839491E-031 retot=  1.179334672402227E-002
+ ratio1=  4.750153923931460E-015 ratio2=  3.306603094122561E-015
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           0
+                    conver_nodal_value check
+               Convergence check for temperature
+ ratio1=  0.721120414627203      ratio2=   1.46842251134720     
+                            not converged for checki=           6
+ iiter=           2
+Begin forming various matrix       at 2026-03-29 12:20:01 
+ ktsmat=           0
+ ntelgroup=           0
+Begin solution global equation     at 2026-03-29 12:20:01 
+                     istep=           3 iiter=           2
+                     conver_load check
+ resid=  5.043330174961131E-032 retot=  1.179334672402227E-002
+ ratio1=  2.067950634408019E-015 ratio2=  2.236349918730238E-015
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           0
+                    conver_nodal_value check
+               Convergence check for temperature
+ ratio1=  9.009934392911188E-016 ratio2=  1.574083731655980E-015
+ ***********RESTART FILE IS UPDATED!*******
+ time: 12:19:58
+ iblks=           1 iincs=           2 istep=           4
+ outinp=           0
+ iiter=           1
+Begin forming various matrix       at 2026-03-29 12:20:01 
+ ktsmat=           0
+Begin assemble golbal matrix       at 2026-03-29 12:20:01 
+ ntelgroup=           0
+Begin factorize global matrix      at 2026-03-29 12:20:01 
+ Factorization completed ... 
+Begin solution global equation     at 2026-03-29 12:20:01 
+                     istep=           4 iiter=           1
+                     conver_load check
+ resid=  1.407592340853373E-031 retot=  1.105792947386935E-002
+ ratio1=  3.567808531387615E-015 ratio2=  4.882981276566580E-015
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           0
+                    conver_nodal_value check
+               Convergence check for temperature
+ ratio1=  0.694051904048492      ratio2=   1.45802466147709     
+                            not converged for checki=           6
+ iiter=           2
+Begin forming various matrix       at 2026-03-29 12:20:01 
+ ktsmat=           0
+ ntelgroup=           0
+Begin solution global equation     at 2026-03-29 12:20:01 
+                     istep=           4 iiter=           2
+                     conver_load check
+ resid=  3.591628254407749E-032 retot=  1.105792947386934E-002
+ ratio1=  1.802224053885049E-015 ratio2=  1.715642070145019E-015
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           0
+                    conver_nodal_value check
+               Convergence check for temperature
+ ratio1=  4.481121362326202E-016 ratio2=  8.765571391159887E-016
+ ***********RESTART FILE IS UPDATED!*******
+ time: 12:19:58
+ iblks=           1 iincs=           2 istep=           5
+ outinp=           0
+ iiter=           1
+Begin forming various matrix       at 2026-03-29 12:20:01 
+ ktsmat=           0
+Begin assemble golbal matrix       at 2026-03-29 12:20:01 
+ ntelgroup=           0
+Begin factorize global matrix      at 2026-03-29 12:20:01 
+ Factorization completed ... 
+Begin solution global equation     at 2026-03-29 12:20:01 
+                     istep=           5 iiter=           1
+                     conver_load check
+ resid=  2.840566942686831E-031 retot=  1.156350324754637E-002
+ ratio1=  4.956302454038222E-015 ratio2=  4.807306435556563E-015
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           0
+                    conver_nodal_value check
+               Convergence check for temperature
+ ratio1=  0.670084847433924      ratio2=   1.44767210426064     
+                            not converged for checki=           6
+ iiter=           2
+Begin forming various matrix       at 2026-03-29 12:20:01 
+ ktsmat=           0
+ ntelgroup=           0
+Begin solution global equation     at 2026-03-29 12:20:01 
+                     istep=           5 iiter=           2
+                     conver_load check
+ resid=  3.417722570664647E-032 retot=  1.156350324754640E-002
+ ratio1=  1.719189262010199E-015 ratio2=  1.096969253751162E-015
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           0
+                    conver_nodal_value check
+               Convergence check for temperature
+ ratio1=  1.072888712164934E-015 ratio2=  1.698032420211030E-015
+ ***********RESTART FILE IS UPDATED!*******
+ time: 12:19:58
+ iblks=           1 iincs=           2 istep=           6
+ outinp=           0
+ iiter=           1
+Begin forming various matrix       at 2026-03-29 12:20:01 
+ ktsmat=           0
+Begin assemble golbal matrix       at 2026-03-29 12:20:01 
+ ntelgroup=           0
+Begin factorize global matrix      at 2026-03-29 12:20:01 
+ Factorization completed ... 
+Begin solution global equation     at 2026-03-29 12:20:01 
+                     istep=           6 iiter=           1
+                     conver_load check
+ resid=  3.707382067055824E-031 retot=  1.085919468942182E-002
+ ratio1=  5.842986228501741E-015 ratio2=  5.526746308046775E-015
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           0
+                    conver_nodal_value check
+               Convergence check for temperature
+ ratio1=  0.646346811422303      ratio2=   1.43753725850382     
+                            not converged for checki=           6
+ iiter=           2
+Begin forming various matrix       at 2026-03-29 12:20:01 
+ ktsmat=           0
+ ntelgroup=           0
+Begin solution global equation     at 2026-03-29 12:20:01 
+                     istep=           6 iiter=           2
+                     conver_load check
+ resid=  3.820733816227877E-032 retot=  1.085919468942181E-002
+ ratio1=  1.875748385765745E-015 ratio2=  1.731269927821885E-015
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           0
+                    conver_nodal_value check
+               Convergence check for temperature
+ ratio1=  7.351515483676158E-016 ratio2=  1.424959767905479E-015
+ ***********RESTART FILE IS UPDATED!*******
+ time: 12:19:58
+ iblks=           1 iincs=           2 istep=           7
+ outinp=           0
+ iiter=           1
+Begin forming various matrix       at 2026-03-29 12:20:01 
+ ktsmat=           0
+Begin assemble golbal matrix       at 2026-03-29 12:20:01 
+ ntelgroup=           0
+Begin factorize global matrix      at 2026-03-29 12:20:01 
+ Factorization completed ... 
+Begin solution global equation     at 2026-03-29 12:20:01 
+                     istep=           7 iiter=           1
+                     conver_load check
+ resid=  4.112172241528103E-031 retot=  1.135384850179472E-002
+ ratio1=  6.018165144841860E-015 ratio2=  7.749356865656114E-015
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           0
+                    conver_nodal_value check
+               Convergence check for temperature
+ ratio1=  0.625160590916603      ratio2=   1.42745429481556     
+                            not converged for checki=           6
+ iiter=           2
+Begin forming various matrix       at 2026-03-29 12:20:01 
+ ktsmat=           0
+ ntelgroup=           0
+Begin solution global equation     at 2026-03-29 12:20:01 
+                     istep=           7 iiter=           2
+                     conver_load check
+ resid=  5.137429174141699E-032 retot=  1.135384850179471E-002
+ ratio1=  2.127165968550654E-015 ratio2=  1.888498731966619E-015
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           0
+                    conver_nodal_value check
+               Convergence check for temperature
+ ratio1=  1.082660239980341E-015 ratio2=  2.269748555604348E-015
+ ***********RESTART FILE IS UPDATED!*******
+ time: 12:19:58
+ iblks=           1 iincs=           2 istep=           8
+ outinp=           0
+ iiter=           1
+Begin forming various matrix       at 2026-03-29 12:20:01 
+ ktsmat=           0
+Begin assemble golbal matrix       at 2026-03-29 12:20:01 
+ ntelgroup=           0
+Begin factorize global matrix      at 2026-03-29 12:20:01 
+ Factorization completed ... 
+Begin solution global equation     at 2026-03-29 12:20:01 
+                     istep=           8 iiter=           1
+                     conver_load check
+ resid=  2.259235850037609E-031 retot=  1.067693159291043E-002
+ ratio1=  4.599997073105566E-015 ratio2=  4.230654565770279E-015
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           0
+                    conver_nodal_value check
+               Convergence check for temperature
+ ratio1=  0.604214864775738      ratio2=   1.41756327408900     
+                            not converged for checki=           6
+ iiter=           2
+Begin forming various matrix       at 2026-03-29 12:20:01 
+ ktsmat=           0
+ ntelgroup=           0
+Begin solution global equation     at 2026-03-29 12:20:01 
+                     istep=           8 iiter=           2
+                     conver_load check
+ resid=  3.371004399677096E-032 retot=  1.067693159291042E-002
+ ratio1=  1.776873169229779E-015 ratio2=  1.074451953211501E-015
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           0
+                    conver_nodal_value check
+               Convergence check for temperature
+ ratio1=  5.673171649762191E-016 ratio2=  1.131444925156127E-015
+ ***********RESTART FILE IS UPDATED!*******
+ time: 12:19:58
+ iblks=           1 iincs=           2 istep=           9
+ outinp=           0
+ iiter=           1
+Begin forming various matrix       at 2026-03-29 12:20:01 
+ ktsmat=           0
+Begin assemble golbal matrix       at 2026-03-29 12:20:01 
+ ntelgroup=           0
+Begin factorize global matrix      at 2026-03-29 12:20:01 
+ Factorization completed ... 
+Begin solution global equation     at 2026-03-29 12:20:01 
+                     istep=           9 iiter=           1
+                     conver_load check
+ resid=  2.021741556158340E-031 retot=  1.116073896075114E-002
+ ratio1=  4.256144298957546E-015 ratio2=  3.431863981426128E-015
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           0
+                    conver_nodal_value check
+               Convergence check for temperature
+ ratio1=  0.585383684398679      ratio2=   1.40772777261410     
+                            not converged for checki=           6
+ iiter=           2
+Begin forming various matrix       at 2026-03-29 12:20:01 
+ ktsmat=           0
+ ntelgroup=           0
+Begin solution global equation     at 2026-03-29 12:20:01 
+                     istep=           9 iiter=           2
+                     conver_load check
+ resid=  4.044492548743215E-032 retot=  1.116073896075115E-002
+ ratio1=  1.903643168177350E-015 ratio2=  1.313632146000432E-015
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           0
+                    conver_nodal_value check
+               Convergence check for temperature
+ ratio1=  4.646808320454112E-016 ratio2=  7.487996739108932E-016
+ ***********RESTART FILE IS UPDATED!*******
+ time: 12:19:58
+ iblks=           1 iincs=           2 istep=          10
+ outinp=           0
+ iiter=           1
+Begin forming various matrix       at 2026-03-29 12:20:01 
+ ktsmat=           0
+Begin assemble golbal matrix       at 2026-03-29 12:20:01 
+ ntelgroup=           0
+Begin factorize global matrix      at 2026-03-29 12:20:02 
+ Factorization completed ... 
+Begin solution global equation     at 2026-03-29 12:20:02 
+                     istep=          10 iiter=           1
+                     conver_load check
+ resid=  1.622166723318086E-031 retot=  1.050833080907429E-002
+ ratio1=  3.928989570497453E-015 ratio2=  3.249111508314318E-015
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           0
+                    conver_nodal_value check
+               Convergence check for temperature
+ ratio1=  0.566783920542083      ratio2=   1.39806445126722     
+                            not converged for checki=           6
+ iiter=           2
+Begin forming various matrix       at 2026-03-29 12:20:02 
+ ktsmat=           0
+ ntelgroup=           0
+Begin solution global equation     at 2026-03-29 12:20:02 
+                     istep=          10 iiter=           2
+                     conver_load check
+ resid=  4.187725660370193E-032 retot=  1.050833080907431E-002
+ ratio1=  1.996283620801083E-015 ratio2=  1.489176107977396E-015
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           0
+                    conver_nodal_value check
+               Convergence check for temperature
+ ratio1=  3.940746862210123E-016 ratio2=  6.616592555719134E-016
+ ***********RESTART FILE IS UPDATED!*******
+   time depend     iincs=           3 nincs=           3
+ time: 12:19:58
+ iblks=           1 iincs=           3 istep=           1
+ outinp=           0
+ iiter=           1
+Begin forming various matrix       at 2026-03-29 12:20:02 
+ ktsmat=           1
+Begin assemble golbal matrix       at 2026-03-29 12:20:02 
+ ntelgroup=           0
+Begin factorize global matrix      at 2026-03-29 12:20:02 
+ Factorization completed ... 
+Begin solution global equation     at 2026-03-29 12:20:02 
+                     istep=           1 iiter=           1
+                     conver_load check
+ resid=  3.839329673043714E-030 retot=  1.066905248049710E-002
+ ratio1=  1.896988844696287E-014 ratio2=  1.887702892804519E-014
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           0
+                    conver_nodal_value check
+               Convergence check for temperature
+ ratio1=   2.52791068067818      ratio2=   6.96111466668413     
+                            not converged for checki=           6
+ iiter=           2
+Begin forming various matrix       at 2026-03-29 12:20:02 
+ ktsmat=           0
+ ntelgroup=           0
+Begin solution global equation     at 2026-03-29 12:20:02 
+                     istep=           1 iiter=           2
+                     conver_load check
+ resid=  6.020057008226261E-032 retot=  1.066905248049707E-002
+ ratio1=  2.375403413679289E-015 ratio2=  1.948163127805387E-015
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           0
+                    conver_nodal_value check
+               Convergence check for temperature
+ ratio1=  3.016205448228822E-015 ratio2=  6.037269465950882E-015
+ ***********RESTART FILE IS UPDATED!*******
+ time: 12:19:58
+ iblks=           1 iincs=           3 istep=           2
+ outinp=           0
+ iiter=           1
+Begin forming various matrix       at 2026-03-29 12:20:02 
+ ktsmat=           0
+Begin assemble golbal matrix       at 2026-03-29 12:20:02 
+ ntelgroup=           0
+Begin factorize global matrix      at 2026-03-29 12:20:02 
+ Factorization completed ... 
+Begin solution global equation     at 2026-03-29 12:20:02 
+                     istep=           2 iiter=           1
+                     conver_load check
+ resid=  4.018818469347187E-030 retot=  9.784267996725672E-003
+ ratio1=  2.026679267882277E-014 ratio2=  2.071171128596241E-014
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           0
+                    conver_nodal_value check
+               Convergence check for temperature
+ ratio1=   2.29079144801783      ratio2=   6.95202009142248     
+                            not converged for checki=           6
+ iiter=           2
+Begin forming various matrix       at 2026-03-29 12:20:02 
+ ktsmat=           0
+ ntelgroup=           0
+Begin solution global equation     at 2026-03-29 12:20:02 
+                     istep=           2 iiter=           2
+                     conver_load check
+ resid=  7.124809199486707E-032 retot=  9.784267996725536E-003
+ ratio1=  2.698500167688508E-015 ratio2=  1.473144579187854E-015
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           0
+                    conver_nodal_value check
+               Convergence check for temperature
+ ratio1=  2.157514270015146E-015 ratio2=  5.177088261268585E-015
+ ***********RESTART FILE IS UPDATED!*******
+ time: 12:19:58
+ iblks=           1 iincs=           3 istep=           3
+ outinp=           0
+ iiter=           1
+Begin forming various matrix       at 2026-03-29 12:20:02 
+ ktsmat=           0
+Begin assemble golbal matrix       at 2026-03-29 12:20:02 
+ ntelgroup=           0
+Begin factorize global matrix      at 2026-03-29 12:20:02 
+ Factorization completed ... 
+Begin solution global equation     at 2026-03-29 12:20:02 
+                     istep=           3 iiter=           1
+                     conver_load check
+ resid=  6.338436293804468E-030 retot=  1.001821908688540E-002
+ ratio1=  2.515334817252617E-014 ratio2=  2.890886490713792E-014
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           0
+                    conver_nodal_value check
+               Convergence check for temperature
+ ratio1=   2.09973926491056      ratio2=   6.94214626296015     
+                            not converged for checki=           6
+ iiter=           2
+Begin forming various matrix       at 2026-03-29 12:20:02 
+ ktsmat=           0
+ ntelgroup=           0
+Begin solution global equation     at 2026-03-29 12:20:02 
+                     istep=           3 iiter=           2
+                     conver_load check
+ resid=  6.951482769372965E-032 retot=  1.001821908688540E-002
+ ratio1=  2.634167958761807E-015 ratio2=  1.247864672250579E-015
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           0
+                    conver_nodal_value check
+               Convergence check for temperature
+ ratio1=  1.935150676499312E-015 ratio2=  6.330028827283719E-015
+ ***********RESTART FILE IS UPDATED!*******
+ time: 12:19:58
+ iblks=           1 iincs=           3 istep=           4
+ outinp=           0
+ iiter=           1
+Begin forming various matrix       at 2026-03-29 12:20:02 
+ ktsmat=           0
+Begin assemble golbal matrix       at 2026-03-29 12:20:02 
+ ntelgroup=           0
+Begin factorize global matrix      at 2026-03-29 12:20:02 
+ Factorization completed ... 
+Begin solution global equation     at 2026-03-29 12:20:02 
+                     istep=           4 iiter=           1
+                     conver_load check
+ resid=  8.975119265826626E-030 retot=  9.221405575213174E-003
+ ratio1=  3.119762636082913E-014 ratio2=  3.179394084513848E-014
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           0
+                    conver_nodal_value check
+               Convergence check for temperature
+ ratio1=   1.93871621724874      ratio2=   6.93288748781010     
+                            not converged for checki=           6
+ iiter=           2
+Begin forming various matrix       at 2026-03-29 12:20:02 
+ ktsmat=           0
+ ntelgroup=           0
+Begin solution global equation     at 2026-03-29 12:20:02 
+                     istep=           4 iiter=           2
+                     conver_load check
+ resid=  7.442961952866950E-032 retot=  9.221405575213481E-003
+ ratio1=  2.841020305210611E-015 ratio2=  1.589697042256902E-015
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           0
+                    conver_nodal_value check
+               Convergence check for temperature
+ ratio1=  2.959623638757601E-015 ratio2=  7.553696077700493E-015
+ ***********RESTART FILE IS UPDATED!*******
+ time: 12:19:58
+ iblks=           1 iincs=           3 istep=           5
+ outinp=           0
+ iiter=           1
+Begin forming various matrix       at 2026-03-29 12:20:02 
+ ktsmat=           0
+Begin assemble golbal matrix       at 2026-03-29 12:20:02 
+ ntelgroup=           0
+Begin factorize global matrix      at 2026-03-29 12:20:02 
+ Factorization completed ... 
+Begin solution global equation     at 2026-03-29 12:20:02 
+                     istep=           5 iiter=           1
+                     conver_load check
+ resid=  5.271214438309948E-030 retot=  9.491141712953441E-003
+ ratio1=  2.356655564300951E-014 ratio2=  2.321927302601714E-014
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           0
+                    conver_nodal_value check
+               Convergence check for temperature
+ ratio1=   1.80268436097750      ratio2=   6.92319618818280     
+                            not converged for checki=           6
+ iiter=           2
+Begin forming various matrix       at 2026-03-29 12:20:02 
+ ktsmat=           0
+ ntelgroup=           0
+Begin solution global equation     at 2026-03-29 12:20:02 
+                     istep=           5 iiter=           2
+                     conver_load check
+ resid=  9.040620438648280E-032 retot=  9.491141712953548E-003
+ ratio1=  3.086312438473594E-015 ratio2=  1.460107659611517E-015
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           0
+                    conver_nodal_value check
+               Convergence check for temperature
+ ratio1=  1.411929827488353E-015 ratio2=  4.825725286509808E-015
+ ***********RESTART FILE IS UPDATED!*******
+ time: 12:19:58
+ iblks=           1 iincs=           3 istep=           6
+ outinp=           0
+ iiter=           1
+Begin forming various matrix       at 2026-03-29 12:20:02 
+ ktsmat=           0
+Begin assemble golbal matrix       at 2026-03-29 12:20:02 
+ ntelgroup=           0
+Begin factorize global matrix      at 2026-03-29 12:20:02 
+ Factorization completed ... 
+Begin solution global equation     at 2026-03-29 12:20:02 
+                     istep=           6 iiter=           1
+                     conver_load check
+ resid=  6.236144502975933E-030 retot=  8.751638192400994E-003
+ ratio1=  2.669398472240352E-014 ratio2=  2.455124744675526E-014
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           0
+                    conver_nodal_value check
+               Convergence check for temperature
+ ratio1=   1.68400352325035      ratio2=   6.91387920254509     
+                            not converged for checki=           6
+ iiter=           2
+Begin forming various matrix       at 2026-03-29 12:20:02 
+ ktsmat=           0
+ ntelgroup=           0
+Begin solution global equation     at 2026-03-29 12:20:02 
+                     istep=           6 iiter=           2
+                     conver_load check
+ resid=  1.202728323768767E-031 retot=  8.751638192401046E-003
+ ratio1=  3.707140890968389E-015 ratio2=  1.705977919260957E-015
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           0
+                    conver_nodal_value check
+               Convergence check for temperature
+ ratio1=  3.061361102896767E-015 ratio2=  7.438098439298038E-015
+ ***********RESTART FILE IS UPDATED!*******
+ time: 12:19:58
+ iblks=           1 iincs=           3 istep=           7
+ outinp=           0
+ iiter=           1
+Begin forming various matrix       at 2026-03-29 12:20:02 
+ ktsmat=           0
+Begin assemble golbal matrix       at 2026-03-29 12:20:02 
+ ntelgroup=           0
+Begin factorize global matrix      at 2026-03-29 12:20:02 
+ Factorization completed ... 
+Begin solution global equation     at 2026-03-29 12:20:02 
+                     istep=           7 iiter=           1
+                     conver_load check
+ resid=  4.474635961603260E-030 retot=  9.039108796360886E-003
+ ratio1=  2.224928440413797E-014 ratio2=  2.539841904396714E-014
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           0
+                    conver_nodal_value check
+               Convergence check for temperature
+ ratio1=   1.58077166725154      ratio2=   6.90430522417503     
+                            not converged for checki=           6
+ iiter=           2
+Begin forming various matrix       at 2026-03-29 12:20:02 
+ ktsmat=           0
+ ntelgroup=           0
+Begin solution global equation     at 2026-03-29 12:20:02 
+                     istep=           7 iiter=           2
+                     conver_load check
+ resid=  1.323675282701398E-031 retot=  9.039108796360738E-003
+ ratio1=  3.826730896175962E-015 ratio2=  2.408470771410715E-015
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           0
+                    conver_nodal_value check
+               Convergence check for temperature
+ ratio1=  1.025435990310565E-015 ratio2=  5.289901535091808E-015
+ ***********RESTART FILE IS UPDATED!*******
+ time: 12:19:58
+ iblks=           1 iincs=           3 istep=           8
+ outinp=           0
+ iiter=           1
+Begin forming various matrix       at 2026-03-29 12:20:02 
+ ktsmat=           0
+Begin assemble golbal matrix       at 2026-03-29 12:20:02 
+ ntelgroup=           0
+Begin factorize global matrix      at 2026-03-29 12:20:03 
+ Factorization completed ... 
+Begin solution global equation     at 2026-03-29 12:20:03 
+                     istep=           8 iiter=           1
+                     conver_load check
+ resid=  7.595762235364781E-030 retot=  8.340353411568349E-003
+ ratio1=  3.017820845531412E-014 ratio2=  3.259532476372737E-014
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           0
+                    conver_nodal_value check
+               Convergence check for temperature
+ ratio1=   1.48880923123064      ratio2=   6.89497351564209     
+                            not converged for checki=           6
+ iiter=           2
+Begin forming various matrix       at 2026-03-29 12:20:03 
+ ktsmat=           0
+ ntelgroup=           0
+Begin solution global equation     at 2026-03-29 12:20:03 
+                     istep=           8 iiter=           2
+                     conver_load check
+ resid=  1.614336415041940E-031 retot=  8.340353411568281E-003
+ ratio1=  4.399514919914079E-015 ratio2=  2.127433784112769E-015
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           0
+                    conver_nodal_value check
+               Convergence check for temperature
+ ratio1=  1.601160573774389E-015 ratio2=  6.081124995933501E-015
+ ***********RESTART FILE IS UPDATED!*******
+ time: 12:19:58
+ iblks=           1 iincs=           3 istep=           9
+ outinp=           0
+ iiter=           1
+Begin forming various matrix       at 2026-03-29 12:20:03 
+ ktsmat=           0
+Begin assemble golbal matrix       at 2026-03-29 12:20:03 
+ ntelgroup=           0
+Begin factorize global matrix      at 2026-03-29 12:20:03 
+ Factorization completed ... 
+Begin solution global equation     at 2026-03-29 12:20:03 
+                     istep=           9 iiter=           1
+                     conver_load check
+ resid=  4.158823574702220E-030 retot=  8.635732654024651E-003
+ ratio1=  2.194500348287060E-014 ratio2=  2.060865907024688E-014
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           0
+                    conver_nodal_value check
+               Convergence check for temperature
+ ratio1=   1.40733203974203      ratio2=   6.88548460893279     
+                            not converged for checki=           6
+ iiter=           2
+Begin forming various matrix       at 2026-03-29 12:20:03 
+ ktsmat=           0
+ ntelgroup=           0
+Begin solution global equation     at 2026-03-29 12:20:03 
+                     istep=           9 iiter=           2
+                     conver_load check
+ resid=  1.479026476704218E-031 retot=  8.635732654024482E-003
+ ratio1=  4.138456358941766E-015 ratio2=  1.642719201251590E-015
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           0
+                    conver_nodal_value check
+               Convergence check for temperature
+ ratio1=  1.104071437217539E-015 ratio2=  4.485367601122739E-015
+ ***********RESTART FILE IS UPDATED!*******
+ time: 12:19:58
+ iblks=           1 iincs=           3 istep=          10
+ outinp=           0
+ iiter=           1
+Begin forming various matrix       at 2026-03-29 12:20:03 
+ ktsmat=           0
+Begin assemble golbal matrix       at 2026-03-29 12:20:03 
+ ntelgroup=           0
+Begin factorize global matrix      at 2026-03-29 12:20:03 
+ Factorization completed ... 
+Begin solution global equation     at 2026-03-29 12:20:03 
+                     istep=          10 iiter=           1
+                     conver_load check
+ resid=  6.082916779975979E-030 retot=  7.968184869373021E-003
+ ratio1=  2.762970427924271E-014 ratio2=  2.394204610955720E-014
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           0
+                    conver_nodal_value check
+               Convergence check for temperature
+ ratio1=   1.33377727366807      ratio2=   6.87616137108718     
+                            not converged for checki=           6
+ iiter=           2
+Begin forming various matrix       at 2026-03-29 12:20:03 
+ ktsmat=           0
+ ntelgroup=           0
+Begin solution global equation     at 2026-03-29 12:20:03 
+                     istep=          10 iiter=           2
+                     conver_load check
+ resid=  1.477892046966342E-031 retot=  7.968184869373172E-003
+ ratio1=  4.306670596591323E-015 ratio2=  1.476944402862288E-015
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           0
+                    conver_nodal_value check
+               Convergence check for temperature
+ ratio1=  9.379943894007971E-016 ratio2=  4.939474266531417E-015
+ ***********RESTART FILE IS UPDATED!*******
+ time: 12:19:58
+ iblks=           1 iincs=           3 istep=          11
+ outinp=           0
+ iiter=           1
+Begin forming various matrix       at 2026-03-29 12:20:03 
+ ktsmat=           0
+Begin assemble golbal matrix       at 2026-03-29 12:20:03 
+ ntelgroup=           0
+Begin factorize global matrix      at 2026-03-29 12:20:03 
+ Factorization completed ... 
+Begin solution global equation     at 2026-03-29 12:20:03 
+                     istep=          11 iiter=           1
+                     conver_load check
+ resid=  4.759408821791496E-030 retot=  8.265959306878783E-003
+ ratio1=  2.399550388426071E-014 ratio2=  2.024412490716937E-014
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           0
+                    conver_nodal_value check
+               Convergence check for temperature
+ ratio1=   1.26778713180718      ratio2=   6.86673918133469     
+                            not converged for checki=           6
+ iiter=           2
+Begin forming various matrix       at 2026-03-29 12:20:03 
+ ktsmat=           0
+ ntelgroup=           0
+Begin solution global equation     at 2026-03-29 12:20:03 
+                     istep=          11 iiter=           2
+                     conver_load check
+ resid=  1.663262081173899E-031 retot=  8.265959306878793E-003
+ ratio1=  4.485736015358792E-015 ratio2=  1.831702159366885E-015
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           0
+                    conver_nodal_value check
+               Convergence check for temperature
+ ratio1=  1.166229541533393E-015 ratio2=  4.944479938026767E-015
+ ***********RESTART FILE IS UPDATED!*******
+ time: 12:19:58
+ iblks=           1 iincs=           3 istep=          12
+ outinp=           0
+ iiter=           1
+Begin forming various matrix       at 2026-03-29 12:20:03 
+ ktsmat=           0
+Begin assemble golbal matrix       at 2026-03-29 12:20:03 
+ ntelgroup=           0
+Begin factorize global matrix      at 2026-03-29 12:20:03 
+ Factorization completed ... 
+Begin solution global equation     at 2026-03-29 12:20:03 
+                     istep=          12 iiter=           1
+                     conver_load check
+ resid=  5.813878070218301E-030 retot=  7.623948586935249E-003
+ ratio1=  2.761486854863515E-014 ratio2=  2.614545268462633E-014
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           0
+                    conver_nodal_value check
+               Convergence check for temperature
+ ratio1=   1.20765325453071      ratio2=   6.85743756750249     
+                            not converged for checki=           6
+ iiter=           2
+Begin forming various matrix       at 2026-03-29 12:20:03 
+ ktsmat=           0
+ ntelgroup=           0
+Begin solution global equation     at 2026-03-29 12:20:03 
+                     istep=          12 iiter=           2
+                     conver_load check
+ resid=  2.025895043064970E-031 retot=  7.623948586935096E-003
+ ratio1=  5.154879188280507E-015 ratio2=  1.986736526187436E-015
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           0
+                    conver_nodal_value check
+               Convergence check for temperature
+ ratio1=  6.927147467324220E-016 ratio2=  4.592689263774951E-015
+ ***********RESTART FILE IS UPDATED!*******
+ time: 12:19:58
+ iblks=           1 iincs=           3 istep=          13
+ outinp=           0
+ iiter=           1
+Begin forming various matrix       at 2026-03-29 12:20:03 
+ ktsmat=           0
+Begin assemble golbal matrix       at 2026-03-29 12:20:03 
+ ntelgroup=           0
+Begin factorize global matrix      at 2026-03-29 12:20:03 
+ Factorization completed ... 
+Begin solution global equation     at 2026-03-29 12:20:03 
+                     istep=          13 iiter=           1
+                     conver_load check
+ resid=  7.161138918381550E-030 retot=  7.921001031500546E-003
+ ratio1=  3.006775580045026E-014 ratio2=  2.865217240054021E-014
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           0
+                    conver_nodal_value check
+               Convergence check for temperature
+ ratio1=   1.15319708343587      ratio2=   6.84807125738395     
+                            not converged for checki=           6
+ iiter=           2
+Begin forming various matrix       at 2026-03-29 12:20:03 
+ ktsmat=           0
+ ntelgroup=           0
+Begin solution global equation     at 2026-03-29 12:20:03 
+                     istep=          13 iiter=           2
+                     conver_load check
+ resid=  2.235078264420633E-031 retot=  7.921001031500643E-003
+ ratio1=  5.311978794603266E-015 ratio2=  1.571424462790875E-015
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           0
+                    conver_nodal_value check
+               Convergence check for temperature
+ ratio1=  9.198241870699220E-016 ratio2=  3.947185030833786E-015
+ ***********RESTART FILE IS UPDATED!*******
+ time: 12:19:58
+ iblks=           1 iincs=           3 istep=          14
+ outinp=           0
+ iiter=           1
+Begin forming various matrix       at 2026-03-29 12:20:03 
+ ktsmat=           0
+Begin assemble golbal matrix       at 2026-03-29 12:20:03 
+ ntelgroup=           0
+Begin factorize global matrix      at 2026-03-29 12:20:03 
+ Factorization completed ... 
+Begin solution global equation     at 2026-03-29 12:20:03 
+                     istep=          14 iiter=           1
+                     conver_load check
+ resid=  5.540178202576650E-030 retot=  7.301050515080818E-003
+ ratio1=  2.754667533686061E-014 ratio2=  2.306300592431769E-014
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           0
+                    conver_nodal_value check
+               Convergence check for temperature
+ ratio1=   1.10321255795186      ratio2=   6.83879876204290     
+                            not converged for checki=           6
+ iiter=           2
+Begin forming various matrix       at 2026-03-29 12:20:03 
+ ktsmat=           0
+ ntelgroup=           0
+Begin solution global equation     at 2026-03-29 12:20:03 
+                     istep=          14 iiter=           2
+                     conver_load check
+ resid=  2.084494230032625E-031 retot=  7.301050515081045E-003
+ ratio1=  5.343276791563051E-015 ratio2=  2.233213601826524E-015
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           0
+                    conver_nodal_value check
+               Convergence check for temperature
+ ratio1=  1.012491114483671E-015 ratio2=  5.802982599961985E-015
+ ***********RESTART FILE IS UPDATED!*******
+ time: 12:19:58
+ iblks=           1 iincs=           3 istep=          15
+ outinp=           0
+ iiter=           1
+Begin forming various matrix       at 2026-03-29 12:20:03 
+ ktsmat=           0
+Begin assemble golbal matrix       at 2026-03-29 12:20:03 
+ ntelgroup=           0
+Begin factorize global matrix      at 2026-03-29 12:20:03 
+ Factorization completed ... 
+Begin solution global equation     at 2026-03-29 12:20:03 
+                     istep=          15 iiter=           1
+                     conver_load check
+ resid=  2.851242472231854E-030 retot=  7.595617901406134E-003
+ ratio1=  1.937472384886373E-014 ratio2=  2.356678846033987E-014
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           0
+                    conver_nodal_value check
+               Convergence check for temperature
+ ratio1=   1.05760611152656      ratio2=   6.82948182650385     
+                            not converged for checki=           6
+ iiter=           2
+Begin forming various matrix       at 2026-03-29 12:20:03 
+ ktsmat=           0
+ ntelgroup=           0
+Begin solution global equation     at 2026-03-29 12:20:03 
+                     istep=          15 iiter=           2
+                     conver_load check
+ resid=  2.736348379148479E-031 retot=  7.595617901406248E-003
+ ratio1=  6.002112616844135E-015 ratio2=  1.751585628809038E-015
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           0
+                    conver_nodal_value check
+               Convergence check for temperature
+ ratio1=  6.887639702762740E-016 ratio2=  3.474605349795477E-015
+ ***********RESTART FILE IS UPDATED!*******
+ time: 12:19:58
+ iblks=           1 iincs=           3 istep=          16
+ outinp=           0
+ iiter=           1
+Begin forming various matrix       at 2026-03-29 12:20:03 
+ ktsmat=           0
+Begin assemble golbal matrix       at 2026-03-29 12:20:03 
+ ntelgroup=           0
+Begin factorize global matrix      at 2026-03-29 12:20:03 
+ Factorization completed ... 
+Begin solution global equation     at 2026-03-29 12:20:03 
+                     istep=          16 iiter=           1
+                     conver_load check
+ resid=  6.319996541621332E-030 retot=  6.995507819112454E-003
+ ratio1=  3.005721910300251E-014 ratio2=  3.160862467633720E-014
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           0
+                    conver_nodal_value check
+               Convergence check for temperature
+ ratio1=   1.01549192818847      ratio2=   6.82024266350022     
+                            not converged for checki=           6
+ iiter=           2
+Begin forming various matrix       at 2026-03-29 12:20:03 
+ ktsmat=           0
+ ntelgroup=           0
+Begin solution global equation     at 2026-03-29 12:20:03 
+                     istep=          16 iiter=           2
+                     conver_load check
+ resid=  2.953968215562865E-031 retot=  6.995507819112523E-003
+ ratio1=  6.498203172322896E-015 ratio2=  1.991094467800779E-015
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           0
+                    conver_nodal_value check
+               Convergence check for temperature
+ ratio1=  1.109008461610458E-015 ratio2=  5.313568522714098E-015
+ ***********RESTART FILE IS UPDATED!*******
+ time: 12:20:03

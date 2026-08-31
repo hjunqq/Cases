@@ -1,0 +1,71 @@
+'TIME CURVE in each BLKS'   !! BLOCK 1 
+1                ! ntcurve
+2,'LINEAR',2 (nline)  !    ntime for curve 1
+0. 1.        
+1. 1.  
+'Define  point load in each BLKS'
+1             ! nplgroup---number of groups 
+1 2 1 2    !pload(iplgroup)% order_time_curve,nudofn,npload,nline
+0. -1000.           !pload(iplgroup)%pxyz(1:nudofn)
+359                    !pload(iplgroup)%list(1:npload)
+'Define edges for whole analysis'
+0  0              ! nedge, which will be the sum of following sedge
+'Define edge load in each BLKS'	
+'NELGROUP/[iedge,itcurve/press(1:ndimn,inode=1:nnode)]'									
+0 0                !nelgroup----number of edges for load in this BLKS
+'Define body force in each BLKS'                                                      
+ 1.,0.,-1.,0.,-1.      !gravity acceleration(m/s2), factg(1:ndimn)                   
+'Time curve for each group', 1 (nline)	    !tcurvegravity(1:ngroup)                  
+5*0
+nbeamload icw                                                                         
+0 0                                                                                   
+nplateload,itcurve,water                                                              
+0  0. 0.                                                                              
+0 0 0  1  2                                 
+
+
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+
+

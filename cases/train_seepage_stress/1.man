@@ -1,0 +1,10 @@
+NINCS
+1  0 0 0  !      miter,ditime,noutn,noutf,nstep,nresta,nmcon
+5 1 1 1 1 1 1 0 0 !miter,ditime,noutn,noutf,nstep,inc_step,nresta	 
+11*1.e-5  !toler_force,toler_var(1:mdofn)
+NINCS
+1  0 0 0  !      miter,ditime,noutn,noutf,nstep,nresta,nmcon
+5 1 1 1 1 1 1 0 0 !miter,ditime,noutn,noutf,nstep,inc_step,nresta	 
+11*1.e-5  !toler_force,toler_var(1:mdofn)
+
+

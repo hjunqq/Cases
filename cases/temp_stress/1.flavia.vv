@@ -1,0 +1,112 @@
+BeginZE G:/GHMEQ2020/htg_sluice_pile/calculate/tem_sluice_pile/1.flavia.vv
+   x -198.49664306640625 88.134246826171875
+   y 1834.2149658203125 1710.8245849609375
+   z -52580.0859375 -52421.9140625
+   e 59.035068511962891
+   v 0.4553994400181503 0.18737106868572379 0.17275189999159674
+   r 0.85303004447069608
+   m 0.87009775638580322 -0.1240677610039711 0.47700855135917664 0 0.46538248658180237 0.52553623914718628 -0.71220141649246216 0 -0.16232407093048096 0.84167623519897461 0.51500684022903442 0 0 0 0 1
+   c -81.497901916503906 1774.7900390625 52501
+   pd 0
+   pno 0
+   pfo 0
+   pf 4
+   pv 0
+   NowUse 2
+   DrawingType 3
+   LightVector 90 90 150 0
+   OGLShadow(UseShadows) 0
+   OGLShadow(RenderMode) RenderFast
+   OGLShadow(ShadowBias) 0
+   OGLShadow(AmbientShadows) 0
+   OGLShadow(UseFBO) 0
+   OGLShadow(FBOSize) 0
+   OGLShadow(DimmedLightFactor) 0
+   OGLStereo(UseStereo) 0
+   OGLStereo(RelativeEyeDistance) 1
+   OGLStereo(FlipEyes) 0
+   OGLStereo(StereoMode) AnaglyphColors
+   OGLStereo(EyeDistance) 0.075
+   OGLStereo(LeftEyeDistance) 1 0 0 1
+   OGLStereo(RightEyeDistance) 0 1 1 1
+EndZE G:/GHMEQ2020/htg_sluice_pile/calculate/tem_sluice_pile/1.flavia.vv
+
+BeginMirror
+   Mirror 0 Angle 0.0 AngleFake -15.0 SizeFactor 2.0 HeightOffset 0.25 Color #d9e5f24d Backlight Off EdgeStyle No Type Scene DrawMode Mirror
+EndMirror
+
+
+BeginPostState
+BeginSingleMesh
+  Num meshes: 4
+  Num sets: 0
+  Num cuts: 0
+  Mesh: 0
+  State: On
+    Name: "1 1"
+    IdSet: 1
+    Color Type: 0
+    Color Ambient: 0.2 0.2 0.2 0.5
+    Color Diffuse: 0.6 0.6 0.6 0.5
+    Color Specular: 1 1 1 0.5
+    Color Shininess: 0.5
+    Property Massive: 1
+    Property Transparent: 0
+    Property Style: 1048606
+    Property Edge Width: 1
+    Property Vector Filter Factor: 0
+    Property Stream Arrow: 0
+  EndMesh: 0
+  Mesh: 1
+  State: On
+    Name: "2 2"
+    IdSet: 2
+    Color Type: 0
+    Color Ambient: 0 0 0.3 0.5
+    Color Diffuse: 0 0 1 0.5
+    Color Specular: 1 1 1 0.5
+    Color Shininess: 0.5
+    Property Massive: 1
+    Property Transparent: 0
+    Property Style: 1048606
+    Property Edge Width: 1
+    Property Vector Filter Factor: 0
+    Property Stream Arrow: 0
+  EndMesh: 1
+  Mesh: 2
+  State: On
+    Name: "3 3"
+    IdSet: 3
+    Color Type: 0
+    Color Ambient: 0.3 0 0.3 0.5
+    Color Diffuse: 1 0 1 0.5
+    Color Specular: 1 1 1 0.5
+    Color Shininess: 0.5
+    Property Massive: 1
+    Property Transparent: 0
+    Property Style: 1048606
+    Property Edge Width: 1
+    Property Vector Filter Factor: 0
+    Property Stream Arrow: 0
+  EndMesh: 2
+  Mesh: 3
+  State: On
+    Name: "4 4"
+    IdSet: 4
+    Color Type: 0
+    Color Ambient: 0 0.3 0.3 0.5
+    Color Diffuse: 0 1 1 0.5
+    Color Specular: 1 1 1 0.5
+    Color Shininess: 0.5
+    Property Massive: 1
+    Property Transparent: 0
+    Property Style: 1048606
+    Property Edge Width: 1
+    Property Vector Filter Factor: 0
+    Property Stream Arrow: 0
+  EndMesh: 3
+EndSingleMesh
+  Post_Prefs_Vector_Size: 0 32 32 32
+  ResultView: {Id 9} {Contour Fill} TimeStep 380.39999999999998 TEMPERATURE TEMPERATURE 0.0 4 0
+EndPostState
+

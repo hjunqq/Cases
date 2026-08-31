@@ -1,0 +1,95 @@
+{
+  "note": "显式声明的假设。decoder 只在此处列出的名字上越过 UNKNOWN，且此后解出的记录一律标记为 assumed 而非 certain。未列出的名字一律停下——'只能不完整，不能出错'的性质由此保持。 带 `at` 字段的条目只在该源位置的守卫上生效，求值后立刻解绑——用于求解器复用同一名字的场合（idofn 在 prescrib_set 里是网格算出的自由度号，在别处是循环计数器），避免陈旧绑定。 一条假设一旦其真实来源进入 AST，就应当从 assumptions 移到 retired——读出来的值永远优于假设的值，而留着一条不再触发的假设只会让人以为还有更多未知。",
+  "assumptions": [
+    {
+      "name": "igap0",
+      "value": 0,
+      "why": "Material.f90:397 的 READ 受 if(name=='CONTACT') 守卫；非接触材料时该分量从未被赋值，而 :401 仍从中取值、:402 据以分支。",
+      "declaration": "Material.f90:132 integer(ink)igap0,… —— 派生类型分量，无默认初值",
+      "evidence": "求解器对所有非 CONTACT 材料都正常工作，说明实际运行中它为 0（编译器零初始化）。这是观察到的行为，不是语言保证。",
+      "risk": "若某个构建不做零初始化，此处为未定义行为。已记为求解器潜在缺陷，见 06-open-questions #13。"
+    },
+    {
+      "name": "lblks",
+      "value": 0,
+      "why": "块循环的起点 do iblks=lblks+1,runblks。lblks=0 在 Fem.f90:269 的重启分支里赋值，该分支不含 deck 读取，因而被 AST 剪枝。",
+      "declaration": "Fem.f90:269 lblks=0 / :327 lblks=blks_new-1",
+      "evidence": "非重启运行（restart=0）从第 1 块开始，即 lblks=0。既有 21 个算例均非重启。",
+      "risk": "重启运行下不成立；届时应从 restart 相关记录求值而非假设。"
+    },
+    {
+      "name": "idofn",
+      "value": 1,
+      "at": "Prescrib.f90/prescrib_set:234",
+      "why": "Prescrib.f90:233 `idofn=nodfn(lmdofn(ifixvar),list_fix(ifixnods))`，:234 `if(idofn==0)goto 1` 跳过这个约束节点。nodfn 是 set_elem_dofs 从网格与单元场算出的自由度编号表（Global.f90:1050 分配），不来自任何 deck，因此 deck 里没有任何东西能定出它。假设的语义只有一条：**非零**——即 .pre 里点名的每个约束节点，在其约束方向上确实有一个自由度。值取 1 只是为了让 idofn==0 判假。",
+      "declaration": "Global.f90:183 nodfn(:,:) 可分配数组；Global.f90:1050 allocate(nodfn(cdofn,npoin))；填值在 set_elem_dofs",
+      "evidence": "这 8 个算例的位移边界在结果里确实生效（train01 的坝底固定、train04 的梁端固定都反映在位移场里）。若 idofn==0，该约束会被 goto 1 静默丢弃，边界不会生效。这是从求解器输出反推的行为证据，不是源码保证。",
+      "risk": "多场网格（UW/UT）里某个节点可能在某方向上确实没有自由度，此时真实分支是 goto 1，而假设会让 decoder 走进 nextr/=0 分支多读 `.pre` 记录、游标失步。**本条只作用在这一个守卫上（`at`），求值后立即解绑**，所以不会污染别处的 idofn；但在这一个位置上它是真的假设，不是事实。"
+    }
+  ],
+  "retired": [
+    {
+      "name": "runblks",
+      "value": "nblks",
+      "why": "块循环终点。与 nblks 同义于非重启运行。",
+      "declaration": "Fem.f90 块循环 do iblks=lblks+1,runblks",
+      "evidence": "nblks 由 .glb 的 NINIT 记录读入；非重启运行下全部块都要跑。",
+      "risk": "分步/重启运行下 runblks 可小于 nblks。",
+      "retired": "2026-08-29：`inp` 进入 AST 后，此值改为从 Fem.f90:93-96 / :177 的 READ 得到，不再是假设。保留此条目只为记录它曾经是什么、依据是什么。"
+    },
+    {
+      "name": "restart",
+      "value": 0,
+      "why": "重启标志。真实来源是 Fem.f90:94 `read(inpunit,*) restart,relis,sysrelis,ADINA,Uopt_R,gamamax`，而 inpunit 打开的是字面文件名 `inp`（Fem.f90:92），不是 probn//ext 形态，因此不在 deck_ast 的 UNITS 里、整条记录没有进 AST。Fem.f90:1948 的 restart=0 是块循环尾部的再赋值，所在段落无 deck 读取而被剪枝。",
+      "declaration": "Fem.f90:94（真实读入点，未建模）／Fem.f90:1948 restart=0（循环尾再赋值）",
+      "evidence": "cases/cases 下 85 个算例目录各有一个 `inp`，第 2 条记录全部是 `0 0 0 0 0 0`（其中 5 个是只有 5 个字段的老格式，缺 gamamax），即 restart=0。这是对全部现存算例的普查，不是抽样。",
+      "risk": "重启运行下不成立。**这一条应当在 `inp` 进入 AST 后退役**——届时它是读出来的，不再是假设。",
+      "retired": "2026-08-29：`inp` 进入 AST 后，此值改为从 Fem.f90:93-96 / :177 的 READ 得到，不再是假设。保留此条目只为记录它曾经是什么、依据是什么。"
+    },
+    {
+      "name": "Uopt_R",
+      "value": 0,
+      "why": "Fem.f90:112 `if(Uopt_R==1)then` 决定是否读 `.vcor`（半径/圆心/变位插值表）。Uopt_R 与 restart 出自同一条记录 Fem.f90:94，同样因为 `inp` 是字面文件名而未建模；它也决定 Global.f90:603/:647 是否给 vcor_unit 编号并 open。",
+      "declaration": "Global.f90:50 integer(ink) Uopt_R,vcor_unit —— 无默认初值，唯一赋值点是 Fem.f90:94 的 READ",
+      "evidence": "cases/cases 下 85 个 `inp` 的第 2 条记录第 5 个字段全部为 0。且无一个算例目录存在 `1.vcor`（Uopt_R=1 时求解器必读该文件）——两条独立证据一致。",
+      "risk": "Uopt_R=1 的算例会额外读 `.vcor` 的 9 条记录；本套件里不存在这样的算例，套件之外可能有。**同样应在 `inp` 进入 AST 后退役。**",
+      "retired": "2026-08-29：`inp` 进入 AST 后，此值改为从 Fem.f90:93-96 / :177 的 READ 得到，不再是假设。保留此条目只为记录它曾经是什么、依据是什么。"
+    },
+    {
+      "name": "gamamax",
+      "value": 0,
+      "why": "Fem.f90:1715 `if(gamamax/=0)then`（等效线性化土体动力本构）决定是否打开并读 `.gamax`。与 restart / Uopt_R 同出 Fem.f90:94 那一条记录，同样因为 `inp` 是字面文件名而未进 AST。",
+      "declaration": "Fem.f90:94 —— 唯一赋值点即该 READ 的第 6 项；Fem.f90:1716 `open(gamamaxunit,…//'.gamax')` 在该守卫内",
+      "evidence": "cases/cases 下 21 个 train 算例的 `inp` 第 2 条记录都是 6 个字段全 0，第 6 项即 gamamax=0。另有 4 个 xfj_inverse_mat* 的 `inp` 是只有 5 个字段的老格式（根本没有 gamamax 这一项），但不在本套件内。无任何算例目录存在 `1.gamax`。",
+      "risk": "gamamax/=0 的算例会额外读 `.gamax` 的 3 条记录。另：5 字段的老 `inp` 在当前求解器下会把下一条记录的 `probn` 标签读进 gamamax —— 那是一个独立的老格式问题，不由本假设覆盖。**应在 `inp` 进入 AST 后退役。**",
+      "retired": "2026-08-29：`inp` 进入 AST 后，此值改为从 Fem.f90:93-96 / :177 的 READ 得到，不再是假设。保留此条目只为记录它曾经是什么、依据是什么。"
+    },
+    {
+      "name": "relis",
+      "value": 0,
+      "why": "与 restart / Uopt_R / gamamax 同出 Fem.f90:94 那一条记录 `read(inpunit,*) restart,relis,sysrelis,ADINA,Uopt_R,gamamax`。inpunit 打开的是字面文件名 `inp`（Fem.f90:92），不是 probn//ext 形态，所以整条记录不在 deck_ast 的 UNITS 里、一个字段都没进 AST。 Fem.f90:1910 `if(relis==1.and.block_stab==0)` 据它在 STATIC_U_reli / static_rigid_reli / static_rigid_1 之间分派，而这三个 reader 读的 `.man` 记录布局不同（见 probe man-readers）。",
+      "declaration": "Fem.f90:94 —— 唯一赋值点即该 READ 的第 2 项",
+      "evidence": "cases/cases 下 21 个 train 算例的 `inp` 第 2 条记录都是 `0 0 0 0 0 0`，六个字段全为 0。这是对本套件的普查，不是抽样。 relis 是可靠度分析开关；本套件无可靠度算例。",
+      "risk": "relis=1 的算例走 STATIC_U_reli，`.man` 的填法整段不同。**应在 `inp` 进入 AST 后退役。**",
+      "retired": "2026-08-29：`inp` 进入 AST 后，此值改为从 Fem.f90:93-96 / :177 的 READ 得到，不再是假设。保留此条目只为记录它曾经是什么、依据是什么。"
+    },
+    {
+      "name": "sysrelis",
+      "value": 0,
+      "why": "与 restart / Uopt_R / gamamax 同出 Fem.f90:94 那一条记录 `read(inpunit,*) restart,relis,sysrelis,ADINA,Uopt_R,gamamax`。inpunit 打开的是字面文件名 `inp`（Fem.f90:92），不是 probn//ext 形态，所以整条记录不在 deck_ast 的 UNITS 里、一个字段都没进 AST。 系统可靠度开关。",
+      "declaration": "Fem.f90:94 —— 该 READ 的第 3 项",
+      "evidence": "cases/cases 下 21 个 train 算例的 `inp` 第 2 条记录都是 `0 0 0 0 0 0`，六个字段全为 0。这是对本套件的普查，不是抽样。",
+      "risk": "同 relis。**应在 `inp` 进入 AST 后退役。**",
+      "retired": "2026-08-29：`inp` 进入 AST 后，此值改为从 Fem.f90:93-96 / :177 的 READ 得到，不再是假设。保留此条目只为记录它曾经是什么、依据是什么。"
+    },
+    {
+      "name": "ADINA",
+      "value": 0,
+      "why": "与 restart / Uopt_R / gamamax 同出 Fem.f90:94 那一条记录 `read(inpunit,*) restart,relis,sysrelis,ADINA,Uopt_R,gamamax`。inpunit 打开的是字面文件名 `inp`（Fem.f90:92），不是 probn//ext 形态，所以整条记录不在 deck_ast 的 UNITS 里、一个字段都没进 AST。 Fem.f90:1889-1891 用它决定是否 `call GHM2ADINA`、是否 cycle/stop 出块循环——即它改变块循环还跑不跑下去，因而改变后续读什么。",
+      "declaration": "Fem.f90:94 —— 该 READ 的第 4 项",
+      "evidence": "cases/cases 下 21 个 train 算例的 `inp` 第 2 条记录都是 `0 0 0 0 0 0`，六个字段全为 0。这是对本套件的普查，不是抽样。 且本平台明确不产出 ADINA 导出（GHM2ADINA 是外部格式转换）。",
+      "risk": "ADINA=1 时块循环在第一块之后就 stop，后续 deck 记录根本不被读。**应在 `inp` 进入 AST 后退役。**",
+      "retired": "2026-08-29：`inp` 进入 AST 后，此值改为从 Fem.f90:93-96 / :177 的 READ 得到，不再是假设。保留此条目只为记录它曾经是什么、依据是什么。"
+    }
+  ]
+}

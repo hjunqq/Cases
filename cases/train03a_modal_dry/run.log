@@ -1,0 +1,835 @@
+ time: 11:39:22
+ Input the problem name?
+ NPOIN                                                                          
+  
+        2185        2185        2080           2           3           3
+           0 GIDR                  0.000000000000000E+000           0
+           0           0           0           0       99999
+ NINIT                                                                          
+  
+           0           0           0           1           0           0
+           0           0           0           0           0 
+ FIX                                                          0           0
+           0           0           0           0           0
+ outinpunit=          37 outindunit=          54
+ TYPE_PROBLEM                                                                   
+  
+ E                                                 
+ PARDISO                                           
+ LOAD                                                        10           0
+           0           0
+ type_layer1                                                                    
+  
+ NMASS                                                                          
+  
+           1           1           1           1           0           0
+           1           0           1           0           0
+ nfreeflownode                                                                  
+  
+ NTSMAT                                                                         
+  
+         999         999           0           0           0
+ beeta1,beeta2,theta1=  0.500000000000000       0.250000000000000     
+   1.00000000000000     
+ equvs_process(1:ngroup)                                                        
+  
+ appear_level(1:ngroup)                                                         
+  
+ APPEAR_PROCESS                                                                 
+  
+ appear_process=           1           1           0
+ MATNO_PROCESS                                                                  
+  
+ iblks=           0 ngroup=           3 matno=           1           2
+           3
+ force_process=           0           0           0
+ uinitial=           0
+ 1-ILINKS(I0                                                                    
+  
+ 1-tLINKS(I0                                                                    
+  
+ text1=
+ 1-NGROUP--GROUP                                                                
+  
+ (3)                                                                            
+  
+ igroup=           1
+ name=Q4        
+ igroup=           2
+ name=Q4        
+ igroup=           3
+ name=Q4        
+ tne=        2080
+ text_tension_joint=
+ tension_joint                                                                  
+  
+ text_tension_contact=
+ contact_joint                                                                  
+  
+ ground_inf=           0 /100=           0
+ nblks=           1
+ Input runblks, =?
+ time: 11:39:22
+ COMMENT                                                                        
+  
+ COMMENT                                                                        
+  
+ COMMENT                                                                        
+  
+ COMMENT                                                                        
+  
+ COMMENT                                                                        
+  
+ COMMENT                                                                        
+  
+ COMMENT                                                                        
+  
+ COMMENT                                                                        
+  
+ COMMENT                                                                        
+  
+ COMMENT                                                                        
+  
+ jmat=           1
+ MECHANICAL                    SOLID                                    1
+ ELASTIC_ISOTROPIC               0.000000000000000E+000   1.00000000000000     
+   1.00000000000000        10000000000.0000       0.180000000000000     
+  1.000000000000000E-005           0           0           0
+ jmat=           2
+ MECHANICAL                    SOLID                                    2
+ ELASTIC_ISOTROPIC                2500.00000000000        1.00000000000000     
+   1.00000000000000        25000000000.0000       0.167000000000000     
+  1.000000000000000E-005           0           0           0
+ jmat=           3
+ MECHANICAL                    SOLID                                    3
+ ELASTIC_ISOTROPIC               0.000000000000000E+000   1.00000000000000     
+   1.00000000000000        100000.000000000       0.000000000000000E+000
+  1.000000000000000E-005           0           0           0
+ ngaps                                                                          
+  
+ ngaps=           0
+ nrcsteel                                                                       
+  
+ nrcsteel=           0
+ nwcpipe                                                                        
+  
+ nwcpipe=           0
+ nifsgroup 
+ nifsgroup=           0
+ nabsfgroup
+ nabsfgroup=           0
+ nabssgroup
+ nabssgroup=           0
+ ifsnedge                                                                       
+                      
+ ifsnedge=           0
+ lblks=           0  blks_new=           1
+ lincs=           0  nincs=           0
+ lblks=           0  blks_new=           1
+ Bparameter=           0
+ lblks=           0 lincs=           0 ttime=  0.000000000000000E+000
+ ntime=           2 LINEAR                         0           2
+ ok waterlevel
+ nplgroup=           0
+ nedge=           0
+ iblks=           1 lineload=           9
+ iblks=           1
+ time: 11:39:22
+ a1
+ ifixset=           1 type_abc=
+ FIX                                               
+ ifixset=           2 type_abc=
+ FIX                                               
+ outind=           0
+ edge_load_group     
+ edge_load_group=           0 delgroup=           0
+ gray=   9.81000000000000       0.000000000000000E+000  -1.00000000000000     
+  0.000000000000000E+000  -1.00000000000000     
+ tcurv=           1           1           1
+ ecwpipe=           0 iblks=           1 lblks+1=           1
+ ecwpipe=           0 iblks=           1 lblks+1=           1
+ surface   
+ ntedge=           0
+ algo_pipe=
+ npipe,algo_pipe=           0           3
+ linet=           8
+ time: 11:39:22
+ mtype                           
+          -2           4           0
+ isdefault                       
+           0
+ time: 11:39:22
+ time: 11:39:22
+ response_spectrum
+   time depend     iincs=           1
+ istep=           1
+ outinp=           0
+ Reordering completed ... 
+ Factorization completed ... 
+ max_dofn=           1
+ lamda(istep)=  3.092138036123705E-003 lamda_iter=  6.953309217901513E-310
+ iiter=           1 lamda_iter=  3.092138036123705E-003
+ max_dofn=           1
+ lamda(istep)=  1.719774788530644E-003 lamda_iter=  3.092138036123705E-003
+ iiter=           2 lamda_iter=  1.719774788530644E-003
+ max_dofn=           1
+ lamda(istep)=  1.603046798077888E-003 lamda_iter=  1.719774788530644E-003
+ iiter=           3 lamda_iter=  1.603046798077888E-003
+ max_dofn=           1
+ lamda(istep)=  1.588379270668328E-003 lamda_iter=  1.603046798077888E-003
+ iiter=           4 lamda_iter=  1.588379270668328E-003
+ max_dofn=           1
+ lamda(istep)=  1.586485095976038E-003 lamda_iter=  1.588379270668328E-003
+ iiter=           5 lamda_iter=  1.586485095976038E-003
+ max_dofn=           1
+ lamda(istep)=  1.586235393666876E-003 lamda_iter=  1.586485095976038E-003
+ iiter=           6 lamda_iter=  1.586235393666876E-003
+ max_dofn=           1
+ lamda(istep)=  1.586201176939709E-003 lamda_iter=  1.586235393666876E-003
+ iiter=           7 lamda_iter=  1.586201176939709E-003
+ max_dofn=           1
+ lamda(istep)=  1.586196221054019E-003 lamda_iter=  1.586201176939709E-003
+ iiter=           8 lamda_iter=  1.586196221054019E-003
+ max_dofn=           1
+ lamda(istep)=  1.586195453364523E-003 lamda_iter=  1.586196221054019E-003
+ iiter=           9 lamda_iter=  1.586195453364523E-003
+ max_dofn=           1
+ lamda(istep)=  1.586195325742979E-003 lamda_iter=  1.586195453364523E-003
+ iiter=          10 lamda_iter=  1.586195325742979E-003
+ max_dofn=           1
+ lamda(istep)=  1.586195303112768E-003 lamda_iter=  1.586195325742979E-003
+ iiter=          11 lamda_iter=  1.586195303112768E-003
+ max_dofn=           1
+ lamda(istep)=  1.586195298884221E-003 lamda_iter=  1.586195303112768E-003
+ iiter=          12 lamda_iter=  1.586195298884221E-003
+ max_dofn=           1
+ lamda(istep)=  1.586195298065326E-003 lamda_iter=  1.586195298884221E-003
+ iiter=          13 lamda_iter=  1.586195298065326E-003
+ max_dofn=           1
+ lamda(istep)=  1.586195297901132E-003 lamda_iter=  1.586195298065326E-003
+ iiter=          14 lamda_iter=  1.586195297901132E-003
+ max_dofn=           1
+ lamda(istep)=  1.586195297867671E-003 lamda_iter=  1.586195297901132E-003
+ iiter=          15 lamda_iter=  1.586195297867671E-003
+ max_dofn=           1
+ lamda(istep)=  1.586195297860919E-003 lamda_iter=  1.586195297867671E-003
+ iiter=          16 lamda_iter=  1.586195297860919E-003
+ max_dofn=           1
+ lamda(istep)=  1.586195297858665E-003 lamda_iter=  1.586195297860919E-003
+ iiter=          17 lamda_iter=  1.586195297858665E-003
+ max_dofn=           1
+ lamda(istep)=  1.586195297859521E-003 lamda_iter=  1.586195297858665E-003
+ ***********RESTART FILE IS UPDATED!*******
+ istep=           2
+ outinp=           0
+ max_dofn=           1
+ lamda(istep)=  2.506133321700243E-016 lamda_iter=  1.586195297858665E-003
+ iiter=           1 lamda_iter=  2.506133321700243E-016
+ max_dofn=           1
+ lamda(istep)=  3.462467636360561E-004 lamda_iter=  2.506133321700243E-016
+ iiter=           2 lamda_iter=  3.462467636360561E-004
+ max_dofn=           1
+ lamda(istep)=  3.307442482647184E-004 lamda_iter=  3.462467636360561E-004
+ iiter=           3 lamda_iter=  3.307442482647184E-004
+ max_dofn=           1
+ lamda(istep)=  3.304858923935682E-004 lamda_iter=  3.307442482647184E-004
+ iiter=           4 lamda_iter=  3.304858923935682E-004
+ max_dofn=           1
+ lamda(istep)=  3.298796513131389E-004 lamda_iter=  3.304858923935682E-004
+ iiter=           5 lamda_iter=  3.298796513131389E-004
+ max_dofn=           1
+ lamda(istep)=  3.294908342274636E-004 lamda_iter=  3.298796513131389E-004
+ iiter=           6 lamda_iter=  3.294908342274636E-004
+ max_dofn=           1
+ lamda(istep)=  3.292603816284347E-004 lamda_iter=  3.294908342274636E-004
+ iiter=           7 lamda_iter=  3.292603816284347E-004
+ max_dofn=           1
+ lamda(istep)=  3.291253281703330E-004 lamda_iter=  3.292603816284347E-004
+ iiter=           8 lamda_iter=  3.291253281703330E-004
+ max_dofn=           1
+ lamda(istep)=  3.290463147854591E-004 lamda_iter=  3.291253281703330E-004
+ iiter=           9 lamda_iter=  3.290463147854591E-004
+ max_dofn=           1
+ lamda(istep)=  3.290000887754309E-004 lamda_iter=  3.290463147854591E-004
+ iiter=          10 lamda_iter=  3.290000887754309E-004
+ max_dofn=           1
+ lamda(istep)=  3.289730390375760E-004 lamda_iter=  3.290000887754309E-004
+ iiter=          11 lamda_iter=  3.289730390375760E-004
+ max_dofn=           1
+ lamda(istep)=  3.289572077217976E-004 lamda_iter=  3.289730390375760E-004
+ iiter=          12 lamda_iter=  3.289572077217976E-004
+ max_dofn=           1
+ lamda(istep)=  3.289479410785880E-004 lamda_iter=  3.289572077217976E-004
+ iiter=          13 lamda_iter=  3.289479410785880E-004
+ max_dofn=           1
+ lamda(istep)=  3.289425165791393E-004 lamda_iter=  3.289479410785880E-004
+ iiter=          14 lamda_iter=  3.289425165791393E-004
+ max_dofn=           1
+ lamda(istep)=  3.289393410513853E-004 lamda_iter=  3.289425165791393E-004
+ iiter=          15 lamda_iter=  3.289393410513853E-004
+ max_dofn=           1
+ lamda(istep)=  3.289374820341428E-004 lamda_iter=  3.289393410513853E-004
+ iiter=          16 lamda_iter=  3.289374820341428E-004
+ max_dofn=           1
+ lamda(istep)=  3.289363937117389E-004 lamda_iter=  3.289374820341428E-004
+ iiter=          17 lamda_iter=  3.289363937117389E-004
+ max_dofn=           1
+ lamda(istep)=  3.289357565707219E-004 lamda_iter=  3.289363937117389E-004
+ iiter=          18 lamda_iter=  3.289357565707219E-004
+ max_dofn=           1
+ lamda(istep)=  3.289353835646354E-004 lamda_iter=  3.289357565707219E-004
+ iiter=          19 lamda_iter=  3.289353835646354E-004
+ max_dofn=           1
+ lamda(istep)=  3.289351651923731E-004 lamda_iter=  3.289353835646354E-004
+ iiter=          20 lamda_iter=  3.289351651923731E-004
+ max_dofn=           1
+ lamda(istep)=  3.289350373485336E-004 lamda_iter=  3.289351651923731E-004
+ iiter=          21 lamda_iter=  3.289350373485336E-004
+ max_dofn=           1
+ lamda(istep)=  3.289349625035157E-004 lamda_iter=  3.289350373485336E-004
+ iiter=          22 lamda_iter=  3.289349625035157E-004
+ max_dofn=           1
+ lamda(istep)=  3.289349186862044E-004 lamda_iter=  3.289349625035157E-004
+ iiter=          23 lamda_iter=  3.289349186862044E-004
+ max_dofn=           1
+ lamda(istep)=  3.289348930337269E-004 lamda_iter=  3.289349186862044E-004
+ iiter=          24 lamda_iter=  3.289348930337269E-004
+ max_dofn=           1
+ lamda(istep)=  3.289348780156809E-004 lamda_iter=  3.289348930337269E-004
+ iiter=          25 lamda_iter=  3.289348780156809E-004
+ max_dofn=           1
+ lamda(istep)=  3.289348692235539E-004 lamda_iter=  3.289348780156809E-004
+ iiter=          26 lamda_iter=  3.289348692235539E-004
+ max_dofn=           1
+ lamda(istep)=  3.289348640762360E-004 lamda_iter=  3.289348692235539E-004
+ iiter=          27 lamda_iter=  3.289348640762360E-004
+ max_dofn=           1
+ lamda(istep)=  3.289348610627932E-004 lamda_iter=  3.289348640762360E-004
+ iiter=          28 lamda_iter=  3.289348610627932E-004
+ max_dofn=           1
+ lamda(istep)=  3.289348592986204E-004 lamda_iter=  3.289348610627932E-004
+ iiter=          29 lamda_iter=  3.289348592986204E-004
+ max_dofn=           1
+ lamda(istep)=  3.289348582657370E-004 lamda_iter=  3.289348592986204E-004
+ iiter=          30 lamda_iter=  3.289348582657370E-004
+ max_dofn=           1
+ lamda(istep)=  3.289348576611424E-004 lamda_iter=  3.289348582657370E-004
+ iiter=          31 lamda_iter=  3.289348576611424E-004
+ max_dofn=           1
+ lamda(istep)=  3.289348573071069E-004 lamda_iter=  3.289348576611424E-004
+ iiter=          32 lamda_iter=  3.289348573071069E-004
+ max_dofn=           1
+ lamda(istep)=  3.289348570998698E-004 lamda_iter=  3.289348573071069E-004
+ iiter=          33 lamda_iter=  3.289348570998698E-004
+ max_dofn=           1
+ lamda(istep)=  3.289348569785560E-004 lamda_iter=  3.289348570998698E-004
+ iiter=          34 lamda_iter=  3.289348569785560E-004
+ max_dofn=           1
+ lamda(istep)=  3.289348569074933E-004 lamda_iter=  3.289348569785560E-004
+ iiter=          35 lamda_iter=  3.289348569074933E-004
+ max_dofn=           1
+ lamda(istep)=  3.289348568659126E-004 lamda_iter=  3.289348569074933E-004
+ iiter=          36 lamda_iter=  3.289348568659126E-004
+ max_dofn=           1
+ lamda(istep)=  3.289348568415690E-004 lamda_iter=  3.289348568659126E-004
+ iiter=          37 lamda_iter=  3.289348568415690E-004
+ max_dofn=           1
+ lamda(istep)=  3.289348568273531E-004 lamda_iter=  3.289348568415690E-004
+ iiter=          38 lamda_iter=  3.289348568273531E-004
+ max_dofn=           1
+ lamda(istep)=  3.289348568189528E-004 lamda_iter=  3.289348568273531E-004
+ iiter=          39 lamda_iter=  3.289348568189528E-004
+ max_dofn=           1
+ lamda(istep)=  3.289348568141264E-004 lamda_iter=  3.289348568189528E-004
+ iiter=          40 lamda_iter=  3.289348568141264E-004
+ max_dofn=           1
+ lamda(istep)=  3.289348568112037E-004 lamda_iter=  3.289348568141264E-004
+ iiter=          41 lamda_iter=  3.289348568112037E-004
+ max_dofn=           1
+ lamda(istep)=  3.289348568095628E-004 lamda_iter=  3.289348568112037E-004
+ iiter=          42 lamda_iter=  3.289348568095628E-004
+ max_dofn=           1
+ lamda(istep)=  3.289348568086341E-004 lamda_iter=  3.289348568095628E-004
+ iiter=          43 lamda_iter=  3.289348568086341E-004
+ max_dofn=           1
+ lamda(istep)=  3.289348568079908E-004 lamda_iter=  3.289348568086341E-004
+ iiter=          44 lamda_iter=  3.289348568079908E-004
+ max_dofn=           1
+ lamda(istep)=  3.289348568076685E-004 lamda_iter=  3.289348568079908E-004
+ ***********RESTART FILE IS UPDATED!*******
+ istep=           3
+ outinp=           0
+ max_dofn=           1
+ lamda(istep)=  8.498857542206528E-016 lamda_iter=  3.289348568079908E-004
+ iiter=           1 lamda_iter=  8.498857542206528E-016
+ max_dofn=           1
+ lamda(istep)=  1.757058422437986E-004 lamda_iter=  8.498857542206528E-016
+ iiter=           2 lamda_iter=  1.757058422437986E-004
+ max_dofn=           1
+ lamda(istep)=  1.924186396863234E-004 lamda_iter=  1.757058422437986E-004
+ iiter=           3 lamda_iter=  1.924186396863234E-004
+ max_dofn=           1
+ lamda(istep)=  1.925353135670041E-004 lamda_iter=  1.924186396863234E-004
+ iiter=           4 lamda_iter=  1.925353135670041E-004
+ max_dofn=           1
+ lamda(istep)=  1.925626396141499E-004 lamda_iter=  1.925353135670041E-004
+ iiter=           5 lamda_iter=  1.925626396141499E-004
+ max_dofn=           1
+ lamda(istep)=  1.925696282943571E-004 lamda_iter=  1.925626396141499E-004
+ iiter=           6 lamda_iter=  1.925696282943571E-004
+ max_dofn=           1
+ lamda(istep)=  1.925714599367356E-004 lamda_iter=  1.925696282943571E-004
+ iiter=           7 lamda_iter=  1.925714599367356E-004
+ max_dofn=           1
+ lamda(istep)=  1.925719438353506E-004 lamda_iter=  1.925714599367356E-004
+ iiter=           8 lamda_iter=  1.925719438353506E-004
+ max_dofn=           1
+ lamda(istep)=  1.925720720386212E-004 lamda_iter=  1.925719438353506E-004
+ iiter=           9 lamda_iter=  1.925720720386212E-004
+ max_dofn=           1
+ lamda(istep)=  1.925721060403512E-004 lamda_iter=  1.925720720386212E-004
+ iiter=          10 lamda_iter=  1.925721060403512E-004
+ max_dofn=           1
+ lamda(istep)=  1.925721150618799E-004 lamda_iter=  1.925721060403512E-004
+ iiter=          11 lamda_iter=  1.925721150618799E-004
+ max_dofn=           1
+ lamda(istep)=  1.925721174556430E-004 lamda_iter=  1.925721150618799E-004
+ iiter=          12 lamda_iter=  1.925721174556430E-004
+ max_dofn=           1
+ lamda(istep)=  1.925721180909479E-004 lamda_iter=  1.925721174556430E-004
+ iiter=          13 lamda_iter=  1.925721180909479E-004
+ max_dofn=           1
+ lamda(istep)=  1.925721182598669E-004 lamda_iter=  1.925721180909479E-004
+ iiter=          14 lamda_iter=  1.925721182598669E-004
+ max_dofn=           1
+ lamda(istep)=  1.925721183044684E-004 lamda_iter=  1.925721182598669E-004
+ iiter=          15 lamda_iter=  1.925721183044684E-004
+ max_dofn=           1
+ lamda(istep)=  1.925721183162257E-004 lamda_iter=  1.925721183044684E-004
+ iiter=          16 lamda_iter=  1.925721183162257E-004
+ max_dofn=           1
+ lamda(istep)=  1.925721183193902E-004 lamda_iter=  1.925721183162257E-004
+ iiter=          17 lamda_iter=  1.925721183193902E-004
+ max_dofn=           1
+ lamda(istep)=  1.925721183203270E-004 lamda_iter=  1.925721183193902E-004
+ iiter=          18 lamda_iter=  1.925721183203270E-004
+ max_dofn=           1
+ lamda(istep)=  1.925721183204451E-004 lamda_iter=  1.925721183203270E-004
+ ***********RESTART FILE IS UPDATED!*******
+ istep=           4
+ outinp=           0
+ max_dofn=           1
+ lamda(istep)=  1.384797224807111E-016 lamda_iter=  1.925721183203270E-004
+ iiter=           1 lamda_iter=  1.384797224807111E-016
+ max_dofn=           1
+ lamda(istep)=  7.047837001068839E-006 lamda_iter=  1.384797224807111E-016
+ iiter=           2 lamda_iter=  7.047837001068839E-006
+ max_dofn=           1
+ lamda(istep)=  5.229123316615804E-005 lamda_iter=  7.047837001068839E-006
+ iiter=           3 lamda_iter=  5.229123316615804E-005
+ max_dofn=           1
+ lamda(istep)=  5.141543827193255E-005 lamda_iter=  5.229123316615804E-005
+ iiter=           4 lamda_iter=  5.141543827193255E-005
+ max_dofn=           1
+ lamda(istep)=  5.120347103086515E-005 lamda_iter=  5.141543827193255E-005
+ iiter=           5 lamda_iter=  5.120347103086515E-005
+ max_dofn=           1
+ lamda(istep)=  5.113943446093228E-005 lamda_iter=  5.120347103086515E-005
+ iiter=           6 lamda_iter=  5.113943446093228E-005
+ max_dofn=           1
+ lamda(istep)=  5.111822777979329E-005 lamda_iter=  5.113943446093228E-005
+ iiter=           7 lamda_iter=  5.111822777979329E-005
+ max_dofn=           1
+ lamda(istep)=  5.111090016934604E-005 lamda_iter=  5.111822777979329E-005
+ iiter=           8 lamda_iter=  5.111090016934604E-005
+ max_dofn=           1
+ lamda(istep)=  5.110831318544594E-005 lamda_iter=  5.111090016934604E-005
+ iiter=           9 lamda_iter=  5.110831318544594E-005
+ max_dofn=           1
+ lamda(istep)=  5.110738848205049E-005 lamda_iter=  5.110831318544594E-005
+ iiter=          10 lamda_iter=  5.110738848205049E-005
+ max_dofn=           1
+ lamda(istep)=  5.110705514519512E-005 lamda_iter=  5.110738848205049E-005
+ iiter=          11 lamda_iter=  5.110705514519512E-005
+ max_dofn=           1
+ lamda(istep)=  5.110693415231140E-005 lamda_iter=  5.110705514519512E-005
+ iiter=          12 lamda_iter=  5.110693415231140E-005
+ max_dofn=           1
+ lamda(istep)=  5.110688995084800E-005 lamda_iter=  5.110693415231140E-005
+ iiter=          13 lamda_iter=  5.110688995084800E-005
+ max_dofn=           1
+ lamda(istep)=  5.110687369743755E-005 lamda_iter=  5.110688995084800E-005
+ iiter=          14 lamda_iter=  5.110687369743755E-005
+ max_dofn=           1
+ lamda(istep)=  5.110686767994092E-005 lamda_iter=  5.110687369743755E-005
+ iiter=          15 lamda_iter=  5.110686767994092E-005
+ max_dofn=           1
+ lamda(istep)=  5.110686543595782E-005 lamda_iter=  5.110686767994092E-005
+ iiter=          16 lamda_iter=  5.110686543595782E-005
+ max_dofn=           1
+ lamda(istep)=  5.110686459280992E-005 lamda_iter=  5.110686543595782E-005
+ iiter=          17 lamda_iter=  5.110686459280992E-005
+ max_dofn=           1
+ lamda(istep)=  5.110686427344098E-005 lamda_iter=  5.110686459280992E-005
+ iiter=          18 lamda_iter=  5.110686427344098E-005
+ max_dofn=           1
+ lamda(istep)=  5.110686415148771E-005 lamda_iter=  5.110686427344098E-005
+ iiter=          19 lamda_iter=  5.110686415148771E-005
+ max_dofn=           1
+ lamda(istep)=  5.110686410459887E-005 lamda_iter=  5.110686415148771E-005
+ iiter=          20 lamda_iter=  5.110686410459887E-005
+ max_dofn=           1
+ lamda(istep)=  5.110686408634051E-005 lamda_iter=  5.110686410459887E-005
+ iiter=          21 lamda_iter=  5.110686408634051E-005
+ max_dofn=           1
+ lamda(istep)=  5.110686407923410E-005 lamda_iter=  5.110686408634051E-005
+ iiter=          22 lamda_iter=  5.110686407923410E-005
+ max_dofn=           1
+ lamda(istep)=  5.110686407641415E-005 lamda_iter=  5.110686407923410E-005
+ iiter=          23 lamda_iter=  5.110686407641415E-005
+ max_dofn=           1
+ lamda(istep)=  5.110686407531550E-005 lamda_iter=  5.110686407641415E-005
+ iiter=          24 lamda_iter=  5.110686407531550E-005
+ max_dofn=           1
+ lamda(istep)=  5.110686407485971E-005 lamda_iter=  5.110686407531550E-005
+ iiter=          25 lamda_iter=  5.110686407485971E-005
+ max_dofn=           1
+ lamda(istep)=  5.110686407463894E-005 lamda_iter=  5.110686407485971E-005
+ iiter=          26 lamda_iter=  5.110686407463894E-005
+ max_dofn=           1
+ lamda(istep)=  5.110686407459393E-005 lamda_iter=  5.110686407463894E-005
+ ***********RESTART FILE IS UPDATED!*******
+ istep=           5
+ outinp=           0
+ max_dofn=           1
+ lamda(istep)=  7.678184260270782E-017 lamda_iter=  5.110686407463894E-005
+ iiter=           1 lamda_iter=  7.678184260270782E-017
+ max_dofn=           1
+ lamda(istep)=  2.626725284350591E-005 lamda_iter=  7.678184260270782E-017
+ iiter=           2 lamda_iter=  2.626725284350591E-005
+ max_dofn=           1
+ lamda(istep)=  2.149004671550062E-005 lamda_iter=  2.626725284350591E-005
+ iiter=           3 lamda_iter=  2.149004671550062E-005
+ max_dofn=           1
+ lamda(istep)=  2.149274056357894E-005 lamda_iter=  2.149004671550062E-005
+ iiter=           4 lamda_iter=  2.149274056357894E-005
+ max_dofn=           1
+ lamda(istep)=  2.149611429516895E-005 lamda_iter=  2.149274056357894E-005
+ iiter=           5 lamda_iter=  2.149611429516895E-005
+ max_dofn=           1
+ lamda(istep)=  2.149932645845766E-005 lamda_iter=  2.149611429516895E-005
+ iiter=           6 lamda_iter=  2.149932645845766E-005
+ max_dofn=           1
+ lamda(istep)=  2.150214592295961E-005 lamda_iter=  2.149932645845766E-005
+ iiter=           7 lamda_iter=  2.150214592295961E-005
+ max_dofn=           1
+ lamda(istep)=  2.150455209654795E-005 lamda_iter=  2.150214592295961E-005
+ iiter=           8 lamda_iter=  2.150455209654795E-005
+ max_dofn=           1
+ lamda(istep)=  2.150658182097870E-005 lamda_iter=  2.150455209654795E-005
+ iiter=           9 lamda_iter=  2.150658182097870E-005
+ max_dofn=           1
+ lamda(istep)=  2.150828481331899E-005 lamda_iter=  2.150658182097870E-005
+ iiter=          10 lamda_iter=  2.150828481331899E-005
+ max_dofn=           1
+ lamda(istep)=  2.150970986259532E-005 lamda_iter=  2.150828481331899E-005
+ iiter=          11 lamda_iter=  2.150970986259532E-005
+ max_dofn=           1
+ lamda(istep)=  2.151090067202258E-005 lamda_iter=  2.150970986259532E-005
+ iiter=          12 lamda_iter=  2.151090067202258E-005
+ max_dofn=           1
+ lamda(istep)=  2.151189498949318E-005 lamda_iter=  2.151090067202258E-005
+ iiter=          13 lamda_iter=  2.151189498949318E-005
+ max_dofn=           1
+ lamda(istep)=  2.151272487944813E-005 lamda_iter=  2.151189498949318E-005
+ iiter=          14 lamda_iter=  2.151272487944813E-005
+ max_dofn=           1
+ lamda(istep)=  2.151341735491851E-005 lamda_iter=  2.151272487944813E-005
+ iiter=          15 lamda_iter=  2.151341735491851E-005
+ max_dofn=           1
+ lamda(istep)=  2.151399507622876E-005 lamda_iter=  2.151341735491851E-005
+ iiter=          16 lamda_iter=  2.151399507622876E-005
+ max_dofn=           1
+ lamda(istep)=  2.151447700865928E-005 lamda_iter=  2.151399507622876E-005
+ iiter=          17 lamda_iter=  2.151447700865928E-005
+ max_dofn=           1
+ lamda(istep)=  2.151487900462307E-005 lamda_iter=  2.151447700865928E-005
+ iiter=          18 lamda_iter=  2.151487900462307E-005
+ max_dofn=           1
+ lamda(istep)=  2.151521430471695E-005 lamda_iter=  2.151487900462307E-005
+ iiter=          19 lamda_iter=  2.151521430471695E-005
+ max_dofn=           1
+ lamda(istep)=  2.151549396304863E-005 lamda_iter=  2.151521430471695E-005
+ iiter=          20 lamda_iter=  2.151549396304863E-005
+ max_dofn=           1
+ lamda(istep)=  2.151572720563831E-005 lamda_iter=  2.151549396304863E-005
+ iiter=          21 lamda_iter=  2.151572720563831E-005
+ max_dofn=           1
+ lamda(istep)=  2.151592173122530E-005 lamda_iter=  2.151572720563831E-005
+ iiter=          22 lamda_iter=  2.151592173122530E-005
+ max_dofn=           1
+ lamda(istep)=  2.151608396323875E-005 lamda_iter=  2.151592173122530E-005
+ iiter=          23 lamda_iter=  2.151608396323875E-005
+ max_dofn=           1
+ lamda(istep)=  2.151621926047978E-005 lamda_iter=  2.151608396323875E-005
+ iiter=          24 lamda_iter=  2.151621926047978E-005
+ max_dofn=           1
+ lamda(istep)=  2.151633209323200E-005 lamda_iter=  2.151621926047978E-005
+ iiter=          25 lamda_iter=  2.151633209323200E-005
+ max_dofn=           1
+ lamda(istep)=  2.151642619035936E-005 lamda_iter=  2.151633209323200E-005
+ iiter=          26 lamda_iter=  2.151642619035936E-005
+ max_dofn=           1
+ lamda(istep)=  2.151650466210545E-005 lamda_iter=  2.151642619035936E-005
+ iiter=          27 lamda_iter=  2.151650466210545E-005
+ max_dofn=           1
+ lamda(istep)=  2.151657010263670E-005 lamda_iter=  2.151650466210545E-005
+ iiter=          28 lamda_iter=  2.151657010263670E-005
+ max_dofn=           1
+ lamda(istep)=  2.151662467557560E-005 lamda_iter=  2.151657010263670E-005
+ iiter=          29 lamda_iter=  2.151662467557560E-005
+ max_dofn=           1
+ lamda(istep)=  2.151667018543263E-005 lamda_iter=  2.151662467557560E-005
+ iiter=          30 lamda_iter=  2.151667018543263E-005
+ max_dofn=           1
+ lamda(istep)=  2.151670813716070E-005 lamda_iter=  2.151667018543263E-005
+ iiter=          31 lamda_iter=  2.151670813716070E-005
+ max_dofn=           1
+ lamda(istep)=  2.151673978587128E-005 lamda_iter=  2.151670813716070E-005
+ iiter=          32 lamda_iter=  2.151673978587128E-005
+ max_dofn=           1
+ lamda(istep)=  2.151676617827269E-005 lamda_iter=  2.151673978587128E-005
+ iiter=          33 lamda_iter=  2.151676617827269E-005
+ max_dofn=           1
+ lamda(istep)=  2.151678818730354E-005 lamda_iter=  2.151676617827269E-005
+ iiter=          34 lamda_iter=  2.151678818730354E-005
+ max_dofn=           1
+ lamda(istep)=  2.151680654092046E-005 lamda_iter=  2.151678818730354E-005
+ iiter=          35 lamda_iter=  2.151680654092046E-005
+ max_dofn=           1
+ lamda(istep)=  2.151682184621578E-005 lamda_iter=  2.151680654092046E-005
+ iiter=          36 lamda_iter=  2.151682184621578E-005
+ max_dofn=           1
+ lamda(istep)=  2.151683460946139E-005 lamda_iter=  2.151682184621578E-005
+ iiter=          37 lamda_iter=  2.151683460946139E-005
+ max_dofn=           1
+ lamda(istep)=  2.151684525284935E-005 lamda_iter=  2.151683460946139E-005
+ iiter=          38 lamda_iter=  2.151684525284935E-005
+ max_dofn=           1
+ lamda(istep)=  2.151685412845936E-005 lamda_iter=  2.151684525284935E-005
+ iiter=          39 lamda_iter=  2.151685412845936E-005
+ max_dofn=           1
+ lamda(istep)=  2.151686152990010E-005 lamda_iter=  2.151685412845936E-005
+ iiter=          40 lamda_iter=  2.151686152990010E-005
+ max_dofn=           1
+ lamda(istep)=  2.151686770201032E-005 lamda_iter=  2.151686152990010E-005
+ iiter=          41 lamda_iter=  2.151686770201032E-005
+ max_dofn=           1
+ lamda(istep)=  2.151687284897241E-005 lamda_iter=  2.151686770201032E-005
+ iiter=          42 lamda_iter=  2.151687284897241E-005
+ max_dofn=           1
+ lamda(istep)=  2.151687714105615E-005 lamda_iter=  2.151687284897241E-005
+ iiter=          43 lamda_iter=  2.151687714105615E-005
+ max_dofn=           1
+ lamda(istep)=  2.151688072025246E-005 lamda_iter=  2.151687714105615E-005
+ iiter=          44 lamda_iter=  2.151688072025246E-005
+ max_dofn=           1
+ lamda(istep)=  2.151688370495529E-005 lamda_iter=  2.151688072025246E-005
+ iiter=          45 lamda_iter=  2.151688370495529E-005
+ max_dofn=           1
+ lamda(istep)=  2.151688619392447E-005 lamda_iter=  2.151688370495529E-005
+ iiter=          46 lamda_iter=  2.151688619392447E-005
+ max_dofn=           1
+ lamda(istep)=  2.151688826947903E-005 lamda_iter=  2.151688619392447E-005
+ iiter=          47 lamda_iter=  2.151688826947903E-005
+ max_dofn=           1
+ lamda(istep)=  2.151689000029763E-005 lamda_iter=  2.151688826947903E-005
+ iiter=          48 lamda_iter=  2.151689000029763E-005
+ max_dofn=           1
+ lamda(istep)=  2.151689144363382E-005 lamda_iter=  2.151689000029763E-005
+ iiter=          49 lamda_iter=  2.151689144363382E-005
+ max_dofn=           1
+ lamda(istep)=  2.151689264724217E-005 lamda_iter=  2.151689144363382E-005
+ iiter=          50 lamda_iter=  2.151689264724217E-005
+ max_dofn=           1
+ lamda(istep)=  2.151689365093258E-005 lamda_iter=  2.151689264724217E-005
+ iiter=          51 lamda_iter=  2.151689365093258E-005
+ max_dofn=           1
+ lamda(istep)=  2.151689448791330E-005 lamda_iter=  2.151689365093258E-005
+ iiter=          52 lamda_iter=  2.151689448791330E-005
+ max_dofn=           1
+ lamda(istep)=  2.151689518587710E-005 lamda_iter=  2.151689448791330E-005
+ iiter=          53 lamda_iter=  2.151689518587710E-005
+ max_dofn=           1
+ lamda(istep)=  2.151689576791314E-005 lamda_iter=  2.151689518587710E-005
+ iiter=          54 lamda_iter=  2.151689576791314E-005
+ max_dofn=           1
+ lamda(istep)=  2.151689625327249E-005 lamda_iter=  2.151689576791314E-005
+ iiter=          55 lamda_iter=  2.151689625327249E-005
+ max_dofn=           1
+ lamda(istep)=  2.151689665801613E-005 lamda_iter=  2.151689625327249E-005
+ iiter=          56 lamda_iter=  2.151689665801613E-005
+ max_dofn=           1
+ lamda(istep)=  2.151689699553484E-005 lamda_iter=  2.151689665801613E-005
+ iiter=          57 lamda_iter=  2.151689699553484E-005
+ max_dofn=           1
+ lamda(istep)=  2.151689727699340E-005 lamda_iter=  2.151689699553484E-005
+ iiter=          58 lamda_iter=  2.151689727699340E-005
+ max_dofn=           1
+ lamda(istep)=  2.151689751170077E-005 lamda_iter=  2.151689727699340E-005
+ iiter=          59 lamda_iter=  2.151689751170077E-005
+ max_dofn=           1
+ lamda(istep)=  2.151689770742529E-005 lamda_iter=  2.151689751170077E-005
+ iiter=          60 lamda_iter=  2.151689770742529E-005
+ max_dofn=           1
+ lamda(istep)=  2.151689787064147E-005 lamda_iter=  2.151689770742529E-005
+ iiter=          61 lamda_iter=  2.151689787064147E-005
+ max_dofn=           1
+ lamda(istep)=  2.151689800674586E-005 lamda_iter=  2.151689787064147E-005
+ iiter=          62 lamda_iter=  2.151689800674586E-005
+ max_dofn=           1
+ lamda(istep)=  2.151689812024699E-005 lamda_iter=  2.151689800674586E-005
+ iiter=          63 lamda_iter=  2.151689812024699E-005
+ max_dofn=           1
+ lamda(istep)=  2.151689821489399E-005 lamda_iter=  2.151689812024699E-005
+ iiter=          64 lamda_iter=  2.151689821489399E-005
+ max_dofn=           1
+ lamda(istep)=  2.151689829381905E-005 lamda_iter=  2.151689821489399E-005
+ iiter=          65 lamda_iter=  2.151689829381905E-005
+ max_dofn=           1
+ lamda(istep)=  2.151689835963850E-005 lamda_iter=  2.151689829381905E-005
+ iiter=          66 lamda_iter=  2.151689835963850E-005
+ max_dofn=           1
+ lamda(istep)=  2.151689841452357E-005 lamda_iter=  2.151689835963850E-005
+ iiter=          67 lamda_iter=  2.151689841452357E-005
+ max_dofn=           1
+ lamda(istep)=  2.151689846029051E-005 lamda_iter=  2.151689841452357E-005
+ iiter=          68 lamda_iter=  2.151689846029051E-005
+ max_dofn=           1
+ lamda(istep)=  2.151689849845780E-005 lamda_iter=  2.151689846029051E-005
+ iiter=          69 lamda_iter=  2.151689849845780E-005
+ max_dofn=           1
+ lamda(istep)=  2.151689853028909E-005 lamda_iter=  2.151689849845780E-005
+ iiter=          70 lamda_iter=  2.151689853028909E-005
+ max_dofn=           1
+ lamda(istep)=  2.151689855682590E-005 lamda_iter=  2.151689853028909E-005
+ iiter=          71 lamda_iter=  2.151689855682590E-005
+ max_dofn=           1
+ lamda(istep)=  2.151689857896348E-005 lamda_iter=  2.151689855682590E-005
+ iiter=          72 lamda_iter=  2.151689857896348E-005
+ max_dofn=           1
+ lamda(istep)=  2.151689859741622E-005 lamda_iter=  2.151689857896348E-005
+ iiter=          73 lamda_iter=  2.151689859741622E-005
+ max_dofn=           1
+ lamda(istep)=  2.151689861280896E-005 lamda_iter=  2.151689859741622E-005
+ iiter=          74 lamda_iter=  2.151689861280896E-005
+ max_dofn=           1
+ lamda(istep)=  2.151689862564310E-005 lamda_iter=  2.151689861280896E-005
+ iiter=          75 lamda_iter=  2.151689862564310E-005
+ max_dofn=           1
+ lamda(istep)=  2.151689863634762E-005 lamda_iter=  2.151689862564310E-005
+ iiter=          76 lamda_iter=  2.151689863634762E-005
+ max_dofn=           1
+ lamda(istep)=  2.151689864527126E-005 lamda_iter=  2.151689863634762E-005
+ iiter=          77 lamda_iter=  2.151689864527126E-005
+ max_dofn=           1
+ lamda(istep)=  2.151689865271160E-005 lamda_iter=  2.151689864527126E-005
+ iiter=          78 lamda_iter=  2.151689865271160E-005
+ max_dofn=           1
+ lamda(istep)=  2.151689865892036E-005 lamda_iter=  2.151689865271160E-005
+ iiter=          79 lamda_iter=  2.151689865892036E-005
+ max_dofn=           1
+ lamda(istep)=  2.151689866409692E-005 lamda_iter=  2.151689865892036E-005
+ iiter=          80 lamda_iter=  2.151689866409692E-005
+ max_dofn=           1
+ lamda(istep)=  2.151689866841263E-005 lamda_iter=  2.151689866409692E-005
+ iiter=          81 lamda_iter=  2.151689866841263E-005
+ max_dofn=           1
+ lamda(istep)=  2.151689867201040E-005 lamda_iter=  2.151689866841263E-005
+ iiter=          82 lamda_iter=  2.151689867201040E-005
+ max_dofn=           1
+ lamda(istep)=  2.151689867501439E-005 lamda_iter=  2.151689867201040E-005
+ iiter=          83 lamda_iter=  2.151689867501439E-005
+ max_dofn=           1
+ lamda(istep)=  2.151689867751527E-005 lamda_iter=  2.151689867501439E-005
+ iiter=          84 lamda_iter=  2.151689867751527E-005
+ max_dofn=           1
+ lamda(istep)=  2.151689867960201E-005 lamda_iter=  2.151689867751527E-005
+ iiter=          85 lamda_iter=  2.151689867960201E-005
+ max_dofn=           1
+ lamda(istep)=  2.151689868134383E-005 lamda_iter=  2.151689867960201E-005
+ iiter=          86 lamda_iter=  2.151689868134383E-005
+ max_dofn=           1
+ lamda(istep)=  2.151689868279276E-005 lamda_iter=  2.151689868134383E-005
+ iiter=          87 lamda_iter=  2.151689868279276E-005
+ max_dofn=           1
+ lamda(istep)=  2.151689868400503E-005 lamda_iter=  2.151689868279276E-005
+ iiter=          88 lamda_iter=  2.151689868400503E-005
+ max_dofn=           1
+ lamda(istep)=  2.151689868501469E-005 lamda_iter=  2.151689868400503E-005
+ iiter=          89 lamda_iter=  2.151689868501469E-005
+ max_dofn=           1
+ lamda(istep)=  2.151689868585506E-005 lamda_iter=  2.151689868501469E-005
+ iiter=          90 lamda_iter=  2.151689868585506E-005
+ max_dofn=           1
+ lamda(istep)=  2.151689868655732E-005 lamda_iter=  2.151689868585506E-005
+ iiter=          91 lamda_iter=  2.151689868655732E-005
+ max_dofn=           1
+ lamda(istep)=  2.151689868714186E-005 lamda_iter=  2.151689868655732E-005
+ iiter=          92 lamda_iter=  2.151689868714186E-005
+ max_dofn=           1
+ lamda(istep)=  2.151689868763240E-005 lamda_iter=  2.151689868714186E-005
+ iiter=          93 lamda_iter=  2.151689868763240E-005
+ max_dofn=           1
+ lamda(istep)=  2.151689868803745E-005 lamda_iter=  2.151689868763240E-005
+ iiter=          94 lamda_iter=  2.151689868803745E-005
+ max_dofn=           1
+ lamda(istep)=  2.151689868837673E-005 lamda_iter=  2.151689868803745E-005
+ iiter=          95 lamda_iter=  2.151689868837673E-005
+ max_dofn=           1
+ lamda(istep)=  2.151689868865895E-005 lamda_iter=  2.151689868837673E-005
+ iiter=          96 lamda_iter=  2.151689868865895E-005
+ max_dofn=           1
+ lamda(istep)=  2.151689868889893E-005 lamda_iter=  2.151689868865895E-005
+ iiter=          97 lamda_iter=  2.151689868889893E-005
+ max_dofn=           1
+ lamda(istep)=  2.151689868908939E-005 lamda_iter=  2.151689868889893E-005
+ iiter=          98 lamda_iter=  2.151689868908939E-005
+ max_dofn=           1
+ lamda(istep)=  2.151689868925838E-005 lamda_iter=  2.151689868908939E-005
+ iiter=          99 lamda_iter=  2.151689868925838E-005
+ max_dofn=           1
+ lamda(istep)=  2.151689868939559E-005 lamda_iter=  2.151689868925838E-005
+ iiter=         100 lamda_iter=  2.151689868939559E-005
+ max_dofn=           1
+ lamda(istep)=  2.151689868950822E-005 lamda_iter=  2.151689868939559E-005
+ iiter=         101 lamda_iter=  2.151689868950822E-005
+ max_dofn=           1
+ lamda(istep)=  2.151689868960344E-005 lamda_iter=  2.151689868950822E-005
+ iiter=         102 lamda_iter=  2.151689868960344E-005
+ max_dofn=           1
+ lamda(istep)=  2.151689868968145E-005 lamda_iter=  2.151689868960344E-005
+ iiter=         103 lamda_iter=  2.151689868968145E-005
+ max_dofn=           1
+ lamda(istep)=  2.151689868974757E-005 lamda_iter=  2.151689868968145E-005
+ iiter=         104 lamda_iter=  2.151689868974757E-005
+ max_dofn=           1
+ lamda(istep)=  2.151689868980415E-005 lamda_iter=  2.151689868974757E-005
+ iiter=         105 lamda_iter=  2.151689868980415E-005
+ max_dofn=           1
+ lamda(istep)=  2.151689868985236E-005 lamda_iter=  2.151689868980415E-005
+ iiter=         106 lamda_iter=  2.151689868985236E-005
+ max_dofn=           1
+ lamda(istep)=  2.151689868988759E-005 lamda_iter=  2.151689868985236E-005
+ iiter=         107 lamda_iter=  2.151689868988759E-005
+ max_dofn=           1
+ lamda(istep)=  2.151689868992142E-005 lamda_iter=  2.151689868988759E-005
+ iiter=         108 lamda_iter=  2.151689868992142E-005
+ max_dofn=           1
+ lamda(istep)=  2.151689868994702E-005 lamda_iter=  2.151689868992142E-005
+ iiter=         109 lamda_iter=  2.151689868994702E-005
+ max_dofn=           1
+ lamda(istep)=  2.151689868996765E-005 lamda_iter=  2.151689868994702E-005
+ ***********RESTART FILE IS UPDATED!*******
+ time: 11:39:23
+ time: 11:39:22

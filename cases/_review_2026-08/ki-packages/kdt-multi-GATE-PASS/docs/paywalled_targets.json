@@ -1,0 +1,138 @@
+[
+ {
+  "doi": "10.1016/j.engstruct.2015.01.047",
+  "title": "Thermal displacements of concrete dams: accounting for water temperature in statistical models",
+  "status": "fetch_failed",
+  "serves": [
+   "DISPLACEMENT",
+   "TEMPERATURE"
+  ],
+  "role": "threshold_convention",
+  "text_path": null,
+  "note": "Elsevier. OA locations resolved but every PDF host (sciencedirect, repository mirrors) returned an Akamai 'Access Denied' HTML page from this network. Tried paper_fetch.py and a browser-UA retry over all OpenAlex+Unpaywall locations."
+ },
+ {
+  "doi": "10.3390/s18113682",
+  "title": "Geodetic and Remote-Sensing Sensors for Dam Deformation Monitoring",
+  "status": "fetch_failed",
+  "serves": [
+   "DISPLACEMENT"
+  ],
+  "role": "threshold_convention",
+  "text_path": null,
+  "note": "MDPI. www.mdpi.com returns HTTP 200 with an Akamai 'Access Denied' HTML body for the /pdf endpoint from this host."
+ },
+ {
+  "doi": "10.1088/1742-6596/744/1/012037",
+  "title": "Ambient modal testing of a double-arch dam: the experimental campaign and model updating",
+  "status": "fetch_failed",
+  "serves": [
+   "modal_frequency"
+  ],
+  "role": "benchmark",
+  "text_path": null,
+  "note": "IOP. iopscience.iop.org returns an HTML interstitial rather than the PDF. This is the paper that would have supplied a cited frequency-error band for modal_frequency; without it that band is null."
+ },
+ {
+  "doi": "10.1016/j.cscm.2019.e00289",
+  "title": "Predicting thermal performance of a mass concrete foundation - a field monitoring case study",
+  "status": "fetch_failed",
+  "serves": [
+   "TEMPERATURE"
+  ],
+  "role": "benchmark",
+  "text_path": null,
+  "note": "Elsevier/ScienceDirect: 403 from this network."
+ },
+ {
+  "doi": "10.3390/w14172598",
+  "title": "Understanding the Effect of Hydro-Climatological Parameters on Dam Seepage Using SHAP",
+  "status": "fetch_failed",
+  "serves": [
+   "PORE-PRESSURE",
+   "WATER-HEAD"
+  ],
+  "role": "threshold_convention",
+  "text_path": null,
+  "note": "MDPI, blocked as above. Would have supplied a cited band for seepage head."
+ },
+ {
+  "doi": "10.1016/j.jrmge.2020.05.011",
+  "title": "Improved prediction of slope stability using a hybrid stacking ensemble method",
+  "status": "fetch_failed",
+  "serves": [
+   "factor_of_safety"
+  ],
+  "role": "threshold_convention",
+  "text_path": null,
+  "note": "Elsevier/KeAi: 403 from this network."
+ },
+ {
+  "doi": "10.1111/mice.13141",
+  "title": "Inverse analysis of deformation moduli for high arch dams using the displacement method",
+  "status": "fetch_failed",
+  "serves": [
+   "DISPLACEMENT"
+  ],
+  "role": "benchmark",
+  "text_path": null,
+  "note": "Wiley: no accessible OA location from this network."
+ },
+ {
+  "doi": "10.1155/2019/7936513",
+  "title": "Zoning Elastic Modulus Inversion for High Arch Dams Based on PSOGSA-SVM",
+  "status": "fetch_failed",
+  "serves": [
+   "DISPLACEMENT"
+  ],
+  "role": "calibration",
+  "text_path": null,
+  "note": "Hindawi: downloads.hindawi.com returns 403 from this network."
+ },
+ {
+  "doi": "10.1155/2013/709430",
+  "title": "Comparison between Duncan and Chang's EB Model and the Generalized Plasticity Model",
+  "status": "fetch_failed",
+  "serves": [
+   "DISPLACEMENT",
+   "STRESS"
+  ],
+  "role": "definition",
+  "text_path": null,
+  "note": "Hindawi, blocked as above. Would have documented the Duncan-Chang EB parameters HSTAR's DUNCANCHANG record takes."
+ },
+ {
+  "doi": "10.1016/j.wse.2019.09.004",
+  "title": "Long-term deformation analysis of Shuibuya concrete face rockfill dam",
+  "status": "fetch_failed",
+  "serves": [
+   "DISPLACEMENT"
+  ],
+  "role": "benchmark",
+  "text_path": null,
+  "note": "Elsevier/KeAi: 403 from this network."
+ },
+ {
+  "doi": "10.1016/j.ijsolstr.2005.05.038",
+  "title": "An energy release rate-based plastic-damage model for concrete",
+  "status": "fetch_failed",
+  "serves": [
+   "STRESS"
+  ],
+  "role": "definition",
+  "text_path": null,
+  "note": "Elsevier: 403 from this network. Related to HSTAR's CONCRETE (Ghrib & Tinawi) damage model."
+ },
+ {
+  "doi": "10.1016/j.gsf.2017.09.003",
+  "title": "Probabilistic stability analyses of undrained slopes by 3D random fields and finite elements",
+  "status": "fetch_failed",
+  "serves": [
+   "factor_of_safety",
+   "reliability_index"
+  ],
+  "role": "threshold_convention",
+  "text_path": null,
+  "note": "Elsevier: 403 from this network. Would have supplied a cited band for the reliability index."
+ }
+]

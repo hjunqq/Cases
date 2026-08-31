@@ -1,0 +1,74 @@
+ ================================================
+   Easy_HSTAR - Finite Element Analysis
+ ================================================
+ 
+ Reading: 1.toml
+  Read 366 nodes
+  Read 321 elements
+ =============================================
+  HSTAR Problem Summary
+ =============================================
+  Version     :            1
+  Problem name: 1
+  Type        : Q
+  Dimensions  :            2
+  Nodes       :          366
+  Elements    :          321
+  Materials   :           10
+  Groups      :           10
+  Max DOF/node:            4
+  Blocks      :            1
+  Links       :            0
+  Solver      : PARDISO
+  Load type   : LOAD
+  Output      : GIDR
+ 
+  Analysis blocks:
+   Block   1 type=time_dependent nincs=     1
+ 
+  Materials:
+   Mat   1 name=Material 1 - Dam concrete type=MECHANICAL
+   Mat   2 name=Material 2 - Dam concrete type=MECHANICAL
+   Mat   3 name=Material 3 - Dam concrete type=MECHANICAL
+   Mat   4 name=Material 4 - Dam concrete type=MECHANICAL
+   Mat   5 name=Material 5 - Dam concrete type=MECHANICAL
+   Mat   6 name=Material 6 - Foundation rock type=MECHANICAL
+   Mat   7 name=Material 7 - Joint type=MECHANICAL
+   Mat   8 name=Material 8 - Joint type=MECHANICAL
+   Mat   9 name=Material 9 - Joint type=MECHANICAL
+   Mat  10 name=Material 10 - Beam type=MECHANICAL
+ =============================================
+ validate_problem: all checks passed
+ 
+ Input OK. Starting analysis...
+  WARNING: Group 8 elcod_local= 1.000E-02 vs physical= 1.000E-01 (ratio=   0.1x)
+  WARNING: Group 9 elcod_local= 1.000E-02 vs physical= 1.000E-01 (ratio=   0.1x)
+  WARNING: Group 10 elcod_local= 1.000E-02 vs physical= 1.000E-01 (ratio=   0.1x)
+  ndimn=2, npoin=366, ntotv=1098
+  Water pressure 1: 12 edges
+ 
+  === Block 1 / 1
+  iffix: free=1054, BC=38, inactive=6
+  Neq = 1054
+  NNZ = 25918
+  Inc 1 Step 1
+    iter   1  R_force= 1.000E+00  resid= 6.243E+07
+    iter   2  R_force= 2.235E+29  R_disp= 1.000E+00  R_energy= 1.923E+30
+    iter   3  R_force= 6.094E+51  R_disp= 1.000E+00  R_energy= 2.524E+75
+    iter   4  R_force= 3.427E+74  R_disp= 1.000E+00  R_energy= 6.792+120
+    iter   5  R_force= 3.942E+97  R_disp= 1.000E+00  R_energy= 5.238+166
+    iter   6  R_force= 7.718+121  R_disp= 1.000E+00  R_energy= 2.337+215
+    iter   7  R_force= 1.770+146  R_disp= 1.000E+00  R_energy= 1.190+264
+    iter   8  R_force=  Infinity  R_disp=       NaN  R_energy=       NaN
+    iter   9  R_force=  Infinity  R_disp=       NaN  R_energy=       NaN
+    iter  10  R_force=  Infinity  R_disp=       NaN  R_energy=       NaN
+  Converged in 10 iterations
+  Max |Ux| =   7.3314+239
+  Max |Uy| =   1.0847+240
+  Max |sxx| =   1.2336+249
+  Max |syy| =   5.8963+248
+  Results written to ./1_easy.flavia.res
+  VTU: ./1_easy_b1.vtu
+  Restart saved: ./1_easy.rst
+ 
+ Analysis completed successfully.

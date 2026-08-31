@@ -1,0 +1,2157 @@
+ irecover=           0
+ ikind=          15 nr_intrules=           4
+ igroup=           1 tvol=   8750.00000000000     
+ igroup=           1 tne=         200
+ igroup=           2 tvol=   999.900993340000     
+ igroup=           2 tne=         225
+ igroup=           3 tvol=   1271.18532869915     
+ igroup=           3 tne=         275
+ igroup=           4 tvol=   2.82842712474596     
+ igroup=           4 tne=         285
+ ****** ntotv= ******         644
+ time: 11:02:27
+ in modf_element_lib
+ jgroup=           1 kinit_g=           0
+ jgroup=           2 kinit_g=           0
+ jgroup=           3 kinit_g=           0
+ jgroup=           4 kinit_g=           0
+ iblks=           1 runblks=           1
+ iblks=           1
+ time: 11:02:27
+ ninit=           0 iblks=           1 restart=           0
+ ikindks=           5
+ time(solve): 11:02:27
+ 单个方程中最大非零元素个数          18
+ Neq=         602       Iseq(neq)=        5220
+ storage of PARDISO, sstore=        5220
+                                             
+ time(solve_set): 11:02:27
+ time(solve_pcg): 11:02:27
+ Increment step=           1
+ cwater=           0 delgroup=           0
+ force_external***,edge_load_group=           0
+ body force
+ interia force***
+ contact_state********************
+ in predict
+igroup=    1 ifield=1 ikh=1 ielem=     1 order_time=0  coef= 1.00000
+     0.51440E+10    -0.30864E+10    -0.11317E+10     0.12346E+10    -0.25720E+10     0.30864E+10    -0.14403E+10    -0.12346E+10
+    -0.30864E+10     0.11317E+11    -0.12346E+10    -0.10391E+11     0.30864E+10    -0.56584E+10     0.12346E+10     0.47325E+10
+    -0.11317E+10    -0.12346E+10     0.51440E+10     0.30864E+10    -0.14403E+10     0.12346E+10    -0.25720E+10    -0.30864E+10
+     0.12346E+10    -0.10391E+11     0.30864E+10     0.11317E+11    -0.12346E+10     0.47325E+10    -0.30864E+10    -0.56584E+10
+    -0.25720E+10     0.30864E+10    -0.14403E+10    -0.12346E+10     0.51440E+10    -0.30864E+10    -0.11317E+10     0.12346E+10
+     0.30864E+10    -0.56584E+10     0.12346E+10     0.47325E+10    -0.30864E+10     0.11317E+11    -0.12346E+10    -0.10391E+11
+    -0.14403E+10     0.12346E+10    -0.25720E+10    -0.30864E+10    -0.11317E+10    -0.12346E+10     0.51440E+10     0.30864E+10
+    -0.12346E+10     0.47325E+10    -0.30864E+10    -0.56584E+10     0.12346E+10    -0.10391E+11     0.30864E+10     0.11317E+11
+igroup=    2 ifield=1 ikh=1 ielem=   201 order_time=0  coef= 1.00000
+     0.47634E+08    -0.83336E+08     0.19748E+08     0.81782E+08    -0.23768E+08     0.83474E+08    -0.43613E+08    -0.81920E+08
+    -0.83336E+08     0.28179E+09    -0.82098E+08    -0.28132E+09     0.83474E+08    -0.14082E+09     0.81960E+08     0.14035E+09
+     0.19748E+08    -0.82098E+08     0.47845E+08     0.83888E+08    -0.43579E+08     0.81960E+08    -0.24013E+08    -0.83750E+08
+     0.81782E+08    -0.28132E+09     0.83888E+08     0.28219E+09    -0.81920E+08     0.14055E+09    -0.83750E+08    -0.14142E+09
+    -0.23768E+08     0.83474E+08    -0.43579E+08    -0.81920E+08     0.47684E+08    -0.83336E+08     0.19663E+08     0.81782E+08
+     0.83474E+08    -0.14082E+09     0.81960E+08     0.14055E+09    -0.83336E+08     0.28209E+09    -0.82098E+08    -0.28182E+09
+    -0.43613E+08     0.81960E+08    -0.24013E+08    -0.83750E+08     0.19663E+08    -0.82098E+08     0.47963E+08     0.83889E+08
+    -0.81920E+08     0.14035E+09    -0.83750E+08    -0.14142E+09     0.81782E+08    -0.28182E+09     0.83889E+08     0.28289E+09
+igroup=    3 ifield=1 ikh=1 ielem=   226 order_time=0  coef= 1.00000
+     0.61814E+08     0.13732E+09    -0.56764E+08     0.28932E+08    -0.32322E+08    -0.11103E+09     0.27272E+08    -0.55219E+08
+     0.13732E+09     0.42352E+09    -0.13495E+09     0.61690E+08    -0.11103E+09    -0.29315E+09     0.10866E+09    -0.19206E+09
+    -0.56764E+08    -0.13495E+09     0.58190E+08    -0.30357E+08     0.27267E+08     0.10866E+09    -0.28692E+08     0.56649E+08
+     0.28932E+08     0.61690E+08    -0.30357E+08     0.10697E+09    -0.55224E+08    -0.19209E+09     0.56649E+08     0.23428E+08
+    -0.32322E+08    -0.11103E+09     0.27267E+08    -0.55224E+08     0.63845E+08     0.13913E+09    -0.58790E+08     0.27126E+08
+    -0.11103E+09    -0.29315E+09     0.10866E+09    -0.19209E+09     0.13913E+09     0.43250E+09    -0.13675E+09     0.52734E+08
+     0.27272E+08     0.10866E+09    -0.28692E+08     0.56649E+08    -0.58790E+08    -0.13675E+09     0.60210E+08    -0.28557E+08
+    -0.55219E+08    -0.19206E+09     0.56649E+08     0.23428E+08     0.27126E+08     0.52734E+08    -0.28557E+08     0.11590E+09
+igroup=    4 ifield=1 ikh=1 ielem=   276 order_time=0  coef= 1.00000
+     0.10135E+11     0.98535E+10     0.50251E+10     0.50091E+10    -0.51092E+10    -0.49267E+10    -0.10051E+11    -0.99359E+10
+     0.98535E+10     0.99676E+10     0.48453E+10     0.50251E+10    -0.49267E+10    -0.49420E+10    -0.97720E+10    -0.10051E+11
+     0.50251E+10     0.48453E+10     0.99676E+10     0.98535E+10    -0.10051E+11    -0.97720E+10    -0.49420E+10    -0.49267E+10
+     0.50091E+10     0.50251E+10     0.98535E+10     0.10135E+11    -0.99359E+10    -0.10051E+11    -0.49267E+10    -0.51092E+10
+    -0.51092E+10    -0.49267E+10    -0.10051E+11    -0.99359E+10     0.10135E+11     0.98535E+10     0.50251E+10     0.50091E+10
+    -0.49267E+10    -0.49420E+10    -0.97720E+10    -0.10051E+11     0.98535E+10     0.99676E+10     0.48453E+10     0.50251E+10
+    -0.10051E+11    -0.97720E+10    -0.49420E+10    -0.49267E+10     0.50251E+10     0.48453E+10     0.99676E+10     0.98535E+10
+    -0.99359E+10    -0.10051E+11    -0.49267E+10    -0.51092E+10     0.50091E+10     0.50251E+10     0.98535E+10     0.10135E+11
+ residu_f1
+ time: 11:02:27
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.100000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           1 iiter=           1
+ resid=   1123270.85549455      retot=   67969167.5549624     
+ratio for residu norm= 0.1653E-01
+ max_refor=   549866.211841129      max_tofor=   22309576.4609067     
+ratio for residu maxm= 0.2465E-01
+ time: 11:02:27
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.100000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           1 iiter=           2
+ resid=   21513180.0162703      retot=   67969068.1945992     
+ratio for residu norm= 0.3165E+00
+ max_refor=   5133813.42341715      max_tofor=   22309918.0796427     
+ratio for residu maxm= 0.2301E+00
+ time: 11:02:27
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.100000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           1 iiter=           3
+ resid=   1111039.74520276      retot=   67969144.1329116     
+ratio for residu norm= 0.1635E-01
+ max_refor=   540813.451306619      max_tofor=   22309347.8369276     
+ratio for residu maxm= 0.2424E-01
+ time: 11:02:27
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.100000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           1 iiter=           4
+ resid=   21484441.7202888      retot=   67969058.7200750     
+ratio for residu norm= 0.3161E+00
+ max_refor=   5135557.43847197      max_tofor=   22309632.0808819     
+ratio for residu maxm= 0.2302E+00
+ time: 11:02:27
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.100000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           1 iiter=           5
+ resid=   1097622.65561061      retot=   67969144.5437663     
+ratio for residu norm= 0.1615E-01
+ max_refor=   535497.511396971      max_tofor=   22309048.2854630     
+ratio for residu maxm= 0.2400E-01
+ time: 11:02:27
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.100000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           1 iiter=           6
+ resid=   21466719.6783596      retot=   67969061.3244240     
+ratio for residu norm= 0.3158E+00
+ max_refor=   5136520.32485313      max_tofor=   22309323.6809438     
+ratio for residu maxm= 0.2302E+00
+ time: 11:02:27
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.100000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           1 iiter=           7
+ resid=   1085126.11347185      retot=   67969153.0750497     
+ratio for residu norm= 0.1596E-01
+ max_refor=   526864.675820248      max_tofor=   22308732.8761055     
+ratio for residu maxm= 0.2362E-01
+ time: 11:02:27
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.100000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           1 iiter=           8
+ resid=   21454606.6669209      retot=   67969072.3799674     
+ratio for residu norm= 0.3157E+00
+ max_refor=   5137863.97759472      max_tofor=   22308998.9575639     
+ratio for residu maxm= 0.2303E+00
+ time: 11:02:27
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.100000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           1 iiter=           9
+ resid=   1074218.87114964      retot=   67969167.8838161     
+ratio for residu norm= 0.1580E-01
+ max_refor=   516664.603573472      max_tofor=   22308404.7307960     
+ratio for residu maxm= 0.2316E-01
+ time: 11:02:27
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.100000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           1 iiter=          10
+ resid=   21445636.5446061      retot=   67969089.8364433     
+ratio for residu norm= 0.3155E+00
+ max_refor=   5158110.54881895      max_tofor=   22308661.4271441     
+ratio for residu maxm= 0.2312E+00
+ time: 11:02:27
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.100000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           1 iiter=          11
+ resid=   1065149.46452453      retot=   67969187.8579274     
+ratio for residu norm= 0.1567E-01
+ max_refor=   505757.898849781      max_tofor=   22308065.6583451     
+ratio for residu maxm= 0.2267E-01
+ time: 11:02:27
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.100000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           1 iiter=          12
+ resid=   21438551.3334313      retot=   67969112.4815954     
+ratio for residu norm= 0.3154E+00
+ max_refor=   5185074.02337276      max_tofor=   22308313.0851089     
+ratio for residu maxm= 0.2324E+00
+ time: 11:02:27
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.100000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           1 iiter=          13
+ resid=   1057945.01432585      retot=   67969212.2827461     
+ratio for residu norm= 0.1557E-01
+ max_refor=   494586.880534980      max_tofor=   22307716.7755136     
+ratio for residu maxm= 0.2217E-01
+ time: 11:02:27
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.100000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           1 iiter=          14
+ resid=   21432660.1169763      retot=   67969139.5506847     
+ratio for residu norm= 0.3153E+00
+ max_refor=   5207764.82962955      max_tofor=   22307955.1388686     
+ratio for residu maxm= 0.2334E+00
+ time: 11:02:27
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.100000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           1 iiter=          15
+ resid=   1052530.61885331      retot=   67969240.6699246     
+ratio for residu norm= 0.1549E-01
+ max_refor=   483389.636183514      max_tofor=   22307358.8226533     
+ratio for residu maxm= 0.2167E-01
+ time: 11:02:27
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.100000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           1 iiter=          16
+ resid=   21427561.7759572      retot=   67969170.5295938     
+ratio for residu norm= 0.3153E+00
+ max_refor=   5226884.86225276      max_tofor=   22307588.3727831     
+ratio for residu maxm= 0.2343E+00
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.100000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           1 iiter=          17
+ resid=   1048786.30342418      retot=   67969272.6659597     
+ratio for residu norm= 0.1543E-01
+ max_refor=   472300.074993054      max_tofor=   22306992.3287992     
+ratio for residu maxm= 0.2117E-01
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.100000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           1 iiter=          18
+ resid=   21422953.0508977      retot=   67969205.0513831     
+ratio for residu norm= 0.3152E+00
+ max_refor=   5243010.01936439      max_tofor=   22307213.3363147     
+ratio for residu maxm= 0.2350E+00
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.100000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           1 iiter=          19
+ resid=   43734348.8720914      retot=   67969500.2416558     
+ratio for residu norm= 0.6434E+00
+ max_refor=   21342947.0950854      max_tofor=   22306035.8729013     
+ratio for residu maxm= 0.9568E+00
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.100000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           1 iiter=          20
+ resid=   21254221.9605683      retot=   67969328.1954160     
+ratio for residu norm= 0.3127E+00
+ max_refor=   5255730.08503876      max_tofor=   22306537.1213105     
+ratio for residu maxm= 0.2356E+00
+ contact_state********************
+ irecover=           0
+ Increment step=           2
+ cwater=           0 delgroup=           0
+ force_external***,edge_load_group=           0
+ body force
+ interia force***
+ in predict
+ residu_f1
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.200000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           2 iiter=           1
+ resid=   1151108.90631776      retot=   67969167.5549624     
+ratio for residu norm= 0.1694E-01
+ max_refor=   563817.749117310      max_tofor=   22309576.4609067     
+ratio for residu maxm= 0.2527E-01
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.200000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           2 iiter=           2
+ resid=   21515167.9634870      retot=   67969066.7088222     
+ratio for residu norm= 0.3165E+00
+ max_refor=   5133813.42341715      max_tofor=   22309925.0073150     
+ratio for residu maxm= 0.2301E+00
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.200000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           2 iiter=           3
+ resid=   1139692.86152478      retot=   67969141.9160489     
+ratio for residu norm= 0.1677E-01
+ max_refor=   556487.649697807      max_tofor=   22309357.3809268     
+ratio for residu maxm= 0.2494E-01
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.200000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           2 iiter=           4
+ resid=   21486500.4237417      retot=   67969055.0969171     
+ratio for residu norm= 0.3161E+00
+ max_refor=   5135560.98941618      max_tofor=   22309647.5274484     
+ratio for residu maxm= 0.2302E+00
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.200000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           2 iiter=           5
+ resid=   1126609.95031406      retot=   67969139.8075208     
+ratio for residu norm= 0.1658E-01
+ max_refor=   552517.177229212      max_tofor=   22309067.6258173     
+ratio for residu maxm= 0.2477E-01
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.200000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           2 iiter=           6
+ resid=   21468823.9216469      retot=   67969055.0692434     
+ratio for residu norm= 0.3159E+00
+ max_refor=   5136528.26273636      max_tofor=   22309348.9866458     
+ratio for residu maxm= 0.2302E+00
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.200000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           2 iiter=           7
+ resid=   1114121.92374676      retot=   67969145.4395292     
+ratio for residu norm= 0.1639E-01
+ max_refor=   544560.264178831      max_tofor=   22308762.9455763     
+ratio for residu maxm= 0.2441E-01
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.200000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           2 iiter=           8
+ resid=   21456728.1406089      retot=   67969063.1784028     
+ratio for residu norm= 0.3157E+00
+ max_refor=   5137877.42144423      max_tofor=   22309034.9538368     
+ratio for residu maxm= 0.2303E+00
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.200000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           2 iiter=           9
+ resid=   1103057.88723606      retot=   67969157.1108040     
+ratio for residu norm= 0.1623E-01
+ max_refor=   534670.300406315      max_tofor=   22308446.1004102     
+ratio for residu maxm= 0.2397E-01
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.200000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           2 iiter=          10
+ resid=   21447750.9018419      retot=   67969077.4850561     
+ratio for residu norm= 0.3156E+00
+ max_refor=   5158143.73752658      max_tofor=   22308708.6336888     
+ratio for residu maxm= 0.2312E+00
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.200000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           2 iiter=          11
+ resid=   1093758.05889962      retot=   67969173.7963893     
+ratio for residu norm= 0.1609E-01
+ max_refor=   523861.840369896      max_tofor=   22308118.6730574     
+ratio for residu maxm= 0.2348E-01
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.200000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           2 iiter=          12
+ resid=   21440086.4882544      retot=   67969096.8487264     
+ratio for residu norm= 0.3154E+00
+ max_refor=   5185118.92159124      max_tofor=   22308371.8203194     
+ratio for residu maxm= 0.2324E+00
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.200000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           2 iiter=          13
+ resid=   41637064.1026553      retot=   67969379.4863077     
+ratio for residu norm= 0.6126E+00
+ max_refor=   20340680.5065202      max_tofor=   22307222.6672331     
+ratio for residu maxm= 0.9118E+00
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.200000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           2 iiter=          14
+ resid=   21317641.2474079      retot=   67969215.4625178     
+ratio for residu norm= 0.3136E+00
+ max_refor=   5206972.45644906      max_tofor=   22307697.6223368     
+ratio for residu maxm= 0.2334E+00
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.200000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           2 iiter=          15
+ resid=   255482786.804409      retot=   67969901.6574873     
+ratio for residu norm= 0.3759E+01
+ max_refor=   115562219.357311      max_tofor=   22305117.4099082     
+ratio for residu maxm= 0.5181E+01
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.200000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           2 iiter=          16
+ resid=   23294599.0085641      retot=   67969326.5596560     
+ratio for residu norm= 0.3427E+00
+ max_refor=   6790480.92051859      max_tofor=   22307063.4371536     
+ratio for residu maxm= 0.3044E+00
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.200000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           2 iiter=          17
+ resid=   287803743.576974      retot=   67970348.0831356     
+ratio for residu norm= 0.4234E+01
+ max_refor=   128720564.346439      max_tofor=   22303845.7780488     
+ratio for residu maxm= 0.5771E+01
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.200000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           2 iiter=          18
+ resid=   24917033.4780019      retot=   67969440.3861940     
+ratio for residu norm= 0.3666E+00
+ max_refor=   8539047.76360491      max_tofor=   22306425.4880916     
+ratio for residu maxm= 0.3828E+00
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.200000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           2 iiter=          19
+ resid=   531230260.006349      retot=   67968938.7870588     
+ratio for residu norm= 0.7816E+01
+ max_refor=   261619527.405237      max_tofor=   22307326.7447554     
+ratio for residu maxm= 0.1173E+02
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.200000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           2 iiter=          20
+ resid=   37187904.4959258      retot=   67969563.0463001     
+ratio for residu norm= 0.5471E+00
+ max_refor=   16829123.3741927      max_tofor=   22305737.6509610     
+ratio for residu maxm= 0.7545E+00
+ contact_state********************
+ irecover=           0
+ Increment step=           3
+ cwater=           0 delgroup=           0
+ force_external***,edge_load_group=           0
+ body force
+ interia force***
+ in predict
+ residu_f1
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.300000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           3 iiter=           1
+ resid=   1182048.00200268      retot=   67969167.5549624     
+ratio for residu norm= 0.1739E-01
+ max_refor=   579343.395019080      max_tofor=   22309576.4609067     
+ratio for residu maxm= 0.2597E-01
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.300000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           3 iiter=           2
+ resid=   21517358.5548192      retot=   67969065.1600794     
+ratio for residu norm= 0.3166E+00
+ max_refor=   5133813.42341715      max_tofor=   22309932.4608704     
+ratio for residu maxm= 0.2301E+00
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.300000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           3 iiter=           3
+ resid=   1171650.74612212      retot=   67969139.5734343     
+ratio for residu norm= 0.1724E-01
+ max_refor=   574038.793540695      max_tofor=   22309367.7114428     
+ratio for residu maxm= 0.2573E-01
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.300000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           3 iiter=           4
+ resid=   21488781.1633697      retot=   67969051.2916370     
+ratio for residu norm= 0.3162E+00
+ max_refor=   5135564.12667650      max_tofor=   22309664.1460055     
+ratio for residu maxm= 0.2302E+00
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.300000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           3 iiter=           5
+ resid=   1159032.97248040      retot=   67969134.7923792     
+ratio for residu norm= 0.1705E-01
+ max_refor=   571641.099895605      max_tofor=   22309088.5235889     
+ratio for residu maxm= 0.2562E-01
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.300000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           3 iiter=           6
+ resid=   21471168.7993796      retot=   67969048.4642534     
+ratio for residu norm= 0.3159E+00
+ max_refor=   5136535.24352197      max_tofor=   22309376.2324389     
+ratio for residu maxm= 0.2302E+00
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.300000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           3 iiter=           7
+ resid=   1146610.99159711      retot=   67969137.3314018     
+ratio for residu norm= 0.1687E-01
+ max_refor=   564479.686233503      max_tofor=   22308795.4282264     
+ratio for residu maxm= 0.2530E-01
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.300000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           3 iiter=           8
+ resid=   21458631.5082238      retot=   67969053.4257084     
+ratio for residu norm= 0.3157E+00
+ max_refor=   5137889.50113724      max_tofor=   22309073.7405103     
+ratio for residu maxm= 0.2303E+00
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.300000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           3 iiter=           9
+ resid=   39678001.1539225      retot=   67969322.5019031     
+ratio for residu norm= 0.5838E+00
+ max_refor=   19401174.7819130      max_tofor=   22307955.6964292     
+ratio for residu maxm= 0.8697E+00
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.300000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           3 iiter=          10
+ resid=   21380700.3027511      retot=   67969166.1346885     
+ratio for residu norm= 0.3146E+00
+ max_refor=   5157367.97381251      max_tofor=   22308405.7013170     
+ratio for residu maxm= 0.2312E+00
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.300000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           3 iiter=          11
+ resid=   205215413.878283      retot=   67969722.0951334     
+ratio for residu norm= 0.3019E+01
+ max_refor=   92673926.0225986      max_tofor=   22306248.3293423     
+ratio for residu maxm= 0.4155E+01
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.300000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           3 iiter=          12
+ resid=   23402698.4517919      retot=   67969272.3477933     
+ratio for residu norm= 0.3443E+00
+ max_refor=   6888399.83617222      max_tofor=   22307777.7035374     
+ratio for residu maxm= 0.3088E+00
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.300000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           3 iiter=          13
+ resid=   25797927.8486529      retot=   67969378.6628245     
+ratio for residu norm= 0.3796E+00
+ max_refor=   9504747.16157610      max_tofor=   22307132.5016608     
+ratio for residu maxm= 0.4261E+00
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.300000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           3 iiter=          14
+ resid=   25151790.6707453      retot=   67969382.4919503     
+ratio for residu norm= 0.3700E+00
+ max_refor=   8545177.06038889      max_tofor=   22307143.8604977     
+ratio for residu maxm= 0.3831E+00
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.300000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           3 iiter=          15
+ resid=   447803189.610065      retot=   67969326.2511672     
+ratio for residu norm= 0.6588E+01
+ max_refor=   213431974.055292      max_tofor=   22306617.5457543     
+ratio for residu maxm= 0.9568E+01
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.300000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           3 iiter=          16
+ resid=   31635944.0652250      retot=   67969502.3294681     
+ratio for residu norm= 0.4654E+00
+ max_refor=   12437144.9775679      max_tofor=   22306459.1776219     
+ratio for residu maxm= 0.5576E+00
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.300000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           3 iiter=          17
+ resid=   1120799849.33773      retot=   67968867.2052386     
+ratio for residu norm= 0.1649E+02
+ max_refor=   532720782.673506      max_tofor=   22307450.8225079     
+ratio for residu maxm= 0.2388E+02
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.300000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           3 iiter=          18
+ resid=   29827924.2912372      retot=   67969618.6964843     
+ratio for residu norm= 0.4388E+00
+ max_refor=   11077756.7789453      max_tofor=   22305809.0695193     
+ratio for residu maxm= 0.4966E+00
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.300000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           3 iiter=          19
+ resid=   9171769849.26446      retot=   67977591.8726080     
+ratio for residu norm= 0.1349E+03
+ max_refor=   3997759020.29201      max_tofor=   22273531.3961205     
+ratio for residu maxm= 0.1795E+03
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.300000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           3 iiter=          20
+ resid=   39825810.4696875      retot=   67969736.2286874     
+ratio for residu norm= 0.5859E+00
+ max_refor=   20231060.8376210      max_tofor=   22305158.4040447     
+ratio for residu maxm= 0.9070E+00
+ contact_state********************
+ irecover=           0
+ Increment step=           4
+ cwater=           0 delgroup=           0
+ force_external***,edge_load_group=           0
+ body force
+ interia force***
+ in predict
+ residu_f1
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.400000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           4 iiter=           1
+ resid=   1216626.64591988      retot=   67969167.5549624     
+ratio for residu norm= 0.1790E-01
+ max_refor=   596720.608433709      max_tofor=   22309576.4609067     
+ratio for residu maxm= 0.2675E-01
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.400000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           4 iiter=           2
+ resid=   21519780.9739923      retot=   67969063.5603683     
+ratio for residu norm= 0.3166E+00
+ max_refor=   5133813.42341715      max_tofor=   22309940.4706170     
+ratio for residu maxm= 0.2301E+00
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.400000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           4 iiter=           3
+ resid=   1207511.90641044      retot=   67969137.1111598     
+ratio for residu norm= 0.1777E-01
+ max_refor=   593813.718030747      max_tofor=   22309378.8932602     
+ratio for residu maxm= 0.2662E-01
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.400000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           4 iiter=           4
+ resid=   21491318.6477971      retot=   67969047.3233935     
+ratio for residu norm= 0.3162E+00
+ max_refor=   5135566.61210038      max_tofor=   22309681.9995557     
+ratio for residu maxm= 0.2302E+00
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.400000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           4 iiter=           5
+ resid=   1195532.92972958      retot=   67969129.5085916     
+ratio for residu norm= 0.1759E-01
+ max_refor=   593264.735922347      max_tofor=   22309111.0900037     
+ratio for residu maxm= 0.2659E-01
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.400000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           4 iiter=           6
+ resid=   21473376.3237301      retot=   67969041.5302685     
+ratio for residu norm= 0.3159E+00
+ max_refor=   5136540.72635814      max_tofor=   22309405.5239993     
+ratio for residu maxm= 0.2302E+00
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.400000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           4 iiter=           7
+ resid=   38703486.2770066      retot=   67969302.1581415     
+ratio for residu norm= 0.5694E+00
+ max_refor=   18939778.7059710      max_tofor=   22308306.5877741     
+ratio for residu maxm= 0.8490E+00
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.400000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           4 iiter=           8
+ resid=   21414854.2606300      retot=   67969149.1575956     
+ratio for residu norm= 0.3151E+00
+ max_refor=   5135341.44659565      max_tofor=   22308744.3797664     
+ratio for residu maxm= 0.2302E+00
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.400000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           4 iiter=           9
+ resid=   167078310.556392      retot=   67969606.4786872     
+ratio for residu norm= 0.2458E+01
+ max_refor=   75316568.3968728      max_tofor=   22306908.6574465     
+ratio for residu maxm= 0.3376E+01
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.400000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           4 iiter=          10
+ resid=   23530077.8010288      retot=   67969251.5383840     
+ratio for residu norm= 0.3462E+00
+ max_refor=   7012816.13725252      max_tofor=   22308122.0213939     
+ratio for residu maxm= 0.3144E+00
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.400000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           4 iiter=          11
+ resid=   1463293.72563755      retot=   67969161.5925481     
+ratio for residu norm= 0.2153E-01
+ max_refor=   857266.540001891      max_tofor=   22308156.6618504     
+ratio for residu maxm= 0.3843E-01
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.400000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           4 iiter=          12
+ resid=   34735832.9812458      retot=   67969253.8879751     
+ratio for residu norm= 0.5111E+00
+ max_refor=   14323241.4669899      max_tofor=   22307859.5949543     
+ratio for residu maxm= 0.6421E+00
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.400000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           4 iiter=          13
+ resid=   2939328.47563157      retot=   67969288.9132692     
+ratio for residu norm= 0.4324E-01
+ max_refor=   1599897.62051963      max_tofor=   22307460.0851951     
+ratio for residu maxm= 0.7172E-01
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.400000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           4 iiter=          14
+ resid=   24649627.1463116      retot=   67969315.2680503     
+ratio for residu norm= 0.3627E+00
+ max_refor=   6490369.30440251      max_tofor=   22307387.2138700     
+ratio for residu maxm= 0.2910E+00
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.400000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           4 iiter=          15
+ resid=   7191305.96839724      retot=   67969403.6218387     
+ratio for residu norm= 0.1058E+00
+ max_refor=   3725970.87207589      max_tofor=   22306818.6394232     
+ratio for residu maxm= 0.1670E+00
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.400000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           4 iiter=          16
+ resid=   22343268.7573444      retot=   67969382.7257035     
+ratio for residu norm= 0.3287E+00
+ max_refor=   5557604.90578942      max_tofor=   22306898.1127668     
+ratio for residu maxm= 0.2491E+00
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.400000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           4 iiter=          17
+ resid=   7218103.86667513      retot=   67969408.3119881     
+ratio for residu norm= 0.1062E+00
+ max_refor=   3731345.04980733      max_tofor=   22306565.6416756     
+ratio for residu maxm= 0.1673E+00
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.400000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           4 iiter=          18
+ resid=   33786967.8091486      retot=   67969455.8030947     
+ratio for residu norm= 0.4971E+00
+ max_refor=   10635532.9222065      max_tofor=   22306393.4479335     
+ratio for residu maxm= 0.4768E+00
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.400000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           4 iiter=          19
+ resid=   10086033.0473051      retot=   67969535.0949587     
+ratio for residu norm= 0.1484E+00
+ max_refor=   5160076.54416620      max_tofor=   22305876.8573353     
+ratio for residu maxm= 0.2313E+00
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.400000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           4 iiter=          20
+ resid=   836658899.488203      retot=   67970411.7250342     
+ratio for residu norm= 0.1231E+02
+ max_refor=   367617944.898931      max_tofor=   22302316.7254315     
+ratio for residu maxm= 0.1648E+02
+ contact_state********************
+ irecover=           0
+ Increment step=           5
+ cwater=           0 delgroup=           0
+ force_external***,edge_load_group=           0
+ body force
+ interia force***
+ in predict
+ residu_f1
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.500000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           5 iiter=           1
+ resid=   1255512.46968094      retot=   67969167.5549624     
+ratio for residu norm= 0.1847E-01
+ max_refor=   616294.613600435      max_tofor=   22309576.4609067     
+ratio for residu maxm= 0.2762E-01
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.500000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           5 iiter=           2
+ resid=   21522469.0133104      retot=   67969061.9313648     
+ratio for residu norm= 0.3167E+00
+ max_refor=   5133813.42341715      max_tofor=   22309949.0544195     
+ratio for residu maxm= 0.2301E+00
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.500000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           5 iiter=           3
+ resid=   1248025.24308965      retot=   67969134.5452824     
+ratio for residu norm= 0.1836E-01
+ max_refor=   616246.270575315      max_tofor=   22309390.9827488     
+ratio for residu maxm= 0.2762E-01
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.500000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           5 iiter=           4
+ resid=   21494154.0496495      retot=   67969043.2310092     
+ratio for residu norm= 0.3162E+00
+ max_refor=   5135568.10502031      max_tofor=   22309701.1206565     
+ratio for residu maxm= 0.2302E+00
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.500000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           5 iiter=           5
+ resid=   1236916.28904616      retot=   67969123.9866874     
+ratio for residu norm= 0.1820E-01
+ max_refor=   617882.398306914      max_tofor=   22309135.4099082     
+ratio for residu maxm= 0.2770E-01
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.500000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           5 iiter=           6
+ resid=   21462736.5476785      retot=   67969034.3174293     
+ratio for residu norm= 0.3158E+00
+ max_refor=   5136543.94186937      max_tofor=   22309436.9170341     
+ratio for residu maxm= 0.2302E+00
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.500000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           5 iiter=           7
+ resid=   1141163.98319561      retot=   67969116.0849006     
+ratio for residu norm= 0.1679E-01
+ max_refor=   552450.752024049      max_tofor=   22308874.5776357     
+ratio for residu maxm= 0.2476E-01
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.500000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           5 iiter=           8
+ resid=   21448236.6054624      retot=   67969032.3786033     
+ratio for residu norm= 0.3156E+00
+ max_refor=   5138060.66586180      max_tofor=   22309160.2397575     
+ratio for residu maxm= 0.2303E+00
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.500000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           5 iiter=           9
+ resid=   1133101.76847233      retot=   67969117.9658578     
+ratio for residu norm= 0.1667E-01
+ max_refor=   542125.010695788      max_tofor=   22308595.5662143     
+ratio for residu maxm= 0.2430E-01
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.500000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           5 iiter=          10
+ resid=   21437728.7765598      retot=   67969035.8680442     
+ratio for residu norm= 0.3154E+00
+ max_refor=   5158268.39623003      max_tofor=   22308873.2066814     
+ratio for residu maxm= 0.2312E+00
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.500000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           5 iiter=          11
+ resid=   1124975.68235604      retot=   67969123.8774038     
+ratio for residu norm= 0.1655E-01
+ max_refor=   537309.939203267      max_tofor=   22308307.9746875     
+ratio for residu maxm= 0.2409E-01
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.500000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           5 iiter=          12
+ resid=   21429497.2924658      retot=   67969043.9004491     
+ratio for residu norm= 0.3153E+00
+ max_refor=   5185292.04643330      max_tofor=   22308576.9095492     
+ratio for residu maxm= 0.2324E+00
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.500000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           5 iiter=          13
+ resid=   1117747.46549161      retot=   67969133.5711170     
+ratio for residu norm= 0.1644E-01
+ max_refor=   529736.585100537      max_tofor=   22308011.8890357     
+ratio for residu maxm= 0.2375E-01
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.500000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           5 iiter=          14
+ resid=   21422655.2110558      retot=   67969055.9330322     
+ratio for residu norm= 0.3152E+00
+ max_refor=   5208046.95518352      max_tofor=   22308271.9438673     
+ratio for residu maxm= 0.2335E+00
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.500000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           5 iiter=          15
+ resid=   1111848.91989500      retot=   67969146.8237730     
+ratio for residu norm= 0.1636E-01
+ max_refor=   520698.243539945      max_tofor=   22307707.4401480     
+ratio for residu maxm= 0.2334E-01
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.500000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           5 iiter=          16
+ resid=   21416598.7220343      retot=   67969071.6083094     
+ratio for residu norm= 0.3151E+00
+ max_refor=   5227233.58870008      max_tofor=   22307958.6629220     
+ratio for residu maxm= 0.2343E+00
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.500000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           5 iiter=          17
+ resid=   46287964.5308361      retot=   67969380.5793727     
+ratio for residu norm= 0.6810E+00
+ max_refor=   22651536.1643463      max_tofor=   22306739.7553309     
+ratio for residu maxm= 0.1015E+01
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.500000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           5 iiter=          18
+ resid=   21183493.6904439      retot=   67969189.5918331     
+ratio for residu norm= 0.3117E+00
+ max_refor=   5242436.61242160      max_tofor=   22307288.4415885     
+ratio for residu maxm= 0.2350E+00
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.500000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           5 iiter=          19
+ resid=   570880379.642805      retot=   67971112.1541667     
+ratio for residu norm= 0.8399E+01
+ max_refor=   258434424.330111      max_tofor=   22301654.8180639     
+ratio for residu maxm= 0.1159E+02
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.500000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           5 iiter=          20
+ resid=   23715660.7230152      retot=   67969300.0829135     
+ratio for residu norm= 0.3489E+00
+ max_refor=   8176711.71312598      max_tofor=   22306659.3472949     
+ratio for residu maxm= 0.3666E+00
+ contact_state********************
+ irecover=           0
+ Increment step=           6
+ cwater=           0 delgroup=           0
+ force_external***,edge_load_group=           0
+ body force
+ interia force***
+ in predict
+ residu_f1
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.600000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           6 iiter=           1
+ resid=   1299542.01471135      retot=   67969167.5549624     
+ratio for residu norm= 0.1912E-01
+ max_refor=   638499.788324052      max_tofor=   22309576.4609067     
+ratio for residu maxm= 0.2862E-01
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.600000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           6 iiter=           2
+ resid=   21525461.2920669      retot=   67969060.3099226     
+ratio for residu norm= 0.3167E+00
+ max_refor=   5133813.42341715      max_tofor=   22309958.2059518     
+ratio for residu maxm= 0.2301E+00
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.600000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           6 iiter=           3
+ resid=   1294138.61473932      retot=   67969131.9081275     
+ratio for residu norm= 0.1904E-01
+ max_refor=   641884.587120641      max_tofor=   22309404.0153905     
+ratio for residu maxm= 0.2877E-01
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.600000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           6 iiter=           4
+ resid=   21496727.8245528      retot=   67969039.0844620     
+ratio for residu norm= 0.3163E+00
+ max_refor=   5135568.11536223      max_tofor=   22309721.4841316     
+ratio for residu maxm= 0.2302E+00
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.600000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           6 iiter=           5
+ resid=   38211953.9133833      retot=   67969291.6372675     
+ratio for residu norm= 0.5622E+00
+ max_refor=   18730812.5806629      max_tofor=   22308640.1391780     
+ratio for residu maxm= 0.8396E+00
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.600000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           6 iiter=           6
+ resid=   21436223.4714946      retot=   67969138.6345698     
+ratio for residu norm= 0.3154E+00
+ max_refor=   5133920.88320330      max_tofor=   22309072.7083038     
+ratio for residu maxm= 0.2301E+00
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.600000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           6 iiter=           7
+ resid=   107078883.405295      retot=   67969443.2363462     
+ratio for residu norm= 0.1575E+01
+ max_refor=   47992536.4024341      max_tofor=   22307741.2974174     
+ratio for residu maxm= 0.2151E+01
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.600000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           6 iiter=           8
+ resid=   23703657.0716335      retot=   67969235.2722141     
+ratio for residu norm= 0.3487E+00
+ max_refor=   7187864.60771487      max_tofor=   22308459.7367257     
+ratio for residu maxm= 0.3222E+00
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.600000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           6 iiter=           9
+ resid=   103275699.728704      retot=   67969493.2155720     
+ratio for residu norm= 0.1519E+01
+ max_refor=   43616228.0232692      max_tofor=   22307279.4124276     
+ratio for residu maxm= 0.1955E+01
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.600000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           6 iiter=          10
+ resid=   25044888.8448634      retot=   67969338.7284032     
+ratio for residu norm= 0.3685E+00
+ max_refor=   8600139.36055005      max_tofor=   22307835.4374350     
+ratio for residu maxm= 0.3855E+00
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.600000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           6 iiter=          11
+ resid=   463739021.618328      retot=   67969759.7474513     
+ratio for residu norm= 0.6823E+01
+ max_refor=   206887828.114102      max_tofor=   22306114.9019937     
+ratio for residu maxm= 0.9275E+01
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.600000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           6 iiter=          12
+ resid=   29495916.8253086      retot=   67969453.8442825     
+ratio for residu norm= 0.4340E+00
+ max_refor=   10418999.4298976      max_tofor=   22307158.3217206     
+ratio for residu maxm= 0.4671E+00
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.600000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           6 iiter=          13
+ resid=   3197579115.11981      retot=   67968924.5206696     
+ratio for residu norm= 0.4704E+02
+ max_refor=   1556746045.52863      max_tofor=   22306415.4497858     
+ratio for residu maxm= 0.6979E+02
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.600000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           6 iiter=          14
+ resid=   35464407.9325839      retot=   67969567.3005504     
+ratio for residu norm= 0.5218E+00
+ max_refor=   15828068.3450670      max_tofor=   22306509.8850462     
+ratio for residu maxm= 0.7096E+00
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.600000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           6 iiter=          15
+ resid=   16407345658.1423      retot=   67985488.2664996     
+ratio for residu norm= 0.2413E+03
+ max_refor=   7228016703.82782      max_tofor=   22242100.5709118     
+ratio for residu maxm= 0.3250E+03
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.600000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           6 iiter=          16
+ resid=   36933109.0819379      retot=   67969669.5625130     
+ratio for residu norm= 0.5434E+00
+ max_refor=   15061267.8158535      max_tofor=   22305863.7757811     
+ratio for residu maxm= 0.6752E+00
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.600000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           6 iiter=          17
+ resid=   17350933903.2618      retot=   67986832.7956575     
+ratio for residu norm= 0.2552E+03
+ max_refor=   7630233974.54464      max_tofor=   22237015.4107775     
+ratio for residu maxm= 0.3431E+03
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.600000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           6 iiter=          18
+ resid=   38218443.8275366      retot=   67969765.4356145     
+ratio for residu norm= 0.5623E+00
+ max_refor=   19765941.7779693      max_tofor=   22305281.8461597     
+ratio for residu maxm= 0.8862E+00
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.600000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           6 iiter=          19
+ resid=   17543881461.2990      retot=   67987478.9767734     
+ratio for residu norm= 0.2580E+03
+ max_refor=   7647051590.75086      max_tofor=   22233311.2121457     
+ratio for residu maxm= 0.3439E+03
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.600000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           6 iiter=          20
+ resid=   40635986.5786039      retot=   67969862.7207518     
+ratio for residu norm= 0.5979E+00
+ max_refor=   23359275.7102677      max_tofor=   22304697.9742284     
+ratio for residu maxm= 0.1047E+01
+ contact_state********************
+ irecover=           0
+ Increment step=           7
+ cwater=           0 delgroup=           0
+ force_external***,edge_load_group=           0
+ body force
+ interia force***
+ in predict
+ residu_f1
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.700000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           7 iiter=           1
+ resid=   1349775.38039601      retot=   67969167.5549624     
+ratio for residu norm= 0.1986E-01
+ max_refor=   663889.331133777      max_tofor=   22309576.4609067     
+ratio for residu maxm= 0.2976E-01
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.700000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           7 iiter=           2
+ resid=   21515210.2511615      retot=   67969058.7567459     
+ratio for residu norm= 0.3165E+00
+ max_refor=   5133813.42341715      max_tofor=   22309967.8747233     
+ratio for residu maxm= 0.2301E+00
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.700000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           7 iiter=           3
+ resid=   1179986.44196872      retot=   67969121.7917683     
+ratio for residu norm= 0.1736E-01
+ max_refor=   572545.651381772      max_tofor=   22309444.9101921     
+ratio for residu maxm= 0.2566E-01
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.700000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           7 iiter=           4
+ resid=   21303591.2123334      retot=   67969035.0029316     
+ratio for residu norm= 0.3134E+00
+ max_refor=   5135571.73337537      max_tofor=   22309742.9613343     
+ratio for residu maxm= 0.2302E+00
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.700000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           7 iiter=           5
+ resid=   1070934.36216334      retot=   67969100.5654861     
+ratio for residu norm= 0.1576E-01
+ max_refor=   504400.463373786      max_tofor=   22309223.9600976     
+ratio for residu maxm= 0.2261E-01
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.700000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           7 iiter=           6
+ resid=   21285527.5566390      retot=   67969019.5185909     
+ratio for residu norm= 0.3132E+00
+ max_refor=   5136749.29653204      max_tofor=   22309505.6832848     
+ratio for residu maxm= 0.2302E+00
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.700000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           7 iiter=           7
+ resid=   1053805.74724288      retot=   67969090.0473884     
+ratio for residu norm= 0.1550E-01
+ max_refor=   496419.633081282      max_tofor=   22308984.1067884     
+ratio for residu maxm= 0.2225E-01
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.700000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           7 iiter=           8
+ resid=   21272960.5603965      retot=   67969010.0058665     
+ratio for residu norm= 0.3130E+00
+ max_refor=   5138261.54644682      max_tofor=   22309258.4461532     
+ratio for residu maxm= 0.2303E+00
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.700000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           7 iiter=           9
+ resid=   1026211.87292299      retot=   67969083.5056909     
+ratio for residu norm= 0.1510E-01
+ max_refor=   495422.276561345      max_tofor=   22308736.5376295     
+ratio for residu maxm= 0.2221E-01
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.700000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           7 iiter=          10
+ resid=   21263389.9767216      retot=   67969005.2367120     
+ratio for residu norm= 0.3128E+00
+ max_refor=   5158605.29252652      max_tofor=   22309002.5193893     
+ratio for residu maxm= 0.2312E+00
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.700000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           7 iiter=          11
+ resid=   994497.330072309      retot=   67969080.6889398     
+ratio for residu norm= 0.1463E-01
+ max_refor=   490102.669872819      max_tofor=   22308481.1119033     
+ratio for residu maxm= 0.2197E-01
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.700000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           7 iiter=          12
+ resid=   21254101.4274635      retot=   67969004.5327574     
+ratio for residu norm= 0.3127E+00
+ max_refor=   5185719.69590924      max_tofor=   22308738.4484840     
+ratio for residu maxm= 0.2325E+00
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.700000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           7 iiter=          13
+ resid=   43179757.6787178      retot=   67969300.3985987     
+ratio for residu norm= 0.6353E+00
+ max_refor=   21263518.3451286      max_tofor=   22307552.4625857     
+ratio for residu maxm= 0.9532E+00
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.700000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           7 iiter=          14
+ resid=   21181512.2849448      retot=   67969116.2519836     
+ratio for residu norm= 0.3116E+00
+ max_refor=   5207548.72591337      max_tofor=   22308075.1932283     
+ratio for residu maxm= 0.2334E+00
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.700000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           7 iiter=          15
+ resid=   494401534.314410      retot=   67970812.5465009     
+ratio for residu norm= 0.7274E+01
+ max_refor=   224034513.157011      max_tofor=   22303128.6139353     
+ratio for residu maxm= 0.1004E+02
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.700000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           7 iiter=          16
+ resid=   23597988.0451531      retot=   67969221.2311730     
+ratio for residu norm= 0.3472E+00
+ max_refor=   8006931.49410016      max_tofor=   22307454.8302755     
+ratio for residu maxm= 0.3589E+00
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.700000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           7 iiter=          17
+ resid=   1888471096.16280      retot=   67972432.0094395     
+ratio for residu norm= 0.2778E+02
+ max_refor=   711330874.394896      max_tofor=   22298235.7031378     
+ratio for residu maxm= 0.3190E+02
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.700000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           7 iiter=          18
+ resid=   55393622.5468909      retot=   67969338.1517610     
+ratio for residu norm= 0.8150E+00
+ max_refor=   28251871.3068732      max_tofor=   22306780.3280399     
+ratio for residu maxm= 0.1267E+01
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.700000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           7 iiter=          19
+ resid=   8872879516.77637      retot=   67977968.9816722     
+ratio for residu norm= 0.1305E+03
+ max_refor=   3643367659.94574      max_tofor=   22283794.6936629     
+ratio for residu maxm= 0.1635E+03
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.700000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           7 iiter=          20
+ resid=   45036059.1112687      retot=   67969453.0598323     
+ratio for residu norm= 0.6626E+00
+ max_refor=   25857838.8845601      max_tofor=   22306138.1286157     
+ratio for residu maxm= 0.1159E+01
+ contact_state********************
+ irecover=           0
+ Increment step=           8
+ cwater=           0 delgroup=           0
+ force_external***,edge_load_group=           0
+ body force
+ interia force***
+ in predict
+ residu_f1
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.800000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           8 iiter=           1
+ resid=   1407572.03204501      retot=   67969167.5549624     
+ratio for residu norm= 0.2071E-01
+ max_refor=   693176.928047917      max_tofor=   22309576.4609067     
+ratio for residu maxm= 0.3107E-01
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.800000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           8 iiter=           2
+ resid=   21487761.6707629      retot=   67969057.3701645     
+ratio for residu norm= 0.3161E+00
+ max_refor=   5133813.42341715      max_tofor=   22309977.9321595     
+ratio for residu maxm= 0.2301E+00
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.800000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           8 iiter=           3
+ resid=   4439333.28038435      retot=   67968772.8013955     
+ratio for residu norm= 0.6531E-01
+ max_refor=   2237468.46963842      max_tofor=   22310716.0133318     
+ratio for residu maxm= 0.1003E+00
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.800000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           8 iiter=           4
+ resid=   21552228.3430138      retot=   67968761.3907903     
+ratio for residu norm= 0.3171E+00
+ max_refor=   5135593.11525722      max_tofor=   22310743.5823867     
+ratio for residu maxm= 0.2302E+00
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.800000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           8 iiter=           5
+ resid=   7825718.59969374      retot=   67968850.9228890     
+ratio for residu norm= 0.1151E+00
+ max_refor=   3932917.91004031      max_tofor=   22310117.2093232     
+ratio for residu maxm= 0.1763E+00
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.800000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           8 iiter=           6
+ resid=   22342834.6157979      retot=   67968838.4962336     
+ratio for residu norm= 0.3287E+00
+ max_refor=   5137576.65323248      max_tofor=   22310151.3085522     
+ratio for residu maxm= 0.2303E+00
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.800000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           8 iiter=           7
+ resid=   9242450.93673531      retot=   67968935.3472583     
+ratio for residu norm= 0.1360E+00
+ max_refor=   4678399.02665470      max_tofor=   22309530.8702641     
+ratio for residu maxm= 0.2097E+00
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.800000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           8 iiter=           8
+ resid=   38973684.0904223      retot=   67968920.6591001     
+ratio for residu norm= 0.5734E+00
+ max_refor=   17764607.2973946      max_tofor=   22309557.3516284     
+ratio for residu maxm= 0.7963E+00
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.800000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           8 iiter=           9
+ resid=   9745057.31988415      retot=   67969030.6909066     
+ratio for residu norm= 0.1434E+00
+ max_refor=   4896592.09122842      max_tofor=   22308924.2764757     
+ratio for residu maxm= 0.2195E+00
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.800000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           8 iiter=          10
+ resid=   603471786.360341      retot=   67969416.2066504     
+ratio for residu norm= 0.8879E+01
+ max_refor=   287101780.982507      max_tofor=   22307083.8243985     
+ratio for residu maxm= 0.1287E+02
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.800000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           8 iiter=          11
+ resid=   34166819.1370334      retot=   67969151.7491721     
+ratio for residu norm= 0.5027E+00
+ max_refor=   16013669.1731819      max_tofor=   22308216.7412443     
+ratio for residu maxm= 0.7178E+00
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.800000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           8 iiter=          12
+ resid=   11613971904.1568      retot=   67981018.4855734     
+ratio for residu norm= 0.1708E+03
+ max_refor=   5135725507.59283      max_tofor=   22259864.7931269     
+ratio for residu maxm= 0.2307E+03
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.800000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           8 iiter=          13
+ resid=   42082060.8809066      retot=   67969248.0968542     
+ratio for residu norm= 0.6191E+00
+ max_refor=   23892562.8678362      max_tofor=   22307608.2550701     
+ratio for residu maxm= 0.1071E+01
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.800000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           8 iiter=          14
+ resid=   12328230126.4149      retot=   67982036.9004307     
+ratio for residu norm= 0.1813E+03
+ max_refor=   5463162441.76578      max_tofor=   22255571.7968153     
+ratio for residu maxm= 0.2455E+03
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.800000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           8 iiter=          15
+ resid=   49442072.2327824      retot=   67969337.1017936     
+ratio for residu norm= 0.7274E+00
+ max_refor=   30183055.1506778      max_tofor=   22307046.7869745     
+ratio for residu maxm= 0.1353E+01
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.800000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           8 iiter=          16
+ resid=   12869974285.1247      retot=   67982830.3022332     
+ratio for residu norm= 0.1893E+03
+ max_refor=   5714349619.60518      max_tofor=   22252151.3764281     
+ratio for residu maxm= 0.2568E+03
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.800000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           8 iiter=          17
+ resid=   59977128.8776388      retot=   67969414.5736564     
+ratio for residu norm= 0.8824E+00
+ max_refor=   36908385.7695053      max_tofor=   22306545.9224522     
+ratio for residu maxm= 0.1655E+01
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.800000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           8 iiter=          18
+ resid=   13291553415.1521      retot=   67983475.0043639     
+ratio for residu norm= 0.1955E+03
+ max_refor=   5911610639.84591      max_tofor=   22249318.0425556     
+ratio for residu maxm= 0.2657E+03
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.800000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           8 iiter=          19
+ resid=   83837662.3203447      retot=   67969468.3770890     
+ratio for residu norm= 0.1233E+01
+ max_refor=   46323875.8634244      max_tofor=   22306152.5294700     
+ratio for residu maxm= 0.2077E+01
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.800000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           8 iiter=          20
+ resid=   13631225905.4770      retot=   67984017.8751023     
+ratio for residu norm= 0.2005E+03
+ max_refor=   6071792788.48122      max_tofor=   22246871.7813631     
+ratio for residu maxm= 0.2729E+03
+ contact_state********************
+ irecover=           0
+ Increment step=           9
+ cwater=           0 delgroup=           0
+ force_external***,edge_load_group=           0
+ body force
+ interia force***
+ in predict
+ residu_f1
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.900000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           9 iiter=           1
+ resid=   1474696.66809313      retot=   67969167.5549624     
+ratio for residu norm= 0.2170E-01
+ max_refor=   727295.908009982      max_tofor=   22309576.4609067     
+ratio for residu maxm= 0.3260E-01
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.900000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           9 iiter=           2
+ resid=   21443776.3410035      retot=   67969056.3081253     
+ratio for residu norm= 0.3155E+00
+ max_refor=   5133813.42341715      max_tofor=   22309988.1139821     
+ratio for residu maxm= 0.2301E+00
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.900000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           9 iiter=           3
+ resid=   4600133.63790833      retot=   67968727.4346146     
+ratio for residu norm= 0.6768E-01
+ max_refor=   2315502.88435937      max_tofor=   22310911.9760648     
+ratio for residu maxm= 0.1038E+00
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.900000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           9 iiter=           4
+ resid=   21294751.2356522      retot=   67968712.0430478     
+ratio for residu norm= 0.3133E+00
+ max_refor=   5135015.15981023      max_tofor=   22310952.6710052     
+ratio for residu maxm= 0.2302E+00
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.900000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           9 iiter=           5
+ resid=   7719067.71795971      retot=   67968796.4894760     
+ratio for residu norm= 0.1136E+00
+ max_refor=   3745359.02877967      max_tofor=   22310334.4942423     
+ratio for residu maxm= 0.1679E+00
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.900000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           9 iiter=           6
+ resid=   21970495.6982505      retot=   67968780.3692437     
+ratio for residu norm= 0.3232E+00
+ max_refor=   5137429.94562993      max_tofor=   22310380.6619363     
+ratio for residu maxm= 0.2303E+00
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.900000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           9 iiter=           7
+ resid=   8717207.09628896      retot=   67968875.6943775     
+ratio for residu norm= 0.1283E+00
+ max_refor=   4324005.66697643      max_tofor=   22309759.8123101     
+ratio for residu maxm= 0.1938E+00
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.900000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           9 iiter=           8
+ resid=   435626163.087124      retot=   67968938.6531810     
+ratio for residu norm= 0.6409E+01
+ max_refor=   217564557.523642      max_tofor=   22309157.1726854     
+ratio for residu maxm= 0.9752E+01
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.900000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           9 iiter=           9
+ resid=   36262515.7396016      retot=   67968933.1152161     
+ratio for residu norm= 0.5335E+00
+ max_refor=   17337917.1574078      max_tofor=   22309259.7491401     
+ratio for residu maxm= 0.7772E+00
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.900000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           9 iiter=          10
+ resid=   3359593111.38823      retot=   67969338.1284663     
+ratio for residu norm= 0.4943E+02
+ max_refor=   1646235177.17753      max_tofor=   22305446.7484363     
+ratio for residu maxm= 0.7380E+02
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.900000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           9 iiter=          11
+ resid=   44243927.9191460      retot=   67969016.2716288     
+ratio for residu norm= 0.6509E+00
+ max_refor=   23122490.2652406      max_tofor=   22308698.7126893     
+ratio for residu maxm= 0.1036E+01
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.900000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           9 iiter=          12
+ resid=   9407817734.25060      retot=   67978377.8161079     
+ratio for residu norm= 0.1384E+03
+ max_refor=   4214953048.51702      max_tofor=   22269422.2140069     
+ratio for residu maxm= 0.1893E+03
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.900000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           9 iiter=          13
+ resid=   57070190.4917897      retot=   67969083.2534557     
+ratio for residu norm= 0.8396E+00
+ max_refor=   32072855.4806192      max_tofor=   22308221.5021923     
+ratio for residu maxm= 0.1438E+01
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.900000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           9 iiter=          14
+ resid=   9934500041.31353      retot=   67979250.6681771     
+ratio for residu norm= 0.1461E+03
+ max_refor=   4455599113.23402      max_tofor=   22265726.3832429     
+ratio for residu maxm= 0.2001E+03
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.900000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           9 iiter=          15
+ resid=   84666691.8591981      retot=   67969128.4625908     
+ratio for residu norm= 0.1246E+01
+ max_refor=   43464078.1632430      max_tofor=   22307850.5477292     
+ratio for residu maxm= 0.1948E+01
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.900000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           9 iiter=          16
+ resid=   10374161280.5143      retot=   67979935.5498577     
+ratio for residu norm= 0.1526E+03
+ max_refor=   4660464485.03046      max_tofor=   22262705.1587379     
+ratio for residu maxm= 0.2093E+03
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.900000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           9 iiter=          17
+ resid=   414627058.055988      retot=   67969003.6152156     
+ratio for residu norm= 0.6100E+01
+ max_refor=   191858375.863923      max_tofor=   22307824.8103345     
+ratio for residu maxm= 0.8600E+01
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.900000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           9 iiter=          18
+ resid=   10728674537.0005      retot=   67980492.4736432     
+ratio for residu norm= 0.1578E+03
+ max_refor=   4827970881.42671      max_tofor=   22260187.7821499     
+ratio for residu maxm= 0.2169E+03
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.900000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           9 iiter=          19
+ resid=   1619367408.98622      retot=   67967740.9603632     
+ratio for residu norm= 0.2383E+02
+ max_refor=   774288978.697228      max_tofor=   22312612.5190494     
+ratio for residu maxm= 0.3470E+02
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,  0.900000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=           9 iiter=          20
+ resid=   11030565356.9029      retot=   67980893.2563191     
+ratio for residu norm= 0.1623E+03
+ max_refor=   4975214331.34175      max_tofor=   22258220.5774720     
+ratio for residu maxm= 0.2235E+03
+ contact_state********************
+ irecover=           0
+ Increment step=          10
+ cwater=           0 delgroup=           0
+ force_external***,edge_load_group=           0
+ body force
+ interia force***
+ in predict
+ residu_f1
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,   1.00000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=          10 iiter=           1
+ resid=   1553467.03365569      retot=   67969167.5549624     
+ratio for residu norm= 0.2286E-01
+ max_refor=   767483.782604247      max_tofor=   22309576.4609067     
+ratio for residu maxm= 0.3440E-01
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,   1.00000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=          10 iiter=           2
+ resid=   21397486.1634551      retot=   67969055.8233151     
+ratio for residu norm= 0.3148E+00
+ max_refor=   5133813.42341715      max_tofor=   22309997.9224326     
+ratio for residu maxm= 0.2301E+00
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,   1.00000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=          10 iiter=           3
+ resid=   4771649.91217690      retot=   67968710.1540218     
+ratio for residu norm= 0.7020E-01
+ max_refor=   2397960.15440584      max_tofor=   22311016.5823587     
+ratio for residu maxm= 0.1075E+00
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,   1.00000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=          10 iiter=           4
+ resid=   21109408.7051328      retot=   67968690.6952783     
+ratio for residu norm= 0.3106E+00
+ max_refor=   5134223.89903573      max_tofor=   22311070.8817929     
+ratio for residu maxm= 0.2301E+00
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,   1.00000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=          10 iiter=           5
+ resid=   7840656.76282734      retot=   67968769.6660891     
+ratio for residu norm= 0.1154E+00
+ max_refor=   3545816.84233155      max_tofor=   22310461.8727226     
+ratio for residu maxm= 0.1589E+00
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,   1.00000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=          10 iiter=           6
+ resid=   21666928.2624879      retot=   67968749.7701366     
+ratio for residu norm= 0.3188E+00
+ max_refor=   5137087.23761658      max_tofor=   22310520.5329424     
+ratio for residu maxm= 0.2303E+00
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,   1.00000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=          10 iiter=           7
+ resid=   8341133.00930599      retot=   67968843.4319552     
+ratio for residu norm= 0.1227E+00
+ max_refor=   3914459.89339728      max_tofor=   22309899.4607365     
+ratio for residu maxm= 0.1755E+00
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,   1.00000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=          10 iiter=           8
+ resid=   395215714.928766      retot=   67968927.6293180     
+ratio for residu norm= 0.5815E+01
+ max_refor=   197930815.561076      max_tofor=   22309263.5083885     
+ratio for residu maxm= 0.8872E+01
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,   1.00000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=          10 iiter=           9
+ resid=   26949096.4563321      retot=   67968958.6208995     
+ratio for residu norm= 0.3965E+00
+ max_refor=   12252767.8313032      max_tofor=   22309198.1735722     
+ratio for residu maxm= 0.5492E+00
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,   1.00000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=          10 iiter=          10
+ resid=   2570331253.25610      retot=   67969400.7638846     
+ratio for residu norm= 0.3782E+02
+ max_refor=   1261970890.01665      max_tofor=   22305844.5152433     
+ratio for residu maxm= 0.5658E+02
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,   1.00000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=          10 iiter=          11
+ resid=   55162816.9505756      retot=   67969218.7041218     
+ratio for residu norm= 0.8116E+00
+ max_refor=   22851545.2017803      max_tofor=   22308121.9374094     
+ratio for residu maxm= 0.1024E+01
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,   1.00000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=          10 iiter=          12
+ resid=   2996999200.54280      retot=   67969560.1718362     
+ratio for residu norm= 0.4409E+02
+ max_refor=   1471248237.60673      max_tofor=   22304355.3626512     
+ratio for residu maxm= 0.6596E+02
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,   1.00000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=          10 iiter=          13
+ resid=   87577396.9502077      retot=   67969411.3982708     
+ratio for residu norm= 0.1288E+01
+ max_refor=   40426705.1335018      max_tofor=   22307277.6644559     
+ratio for residu maxm= 0.1812E+01
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,   1.00000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=          10 iiter=          14
+ resid=   3330640643.02934      retot=   67969737.0523999     
+ratio for residu norm= 0.4900E+02
+ max_refor=   1635229667.71662      max_tofor=   22302914.5448468     
+ratio for residu maxm= 0.7332E+02
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,   1.00000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=          10 iiter=          15
+ resid=   122505493.542330      retot=   67969582.4559790     
+ratio for residu norm= 0.1802E+01
+ max_refor=   57240670.4463049      max_tofor=   22306518.7463639     
+ratio for residu maxm= 0.2566E+01
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,   1.00000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=          10 iiter=          16
+ resid=   3628398349.87849      retot=   67969914.6917762     
+ratio for residu norm= 0.5338E+02
+ max_refor=   1781697397.12357      max_tofor=   22301531.4373605     
+ratio for residu maxm= 0.7989E+02
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,   1.00000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=          10 iiter=          17
+ resid=   165944062.538320      retot=   67969727.9183275     
+ratio for residu norm= 0.2441E+01
+ max_refor=   74377490.4914287      max_tofor=   22305876.7712351     
+ratio for residu maxm= 0.3334E+01
+ time: 11:02:28
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,   1.00000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=          10 iiter=          18
+ resid=   3901123520.51403      retot=   67970090.1914658     
+ratio for residu norm= 0.5739E+02
+ max_refor=   1915912177.08178      max_tofor=   22300196.2148183     
+ratio for residu maxm= 0.8591E+02
+ time: 11:02:29
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,   1.00000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=          10 iiter=          19
+ resid=   774133832.171346      retot=   67969094.1153898     
+ratio for residu norm= 0.1139E+02
+ max_refor=   360747857.422234      max_tofor=   22307992.7056029     
+ratio for residu maxm= 0.1617E+02
+ time: 11:02:29
+ residu_f2
+ 
+         Convergence check for Residual force,ttime=,   1.00000000000000     
+ total force on spring nodes of dam_foundation interface
+ iblks=           1 iincs=           1 istep=          10 iiter=          20
+ resid=   4142335769.09654      retot=   67970264.7434178     
+ratio for residu norm= 0.6094E+02
+ max_refor=   2034851740.32390      max_tofor=   22298906.2878112     
+ratio for residu maxm= 0.9125E+02
+ contact_state********************
+ irecover=           0
+ time: 11:02:29

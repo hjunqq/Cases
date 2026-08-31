@@ -1,0 +1,107 @@
+ time: 16:02:37
+ time: 16:02:37
+ Input the problem name?
+ NPOIN                                                                          
+  
+        2543        2543        2430           2           1           5
+           0 GIDR                  0.000000000000000E+000           0
+           0           0           0           0       99999
+ NINIT                                                                          
+  
+           0           0           0           1           0           0
+           0           0           0           0           0 
+ FIX                                                          0           0
+           0           0           0           0           0
+ outinpunit=          37 outindunit=          54
+ TYPE_PROBLEM                                                                   
+  
+ Q                                                 
+ PROFILE                                           
+ LOAD                                                         5           0
+           0           0
+ type_layer1                                                                    
+  
+ NMASS                                                                          
+  
+         999         999         999         999         999           0
+         999           0         999           0           0
+ nfreeflownode                                                                  
+  
+ NTSMAT                                                                         
+  
+         999         999           0           0           0
+ beeta1,beeta2,theta1=  0.500000000000000       0.250000000000000     
+   1.00000000000000     
+ equvs_process(1:ngroup)                                                        
+  
+ appear_level(1:ngroup)                                                         
+  
+ APPEAR_PROCESS                                                                 
+  
+ appear_process=           0           0           1           0           0
+ MATNO_PROCESS                                                                  
+  
+ iblks=           0 ngroup=           5 matno=           1           1
+           1           1           1
+ force_process=           0           0           0           0           0
+ uinitial=           0
+ 1-ILINKS(I0                                                                    
+  
+ 1-tLINKS(I0                                                                    
+  
+ text1=
+ 1-NGROUP--GROUP                                                                
+  
+ (3)                                                                            
+  
+ igroup=           1
+ name=Q4        
+ igroup=           2
+ name=Q4        
+ igroup=           3
+ name=Q4        
+ igroup=           4
+ name=Q4        
+ igroup=           5
+ name=Q4        
+ tne=        2430
+ text_tension_joint=
+ tension_joint                                                                  
+  
+ text_tension_contact=
+ contact_joint                                                                  
+  
+ ground_inf=           0 /100=           0
+ nblks=           1
+ Input runblks, =?
+ time: 16:02:37
+ MATERIAL PROPERTIES-INPUT FOR 1 TO NMATS                                       
+  
+ NAME FOR MATERIAL---FOR COMMENTS                                               
+  
+ FIRST:NAME---MECHANICAL, TEMPERATURE, ETC                                      
+  
+ FOR MECHNICAL, SECOND:PHASE---SOLID, FLUID, AIR OR OIL                         
+  
+                NUMBER OF PHASE                                                 
+  
+ FOR SOLID: MATERIAL(CLASSICALEP,CAMCLAY,ETC),density,ratio,thick,e,nu          
+  
+ FOR MATERISL: CLASSICALEP:CRITERIA(TC,VM,DP,MC),sigm0,hening                   
+  
+                 FOR MC OR DP: FRICT_ANGLE, DILAN_ANGLE                         
+  
+               CAMCLAY    :Pc, lamda, Mg, Mf, D0, D1,gaama                      
+  
+ FOR FLUID: (1) density,ratio,bulkw (2)permiability(1:ndimn)                    
+  
+forrtl: severe (64): input conversion error, unit 5, file D:\Projects\HSTAR_Next\HSTAR_TestData\cases\train12_seepage_steady\1.mat
+Image              PC                Routine            Line        Source             
+hstar.exe          00007FF69BD2C9CA  Unknown               Unknown  Unknown
+hstar.exe          00007FF69BD2BA9E  Unknown               Unknown  Unknown
+hstar.exe          00007FF69B7F4373  Unknown               Unknown  Unknown
+hstar.exe          00007FF69BB94EA7  Unknown               Unknown  Unknown
+hstar.exe          00007FF69BD4947B  Unknown               Unknown  Unknown
+hstar.exe          00007FF6A0B19170  Unknown               Unknown  Unknown
+KERNEL32.DLL       00007FF9F162E8D7  Unknown               Unknown  Unknown
+ntdll.dll          00007FF9F2DEC53C  Unknown               Unknown  Unknown

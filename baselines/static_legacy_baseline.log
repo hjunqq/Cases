@@ -1,0 +1,139 @@
+ >>> TOML input mode: 1.toml
+ validate_problem: all checks passed
+ >>> TOML input loaded successfully
+ time: 11:49:29
+ time: 11:49:29
+ outinpunit=          37 outindunit=          54
+ beeta1,beeta2,theta1=  0.600000000000000       0.302000000000000     
+  0.600000000000000     
+ lgroup=           1 neface=          10 node_face=           2
+ igroup=           1
+ name=Q4        
+ igroup=           2
+ name=Q4        
+ igroup=           3
+ name=Q4        
+ tne=         410
+ ground_inf=           0 /100=           0
+ >>> TOML: init_from_problem complete, no .glb generated
+ nblks=           2
+ time: 11:49:29
+ MATERIAL                                                                       
+  
+ NAME                                                                           
+  
+ FIRST:NAME---MECHANICAL                                                        
+  
+ FOR                                                                            
+  
+ NUMBER                                                                         
+  
+ FOR                                                                            
+  
+ FOR                                                                            
+  
+ FOR                                                                            
+  
+ CAMCLAY                                                                        
+  
+ FOR                                                                            
+  
+ jmat=           1
+ MECHANICAL                    SOLID                                    1
+ ELASTIC_ISOTROPIC                2400.00000000000        1.00000000000000     
+   1.00000000000000        24000000000.0000       0.167000000000000     
+  1.000000000000000E-005           0           0           0
+ jmat=           2
+ MECHANICAL                    SOLID                                    2
+ ELASTIC_ISOTROPIC                2400.00000000000        1.00000000000000     
+   1.00000000000000        8000000000.00000       0.300000000000000     
+  1.000000000000000E-005           0           0           0
+ jmat=           3
+ MECHANICAL                    SOLID                                    3
+ CLASSICALEP                      24000.0000000000        1.00000000000000     
+   1.00000000000000        14130000000.0000       0.220000000000000     
+  5.000000000000000E-006           0           0           0
+ nifsgroup 
+ nifsgroup=           0
+ nabsgroup 
+ nabsfgroup=           0
+ nabssgroup
+ nabssgroup=           0
+ ifsnedge                                                                       
+                      
+ ifsnedge=           0
+ lblks=           0  blks_new=           1
+ lincs=           0  nincs=           0
+ lblks=           0  blks_new=           1
+ Bparameter=           0
+ >>> State dumped to state_toml.dat
+ lblks=           0 lincs=           0 ttime=  0.000000000000000E+000
+ ntime=           2 LINEAR                         0           2
+ ntime=           4 LINEAR                         0           2
+ ok waterlevel
+ nplgroup=           0
+ nedge=          10
+ iblks=           0 lineload=          24
+ iblks=           1
+ time: 11:49:29
+ a1
+ ifixset=           1 type_abc=
+ FIX                                               
+ ifixset=           2 type_abc=
+ FIX                                               
+ ifixset=           3 type_abc=
+ FIX                                               
+ outind=           0
+ edge_load_group     
+ edge_load_group=          10 delgroup=           1
+ gray=   9.81000000000000       0.000000000000000E+000  -1.00000000000000     
+  0.000000000000000E+000  -1.00000000000000     
+ tcurv=           1           1           1
+ ecwpipe=           0 iblks=           1 lblks+1=           1
+ ecwpipe=           0 iblks=           1 lblks+1=           1
+ 总的散热面
+ ntedge=           0
+ algo_pipe=
+ npipe,algo_pipe=           0           3
+ linet=           8
+ time: 11:49:29
+ >>> DEBUG: calling solve(SET), solveunit=           8
+ >>> TOML solver: mtype=          -2  ncpu=           4
+ >>> DEBUG: solve(SET) returned
+ time: 11:49:29
+ time: 11:49:29
+  to static_u_pw
+ static_U_Pw
+ outinp=           0
+ ntelgroup=           0
+ iblks=           1 iincs=           1 istep=           1 idiv=           1 
+ iiter=           1
+ Reordering completed ... 
+ Factorization completed ... 
+ time: 11:49:29
+                     istep=           1 iiter=           1
+                     conver_load check
+ resid=  7.818251237791353E-014 retot=  5.041715283928606E+015
+ ratio1=  3.937908790936758E-015 ratio2=  4.195002739933432E-015
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           0
+                    conver_nodal_value check
+               Convergence check for displacement
+ ratio1=   1.00000000000000      ratio2=   1.00000000000000     
+                            not converged for checki=           1
+ iblks=           1 iincs=           1 istep=           1 idiv=           1 
+ iiter=           2
+ time: 11:49:29
+                     istep=           1 iiter=           2
+                     conver_load check
+ resid=  2.461850650976025E-014 retot=  5.041715283928624E+015
+ ratio1=  2.209742625011418E-015 ratio2=  2.137993674406231E-015
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           0
+                    conver_nodal_value check
+               Convergence check for displacement
+ ratio1=  5.874958850270180E-015 ratio2=  7.249485122141784E-015
+               Convergence check for pressure(Pw)
+ nchek=           0
+ ***********RESTART FILE IS UPDATED!*******
+ time: 11:49:29

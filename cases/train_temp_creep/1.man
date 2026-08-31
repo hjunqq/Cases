@@ -1,0 +1,10 @@
+ ===================== NINCS for            1 ==============================
+  3  0 0    0 0 0
+ 0 0   !nstepjq,nstepjp  Fem.f90:8526
+  5 0.05 1 1 20 1 1 0 0   !nmcon inserted (Fem.f90:8609) !miter,ditime,noutn,noutf,nstep,inc_step,nresta,nbasef
+  11*1.e-5  !toler_force,toler_var(1:mdofn)
+  5 0.10 1 1 10 1 1 0 0   !nmcon inserted (Fem.f90:8609) !miter,ditime,noutn,noutf,nstep,inc_step,nresta,nbasef
+  11*1.e-5  !toler_force,toler_var(1:mdofn)
+  5 0.50 1 1 16 1 1 0 0   !nmcon inserted (Fem.f90:8609) !miter,ditime,noutn,noutf,nstep,inc_step,nresta,nbasef
+  11*1.e-5  !toler_force,toler_var(1:mdofn)
+!legacy records with no reader in the current solver, dropped: 0 0 864000.0 1e-3 | 0 0 864000.0 1e-3 | 0 0 864000.0 1e-3

@@ -1,0 +1,20 @@
+# 大文件策略(memory: feedback_large_files + 审计 F5 处置):
+# 输入与判据证据进库;纯再生态/巨型二进制排除,但每个被排除文件的
+# sha256+size 记录在 RESULTS-MANIFEST.tsv(提交在库内),满足审计的
+# "门禁产物携带结果哈希"要求。重建方式:quick_analysis.py / prepare.sh。
+*.vtp
+1.flavia.res
+*.gpv
+1.flavia.msh
+*_ref.flavia.res
+1.res
+1.resb
+1.rtt
+1.ini
+1.inw
+1.lqu
+1.ftf
+1.ctt
+1.fai
+fort.*
+*.exe

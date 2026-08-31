@@ -1,0 +1,169 @@
+ time: 21:01:58
+ Input the problem name?
+ NPOIN                                                                          
+  
+         977         977         910           2           3           3
+           0 GIDR                  0.000000000000000E+000           0
+           0           0           0           0       99999
+ NINIT                                                                          
+  
+           0           0           0           1           0           0
+           0           0           0           0           0 
+ VIE                                                          0           0
+           0           0           0           0           0
+ outinpunit=          37 outindunit=          54
+ TYPE_PROBLEM                                                                   
+  
+ F                                                 
+ PROFILE                                           
+ LOAD                                                         1           0
+           0           0
+ type_layer1                                                                    
+  
+ NMASS                                                                          
+  
+           1           1           1           1           0           0
+           1           0           1           0           0
+ nfreeflownode                                                                  
+  
+ NTSMAT                                                                         
+  
+         999         999           0           0           0
+ beeta1,beeta2,theta1=  0.500000000000000       0.250000000000000     
+   1.00000000000000     
+ equvs_process(1:ngroup)                                                        
+  
+ appear_level(1:ngroup)                                                         
+  
+ APPEAR_PROCESS                                                                 
+  
+ appear_process=           1           1           1
+ MATNO_PROCESS                                                                  
+  
+ iblks=           0 ngroup=           3 matno=           1           2
+           3
+ force_process=           1           1           1
+ uinitial=           0
+ 1-ILINKS(I0                                                                    
+  
+ 1-tLINKS(I0                                                                    
+  
+ text1=
+ 1-NGROUP--GROUP                                                                
+  
+ (3)                                                                            
+  
+ igroup=           1
+ name=Q4        
+ igroup=           2
+ name=Q4        
+ igroup=           3
+ name=Q4        
+ tne=         910
+ text_tension_joint=
+ tension_joint                                                                  
+  
+ text_tension_contact=
+ contact_joint                                                                  
+  
+ ground_inf=           0 /100=           0
+ nblks=           1
+ Input runblks, =?
+ time: 21:01:58
+ COMMENT                                                                        
+  
+ COMMENT                                                                        
+  
+ COMMENT                                                                        
+  
+ COMMENT                                                                        
+  
+ COMMENT                                                                        
+  
+ COMMENT                                                                        
+  
+ COMMENT                                                                        
+  
+ COMMENT                                                                        
+  
+ COMMENT                                                                        
+  
+ COMMENT                                                                        
+  
+ jmat=           1
+ MECHANICAL                    SOLID                                    1
+ ELASTIC_ISOTROPIC                2600.00000000000        1.00000000000000     
+   1.00000000000000        10000000000.0000       0.200000000000000     
+  1.000000000000000E-005           0           0           0
+ jmat=           2
+ MECHANICAL                    SOLID                                    2
+ ELASTIC_ISOTROPIC                2400.00000000000        1.00000000000000     
+   1.00000000000000        25000000000.0000       0.167000000000000     
+  1.000000000000000E-005           0           0           0
+ jmat=           3
+ MECHANICAL                    WATER                                    3
+ density,ratio,bulkw,c=   1000.00000000000        1.00000000000000     
+   2070000000.00000       5.462966849095164E-317
+ per=  1.000000000000000E-003  1.000000000000000E-003
+ ngaps                                                                          
+  
+ ngaps=           0
+ nrcsteel                                                                       
+  
+ nrcsteel=           0
+ nwcpipe                                                                        
+  
+ nwcpipe=           0
+ nifsgroup 
+ nifsgroup=          15
+ nabsfgroup
+ nabsfgroup=           0
+ nabssgroup
+ nabssgroup=          70
+ ifsnedge                                                                       
+                      
+ ifsnedge=           0
+ lblks=           0  blks_new=           1
+ lincs=           0  nincs=           0
+ lblks=           0  blks_new=           1
+ Bparameter=           0
+ lblks=           0 lincs=           0 ttime=  0.000000000000000E+000
+ ntime=           2 LINEAR                         0           2
+ ntime=           2 SEISMIC                        0           3
+ ntime=           2 SEISMIC                        0           3
+ ntime=           2 SEISMIC                        0           3
+ ok waterlevel
+ nplgroup=           0
+ nedge=           0
+ iblks=           1 lineload=          21
+ iblks=           1
+ time: 21:01:58
+ a1
+ outind=           0
+ edge_load_group     
+ edge_load_group=           0 delgroup=           0
+ gray=   9.81000000000000       0.000000000000000E+000  -1.00000000000000     
+  0.000000000000000E+000  -1.00000000000000     
+ tcurv=           0           0           0
+ ecwpipe=           0 iblks=           1 lblks+1=           1
+ ecwpipe=           0 iblks=           1 lblks+1=           1
+ surface   
+ ntedge=           0
+ algo_pipe=
+ npipe,algo_pipe=           0           3
+ linet=           8
+ time: 21:01:58
+ time: 21:01:58
+ time: 21:01:58
+   time depend     iincs=           1 nincs=           1
+ time: 21:01:58
+forrtl: severe (24): end-of-file during read, unit 9, file /tmp/claude-1000/dam-vie/case/1.man
+Image              PC                Routine            Line        Source             
+hstar              0000000000A0261F  Unknown               Unknown  Unknown
+hstar              0000000000911D06  Unknown               Unknown  Unknown
+hstar              0000000000892596  Unknown               Unknown  Unknown
+hstar              0000000000871516  Unknown               Unknown  Unknown
+hstar              0000000000407ABD  Unknown               Unknown  Unknown
+libc.so.6          00007654CFA2A1CA  Unknown               Unknown  Unknown
+libc.so.6          00007654CFA2A28B  __libc_start_main     Unknown  Unknown
+hstar              00000000004079D5  Unknown               Unknown  Unknown

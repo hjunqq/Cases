@@ -1,0 +1,557 @@
+ >>> TOML input mode: 1.toml
+ validate_problem: all checks passed
+ >>> TOML input loaded successfully
+ time: 11:40:00
+ time: 11:40:00
+ outinpunit=          37 outindunit=          54
+ beeta1,beeta2,theta1=  0.600000000000000       0.302000000000000     
+  0.600000000000000     
+ igroup=           1
+ name=Q4        
+ igroup=           2
+ name=Q4        
+ igroup=           3
+ name=Q4        
+ tne=         410
+ ground_inf=           0 /100=           0
+ >>> TOML: init_from_problem complete, no .glb generated
+ nblks=           1
+ time: 11:40:00
+ MATERIAL                                                                       
+  
+ NAME                                                                           
+  
+ FIRST:NAME---MECHANICAL                                                        
+  
+ FOR                                                                            
+  
+ NUMBER                                                                         
+  
+ FOR                                                                            
+  
+ FOR                                                                            
+  
+ FOR                                                                            
+  
+ CAMCLAY                                                                        
+  
+ FOR                                                                            
+  
+ jmat=           1
+ MECHANICAL                    SOLID                                    1
+ ELASTIC_ISOTROPIC               0.000000000000000E+000   1.00000000000000     
+   1.00000000000000        24000000000.0000       0.167000000000000     
+  1.000000000000000E-005           0           0           0
+ jmat=           2
+ MECHANICAL                    SOLID                                    2
+ ELASTIC_ISOTROPIC                2400.00000000000        1.00000000000000     
+   1.00000000000000        8000000000.00000       0.300000000000000     
+  1.000000000000000E-005           0           0           0
+ jmat=           3
+ MECHANICAL                    SOLID                                    3
+ ELASTIC_ISOTROPIC                2400.00000000000        1.00000000000000     
+   1.00000000000000        8000000000.00000       0.300000000000000     
+  1.000000000000000E-005           0           0           0
+ nifsgroup 
+ nifsgroup=           0
+ nabsgroup 
+ nabsfgroup=           0
+ nabssgroup
+ nabssgroup=           0
+ ifsnedge                                                                       
+                      
+ ifsnedge=           0
+ lblks=           0  blks_new=           1
+ lincs=           0  nincs=           0
+ lblks=           0  blks_new=           1
+ Bparameter=           0
+ >>> State dumped to state_toml.dat
+ lblks=           0 lincs=           0 ttime=  0.000000000000000E+000
+ ntime=           2 LINEAR                         0           2
+ ntime=        1501 SEISMIC                        0        1502
+ ok waterlevel
+ nplgroup=           0
+ nedge=           0
+ iblks=           0 lineload=        1512
+ iblks=           1
+ time: 11:40:00
+ a1
+ ifixset=           1 type_abc=
+ FIX                                               
+ ifixset=           2 type_abc=
+ FIX                                               
+ ifixset=           3 type_abc=
+ FIX                                               
+ outind=           0
+ 0.00038901          
+ edge_load_group=           0 delgroup=           0
+ gray=  1.667490000000000E-003  2.191060000000000E-003  2.669420000000000E-003
+  2.983360000000000E-003  3.147870000000000E-003
+ tcurv=           0           0           0
+ ecwpipe=           0 iblks=           1 lblks+1=           1
+ ecwpipe=           0 iblks=           1 lblks+1=           1
+ 总的散热面
+ ntedge=           0
+ algo_pipe=
+ npipe,algo_pipe=           0           3
+ linet=           8
+ time: 11:40:00
+ >>> DEBUG: calling solve(SET), solveunit=           8
+ >>> TOML solver: mtype=          -2  ncpu=           4
+ >>> DEBUG: solve(SET) returned
+ time: 11:40:00
+ time: 11:40:00
+   time depend     iincs=           1 nincs=           1
+ time: 11:40:00
+ iblks=           1 iincs=           1 istep=           1
+ maxval(result_zero)=  0.000000000000000E+000
+ outinp=           0
+ iiter=           1
+Begin forming various matrix       at 2026-03-28 11:40:00 
+ ktsmat=           1
+Begin assemble golbal matrix       at 2026-03-28 11:40:01 
+ ntelgroup=           0
+Begin factorize global matrix      at 2026-03-28 11:40:01 
+ Reordering completed ... 
+ Factorization completed ... 
+Begin solution global equation     at 2026-03-28 11:40:01 
+                     istep=           1 iiter=           1
+                     conver_load check
+ resid=   4293250.49340763      retot=   679725769.430375     
+ ratio1=  7.947421497356563E-002 ratio2=  3.774571687014358E-002
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ iiter=           2
+Begin forming various matrix       at 2026-03-28 11:40:01 
+ ktsmat=           0
+ ntelgroup=           0
+Begin solution global equation     at 2026-03-28 11:40:01 
+                     istep=           1 iiter=           2
+                     conver_load check
+ resid=  0.353953302503036      retot=   534183570.249362     
+ ratio1=  2.574113671439572E-005 ratio2=  1.473220624439170E-005
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ iiter=           3
+Begin forming various matrix       at 2026-03-28 11:40:01 
+ ktsmat=           0
+ ntelgroup=           0
+Begin solution global equation     at 2026-03-28 11:40:01 
+                     istep=           1 iiter=           3
+                     conver_load check
+ resid=  3.085012559493643E-008 retot=   534148676.760695     
+ ratio1=  7.599716467456327E-009 ratio2=  4.307453891720833E-009
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           0
+                    conver_nodal_value check
+               Convergence check for displacement
+ ratio1=  6.903160722060375E-008 ratio2=  9.258540067839717E-008
+               Convergence check for pressure(Pw)
+ nchek=           0
+ ***********RESTART FILE IS UPDATED!*******
+ time: 11:40:00
+ iblks=           1 iincs=           1 istep=           2
+ outinp=           0
+ iiter=           1
+Begin forming various matrix       at 2026-03-28 11:40:01 
+ ktsmat=           0
+Begin assemble golbal matrix       at 2026-03-28 11:40:01 
+ ntelgroup=           0
+Begin factorize global matrix      at 2026-03-28 11:40:01 
+ Factorization completed ... 
+Begin solution global equation     at 2026-03-28 11:40:01 
+                     istep=           2 iiter=           1
+                     conver_load check
+ resid=   54849587.8276332      retot=   357337028.357076     
+ ratio1=  0.391784881834264      ratio2=  0.230927710108557     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ iiter=           2
+Begin forming various matrix       at 2026-03-28 11:40:01 
+ ktsmat=           0
+ ntelgroup=           0
+Begin solution global equation     at 2026-03-28 11:40:01 
+                     istep=           2 iiter=           2
+                     conver_load check
+ resid=   4.51521264763008      retot=   393702444.392452     
+ ratio1=  1.070915115985675E-004 ratio2=  6.590053171166056E-005
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ iiter=           3
+Begin forming various matrix       at 2026-03-28 11:40:01 
+ ktsmat=           0
+ ntelgroup=           0
+Begin solution global equation     at 2026-03-28 11:40:01 
+                     istep=           2 iiter=           3
+                     conver_load check
+ resid=  3.767183660397974E-007 retot=   393790477.715084     
+ ratio1=  3.092970599285370E-008 ratio2=  1.927635099912762E-008
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           0
+                    conver_nodal_value check
+               Convergence check for displacement
+ ratio1=  2.363867468693562E-007 ratio2=  3.028280135218727E-007
+               Convergence check for pressure(Pw)
+ nchek=           0
+ ***********RESTART FILE IS UPDATED!*******
+ time: 11:40:00
+ iblks=           1 iincs=           1 istep=           3
+ outinp=           0
+ iiter=           1
+Begin forming various matrix       at 2026-03-28 11:40:01 
+ ktsmat=           0
+Begin assemble golbal matrix       at 2026-03-28 11:40:01 
+ ntelgroup=           0
+Begin factorize global matrix      at 2026-03-28 11:40:01 
+ Factorization completed ... 
+Begin solution global equation     at 2026-03-28 11:40:01 
+                     istep=           3 iiter=           1
+                     conver_load check
+ resid=   155669760.741587      retot=   2882090306.23621     
+ ratio1=  0.232406535465263      ratio2=  9.032015267328705E-002
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ iiter=           2
+Begin forming various matrix       at 2026-03-28 11:40:01 
+ ktsmat=           0
+ ntelgroup=           0
+Begin solution global equation     at 2026-03-28 11:40:01 
+                     istep=           3 iiter=           2
+                     conver_load check
+ resid=   12.7827480561127      retot=   795814489.649606     
+ ratio1=  1.267378085825312E-004 ratio2=  5.977534454352796E-005
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ iiter=           3
+Begin forming various matrix       at 2026-03-28 11:40:01 
+ ktsmat=           0
+ ntelgroup=           0
+Begin solution global equation     at 2026-03-28 11:40:01 
+                     istep=           3 iiter=           3
+                     conver_load check
+ resid=  1.066436776382066E-006 retot=   795449026.903535     
+ ratio1=  3.661519735141813E-008 ratio2=  1.751069712622083E-008
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           0
+                    conver_nodal_value check
+               Convergence check for displacement
+ ratio1=  4.088364020895488E-007 ratio2=  5.388156250367599E-007
+               Convergence check for pressure(Pw)
+ nchek=           0
+ ***********RESTART FILE IS UPDATED!*******
+ time: 11:40:00
+ iblks=           1 iincs=           1 istep=           4
+ outinp=           0
+ iiter=           1
+Begin forming various matrix       at 2026-03-28 11:40:01 
+ ktsmat=           0
+Begin assemble golbal matrix       at 2026-03-28 11:40:01 
+ ntelgroup=           0
+Begin factorize global matrix      at 2026-03-28 11:40:01 
+ Factorization completed ... 
+Begin solution global equation     at 2026-03-28 11:40:01 
+                     istep=           4 iiter=           1
+                     conver_load check
+ resid=   229816374.892977      retot=   548710192.317699     
+ ratio1=  0.647170885462203      ratio2=  0.280035961961910     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ iiter=           2
+Begin forming various matrix       at 2026-03-28 11:40:01 
+ ktsmat=           0
+ ntelgroup=           0
+Begin solution global equation     at 2026-03-28 11:40:01 
+                     istep=           4 iiter=           2
+                     conver_load check
+ resid=   18.8087968151342      retot=   443522776.227347     
+ ratio1=  2.059313866912253E-004 ratio2=  1.286196354637206E-004
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ iiter=           3
+Begin forming various matrix       at 2026-03-28 11:40:01 
+ ktsmat=           0
+ ntelgroup=           0
+Begin solution global equation     at 2026-03-28 11:40:01 
+                     istep=           4 iiter=           3
+                     conver_load check
+ resid=  1.569064520182613E-006 retot=   443818756.376530     
+ ratio1=  5.945899646772835E-008 ratio2=  3.769466565029727E-008
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           0
+                    conver_nodal_value check
+               Convergence check for displacement
+ ratio1=  4.875714122669037E-007 ratio2=  6.310666537765523E-007
+               Convergence check for pressure(Pw)
+ nchek=           0
+ ***********RESTART FILE IS UPDATED!*******
+ time: 11:40:00
+ iblks=           1 iincs=           1 istep=           5
+ outinp=           0
+ iiter=           1
+Begin forming various matrix       at 2026-03-28 11:40:01 
+ ktsmat=           0
+Begin assemble golbal matrix       at 2026-03-28 11:40:01 
+ ntelgroup=           0
+Begin factorize global matrix      at 2026-03-28 11:40:01 
+ Factorization completed ... 
+Begin solution global equation     at 2026-03-28 11:40:01 
+                     istep=           5 iiter=           1
+                     conver_load check
+ resid=   266249389.401913      retot=   4242716155.31343     
+ ratio1=  0.250508416291752      ratio2=  9.511142943109101E-002
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ iiter=           2
+Begin forming various matrix       at 2026-03-28 11:40:01 
+ ktsmat=           0
+ ntelgroup=           0
+Begin solution global equation     at 2026-03-28 11:40:01 
+                     istep=           5 iiter=           2
+                     conver_load check
+ resid=   21.7162381840268      retot=   920074164.377723     
+ ratio1=  1.536317155611817E-004 ratio2=  7.028314638302746E-005
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ iiter=           3
+Begin forming various matrix       at 2026-03-28 11:40:01 
+ ktsmat=           0
+ ntelgroup=           0
+Begin solution global equation     at 2026-03-28 11:40:01 
+                     istep=           5 iiter=           3
+                     conver_load check
+ resid=  1.811465703087899E-006 retot=   919522397.782378     
+ ratio1=  4.438476264775816E-008 ratio2=  2.063839175927389E-008
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           0
+                    conver_nodal_value check
+               Convergence check for displacement
+ ratio1=  5.293518278098837E-007 ratio2=  6.921466264861199E-007
+               Convergence check for pressure(Pw)
+ nchek=           0
+ ***********RESTART FILE IS UPDATED!*******
+ time: 11:40:00
+ iblks=           1 iincs=           1 istep=           6
+ outinp=           0
+ iiter=           1
+Begin forming various matrix       at 2026-03-28 11:40:01 
+ ktsmat=           0
+Begin assemble golbal matrix       at 2026-03-28 11:40:01 
+ ntelgroup=           0
+Begin factorize global matrix      at 2026-03-28 11:40:01 
+ Factorization completed ... 
+Begin solution global equation     at 2026-03-28 11:40:01 
+                     istep=           6 iiter=           1
+                     conver_load check
+ resid=   272887876.575461      retot=   319194718.095228     
+ ratio1=  0.924622107008469      ratio2=  0.664299815139580     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ iiter=           2
+Begin forming various matrix       at 2026-03-28 11:40:01 
+ ktsmat=           0
+ ntelgroup=           0
+Begin solution global equation     at 2026-03-28 11:40:01 
+                     istep=           6 iiter=           2
+                     conver_load check
+ resid=   22.1851371541758      retot=   1118107405.42094     
+ ratio1=  1.408605231609679E-004 ratio2=  7.365743356517273E-005
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ iiter=           3
+Begin forming various matrix       at 2026-03-28 11:40:01 
+ ktsmat=           0
+ ntelgroup=           0
+Begin solution global equation     at 2026-03-28 11:40:01 
+                     istep=           6 iiter=           3
+                     conver_load check
+ resid=  1.850447820745943E-006 retot=   1118716102.11113     
+ ratio1=  4.067040311999101E-008 ratio2=  2.163539305315794E-008
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           0
+                    conver_nodal_value check
+               Convergence check for displacement
+ ratio1=  5.321560589918779E-007 ratio2=  6.917866919706905E-007
+               Convergence check for pressure(Pw)
+ nchek=           0
+ ***********RESTART FILE IS UPDATED!*******
+ time: 11:40:00
+ iblks=           1 iincs=           1 istep=           7
+ outinp=           0
+ iiter=           1
+Begin forming various matrix       at 2026-03-28 11:40:01 
+ ktsmat=           0
+Begin assemble golbal matrix       at 2026-03-28 11:40:01 
+ ntelgroup=           0
+Begin factorize global matrix      at 2026-03-28 11:40:01 
+ Factorization completed ... 
+Begin solution global equation     at 2026-03-28 11:40:01 
+                     istep=           7 iiter=           1
+                     conver_load check
+ resid=   260427310.215139      retot=   6808232771.37825     
+ ratio1=  0.195580730926876      ratio2=  7.415711170875486E-002
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ iiter=           2
+Begin forming various matrix       at 2026-03-28 11:40:01 
+ ktsmat=           0
+ ntelgroup=           0
+Begin solution global equation     at 2026-03-28 11:40:01 
+                     istep=           7 iiter=           2
+                     conver_load check
+ resid=   21.1094467140624      retot=   2299025648.18302     
+ ratio1=  9.582228370407360E-005 ratio2=  4.421991826907084E-005
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ iiter=           3
+Begin forming various matrix       at 2026-03-28 11:40:01 
+ ktsmat=           0
+ ntelgroup=           0
+Begin solution global equation     at 2026-03-28 11:40:01 
+                     istep=           7 iiter=           3
+                     conver_load check
+ resid=  1.760607398483274E-006 retot=   2298138575.47821     
+ ratio1=  2.767853852789449E-008 ratio2=  1.300779970123647E-008
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           0
+                    conver_nodal_value check
+               Convergence check for displacement
+ ratio1=  5.209332639135583E-007 ratio2=  6.791713710400606E-007
+               Convergence check for pressure(Pw)
+ nchek=           0
+ ***********RESTART FILE IS UPDATED!*******
+ time: 11:40:00
+ iblks=           1 iincs=           1 istep=           8
+ outinp=           0
+ iiter=           1
+Begin forming various matrix       at 2026-03-28 11:40:01 
+ ktsmat=           0
+Begin assemble golbal matrix       at 2026-03-28 11:40:01 
+ ntelgroup=           0
+Begin factorize global matrix      at 2026-03-28 11:40:01 
+ Factorization completed ... 
+Begin solution global equation     at 2026-03-28 11:40:01 
+                     istep=           8 iiter=           1
+                     conver_load check
+ resid=   237517091.972614      retot=   476175926.316113     
+ ratio1=  0.706258546057696      ratio2=  0.784586169255690     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ iiter=           2
+Begin forming various matrix       at 2026-03-28 11:40:01 
+ ktsmat=           0
+ ntelgroup=           0
+Begin solution global equation     at 2026-03-28 11:40:01 
+                     istep=           8 iiter=           2
+                     conver_load check
+ resid=   19.2027298936447      retot=   2240697879.94447     
+ ratio1=  9.257417170645569E-005 ratio2=  4.544418621542876E-005
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ iiter=           3
+Begin forming various matrix       at 2026-03-28 11:40:01 
+ ktsmat=           0
+ ntelgroup=           0
+Begin solution global equation     at 2026-03-28 11:40:01 
+                     istep=           8 iiter=           3
+                     conver_load check
+ resid=  1.601490630955712E-006 retot=   2241523593.93762     
+ ratio1=  2.672948208514038E-008 ratio2=  1.337158450587458E-008
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           0
+                    conver_nodal_value check
+               Convergence check for displacement
+ ratio1=  4.961903768465035E-007 ratio2=  6.460634879149486E-007
+               Convergence check for pressure(Pw)
+ nchek=           0
+ ***********RESTART FILE IS UPDATED!*******
+ time: 11:40:00
+ iblks=           1 iincs=           1 istep=           9
+ outinp=           0
+ iiter=           1
+Begin forming various matrix       at 2026-03-28 11:40:01 
+ ktsmat=           0
+Begin assemble golbal matrix       at 2026-03-28 11:40:01 
+ ntelgroup=           0
+Begin factorize global matrix      at 2026-03-28 11:40:01 
+ Factorization completed ... 
+Begin solution global equation     at 2026-03-28 11:40:01 
+                     istep=           9 iiter=           1
+                     conver_load check
+ resid=   210192635.234235      retot=   4911614701.96040     
+ ratio1=  0.206869565464126      ratio2=  7.738578939274293E-002
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ iiter=           2
+Begin forming various matrix       at 2026-03-28 11:40:01 
+ ktsmat=           0
+ ntelgroup=           0
+Begin solution global equation     at 2026-03-28 11:40:01 
+                     istep=           9 iiter=           2
+                     conver_load check
+ resid=   16.9569629949750      retot=   1513606507.57534     
+ ratio1=  1.058443165764437E-004 ratio2=  4.901060411276562E-005
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ iiter=           3
+Begin forming various matrix       at 2026-03-28 11:40:01 
+ ktsmat=           0
+ ntelgroup=           0
+Begin solution global equation     at 2026-03-28 11:40:01 
+                     istep=           9 iiter=           3
+                     conver_load check
+ resid=  1.414133348613000E-006 retot=   1512959942.33736     
+ ratio1=  3.057253615191153E-008 ratio2=  1.443631507201068E-008
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           0
+                    conver_nodal_value check
+               Convergence check for displacement
+ ratio1=  4.663194438445650E-007 ratio2=  6.071899274258836E-007
+               Convergence check for pressure(Pw)
+ nchek=           0
+ ***********RESTART FILE IS UPDATED!*******
+ time: 11:40:00
+ iblks=           1 iincs=           1 istep=          10
+ outinp=           0
+ iiter=           1
+Begin forming various matrix       at 2026-03-28 11:40:01 
+ ktsmat=           0
+Begin assemble golbal matrix       at 2026-03-28 11:40:01 
+ ntelgroup=           0
+Begin factorize global matrix      at 2026-03-28 11:40:01 
+ Factorization completed ... 
+Begin solution global equation     at 2026-03-28 11:40:01 
+                     istep=          10 iiter=           1
+                     conver_load check
+ resid=   182128736.034610      retot=   266425936.883146     
+ ratio1=  0.826800986219309      ratio2=  0.337530775990750     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ iiter=           2
+Begin forming various matrix       at 2026-03-28 11:40:01 
+ ktsmat=           0
+ ntelgroup=           0
+Begin solution global equation     at 2026-03-28 11:40:01 
+                     istep=          10 iiter=           2
+                     conver_load check
+ resid=   14.6674141510274      retot=   334109245.406126     
+ ratio1=  2.095233989456900E-004 ratio2=  1.052703255279155E-004
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ iiter=           3
+Begin forming various matrix       at 2026-03-28 11:40:01 
+ ktsmat=           0
+ ntelgroup=           0
+Begin solution global equation     at 2026-03-28 11:40:01 
+                     istep=          10 iiter=           3
+                     conver_load check
+ resid=  1.223153482644902E-006 retot=   334384813.031354     
+ ratio1=  6.048075525770858E-008 ratio2=  3.099819592644232E-008
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           0
+                    conver_nodal_value check
+               Convergence check for displacement
+ ratio1=  4.332934389377440E-007 ratio2=  5.640021931106776E-007
+               Convergence check for pressure(Pw)
+ nchek=           0
+ ***********RESTART FILE IS UPDATED!*******
+ time: 11:40:01

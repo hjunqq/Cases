@@ -1,0 +1,89 @@
+{
+  "probe_id": "old-format-peel-v1",
+  "question": "把旧 deck 的记录逐处补齐后，不兼容点会依次出现在哪里？.LOA 的每-BLKS 曲线表究竟是不是旧格式？",
+  "registered_at": "2026-08-28",
+  "registered_by": "Claude",
+
+  "known_before_registration": [
+    "5 个 deck 在 1.glb 的 NINIT 记录处 forrtl severe(64) input conversion error（探针 old-loa 已证）",
+    "源码 Global.f90:728 读 19 项，旧 deck 只供 11 项：缺 winit(第3位) 与尾部 7 项",
+    "1.glb 头部记录另有两种方言（train_temp_creep 缺 npoinb，见 09-facts §3）",
+    "1.loa 与 1.LOA 内容相同，不是文件名问题",
+    "对照组 train01 可在 0.2s 内 completed"
+  ],
+  "not_yet_examined": [
+    "补齐 NINIT 之后会在哪里失败",
+    "1.glb 除 NPOIN/NINIT 外还有多少条记录是旧格式",
+    "这些 deck 的 .loa 在当前求解器下是否可读"
+  ],
+
+  "method": {
+    "patch_rule": "标签对齐补零。每条失败记录的上一行是人可读标签；把标签名与源码 READ 的变量名做大小写不敏感的对齐（允许 outinr↔outintr、outinw↔outintw 这类缩写别名），源码有而标签没有的变量，在其对应位置插入 0。无标签时退化为末尾补零。",
+    "patch_rule_is_an_assumption": "标签顺序与源码变量顺序一致，这是假设，不是已证事实。若补齐后行为异常，须先怀疑本规则。",
+    "loop": "最多 8 轮：跑 → 定位失败记录 → 打补丁 → 再跑。每轮记录 (文件, 记录标签, 源码需要项数, deck 实供项数)。",
+    "isolation": "全部在 /tmp 下运行，cases/ 只读",
+    "timeout_seconds": 600,
+    "control": "train01_gravdam_static 必须 completed，否则全部结果作废",
+    "target": "train_contact_nonlinear（5 个中最小、最快的一个）；其余 4 个只跑第 0 轮做形态对照"
+  },
+
+  "outcome_classification": {
+    "note": "针对探针 old-loa 的教训：分类必须携带失败位置，否则 PASS 可能因错误的原因发生",
+    "labels": [
+      "completed",
+      "read_error@<文件名>:<最近标签>",
+      "other_error",
+      "timeout"
+    ]
+  },
+
+  "predictions": [
+    {
+      "id": "C0",
+      "claim": "对照组 train01 分类为 completed",
+      "confidence": "high",
+      "falsified_if": "train01 不是 completed",
+      "note": "仪器控制。C0 被证伪则其余全部作废。"
+    },
+    {
+      "id": "P1",
+      "claim": "补齐 NINIT 记录后，train_contact_nonlinear 的失败点不再是 NINIT 那条记录",
+      "confidence": "high",
+      "falsified_if": "第 1 轮仍在 NINIT 记录失败"
+    },
+    {
+      "id": "P2",
+      "claim": "第 1 轮的失败点仍在 1.glb 内（不是 1.loa）",
+      "confidence": "medium",
+      "falsified_if": "第 1 轮失败点不在 1.glb"
+    },
+    {
+      "id": "P3",
+      "claim": "1.glb 中需要补齐的记录条数 >= 2（即旧格式是系统性的，不止 NINIT 一条）",
+      "confidence": "medium-high",
+      "falsified_if": "补 1 条之后 1.glb 就再无失败"
+    },
+    {
+      "id": "P4",
+      "claim": "8 轮之内，train_contact_nonlinear 的失败点至少有一次落在 1.loa 上",
+      "confidence": "low-medium",
+      "falsified_if": "8 轮内失败点从未出现在 1.loa（含跑通、超时、或始终卡在其它文件）",
+      "note": "这是 .LOA 旧格式假设能否被检验的前提；本条若证伪，说明该假设在这条路径上仍够不着"
+    },
+    {
+      "id": "P5",
+      "claim": "8 轮之内 train_contact_nonlinear 不会 completed",
+      "confidence": "medium-high",
+      "falsified_if": "任意一轮 completed",
+      "note": "若被证伪（即补几条记录就能跑通），那是比原假设更有价值的结果：旧 deck 可被机械迁移"
+    },
+    {
+      "id": "P6",
+      "claim": "另外 4 个 deck 第 0 轮的失败点与 train_contact_nonlinear 第 0 轮完全相同（同文件同标签）",
+      "confidence": "medium-high",
+      "falsified_if": "任一个不同"
+    }
+  ],
+
+  "judging_rule": "由 judge.py 机械判定。运行前校验 predictions.json 的 sha256。修仪器合规，改预测不合规。补丁规则一旦登记不得中途更改；若发现补丁规则本身有误，须终止本探针并重新登记。"
+}

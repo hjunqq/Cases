@@ -1,0 +1,39 @@
+material property curves 
+ 0
+ 10           ! lines for comments
+'MATERIAL PROPERTIES-INPUT FOR 1 TO NMATS'
+'NAME FOR MATERIAL---FOR COMMENTS'
+'FIRST:NAME---MECHANICAL, TEMPERATURE, ETC'
+'FOR MECHNICAL, SECOND:PHASE---SOLID, FLUID, AIR OR OIL '
+'               NUMBER OF PHASE'
+'FOR SOLID: MATERIAL(CLASSICALEP,CAMCLAY,ETC),density,ratio,thick,e,nu'
+'FOR MATERISL: CLASSICALEP:CRITERIA(TC,VM,DP,MC),sigm0,hardening'
+'                FOR MC OR DP: FRICT_ANGLE, DILAN_ANGLE'
+'              CAMCLAY    :Pc, lamda, Mg, Mf, D0, D1,gaama'
+'FOR FLUID: (1) density,ratio,bulkw (2)permiability(1:ndimn)'  
+
+ material 1   
+   'MECHANICAL','SOLID', 1
+   1		   ! NUMBER OF PHASES
+   'SOLID'
+   'ELASTIC_ISOTROPIC',0.,1.0,1.,39.24e6,0.3,8.5e-6,0 0 ! 
+      0 0 !iE,iNU
+material 2 
+   'MECHANICAL','SOLID', 2
+   1		   ! NUMBER OF PHASES
+   'SOLID'
+   'ELASTIC_ISOTROPIC',0.,1.0,1.,29.43e9,0.2,8.5e-6,0 0 !
+      0 0 !iE,iNU
+material 3 
+   'MECHANICAL','SOLID', 3
+   1		   ! NUMBER OF PHASES
+   'SOLID'
+   'ELASTIC_ISOTROPIC',0.,1.0,1.,29.43e9,0.2,8.5e-6,0 0 !
+      0 0 !iE,iNU
+material 4 
+   'GEOMETRY','几何特性', 3   
+   1   1. .16667 .08333 .08333              props(imat)%geometry%ipd，aera,J,Iy,Iz
+   172 176   !如果ipd=1，给出确定局部坐标x（二维只要x方向)与y方向(三维)的节点号
+
+
+       

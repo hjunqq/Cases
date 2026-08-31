@@ -1,0 +1,65 @@
+title = "重力坝静力分析 — 自重+静水压"
+type_problem = "Q"       # Q = 准静态
+solver = "PROFILE"       # 直接法求解器
+ndimn = 2
+nblks = 2                # Block1: 地基自重; Block2: 坝体自重+水压
+
+# ---- 单元组 ----
+[[groups]]
+name = "Foundation"
+nelgroup = 24            # 6x4 Q4 单元
+matno = 1                # 地基岩石
+
+[[groups]]
+name = "DamBody"
+nelgroup = 20            # 4x5 Q4 单元
+matno = 2                # 坝体混凝土
+
+# ---- 材料 ----
+[[materials]]
+id = 1
+type = "ELASTIC"
+E = 2.0e10               # 弹性模量 20 GPa (地基岩石)
+nu = 0.25                # 泊松比
+density = 2600           # 密度 kg/m3
+alfa = 1.0e-5            # 热膨胀系数
+
+[[materials]]
+id = 2
+type = "ELASTIC"
+E = 2.5e10               # 弹性模量 25 GPa (混凝土)
+nu = 0.167               # 泊松比
+density = 2400           # 密度 kg/m3
+alfa = 1.0e-5
+
+# ---- 分块施工 ----
+[blocks]
+# appear[block][group]: 1=激活, 0=未激活
+# Block1: 仅地基; Block2: 地基+坝体
+appear = [[1, 0], [1, 1]]
+
+# 重力: gravy, factg_x, factg_y, factf_x, factf_y
+gravity = [9.81, 0, -1, 0, -1]
+
+# 每个block的增量步控制
+[[blocks.increments]]
+miter = 5                # 最大迭代次数
+ditime = 1.0             # 时间步长
+nstep = 1                # 步数
+
+[[blocks.increments]]
+miter = 10               # 坝体+水压允许更多迭代
+ditime = 1.0
+nstep = 1
+
+# ---- 边界条件 ----
+[boundary]
+bottom_fix_uy = true     # 底部固定竖向位移
+sides_fix_ux = true      # 两侧固定水平位移
+
+# ---- 水压荷载 ----
+[water_pressure]
+edges = "auto_upstream"  # 自动检测上游面
+water_level = 75.0       # 水位高程 (坝高80m, 水深75m)
+gamma_w = 9810.0         # 水的重度 N/m3
+block = 2                # 在Block2施加

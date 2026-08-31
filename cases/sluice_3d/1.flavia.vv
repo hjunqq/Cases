@@ -1,0 +1,864 @@
+BeginZE D:/dachengxu/hstar20200103/hstar(programandexamples)/HSTAR/上海新川沙水闸/整体底板_带接触面/1.flavia.vv
+   x -316.82257080078125 277.462158203125
+   y 187.57513427734375 -241.5966796875
+   z -408.49319458007812 415.37728881835937
+   e 385.07705688476562
+   v 0.21621022497097864 -0.068079602393484165 -0.95469508766376598
+   r -0.1928099470309953
+   m -0.83215510845184326 -0.39758843183517456 -0.38657683134078979 0 0.33871039748191833 -0.91637915372848511 0.21336549520492554 0 -0.43908253312110901 0.046615559607744217 0.89723658561706543 0 0 0 0 1
+   c 14.349247932434082 -48.392238616943359 -3.4420545101165771
+   pd 0
+   pno 0
+   pfo 0
+   pf 4
+   pv 0
+   NowUse 2
+   DrawingType 3
+   LightVector 90 90 150 0
+   OGLShadow(UseShadows) 0
+   OGLShadow(RenderMode) RenderNice
+   OGLShadow(ShadowBias) -0.002
+   OGLShadow(AmbientShadows) 1
+   OGLShadow(UseFBO) 0
+   OGLShadow(FBOSize) 2048
+   OGLShadow(DimmedLightFactor) 0.02
+   OGLStereo(UseStereo) 0
+   OGLStereo(RelativeEyeDistance) 1
+   OGLStereo(FlipEyes) 0
+   OGLStereo(StereoMode) AnaglyphColors
+   OGLStereo(EyeDistance) 0.075
+   OGLStereo(LeftEyeDistance) 1 0 0 1
+   OGLStereo(RightEyeDistance) 0 1 1 1
+EndZE D:/dachengxu/hstar20200103/hstar(programandexamples)/HSTAR/上海新川沙水闸/整体底板_带接触面/1.flavia.vv
+
+BeginMirror
+   Mirror 0 Angle 0.0 AngleFake -15.0 SizeFactor 2.0 HeightOffset 0.25 Color #d9e5f24d Backlight Off EdgeStyle No Type Scene DrawMode Mirror
+EndMirror
+
+
+BeginPostState
+BeginSingleMesh
+  Num meshes: 49
+  Num sets: 2
+  Num cuts: 0
+  Mesh: 0
+  State: Off
+    Name: "VolumeMesh 1"
+    IdSet: 1
+    Color Type: 0
+    Color Ambient: 0.2 0.2 0.2 0.5
+    Color Diffuse: 0.6 0.6 0.6 0.5
+    Color Specular: 1 1 1 0.5
+    Color Shininess: 0.5
+    Property Massive: 1
+    Property Transparent: 0
+    Property Style: 1048606
+    Property Edge Width: 1
+    Property Vector Filter Factor: 0
+    Property Stream Arrow: 0
+  EndMesh: 0
+  Mesh: 1
+  State: Off
+    Name: "VolumeMesh 2"
+    IdSet: 2
+    Color Type: 0
+    Color Ambient: 0 0 0.3 0.5
+    Color Diffuse: 0 0 1 0.5
+    Color Specular: 1 1 1 0.5
+    Color Shininess: 0.5
+    Property Massive: 1
+    Property Transparent: 0
+    Property Style: 1048606
+    Property Edge Width: 1
+    Property Vector Filter Factor: 0
+    Property Stream Arrow: 0
+  EndMesh: 1
+  Mesh: 2
+  State: Off
+    Name: "VolumeMesh 3"
+    IdSet: 3
+    Color Type: 0
+    Color Ambient: 0.3 0 0.3 0.5
+    Color Diffuse: 1 0 1 0.5
+    Color Specular: 1 1 1 0.5
+    Color Shininess: 0.5
+    Property Massive: 1
+    Property Transparent: 0
+    Property Style: 1048606
+    Property Edge Width: 1
+    Property Vector Filter Factor: 0
+    Property Stream Arrow: 0
+  EndMesh: 2
+  Mesh: 3
+  State: Off
+    Name: "VolumeMesh 4"
+    IdSet: 4
+    Color Type: 0
+    Color Ambient: 0 0.3 0.3 0.5
+    Color Diffuse: 0 1 1 0.5
+    Color Specular: 1 1 1 0.5
+    Color Shininess: 0.5
+    Property Massive: 1
+    Property Transparent: 0
+    Property Style: 1048606
+    Property Edge Width: 1
+    Property Vector Filter Factor: 0
+    Property Stream Arrow: 0
+  EndMesh: 3
+  Mesh: 4
+  State: Off
+    Name: "VolumeMesh 5"
+    IdSet: 5
+    Color Type: 0
+    Color Ambient: 0.22 0 0.05 0.5
+    Color Diffuse: 0.65 0 0.13 0.5
+    Color Specular: 1 1 1 0.5
+    Color Shininess: 0.5
+    Property Massive: 1
+    Property Transparent: 0
+    Property Style: 1048606
+    Property Edge Width: 1
+    Property Vector Filter Factor: 0
+    Property Stream Arrow: 0
+  EndMesh: 4
+  Mesh: 5
+  State: Off
+    Name: "VolumeMesh 6"
+    IdSet: 6
+    Color Type: 0
+    Color Ambient: 0 0.3 0 0.5
+    Color Diffuse: 0 1 0 0.5
+    Color Specular: 1 1 1 0.5
+    Color Shininess: 0.5
+    Property Massive: 1
+    Property Transparent: 0
+    Property Style: 1048606
+    Property Edge Width: 1
+    Property Vector Filter Factor: 0
+    Property Stream Arrow: 0
+  EndMesh: 5
+  Mesh: 6
+  State: Off
+    Name: "VolumeMesh 7"
+    IdSet: 7
+    Color Type: 0
+    Color Ambient: 0.3 0.2 0 0.5
+    Color Diffuse: 0.6 0.4 0 0.5
+    Color Specular: 1 1 1 0.5
+    Color Shininess: 0.5
+    Property Massive: 1
+    Property Transparent: 0
+    Property Style: 1048606
+    Property Edge Width: 1
+    Property Vector Filter Factor: 0
+    Property Stream Arrow: 0
+  EndMesh: 6
+  Mesh: 7
+  State: Off
+    Name: "VolumeMesh 8"
+    IdSet: 8
+    Color Type: 0
+    Color Ambient: 0.2 0.1 0.1 0.5
+    Color Diffuse: 0.7 0.2 0.4 0.5
+    Color Specular: 1 1 1 0.5
+    Color Shininess: 0.5
+    Property Massive: 1
+    Property Transparent: 0
+    Property Style: 1048606
+    Property Edge Width: 1
+    Property Vector Filter Factor: 0
+    Property Stream Arrow: 0
+  EndMesh: 7
+  Mesh: 8
+  State: On
+    Name: "VolumeMesh 9"
+    IdSet: 9
+    Color Type: 0
+    Color Ambient: 0.2 0.1 0.1 0.5
+    Color Diffuse: 0.5 0.3 0.3 0.5
+    Color Specular: 1 1 1 0.5
+    Color Shininess: 0.5
+    Property Massive: 1
+    Property Transparent: 0
+    Property Style: 1048606
+    Property Edge Width: 1
+    Property Vector Filter Factor: 0
+    Property Stream Arrow: 0
+  EndMesh: 8
+  Mesh: 9
+  State: On
+    Name: "VolumeMesh 10"
+    IdSet: 10
+    Color Type: 0
+    Color Ambient: 0.1 0.2 0.2 0.5
+    Color Diffuse: 0.2 0.5 0.5 0.5
+    Color Specular: 1 1 1 0.5
+    Color Shininess: 0.5
+    Property Massive: 1
+    Property Transparent: 0
+    Property Style: 1048606
+    Property Edge Width: 1
+    Property Vector Filter Factor: 0
+    Property Stream Arrow: 0
+  EndMesh: 9
+  Mesh: 10
+  State: On
+    Name: "VolumeMesh 11"
+    IdSet: 11
+    Color Type: 0
+    Color Ambient: 0.1 0.1 0.2 0.5
+    Color Diffuse: 0.3 0.3 0.5 0.5
+    Color Specular: 1 1 1 0.5
+    Color Shininess: 0.5
+    Property Massive: 1
+    Property Transparent: 0
+    Property Style: 1048606
+    Property Edge Width: 1
+    Property Vector Filter Factor: 0
+    Property Stream Arrow: 0
+  EndMesh: 10
+  Mesh: 11
+  State: On
+    Name: "VolumeMesh 12"
+    IdSet: 12
+    Color Type: 0
+    Color Ambient: 0.3 0.1 0.1 0.5
+    Color Diffuse: 1 0.3 0.3 0.5
+    Color Specular: 1 1 1 0.5
+    Color Shininess: 0.5
+    Property Massive: 1
+    Property Transparent: 0
+    Property Style: 1048606
+    Property Edge Width: 1
+    Property Vector Filter Factor: 0
+    Property Stream Arrow: 0
+  EndMesh: 11
+  Mesh: 12
+  State: On
+    Name: "VolumeMesh 13"
+    IdSet: 13
+    Color Type: 0
+    Color Ambient: 0.1 0.3 0.1 0.5
+    Color Diffuse: 0.3 1 0.3 0.5
+    Color Specular: 1 1 1 0.5
+    Color Shininess: 0.5
+    Property Massive: 1
+    Property Transparent: 0
+    Property Style: 1048606
+    Property Edge Width: 1
+    Property Vector Filter Factor: 0
+    Property Stream Arrow: 0
+  EndMesh: 12
+  Mesh: 13
+  State: On
+    Name: "VolumeMesh 14"
+    IdSet: 14
+    Color Type: 0
+    Color Ambient: 0.1 0.1 0.3 0.5
+    Color Diffuse: 0.3 0.3 1 0.5
+    Color Specular: 1 1 1 0.5
+    Color Shininess: 0.5
+    Property Massive: 1
+    Property Transparent: 0
+    Property Style: 1048606
+    Property Edge Width: 1
+    Property Vector Filter Factor: 0
+    Property Stream Arrow: 0
+  EndMesh: 13
+  Mesh: 14
+  State: On
+    Name: "VolumeMesh 15"
+    IdSet: 15
+    Color Type: 0
+    Color Ambient: 0.1 0.2 0.1 0.5
+    Color Diffuse: 0.3 0.5 0.3 0.5
+    Color Specular: 1 1 1 0.5
+    Color Shininess: 0.5
+    Property Massive: 1
+    Property Transparent: 0
+    Property Style: 1048606
+    Property Edge Width: 1
+    Property Vector Filter Factor: 0
+    Property Stream Arrow: 0
+  EndMesh: 14
+  Mesh: 15
+  State: On
+    Name: "VolumeMesh 16"
+    IdSet: 16
+    Color Type: 0
+    Color Ambient: 0.3 0 0 0.5
+    Color Diffuse: 1 0 0 0.5
+    Color Specular: 1 1 1 0.5
+    Color Shininess: 0.5
+    Property Massive: 1
+    Property Transparent: 0
+    Property Style: 1048606
+    Property Edge Width: 1
+    Property Vector Filter Factor: 0
+    Property Stream Arrow: 0
+  EndMesh: 15
+  Mesh: 16
+  State: On
+    Name: "VolumeMesh 17"
+    IdSet: 17
+    Color Type: 0
+    Color Ambient: 0.3 0.3 0 0.5
+    Color Diffuse: 1 1 0 0.5
+    Color Specular: 1 1 1 0.5
+    Color Shininess: 0.5
+    Property Massive: 1
+    Property Transparent: 0
+    Property Style: 1048606
+    Property Edge Width: 1
+    Property Vector Filter Factor: 0
+    Property Stream Arrow: 0
+  EndMesh: 16
+  Mesh: 17
+  State: On
+    Name: "VolumeMesh 18"
+    IdSet: 18
+    Color Type: 0
+    Color Ambient: 0 0.333333 0 0.5
+    Color Diffuse: 0 1 0 0.5
+    Color Specular: 1 1 1 0.5
+    Color Shininess: 0.5
+    Property Massive: 1
+    Property Transparent: 0
+    Property Style: 1048606
+    Property Edge Width: 1
+    Property Vector Filter Factor: 0
+    Property Stream Arrow: 0
+  EndMesh: 17
+  Mesh: 18
+  State: On
+    Name: "VolumeMesh 19"
+    IdSet: 19
+    Color Type: 0
+    Color Ambient: 0.333333 0 0.166667 0.5
+    Color Diffuse: 1 0 0.5 0.5
+    Color Specular: 1 1 1 0.5
+    Color Shininess: 0.5
+    Property Massive: 1
+    Property Transparent: 0
+    Property Style: 1048606
+    Property Edge Width: 1
+    Property Vector Filter Factor: 0
+    Property Stream Arrow: 0
+  EndMesh: 18
+  Mesh: 19
+  State: On
+    Name: "VolumeMesh 20"
+    IdSet: 20
+    Color Type: 0
+    Color Ambient: 0 0.333333 0.333333 0.5
+    Color Diffuse: 0 1 1 0.5
+    Color Specular: 1 1 1 0.5
+    Color Shininess: 0.5
+    Property Massive: 1
+    Property Transparent: 0
+    Property Style: 1048606
+    Property Edge Width: 1
+    Property Vector Filter Factor: 0
+    Property Stream Arrow: 0
+  EndMesh: 19
+  Mesh: 20
+  State: On
+    Name: "VolumeMesh 21"
+    IdSet: 21
+    Color Type: 0
+    Color Ambient: 0.333333 0.166667 0 0.5
+    Color Diffuse: 1 0.5 0 0.5
+    Color Specular: 1 1 1 0.5
+    Color Shininess: 0.5
+    Property Massive: 1
+    Property Transparent: 0
+    Property Style: 1048606
+    Property Edge Width: 1
+    Property Vector Filter Factor: 0
+    Property Stream Arrow: 0
+  EndMesh: 20
+  Mesh: 21
+  State: On
+    Name: "VolumeMesh 22"
+    IdSet: 22
+    Color Type: 0
+    Color Ambient: 0 0 0.333333 0.5
+    Color Diffuse: 0 0 1 0.5
+    Color Specular: 1 1 1 0.5
+    Color Shininess: 0.5
+    Property Massive: 1
+    Property Transparent: 0
+    Property Style: 1048606
+    Property Edge Width: 1
+    Property Vector Filter Factor: 0
+    Property Stream Arrow: 0
+  EndMesh: 21
+  Mesh: 22
+  State: On
+    Name: "VolumeMesh 23"
+    IdSet: 23
+    Color Type: 0
+    Color Ambient: 0.166667 0.333333 0 0.5
+    Color Diffuse: 0.5 1 0 0.5
+    Color Specular: 1 1 1 0.5
+    Color Shininess: 0.5
+    Property Massive: 1
+    Property Transparent: 0
+    Property Style: 1048606
+    Property Edge Width: 1
+    Property Vector Filter Factor: 0
+    Property Stream Arrow: 0
+  EndMesh: 22
+  Mesh: 23
+  State: On
+    Name: "VolumeMesh 24"
+    IdSet: 24
+    Color Type: 0
+    Color Ambient: 0.333333 0 0.333333 0.5
+    Color Diffuse: 1 0 1 0.5
+    Color Specular: 1 1 1 0.5
+    Color Shininess: 0.5
+    Property Massive: 1
+    Property Transparent: 0
+    Property Style: 1048606
+    Property Edge Width: 1
+    Property Vector Filter Factor: 0
+    Property Stream Arrow: 0
+  EndMesh: 23
+  Mesh: 24
+  State: Off
+    Name: "VolumeMesh 25"
+    IdSet: 25
+    Color Type: 0
+    Color Ambient: 0 0.333333 0.166667 0.5
+    Color Diffuse: 0 1 0.5 0.5
+    Color Specular: 1 1 1 0.5
+    Color Shininess: 0.5
+    Property Massive: 1
+    Property Transparent: 0
+    Property Style: 1048606
+    Property Edge Width: 1
+    Property Vector Filter Factor: 0
+    Property Stream Arrow: 0
+  EndMesh: 24
+  Mesh: 25
+  State: Off
+    Name: "VolumeMesh 26"
+    IdSet: 26
+    Color Type: 0
+    Color Ambient: 0.333333 0 0 0.5
+    Color Diffuse: 1 0 0 0.5
+    Color Specular: 1 1 1 0.5
+    Color Shininess: 0.5
+    Property Massive: 1
+    Property Transparent: 0
+    Property Style: 1048606
+    Property Edge Width: 1
+    Property Vector Filter Factor: 0
+    Property Stream Arrow: 0
+  EndMesh: 25
+  Mesh: 26
+  State: Off
+    Name: "VolumeMesh 27"
+    IdSet: 27
+    Color Type: 0
+    Color Ambient: 0 0.166667 0.333333 0.5
+    Color Diffuse: 0 0.5 1 0.5
+    Color Specular: 1 1 1 0.5
+    Color Shininess: 0.5
+    Property Massive: 1
+    Property Transparent: 0
+    Property Style: 1048606
+    Property Edge Width: 1
+    Property Vector Filter Factor: 0
+    Property Stream Arrow: 0
+  EndMesh: 26
+  Mesh: 27
+  State: Off
+    Name: "VolumeMesh 28"
+    IdSet: 28
+    Color Type: 0
+    Color Ambient: 0.333333 0.333333 0 0.5
+    Color Diffuse: 1 1 0 0.5
+    Color Specular: 1 1 1 0.5
+    Color Shininess: 0.5
+    Property Massive: 1
+    Property Transparent: 0
+    Property Style: 1048606
+    Property Edge Width: 1
+    Property Vector Filter Factor: 0
+    Property Stream Arrow: 0
+  EndMesh: 27
+  Mesh: 28
+  State: Off
+    Name: "VolumeMesh 29"
+    IdSet: 29
+    Color Type: 0
+    Color Ambient: 0.166667 0 0.333333 0.5
+    Color Diffuse: 0.5 0 1 0.5
+    Color Specular: 1 1 1 0.5
+    Color Shininess: 0.5
+    Property Massive: 1
+    Property Transparent: 0
+    Property Style: 1048606
+    Property Edge Width: 1
+    Property Vector Filter Factor: 0
+    Property Stream Arrow: 0
+  EndMesh: 28
+  Mesh: 29
+  State: Off
+    Name: "VolumeMesh 30"
+    IdSet: 30
+    Color Type: 0
+    Color Ambient: 0.166667 0.333333 0.166667 0.5
+    Color Diffuse: 0.5 1 0.5 0.5
+    Color Specular: 1 1 1 0.5
+    Color Shininess: 0.5
+    Property Massive: 1
+    Property Transparent: 0
+    Property Style: 1048606
+    Property Edge Width: 1
+    Property Vector Filter Factor: 0
+    Property Stream Arrow: 0
+  EndMesh: 29
+  Mesh: 30
+  State: Off
+    Name: "VolumeMesh 31"
+    IdSet: 31
+    Color Type: 0
+    Color Ambient: 0.333333 0.166667 0.25 0.5
+    Color Diffuse: 1 0.5 0.75 0.5
+    Color Specular: 1 1 1 0.5
+    Color Shininess: 0.5
+    Property Massive: 1
+    Property Transparent: 0
+    Property Style: 1048606
+    Property Edge Width: 1
+    Property Vector Filter Factor: 0
+    Property Stream Arrow: 0
+  EndMesh: 30
+  Mesh: 31
+  State: Off
+    Name: "VolumeMesh 32"
+    IdSet: 32
+    Color Type: 0
+    Color Ambient: 0.166667 0.333333 0.333333 0.5
+    Color Diffuse: 0.5 1 1 0.5
+    Color Specular: 1 1 1 0.5
+    Color Shininess: 0.5
+    Property Massive: 1
+    Property Transparent: 0
+    Property Style: 1048606
+    Property Edge Width: 1
+    Property Vector Filter Factor: 0
+    Property Stream Arrow: 0
+  EndMesh: 31
+  Mesh: 32
+  State: Off
+    Name: "VolumeMesh 33"
+    IdSet: 33
+    Color Type: 0
+    Color Ambient: 0.333333 0.25 0.166667 0.5
+    Color Diffuse: 1 0.75 0.5 0.5
+    Color Specular: 1 1 1 0.5
+    Color Shininess: 0.5
+    Property Massive: 1
+    Property Transparent: 0
+    Property Style: 1048606
+    Property Edge Width: 1
+    Property Vector Filter Factor: 0
+    Property Stream Arrow: 0
+  EndMesh: 32
+  Mesh: 33
+  State: Off
+    Name: "VolumeMesh 34"
+    IdSet: 34
+    Color Type: 0
+    Color Ambient: 0.166667 0.166667 0.333333 0.5
+    Color Diffuse: 0.5 0.5 1 0.5
+    Color Specular: 1 1 1 0.5
+    Color Shininess: 0.5
+    Property Massive: 1
+    Property Transparent: 0
+    Property Style: 1048606
+    Property Edge Width: 1
+    Property Vector Filter Factor: 0
+    Property Stream Arrow: 0
+  EndMesh: 33
+  Mesh: 34
+  State: Off
+    Name: "VolumeMesh 35"
+    IdSet: 35
+    Color Type: 0
+    Color Ambient: 0.25 0.333333 0.166667 0.5
+    Color Diffuse: 0.75 1 0.5 0.5
+    Color Specular: 1 1 1 0.5
+    Color Shininess: 0.5
+    Property Massive: 1
+    Property Transparent: 0
+    Property Style: 1048606
+    Property Edge Width: 1
+    Property Vector Filter Factor: 0
+    Property Stream Arrow: 0
+  EndMesh: 34
+  Mesh: 35
+  State: Off
+    Name: "VolumeMesh 36"
+    IdSet: 36
+    Color Type: 0
+    Color Ambient: 0.333333 0.166667 0.333333 0.5
+    Color Diffuse: 1 0.5 1 0.5
+    Color Specular: 1 1 1 0.5
+    Color Shininess: 0.5
+    Property Massive: 1
+    Property Transparent: 0
+    Property Style: 1048606
+    Property Edge Width: 1
+    Property Vector Filter Factor: 0
+    Property Stream Arrow: 0
+  EndMesh: 35
+  Mesh: 36
+  State: Off
+    Name: "VolumeMesh 37"
+    IdSet: 37
+    Color Type: 0
+    Color Ambient: 0.166667 0.333333 0.25 0.5
+    Color Diffuse: 0.5 1 0.75 0.5
+    Color Specular: 1 1 1 0.5
+    Color Shininess: 0.5
+    Property Massive: 1
+    Property Transparent: 0
+    Property Style: 1048606
+    Property Edge Width: 1
+    Property Vector Filter Factor: 0
+    Property Stream Arrow: 0
+  EndMesh: 36
+  Mesh: 37
+  State: On
+    Name: "VolumeMesh 38"
+    IdSet: 38
+    Color Type: 0
+    Color Ambient: 0.333333 0.166667 0.166667 0.5
+    Color Diffuse: 1 0.5 0.5 0.5
+    Color Specular: 1 1 1 0.5
+    Color Shininess: 0.5
+    Property Massive: 1
+    Property Transparent: 0
+    Property Style: 1048606
+    Property Edge Width: 1
+    Property Vector Filter Factor: 0
+    Property Stream Arrow: 0
+  EndMesh: 37
+  Mesh: 38
+  State: On
+    Name: "VolumeMesh 39"
+    IdSet: 39
+    Color Type: 0
+    Color Ambient: 0.166667 0.25 0.333333 0.5
+    Color Diffuse: 0.5 0.75 1 0.5
+    Color Specular: 1 1 1 0.5
+    Color Shininess: 0.5
+    Property Massive: 1
+    Property Transparent: 0
+    Property Style: 1048606
+    Property Edge Width: 1
+    Property Vector Filter Factor: 0
+    Property Stream Arrow: 0
+  EndMesh: 38
+  Mesh: 39
+  State: Off
+    Name: "VolumeMesh 40"
+    IdSet: 40
+    Color Type: 0
+    Color Ambient: 0.333333 0.333333 0.166667 0.5
+    Color Diffuse: 1 1 0.5 0.5
+    Color Specular: 1 1 1 0.5
+    Color Shininess: 0.5
+    Property Massive: 1
+    Property Transparent: 0
+    Property Style: 1048606
+    Property Edge Width: 1
+    Property Vector Filter Factor: 0
+    Property Stream Arrow: 0
+  EndMesh: 39
+  Mesh: 40
+  State: Off
+    Name: "VolumeMesh 41"
+    IdSet: 41
+    Color Type: 0
+    Color Ambient: 0.25 0.166667 0.333333 0.5
+    Color Diffuse: 0.75 0.5 1 0.5
+    Color Specular: 1 1 1 0.5
+    Color Shininess: 0.5
+    Property Massive: 1
+    Property Transparent: 0
+    Property Style: 1048606
+    Property Edge Width: 1
+    Property Vector Filter Factor: 0
+    Property Stream Arrow: 0
+  EndMesh: 40
+  Mesh: 41
+  State: Off
+    Name: "VolumeMesh 42"
+    IdSet: 42
+    Color Type: 0
+    Color Ambient: 0 0.166667 0 0.5
+    Color Diffuse: 0 0.5 0 0.5
+    Color Specular: 1 1 1 0.5
+    Color Shininess: 0.5
+    Property Massive: 1
+    Property Transparent: 0
+    Property Style: 1048606
+    Property Edge Width: 1
+    Property Vector Filter Factor: 0
+    Property Stream Arrow: 0
+  EndMesh: 41
+  Mesh: 42
+  State: Off
+    Name: "VolumeMesh 43"
+    IdSet: 43
+    Color Type: 0
+    Color Ambient: 0.166667 0 0.0833333 0.5
+    Color Diffuse: 0.5 0 0.25 0.5
+    Color Specular: 1 1 1 0.5
+    Color Shininess: 0.5
+    Property Massive: 1
+    Property Transparent: 0
+    Property Style: 1048606
+    Property Edge Width: 1
+    Property Vector Filter Factor: 0
+    Property Stream Arrow: 0
+  EndMesh: 42
+  Mesh: 43
+  State: Off
+    Name: "VolumeMesh 44"
+    IdSet: 44
+    Color Type: 0
+    Color Ambient: 0 0.166667 0.166667 0.5
+    Color Diffuse: 0 0.5 0.5 0.5
+    Color Specular: 1 1 1 0.5
+    Color Shininess: 0.5
+    Property Massive: 1
+    Property Transparent: 0
+    Property Style: 1048606
+    Property Edge Width: 1
+    Property Vector Filter Factor: 0
+    Property Stream Arrow: 0
+  EndMesh: 43
+  Mesh: 44
+  State: Off
+    Name: "VolumeMesh 45"
+    IdSet: 45
+    Color Type: 0
+    Color Ambient: 0.166667 0.0833333 0 0.5
+    Color Diffuse: 0.5 0.25 0 0.5
+    Color Specular: 1 1 1 0.5
+    Color Shininess: 0.5
+    Property Massive: 1
+    Property Transparent: 0
+    Property Style: 1048606
+    Property Edge Width: 1
+    Property Vector Filter Factor: 0
+    Property Stream Arrow: 0
+  EndMesh: 44
+  Mesh: 45
+  State: Off
+    Name: "VolumeMesh 46"
+    IdSet: 46
+    Color Type: 0
+    Color Ambient: 0 0 0.166667 0.5
+    Color Diffuse: 0 0 0.5 0.5
+    Color Specular: 1 1 1 0.5
+    Color Shininess: 0.5
+    Property Massive: 1
+    Property Transparent: 0
+    Property Style: 1048606
+    Property Edge Width: 1
+    Property Vector Filter Factor: 0
+    Property Stream Arrow: 0
+  EndMesh: 45
+  Mesh: 46
+  State: Off
+    Name: "VolumeMesh 47"
+    IdSet: 47
+    Color Type: 0
+    Color Ambient: 0.0833333 0.166667 0 0.5
+    Color Diffuse: 0.25 0.5 0 0.5
+    Color Specular: 1 1 1 0.5
+    Color Shininess: 0.5
+    Property Massive: 1
+    Property Transparent: 0
+    Property Style: 1048606
+    Property Edge Width: 1
+    Property Vector Filter Factor: 0
+    Property Stream Arrow: 0
+  EndMesh: 46
+  Mesh: 47
+  State: Off
+    Name: "VolumeMesh 48"
+    IdSet: 48
+    Color Type: 0
+    Color Ambient: 0.166667 0 0.166667 0.5
+    Color Diffuse: 0.5 0 0.5 0.5
+    Color Specular: 1 1 1 0.5
+    Color Shininess: 0.5
+    Property Massive: 1
+    Property Transparent: 0
+    Property Style: 1048606
+    Property Edge Width: 1
+    Property Vector Filter Factor: 0
+    Property Stream Arrow: 0
+  EndMesh: 47
+  Mesh: 48
+  State: Off
+    Name: "VolumeMesh 49"
+    IdSet: 49
+    Color Type: 0
+    Color Ambient: 0 0.166667 0.0833333 0.5
+    Color Diffuse: 0 0.5 0.25 0.5
+    Color Specular: 1 1 1 0.5
+    Color Shininess: 0.5
+    Property Massive: 1
+    Property Transparent: 0
+    Property Style: 1048606
+    Property Edge Width: 1
+    Property Vector Filter Factor: 0
+    Property Stream Arrow: 0
+  EndMesh: 48
+  Set: 0
+  State: Off
+    Name: "SurfaceMesh 50"
+    IdSet: 50
+    Color Type: 0
+    Color Ambient: 0.166667 0 0 0.5
+    Color Diffuse: 0.5 0 0 0.5
+    Color Specular: 1 1 1 0.5
+    Color Shininess: 0.5
+    Property Massive: 1
+    Property Transparent: 0
+    Property Style: 1048606
+    Property Edge Width: 1
+    Property Vector Filter Factor: 0
+    Property Stream Arrow: 0
+  EndSet: 0
+  Set: 1
+  State: Off
+    Name: "SurfaceMesh 51"
+    IdSet: 51
+    Color Type: 0
+    Color Ambient: 0 0.0833333 0.166667 0.5
+    Color Diffuse: 0 0.25 0.5 0.5
+    Color Specular: 1 1 1 0.5
+    Color Shininess: 0.5
+    Property Massive: 1
+    Property Transparent: 0
+    Property Style: 1048606
+    Property Edge Width: 1
+    Property Vector Filter Factor: 0
+    Property Stream Arrow: 0
+  EndSet: 1
+EndSingleMesh
+  Post_Prefs_Vector_Size: 0 32 32 32
+  ResultView: {Id 6} {Sh Min Max} TIME_ANALYSIS 4.0 STRESS Si-STRESS 0.0 4 0
+EndPostState
+

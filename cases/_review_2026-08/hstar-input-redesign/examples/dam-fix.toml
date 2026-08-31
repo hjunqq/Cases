@@ -1,0 +1,57 @@
+# 同一个坝，固定边界 + 基底加速度。
+#
+# 与 dam-vie.toml 的唯一差别在 [analysis.dynamic.boundary] 一段。
+# 这正是和类型的价值：两种边界的字段集不重叠，写错一种就写不出来。
+
+[case]
+name   = "gravity-dam-100m-fix"
+solver = "hstar-yl@26ffc9b"
+
+[mesh]
+source = "gmsh:dam-100m.geo"
+
+[material.concrete]
+model = "elastic"; density = 2400; E = 2.5e10; nu = 0.2
+[material.rock]
+model = "elastic"; density = 2600; E = 1.0e10; nu = 0.25
+
+[[group]]
+name = "foundation"; material = "rock";     element = "Q4"; region = "rock"
+[[group]]
+name = "dam";        material = "concrete"; element = "Q4"; region = "dam"
+
+[analysis]
+kind = "dynamic"
+
+[analysis.dynamic]
+steps   = 1000
+dt      = 0.02
+mass    = "consistent"
+damping = { alpha = 0.0, beta = 0.0 }
+
+# ── 固定边界分支 ──────────────────────────────────────────────
+[analysis.dynamic.boundary]
+kind = "fixed"
+
+[analysis.dynamic.boundary.excitation]
+# ← earthquake_curve。槽位即方向,这里用方向名而不是数组下标。
+#   重力坝由水平激励控制,所以 x 是默认;竖向按需另加 y。
+acceleration = { x = "earthquake_h.dat" }
+#
+# 本分支下 `incident` / `absorbing` 字段【不存在】。
+
+[[constraint]]
+where = "y_min";            fix = ["ux", "uy"]
+[[constraint]]
+where = ["x_min", "x_max"]; fix = ["ux"]
+
+[[load]]
+kind = "gravity"; g = 9.81; direction = [0, -1]
+groups = ["foundation", "dam"]
+stage  = "static_preload"
+
+# ── 库水：附加质量法（不建流体单元时的性价比最优解）──────────
+[analysis.dynamic.added_mass]
+model       = "westergaard"        # ← Icaddmass
+water_level = 95.0
+face        = { group = "dam", where = "upstream" }

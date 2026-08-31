@@ -1,0 +1,5 @@
+ mesh dimension  3   elemtype Linear  nnode  2
+ coordinates
+ end coordinates
+ elements
+ end elements

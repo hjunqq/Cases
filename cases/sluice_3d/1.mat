@@ -1,0 +1,128 @@
+material property curves 
+ 0
+ 10           ! lines for comments
+'MATERIAL PROPERTIES-INPUT FOR 1 TO NMATS'
+'NAME FOR MATERIAL---FOR COMMENTS'
+'FIRST:NAME---MECHANICAL, TEMPERATURE, ETC'
+'FOR MECHNICAL, SECOND:PHASE---SOLID, FLUID, AIR OR OIL '
+'               NUMBER OF PHASE'
+'FOR SOLID: MATERIAL(CLASSICALEP,CAMCLAY,ETC),density,ratio,thick,e,nu'
+'FOR MATERISL: CLASSICALEP:CRITERIA(TC,VM,DP,MC),sigm0,hardening'
+'                FOR MC OR DP: FRICT_ANGLE, DILAN_ANGLE'
+'              CAMCLAY    :Pc, lamda, Mg, Mf, D0, D1,gaama'
+'FOR FLUID: (1) density,ratio,bulkw (2)permiability(1:ndimn)'  
+
+material        1     !地基6
+'MECHANICAL'  ,   'Solid'  ,  1   NSSoil  
+   1		   ! NUMBER OF PHASES  
+   'SOLID'  
+ 'ELASTIC_ISOTROPIC',1800,0.5,1,2.77e8,0.363,0.85e-5,0,0,0 
+ 0  0
+material        2     !地基5
+'MECHANICAL'  ,   'Solid'  ,  2   NSSoil  
+   1		   ! NUMBER OF PHASES  
+   'SOLID'  
+ 'ELASTIC_ISOTROPIC',1800,0.5,1,3.44e8,0.342,0.85e-5,0,0,0 
+ 0  0
+material        3     !地基4
+'MECHANICAL'  ,   'Solid'  ,  3   NSSoil  
+   1		   ! NUMBER OF PHASES  
+   'SOLID'  
+ 'ELASTIC_ISOTROPIC',1810,0.49,1,2.998e8,0.357,0.85e-5,0,0,0 
+ 0  0
+material        4     !地基3
+'MECHANICAL'  ,   'Solid'  ,  4   NSSoil  
+   1		   ! NUMBER OF PHASES  
+   'SOLID'  
+ 'ELASTIC_ISOTROPIC',1720,0.56,1,1.313e8,0.406,0.85e-5,0,0,0 
+ 0  0
+material        5     !地基2
+'MECHANICAL'  ,   'Solid'  ,  5   NSSoil  
+   1		   ! NUMBER OF PHASES  
+   'SOLID'  
+ 'ELASTIC_ISOTROPIC',1660,0.59,1,0.908e8,0.421,0.85e-5,0,0,0 
+ 0  0
+material        6     !地基1
+'MECHANICAL'  ,   'Solid'  ,  6   NSSoil  
+   1		   ! NUMBER OF PHASES  
+   'SOLID'  
+ 'ELASTIC_ISOTROPIC',1730,0.55,1,0.951e8,0.406,0.85e-5,0,0,0 
+ 0  0
+material        7     !搅拌桩
+'MECHANICAL'  ,   'Solid'  ,  7   NSSoil  
+   1		   ! NUMBER OF PHASES  
+   'SOLID'  
+ 'ELASTIC_ISOTROPIC',1730,0.55,1,0.951e8,0.406,0.85e-5,0,0,0 
+ 0  0
+material        8     !C40钢筋砼
+'MECHANICAL'  ,   'Solid'  , 8   NSSoil  
+   1		   ! NUMBER OF PHASES    
+   'SOLID'  
+ 'ELASTIC_ISOTROPIC',2500,0.3,1,3.25e10,0.167,0.85e-5,0,0,0
+ 0  0
+material        9      !C30钢筋砼
+'MECHANICAL'  ,   'Solid'  ,  9   NSSoil  
+   1		   ! NUMBER OF PHASES  
+   'SOLID'  
+ 'ELASTIC_ISOTROPIC',2450,0.3,1,3e10,0.167,0.85e-5,0,0,0
+ 0  0
+ material  15 
+   'GEOMETRY','几何特性', 9   
+   1. .16667 .08333 .08333              props(imat)%geometry%aera,J,Iy,Iz
+material        10      !C20素砼
+'MECHANICAL'  ,   'Solid'  ,  10   NSSoil  
+   1		   ! NUMBER OF PHASES  
+   'SOLID'  
+ 'ELASTIC_ISOTROPIC',2370,0.3,1,2.55e10,0.167,0.85e-5,0,0,0
+ 0  0
+mmaterial        11     !粗砂
+'MECHANICAL'  ,   'Solid'  ,  11   NSSoil  
+   1		   ! NUMBER OF PHASES  
+   'SOLID'  
+ 'ELASTIC_ISOTROPIC',2270,0.3,1,1.2e10,0.167,0.85e-5,0,0,0
+ 0  0
+material        12      !碎石
+'MECHANICAL'  ,   'Solid'  ,  12   NSSoil  
+   1		   ! NUMBER OF PHASES  
+   'SOLID'  
+ 'ELASTIC_ISOTROPIC',2200,0.3,1,4.5e7,0.35,0.85e-5,0,0,0
+ 0  0
+material        13      !C20灌砌块石
+'MECHANICAL'  ,   'Solid'  ,  13   NSSoil  
+   1		   ! NUMBER OF PHASES  
+   'SOLID'  
+ 'ELASTIC_ISOTROPIC',2200,0.3,1,2.55e10,0.167,0.85e-5,0,0,0
+  0  0
+material        14     !回填土
+'MECHANICAL'  ,   'Solid'  ,  14   NSSoil  
+   1		   ! NUMBER OF PHASES  
+   'SOLID'  
+ 'ELASTIC_ISOTROPIC',1930,0.42,1,1.06e9,0.287,0.85e-5,0,0,0 
+ 0  0
+material        15      !C20素砼
+'MECHANICAL'  ,   'Solid'  ,  15   NSSoil  
+   1		   ! NUMBER OF PHASES  
+   'SOLID'  
+ 'ELASTIC_ISOTROPIC',2370,0.3,1,2.55e10,0.167,0.85e-5,0,0,0
+ 0  0
+
+
+
+
+material        15     !接触面
+'MECHANICAL'  ,   'Solid'  ,  15   NSSoil  
+   1		   ! NUMBER OF PHASES  
+   'SOLID'  
+ 'CLASSICALEP',1730,0.55,1,0.951e8,0.406,0.85e-5,0,0,0
+ 0  0
+ MCJOINT,200.0,0.0   !塑性准则、粘聚力、硬化参数
+ 0.   0.						!摩擦角、膨胀角
+ 0								!粘聚力随哪条时间线变化。如果粘聚力不变化，填0
+ 0
+ 0  0							!分别表示磨擦角和膨胀角随哪条时间线变化，不变化时填0
+ 0.0  0  0.  0    !分别表示ft、sigmat及ft、sigmat随哪条时间线变化，不变化时填0
+
+
+    5116  8393  10175   !如果ipd=1，给出确定局部坐标x（二维只要x方向)与z方向(三维)的节点号
+
+       

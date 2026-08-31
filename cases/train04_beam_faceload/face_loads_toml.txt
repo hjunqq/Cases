@@ -1,0 +1,241 @@
+# 40 face loads - uniform pressure 100 kPa on top face
+
+[[loads.distributed]]
+type = "pressure"
+nodes = [4, 1, 3, 6]
+pressures = [-100000.0, -100000.0, -100000.0, -100000.0]
+curve = 1
+
+[[loads.distributed]]
+type = "pressure"
+nodes = [9, 4, 6, 15]
+pressures = [-100000.0, -100000.0, -100000.0, -100000.0]
+curve = 1
+
+[[loads.distributed]]
+type = "pressure"
+nodes = [26, 9, 15, 31]
+pressures = [-100000.0, -100000.0, -100000.0, -100000.0]
+curve = 1
+
+[[loads.distributed]]
+type = "pressure"
+nodes = [44, 26, 31, 49]
+pressures = [-100000.0, -100000.0, -100000.0, -100000.0]
+curve = 1
+
+[[loads.distributed]]
+type = "pressure"
+nodes = [67, 44, 49, 70]
+pressures = [-100000.0, -100000.0, -100000.0, -100000.0]
+curve = 1
+
+[[loads.distributed]]
+type = "pressure"
+nodes = [87, 67, 70, 89]
+pressures = [-100000.0, -100000.0, -100000.0, -100000.0]
+curve = 1
+
+[[loads.distributed]]
+type = "pressure"
+nodes = [103, 87, 89, 104]
+pressures = [-100000.0, -100000.0, -100000.0, -100000.0]
+curve = 1
+
+[[loads.distributed]]
+type = "pressure"
+nodes = [118, 103, 104, 121]
+pressures = [-100000.0, -100000.0, -100000.0, -100000.0]
+curve = 1
+
+[[loads.distributed]]
+type = "pressure"
+nodes = [134, 118, 121, 136]
+pressures = [-100000.0, -100000.0, -100000.0, -100000.0]
+curve = 1
+
+[[loads.distributed]]
+type = "pressure"
+nodes = [150, 134, 136, 152]
+pressures = [-100000.0, -100000.0, -100000.0, -100000.0]
+curve = 1
+
+[[loads.distributed]]
+type = "pressure"
+nodes = [166, 150, 152, 167]
+pressures = [-100000.0, -100000.0, -100000.0, -100000.0]
+curve = 1
+
+[[loads.distributed]]
+type = "pressure"
+nodes = [181, 166, 167, 183]
+pressures = [-100000.0, -100000.0, -100000.0, -100000.0]
+curve = 1
+
+[[loads.distributed]]
+type = "pressure"
+nodes = [196, 181, 183, 197]
+pressures = [-100000.0, -100000.0, -100000.0, -100000.0]
+curve = 1
+
+[[loads.distributed]]
+type = "pressure"
+nodes = [211, 196, 197, 212]
+pressures = [-100000.0, -100000.0, -100000.0, -100000.0]
+curve = 1
+
+[[loads.distributed]]
+type = "pressure"
+nodes = [226, 211, 212, 228]
+pressures = [-100000.0, -100000.0, -100000.0, -100000.0]
+curve = 1
+
+[[loads.distributed]]
+type = "pressure"
+nodes = [241, 226, 228, 243]
+pressures = [-100000.0, -100000.0, -100000.0, -100000.0]
+curve = 1
+
+[[loads.distributed]]
+type = "pressure"
+nodes = [256, 241, 243, 257]
+pressures = [-100000.0, -100000.0, -100000.0, -100000.0]
+curve = 1
+
+[[loads.distributed]]
+type = "pressure"
+nodes = [271, 256, 257, 273]
+pressures = [-100000.0, -100000.0, -100000.0, -100000.0]
+curve = 1
+
+[[loads.distributed]]
+type = "pressure"
+nodes = [286, 271, 273, 288]
+pressures = [-100000.0, -100000.0, -100000.0, -100000.0]
+curve = 1
+
+[[loads.distributed]]
+type = "pressure"
+nodes = [301, 286, 288, 303]
+pressures = [-100000.0, -100000.0, -100000.0, -100000.0]
+curve = 1
+
+[[loads.distributed]]
+type = "pressure"
+nodes = [6, 3, 11, 16]
+pressures = [-100000.0, -100000.0, -100000.0, -100000.0]
+curve = 1
+
+[[loads.distributed]]
+type = "pressure"
+nodes = [15, 6, 16, 23]
+pressures = [-100000.0, -100000.0, -100000.0, -100000.0]
+curve = 1
+
+[[loads.distributed]]
+type = "pressure"
+nodes = [31, 15, 23, 36]
+pressures = [-100000.0, -100000.0, -100000.0, -100000.0]
+curve = 1
+
+[[loads.distributed]]
+type = "pressure"
+nodes = [49, 31, 36, 58]
+pressures = [-100000.0, -100000.0, -100000.0, -100000.0]
+curve = 1
+
+[[loads.distributed]]
+type = "pressure"
+nodes = [70, 49, 58, 77]
+pressures = [-100000.0, -100000.0, -100000.0, -100000.0]
+curve = 1
+
+[[loads.distributed]]
+type = "pressure"
+nodes = [89, 70, 77, 93]
+pressures = [-100000.0, -100000.0, -100000.0, -100000.0]
+curve = 1
+
+[[loads.distributed]]
+type = "pressure"
+nodes = [104, 89, 93, 108]
+pressures = [-100000.0, -100000.0, -100000.0, -100000.0]
+curve = 1
+
+[[loads.distributed]]
+type = "pressure"
+nodes = [121, 104, 108, 125]
+pressures = [-100000.0, -100000.0, -100000.0, -100000.0]
+curve = 1
+
+[[loads.distributed]]
+type = "pressure"
+nodes = [136, 121, 125, 141]
+pressures = [-100000.0, -100000.0, -100000.0, -100000.0]
+curve = 1
+
+[[loads.distributed]]
+type = "pressure"
+nodes = [152, 136, 141, 155]
+pressures = [-100000.0, -100000.0, -100000.0, -100000.0]
+curve = 1
+
+[[loads.distributed]]
+type = "pressure"
+nodes = [167, 152, 155, 171]
+pressures = [-100000.0, -100000.0, -100000.0, -100000.0]
+curve = 1
+
+[[loads.distributed]]
+type = "pressure"
+nodes = [183, 167, 171, 185]
+pressures = [-100000.0, -100000.0, -100000.0, -100000.0]
+curve = 1
+
+[[loads.distributed]]
+type = "pressure"
+nodes = [197, 183, 185, 200]
+pressures = [-100000.0, -100000.0, -100000.0, -100000.0]
+curve = 1
+
+[[loads.distributed]]
+type = "pressure"
+nodes = [212, 197, 200, 216]
+pressures = [-100000.0, -100000.0, -100000.0, -100000.0]
+curve = 1
+
+[[loads.distributed]]
+type = "pressure"
+nodes = [228, 212, 216, 231]
+pressures = [-100000.0, -100000.0, -100000.0, -100000.0]
+curve = 1
+
+[[loads.distributed]]
+type = "pressure"
+nodes = [243, 228, 231, 245]
+pressures = [-100000.0, -100000.0, -100000.0, -100000.0]
+curve = 1
+
+[[loads.distributed]]
+type = "pressure"
+nodes = [257, 243, 245, 260]
+pressures = [-100000.0, -100000.0, -100000.0, -100000.0]
+curve = 1
+
+[[loads.distributed]]
+type = "pressure"
+nodes = [273, 257, 260, 276]
+pressures = [-100000.0, -100000.0, -100000.0, -100000.0]
+curve = 1
+
+[[loads.distributed]]
+type = "pressure"
+nodes = [288, 273, 276, 290]
+pressures = [-100000.0, -100000.0, -100000.0, -100000.0]
+curve = 1
+
+[[loads.distributed]]
+type = "pressure"
+nodes = [303, 288, 290, 306]
+pressures = [-100000.0, -100000.0, -100000.0, -100000.0]
+curve = 1

@@ -1,0 +1,226 @@
+ time: 14:19:30
+ time: 14:19:30
+ Input the problem name?
+ NPOIN                                                                          
+  
+        2543        2543        2430           2           1           5
+           0 GIDR                  0.000000000000000E+000           0
+           0           0           0           0       99999
+ NINIT                                                                          
+  
+           0           0           0           1           0           0
+           0           0           0           0           0 
+ FIX                                                          0           0
+           0           0           0           0           0
+ outinpunit=          37 outindunit=          54
+ TYPE_PROBLEM                                                                   
+  
+ F                                                 
+ PARDISO                                           
+ LOAD                                                         5           0
+           0           0
+ type_layer1                                                                    
+  
+ NMASS                                                                          
+  
+           1           1           1           1           0           0
+           1           0           1           0           0
+ nfreeflownode                                                                  
+  
+ NTSMAT                                                                         
+  
+         999         999           0           0           0
+ beeta1,beeta2,theta1=  0.500000000000000       0.250000000000000     
+   1.00000000000000     
+ equvs_process(1:ngroup)                                                        
+  
+ appear_level(1:ngroup)                                                         
+  
+ APPEAR_PROCESS                                                                 
+  
+ appear_process=           0           0           1           0           0
+ MATNO_PROCESS                                                                  
+  
+ iblks=           0 ngroup=           5 matno=           1           1
+           1           1           1
+ force_process=           0           0           0           0           0
+ uinitial=           0
+ 1-ILINKS(I0                                                                    
+  
+ 1-tLINKS(I0                                                                    
+  
+ text1=
+ 1-NGROUP--GROUP                                                                
+  
+ (3)                                                                            
+  
+ igroup=           1
+ name=Q4        
+ igroup=           2
+ name=Q4        
+ igroup=           3
+ name=Q4        
+ igroup=           4
+ name=Q4        
+ igroup=           5
+ name=Q4        
+ tne=        2430
+ text_tension_joint=
+ tension_joint                                                                  
+  
+ text_tension_contact=
+ contact_joint                                                                  
+  
+ ground_inf=           0 /100=           0
+ nblks=           1
+ Input runblks, =?
+ time: 14:19:30
+ MATERIAL                                                                       
+  
+ NAME                                                                           
+  
+ FIRST:NAME---MECHANICAL                                                        
+  
+ FOR                                                                            
+  
+ NUMBER                                                                         
+  
+ FOR                                                                            
+  
+ FOR                                                                            
+  
+ FOR                                                                            
+  
+ CAMCLAY                                                                        
+  
+ FOR                                                                            
+  
+ jmat=           1
+ MECHANICAL                    SOLID                                    1
+ ELASTIC_ISOTROPIC                1000.00000000000        1.00000000000000     
+   1.00000000000000        100000.000000000       0.300000000000000     
+  1.000000000000000E-005           0           0           0
+ density,ratio,bulkw,c=   1000.00000000000        1.00000000000000     
+   2200000000.00000       6.951367649062636E-310
+ per=  1.000000000000000E-005  1.000000000000000E-005
+ ngaps                                                                          
+  
+ ngaps=           0
+ nrcsteel                                                                       
+  
+ nrcsteel=           0
+ nwcpipe                                                                        
+  
+ nwcpipe=           0
+ nifsgroup 
+ nifsgroup=           0
+ nabsfgroup
+ nabsfgroup=           0
+ nabssgroup
+ nabssgroup=           0
+ ifsnedge                                                                       
+                      
+ ifsnedge=           0
+ lblks=           0  blks_new=           1
+ lincs=           0  nincs=           0
+ lblks=           0  blks_new=           1
+ Bparameter=           0
+ lblks=           0 lincs=           0 ttime=  0.000000000000000E+000
+ ntime=           2 LINEAR                         0           2
+ ok waterlevel
+ nplgroup=           0
+ nedge=           0
+ iblks=           1 lineload=           9
+ iblks=           1
+ time: 14:19:30
+ a1
+ ifixset=           1 type_abc=
+ FIX                                               
+ ifixset=           2 type_abc=
+ FIX                                               
+ outind=           0
+ edge_load_group     
+ edge_load_group=           0 delgroup=           0
+ gray=  0.000000000000000E+000  0.000000000000000E+000  -1.00000000000000     
+  0.000000000000000E+000  -1.00000000000000     
+ tcurv=           1           1           1           1           1
+ ecwpipe=           0 iblks=           1 lblks+1=           1
+ ecwpipe=           0 iblks=           1 lblks+1=           1
+ surface   
+ ntedge=           0
+ algo_pipe=
+ npipe,algo_pipe=           0           3
+ linet=           8
+ time: 14:19:30
+ mtype                           
+          -2           4           0
+ isdefault                       
+           0
+ time: 14:19:30
+ time: 14:19:30
+   time depend     iincs=           1 nincs=           1
+ time: 14:19:30
+ iblks=           1 iincs=           1 istep=           1
+ maxval(result_zero)=  0.000000000000000E+000
+ outinp=           0
+ iiter=           1
+Begin forming various matrix       at 2026-03-29 14:19:30 
+ ktsmat=           1
+Begin assemble golbal matrix       at 2026-03-29 14:19:30 
+ ntelgroup=           0
+Begin factorize global matrix      at 2026-03-29 14:19:30 
+ Reordering completed ... 
+ Factorization completed ... 
+Begin solution global equation     at 2026-03-29 14:19:30 
+                     istep=           1 iiter=           1
+                     conver_load check
+ resid=   309798.020249077      retot=   323543.548017815     
+ ratio1=  0.978527301389581      ratio2=  0.805656665882829     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ iiter=           2
+Begin forming various matrix       at 2026-03-29 14:19:30 
+ ktsmat=           0
+ ntelgroup=           0
+Begin solution global equation     at 2026-03-29 14:19:30 
+                     istep=           1 iiter=           2
+                     conver_load check
+ resid=   309180.625516877      retot=   322936.731852246     
+ ratio1=  0.978469770486483      ratio2=  0.805563193100719     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ iiter=           3
+Begin forming various matrix       at 2026-03-29 14:19:30 
+ ktsmat=           0
+ ntelgroup=           0
+Begin solution global equation     at 2026-03-29 14:19:30 
+                     istep=           1 iiter=           3
+                     conver_load check
+ resid=   308564.461319936      retot=   322331.068262000     
+ ratio1=  0.978412221211368      ratio2=  0.805469701262596     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ iiter=           4
+Begin forming various matrix       at 2026-03-29 14:19:30 
+ ktsmat=           0
+ ntelgroup=           0
+Begin solution global equation     at 2026-03-29 14:19:30 
+                     istep=           1 iiter=           4
+                     conver_load check
+ resid=   307949.525205494      retot=   321726.555037314     
+ ratio1=  0.978354653558582      ratio2=  0.805376190367994     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ iiter=           5
+Begin forming various matrix       at 2026-03-29 14:19:30 
+ ktsmat=           0
+ ntelgroup=           0
+Begin solution global equation     at 2026-03-29 14:19:30 
+                     istep=           1 iiter=           5
+                     conver_load check
+ resid=   307335.814725682      retot=   321123.189972690     
+ ratio1=  0.978297067522473      ratio2=  0.805282660416447     
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           1
+ ***********RESTART FILE IS UPDATED!*******
+ time: 14:19:30

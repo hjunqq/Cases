@@ -1,0 +1,379 @@
+# ============================================================================
+# HSTAR gravdam_static_2block — Diagnostic Triplets
+# ============================================================================
+# 13 triplets. Sources:
+#   dt_hstar_001..007  <- fem-chat/docs/references/error-recovery.md (7 Patterns)
+#   dt_hstar_008..009  <- same file (results/workspace) + benchmark-catalog.md
+#   dt_hstar_010..011  <- unit hazards, derived while writing dag.yaml inputs[]
+#   dt_hstar_012..013  <- docs/capability-inventory.md silent-defect audit
+#   dt_hstar_005, 014  <- NEW, found while building this package (see trial report)
+#
+# Schema follows KISS models/ADCIRC/diagnostics/triplets.yaml exactly.
+# severity: silent | degraded | fatal
+# ============================================================================
+
+# --- Runtime / environment ---
+
+- id: dt_hstar_001
+  stage: s4_solve
+  failure_domain: runtime_environment
+  symptom:
+    description: "The solve aborts immediately; run.log or stderr reports a missing MKL shared library."
+    error_pattern: "libmkl_intel_lp64\\.so\\.2.*not found|error while loading shared libraries"
+    detection_method: log_pattern
+  diagnosis:
+    root_cause: "The HSTAR binary was spawned directly, bypassing Intel oneAPI path injection."
+    explanation: >
+      The binary is linked against MKL .so.2 sonames. The /opt/intel/oneapi/mkl/latest
+      symlink has rolled forward to 2026.x releases that no longer ship .so.2, so a
+      static LD_LIBRARY_PATH is not a solution either. intel_runtime.py scans
+      /opt/intel/oneapi/{compiler,mkl}/<ver>/lib(/intel64) for a directory that actually
+      contains the required sonames, and run_pipeline.py injects the result into the
+      child environment. Calling ./hstar yourself skips all of that.
+    affected_components: [run_pipeline.py, intel_runtime.py, hstar]
+  remedy:
+    action: "Launch via quick_analysis.py or run_pipeline.py — never ./hstar."
+    tool_to_run: "fem-chat/skills/quick_analysis.py"
+    manual_steps:
+      - "python3 fem-chat/skills/intel_runtime.py -v   # confirm discovery works at all"
+      - "Escape hatch only if you must call the binary yourself: export LD_LIBRARY_PATH=$(python3 -c 'import sys;sys.path.insert(0,\"/home/huijun/HSTAR_Next/fem-chat/skills\");from intel_runtime import get_intel_paths;print(\":\".join(get_intel_paths()))'):$LD_LIBRARY_PATH"
+    prevention: "preflight_check.py check `mkl_runtime` resolves the paths and asserts the sonames exist."
+  severity: fatal
+  cross_references: []
+
+# --- Load semantics (highest priority: silent) ---
+
+- id: dt_hstar_004
+  stage: s2_config_assembly
+  failure_domain: geometry_semantic
+  symptom:
+    description: "Full reservoir, yet the crest displaces UPSTREAM (-x). Magnitudes look reasonable; nothing errors."
+    error_pattern: ""
+    detection_method: value_comparison
+  diagnosis:
+    root_cause: "Water-pressure edges auto-detected as the global x_min face, which in a dam+foundation mesh is the FOUNDATION's left boundary, not the dam's upstream face."
+    explanation: >
+      The conforming mesh extends the foundation ~1.5H beyond each side of the dam.
+      Its leftmost vertical column of element faces therefore sits far upstream of the
+      dam heel, and the outward normal there points -x. Loading it pushes the whole
+      block downstream-to-upstream, or loads a face that carries no dam at all.
+      gen_gravdam.py writes the correct, correctly-oriented edge list (n1->n2 normal
+      pointing +x into the dam) to gravdam_meta.json for exactly this reason.
+    affected_components: [gravdam_meta.json, run_pipeline.py, config.water_pressure]
+  remedy:
+    action: "Set water_pressure.use_meta_edges: true (or paste upstream_face_edges into edges_list)."
+    tool_to_run: null
+    manual_steps:
+      - "Confirm run.log contains 'Using N dam upstream-face edges from gravdam_meta.json'"
+      - "Check the sign: max ux in block 2 must be > 0"
+    prevention: "run_and_score.py check `crest_downstream` fails the run when max ux <= 0."
+  severity: silent
+  cross_references: [dt_hstar_005]
+
+- id: dt_hstar_005
+  stage: s3_deck_generation
+  failure_domain: load_dropped
+  symptom:
+    description: "The run completes cleanly and the dam settles, but there is no water load at all. Displacements are pure self-weight: crest ux is near zero or slightly negative (Poisson), uy is negative."
+    error_pattern: "WARNING: use_meta_edges set but gravdam_meta.json not found"
+    detection_method: log_pattern
+  diagnosis:
+    root_cause: "use_meta_edges: true with gravdam_meta.json absent from the job dir."
+    explanation: >
+      run_pipeline.py:283-292 resolves use_meta_edges by reading gravdam_meta.json.
+      When the file is missing it prints a single WARNING line, sets edges_list to
+      whatever was already there (normally nothing), and continues. The generator then
+      writes a 1.LOA with no face loads. The solve succeeds, physics_gate passes
+      (values are finite and non-zero, because gravity is still there), and the
+      per-block displacement summary looks like a plausible dam result.
+      This is the most dangerous failure in the family: every automated check passes.
+      Copying a job dir without gravdam_meta.json, or generating the mesh with a
+      different tool, both trigger it.
+    affected_components: [run_pipeline.py, generator.py, 1.LOA]
+  remedy:
+    action: "Ensure gravdam_meta.json sits in the job dir next to 1.cor/1.ele."
+    tool_to_run: "fem-chat/skills/gen_gravdam.py"
+    manual_steps:
+      - "ls <job_dir>/gravdam_meta.json"
+      - "grep -c 'upstream-face edges' <job_dir>/run.log   # must be 1, with N>0"
+      - "grep -c . <job_dir>/1.LOA   # a water-loaded deck has face-load rows"
+    prevention: >
+      preflight_check.py check `gravdam_meta` (fails when the mesh is present but the
+      meta file is not) AND run_and_score.py check `water_edges_applied`, which parses
+      N out of run.log and fails on N==0.
+  severity: silent
+  cross_references: [dt_hstar_004]
+
+- id: dt_hstar_006
+  stage: s1_mesh_generation
+  failure_domain: material_assignment_semantic
+  symptom:
+    description: "Displacement and stress fields are plausible but the dam looks too soft / the foundation too stiff (or vice versa). Settlement is off by roughly the E ratio."
+    error_pattern: ""
+    detection_method: value_comparison
+  diagnosis:
+    root_cause: "Element group 1 is the dam body instead of the foundation, so materials[0] (rock) is assigned to the concrete and materials[1] (concrete) to the rock."
+    explanation: >
+      The mapping from mesh element groups to the config's materials array is
+      POSITIONAL: groups[i].matno indexes materials by id, and groups[] is filled
+      from the mesh group order by quick_analysis.py's __MESH__ auto-fill. The
+      template hard-codes groups[0]=Foundation matno=1, groups[1]=Dam matno=2.
+      Any mesh whose group 1 is the dam inverts the assignment with no diagnostic.
+      This happened for real and was fixed across the skills, the train01/02
+      baselines and the LangGraph gen_gravdam capability.
+    affected_components: [gen_gravdam.py, quick_analysis.py, 1.ele, 1.mat]
+  remedy:
+    action: "Regenerate the mesh with gen_gravdam.py (group1=foundation, group2=dam), or swap the materials array."
+    tool_to_run: "fem-chat/skills/inspect_mesh.py"
+    manual_steps:
+      - "python3 fem-chat/skills/inspect_mesh.py <job_dir>   # read the group element counts"
+      - "The foundation group must be the LARGER one and must contain elements with y<0"
+    prevention: "run_and_score.py check `group_order` compares group-1 centroid y against group-2's; foundation must be lower."
+  severity: silent
+  cross_references: []
+
+# --- Control semantics ---
+
+- id: dt_hstar_003
+  stage: s2_config_assembly
+  failure_domain: control_semantic
+  symptom:
+    description: "Results do not answer the question asked — no modal frequencies, or a static field where a time history was expected."
+    error_pattern: ""
+    detection_method: value_comparison
+  diagnosis:
+    root_cause: "type_problem left at the copied template's value."
+    explanation: >
+      One character selects the whole analysis: Q=static, E=modal, F=dynamic,
+      S=transient/thermal/seepage. It is Q for static, NOT F — that specific
+      confusion is common enough to be called out in CLAUDE.md. A wrong
+      type_problem does not error; it runs a different, internally consistent
+      analysis. Each type also carries required extras (E needs nstep=1;
+      F needs force_process/earthquake_curve; S needs dof-8 BCs).
+    affected_components: [config.type_problem, 1.glb]
+  remedy:
+    action: "Set type_problem to match the intent and add that type's required extras."
+    tool_to_run: null
+    manual_steps:
+      - "static -> Q, modal -> E (nstep=1), dynamic -> F, transient/thermal/seepage -> S"
+      - "See fem-chat/docs/references/compatibility-matrix.md for the required extras"
+    prevention: "run_and_score.py asserts config.type_problem == 'Q' for this family."
+  severity: silent
+  cross_references: [dt_hstar_002, dt_hstar_009]
+
+- id: dt_hstar_007
+  stage: s2_config_assembly
+  failure_domain: boundary_semantic
+  symptom:
+    description: "The structure is stiffer than it should be — a cantilever behaves fixed-fixed; a uniaxial cube piles damage into a bottom corner with an inflated peak."
+    error_pattern: ""
+    detection_method: value_comparison
+  diagnosis:
+    root_cause: "Boundary preset flags stacked on top of an explicit node_fixes list."
+    explanation: >
+      bottom_fix_uy / sides_fix_ux / bottom_fix_xyz are geometry presets meant for
+      dams and retaining walls, where 'both lateral sides' really are far-field
+      boundaries. On any geometry with explicit supports they add restraints that
+      were never intended, on top of the ones you listed. The union is silently
+      over-constrained.
+    affected_components: [config.boundary, config.node_fixes, fixset rows]
+  remedy:
+    action: "Non-standard geometry: node_fixes ONLY, all presets false. Uniaxial specimen: bottom_uniaxial:true + top_uz."
+    tool_to_run: null
+    manual_steps:
+      - "grep the config for both `boundary` presets and `node_fixes` — they must not coexist"
+      - "See fem-chat/docs/references/loads-and-constraints.md"
+    prevention: "None automated. For THIS family the presets are correct and node_fixes must be absent."
+  severity: silent
+  cross_references: []
+
+# --- Numerical / result integrity ---
+
+- id: dt_hstar_002
+  stage: s4_solve
+  failure_domain: solver_output_location
+  symptom:
+    description: "A type_problem='E' run exits 0 but no 'Mode N: ... Hz' appears anywhere."
+    error_pattern: ""
+    detection_method: file_inspection
+  diagnosis:
+    root_cause: "Modal frequencies are written to 1.chk, NOT 1.flavia.res."
+    explanation: >
+      1.flavia.res has no eigenvalue section at all. HSTAR emits one line per mode
+      into 1.chk as `order= N omega= W freq= F period= P`, parsed by
+      run_pipeline.parse_modal_chk. 1.chk may contain control bytes, so read it with
+      errors='replace' or grep -a. Also check nstep==1 (modal allows one step only).
+      Included here even though this family is static, because the most common way
+      to reach it is copying this deck and changing Q to E.
+    affected_components: [1.chk, run_pipeline.parse_modal_chk]
+  remedy:
+    action: "grep the frequencies out of 1.chk."
+    tool_to_run: null
+    manual_steps:
+      - "grep -aiE 'order=|freq=|period=' <job_dir>/1.chk | head"
+      - "Confirm nstep=1 and type_problem='E'"
+    prevention: "n/a for this family."
+  severity: degraded
+  cross_references: [dt_hstar_003]
+
+- id: dt_hstar_008
+  stage: s5_postprocess
+  failure_domain: workspace_semantic
+  symptom:
+    description: "An earlier analysis's results are gone after running something new."
+    error_pattern: ""
+    detection_method: file_inspection
+  diagnosis:
+    root_cause: "Two analyses were run in the same job dir; the second overwrote 1.flavia.res."
+    explanation: >
+      All HSTAR output filenames are fixed (1.flavia.res, 1.chk, run.log). There is no
+      run id in the name and no overwrite guard. Multi-step studies (static -> modal ->
+      dynamic) must use one case per analysis, so results land in cases/<cid>/results/.
+    affected_components: [1.flavia.res, job dir layout]
+  remedy:
+    action: "One analysis per job dir; use the case mechanism for multi-step studies."
+    tool_to_run: "fem-chat/skills/quick_analysis.py --case-dir"
+    manual_steps:
+      - "See fem-chat/docs/references/cases-and-api.md"
+    prevention: "run_and_score.py refuses to solve when 1.flavia.res already exists (scores the existing one instead)."
+  severity: silent
+  cross_references: []
+
+- id: dt_hstar_009
+  stage: s6_scoring
+  failure_domain: validation_gap
+  symptom:
+    description: "A report claims the run was 'validated against a benchmark', but no analytical or reference comparison was actually performed."
+    error_pattern: "NOT_APPLICABLE"
+    detection_method: file_inspection
+  diagnosis:
+    root_cause: "gravdam_static_2block has NO registered validator (docs/benchmark-catalog.md line 13: `(no validator)`)."
+    explanation: >
+      The repo's validator registry in skills/validate_results.py maps case families to
+      validators. This family is absent. The nearest one, mini_gravdam, is pinned to a
+      mesh fingerprint of npoin=46 / nelem=32 and returns NOT_APPLICABLE on any other
+      mesh — including every mesh gen_gravdam.py produces at realistic resolution.
+      So the only automatic judgement available is harness/gate.py:physics_gate, which
+      by design only rejects crashes, NaN and all-zero fields. Passing it means
+      'not garbage', not 'correct'.
+    affected_components: [validate_results.py, benchmark-catalog.md, harness/gate.py]
+  remedy:
+    action: "Score with physics_gate PLUS the family-specific physical checks in run_and_score.py; state explicitly that no benchmark validator exists."
+    tool_to_run: "run_and_score.py (this package)"
+    manual_steps:
+      - "Do not write 'benchmark PASS' for this family"
+      - "To gain a real validator, promote a run as a golden regression (skills/promote_case.py) or register an analytical check"
+    prevention: "run_and_score.py stamps result.json with validator: null and validation_basis: 'physics_gate + family physical checks'."
+  severity: degraded
+  cross_references: []
+
+# --- Unit conversion ---
+
+- id: dt_hstar_010
+  stage: s2_config_assembly
+  failure_domain: unit_conversion
+  symptom:
+    description: "Displacements are 6 or 9 orders of magnitude too large (metres or kilometres of crest movement). The solve converges normally."
+    error_pattern: ""
+    detection_method: value_comparison
+  diagnosis:
+    root_cause: "Young's modulus given in MPa or GPa instead of Pa."
+    explanation: >
+      HSTAR is unit-agnostic; the deck carries no units. The template's convention is
+      SI throughout: E in Pa (concrete 2.5e10, rock 1.0e10), density in kg/m^3, gravity
+      9.81 m/s^2, coordinates in metres, so displacements come out in metres. Writing
+      E=25000 (MPa) or E=25 (GPa) is dimensionally silent and scales the entire
+      displacement field by 1e6 / 1e9.
+    affected_components: [config.materials, 1.mat]
+  remedy:
+    action: "E in Pa: concrete 2.0e10-3.5e10, rock 5e9-3e10."
+    tool_to_run: null
+    manual_steps:
+      - "Sanity band for an H~100 m concrete gravity dam on rock: crest |u| of order 1-20 mm"
+    prevention: "run_and_score.py check `magnitude_sane` flags block-2 |u| outside 1e-5 .. 1e-1 m."
+  severity: silent
+  cross_references: [dt_hstar_011]
+
+- id: dt_hstar_011
+  stage: s2_config_assembly
+  failure_domain: unit_conversion
+  symptom:
+    description: "The dam is loaded but the reservoir contribution is ~10x too small; crest downstream movement is dominated by nothing in particular."
+    error_pattern: ""
+    detection_method: value_comparison
+  diagnosis:
+    root_cause: "gamma_w set to 1000 (density, kg/m^3) instead of 9810 (unit weight, N/m^3)."
+    explanation: >
+      water_pressure.gamma_w is a UNIT WEIGHT and multiplies depth directly to give a
+      pressure in Pa. The density 1000 kg/m^3 is the same number people reach for, and
+      it is exactly 1/9.81 of the right value. The result is a real but under-loaded
+      dam — the sign checks all pass.
+    affected_components: [config.water_pressure, 1.LOA]
+  remedy:
+    action: "gamma_w = 9810 N/m^3."
+    tool_to_run: null
+    manual_steps:
+      - "Hydrostatic pressure at the heel of a full H=100 m reservoir should be ~9.81e5 Pa"
+    prevention: "run_and_score.py check `gamma_w_unit` flags gamma_w < 5000."
+  severity: silent
+  cross_references: [dt_hstar_010]
+
+# --- Toolchain silent defects (from the capability audit) ---
+
+- id: dt_hstar_012
+  stage: s3_deck_generation
+  failure_domain: element_type_silent_fallback
+  symptom:
+    description: "A tetrahedral, wedge, quadratic or 8-node-2D mesh solves, or crashes in an unrelated place, but is never treated as the element type you supplied."
+    error_pattern: "severe|SIGSEGV"
+    detection_method: file_inspection
+  diagnosis:
+    root_cause: "generator.py elem_info() returns ('Q4', 5, 'Quadrilateral') for every (nnode, ndimn) combination not in its 5-entry table."
+    explanation: >
+      The table covers (2,2)/(2,3)->L2 index 1, (3,2)->T3 index 2, (4,2)->Q4 index 5,
+      (8,3)->B8 index 9. The dict .get() default is the 2D quad. Verified fallthroughs:
+      (4,3) tet, (10,3) quadratic tet, (20,3) B20, (6,3) wedge, (8,2) 2D-8-node.
+      workflow/capability/registry.yaml nevertheless advertises
+      supported_element_types: [quad, tri, tet, hex]. mesh_io.py:388 does recognise
+      H4/H10/B20, which shows this is a single-point omission in elem_info, not a
+      global design choice.
+      FIX NOTE: HSTAR's convention is DEGENERATE elements, not a separate tet index —
+      Fem.f90:17801 change_list handles 'index 5 with 3 distinct nodes' and 'index 9
+      with 6 distinct nodes'. So a tet must be expanded into a degenerate 8-node B8
+      (index 9), not given a new index. Confirm this before changing anything.
+    affected_components: [generator.py elem_info, workflow/capability/registry.yaml, mesh_io.py]
+  remedy:
+    action: "For this family, stay on 2D Q4. Do not feed tet/wedge/quadratic meshes to the generator."
+    tool_to_run: "fem-chat/skills/inspect_mesh.py"
+    manual_steps:
+      - "python3 fem-chat/skills/inspect_mesh.py <job_dir>  # read nnode per element"
+      - "2D family: nnode must be 4 (Q4) or 3 (T3)"
+    prevention: "preflight_check.py check `mesh_element_type` rejects any (nnode,ndimn) outside the 5 real mappings instead of letting it fall through."
+  severity: silent
+  cross_references: [dt_hstar_013]
+
+- id: dt_hstar_013
+  stage: s3_deck_generation
+  failure_domain: material_dead_config
+  symptom:
+    description: "A CAMCLAY material produces a purely linear-elastic response, while PLASTICSTRAIN output is enabled and empty/meaningless."
+    error_pattern: ""
+    detection_method: value_comparison
+  diagnosis:
+    root_cause: "CAMCLAY is listed in generator.py's plastic-material sets (lines 188 and 196) but has no branch in _gen_mat."
+    explanation: >
+      The string appears in the lists that decide gid_ep and has_nonlinear, so the
+      output switches and the nonlinear flags are set as if a critical-state model
+      were in play. _gen_mat then finds no matching branch and falls through to the
+      generic ELASTIC writer. Deck and switches disagree, with no diagnostic.
+      The solver-side material list has ~22 models; the generator writes 9. CAMCLAY
+      is in NEITHER — it is not even a solver material name.
+    affected_components: [generator.py, 1.mat, 1.glb]
+  remedy:
+    action: "Do not use CAMCLAY. For this family use ELASTIC. The string should be removed from generator.py or a real branch added."
+    tool_to_run: null
+    manual_steps:
+      - "Generator-supported materials: ELASTIC, SEEPAGE, HEAT, MC, CLASSICALEP, GOODMAN, CONCRETE, DUNCANCHANG, GEOMETRY"
+    prevention: "preflight_check.py check `material_types_supported` rejects any material type outside that list of 9."
+  severity: silent
+  cross_references: [dt_hstar_012]

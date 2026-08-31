@@ -1,0 +1,93 @@
+ irecover=           0
+ ikind=          15 nr_intrules=           4
+ igroup=           1 tvol=   5464.90667364000     
+ igroup=           1 tne=         460
+ igroup=           2 tvol=   165240.000000000     
+ igroup=           2 tne=        1170
+ igroup=           3 tvol=   360.000000000000     
+ igroup=           3 tne=        1175
+ igroup=           4 tvol=  9.000000000000000E-002
+ igroup=           4 tne=        1176
+ igroup=           5 tvol=  9.000000000000000E-002
+ igroup=           5 tne=        1177
+ igroup=           6 tvol=  9.000000000000000E-002
+ igroup=           6 tne=        1178
+ igroup=           7 tvol=  9.000000000000000E-002
+ igroup=           7 tne=        1179
+ igroup=           8 tvol=  9.000000000000000E-002
+ igroup=           8 tne=        1180
+ igroup=           9 tvol=  9.000000000000000E-002
+ igroup=           9 tne=        1181
+ igroup=          10 tvol=  9.000000000000000E-002
+ igroup=          10 tne=        1182
+ igroup=          11 tvol=  9.000000000000000E-002
+ igroup=          11 tne=        1183
+ igroup=          12 tvol=  9.000000000000000E-002
+ igroup=          12 tne=        1184
+ igroup=          13 tvol=  9.000000000000000E-002
+ igroup=          13 tne=        1185
+ igroup=          14 tvol=  9.000000000000000E-002
+ igroup=          14 tne=        1186
+ igroup=          15 tvol=  9.000000000000000E-002
+ igroup=          15 tne=        1187
+ igroup=          16 tvol=  9.000000000000000E-002
+ igroup=          16 tne=        1188
+ igroup=          17 tvol=  9.000000000000000E-002
+ igroup=          17 tne=        1189
+ igroup=          18 tvol=  9.000000000000000E-002
+ igroup=          18 tne=        1190
+ igroup=          19 tvol=  9.000000000000000E-002
+ igroup=          19 tne=        1191
+ igroup=          20 tvol=  9.000000000000000E-002
+ igroup=          20 tne=        1192
+ igroup=          21 tvol=  9.000000000000000E-002
+ igroup=          21 tne=        1193
+ igroup=          22 tvol=  9.000000000000000E-002
+ igroup=          22 tne=        1194
+ igroup=          23 tvol=  9.000000000000000E-002
+ igroup=          23 tne=        1195
+ ****** ntotv= ******        2576
+ time: 21:12:17
+ in modf_element_lib
+ jgroup=           1 kinit_g=           0
+ jgroup=           2 kinit_g=           0
+ jgroup=           3 kinit_g=           0
+ jgroup=           4 kinit_g=           0
+ jgroup=           5 kinit_g=           0
+ jgroup=           6 kinit_g=           0
+ jgroup=           7 kinit_g=           0
+ jgroup=           8 kinit_g=           0
+ jgroup=           9 kinit_g=           0
+ jgroup=          10 kinit_g=           0
+ jgroup=          11 kinit_g=           0
+ jgroup=          12 kinit_g=           0
+ jgroup=          13 kinit_g=           0
+ jgroup=          14 kinit_g=           0
+ jgroup=          15 kinit_g=           0
+ jgroup=          16 kinit_g=           0
+ jgroup=          17 kinit_g=           0
+ jgroup=          18 kinit_g=           0
+ jgroup=          19 kinit_g=           0
+ jgroup=          20 kinit_g=           0
+ jgroup=          21 kinit_g=           0
+ jgroup=          22 kinit_g=           0
+ jgroup=          23 kinit_g=           0
+ iblks=           1 runblks=          43
+ iblks=           1
+ time: 21:12:17
+ ninit=           0 iblks=           1 restart=           0
+ ikindks=           3
+ time(solve): 21:12:17
+ 单个方程中最大非零元素个数          18
+ Neq=        1526       Iseq(neq)=       13556
+ storage of PARDISO, sstore=       13556
+                                             
+ time(solve_set): 21:12:17
+ time(solve_pcg): 21:12:17
+ Increment step=           1
+ cwater=           1 delgroup=           0
+ force_external***,edge_load_group=           0
+ body force
+ interia force***
+ contact_state********************
+ in predict

@@ -1,0 +1,33 @@
+ material property curves
+  0
+  10
+COMMENT
+COMMENT
+COMMENT
+COMMENT
+COMMENT
+COMMENT
+COMMENT
+COMMENT
+COMMENT
+COMMENT
+ nmats
+  3
+     material_serial         1
+          MECHANICAL           SOLID     1
+  1
+               SOLID
+ELASTIC_ISOTROPIC       0.000E+00       1.000E+00       1.000E+00       1.000E+10       1.800E-01       1.000E-05  0  0  0
+  0  0       1.000E+03
+     material_serial         2
+          MECHANICAL           SOLID     2
+  1
+               SOLID
+ELASTIC_ISOTROPIC       2.500E+03       1.000E+00       1.000E+00       2.500E+10       1.670E-01       1.000E-05  0  0  0
+  0  0       1.000E+03
+     material_serial         3
+          MECHANICAL           WATER     3
+  1
+               FLUID
+       1.000E+03  1.0       2.045E+09
+  0       1.000E-03       1.000E-03

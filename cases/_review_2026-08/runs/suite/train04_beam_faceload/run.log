@@ -1,0 +1,204 @@
+ time: 08:27:40
+ Input the problem name?
+ NPOIN                                                                          
+  
+         315         315         160           3           1           1
+           0 GIDR                  0.000000000000000E+000           0
+           0           0           0           0       99999
+ NINIT                                                                          
+  
+           0           0           0           1           0           0
+           0           0           0           0           0 
+ FIX                                                          0           0
+           0           0           0           0           0
+ outinpunit=          37 outindunit=          54
+ TYPE_PROBLEM                                                                   
+  
+ Q                                                 
+ PARDISO                                           
+ LOAD                                                         5           0
+           0           0
+ type_layer1                                                                    
+  
+ NMASS                                                                          
+  
+           1           1           1           1           0           0
+           1           0           1           0           0
+ nfreeflownode                                                                  
+  
+ NTSMAT                                                                         
+  
+         999         999           0           0           0
+ lgroup=           1 neface=           8 node_face=           4
+ lgroup=           1 neface=           8 node_face=           4
+ lgroup=           1 neface=           8 node_face=           4
+ lgroup=           1 neface=           8 node_face=           4
+ lgroup=           1 neface=           8 node_face=           4
+ lgroup=           1 neface=           8 node_face=           4
+ lgroup=           1 neface=           8 node_face=           4
+ lgroup=           1 neface=           8 node_face=           4
+ lgroup=           1 neface=           8 node_face=           4
+ lgroup=           1 neface=           8 node_face=           4
+ lgroup=           1 neface=           8 node_face=           4
+ lgroup=           1 neface=           8 node_face=           4
+ lgroup=           1 neface=           8 node_face=           4
+ lgroup=           1 neface=           8 node_face=           4
+ lgroup=           1 neface=           8 node_face=           4
+ lgroup=           1 neface=           8 node_face=           4
+ lgroup=           1 neface=           8 node_face=           4
+ lgroup=           1 neface=           8 node_face=           4
+ lgroup=           1 neface=           8 node_face=           4
+ beeta1,beeta2,theta1=  0.500000000000000       0.250000000000000     
+   1.00000000000000     
+ equvs_process(1:ngroup)                                                        
+  
+ appear_level(1:ngroup)                                                         
+  
+ APPEAR_PROCESS                                                                 
+  
+ appear_process=           1
+ MATNO_PROCESS                                                                  
+  
+ iblks=           0 ngroup=           1 matno=           1
+ force_process=           0
+ uinitial=           0
+ 1-ILINKS(I0                                                                    
+  
+ 1-tLINKS(I0                                                                    
+  
+ text1=
+ 1-NGROUP--GROUP                                                                
+  
+ (3)                                                                            
+  
+ igroup=           1
+ name=B8        
+ tne=         160
+ text_tension_joint=
+ tension_joint                                                                  
+  
+ text_tension_contact=
+ contact_joint                                                                  
+  
+ ground_inf=           0 /100=           0
+ nblks=           1
+ Input runblks, =?
+ time: 08:27:40
+ COMMENT                                                                        
+  
+ COMMENT                                                                        
+  
+ COMMENT                                                                        
+  
+ COMMENT                                                                        
+  
+ COMMENT                                                                        
+  
+ COMMENT                                                                        
+  
+ COMMENT                                                                        
+  
+ COMMENT                                                                        
+  
+ COMMENT                                                                        
+  
+ COMMENT                                                                        
+  
+ jmat=           1
+ MECHANICAL                    SOLID                                    1
+ ELASTIC_ISOTROPIC               0.000000000000000E+000   1.00000000000000     
+   1.00000000000000        30000000000.0000       0.167000000000000     
+  1.000000000000000E-005           0           0           0
+ ngaps                                                                          
+  
+ ngaps=           0
+ nrcsteel                                                                       
+  
+ nrcsteel=           0
+ nwcpipe                                                                        
+  
+ nwcpipe=           0
+ nifsgroup 
+ nifsgroup=           0
+ nabsfgroup
+ nabsfgroup=           0
+ nabssgroup
+ nabssgroup=           0
+ ifsnedge                                                                       
+                      
+ ifsnedge=           0
+ lblks=           0  blks_new=           1
+ lincs=           0  nincs=           0
+ lblks=           0  blks_new=           1
+ Bparameter=           0
+ lblks=           0 lincs=           0 ttime=  0.000000000000000E+000
+ ntime=           2 LINEAR                         0           2
+ ok waterlevel
+ nplgroup=           0
+ nedge=          40
+ iblks=           1 lineload=          51
+ iblks=           1
+ time: 08:27:40
+ a1
+ ifixset=           1 type_abc=
+ FIX                                               
+ ifixset=           2 type_abc=
+ FIX                                               
+ ifixset=           3 type_abc=
+ FIX                                               
+ outind=           0
+ edge_load_group     
+ edge_load_group=          40 delgroup=           1
+ gray=   9.81000000000000       0.000000000000000E+000  0.000000000000000E+000
+  -1.00000000000000       0.000000000000000E+000  0.000000000000000E+000
+  -1.00000000000000     
+ tcurv=           1
+ ecwpipe=           0 iblks=           1 lblks+1=           1
+ ecwpipe=           0 iblks=           1 lblks+1=           1
+ surface   
+ ntedge=           0
+ algo_pipe=
+ npipe,algo_pipe=           0           3
+ linet=           8
+ time: 08:27:40
+ mtype                           
+          -2           4           0
+ isdefault                       
+           0
+ time: 08:27:40
+ time: 08:27:40
+  in static_U**
+ iincs=           1 lincs=           0
+ cwater,Qstatic=           0           0
+ istep=           1
+ outinp=           0
+ tcurvegravity=           1
+ ntelgroup=           0
+ Reordering completed ... 
+ Factorization completed ... 
+ time: 08:27:40
+                     istep=           1 iiter=           1
+                     conver_load check
+ resid=  5.237425034463504E-021 retot=   26557060.4978605     
+ ratio1=  1.404329142665907E-014 ratio2=  1.300969643654623E-014
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           0
+                    conver_nodal_value check
+               Convergence check for displacement
+ ratio1=   1.00000000000000      ratio2=   1.00000000000000     
+                            not converged for checki=           1
+ miter=           5 iiter=           1
+ time: 08:27:40
+                     istep=           1 iiter=           2
+                     conver_load check
+ resid=  1.087337720631149E-021 retot=   26557060.4978611     
+ ratio1=  6.398707024166972E-015 ratio2=  6.003182802177450E-015
+ nchek0=           0 toler_force=  1.000000000000000E-005
+ nchek=           0
+                    conver_nodal_value check
+               Convergence check for displacement
+ ratio1=  2.577276716800687E-014 ratio2=  2.514237725019006E-014
+ nchek=           0
+ ***********RESTART FILE IS UPDATED!*******
+ time: 08:27:40
+ time: 08:27:40

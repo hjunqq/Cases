@@ -1,0 +1,5 @@
+ mesh dimension = 3 elemtype quadrilateral nnode = 4
+ coordinates
+ end coordinates
+ elements
+ end elements

@@ -1,0 +1,12 @@
+# MC test BCs — large compression to trigger yielding
+# E=1e8, c=50kPa, phi=30: yield at σzz ≈ -c/tan(phi) ≈ -86.6 kPa
+# Need εzz ≈ σzz/E ≈ 8.66e-4 → Uz ≈ 7.16e-5
+# Apply Uz = 2e-4 (well beyond yield)
+1  0.0  2
+1 4
+2  0.0  2
+1 2
+3  0.0  4
+1 2 3 4
+3  -2.0e-4  4
+5 6 7 8

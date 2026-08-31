@@ -1,0 +1,83 @@
+NPOIN  npoinb NELEM  NDIMN  NMATS  NGROUP NTLINK outplot KSTAB MAT_curve meshc rmesh                                                     
+       793       793       721    2    2    3    0   GIDR         0.00000    0    0    0    0    0 9999
+valv1                                                                                                                                    
+ndivide                                                                                                                                  
+ NINIT KINIT winit NBLKS NLINK NONSY OUTIP outir outiw neumn equvs,type_ABC,block_sta nbackf nbspring ebody outind nbackd  ninstn              
+     0     0     0     1     0     0     0     0     0     0     0   FIX            0      0        0     0      0      0    0
+TYPE_PROBLEM TYPE_SOLVER TYPE_LOAD TYPE_NL STABPW nlayer,kglb,state_change,Bparameter balgor upliftin                                             
+Q         PARDISO   LOAD          5    0    0    0    0    0    0 0
+type_layer1                                                                                                                              
+NMASS NSMAT NHMAT NQMAT NLDFL KGMAT NSWKW UWCPL NGRAV nflow ECWPIPE                                                                      
+ 999 999 999 999 999   0 999   0 999   0   0
+nfreeflownode                                                                                                                            
+NTSMAT NTHMAT  KSTAT ground_inf src nextrf relic sblock                                                                                  
+ 999 999   0   0   0   0   0
+MDOFN(/Ux Uy Uz Thxy Thyz Thzx P W A T)                                                                                                  
+   2
+   1   1
+   0   0
+BEETA1 BEETA2 THETA1                                                                                                                     
+     0.500     0.250     0.500
+equvs_process(1:ngroup)                                                                                                                  
+   0   0   0
+appear_level(1:ngroup)                                                                                                                   
+   0   0   0
+APPEAR_PROCESS(1-0nblks/1-ngroup)                                                                                                        
+   1   1   1
+MATNO_PROCESS(1-nblks/1-ngroup)                                                                                                          
+   1   2   2
+force_process(1:ngroup)                                                                                                                  
+   0   0   0
+average_appear(1:ngroup) !=0 不参与应力平均，=1应力外推 =2 应力直接平均 =-1按原来方式外推 =-2按原来方式直接平均                          
+   1   0   0
+gid_u,gid_s,gid_ms,gid_f,gid_rot,gid_v,gid_a,gid_T,gid_P,gid_Pv,gid_ep,gid_Y,gid_FC,gid_Ns,gid_Ss,gid_mxy,gid_bem,gid_wh,gid_wv,gid_bcs  
+   1    1      0     1      0      0     0     0     0      0      0     1      0      0      0      0      0      0      0      1
+res_u,res_s,res_ms,res_f,res_rot,res_v,res_a,res_T,res_P,res_Pv,res_ep,res_Y,res_FC,res_Ns,res_Ss,res_Tv,res_Pa                          
+   0    0      0     0      0      0     0     0     0      0      0     0      0      0      0      0      0
+Icaddmass,swlifs2006,toth,ifswater,ifsgravity,absorb,alfa_p4,stiff_p4                                                                    
+     0   100.000   100.000     3     9.800     0.600   -10.000 0.100E+21
+ftcrack,coefMpa,ikindks,doubsig,ktan1,  ktan2,  nlocalbeam,ndimnrt,listglocbeam(1:nlocalbeam),lelenrt(1:ndimnrt)                         
+ 0.150E+07 0.100E+07     3     2 0.100E+09 0.100E+09     0     0
+ntrans,nlaymif,epsMIFb,gamaMIF,ifixvar0_inpb,camif,dxmif                                                                                 
+     0     0 0.100E+01 0.200E-01     2 0.198E+04 0.250E+02
+hdam                                                                                                                                     
+     0.000
+water_level
+     0.
+modf_dis_blocks                                                                                                                          
+   0
+uinitial                                                                                                                                 
+   0
+backf()%                                                                                                                                 
+1-ILINKS(I0, Freedom, node1,node2)                                                                                                       
+1-tLINKS(I0, node1,node2)                                                                                                                
+1-NGROUP--GROUP INFORMATION                                                                                                              
+INCLUDE (1) NAME KNAME INDEX CLASS NRFIELDS FIELDID SPECIAL                                                                              
+ SPTYPE NELGROUP MATNO TYPE_ALGO TYPE_STIFF TYPE_ECOINT ilayer,elcod_local group_inf uplift_ic liquj                                                   
+		 (2) TYPE_MASS(1:NRFIELDS)(0-lumped)                                                                                                   
+		 (3) for each field: nfdof-number of freedom,listdof(1:nfdof)                                                                          
+Q4  GROUP1     5  CO     1 U    ST   PE          600  1  0  1  1  1 0.000E+00  0 0 0
+           0  0.000000000000000E+000  0.000000000000000E+000
+   0   0
+   2
+   1   2
+L2  GROUP2     1  CO     1 U    ST   PE           60  2  0  1  1  1 0.000E+00  0  0 0
+           0  0.000000000000000E+000  0.000000000000000E+000
+   0   0
+   2
+   1   2
+L2  GROUP3    25  CO     1 U    ST   PE           61  2  0  1  1  1 0.000E+00  0 0 0
+           0  0.000000000000000E+000  0.000000000000000E+000
+   0   0
+   2
+   1   2
+tension_joint                                                                                                                            
+   0
+contact_joint                                                                                                                            
+   0
+ngaps ngapb ctt_pe miter_bt   torbt iblkbt nonsbt xlwsol method_gapi miter_state type_solver_ctt restart_ctt damp_ctt istatec            
+  0     0     1     500     0.1E-05   1      0      0        0           1          PROFILE           0       0.0E+00    1
+ nrcsteel
+         0
+ nwcpipe
+         0

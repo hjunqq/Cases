@@ -1,0 +1,85 @@
+ NPOIN  npoinb NELEM  NDIMN  NMATS  NGROUP NTLINK outplot KSTAB MAT_curve meshc rmesh  ,level_set_problem,ljdp ,stab_matde   
+ 2256    2256   2150    2     3      3     0      GIDR     0       0       0     0             0          0       9999          
+ valv1 valv2
+ ndivide,ndefault(1:abs(rmesh)) !for remeshing
+ NINIT KINIT winit NBLKS   NLINKS NONSYM OUTINP outinr outinw neuman equvs,type_ABC,block_sta nbackf nbspring ebody outind nbackd ninstn
+  0      0     0     1        0      0	     0		 0      0      0      0     FIX        0       0      0        0     0       0     0    
+ TYPE_PROBLEM TYPE_SOLVER TYPE_LOAD TYPE_NL STABPW nlayer kglb state_change ,Bparameter balgor upliftin
+    'F'        'PARDISO'     'LOAD'      5      0      0     0      0             0          0    0
+  type_layer1 type_layer2 solver_iter
+ NMASS NSMAT NHMAT NQMAT NLDFL KGMAT NSWKW UWCPL NGRAV nflow ECWPIPE' !uwcpl=0,drained(w);1,undrained(u-pw);
+   999   999   999   999   999    0	   999	  0	   999   0      0      ! =2,drained(u-pw); 
+  nfreeflownode
+ NTSMAT NTHMAT  KSTAT ground_inf src nextrf submodel '  ! kstat=0-2, the contact state or Sn are cheched in kstat iterations
+   999     999	   0	     0        0    0      0
+ MDOFN(/Ux Uy Uz Thxy Thyz Thzx P W A T)'
+ 8
+ 1 1 0 0 0 0 0 1 0 0 
+ 2 2 0 0 0 0 0 2 0 0  !order to time
+ BEETA1 BEETA2 THETA1 
+     0.500     0.250     1.000
+ equvs_process(1:ngroup)
+ 20*0
+ appear_level(1:ngroup)
+ 20*0  
+ APPEAR_PROCESS(1-nblks/1-ngroup)
+ 1 1 0
+ MATNO_PROCESS(1-nblks/1-ngroup)
+ 1 2 3
+ force_process(1:ngroup)
+ 1 1 0
+ average_appear(1:ngroup) !=0 不参与应力平均，=1应力外推 =2 应力直接平均 =-1按原来方式外推 =-2按原来方式直接平均
+ -2 -2 0
+ gid_u,gid_s,gid_ms,gid_f,gid_rot,gid_v,gid_a,gid_T,gid_P,gid_Pv,gid_ep,gid_Y,gid_FC,gid_Ns,gid_Ss,gid_mxy,gid_bem,gid_wh,gid_wv,gid_bcs
+   1     1     1      0      0      0     1     0     0     0      0      0     0       0      0      0       0       0      0      0
+ res_u,res_s,res_ms,res_f,res_rot,res_v,res_a,res_T,res_P,res_Pv,res_ep,res_Y,res_FC,res_Ns,res_Ss,res_Tv,res_Pa                          
+   1     1     1      0      0      0     1     0     0     0      0      0     0       0      0      0       0
+ Icaddmass,swlifs2006,toth,ifswater,ifsgravity,absorb,alfa_p4,stiff_p4
+ 1          50        50    2        9.8      0.6    -10     1.0e20 
+ ftcrack,coefMpa,ikindks,doubsig,ktan1,  ktan2,  nlocalbeam,ndimnrt,listglocbeam(1:nlocalbeam),lelenrt(1:ndimnrt) 
+ 1.5e6    1.0e6    5       1     1.0e8   1.0e8     1          1          3 11001                              
+ ntrans,nlaymif,epsMIFb,gamaMIF,ifixvar0_inpb,camif,dxmif
+ 0       0        1.0e0   0.02     2 	        1979   25  
+ hdam
+ 0.
+ water_level
+ 0. 
+ modf_dis_blocks
+ 0
+ uinitial
+ 0
+ backf()%  !输入与nbackf/=0时的相关内容(当nbackf/=0时)
+ '1-ILINKS(I0, Freedom, node1,node2)'
+ '1-tLINKS(I0, node1,node2)'
+ '1-NGROUP--GROUP INFORMATION'
+ 'INCLUDE (1) NAME KNAME INDEX CLASS NRFIELDS FIELDID SPECIAL'
+ ' SPTYPE NELGROUP MATNO TYPE_ALGO TYPE_STIFF TYPE_ECOINT ilayer,elcod_local aogroup_inf'
+ '		 (2) TYPE_MASS(1:NRFIELDS)(0-lumped)'
+ '		 (3) for each field: nfdof-number of freedom,listdof(1:nfdof)'
+ B8 GROUP1    5  CO     1 U   ST   PE            450  1  0  1  1  1  0  0  0  0
+            0    9.9999998E-03   9.9999998E-03                                             
+          0         2                           
+          2
+          1   2                                                            
+ B8 GROUP2    5  CO     1 U   ST   PE           1100  2  0  1  1  1  0  0  0  0
+            0    9.9999998E-03   9.9999998E-03                                             
+          0         2                           
+          2
+          1   2 
+ B8 GROUP3    5  CO     1 W   ST   PE            600  3  0  1  1  1  0  0  0  0
+            0    9.9999998E-03   9.9999998E-03                                             
+          0         2                           
+          1
+          8                                                                                                                                                                                       
+tension_joint
+0
+contact_joint
+0
+ngaps,ngapb contactpe  miter_bt  tor_bt   iblks_bt   nonsbt xlwsol method_gapi miter_state type_solver_ctt restart_ctt,damp_ctt istatec
+ 0     0       1         500     1.0e-3      1         1     1         0          1         'PROFILE'         0         0.        1
+ nrcsteel
+         0
+ nwcpipe
+         0
+
+

@@ -1,0 +1,54 @@
+ *(1.mat)���������Ϣmaterial Property
+  0
+   10
+MATERIAL PROPERTIES-INPUT FOR 1 TO NMATS                                                                                                              
+NAME FOR MATERIAL---FOR COMMENTS                                                                                                                      
+FIRST:NAME---MECHANICAL, TEMPERATURE, ETC                                                                                                             
+FOR MECHNICAL, SECOND:PHASE---SOLID, FLUID, AIR OR OIL                                                                                                
+NUMBER OF PHASE                                                                                                                                       
+FOR SOLID: MATERIAL(CLASSICALEP,CAMCLAY,ETC),density,ratio,thick,e,nu                                                                                 
+FOR MATERISL: CLASSICALEP:CRITERIA(TC,VM,DP,MC),sigm0,hardening                                                                                       
+FOR MC OR DP: FRICT_ANGLE, DILAN_ANGLE                                                                                                                
+CAMCLAY    :Pc, lamda, Mg, Mf, D0, D1,gaama                                                                                                           
+FOR FLUID: (1) density,ratio,bulkw (2)permiability(1:ndimn)                                                                                           
+ �ܵĲ��ϲ����������
+  3
+     material_serial         1
+          MECHANICAL               SOLID    1
+  1
+               SOLID
+ELASTIC_ISOTROPIC         0.000E+04      0.100E+01      0.100E+01      0.240E+11      0.167E+00      0.100E-04    0    0    0
+  0  0      0.100E+04
+     material_serial         2
+          MECHANICAL               SOLID    2
+  1
+               SOLID
+ELASTIC_ISOTROPIC         0.240E+04      0.100E+01      0.100E+01      0.800E+10      0.300E+00      0.100E-04    0    0    0
+  0  0      0.100E+04
+     material_serial         3
+          MECHANICAL               SOLID    3
+  1
+               SOLID
+ELASTIC_ISOTROPIC         0.240E+04      0.100E+01      0.100E+01      0.800E+10      0.300E+00      0.100E-04    0    0    0
+  0  0      0.100E+04
+     material_serial         4
+          MECHANICAL             CONTACT    4
+  1
+               SOLID
+ELASTIC_ISOTROPIC         0.240E+04      0.100E+01      0.100E+01      0.240E+11      0.167E+00      0.100E-04    0    0    0
+  0  0      0.100E+04
+     material_serial         5
+          MECHANICAL               SOLID    5
+  1
+               SOLID
+ELASTIC_ISOTROPIC         0.100E+04      0.204E+10      0.143E+04      0.000E+00      0.100E-02      0.100E-02    0    0    1
+***  1      0.100E+01
+     material_serial         6
+          MECHANICAL               SOLID    6
+  1
+               SOLID
+ELASTIC_ISOTROPIC         0.000E+00      0.100E+01      0.100E+01      0.210E+12      0.167E+00      0.100E-04    0    0    0
+  0  0      0.100E+04
+     material_serial         7
+            GEOMETRY         ROD_or_BEAM    6
+   0.102E-01   0.000E+00   0.000E+00   0.000E+00

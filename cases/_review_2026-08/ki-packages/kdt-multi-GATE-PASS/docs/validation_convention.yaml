@@ -1,0 +1,358 @@
+schema_version: 1
+model_id: HSTAR
+domain: structural_mechanics
+generated_by: "KDT dissection of HSTAR, 2026-08-26 (stepb_dispatch_prep.py could not run: it resolves the KI path from /mnt/disk1/Hydrocraft_server/hydrocraft.db, which does not exist on this host)"
+generated_at: 2026-08-26
+
+# HONESTY NOTE, read this before using any band below.
+#
+# Structural/geotechnical FEM of hydraulic structures has no equivalent of Moriasi's
+# discharge table: there is no field-wide, citable NSE/KGE-style pass band for dam
+# displacement, temperature, pore pressure, modal frequency or factor of safety. What the
+# literature reports is the accuracy ACHIEVED in specific studies on specific structures.
+#
+# Exactly ONE numeric band below is backed by a fetched paper (dam radial displacement,
+# MAE in mm). Every other band is `null` -- NOT a guess. The papers that would have closed
+# those gaps were resolvable but not downloadable from this network (Elsevier, MDPI, IOP,
+# Hindawi and Wiley all return 403 or an Akamai interstitial); they are listed under
+# `deferred_paywalled` and in docs/paywalled_targets.json rather than silently dropped.
+
+references:
+  dai2021_dam_displacement_rf:
+    doi: "10.1109/access.2021.3049578"
+    title: "An Improved Random Forest Model for the Prediction of Dam Displacement"
+    venue: "IEEE Access"
+    year: 2021
+    oa: gold
+    resolves: "/home/server/knowledge-dissection-toolkit/paper_cache/10.1109_access.2021.3049578.txt"
+  li2020_dam_displacement_stl:
+    doi: "10.1109/access.2020.2995592"
+    title: "The Prediction of Dam Displacement Time Series Using STL, Extra-Trees, and Stacked LSTM Neural Network"
+    venue: "IEEE Access"
+    year: 2020
+    oa: gold
+    resolves: "/home/server/knowledge-dissection-toolkit/paper_cache/10.1109_access.2020.2995592.txt"
+  cao2019_gravitydam_static_updating:
+    doi: "10.1016/j.engstruct.2019.05.072"
+    title: "Concrete gravity dams model parameters updating using static measurements"
+    venue: "Engineering Structures"
+    year: 2019
+    oa: green
+    resolves: "/home/server/knowledge-dissection-toolkit/paper_cache/10.1016_j.engstruct.2019.05.072.txt"
+  jci2004_early_age_concrete:
+    doi: "10.3151/jact.2.141"
+    title: "State-of-the-Art Report on Control of Cracking in Early Age Concrete"
+    venue: "Journal of Advanced Concrete Technology"
+    year: 2004
+    oa: gold
+    resolves: "/home/server/knowledge-dissection-toolkit/paper_cache/10.3151_jact.2.141.txt"
+  carol2015_zero_thickness_interface:
+    doi: "10.1016/j.compgeo.2015.04.016"
+    title: "3D zero-thickness coupled interface finite element: Formulation and application"
+    venue: "Computers and Geotechnics"
+    year: 2015
+    oa: green
+    resolves: "/home/server/knowledge-dissection-toolkit/paper_cache/10.1016_j.compgeo.2015.04.016.txt"
+  hohberg1993_interface_integration:
+    doi: "10.1002/nme.1620360104"
+    title: "On the numerical integration of interface elements"
+    venue: "International Journal for Numerical Methods in Engineering"
+    year: 1993
+    oa: green
+    resolves: "/home/server/knowledge-dissection-toolkit/paper_cache/10.1002_nme.1620360104.txt"
+  ntoutsi2017_ann_inverse_identification:
+    doi: "10.1016/j.asoc.2016.12.014"
+    title: "Artificial neural networks for vibration based inverse parametric identifications: A review"
+    venue: "Applied Soft Computing"
+    year: 2017
+    oa: green
+    resolves: "/home/server/knowledge-dissection-toolkit/paper_cache/10.1016_j.asoc.2016.12.014.txt"
+  shm2021_ml_overview:
+    doi: "10.1177/14759217211036880"
+    title: "Machine learning and structural health monitoring overview with emerging technology and high-dimensional data source highlights"
+    venue: "Structural Health Monitoring"
+    year: 2021
+    oa: gold
+    resolves: "/home/server/knowledge-dissection-toolkit/paper_cache/10.1177_14759217211036880.txt"
+
+validation:
+  - dag_variable: DISPLACEMENT
+    obs_shape: point_time_series
+    headline_metrics:
+      - metric: mae
+        direction: minimize
+        unit: mm
+        bands:
+          very_good: 0.12
+          good: null
+          satisfactory: 3.12
+        pass_band: satisfactory
+        band_note: >-
+          Dai et al. 2021 monitor radial displacement of a masonry arch dam at point G3-HY,
+          whose series spans roughly -5 to 33 mm, and report that across seven prediction
+          models "the value of MAE for G3-HY varies from 0.12 to 3.12, with high accuracy"
+          (p. 709 of the cached text). 3.12 mm is therefore the worst MAE the source itself
+          calls high accuracy on a real dam displacement record, and 0.12 mm the best
+          achieved. No cited value anchors an intermediate `good` tier, so it is null.
+          Note this is a STATISTICAL-model accuracy on monitoring data, not an FE-model
+          error band; a deterministic FE model without a fitted seasonal term should not be
+          expected to beat the very_good tier.
+        cites: [dai2021_dam_displacement_rf]
+    secondary_metrics:
+      - metric: r2
+        direction: maximize
+        status: supportive
+        ceiling_reason: null
+        cites: [li2020_dam_displacement_stl, dai2021_dam_displacement_rf]
+      - metric: rmse
+        direction: minimize
+        status: supportive
+        ceiling_reason: null
+        cites: [li2020_dam_displacement_stl]
+    validated_when: >-
+      MAE against the monitored displacement series is at or below 3.12 mm, with the caveat
+      in band_note. Report the reservoir level and the temperature record used, because both
+      dominate dam displacement and a comparison across different loading states is not
+      meaningful.
+    evidence_strength: weak
+    confidence: 0.45
+    notes: >-
+      Single-source band from one arch dam. Widen or replace it as soon as
+      10.1016/j.engstruct.2015.01.047 or 10.1111/mice.13141 become fetchable.
+
+  - dag_variable: DISPLACEMENT
+    obs_shape: point_snapshot
+    headline_metrics:
+      - metric: abs_error
+        direction: minimize
+        unit: mm
+        bands:
+          very_good: null
+          good: null
+          satisfactory: null
+        pass_band: satisfactory
+        band_note: >-
+          No cited numeric threshold. Cao et al. 2019 give the relevant scale rather than a
+          bar: mean annual upstream-downstream variation is about 3.5 mm at the crest and
+          about 0.5 mm in the lower tunnel of the studied gravity dam, and the modelled
+          hydrostatic displacement varies between 0.5 and 0.7 mm across the plausible range
+          of the concrete bulk modulus. A single snapshot also confounds the thermal,
+          hydrostatic and irreversible components, so it cannot on its own validate a model.
+        cites: [cao2019_gravitydam_static_updating]
+    secondary_metrics: []
+    validated_when: >-
+      Not auto-validatable. A single reading may only be used as a contextual check against
+      the reported instrument scale.
+    evidence_strength: weak
+    confidence: 0.2
+    notes: "Prefer the point_time_series block."
+
+  - dag_variable: TEMPERATURE
+    obs_shape: point_time_series
+    headline_metrics:
+      - metric: rmse
+        direction: minimize
+        unit: degC
+        bands:
+          very_good: null
+          good: null
+          satisfactory: null
+        pass_band: satisfactory
+        band_note: >-
+          No cited numeric threshold. The JCI state-of-the-art report establishes the
+          physics HSTAR's HEAT material and pipe-cooling superposition implement (hydration
+          heat, adiabatic rise, cooling-pipe removal) but does not publish a model-accuracy
+          band for a computed temperature field against embedded thermometers.
+          10.1016/j.cscm.2019.e00289 would have supplied one and could not be fetched.
+        cites: [jci2004_early_age_concrete]
+    secondary_metrics: []
+    validated_when: >-
+      Not auto-validatable. Report RMSE and the peak-temperature timing error against the
+      thermometer string, and state the placement date, since hydration heat dominates the
+      first weeks.
+    evidence_strength: weak
+    confidence: 0.2
+    notes: "Blocked on a paywalled benchmark; see deferred_paywalled."
+
+  - dag_variable: PORE-PRESSURE
+    obs_shape: point_time_series
+    headline_metrics:
+      - metric: rmse
+        direction: minimize
+        unit: kPa
+        bands:
+          very_good: null
+          good: null
+          satisfactory: null
+        pass_band: satisfactory
+        band_note: >-
+          No cited numeric threshold reachable from this host. Carol et al. 2015 document
+          the hydro-mechanical interface formulation but report no field-comparison band.
+        cites: [carol2015_zero_thickness_interface]
+    secondary_metrics: []
+    validated_when: >-
+      Not auto-validatable. Convert the piezometer head to pressure with the same water unit
+      weight the model uses and confirm the vertical datum before comparing.
+    evidence_strength: weak
+    confidence: 0.2
+    notes: ""
+
+  - dag_variable: WATER-HEAD
+    obs_shape: point_time_series
+    headline_metrics:
+      - metric: rmse
+        direction: minimize
+        unit: m
+        bands:
+          very_good: null
+          good: null
+          satisfactory: null
+        pass_band: satisfactory
+        band_note: >-
+          No cited numeric threshold. 10.3390/w14172598 would have supplied one for dam
+          seepage and could not be fetched from this network.
+        cites: []
+    secondary_metrics: []
+    validated_when: "Not auto-validatable; report RMSE in metres of head and the datum."
+    evidence_strength: weak
+    confidence: 0.15
+    notes: "Blocked on a bot-walled source; see deferred_paywalled."
+
+  - dag_variable: modal_frequency
+    obs_shape: point_snapshot
+    headline_metrics:
+      - metric: relative_frequency_error
+        direction: minimize
+        unit: percent
+        bands:
+          very_good: null
+          good: null
+          satisfactory: null
+        pass_band: satisfactory
+        band_note: >-
+          No cited numeric threshold. The reachable review establishes that vibration data
+          can identify structural parameters by inverse analysis but reports no field-wide
+          acceptance band for the frequency error of a dam FE model.
+          10.1088/1742-6596/744/1/012037 (ambient modal testing and model updating of a
+          double-arch dam) is the source that would have supplied one; IOP returns an HTML
+          interstitial from this network.
+        cites: [ntoutsi2017_ann_inverse_identification]
+    secondary_metrics:
+      - metric: mac
+        direction: maximize
+        status: supportive
+        ceiling_reason: null
+        cites: [ntoutsi2017_ann_inverse_identification]
+    validated_when: >-
+      Not auto-validatable. Pair identified and computed modes by mode shape (MAC), not by
+      order, and state the reservoir level for both, because it shifts every frequency.
+    evidence_strength: weak
+    confidence: 0.2
+    notes: "Blocked on a bot-walled source; see deferred_paywalled."
+
+  - dag_variable: acceleration
+    obs_shape: point_time_series
+    headline_metrics:
+      - metric: peak_relative_error
+        direction: minimize
+        unit: percent
+        bands:
+          very_good: null
+          good: null
+          satisfactory: null
+        pass_band: satisfactory
+        band_note: >-
+          No cited numeric threshold. Structural accelerograph comparisons are normally
+          judged on peak amplitude, arrival time and response-spectrum shape together, and
+          no reachable source publishes a single acceptance number for a dam FE model.
+        cites: [shm2021_ml_overview]
+    secondary_metrics: []
+    validated_when: >-
+      Not auto-validatable. Report peak error, spectral-shape agreement, and whether the
+      compared stream is `acceleration` (relative to the base) or `acceleration_ab`
+      (absolute).
+    evidence_strength: weak
+    confidence: 0.15
+    notes: ""
+
+  - dag_variable: STRESS
+    obs_shape: point_time_series
+    headline_metrics:
+      - metric: relative_error
+        direction: minimize
+        unit: percent
+        bands:
+          very_good: null
+          good: null
+          satisfactory: null
+        pass_band: satisfactory
+        band_note: >-
+          No cited numeric threshold, and there is a structural reason not to invent one:
+          the model stream is node-averaged (triplet dt_025) and an embedded stress meter
+          measures a local, instrument-disturbed state, so the two are not the same quantity
+          at the same scale.
+        cites: [hohberg1993_interface_integration]
+    secondary_metrics:
+      - metric: relative_error
+        direction: minimize
+        status: structurally_limited
+        ceiling_reason: >-
+          The .flavia.res STRESS stream is averaged to nodes from the adjoining Gauss points
+          (average_appear in <probn>.glb), so boundary values carry a half-element offset by
+          construction. Verified on this KI's 20-layer column benchmark: interior nodes match
+          the analytic -rho*g*(H-y) to 0.0 percent while the two boundary rows are offset by
+          exactly rho*g*dy/2 = 5886 Pa.
+        cites: []
+    validated_when: >-
+      Not auto-validatable against instruments. The DEFENSIBLE stress check for HSTAR is
+      against an analytic solution at interior nodes or on the domain mean, which is what
+      tools/validate_results.py --benchmark confined_selfweight_column does.
+    evidence_strength: weak
+    confidence: 0.2
+    notes: "See docs/s8_validation.md for the analytic verification actually performed."
+
+  - dag_variable: factor_of_safety
+    obs_shape: point_snapshot
+    headline_metrics:
+      - metric: relative_error
+        direction: minimize
+        unit: percent
+        bands:
+          very_good: null
+          good: null
+          satisfactory: null
+        pass_band: satisfactory
+        band_note: >-
+          No cited numeric threshold. A factor of safety is compared against another METHOD
+          (limit equilibrium) rather than against an observation, and the strength-reduction
+          value additionally depends on the maximum-iteration setting (triplet dt_021), so a
+          fixed band would encode a solver setting as physics.
+          10.1016/j.jrmge.2020.05.011 and 10.1016/j.gsf.2017.09.003 would have supplied
+          comparison statistics and could not be fetched.
+        cites: []
+    secondary_metrics: []
+    validated_when: >-
+      Not auto-validatable. Report the factor of safety together with miter, toler_force and
+      the reduction schedule, and compare against a limit-equilibrium solution of the same
+      geometry and strength parameters.
+    evidence_strength: weak
+    confidence: 0.15
+    notes: "Blocked on bot-walled sources; see deferred_paywalled."
+
+deferred_paywalled:
+  - {ref: "Thermal displacements of concrete dams: accounting for water temperature in statistical models",
+     doi: "10.1016/j.engstruct.2015.01.047", needed_for: [DISPLACEMENT, TEMPERATURE]}
+  - {ref: "Geodetic and Remote-Sensing Sensors for Dam Deformation Monitoring",
+     doi: "10.3390/s18113682", needed_for: [DISPLACEMENT]}
+  - {ref: "Ambient modal testing of a double-arch dam: the experimental campaign and model updating",
+     doi: "10.1088/1742-6596/744/1/012037", needed_for: [modal_frequency]}
+  - {ref: "Predicting thermal performance of a mass concrete foundation - a field monitoring case study",
+     doi: "10.1016/j.cscm.2019.e00289", needed_for: [TEMPERATURE]}
+  - {ref: "Understanding the Effect of Hydro-Climatological Parameters on Dam Seepage",
+     doi: "10.3390/w14172598", needed_for: ["PORE-PRESSURE", "WATER-HEAD"]}
+  - {ref: "Improved prediction of slope stability using a hybrid stacking ensemble method",
+     doi: "10.1016/j.jrmge.2020.05.011", needed_for: [factor_of_safety]}
+  - {ref: "Probabilistic stability analyses of undrained slopes by 3D random fields and finite elements",
+     doi: "10.1016/j.gsf.2017.09.003", needed_for: [factor_of_safety, reliability_index]}
+  - {ref: "Inverse analysis of deformation moduli for high arch dams using the displacement method",
+     doi: "10.1111/mice.13141", needed_for: [DISPLACEMENT]}

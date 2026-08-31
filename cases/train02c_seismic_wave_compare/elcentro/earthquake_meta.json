@@ -1,0 +1,11 @@
+{
+  "spectrum": "El-Centro-like envelope + broadband bandpass 0.5-15Hz",
+  "envelope": "Amin-Ang (2s ramp\u00b2, 6s strong, exp \u03b1=0.35 decay)",
+  "pga_g": 0.2,
+  "pga_ms2": 1.9616700246419694,
+  "pgv_ms": 0.09460149031755363,
+  "pgd_m": 0.013636013966407087,
+  "dt": 0.01,
+  "dur": 20.0,
+  "npts": 2001
+}

@@ -1,0 +1,1135 @@
+{
+  "type_problem": "Q",
+  "solver": "PROFILE",
+  "ndimn": 2,
+  "nblks": 2,
+  "groups": [
+    {
+      "name": "  1",
+      "nelgroup": 620,
+      "matno": 1,
+      "nnode": 8,
+      "elem_type": "B8",
+      "elem_name": "B8",
+      "elem_index": 5,
+      "class": "CO",
+      "nrfields": 1,
+      "field": "U",
+      "special": "ST",
+      "sptype": "PE",
+      "type_algo": 0,
+      "type_stiff": 1,
+      "type_ecoint": 1,
+      "ilayer": 1,
+      "elcod_local": 0.0,
+      "group_inf": 0,
+      "uplift_ic": 0,
+      "liquj": 0,
+      "type_mass": [
+        0
+      ],
+      "alfa": 0.0,
+      "beta": 0.0,
+      "order_time": [
+        0,
+        0
+      ],
+      "fields": [
+        {
+          "nfdof": 2,
+          "listdof": [
+            1,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "name": "  2",
+      "nelgroup": 300,
+      "matno": 2,
+      "nnode": 8,
+      "elem_type": "B8",
+      "elem_name": "B8",
+      "elem_index": 5,
+      "class": "CO",
+      "nrfields": 1,
+      "field": "U",
+      "special": "ST",
+      "sptype": "PE",
+      "type_algo": 0,
+      "type_stiff": 1,
+      "type_ecoint": 1,
+      "ilayer": 1,
+      "elcod_local": 0.0,
+      "group_inf": 0,
+      "uplift_ic": 0,
+      "liquj": 0,
+      "type_mass": [
+        0
+      ],
+      "alfa": 0.0,
+      "beta": 0.0,
+      "order_time": [
+        0,
+        0
+      ],
+      "fields": [
+        {
+          "nfdof": 2,
+          "listdof": [
+            1,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "name": "  3",
+      "nelgroup": 1500,
+      "matno": 3,
+      "nnode": 8,
+      "elem_type": "B8",
+      "elem_name": "B8",
+      "elem_index": 5,
+      "class": "CO",
+      "nrfields": 1,
+      "field": "U",
+      "special": "ST",
+      "sptype": "PE",
+      "type_algo": 0,
+      "type_stiff": 1,
+      "type_ecoint": 1,
+      "ilayer": 1,
+      "elcod_local": 0.0,
+      "group_inf": 0,
+      "uplift_ic": 0,
+      "liquj": 0,
+      "type_mass": [
+        0
+      ],
+      "alfa": 0.0,
+      "beta": 0.0,
+      "order_time": [
+        0,
+        0
+      ],
+      "fields": [
+        {
+          "nfdof": 2,
+          "listdof": [
+            1,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "name": "  4",
+      "nelgroup": 9,
+      "matno": 4,
+      "nnode": 8,
+      "elem_type": "B8",
+      "elem_name": "B8",
+      "elem_index": 5,
+      "class": "CO",
+      "nrfields": 1,
+      "field": "U",
+      "special": "ST",
+      "sptype": "PE",
+      "type_algo": 0,
+      "type_stiff": 1,
+      "type_ecoint": 1,
+      "ilayer": 1,
+      "elcod_local": 0.02,
+      "group_inf": 0,
+      "uplift_ic": 0,
+      "liquj": 0,
+      "type_mass": [
+        0
+      ],
+      "alfa": 0.0,
+      "beta": 0.0,
+      "order_time": [
+        0,
+        0
+      ],
+      "fields": [
+        {
+          "nfdof": 2,
+          "listdof": [
+            1,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "name": "  5",
+      "nelgroup": 1,
+      "matno": 5,
+      "nnode": 8,
+      "elem_type": "B8",
+      "elem_name": "B8",
+      "elem_index": 5,
+      "class": "CO",
+      "nrfields": 1,
+      "field": "U",
+      "special": "ST",
+      "sptype": "PE",
+      "type_algo": 0,
+      "type_stiff": 1,
+      "type_ecoint": 1,
+      "ilayer": 1,
+      "elcod_local": 0.02,
+      "group_inf": 0,
+      "uplift_ic": 0,
+      "liquj": 0,
+      "type_mass": [
+        0
+      ],
+      "alfa": 0.0,
+      "beta": 0.0,
+      "order_time": [
+        0,
+        0
+      ],
+      "fields": [
+        {
+          "nfdof": 2,
+          "listdof": [
+            1,
+            2
+          ]
+        }
+      ]
+    }
+  ],
+  "materials": [
+    {
+      "id": 1,
+      "type": "ELASTIC",
+      "density": 2300.0,
+      "ratio": 1.0,
+      "thickness": 1.0,
+      "E": 10000000000.0,
+      "nu": 0.18,
+      "alfa": 5e-06
+    },
+    {
+      "id": 2,
+      "type": "ELASTIC",
+      "density": 2500.0,
+      "ratio": 1.0,
+      "thickness": 1.0,
+      "E": 25000000000.0,
+      "nu": 0.167,
+      "alfa": 5e-06
+    },
+    {
+      "id": 3,
+      "type": "ELASTIC",
+      "density": 0.0,
+      "ratio": 1.0,
+      "thickness": 1.0,
+      "E": 10000000000.0,
+      "nu": 0.18,
+      "alfa": 5e-06
+    },
+    {
+      "id": 4,
+      "type": "GOODMAN",
+      "density": 2300.0,
+      "ratio": 1.0,
+      "thickness": 1.0,
+      "E": 10000000000.0,
+      "nu": 0.18,
+      "alfa": 5e-06
+    },
+    {
+      "id": 5,
+      "type": "ELASTIC",
+      "density": 2300.0,
+      "ratio": 1.0,
+      "thickness": 1.0,
+      "E": 10000000000.0,
+      "nu": 0.18,
+      "alfa": 5e-06
+    }
+  ],
+  "blocks": {
+    "appear": [
+      [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        0,
+        1
+      ]
+    ],
+    "gravity": [
+      9.81,
+      0.0,
+      -1.0,
+      0.0,
+      -1.0
+    ],
+    "increments": [
+      [
+        {
+          "miter": 5,
+          "ditime": 1.0,
+          "noutn": 1,
+          "noutf": 1,
+          "nstep": 1,
+          "inc_step": 1,
+          "nresta": 1,
+          "nmcon": 0,
+          "nbasef": 0
+        }
+      ],
+      [
+        {
+          "miter": 5,
+          "ditime": 1.0,
+          "noutn": 1,
+          "noutf": 1,
+          "nstep": 1,
+          "inc_step": 1,
+          "nresta": 1,
+          "nmcon": 0,
+          "nbasef": 0
+        }
+      ]
+    ],
+    "matno_process": [
+      [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      [
+        1,
+        2,
+        3,
+        4,
+        5
+      ]
+    ],
+    "force_process": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "average_appear": [
+      -2,
+      -2,
+      -2,
+      -2,
+      -2
+    ],
+    "earthquake_curve": [
+      0,
+      0
+    ],
+    "time_curve_for_each_group": [
+      [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        1,
+        0,
+        1
+      ]
+    ],
+    "tcg_label": "Time curve for each group"
+  },
+  "boundary": {
+    "fixsets": [
+      {
+        "dof": 1,
+        "nodes": [
+          1,
+          3,
+          6,
+          12,
+          18,
+          28,
+          37,
+          51,
+          63,
+          79,
+          97,
+          119,
+          138,
+          162,
+          185,
+          213,
+          238,
+          270,
+          299,
+          333,
+          365,
+          403,
+          440,
+          478,
+          516,
+          559,
+          601,
+          645,
+          693,
+          737,
+          787,
+          1656,
+          1658,
+          1661,
+          1665,
+          1669,
+          1679,
+          1688,
+          1699,
+          1709,
+          1719,
+          1735,
+          1751,
+          1767,
+          1782,
+          1799,
+          1819,
+          1840,
+          1866,
+          1898,
+          1944,
+          1991,
+          2040,
+          2075,
+          2103,
+          2130,
+          2155,
+          2182,
+          2207,
+          2235,
+          2260,
+          2287
+        ],
+        "value": 0.0,
+        "time_curve": 1,
+        "jfixvar": 0,
+        "f5": 0,
+        "tfixvar": 0.0,
+        "gamawx": 0.0,
+        "nextr": 0
+      },
+      {
+        "dof": 2,
+        "nodes": [
+          1,
+          2,
+          5,
+          10,
+          16,
+          23,
+          32,
+          43,
+          53,
+          67,
+          80,
+          95,
+          113,
+          132,
+          151,
+          174,
+          196,
+          220,
+          247,
+          274,
+          300,
+          336,
+          368,
+          409,
+          445,
+          485,
+          526,
+          569,
+          614,
+          660,
+          704,
+          751,
+          795,
+          838,
+          878,
+          918,
+          956,
+          991,
+          1026,
+          1066,
+          1107,
+          1147,
+          1193,
+          1245,
+          1295,
+          1350,
+          1408,
+          1466,
+          1527,
+          1592,
+          1656
+        ],
+        "value": 0.0,
+        "time_curve": 1,
+        "jfixvar": 0,
+        "f5": 0,
+        "tfixvar": 0.0,
+        "gamawx": 0.0,
+        "nextr": 0
+      }
+    ],
+    "nline": 131
+  },
+  "added_mass": {
+    "icaddmass": 0,
+    "swlifs2006": 202.0,
+    "water_level": 202.0,
+    "ifswater": 2,
+    "ifsgravity": 9.8,
+    "absorb": 0.6,
+    "alfa_p4": 10.0,
+    "stiff_p4": 1e+20
+  },
+  "mif": {
+    "ntrans": 0,
+    "nlaymif": 0,
+    "epsMIFb": 1.0,
+    "gamaMIF": 0.02,
+    "ifixvar0_inpb": 2,
+    "camif": 1979.0,
+    "dxmif": 25.0
+  },
+  "gid": [
+    1,
+    1,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "res": [
+    1,
+    1,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "newmark": [
+    0.5,
+    0.25,
+    1.0
+  ],
+  "glb_rows": {
+    "header": {
+      "npoinb": "2542",
+      "nmats": "5",
+      "outplot": "GIDR",
+      "kstab": "0",
+      "mat_curve": "0",
+      "level_set_problem": "0",
+      "ljdp": "0",
+      "stab_matde": "99999",
+      "ntlink": "0",
+      "meshc": "0",
+      "rmesh": "0"
+    },
+    "run_flags": {
+      "ninit": 0,
+      "kinit": 0,
+      "winit": 0,
+      "nlinks": 0,
+      "nonsym": 0,
+      "outinp": 0,
+      "outintr": 0,
+      "outintw": 0,
+      "neuman": 0,
+      "equvs": 0,
+      "block_stab": 0,
+      "nbackf": 0,
+      "nbspring": 0,
+      "ebody": 0,
+      "outind": 0,
+      "nbackdt": 0,
+      "ninistn": 0
+    },
+    "type_row": {
+      "type_load": "LOAD",
+      "stabpw": "0",
+      "nlayer": "0",
+      "kglb": "0",
+      "state_change": "0",
+      "bparameter": "0",
+      "balgor": "0",
+      "upliftin": "0"
+    },
+    "counts": [
+      "999",
+      "999",
+      "999",
+      "999",
+      "999",
+      "0",
+      "999",
+      "0",
+      "999",
+      "0",
+      "0"
+    ],
+    "hdam": [
+      "0.",
+      "0."
+    ],
+    "water_level": [
+      "0.",
+      "0."
+    ],
+    "modf_dis_blocks": [
+      "0",
+      "0"
+    ],
+    "uinitial": [
+      "0",
+      "1"
+    ],
+    "bond": {
+      "ftcrack": "1.5e6",
+      "coefMpa": "1.0e6",
+      "ikindks": 5,
+      "doubsig": 1,
+      "ktan1": "1.0e8",
+      "ktan2": "1.0e8",
+      "nlocalbeam": 1,
+      "ndimnrt": 1,
+      "listglocbeam": [
+        3
+      ],
+      "lelenrt": [
+        11001
+      ]
+    }
+  },
+  "type_nl": 5,
+  "mat_raw": {
+    "nmats": 5,
+    "prelude": [
+      " material property curves",
+      " 0",
+      " ",
+      " 10           ! lines for comments",
+      "'MATERIAL PROPERTIES-INPUT FOR 1 TO NMATS'",
+      "'NAME FOR MATERIAL---FOR COMMENTS'",
+      "'FIRST:NAME---MECHANICAL, TEMPERATURE, ETC'",
+      "'FOR MECHNICAL, SECOND:PHASE---SOLID, FLUID, AIR OR OIL '",
+      "'               NUMBER OF PHASE'",
+      "'FOR SOLID: MATERIAL(CLASSICALEP,CAMCLAY,ETC),density,ratio,thick,e,nu'",
+      "'FOR MATERISL: CLASSICALEP:CRITERIA(TC,VM,DP,MC),sigm0,hening'",
+      "'                FOR MC OR DP: FRICT_ANGLE, DILAN_ANGLE'ard",
+      "'              CAMCLAY    :Pc, lamda, Mg, Mf, D0, D1,gaama'",
+      "'FOR FLUID: (1) density,ratio,bulkw (2)permiability(1:ndimn)' ",
+      " nmats",
+      "  5"
+    ],
+    "blocks": [
+      [
+        "material 1                 !ˮ                                             ",
+        "  'MECHANICAL','SOLID', 1                                                       ",
+        "   1\t\t   ! NUMBER OF PHASES                                                   ",
+        "   'SOLID'                                                                      ",
+        "   'ELASTIC_ISOTROPIC',2300,1.0,1.0,10e9,0.18,5e-6,0 ,0,0",
+        "   0  0  1000."
+      ],
+      [
+        "material 2                 !������                                             ",
+        "  'MECHANICAL','SOLID', 2                                                       ",
+        "   1\t\t   ! NUMBER OF PHASES                                                   ",
+        "   'SOLID'                                                                      ",
+        "   'ELASTIC_ISOTROPIC',2500,1.0,1.0,25e9,0.167,5e-6,0 ,0,0",
+        "   0  0  1000."
+      ],
+      [
+        "material 3                 !�ػ�                                             ",
+        "  'MECHANICAL','SOLID', 3                                                       ",
+        "   1\t\t   ! NUMBER OF PHASES                                                   ",
+        "   'SOLID'                                                                      ",
+        "   'ELASTIC_ISOTROPIC',0,1.0,1.0,10e9,0.18,5e-6,0 ,0,0",
+        "   0  0  1000."
+      ],
+      [
+        "material 4                 !�Ӵ���                                             ",
+        "  'MECHANICAL','SOLID', 4                                                       ",
+        "   1\t\t   ! NUMBER OF PHASES                                                   ",
+        "   'SOLID'                                                                      ",
+        "   'GOODMAN',2300,1.0,1.0,10e9,0.18,5e-6,0 ,0,0",
+        "   0  0  1000.",
+        "   XX 1 1  0  0"
+      ],
+      [
+        "material 5                 !�Ӵ���                                             ",
+        "  'MECHANICAL','SOLID', 5                                                       ",
+        "   1\t\t   ! NUMBER OF PHASES                                                   ",
+        "   'SOLID'                                                                      ",
+        "   'ELASTIC_ISOTROPIC',2300,1.0,1.0,10e9,0.18,5e-6,0 ,0,0",
+        "   0  0  1000."
+      ]
+    ]
+  },
+  "nmats": 5,
+  "contact_raw": [
+    " ngaps ngapb contactpe miter_bt tor_bt iblks_bt nonsbt xlwsol method_gapi miter_state type_solver_ctt restart_ctt damp_ctt istatec",
+    "  1  2  0  500  1.0e-6  2  0  0  0  0  'PROFILE'  0  0.0  0",
+    "block_appear_process(1:ngapb,1:nblks)",
+    "  0  0  0  0",
+    "1:ngaps",
+    "ngroupt/listgropt/gap0,statei/ft0(1:ngroupt)/frict0(1:ngroupt)/cohes0(1:ngroupt)",
+    "  2  0  0  0  0  0",
+    "4 -5",
+    "0.000 1",
+    "2*1.0e6",
+    "2*0.0001",
+    "2*1.0e6",
+    "  0  0.0  0.0  0.0  0.0",
+    "1:ngapb",
+    "ngroupt,ngroupb,nrdof,eblock",
+    "  2  1  0  0",
+    "4 -5",
+    "2",
+    "ngroupt,ngroupb,nrdof,eblock",
+    "  2  1  0  0",
+    "4 -5",
+    "3  "
+  ],
+  "nrt_raw": [
+    "interpolation nodes",
+    "ntransnode and translg for each transgroup",
+    "0 99   !transgroup "
+  ],
+  "tem_raw": [
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "edge difine",
+    "0",
+    "edge temperature",
+    "bondary",
+    "0"
+  ],
+  "mdofn": 2,
+  "lmdofn": [
+    1,
+    1
+  ],
+  "order_time_mdofn": [
+    0,
+    0
+  ],
+  "time_curves": [
+    {
+      "type": "LINEAR",
+      "nline": 2,
+      "times": [
+        0.0,
+        1.0
+      ],
+      "values": [
+        1.0,
+        1.0
+      ]
+    },
+    {
+      "type": "LINEAR",
+      "nline": 2,
+      "times": [
+        0.0,
+        1.0
+      ],
+      "values": [
+        0.0,
+        4.0
+      ]
+    }
+  ],
+  "edge_definitions": [
+    {
+      "sedge": 31,
+      "nnode": 2,
+      "index": 1,
+      "vdimn": 0,
+      "rows": [
+        [
+          1,
+          2063,
+          2074,
+          621
+        ],
+        [
+          2,
+          2050,
+          2063,
+          622
+        ],
+        [
+          3,
+          2031,
+          2050,
+          623
+        ],
+        [
+          4,
+          2015,
+          2031,
+          624
+        ],
+        [
+          5,
+          1997,
+          2015,
+          625
+        ],
+        [
+          6,
+          1979,
+          1997,
+          626
+        ],
+        [
+          7,
+          1961,
+          1979,
+          627
+        ],
+        [
+          8,
+          1943,
+          1961,
+          628
+        ],
+        [
+          9,
+          1926,
+          1943,
+          629
+        ],
+        [
+          10,
+          1907,
+          1926,
+          630
+        ],
+        [
+          11,
+          2512,
+          1335,
+          721
+        ],
+        [
+          12,
+          1335,
+          1353,
+          731
+        ],
+        [
+          13,
+          1353,
+          1375,
+          741
+        ],
+        [
+          14,
+          1375,
+          1391,
+          751
+        ],
+        [
+          15,
+          1391,
+          1414,
+          761
+        ],
+        [
+          16,
+          1414,
+          1434,
+          771
+        ],
+        [
+          17,
+          1434,
+          1455,
+          781
+        ],
+        [
+          18,
+          1455,
+          1478,
+          791
+        ],
+        [
+          19,
+          1478,
+          1500,
+          801
+        ],
+        [
+          20,
+          1500,
+          1522,
+          811
+        ],
+        [
+          21,
+          1522,
+          1558,
+          821
+        ],
+        [
+          22,
+          1558,
+          1595,
+          831
+        ],
+        [
+          23,
+          1595,
+          1633,
+          841
+        ],
+        [
+          24,
+          1633,
+          1673,
+          851
+        ],
+        [
+          25,
+          1673,
+          1710,
+          861
+        ],
+        [
+          26,
+          1710,
+          1748,
+          871
+        ],
+        [
+          27,
+          1748,
+          1783,
+          881
+        ],
+        [
+          28,
+          1783,
+          1817,
+          891
+        ],
+        [
+          29,
+          1817,
+          1851,
+          901
+        ],
+        [
+          30,
+          1851,
+          1907,
+          911
+        ],
+        [
+          31,
+          1321,
+          2512,
+          2421
+        ]
+      ]
+    }
+  ],
+  "edge_loads": [
+    {
+      "counts": [
+        0,
+        0
+      ],
+      "rows": []
+    },
+    {
+      "counts": [
+        31,
+        1
+      ],
+      "rows": [
+        {
+          "b0": 1,
+          "b1": 31,
+          "time_curve": 2,
+          "water": 2,
+          "extra": 0,
+          "values": [
+            110.0,
+            0.0,
+            0.0,
+            110.0,
+            9800.0
+          ]
+        }
+      ]
+    }
+  ],
+  "internal_force_sections": {
+    "verbatim": {
+      "header": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "appear": [
+        2
+      ],
+      "sections": [
+        {
+          "lgroup": 1,
+          "neface": 10,
+          "node_face": 2,
+          "nliste": 1,
+          "list": [
+            1
+          ],
+          "rows": [
+            [
+              721,
+              2542,
+              2512
+            ],
+            [
+              722,
+              2541,
+              2542
+            ],
+            [
+              723,
+              2540,
+              2541
+            ],
+            [
+              724,
+              2539,
+              2540
+            ],
+            [
+              725,
+              2538,
+              2539
+            ],
+            [
+              726,
+              2537,
+              2538
+            ],
+            [
+              727,
+              2536,
+              2537
+            ],
+            [
+              728,
+              2535,
+              2536
+            ],
+            [
+              729,
+              2534,
+              2535
+            ],
+            [
+              730,
+              2533,
+              2534
+            ]
+          ]
+        }
+      ]
+    }
+  },
+  "runblks": 2,
+  "opr": [
+    999,
+    0,
+    0,
+    0,
+    0
+  ],
+  "tem_pipe": [
+    0,
+    0
+  ]
+}

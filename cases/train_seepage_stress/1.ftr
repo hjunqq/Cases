@@ -1,0 +1,18 @@
+nforce,ngaps,nforce_gaps,nsafety_gaps
+1 0 0 0
+nforce_appear !1-- for saftyfactor 2-- for internal force 3-- for both
+1*2
+1:nforce
+lgroup,neface,node_face,nliste
+1        8         2      1
+surface_force(iforce)%list  surface_force(iforce)%liste(ie),surface_force(iforce)%liste1(ie),ienface(:,ie)
+1
+        49      218       219               1
+        57      219       244               1
+        65      244       264               1
+        73      264       276               1
+        81      276       294               1
+        89      294       314               1
+        97      314       330               1
+       105      330       346               1
+        

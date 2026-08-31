@@ -1,0 +1,53 @@
+ ================================================
+   Easy_HSTAR - Finite Element Analysis
+ ================================================
+ 
+ Reading: 1.toml
+  Read 432 nodes
+  Read 230 elements
+ =============================================
+  HSTAR Problem Summary
+ =============================================
+  Version     :            1
+  Problem name: 1
+  Type        : Q
+  Dimensions  :            3
+  Nodes       :          432
+  Elements    :          230
+  Materials   :            3
+  Groups      :            3
+  Max DOF/node:            3
+  Blocks      :            2
+  Links       :            0
+  Solver      : PARDISO
+  Load type   : LOAD
+  Output      : GIDR
+ 
+  Analysis blocks:
+   Block   1 type=static nincs=     1
+   Block   2 type=static nincs=     1
+ 
+  Materials:
+   Mat   1 name=Foundation type=MECHANICAL
+   Mat   2 name=Dam concrete (damage) type=MECHANICAL
+   Mat   3 name=Interface type=MECHANICAL
+ =============================================
+ validate_problem: all checks passed
+ 
+ Input OK. Starting analysis...
+  ndimn=3, npoin=432, ntotv=1296
+ 
+  === Block 1 / 2
+  iffix: free=588, BC=288, inactive=420
+  Neq = 588
+  NNZ = 25530
+  Inc 1 Step 1
+forrtl: severe (157): Program Exception - access violation
+Image              PC                Routine            Line        Source             
+easy_hstar.exe     00007FF7D2996FAA  Unknown               Unknown  Unknown
+easy_hstar.exe     00007FF7D298FEF7  Unknown               Unknown  Unknown
+easy_hstar.exe     00007FF7D29D035B  Unknown               Unknown  Unknown
+easy_hstar.exe     00007FF7D2E2B60B  Unknown               Unknown  Unknown
+easy_hstar.exe     00007FF7D70EFF60  Unknown               Unknown  Unknown
+KERNEL32.DLL       00007FF9F162E8D7  Unknown               Unknown  Unknown
+ntdll.dll          00007FF9F2DEC53C  Unknown               Unknown  Unknown

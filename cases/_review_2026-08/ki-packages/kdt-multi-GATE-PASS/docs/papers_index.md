@@ -1,0 +1,36 @@
+# Papers index — HSTAR
+
+Full texts live in the shared cache `knowledge-dissection-toolkit/paper_cache/` (referenced by `text_path` below, not copied here). Regenerate via `push_papers_to_docs.py`.
+
+## Cached full texts (16)
+- **[benchmark]** `10.1016/j.engstruct.2019.05.072` — Concrete gravity dams model parameters updating using static measurements  (oa_green; serves: DISPLACEMENT)
+- **[threshold_convention]** `10.1109/access.2020.2995592` — The Prediction of Dam Displacement Time Series Using STL, Extra-Trees, and Stacked LSTM Neural Netwo  (oa_gold; serves: DISPLACEMENT)
+- **[threshold_convention]** `10.1109/access.2021.3049578` — An Improved Random Forest Model for the Prediction of Dam Displacement  (oa_gold; serves: DISPLACEMENT)
+- **[calibration]** `10.1016/j.asoc.2016.12.014` — Artificial neural networks for vibration based inverse parametric identifications: A review  (oa_green; serves: modal_frequency,DISPLACEMENT)
+- **[calibration]** `10.1007/s10706-017-0356-z` — Applications of Particle Swarm Optimization in Geotechnical Engineering: A Comprehensive Review  (oa_green; serves: factor_of_safety,DISPLACEMENT)
+- **[definition]** `10.3151/jact.2.141` — State-of-the-Art Report on Control of Cracking in Early Age Concrete  (oa_gold; serves: TEMPERATURE,STRESS)
+- **[definition]** `10.1016/j.compgeo.2015.04.016` — 3D zero-thickness coupled interface finite element: Formulation and application  (oa_green; serves: STRESS,PORE-PRESSURE)
+- **[definition]** `10.1002/nme.1620360104` — On the numerical integration of interface elements  (oa_green; serves: STRESS)
+- **[definition]** `10.1617/s11527-017-1010-1` — The steel–concrete interface  (oa_gold; serves: STRESS,DISPLACEMENT)
+- **[supporting]** `10.1007/s10346-018-1022-0` — Displacement prediction of step-like landslide by applying a novel kernel extreme learning machine m  (oa_green; serves: DISPLACEMENT)
+- **[supporting]** `10.1007/s10346-023-02104-9` — Landslide displacement forecasting using deep learning and monitoring data across selected sites  (oa_gold; serves: DISPLACEMENT)
+- **[supporting]** `10.1177/14759217211036880` — Machine learning and structural health monitoring overview with emerging technology and high-dimensi  (oa_gold; serves: DISPLACEMENT,acceleration,modal_frequency)
+- **[supporting]** `10.3390/app11062750` — Recent Advancements in Non-Destructive Testing Techniques for Structural Health Monitoring  (oa_gold; serves: STRESS,TEMPERATURE)
+- **[supporting]** `10.1038/s41524-022-00810-x` — Machine learning in concrete science: applications, challenges, and best practices  (oa_gold; serves: STRESS)
+- **[supporting]** `10.1109/access.2020.2987324` — Driven by Data or Derived Through Physics? A Review of Hybrid Physics Guided Machine Learning Techni  (oa_gold; serves: DISPLACEMENT)
+- **[supporting]** `10.1016/j.scitotenv.2020.136854` — Resilience assessment framework for critical infrastructure in a multi-hazard environment: Case stud  (oa_green; serves: factor_of_safety)
+
+## Manual-download needed — paywalled/bot-walled (12)
+- **[threshold_convention]** `10.1016/j.engstruct.2015.01.047` — Thermal displacements of concrete dams: accounting for water temperature in statistical models  (? ; serves: DISPLACEMENT,TEMPERATURE)
+- **[threshold_convention]** `10.3390/s18113682` — Geodetic and Remote-Sensing Sensors for Dam Deformation Monitoring  (? ; serves: DISPLACEMENT)
+- **[benchmark]** `10.1088/1742-6596/744/1/012037` — Ambient modal testing of a double-arch dam: the experimental campaign and model updating  (? ; serves: modal_frequency)
+- **[benchmark]** `10.1016/j.cscm.2019.e00289` — Predicting thermal performance of a mass concrete foundation - a field monitoring case study  (? ; serves: TEMPERATURE)
+- **[threshold_convention]** `10.3390/w14172598` — Understanding the Effect of Hydro-Climatological Parameters on Dam Seepage Using SHAP  (? ; serves: PORE-PRESSURE,WATER-HEAD)
+- **[threshold_convention]** `10.1016/j.jrmge.2020.05.011` — Improved prediction of slope stability using a hybrid stacking ensemble method  (? ; serves: factor_of_safety)
+- **[benchmark]** `10.1111/mice.13141` — Inverse analysis of deformation moduli for high arch dams using the displacement method  (? ; serves: DISPLACEMENT)
+- **[calibration]** `10.1155/2019/7936513` — Zoning Elastic Modulus Inversion for High Arch Dams Based on PSOGSA-SVM  (? ; serves: DISPLACEMENT)
+- **[definition]** `10.1155/2013/709430` — Comparison between Duncan and Chang's EB Model and the Generalized Plasticity Model  (? ; serves: DISPLACEMENT,STRESS)
+- **[benchmark]** `10.1016/j.wse.2019.09.004` — Long-term deformation analysis of Shuibuya concrete face rockfill dam  (? ; serves: DISPLACEMENT)
+- **[definition]** `10.1016/j.ijsolstr.2005.05.038` — An energy release rate-based plastic-damage model for concrete  (? ; serves: STRESS)
+- **[threshold_convention]** `10.1016/j.gsf.2017.09.003` — Probabilistic stability analyses of undrained slopes by 3D random fields and finite elements  (? ; serves: factor_of_safety,reliability_index)
+

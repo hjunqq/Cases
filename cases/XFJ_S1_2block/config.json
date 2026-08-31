@@ -1,0 +1,194 @@
+{
+  "type_problem": "Q",
+  "solver": "PARDISO",
+  "ndimn": 3,
+  "nblks": 2,
+  "groups": [
+    {
+      "name": "GROUP1",
+      "nelgroup": 4328,
+      "matno": 1,
+      "nnode": 8,
+      "elem_type": "B8"
+    },
+    {
+      "name": "GROUP2",
+      "nelgroup": 340,
+      "matno": 3,
+      "nnode": 8,
+      "elem_type": "B8"
+    },
+    {
+      "name": "GROUP3",
+      "nelgroup": 1768,
+      "matno": 3,
+      "nnode": 8,
+      "elem_type": "B8"
+    },
+    {
+      "name": "GROUP4",
+      "nelgroup": 876,
+      "matno": 3,
+      "nnode": 8,
+      "elem_type": "B8"
+    },
+    {
+      "name": "GROUP5",
+      "nelgroup": 6180,
+      "matno": 2,
+      "nnode": 8,
+      "elem_type": "B8"
+    },
+    {
+      "name": "GROUP6",
+      "nelgroup": 48,
+      "matno": 3,
+      "nnode": 8,
+      "elem_type": "B8"
+    },
+    {
+      "name": "GROUP7",
+      "nelgroup": 716,
+      "matno": 1,
+      "nnode": 8,
+      "elem_type": "B8"
+    },
+    {
+      "name": "GROUP8",
+      "nelgroup": 216,
+      "matno": 6,
+      "nnode": 2,
+      "elem_type": "L2"
+    },
+    {
+      "name": "GROUP9",
+      "nelgroup": 104,
+      "matno": 1,
+      "nnode": 8,
+      "elem_type": "B8"
+    },
+    {
+      "name": "GROUP10",
+      "nelgroup": 8,
+      "matno": 1,
+      "nnode": 8,
+      "elem_type": "B8"
+    }
+  ],
+  "materials": [
+    {
+      "id": 1,
+      "type": "ELASTIC",
+      "density": 2400.0,
+      "E": 22000000000.0,
+      "nu": 0.17,
+      "alfa": 1e-05
+    },
+    {
+      "id": 2,
+      "type": "ELASTIC",
+      "density": 0.0,
+      "E": 22000000000.0,
+      "nu": 0.3,
+      "alfa": 1e-05
+    },
+    {
+      "id": 3,
+      "type": "ELASTIC",
+      "density": 0.24,
+      "E": 23000000000.0,
+      "nu": 0.17,
+      "alfa": 1e-05
+    },
+    {
+      "id": 4,
+      "type": "ELASTIC",
+      "density": 2400.0,
+      "E": 23000000000.0,
+      "nu": 0.17,
+      "alfa": 1e-05
+    },
+    {
+      "id": 5,
+      "type": "SEEPAGE",
+      "fluid_density": 1000.0,
+      "porosity": 1.0,
+      "bulk_w": 2044900000.0,
+      "permeability": [
+        1e-05,
+        1e-05,
+        1e-05
+      ]
+    },
+    {
+      "id": 6,
+      "type": "ELASTIC",
+      "density": 0.0,
+      "E": 210000000000.0,
+      "nu": 0.167,
+      "alfa": 1e-05
+    },
+    {
+      "id": 6,
+      "type": "GEOMETRY",
+      "aera": 0.004021
+    }
+  ],
+  "blocks": {
+    "appear": [
+      [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    ],
+    "gravity": [
+      9.81,
+      0,
+      0,
+      -1,
+      0,
+      0,
+      -1
+    ],
+    "increments": [
+      [
+        {
+          "miter": 15,
+          "ditime": 1.0,
+          "nstep": 1
+        }
+      ],
+      [
+        {
+          "miter": 15,
+          "ditime": 1.0,
+          "nstep": 1
+        }
+      ]
+    ]
+  },
+  "boundary": {
+    "bottom_fix_uy": true,
+    "sides_fix_ux": true
+  }
+}
