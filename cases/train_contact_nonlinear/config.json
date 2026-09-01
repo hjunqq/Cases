@@ -723,65 +723,6 @@
     ]
   },
   "nmats": 5,
-  "contact_raw": [
-    " ngaps ngapb contactpe miter_bt tor_bt iblks_bt nonsbt xlwsol method_gapi miter_state type_solver_ctt restart_ctt damp_ctt istatec",
-    "  1  2  0  500  1.0e-6  2  0  0  0  0  'PROFILE'  0  0.0  0",
-    "block_appear_process(1:ngapb,1:nblks)",
-    "  0  0  0  0",
-    "1:ngaps",
-    "ngroupt/listgropt/gap0,statei/ft0(1:ngroupt)/frict0(1:ngroupt)/cohes0(1:ngroupt)",
-    "  2  0  0  0  0  0",
-    "4 -5",
-    "0.000 1",
-    "2*1.0e6",
-    "2*0.0001",
-    "2*1.0e6",
-    "  0  0.0  0.0  0.0  0.0",
-    "1:ngapb",
-    "ngroupt,ngroupb,nrdof,eblock",
-    "  2  1  0  0",
-    "4 -5",
-    "2",
-    "ngroupt,ngroupb,nrdof,eblock",
-    "  2  1  0  0",
-    "4 -5",
-    "3  "
-  ],
-  "nrt_raw": [
-    "interpolation nodes",
-    "ntransnode and translg for each transgroup",
-    "0 99   !transgroup "
-  ],
-  "tem_raw": [
-    "0",
-    "0",
-    "0",
-    "0",
-    "0",
-    "0",
-    "0",
-    "0",
-    "0",
-    "0",
-    "0",
-    "0",
-    "0",
-    "0",
-    "0",
-    "0",
-    "0",
-    "0",
-    "0",
-    "0",
-    "0",
-    "0",
-    "0",
-    "edge difine",
-    "0",
-    "edge temperature",
-    "bondary",
-    "0"
-  ],
   "mdofn": 2,
   "lmdofn": [
     1,
@@ -1133,7 +1074,6 @@
     0
   ],
   "_raw_guard": {
-    "materials": "391f71973899d393ed75c0f159c7009888a88bc40e5f6427e1353c78795e48f1",
-    "tem_pipe": "ab395cb4c41927dc03d8d0b9e1de32ba2761d97d7d85b9c89fc54ae3591dc0e1"
+    "materials": "391f71973899d393ed75c0f159c7009888a88bc40e5f6427e1353c78795e48f1"
   }
 }

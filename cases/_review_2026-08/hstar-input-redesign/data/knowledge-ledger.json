@@ -49,9 +49,9 @@
  },
  "train06_concrete_damage": {
   "vetted": true,
-  "date": "2026-08-31",
+  "date": "2026-09-01",
   "evidence": "33-knowledge-ledger.md",
-  "evidence_detail": "import_glb.parse_mat_raw+test_mat_raw_passthrough; 29 处置表(延期记录)"
+  "evidence_detail": "import_glb.parse_mat_raw+test_mat_raw_passthrough; 29 处置表(延期记录); typed concrete schema(parse_mat 提取+_gen_mat 出码)+test_concrete_typed_authoring——P A V 达成"
  },
  "train07_thermal_transient": {
   "vetted": true,

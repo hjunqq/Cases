@@ -734,45 +734,6 @@
     ]
   },
   "nmats": 5,
-  "contact_raw": [
-    " ngaps ngapb contactpe miter_bt tor_bt iblks_bt nonsbt xlwsol method_gapi miter_state type_solver_ctt restart_ctt damp_ctt istatec",
-    "  0  0  0  500  1.0e-6  1  0  1  0  0  'PROFILE'  0  0.0  0"
-  ],
-  "nrt_raw": [
-    "interpolation nodes",
-    "ntransnode and translg for each transgroup",
-    "0 99   !transgroup "
-  ],
-  "tem_raw": [
-    "0",
-    "0",
-    "0",
-    "0",
-    "0",
-    "0",
-    "0",
-    "0",
-    "0",
-    "0",
-    "0",
-    "0",
-    "0",
-    "0",
-    "0",
-    "0",
-    "0",
-    "0",
-    "0",
-    "0",
-    "0",
-    "0",
-    "0",
-    "edge difine",
-    "0",
-    "edge temperature",
-    "bondary",
-    "0"
-  ],
   "mdofn": 8,
   "lmdofn": [
     1,
@@ -1261,5 +1222,44 @@
   "_raw_guard": {
     "materials": "b8580ef4cbbb17746b622e4f41db7d94ddcf5080585dbe1f45983f79d2cf9ecb",
     "tem_pipe": "ab395cb4c41927dc03d8d0b9e1de32ba2761d97d7d85b9c89fc54ae3591dc0e1"
-  }
+  },
+  "contact_raw": [
+    " ngaps ngapb contactpe miter_bt tor_bt iblks_bt nonsbt xlwsol method_gapi miter_state type_solver_ctt restart_ctt damp_ctt istatec",
+    "  0  0  0  500  1.0e-6  1  0  1  0  0  'PROFILE'  0  0.0  0"
+  ],
+  "nrt_raw": [
+    "interpolation nodes",
+    "ntransnode and translg for each transgroup",
+    "0 99   !transgroup "
+  ],
+  "tem_raw": [
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "0",
+    "edge difine",
+    "0",
+    "edge temperature",
+    "bondary",
+    "0"
+  ]
 }

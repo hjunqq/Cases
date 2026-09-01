@@ -896,3 +896,43 @@ typed 编辑到不了 deck**。这正是审计说被一个 READY 掩盖的事实
 常数即第一候选,29 号文档已有裁定与延期记录)。
 
 830 测试全绿;闸门 14/19 不变(P/A/V 是并列坐标,不改 verdict 语义)。
+
+
+---
+
+# 附录 14:train06 材料常数 typed schema——A 列 6→7(2026-09-01)
+
+## 两个发现让这件事比预想便宜
+
+1. **生成器侧早就齐了**:`_gen_mat` 的 CONCRETE 分支本就按 `m["concrete"]`
+   15 参出码(conc_A..irevert,与 deck 行逐位对应)——缺口只在 import 侧
+   从不提取,于是导入的 config 带默认值、差异被 mat_raw 掩盖。
+2. **挡 A 的一半是冗余**:train06 剥掉 mat_raw 后仍被 contact_raw/
+   nrt_raw/tem_raw 挡住——查看内容,三者全是**生成器自己的默认桩**
+   (这 deck 历史上被本管线重生成过)。携带自己的默认值只会锁死作者权。
+
+## 落地
+
+- `parse_mat`:CONCRETE 块提取损伤行(Material.f90:643 绑定 9 项
+  A,B,C,D,Fc,Ct,Gf,h,icr;尾部 6 值为注记,一并携带以保逐位)
+- **raw-drop 白名单**:全块类型 ∈ {ELASTIC, CONCRETE(含损伤行)} 且
+  前导为标准形 → 不再携带 mat_raw。其余 deck 保守持有(拒绝优先)
+- **默认桩等价剥离**:`_drop_default_raws` 按**绑定值等价**比对
+  nrt/contact/tem 桩与生成器默认——等价即冗余即丢弃;7 个 config 顺带
+  剥离。防漂移锁:新测试断言"新生成 deck 再导入必须零 raw 携带",
+  两侧任一漂移即红
+- 作者权实测:改 `concrete.fc=2.5e7` → `1.mat` 落 `2.500E+07`,
+  再导入 typed 往返
+
+## 数字
+
+```
+A 列   6 → 7(train06 达成 P A V)
+回读   19/19 精确(含无 raw 的 train06 与 7 个剥桩 config)
+闸门   14/19 不变;测试 830 → 842 全绿
+```
+
+剩余 P·V 算例的 A 缺口清单(grades.authoring_blockers):大头是
+train09/contact/seepage 系的 mat_raw(GEOMETRY/WATER/CLASSICALEP 全参数
+/HEAT 等块尚无 typed 表达)与 train_contact 的 contact_raw(非零接触段)。
+每补一类 typed schema 解锁一批——模式已被本次验证。

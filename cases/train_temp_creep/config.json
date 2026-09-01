@@ -323,10 +323,6 @@
     ]
   },
   "nmats": 1,
-  "contact_raw": [
-    " ngaps ngapb contactpe miter_bt tor_bt iblks_bt nonsbt xlwsol method_gapi miter_state type_solver_ctt restart_ctt damp_ctt istatec",
-    " 0 0 0 200 1.0e-6 1 0 0 0 0 PROFILE 0 0.0 0   !legacy ngapb=2 zeroed (Global.f90:3334 returns before allocating gapb; :4869 dereferences it); legacy icgap0=0 dropped"
-  ],
   "nrt_raw": [
     " The interpolation groups: transgroup",
     " ntransnode and translg for each transgroup",

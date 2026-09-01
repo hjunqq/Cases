@@ -28,20 +28,6 @@
   "annotations": []
  },
  {
-  "case": "train02c_dbg",
-  "status": "compared",
-  "records": 199,
-  "records_gen": 199,
-  "value_diffs": 0,
-  "annotation_diffs": 0,
-  "only_in_orig": 0,
-  "only_in_gen": 0,
-  "stop_orig": null,
-  "stop_gen": null,
-  "diffs": [],
-  "annotations": []
- },
- {
   "case": "train02c_seismic_wave_compare",
   "status": "compared",
   "records": 199,
@@ -320,13 +306,134 @@
   "records": 329,
   "records_gen": 329,
   "value_diffs": 0,
-  "annotation_diffs": 0,
+  "annotation_diffs": 10,
   "only_in_orig": 0,
   "only_in_gen": 0,
   "stop_orig": null,
   "stop_gen": null,
   "diffs": [],
-  "annotations": []
+  "annotations": [
+   {
+    "at": "Material.f90:258",
+    "vars": [
+     "text"
+    ],
+    "orig": [
+     "MATERIAL"
+    ],
+    "gen": [
+     "COMMENT"
+    ]
+   },
+   {
+    "at": "Material.f90:258",
+    "vars": [
+     "text"
+    ],
+    "orig": [
+     "NAME"
+    ],
+    "gen": [
+     "COMMENT"
+    ]
+   },
+   {
+    "at": "Material.f90:258",
+    "vars": [
+     "text"
+    ],
+    "orig": [
+     "FIRST:NAME---MECHANICAL"
+    ],
+    "gen": [
+     "COMMENT"
+    ]
+   },
+   {
+    "at": "Material.f90:258",
+    "vars": [
+     "text"
+    ],
+    "orig": [
+     "FOR"
+    ],
+    "gen": [
+     "COMMENT"
+    ]
+   },
+   {
+    "at": "Material.f90:258",
+    "vars": [
+     "text"
+    ],
+    "orig": [
+     "NUMBER"
+    ],
+    "gen": [
+     "COMMENT"
+    ]
+   },
+   {
+    "at": "Material.f90:258",
+    "vars": [
+     "text"
+    ],
+    "orig": [
+     "FOR"
+    ],
+    "gen": [
+     "COMMENT"
+    ]
+   },
+   {
+    "at": "Material.f90:258",
+    "vars": [
+     "text"
+    ],
+    "orig": [
+     "FOR"
+    ],
+    "gen": [
+     "COMMENT"
+    ]
+   },
+   {
+    "at": "Material.f90:258",
+    "vars": [
+     "text"
+    ],
+    "orig": [
+     "FOR"
+    ],
+    "gen": [
+     "COMMENT"
+    ]
+   },
+   {
+    "at": "Material.f90:258",
+    "vars": [
+     "text"
+    ],
+    "orig": [
+     "CAMCLAY"
+    ],
+    "gen": [
+     "COMMENT"
+    ]
+   },
+   {
+    "at": "Material.f90:258",
+    "vars": [
+     "text"
+    ],
+    "orig": [
+     "FOR"
+    ],
+    "gen": [
+     "COMMENT"
+    ]
+   }
+  ]
  },
  {
   "case": "train11_staged_foundation",
@@ -839,141 +946,6 @@
     ],
     "orig": [
      "ntsmat nthmat kstat ground_inf src nextrf submodel"
-    ],
-    "gen": [
-     "NTSMAT"
-    ]
-   },
-   {
-    "at": "Global.f90:902",
-    "vars": [
-     "text"
-    ],
-    "orig": [
-     "MDOFN(/Ux Uy Uz Thxy Thyz Thzx P W A T)"
-    ],
-    "gen": [
-     "MDOFN"
-    ]
-   },
-   {
-    "at": "Global.f90:927",
-    "vars": [
-     "text"
-    ],
-    "orig": [
-     "APPEAR_PROCESS(1-nblks/1-ngroup)"
-    ],
-    "gen": [
-     "APPEAR_PROCESS"
-    ]
-   },
-   {
-    "at": "Global.f90:934",
-    "vars": [
-     "text"
-    ],
-    "orig": [
-     "MATNO_PROCESS(1-nblks/1-ngroup)"
-    ],
-    "gen": [
-     "MATNO_PROCESS"
-    ]
-   }
-  ]
- },
- {
-  "case": "train_slope_unknown",
-  "status": "compared",
-  "records": 168,
-  "records_gen": 168,
-  "value_diffs": 0,
-  "annotation_diffs": 31,
-  "only_in_orig": 0,
-  "only_in_gen": 0,
-  "stop_orig": null,
-  "stop_gen": null,
-  "diffs": [],
-  "annotations": [
-   {
-    "at": "Global.f90:675",
-    "vars": [
-     "text"
-    ],
-    "orig": [
-     "NPOIN  npoinb NELEM  NDIMN  NMATS  NGROUP NTLINK outplot KSTAB MAT_curve meshc rmesh"
-    ],
-    "gen": [
-     "NPOIN"
-    ]
-   },
-   {
-    "at": "Global.f90:690",
-    "vars": [
-     "text"
-    ],
-    "orig": [
-     "remesh"
-    ],
-    "gen": [
-     "valv1"
-    ]
-   },
-   {
-    "at": "Global.f90:693",
-    "vars": [
-     "text"
-    ],
-    "orig": [
-     "remesh"
-    ],
-    "gen": [
-     "ndivide"
-    ]
-   },
-   {
-    "at": "Global.f90:726",
-    "vars": [
-     "text"
-    ],
-    "orig": [
-     "NINIT KINIT winit NBLKS NLINKS NONSYM OUTINP outintr outintw neuman equvs type_ABC block_stab nbackf nbspring ebody outind nbackdT ninistn"
-    ],
-    "gen": [
-     "NINIT"
-    ]
-   },
-   {
-    "at": "Global.f90:751",
-    "vars": [
-     "text"
-    ],
-    "orig": [
-     "TYPE_PROBLEM TYPE_SOLVER TYPE_LOAD TYPE_NL STABPW nlayer kglb state_change Bparameter balgor upliftin"
-    ],
-    "gen": [
-     "TYPE_PROBLEM"
-    ]
-   },
-   {
-    "at": "Global.f90:773",
-    "vars": [
-     "text"
-    ],
-    "orig": [
-     "NMASS NSMAT NHMAT NQMAT NLDFL KGMAT NSWKW UWCPL NGRAV nflow ECWPIPE"
-    ],
-    "gen": [
-     "NMASS"
-    ]
-   },
-   {
-    "at": "Global.f90:788",
-    "vars": [
-     "text"
-    ],
-    "orig": [
-     "NTSMAT NTHMAT  KSTAT ground_inf src nextrf submodel"
     ],
     "gen": [
      "NTSMAT"

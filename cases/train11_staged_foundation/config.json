@@ -634,68 +634,6 @@
     }
   },
   "type_nl": 5,
-  "mat_raw": {
-    "nmats": 5,
-    "prelude": [
-      " material property curves",
-      "  0",
-      "  10",
-      "COMMENT",
-      "COMMENT",
-      "COMMENT",
-      "COMMENT",
-      "COMMENT",
-      "COMMENT",
-      "COMMENT",
-      "COMMENT",
-      "COMMENT",
-      "COMMENT",
-      " nmats",
-      "  5"
-    ],
-    "blocks": [
-      [
-        "     material_serial         1",
-        "          MECHANICAL           SOLID     1",
-        "  1",
-        "               SOLID",
-        "ELASTIC_ISOTROPIC       2.300E+03       1.000E+00       1.000E+00       1.000E+10       1.800E-01       5.000E-06  0  0  0",
-        "  0  0       1.000E+03"
-      ],
-      [
-        "     material_serial         2",
-        "          MECHANICAL           SOLID     2",
-        "  1",
-        "               SOLID",
-        "ELASTIC_ISOTROPIC       2.500E+03       1.000E+00       1.000E+00       2.500E+10       1.670E-01       5.000E-06  0  0  0",
-        "  0  0       1.000E+03"
-      ],
-      [
-        "     material_serial         3",
-        "          MECHANICAL           SOLID     3",
-        "  1",
-        "               SOLID",
-        "ELASTIC_ISOTROPIC       0.000E+00       1.000E+00       1.000E+00       1.000E+10       1.800E-01       5.000E-06  0  0  0",
-        "  0  0       1.000E+03"
-      ],
-      [
-        "     material_serial         4",
-        "          MECHANICAL           SOLID     4",
-        "  1",
-        "               SOLID",
-        "ELASTIC_ISOTROPIC       2.300E+03       1.000E+00       1.000E+00       1.000E+10       1.800E-01       5.000E-06  0  0  0",
-        "  0  0       1.000E+03"
-      ],
-      [
-        "     material_serial         5",
-        "          MECHANICAL           SOLID     5",
-        "  1",
-        "               SOLID",
-        "ELASTIC_ISOTROPIC       2.300E+03       1.000E+00       1.000E+00       1.000E+10       1.800E-01       5.000E-06  0  0  0",
-        "  0  0       1.000E+03"
-      ]
-    ]
-  },
   "nmats": 5,
   "mdofn": 2,
   "lmdofn": [
@@ -955,8 +893,5 @@
   "tem_pipe": [
     0,
     3
-  ],
-  "_raw_guard": {
-    "materials": "e726f2976662fd0235c0073198b0d8141ee2f812df7025e2ac415431faa744eb"
-  }
+  ]
 }

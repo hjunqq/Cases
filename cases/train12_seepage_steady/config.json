@@ -373,67 +373,7 @@
     }
   },
   "type_nl": 5,
-  "mat_raw": {
-    "nmats": 1,
-    "prelude": [
-      " material property curves",
-      "  0",
-      "  10",
-      "COMMENT",
-      "COMMENT",
-      "COMMENT",
-      "COMMENT",
-      "COMMENT",
-      "COMMENT",
-      "COMMENT",
-      "COMMENT",
-      "COMMENT",
-      "COMMENT",
-      " nmats",
-      "  1"
-    ],
-    "blocks": [
-      [
-        "     material_serial         1",
-        "          MECHANICAL           WATER     1",
-        "  1",
-        "               FLUID",
-        "       1.000E+03  0.44       2.200E+09",
-        "  0       1.000E-05       1.000E-05"
-      ]
-    ]
-  },
   "nmats": 1,
-  "tem_raw": [
-    "0",
-    "0",
-    "0",
-    "0",
-    "0",
-    "0",
-    "0",
-    "0",
-    "0",
-    "0",
-    "0",
-    "0",
-    "0",
-    "0",
-    "0",
-    "0",
-    "0",
-    "0",
-    "0",
-    "0",
-    "0",
-    "0",
-    "0",
-    "edge difine",
-    "0",
-    "edge temperature",
-    "bondary",
-    "0"
-  ],
   "mdofn": 8,
   "lmdofn": [
     0,
@@ -513,9 +453,5 @@
   "tem_pipe": [
     0,
     0
-  ],
-  "_raw_guard": {
-    "materials": "18f1380aa66a9f212d565986ecec5ba8a8cfa2c421d2ac4289e70eb2c02215eb",
-    "tem_pipe": "ab395cb4c41927dc03d8d0b9e1de32ba2761d97d7d85b9c89fc54ae3591dc0e1"
-  }
+  ]
 }

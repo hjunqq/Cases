@@ -49,15 +49,24 @@
       "id": 1,
       "type": "ELASTIC",
       "density": 0.0,
-      "ratio": 1.0,
-      "thickness": 1.0,
       "E": 10000000000.0,
       "nu": 0.167,
       "alfa": 1e-06
     },
     {
       "id": 1,
-      "type": "HEAT"
+      "type": "HEAT",
+      "heat": {
+        "alfa": [
+          1.0,
+          1.0,
+          1.0
+        ],
+        "source_curve": 0,
+        "place_curve": 0,
+        "pipe_cooling": 0,
+        "ialfa": 0
+      }
     }
   ],
   "blocks": {
@@ -300,42 +309,6 @@
     }
   },
   "type_nl": 10,
-  "mat_raw": {
-    "nmats": 2,
-    "prelude": [
-      " material property curves",
-      "  0",
-      "  10",
-      "MATERIAL PROPERTIES-INPUT FOR 1 TO NMATS",
-      "NAME FOR MATERIAL---FOR COMMENTS",
-      "FIRST:NAME---MECHANICAL, TEMPERATURE, ETC",
-      "FOR MECHNICAL, SECOND:PHASE---SOLID, FLUID, AIR OR OIL",
-      "NUMBER OF PHASE",
-      "FOR SOLID: MATERIAL(CLASSICALEP,CAMCLAY,ETC),density,ratio,thick,e,nu",
-      "FOR MATERISL: CLASSICALEP:CRITERIA(TC,VM,DP,MC),sigm0,hardening",
-      "FOR MC OR DP: FRICT_ANGLE, DILAN_ANGLE",
-      "CAMCLAY    :Pc, lamda, Mg, Mf, D0, D1,gaama",
-      "FOR FLUID: (1) density,ratio,bulkw (2)permiability(1:ndimn)",
-      " nmats",
-      "  2"
-    ],
-    "blocks": [
-      [
-        "     material_serial         1",
-        "          MECHANICAL           SOLID         1",
-        "  1",
-        "               SOLID",
-        "ELASTIC_ISOTROPIC          0.000E+00       1.000E+00       1.000E+00       1.000E+10       1.670E-01       1.000E-06  0  0  0",
-        "  0  0  0  1000."
-      ],
-      [
-        "     material_serial         2",
-        "          HEAT                 SOLID         1",
-        "  1.0  1.0  1.0  0  0  0",
-        "  0"
-      ]
-    ]
-  },
   "nmats": 1,
   "mdofn": 10,
   "lmdofn": [
@@ -396,8 +369,5 @@
   "tem_pipe": [
     0,
     3
-  ],
-  "_raw_guard": {
-    "materials": "1068103eb594fadb76592fa8c094279e11404ecea162810d9bf444b349716972"
-  }
+  ]
 }

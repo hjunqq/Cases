@@ -248,7 +248,7 @@
   "conditions": {
    "1_no_unknown_slot": [
     "pass",
-    "walked, config-attributable (preservation-grade: raw carries mat_raw,contact_raw,nrt_raw,tem_raw — typed edits to those regions do not reach the deck)"
+    "walked, config-attributable (preservation-grade: raw carries mat_raw,tem_raw — typed edits to those regions do not reach the deck)"
    ],
    "2_defaults_justified": [
     "pass",
@@ -279,8 +279,6 @@
    "authoring": false,
    "authoring_blockers": [
     "mat_raw",
-    "contact_raw",
-    "nrt_raw",
     "tem_raw"
    ],
    "verification": true
@@ -293,7 +291,7 @@
   "conditions": {
    "1_no_unknown_slot": [
     "pass",
-    "walked, config-attributable (preservation-grade: raw carries mat_raw,contact_raw,nrt_raw,tem_raw — typed edits to those regions do not reach the deck)"
+    "walked, config-attributable (preservation-grade: raw carries mat_raw,tem_raw — typed edits to those regions do not reach the deck)"
    ],
    "2_defaults_justified": [
     "pass",
@@ -324,8 +322,6 @@
    "authoring": false,
    "authoring_blockers": [
     "mat_raw",
-    "contact_raw",
-    "nrt_raw",
     "tem_raw"
    ],
    "verification": true
@@ -338,7 +334,7 @@
   "conditions": {
    "1_no_unknown_slot": [
     "pass",
-    "walked, config-attributable (preservation-grade: raw carries mat_raw,contact_raw,nrt_raw,tem_raw — typed edits to those regions do not reach the deck)"
+    "walked, config-attributable"
    ],
    "2_defaults_justified": [
     "pass",
@@ -366,13 +362,8 @@
   "run_validity": "valid",
   "grades": {
    "preservation": true,
-   "authoring": false,
-   "authoring_blockers": [
-    "mat_raw",
-    "contact_raw",
-    "nrt_raw",
-    "tem_raw"
-   ],
+   "authoring": true,
+   "authoring_blockers": [],
    "verification": true
   },
   "verdict": "READY",
@@ -383,7 +374,7 @@
   "conditions": {
    "1_no_unknown_slot": [
     "pass",
-    "walked, config-attributable (preservation-grade: raw carries mat_raw,contact_raw,nrt_raw,tem_raw — typed edits to those regions do not reach the deck)"
+    "walked, config-attributable (preservation-grade: raw carries mat_raw — typed edits to those regions do not reach the deck)"
    ],
    "2_defaults_justified": [
     "pass",
@@ -413,10 +404,7 @@
    "preservation": true,
    "authoring": false,
    "authoring_blockers": [
-    "mat_raw",
-    "contact_raw",
-    "nrt_raw",
-    "tem_raw"
+    "mat_raw"
    ],
    "verification": true
   },
@@ -428,7 +416,7 @@
   "conditions": {
    "1_no_unknown_slot": [
     "pass",
-    "walked, config-attributable (preservation-grade: raw carries mat_raw,contact_raw,nrt_raw,tem_raw — typed edits to those regions do not reach the deck)"
+    "walked, config-attributable (preservation-grade: raw carries mat_raw — typed edits to those regions do not reach the deck)"
    ],
    "2_defaults_justified": [
     "pass",
@@ -458,10 +446,7 @@
    "preservation": true,
    "authoring": false,
    "authoring_blockers": [
-    "mat_raw",
-    "contact_raw",
-    "nrt_raw",
-    "tem_raw"
+    "mat_raw"
    ],
    "verification": true
   },
@@ -473,7 +458,7 @@
   "conditions": {
    "1_no_unknown_slot": [
     "pass",
-    "walked, config-attributable (preservation-grade: raw carries mat_raw,contact_raw,nrt_raw,tem_raw — typed edits to those regions do not reach the deck)"
+    "walked, config-attributable (preservation-grade: raw carries mat_raw — typed edits to those regions do not reach the deck)"
    ],
    "2_defaults_justified": [
     "pass",
@@ -503,10 +488,7 @@
    "preservation": true,
    "authoring": false,
    "authoring_blockers": [
-    "mat_raw",
-    "contact_raw",
-    "nrt_raw",
-    "tem_raw"
+    "mat_raw"
    ],
    "verification": false
   },
@@ -520,7 +502,7 @@
   "conditions": {
    "1_no_unknown_slot": [
     "pass",
-    "walked, config-attributable (preservation-grade: raw carries mat_raw,contact_raw,nrt_raw,tem_raw — typed edits to those regions do not reach the deck)"
+    "walked, config-attributable (preservation-grade: raw carries mat_raw — typed edits to those regions do not reach the deck)"
    ],
    "2_defaults_justified": [
     "pass",
@@ -550,10 +532,7 @@
    "preservation": true,
    "authoring": false,
    "authoring_blockers": [
-    "mat_raw",
-    "contact_raw",
-    "nrt_raw",
-    "tem_raw"
+    "mat_raw"
    ],
    "verification": true
   },
@@ -565,7 +544,7 @@
   "conditions": {
    "1_no_unknown_slot": [
     "pass",
-    "walked, config-attributable (preservation-grade: raw carries mat_raw,contact_raw,nrt_raw,tem_raw — typed edits to those regions do not reach the deck)"
+    "walked, config-attributable (preservation-grade: raw carries mat_raw,tem_raw — typed edits to those regions do not reach the deck)"
    ],
    "2_defaults_justified": [
     "pass",
@@ -596,8 +575,6 @@
    "authoring": false,
    "authoring_blockers": [
     "mat_raw",
-    "contact_raw",
-    "nrt_raw",
     "tem_raw"
    ],
    "verification": true

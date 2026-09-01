@@ -481,68 +481,6 @@
     }
   },
   "type_nl": 1,
-  "mat_raw": {
-    "nmats": 5,
-    "prelude": [
-      " material property curves",
-      "  0",
-      "  10",
-      "MATERIAL PROPERTIES-INPUT FOR 1 TO NMATS",
-      "NAME FOR MATERIAL---FOR COMMENTS",
-      "FIRST:NAME---MECHANICAL, TEMPERATURE, ETC",
-      "FOR MECHNICAL, SECOND:PHASE---SOLID, FLUID, AIR OR OIL",
-      "NUMBER OF PHASE",
-      "FOR SOLID: MATERIAL(CLASSICALEP,CAMCLAY,ETC),density,ratio,thick,e,nu",
-      "FOR MATERISL: CLASSICALEP:CRITERIA(TC,VM,DP,MC),sigm0,hardening",
-      "FOR MC OR DP: FRICT_ANGLE, DILAN_ANGLE",
-      "CAMCLAY    :Pc, lamda, Mg, Mf, D0, D1,gaama",
-      "FOR FLUID: (1) density,ratio,bulkw (2)permiability(1:ndimn)",
-      " nmats",
-      "  5"
-    ],
-    "blocks": [
-      [
-        "     material_serial         1",
-        "          MECHANICAL           SOLID         1",
-        "  1",
-        "               SOLID",
-        "ELASTIC_ISOTROPIC          2.300E+03       1.000E+00       1.000E+00       1.000E+10       1.800E-01       1.000E-05  0  0  0",
-        "  0  0       1.000E+03"
-      ],
-      [
-        "     material_serial         2",
-        "          MECHANICAL           SOLID         2",
-        "  1",
-        "               SOLID",
-        "ELASTIC_ISOTROPIC          2.500E+03       1.000E+00       1.000E+00       2.500E+10       1.670E-01       1.000E-05  0  0  0",
-        "  0  0       1.000E+03"
-      ],
-      [
-        "     material_serial         3",
-        "          MECHANICAL           SOLID         3",
-        "  1",
-        "               SOLID",
-        "ELASTIC_ISOTROPIC          2.300E+03       1.000E+00       1.000E+00       1.000E+10       1.800E-01       1.000E-05  0  0  0",
-        "  0  0       1.000E+03"
-      ],
-      [
-        "     material_serial         4",
-        "          MECHANICAL           SOLID         4",
-        "  1",
-        "               SOLID",
-        "ELASTIC_ISOTROPIC          2.300E+03       1.000E+00       1.000E+00       1.000E+10       1.800E-01       1.000E-05  0  0  0",
-        "  0  0       1.000E+03"
-      ],
-      [
-        "     material_serial         5",
-        "          MECHANICAL           SOLID         5",
-        "  1",
-        "               SOLID",
-        "ELASTIC_ISOTROPIC          2.300E+03       1.000E+00       1.000E+00       1.000E+10       1.800E-01       1.000E-05  0  0  0",
-        "  0  0       1.000E+03"
-      ]
-    ]
-  },
   "nmats": 5,
   "mdofn": 8,
   "lmdofn": [
@@ -7453,8 +7391,5 @@
   "tem_pipe": [
     0,
     3
-  ],
-  "_raw_guard": {
-    "materials": "e34c35c8596947aef7d60200d0909e84c269475069cefe1c3144d866826f2e98"
-  }
+  ]
 }
