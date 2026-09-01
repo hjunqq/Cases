@@ -7,23 +7,23 @@
  igroup=           3 tvol=  8.000000000000002E-002
  igroup=           3 tne=         410
  ****** ntotv= ******         924
- time: 18:55:07
+ time: 08:36:20
  in modf_element_lib
  jgroup=           1 kinit_g=           0
  jgroup=           2 kinit_g=           0
  jgroup=           3 kinit_g=           0
  iblks=           1 runblks=           2
  iblks=           1
- time: 18:55:07
+ time: 08:36:20
  ninit=           0 iblks=           1 restart=           0
  ikindks=           0
- time(solve): 18:55:07
+ time(solve): 08:36:20
  单个方程中最大非零元素个数          14
  Neq=         871       Iseq(neq)=        7596
  storage of PARDISO, sstore=        7596
                                              
- time(solve_set): 18:55:07
- time(solve_pcg): 18:55:07
+ time(solve_set): 08:36:20
+ time(solve_pcg): 08:36:20
  igroup=           1 matno=           1 density=  0.000000000000000E+000 facts=
   0.000000000000000E+000
  igroup=           1 order_intx=           1 ngaus=           4
@@ -77,16 +77,16 @@
  irecover=           0
  iblks=           2 runblks=           2
  iblks=           2
- time: 18:55:07
+ time: 08:36:21
  ninit=           0 iblks=           2 restart=           0
  ikindks=           0
- time(solve): 18:55:07
+ time(solve): 08:36:21
  单个方程中最大非零元素个数          14
  Neq=         871       Iseq(neq)=        7596
  storage of PARDISO, sstore=        7596
                                              
- time(solve_set): 18:55:07
- time(solve_pcg): 18:55:07
+ time(solve_set): 08:36:21
+ time(solve_pcg): 08:36:21
  igroup=           1 matno=           1 density=  0.000000000000000E+000 facts=
   0.000000000000000E+000
  igroup=           1 order_intx=           1 ngaus=           4
@@ -100,4 +100,4 @@
  sum_K_diag=   402944472390334.     
   order=    1  omega= 0.25643E+02  freq= 0.40812E+01  period= 0.24502E+00 coefx= 0.13659E+01 coefy= 0.67732E-03 coefz= 0.00000E+00 mstar= 0.15169E+07 kstar= 0.99755E+09
  irecover=           0
- time: 18:55:07
+ time: 08:36:21

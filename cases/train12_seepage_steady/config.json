@@ -404,15 +404,6 @@
     ]
   },
   "nmats": 1,
-  "contact_raw": [
-    "ngaps ngapb ctt_pe miter_bt torbt iblkbt nonsbt xlwsol method_gapi miter_state type_solver_ctt restart_ctt damp_ctt istatec",
-    "  0  0  1  500  1.0E-05  1  0  0  0  1  PROFILE  0  0.0  1"
-  ],
-  "nrt_raw": [
-    " The interpolation groups: transgroup",
-    " ntransnode and translg for each transgroup",
-    "       0"
-  ],
   "tem_raw": [
     "0",
     "0",

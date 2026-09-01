@@ -337,48 +337,6 @@
     ]
   },
   "nmats": 1,
-  "contact_raw": [
-    "ngaps ngapb ctt_pe miter_bt torbt iblkbt nonsbt xlwsol method_gapi miter_state type_solver_ctt restart_ctt damp_ctt istatec",
-    "  0  0  1  500  1.0E-05  1  0  0  0  1  PROFILE  0  0.0  1"
-  ],
-  "nrt_raw": [
-    " The interpolation groups: transgroup",
-    " ntransnode and translg for each transgroup",
-    "       0"
-  ],
-  "tem_raw": [
-    " temperature prescribed data",
-    "  0",
-    " surface convection edges (nedge)",
-    "  0",
-    " surface convection (type 2)",
-    " surface list (1:nsurf)",
-    "  0",
-    " pipe cooling info",
-    " algo_pipe=3",
-    "  0  3",
-    "",
-    "  0",
-    "  0",
-    "  0",
-    "  0",
-    "  0",
-    "  0",
-    "  0",
-    "  0",
-    "  0",
-    "  0",
-    "  0",
-    "  0",
-    "  0",
-    "  0",
-    "  0",
-    "  0",
-    "  0",
-    "  0",
-    "  0",
-    "  0"
-  ],
   "mdofn": 10,
   "lmdofn": [
     0,
@@ -440,7 +398,6 @@
     3
   ],
   "_raw_guard": {
-    "materials": "1068103eb594fadb76592fa8c094279e11404ecea162810d9bf444b349716972",
-    "tem_pipe": "7c131fd95efadcf93597f1a2013987488f734db930f130f0e470e3b115b3228a"
+    "materials": "1068103eb594fadb76592fa8c094279e11404ecea162810d9bf444b349716972"
   }
 }

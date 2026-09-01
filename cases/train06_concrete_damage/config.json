@@ -142,7 +142,25 @@
       "type": "CONCRETE",
       "density": 2500.0,
       "E": 25000000000.0,
-      "nu": 0.167
+      "nu": 0.167,
+      "alfa": 1e-05,
+      "concrete": {
+        "conc_A": 0.0132,
+        "conc_B": 0.1239,
+        "conc_C": 0.7469,
+        "conc_D": 0.2456,
+        "fc": 17000000.0,
+        "Ct": 0.10294,
+        "Gf": 67.0,
+        "h_char": 0.619,
+        "icr": 5,
+        "iyd": 0,
+        "vpiter": 0,
+        "icp": 3,
+        "epeq": 2.0,
+        "alphT": 2.723,
+        "irevert": 0
+      }
     },
     {
       "id": 3,
@@ -716,96 +734,7 @@
     }
   },
   "type_nl": 5,
-  "mat_raw": {
-    "nmats": 3,
-    "prelude": [
-      " material property curves",
-      "  0",
-      "  10",
-      "COMMENT",
-      "COMMENT",
-      "COMMENT",
-      "COMMENT",
-      "COMMENT",
-      "COMMENT",
-      "COMMENT",
-      "COMMENT",
-      "COMMENT",
-      "COMMENT",
-      " nmats",
-      "  3"
-    ],
-    "blocks": [
-      [
-        "     material_serial         1",
-        "          MECHANICAL           SOLID     1",
-        "  1",
-        "               SOLID",
-        "ELASTIC_ISOTROPIC       2.300E+03       1.000E+00       1.000E+00       3.000E+10       1.800E-01       1.000E-05  0  0  0",
-        "  0  0       1.000E+03"
-      ],
-      [
-        "     material_serial         2",
-        "          MECHANICAL           SOLID     2",
-        "  1",
-        "               SOLID",
-        "CONCRETE       2.500E+03       1.000E+00       1.000E+00       2.500E+10       1.670E-01       1.000E-05  0  0  0",
-        "  0  0  0       1.000E+03",
-        "  0.0132  0.1239  0.7469  0.2456       1.700E+07  0.10294  67.0  0.619  5  0  0  3  2  2.723  0"
-      ],
-      [
-        "     material_serial         3",
-        "          MECHANICAL           SOLID     3",
-        "  1",
-        "               SOLID",
-        "ELASTIC_ISOTROPIC       2.300E+03       1.000E+00       1.000E+00       3.000E+10       1.800E-01       1.000E-05  0  0  0",
-        "  0  0       1.000E+03"
-      ]
-    ]
-  },
   "nmats": 3,
-  "contact_raw": [
-    "ngaps ngapb ctt_pe miter_bt torbt iblkbt nonsbt xlwsol method_gapi miter_state type_solver_ctt restart_ctt damp_ctt istatec",
-    "  0  0  1  500  1.0E-05  1  0  0  0  1  PROFILE  0  0.0  1"
-  ],
-  "nrt_raw": [
-    " The interpolation groups: transgroup",
-    " ntransnode and translg for each transgroup",
-    "       0"
-  ],
-  "tem_raw": [
-    " temperature prescribed data",
-    "  0",
-    " surface convection edges (nedge)",
-    "  0",
-    " surface convection (type 2)",
-    " surface list (1:nsurf)",
-    "  0",
-    " pipe cooling info",
-    " algo_pipe=3",
-    "  0  3",
-    "",
-    "  0",
-    "  0",
-    "  0",
-    "  0",
-    "  0",
-    "  0",
-    "  0",
-    "  0",
-    "  0",
-    "  0",
-    "  0",
-    "  0",
-    "  0",
-    "  0",
-    "  0",
-    "  0",
-    "  0",
-    "  0",
-    "  0",
-    "  0"
-  ],
   "mdofn": 3,
   "lmdofn": [
     1,
@@ -1150,8 +1079,10 @@
     0,
     3
   ],
-  "_raw_guard": {
-    "materials": "fc07653a579537da8b0ba23f2b7cd9fbb8fe1bcb45db2774150baac2a7653ba6",
-    "tem_pipe": "7c131fd95efadcf93597f1a2013987488f734db930f130f0e470e3b115b3228a"
-  }
+  "_import_notes": [
+    "1.mat: all blocks typed-expressible (ELASTIC/CONCRETE incl. damage row) — raw carry dropped, region is authorable",
+    "nrt_raw: equals the generator default stub — redundant carry dropped (authorable)",
+    "contact_raw: equals the generator default stub — redundant carry dropped (authorable)",
+    "tem_raw: equals the generator default stub — redundant carry dropped (authorable)"
+  ]
 }

@@ -859,3 +859,40 @@ git clone --depth 1 --recurse-submodules --shallow-submodules \
 
 注:`cases-corpus` 未推 github——语料含工程数据,是否公开是使用者的
 外发决策,不由本轮代办。github 侧克隆需可达 gitea 才能取 submodule。
+
+
+---
+
+# 附录 13：F4 处置——三态 READY 拆分(P/A/V)+ raw 冲突防线(2026-08-31)
+
+## 三态网格(按审计的表落地)
+
+| 态 | 判定 | 当前 |
+|---|---|---|
+| **P** preservation | 条件 1 ∧ 条件 3(无损导入-再生) | **19/19** |
+| **A** authoring | P ∧ 无不透明 raw 携带(mat_raw/contact_raw/nrt_raw/tem_raw/opr_raw/ftr_raw) | **6/19** |
+| **V** verification | 条件 4 ∧ 条件 2 | **14/19** |
+
+12 个算例是 `P · V`——**能无损保存、有物理证据,但材料等区域是 raw 携带,
+typed 编辑到不了 deck**。这正是审计说被一个 READY 掩盖的事实,现在
+逐案可见(闸门表新增 P A V 列,grades 进 case-gate.json)。
+
+## raw 不再静默胜出
+
+审计的第二个要求:"raw 与 typed 冲突必须拒绝/显式优先/冲突报告"。落地:
+
+- import 对 raw/typed 并存的对(materials↔mat_raw、opr↔opr_raw、
+  tem_pipe↔tem_raw)盖 `_raw_guard` 指纹(typed 侧的 sha256);
+  15 个在盘 config 已补章(13 个有并存对)
+- generate_all 入口校验:typed 被改而 raw 仍在 → **ValueError**,
+  报文写明两条出路(删 raw 换语义作者权,或还原编辑)
+- 测试 `raw_typed_conflict_guard` 三态:原样过 / 改 typed 报错 /
+  删 raw 后 typed 编辑真实到达 1.mat(E=1.234E+04 实测落盘)
+
+## Authoring 缺口从此是一张清单,不是一句含糊话
+
+`grades.authoring_blockers` 逐案列出挡路的 raw 键。要把某算例推成 A,
+路径明确:为该 raw 区域建 typed schema + 生成器出码(train06 的材料
+常数即第一候选,29 号文档已有裁定与延期记录)。
+
+830 测试全绿;闸门 14/19 不变(P/A/V 是并列坐标,不改 verdict 语义)。
