@@ -9,7 +9,7 @@
  igroup=           4 tvol=  0.000000000000000E+000
  igroup=           4 tne=        3100
  ****** ntotv= ******       11016
- time: 12:31:30
+ time: 16:56:58
  in modf_element_lib
  jgroup=           1 kinit_g=           0
  jgroup=           2 kinit_g=           0
@@ -17,16 +17,16 @@
  jgroup=           4 kinit_g=           0
  iblks=           1 runblks=           1
  iblks=           1
- time: 12:31:30
+ time: 16:56:58
  ninit=           0 iblks=           1 restart=           0
  ikindks=           5
- time(solve): 12:31:30
+ time(solve): 16:56:58
  单个方程中最大非零元素个数          57
  Neq=       10314       Iseq(neq)=      332421
  storage of PARDISO, sstore=      332421
                                              
- time(solve_set): 12:31:30
- time(solve_pcg): 12:31:30
+ time(solve_set): 16:56:58
+ time(solve_pcg): 16:56:58
  Increment step=           1
  cwater=           0 delgroup=           0
  force_external***,edge_load_group=           0
@@ -74,17 +74,17 @@ igroup=    4 ifield=1 ikh=1 ielem=  2801 order_time=0  coef= 1.00000
      0.00000E+00     0.00000E+00     0.00000E+00     0.00000E+00     0.00000E+00     0.00000E+00
      0.00000E+00     0.00000E+00     0.00000E+00     0.00000E+00     0.00000E+00     0.00000E+00
  residu_f1
- time: 12:31:31
+ time: 16:56:59
  residu_f2
  
          Convergence check for Residual force,ttime=,   1.00000000000000     
  total force on spring nodes of dam_foundation interface
  iblks=           1 iincs=           1 istep=           1 iiter=           1
- resid=   28.6474651635857      retot=   952.422734260468     
+ resid=   28.6474651635857      retot=   952.422734260467     
 ratio for residu norm= 0.3008E-01
  max_refor=   2.36912828363663      max_tofor=   135.901037645486     
 ratio for residu maxm= 0.1743E-01
- time: 12:31:31
+ time: 16:56:59
  residu_f2
  
          Convergence check for Residual force,ttime=,   1.00000000000000     
@@ -94,7 +94,7 @@ ratio for residu maxm= 0.1743E-01
 ratio for residu norm= 0.3008E-01
  max_refor=   2.36912828363663      max_tofor=   135.901037645472     
 ratio for residu maxm= 0.1743E-01
- time: 12:31:31
+ time: 16:56:59
  residu_f2
  
          Convergence check for Residual force,ttime=,   1.00000000000000     
@@ -104,7 +104,7 @@ ratio for residu maxm= 0.1743E-01
 ratio for residu norm= 0.3008E-01
  max_refor=   2.36912828363663      max_tofor=   135.901037645472     
 ratio for residu maxm= 0.1743E-01
- time: 12:31:31
+ time: 16:56:59
  residu_f2
  
          Convergence check for Residual force,ttime=,   1.00000000000000     
@@ -114,7 +114,7 @@ ratio for residu maxm= 0.1743E-01
 ratio for residu norm= 0.3008E-01
  max_refor=   2.36912828363663      max_tofor=   135.901037645472     
 ratio for residu maxm= 0.1743E-01
- time: 12:31:31
+ time: 16:56:59
  residu_f2
  
          Convergence check for Residual force,ttime=,   1.00000000000000     
@@ -124,7 +124,7 @@ ratio for residu maxm= 0.1743E-01
 ratio for residu norm= 0.3008E-01
  max_refor=   2.36912828363663      max_tofor=   135.901037645472     
 ratio for residu maxm= 0.1743E-01
- time: 12:31:31
+ time: 16:56:59
  residu_f2
  
          Convergence check for Residual force,ttime=,   1.00000000000000     
@@ -134,7 +134,7 @@ ratio for residu maxm= 0.1743E-01
 ratio for residu norm= 0.3008E-01
  max_refor=   2.36912828363663      max_tofor=   135.901037645472     
 ratio for residu maxm= 0.1743E-01
- time: 12:31:31
+ time: 16:56:59
  residu_f2
  
          Convergence check for Residual force,ttime=,   1.00000000000000     
@@ -144,7 +144,7 @@ ratio for residu maxm= 0.1743E-01
 ratio for residu norm= 0.3008E-01
  max_refor=   2.36912828363663      max_tofor=   135.901037645472     
 ratio for residu maxm= 0.1743E-01
- time: 12:31:31
+ time: 16:56:59
  residu_f2
  
          Convergence check for Residual force,ttime=,   1.00000000000000     
@@ -154,7 +154,7 @@ ratio for residu maxm= 0.1743E-01
 ratio for residu norm= 0.3008E-01
  max_refor=   2.36912828363663      max_tofor=   135.901037645472     
 ratio for residu maxm= 0.1743E-01
- time: 12:31:31
+ time: 16:56:59
  residu_f2
  
          Convergence check for Residual force,ttime=,   1.00000000000000     
@@ -164,7 +164,7 @@ ratio for residu maxm= 0.1743E-01
 ratio for residu norm= 0.3008E-01
  max_refor=   2.36912828363663      max_tofor=   135.901037645472     
 ratio for residu maxm= 0.1743E-01
- time: 12:31:31
+ time: 16:56:59
  residu_f2
  
          Convergence check for Residual force,ttime=,   1.00000000000000     
@@ -176,4 +176,4 @@ ratio for residu norm= 0.3008E-01
 ratio for residu maxm= 0.1743E-01
  contact_state********************
  irecover=           0
- time: 12:31:31
+ time: 16:56:59

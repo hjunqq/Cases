@@ -7,22 +7,22 @@
  igroup=           3 tvol=   3999.99999999997     
  igroup=           3 tne=        2080
  ****** ntotv= ******        3943
- time: 12:31:50
+ time: 16:57:18
  in modf_element_lib
  jgroup=           1 kinit_g=           0
  jgroup=           2 kinit_g=           0
  jgroup=           3 kinit_g=           0
  iblks=           1 runblks=           1
  iblks=           1
- time: 12:31:50
+ time: 16:57:18
  ninit=           0 iblks=           1 restart=           0
  ikindks=           0
- time(solve): 12:31:50
+ time(solve): 16:57:18
  No. of equations        =        3839
  Max half band width     =         470
  length half stiff matrix=      226832
- time(solve_set): 12:31:50
- time(solve_pcg): 12:31:50
+ time(solve_set): 16:57:18
+ time(solve_pcg): 16:57:18
  igroup=           1 matno=           1 density=  0.000000000000000E+000 facts=
   0.000000000000000E+000
  igroup=           1 order_intx=           1 ngaus=           4
@@ -42,4 +42,4 @@
  irecover=           0
   order=    5  omega= 0.21152E+03  freq= 0.33664E+02  period= 0.29705E-01 coefx= 0.58288E-01 coefy= 0.19094E+00 coefz= 0.00000E+00 mstar= 0.34365E+06 kstar= 0.15375E+11
  irecover=           0
- time: 12:31:51
+ time: 16:57:19

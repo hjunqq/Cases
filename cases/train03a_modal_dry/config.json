@@ -1,46 +1,154 @@
 {
-  "_name": "重力坝模态分析（3组：地基+坝体+上游库水域）",
   "type_problem": "E",
   "solver": "PARDISO",
+  "ndimn": 2,
   "nblks": 1,
   "groups": [
     {
       "name": "Foundation",
       "nelgroup": 960,
-      "matno": 1
+      "matno": 1,
+      "nnode": 4,
+      "elem_type": "Q4",
+      "elem_name": "Q4",
+      "elem_index": 5,
+      "class": "CO",
+      "nrfields": 1,
+      "field": "U",
+      "special": "ST",
+      "sptype": "PE",
+      "type_algo": 0,
+      "type_stiff": 1,
+      "type_ecoint": 1,
+      "ilayer": 1,
+      "elcod_local": 0.0,
+      "group_inf": 0,
+      "uplift_ic": 0,
+      "liquj": 0,
+      "type_mass": [
+        0
+      ],
+      "alfa": 0.0,
+      "beta": 0.0,
+      "order_time": [
+        0,
+        0
+      ],
+      "fields": [
+        {
+          "nfdof": 2,
+          "listdof": [
+            1,
+            2
+          ]
+        }
+      ]
     },
     {
       "name": "Dam",
       "nelgroup": 640,
-      "matno": 2
+      "matno": 2,
+      "nnode": 4,
+      "elem_type": "Q4",
+      "elem_name": "Q4",
+      "elem_index": 5,
+      "class": "CO",
+      "nrfields": 1,
+      "field": "U",
+      "special": "ST",
+      "sptype": "PE",
+      "type_algo": 0,
+      "type_stiff": 1,
+      "type_ecoint": 1,
+      "ilayer": 1,
+      "elcod_local": 0.0,
+      "group_inf": 0,
+      "uplift_ic": 0,
+      "liquj": 0,
+      "type_mass": [
+        0
+      ],
+      "alfa": 0.0,
+      "beta": 0.0,
+      "order_time": [
+        0,
+        0
+      ],
+      "fields": [
+        {
+          "nfdof": 2,
+          "listdof": [
+            1,
+            2
+          ]
+        }
+      ]
     },
     {
       "name": "Water",
       "nelgroup": 480,
-      "matno": 3
+      "matno": 3,
+      "nnode": 4,
+      "elem_type": "Q4",
+      "elem_name": "Q4",
+      "elem_index": 5,
+      "class": "CO",
+      "nrfields": 1,
+      "field": "U",
+      "special": "ST",
+      "sptype": "PE",
+      "type_algo": 0,
+      "type_stiff": 1,
+      "type_ecoint": 1,
+      "ilayer": 1,
+      "elcod_local": 0.0,
+      "group_inf": 0,
+      "uplift_ic": 0,
+      "liquj": 0,
+      "type_mass": [
+        0
+      ],
+      "alfa": 0.0,
+      "beta": 0.0,
+      "order_time": [
+        0,
+        0
+      ],
+      "fields": [
+        {
+          "nfdof": 2,
+          "listdof": [
+            1,
+            2
+          ]
+        }
+      ]
     }
   ],
   "materials": [
     {
       "id": 1,
       "type": "ELASTIC",
+      "density": 0.0,
       "E": 10000000000.0,
       "nu": 0.18,
-      "density": 0.0
+      "alfa": 1e-05
     },
     {
       "id": 2,
       "type": "ELASTIC",
+      "density": 2500.0,
       "E": 25000000000.0,
       "nu": 0.167,
-      "density": 2500
+      "alfa": 1e-05
     },
     {
       "id": 3,
       "type": "ELASTIC",
+      "density": 0.0,
       "E": 100000.0,
       "nu": 0.0,
-      "density": 0.0
+      "alfa": 1e-05
     }
   ],
   "blocks": {
@@ -53,28 +161,370 @@
     ],
     "gravity": [
       9.81,
-      0,
-      -1,
-      0,
-      -1
+      0.0,
+      -1.0,
+      0.0,
+      -1.0
     ],
     "increments": [
       [
         {
           "miter": 200,
           "ditime": 1.0,
-          "nstep": 5
+          "noutn": 1,
+          "noutf": 1,
+          "nstep": 5,
+          "inc_step": 1,
+          "nresta": 1,
+          "nmcon": 0,
+          "nbasef": 0
         }
       ]
+    ],
+    "matno_process": [
+      [
+        1,
+        2,
+        3
+      ]
+    ],
+    "force_process": [
+      0,
+      0,
+      0
+    ],
+    "average_appear": [
+      -2,
+      -2,
+      -2
+    ],
+    "earthquake_curve": [
+      0,
+      0
+    ],
+    "time_curve_for_each_group": [
+      1,
+      1,
+      1
     ]
+  },
+  "boundary": {
+    "fixsets": [
+      {
+        "dof": 1,
+        "nodes": [
+          1,
+          41,
+          42,
+          82,
+          83,
+          123,
+          124,
+          164,
+          165,
+          205,
+          206,
+          246,
+          247,
+          287,
+          288,
+          328,
+          329,
+          369,
+          370,
+          410,
+          411,
+          451,
+          452,
+          492,
+          493,
+          533,
+          534,
+          574,
+          575,
+          615,
+          616,
+          656,
+          657,
+          697,
+          698,
+          738,
+          739,
+          779,
+          780,
+          820,
+          821,
+          861,
+          862,
+          902,
+          903,
+          943,
+          944,
+          984,
+          985,
+          1025
+        ],
+        "value": 0.0,
+        "time_curve": 1,
+        "jfixvar": 0,
+        "f5": 1,
+        "tfixvar": 0.0,
+        "gamawx": 0.0,
+        "nextr": 0
+      },
+      {
+        "dof": 2,
+        "nodes": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41
+        ],
+        "value": 0.0,
+        "time_curve": 1,
+        "jfixvar": 0,
+        "f5": 1,
+        "tfixvar": 0.0,
+        "gamawx": 0.0,
+        "nextr": 0
+      }
+    ],
+    "nline": 2
   },
   "added_mass": {
     "icaddmass": 0,
-    "water_level": 50.0
+    "swlifs2006": 50.0,
+    "water_level": 50.0,
+    "ifswater": 2,
+    "ifsgravity": 9.8,
+    "absorb": 0.6,
+    "alfa_p4": 10.0,
+    "stiff_p4": 1e+20
   },
-  "boundary": {
-    "bottom_fix_uy": true,
-    "sides_fix_ux": true,
-    "sides_fix_ux_below_y": 0.0
-  }
+  "mif": {
+    "ntrans": 0,
+    "nlaymif": 0,
+    "epsMIFb": 1.0,
+    "gamaMIF": 0.02,
+    "ifixvar0_inpb": 2,
+    "camif": 1980.0,
+    "dxmif": 25.0
+  },
+  "gid": [
+    1,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "res": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "newmark": [
+    0.5,
+    0.25,
+    1.0
+  ],
+  "glb_rows": {
+    "header": {
+      "npoinb": "2185",
+      "nmats": "3",
+      "outplot": "GIDR",
+      "kstab": "0.0",
+      "mat_curve": "0",
+      "level_set_problem": "0",
+      "ljdp": "0",
+      "stab_matde": "99999",
+      "ntlink": "0",
+      "meshc": "0",
+      "rmesh": "0"
+    },
+    "run_flags": {
+      "ninit": 0,
+      "kinit": 0,
+      "winit": 0,
+      "nlinks": 0,
+      "nonsym": 0,
+      "outinp": 0,
+      "outintr": 0,
+      "outintw": 0,
+      "neuman": 0,
+      "equvs": 0,
+      "block_stab": 0,
+      "nbackf": 0,
+      "nbspring": 0,
+      "ebody": 0,
+      "outind": 0,
+      "nbackdt": 0,
+      "ninistn": 0
+    },
+    "type_row": {
+      "type_load": "LOAD",
+      "stabpw": "0",
+      "nlayer": "0",
+      "kglb": "0",
+      "state_change": "0",
+      "bparameter": "0",
+      "balgor": "0",
+      "upliftin": "0"
+    },
+    "counts": [
+      "1",
+      "1",
+      "1",
+      "1",
+      "0",
+      "0",
+      "1",
+      "0",
+      "1",
+      "0",
+      "0"
+    ],
+    "hdam": [
+      "0.000"
+    ],
+    "water_level": [
+      "-99.000"
+    ],
+    "modf_dis_blocks": [
+      "0"
+    ],
+    "uinitial": [
+      "0"
+    ],
+    "bond": {
+      "ftcrack": "1.500E+06",
+      "coefMpa": "1.0e6",
+      "ikindks": 0,
+      "doubsig": 2,
+      "ktan1": "1.0e8",
+      "ktan2": "1.0e8",
+      "nlocalbeam": 0,
+      "ndimnrt": 0,
+      "listglocbeam": [],
+      "lelenrt": []
+    }
+  },
+  "type_nl": 10,
+  "nmats": 3,
+  "mdofn": 2,
+  "lmdofn": [
+    1,
+    1
+  ],
+  "order_time_mdofn": [
+    0,
+    0
+  ],
+  "time_curves": [
+    {
+      "type": "LINEAR",
+      "nline": 2,
+      "times": [
+        0.0,
+        1.0
+      ],
+      "values": [
+        1.0,
+        1.0
+      ]
+    }
+  ],
+  "edge_loads": [
+    {
+      "counts": [
+        0,
+        0
+      ],
+      "rows": []
+    }
+  ],
+  "runblks": 1,
+  "opr": [
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "tem_pipe": [
+    0,
+    3
+  ],
+  "_import_notes": [
+    "1.mat: all blocks typed-expressible (ELASTIC/CONCRETE incl. damage row) — raw carry dropped, region is authorable",
+    "nrt_raw: equals the generator default stub — redundant carry dropped (authorable)",
+    "contact_raw: equals the generator default stub — redundant carry dropped (authorable)",
+    "tem_raw: equals the generator default stub — redundant carry dropped (authorable)"
+  ],
+  "_name": "重力坝模态分析（3组：地基+坝体+上游库水域）"
 }

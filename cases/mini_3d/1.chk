@@ -3,20 +3,20 @@
  igroup=           1 tvol=   200.000000000000     
  igroup=           1 tne=           8
  ****** ntotv= ******          54
- time: 12:31:27
+ time: 16:56:55
  in modf_element_lib
  jgroup=           1 kinit_g=           0
  iblks=           1 runblks=           1
  iblks=           1
- time: 12:31:27
+ time: 16:56:55
  ninit=           0 iblks=           1 restart=           0
  ikindks=           0
- time(solve): 12:31:27
+ time(solve): 16:56:55
  No. of equations        =          15
  Max half band width     =          10
  length half stiff matrix=          99
- time(solve_set): 12:31:27
- time(solve_pcg): 12:31:27
+ time(solve_set): 16:56:55
+ time(solve_pcg): 16:56:55
  Increment step=           1
  cwater=           0 delgroup=           0
  force_external***,edge_load_group=           0
@@ -38,7 +38,7 @@ igroup=    1 ifield=1 ikh=1 ielem=     1 order_time=0  coef= 1.00000
      0.86806E+09    -0.75231E+10     0.17361E+10     0.43403E+10    -0.63657E+10     0.17361E+10    -0.86806E+09     0.11574E+10    -0.17361E+10    -0.43403E+10     0.12731E+11     0.00000E+00
     -0.17361E+10     0.26042E+10    -0.17361E+10    -0.34722E+10     0.26042E+10    -0.34722E+10     0.34722E+10    -0.26042E+10    -0.17361E+10     0.00000E+00     0.00000E+00     0.69444E+10
  residu_f1
- time: 12:31:27
+ time: 16:56:55
  residu_f2
  
          Convergence check for Residual force,ttime=,   1.00000000000000     
@@ -48,7 +48,7 @@ igroup=    1 ifield=1 ikh=1 ielem=     1 order_time=0  coef= 1.00000
 ratio for residu norm=   Infinity
  max_refor=  5.263673588290761E+180 max_tofor=  6.680362756976924E+092
 ratio for residu maxm= 0.7879E+88
- time: 12:31:27
+ time: 16:56:55
  residu_f2
  
          Convergence check for Residual force,ttime=,   1.00000000000000     
@@ -58,7 +58,7 @@ ratio for residu maxm= 0.7879E+88
 ratio for residu norm=        NaN
  max_refor=  5.263673588290763E+180 max_tofor=  1.509261084209858E+180
 ratio for residu maxm= 0.3488E+01
- time: 12:31:27
+ time: 16:56:55
  residu_f2
  
          Convergence check for Residual force,ttime=,   1.00000000000000     
@@ -77,7 +77,7 @@ ratio for norm=        NaN
  max_tatf=  4.826810854779335E+155 max_itif=  6.084124330046642E+170
 ratio for maxm= 0.1260E+16
                     not converged for checki=           1
- time: 12:31:27
+ time: 16:56:55
  residu_f2
  
          Convergence check for Residual force,ttime=,   1.00000000000000     
@@ -91,4 +91,4 @@ ratio for residu maxm= 0.0000E+00
                Convergence check for displacement
  contact_state********************
  irecover=           0
- time: 12:31:27
+ time: 16:56:55

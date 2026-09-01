@@ -936,3 +936,48 @@ A 列   6 → 7(train06 达成 P A V)
 train09/contact/seepage 系的 mat_raw(GEOMETRY/WATER/CLASSICALEP 全参数
 /HEAT 等块尚无 typed 表达)与 train_contact 的 contact_raw(非零接触段)。
 每补一类 typed schema 解锁一批——模式已被本次验证。
+
+
+---
+
+# 附录 15:A 列推进——7 → 15/19(2026-09-01)
+
+## 本轮新增 typed schema(每类都双侧落地 + 回读裁决)
+
+| 类 | 关键点 | 解锁 |
+|---|---|---|
+| GEOMETRY | Material.f90:991 绑定 4 项(aera,J,Iy,Iz),parse 原只取 aera | train09 |
+| SEEPAGE/WATER | typed 早齐;fmt_e **有损才加宽**修掉 bulkw 2044900e3→2.045E+09 的精度丢失 | train12、train_seepage |
+| CLASSICALEP 全参 | criteria 参数化(原写死 MC)+ csigma0/cfrict/cdilan 三段链;MC/DP 准入 | train05b |
+| HEAT(单相) | alfa(ndimn)+source/place/pipe+ialfa;**每条目单块**模式仅对导入形(带 heat 字典)生效,作者式 conductivity 条目保留旧成对发射 | train07 |
+| 纯 ELASTIC 复裁 | train10/11 只是 config 早于白名单 | train10、train11 |
+| 桩试剥-回读裁决 | 以回读判官逐键裁决非默认桩 | vie_boundary 等 7 例 |
+
+## 过程中被防线抓住的三次
+
+1. **UW 双相误放行**:白名单把 seepage_stress 的 nphase=2 块当纯 ELASTIC,
+   typed 出码写 nphase=1——**回读当场抓住**(条件 3 fail),加"SOLID+FLUID
+   同块即拒"守卫后复位。
+2. **热管线回归**:每条目单块模式误伤作者式配置(求解器 exit 3)——
+   既有管线测试抓住,改为只认导入形。
+3. **陈旧 EXIT 假读**:等待循环匹配到旧文件里的标记,读了一张
+   GEOMETRY 之前的过期闸门表;僵尸等待进程还把 pgrep 等待卡成死循环。
+   教训:**长跑输出文件必须带时间戳并以 mtime 验新**。
+
+## 终态
+
+```
+P 19/19   A 15/19   V 14/19    闸门 14/19    回读 19/19 精确    843 测试全绿
+```
+
+A 列剩 4 个,全部是**具名的真不可表达区**(宁拒绝纪律下的诚实边界):
+
+| 算例 | 挡路者 | 性质 |
+|---|---|---|
+| train05 | CLASSICALEP=MCJOINT(ft/cft/sigmat/csigmat 追加行) | 待 MCJOINT schema |
+| train_contact | 引号方言 CLASSICALEP×5 + **非零接触段**(contact_raw 是真内容) | 待接触段 schema |
+| train_seepage_stress | UW 双相材料(nphase=2,SOLID+FLUID 同块) | 待双相 schema |
+| train_temp_creep | 引号方言 HEAT + **真实 nrt/tem**(63 TRAL 节点、1672 对流边) | 待热边界段 schema |
+
+这四类每一个都是一段新的 Fortran 读链——照本轮模式(读源码 → 双侧 typed
+→ 白名单 → 回读裁决 → 防漂移测试)逐类补即可。

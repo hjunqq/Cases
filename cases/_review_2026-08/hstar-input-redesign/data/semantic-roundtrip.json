@@ -237,13 +237,134 @@
   "records": 168,
   "records_gen": 168,
   "value_diffs": 0,
-  "annotation_diffs": 0,
+  "annotation_diffs": 10,
   "only_in_orig": 0,
   "only_in_gen": 0,
   "stop_orig": null,
   "stop_gen": null,
   "diffs": [],
-  "annotations": []
+  "annotations": [
+   {
+    "at": "Material.f90:258",
+    "vars": [
+     "text"
+    ],
+    "orig": [
+     "MATERIAL"
+    ],
+    "gen": [
+     "COMMENT"
+    ]
+   },
+   {
+    "at": "Material.f90:258",
+    "vars": [
+     "text"
+    ],
+    "orig": [
+     "NAME"
+    ],
+    "gen": [
+     "COMMENT"
+    ]
+   },
+   {
+    "at": "Material.f90:258",
+    "vars": [
+     "text"
+    ],
+    "orig": [
+     "FIRST:NAME---MECHANICAL"
+    ],
+    "gen": [
+     "COMMENT"
+    ]
+   },
+   {
+    "at": "Material.f90:258",
+    "vars": [
+     "text"
+    ],
+    "orig": [
+     "FOR"
+    ],
+    "gen": [
+     "COMMENT"
+    ]
+   },
+   {
+    "at": "Material.f90:258",
+    "vars": [
+     "text"
+    ],
+    "orig": [
+     "NUMBER"
+    ],
+    "gen": [
+     "COMMENT"
+    ]
+   },
+   {
+    "at": "Material.f90:258",
+    "vars": [
+     "text"
+    ],
+    "orig": [
+     "FOR"
+    ],
+    "gen": [
+     "COMMENT"
+    ]
+   },
+   {
+    "at": "Material.f90:258",
+    "vars": [
+     "text"
+    ],
+    "orig": [
+     "FOR"
+    ],
+    "gen": [
+     "COMMENT"
+    ]
+   },
+   {
+    "at": "Material.f90:258",
+    "vars": [
+     "text"
+    ],
+    "orig": [
+     "FOR"
+    ],
+    "gen": [
+     "COMMENT"
+    ]
+   },
+   {
+    "at": "Material.f90:258",
+    "vars": [
+     "text"
+    ],
+    "orig": [
+     "CAMCLAY"
+    ],
+    "gen": [
+     "COMMENT"
+    ]
+   },
+   {
+    "at": "Material.f90:258",
+    "vars": [
+     "text"
+    ],
+    "orig": [
+     "FOR"
+    ],
+    "gen": [
+     "COMMENT"
+    ]
+   }
+  ]
  },
  {
   "case": "train06_concrete_damage",
@@ -265,7 +386,7 @@
   "records": 168,
   "records_gen": 168,
   "value_diffs": 0,
-  "annotation_diffs": 1,
+  "annotation_diffs": 11,
   "only_in_orig": 0,
   "only_in_gen": 0,
   "stop_orig": null,
@@ -273,15 +394,123 @@
   "diffs": [],
   "annotations": [
    {
-    "at": "Prescrib.f90:208",
+    "at": "Material.f90:258",
     "vars": [
      "text"
     ],
     "orig": [
-     "======"
+     "MATERIAL"
     ],
     "gen": [
-     "PRESCRIBE SET--NFIXSETS"
+     "COMMENT"
+    ]
+   },
+   {
+    "at": "Material.f90:258",
+    "vars": [
+     "text"
+    ],
+    "orig": [
+     "NAME"
+    ],
+    "gen": [
+     "COMMENT"
+    ]
+   },
+   {
+    "at": "Material.f90:258",
+    "vars": [
+     "text"
+    ],
+    "orig": [
+     "FIRST:NAME---MECHANICAL"
+    ],
+    "gen": [
+     "COMMENT"
+    ]
+   },
+   {
+    "at": "Material.f90:258",
+    "vars": [
+     "text"
+    ],
+    "orig": [
+     "FOR"
+    ],
+    "gen": [
+     "COMMENT"
+    ]
+   },
+   {
+    "at": "Material.f90:258",
+    "vars": [
+     "text"
+    ],
+    "orig": [
+     "NUMBER"
+    ],
+    "gen": [
+     "COMMENT"
+    ]
+   },
+   {
+    "at": "Material.f90:258",
+    "vars": [
+     "text"
+    ],
+    "orig": [
+     "FOR"
+    ],
+    "gen": [
+     "COMMENT"
+    ]
+   },
+   {
+    "at": "Material.f90:258",
+    "vars": [
+     "text"
+    ],
+    "orig": [
+     "FOR"
+    ],
+    "gen": [
+     "COMMENT"
+    ]
+   },
+   {
+    "at": "Material.f90:258",
+    "vars": [
+     "text"
+    ],
+    "orig": [
+     "FOR"
+    ],
+    "gen": [
+     "COMMENT"
+    ]
+   },
+   {
+    "at": "Material.f90:258",
+    "vars": [
+     "text"
+    ],
+    "orig": [
+     "CAMCLAY"
+    ],
+    "gen": [
+     "COMMENT"
+    ]
+   },
+   {
+    "at": "Material.f90:258",
+    "vars": [
+     "text"
+    ],
+    "orig": [
+     "FOR"
+    ],
+    "gen": [
+     "COMMENT"
     ]
    }
   ]
@@ -292,13 +521,134 @@
   "records": 188,
   "records_gen": 188,
   "value_diffs": 0,
-  "annotation_diffs": 0,
+  "annotation_diffs": 10,
   "only_in_orig": 0,
   "only_in_gen": 0,
   "stop_orig": null,
   "stop_gen": null,
   "diffs": [],
-  "annotations": []
+  "annotations": [
+   {
+    "at": "Material.f90:258",
+    "vars": [
+     "text"
+    ],
+    "orig": [
+     "MATERIAL"
+    ],
+    "gen": [
+     "COMMENT"
+    ]
+   },
+   {
+    "at": "Material.f90:258",
+    "vars": [
+     "text"
+    ],
+    "orig": [
+     "NAME"
+    ],
+    "gen": [
+     "COMMENT"
+    ]
+   },
+   {
+    "at": "Material.f90:258",
+    "vars": [
+     "text"
+    ],
+    "orig": [
+     "FIRST:NAME---MECHANICAL"
+    ],
+    "gen": [
+     "COMMENT"
+    ]
+   },
+   {
+    "at": "Material.f90:258",
+    "vars": [
+     "text"
+    ],
+    "orig": [
+     "FOR"
+    ],
+    "gen": [
+     "COMMENT"
+    ]
+   },
+   {
+    "at": "Material.f90:258",
+    "vars": [
+     "text"
+    ],
+    "orig": [
+     "NUMBER"
+    ],
+    "gen": [
+     "COMMENT"
+    ]
+   },
+   {
+    "at": "Material.f90:258",
+    "vars": [
+     "text"
+    ],
+    "orig": [
+     "FOR"
+    ],
+    "gen": [
+     "COMMENT"
+    ]
+   },
+   {
+    "at": "Material.f90:258",
+    "vars": [
+     "text"
+    ],
+    "orig": [
+     "FOR"
+    ],
+    "gen": [
+     "COMMENT"
+    ]
+   },
+   {
+    "at": "Material.f90:258",
+    "vars": [
+     "text"
+    ],
+    "orig": [
+     "FOR"
+    ],
+    "gen": [
+     "COMMENT"
+    ]
+   },
+   {
+    "at": "Material.f90:258",
+    "vars": [
+     "text"
+    ],
+    "orig": [
+     "CAMCLAY"
+    ],
+    "gen": [
+     "COMMENT"
+    ]
+   },
+   {
+    "at": "Material.f90:258",
+    "vars": [
+     "text"
+    ],
+    "orig": [
+     "FOR"
+    ],
+    "gen": [
+     "COMMENT"
+    ]
+   }
+  ]
  },
  {
   "case": "train10_dynamic_vie",
@@ -725,7 +1075,7 @@
   "records": 199,
   "records_gen": 199,
   "value_diffs": 0,
-  "annotation_diffs": 28,
+  "annotation_diffs": 39,
   "only_in_orig": 0,
   "only_in_gen": 0,
   "stop_orig": null,
@@ -1130,7 +1480,7 @@
   "records": 329,
   "records_gen": 329,
   "value_diffs": 0,
-  "annotation_diffs": 32,
+  "annotation_diffs": 47,
   "only_in_orig": 0,
   "only_in_gen": 0,
   "stop_orig": null,

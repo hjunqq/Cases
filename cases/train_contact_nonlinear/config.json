@@ -240,11 +240,17 @@
       "id": 4,
       "type": "GOODMAN",
       "density": 2300.0,
-      "ratio": 1.0,
-      "thickness": 1.0,
       "E": 10000000000.0,
       "nu": 0.18,
-      "alfa": 5e-06
+      "alfa": 5e-06,
+      "density_w": 1000.0,
+      "goodman": {
+        "model": "XX",
+        "point1": 1.0,
+        "point2": 1.0,
+        "uniax_cohes": 0.0,
+        "frict_angle": 0.0
+      }
     },
     {
       "id": 5,
@@ -658,71 +664,42 @@
     }
   },
   "type_nl": 5,
-  "mat_raw": {
-    "nmats": 5,
-    "prelude": [
-      " material property curves",
-      " 0",
-      " ",
-      " 10           ! lines for comments",
-      "'MATERIAL PROPERTIES-INPUT FOR 1 TO NMATS'",
-      "'NAME FOR MATERIAL---FOR COMMENTS'",
-      "'FIRST:NAME---MECHANICAL, TEMPERATURE, ETC'",
-      "'FOR MECHNICAL, SECOND:PHASE---SOLID, FLUID, AIR OR OIL '",
-      "'               NUMBER OF PHASE'",
-      "'FOR SOLID: MATERIAL(CLASSICALEP,CAMCLAY,ETC),density,ratio,thick,e,nu'",
-      "'FOR MATERISL: CLASSICALEP:CRITERIA(TC,VM,DP,MC),sigm0,hening'",
-      "'                FOR MC OR DP: FRICT_ANGLE, DILAN_ANGLE'ard",
-      "'              CAMCLAY    :Pc, lamda, Mg, Mf, D0, D1,gaama'",
-      "'FOR FLUID: (1) density,ratio,bulkw (2)permiability(1:ndimn)' ",
-      " nmats",
-      "  5"
-    ],
-    "blocks": [
-      [
-        "material 1                 !ˮ                                             ",
-        "  'MECHANICAL','SOLID', 1                                                       ",
-        "   1\t\t   ! NUMBER OF PHASES                                                   ",
-        "   'SOLID'                                                                      ",
-        "   'ELASTIC_ISOTROPIC',2300,1.0,1.0,10e9,0.18,5e-6,0 ,0,0",
-        "   0  0  1000."
-      ],
-      [
-        "material 2                 !������                                             ",
-        "  'MECHANICAL','SOLID', 2                                                       ",
-        "   1\t\t   ! NUMBER OF PHASES                                                   ",
-        "   'SOLID'                                                                      ",
-        "   'ELASTIC_ISOTROPIC',2500,1.0,1.0,25e9,0.167,5e-6,0 ,0,0",
-        "   0  0  1000."
-      ],
-      [
-        "material 3                 !�ػ�                                             ",
-        "  'MECHANICAL','SOLID', 3                                                       ",
-        "   1\t\t   ! NUMBER OF PHASES                                                   ",
-        "   'SOLID'                                                                      ",
-        "   'ELASTIC_ISOTROPIC',0,1.0,1.0,10e9,0.18,5e-6,0 ,0,0",
-        "   0  0  1000."
-      ],
-      [
-        "material 4                 !�Ӵ���                                             ",
-        "  'MECHANICAL','SOLID', 4                                                       ",
-        "   1\t\t   ! NUMBER OF PHASES                                                   ",
-        "   'SOLID'                                                                      ",
-        "   'GOODMAN',2300,1.0,1.0,10e9,0.18,5e-6,0 ,0,0",
-        "   0  0  1000.",
-        "   XX 1 1  0  0"
-      ],
-      [
-        "material 5                 !�Ӵ���                                             ",
-        "  'MECHANICAL','SOLID', 5                                                       ",
-        "   1\t\t   ! NUMBER OF PHASES                                                   ",
-        "   'SOLID'                                                                      ",
-        "   'ELASTIC_ISOTROPIC',2300,1.0,1.0,10e9,0.18,5e-6,0 ,0,0",
-        "   0  0  1000."
-      ]
-    ]
-  },
   "nmats": 5,
+  "contact_raw": [
+    " ngaps ngapb contactpe miter_bt tor_bt iblks_bt nonsbt xlwsol method_gapi miter_state type_solver_ctt restart_ctt damp_ctt istatec",
+    "  1  2  0  500  1.0e-6  2  0  0  0  0  'PROFILE'  0  0.0  0",
+    "block_appear_process(1:ngapb,1:nblks)",
+    "  0  0  0  0",
+    "1:ngaps",
+    "ngroupt/listgropt/gap0,statei/ft0(1:ngroupt)/frict0(1:ngroupt)/cohes0(1:ngroupt)",
+    "  2  0  0  0  0  0",
+    "4 -5",
+    "0.000 1",
+    "2*1.0e6",
+    "2*0.0001",
+    "2*1.0e6",
+    "  0  0.0  0.0  0.0  0.0",
+    "1:ngapb",
+    "ngroupt,ngroupb,nrdof,eblock",
+    "  2  1  0  0",
+    "4 -5",
+    "2",
+    "ngroupt,ngroupb,nrdof,eblock",
+    "  2  1  0  0",
+    "4 -5",
+    "3  "
+  ],
+  "nrt": {
+    "groups": []
+  },
+  "thermal_sections": {
+    "surfaces": 0,
+    "convection": [],
+    "telgroups": [],
+    "npipe": 0,
+    "algo_pipe": 0,
+    "pipe": null
+  },
   "mdofn": 2,
   "lmdofn": [
     1,
@@ -1073,7 +1050,7 @@
     0,
     0
   ],
-  "_raw_guard": {
-    "materials": "391f71973899d393ed75c0f159c7009888a88bc40e5f6427e1353c78795e48f1"
-  }
+  "_import_notes": [
+    "1.mat: all blocks typed-expressible (ELASTIC/CONCRETE incl. damage row) — raw carry dropped, region is authorable"
+  ]
 }
