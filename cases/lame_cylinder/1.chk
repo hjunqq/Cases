@@ -3,20 +3,20 @@
  igroup=           1 tvol=   2.34108386415563     
  igroup=           1 tne=          64
  ****** ntotv= ******         162
- time: 16:57:18
+ time: 21:54:39
  in modf_element_lib
  jgroup=           1 kinit_g=           0
  iblks=           1 runblks=           1
  iblks=           1
- time: 16:57:18
+ time: 21:54:39
  ninit=           0 iblks=           1 restart=           0
  ikindks=           0
- time(solve): 16:57:18
+ time(solve): 21:54:39
  No. of equations        =         144
  Max half band width     =          22
  length half stiff matrix=        2743
- time(solve_set): 16:57:18
- time(solve_pcg): 16:57:18
+ time(solve_set): 21:54:39
+ time(solve_pcg): 21:54:39
  Increment step=           1
  cwater=           0 delgroup=           0
  force_external***,edge_load_group=           0
@@ -34,7 +34,7 @@ igroup=    1 ifield=1 ikh=1 ielem=     1 order_time=0  coef= 1.00000
      0.50621E+10    -0.76934E+08    -0.96154E+10     0.39525E+10    -0.14347E+11    -0.24533E+09     0.18900E+11    -0.36302E+10
      0.16592E+10    -0.28924E+10     0.39525E+10    -0.48617E+10    -0.19814E+10    -0.31518E+10    -0.36302E+10     0.10906E+11
  residu_f1
- time: 16:57:18
+ time: 21:54:39
  residu_f2
  
          Convergence check for Residual force,ttime=,   1.00000000000000     
@@ -53,7 +53,7 @@ ratio for norm= 0.1000E+01
  max_tatf=  7.539054614613272E-006 max_itif=  7.539054614613272E-006
 ratio for maxm= 0.1000E+01
                     not converged for checki=           1
- time: 16:57:18
+ time: 21:54:39
  residu_f2
  
          Convergence check for Residual force,ttime=,   1.00000000000000     
@@ -73,4 +73,4 @@ ratio for norm= 0.1557E-13
 ratio for maxm= 0.1430E-13
  contact_state********************
  irecover=           0
- time: 16:57:18
+ time: 21:54:39

@@ -20,4 +20,6 @@ fort.*
 *.exe
 
 # fem-chat/docs 的 Syncthing 镜像——真身在主仓版本链,此处不重复版本化
-_review_2026-08/hstar-input-redesign/
+cases/_review_2026-08/
+__pycache__/
+*.pyc
