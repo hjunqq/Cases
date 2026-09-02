@@ -665,30 +665,98 @@
   },
   "type_nl": 5,
   "nmats": 5,
-  "contact_raw": [
-    " ngaps ngapb contactpe miter_bt tor_bt iblks_bt nonsbt xlwsol method_gapi miter_state type_solver_ctt restart_ctt damp_ctt istatec",
-    "  1  2  0  500  1.0e-6  2  0  0  0  0  'PROFILE'  0  0.0  0",
-    "block_appear_process(1:ngapb,1:nblks)",
-    "  0  0  0  0",
-    "1:ngaps",
-    "ngroupt/listgropt/gap0,statei/ft0(1:ngroupt)/frict0(1:ngroupt)/cohes0(1:ngroupt)",
-    "  2  0  0  0  0  0",
-    "4 -5",
-    "0.000 1",
-    "2*1.0e6",
-    "2*0.0001",
-    "2*1.0e6",
-    "  0  0.0  0.0  0.0  0.0",
-    "1:ngapb",
-    "ngroupt,ngroupb,nrdof,eblock",
-    "  2  1  0  0",
-    "4 -5",
-    "2",
-    "ngroupt,ngroupb,nrdof,eblock",
-    "  2  1  0  0",
-    "4 -5",
-    "3  "
-  ],
+  "contact": {
+    "knobs": [
+      "1",
+      "2",
+      "0",
+      "500",
+      "1.0e-6",
+      "2",
+      "0",
+      "0",
+      "0",
+      "0",
+      "'PROFILE'",
+      "0",
+      "0.0",
+      "0"
+    ],
+    "block_appear": [
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    "gaps": [
+      {
+        "ngroupt": 2,
+        "xlwmd": [
+          "0",
+          "0"
+        ],
+        "frict_less": 0,
+        "goodman": 0,
+        "thin_layer": "0",
+        "listgroupt": [
+          "4",
+          "-5"
+        ],
+        "gapi_stateix": [
+          "0.000",
+          "1"
+        ],
+        "ft0": [
+          "2*1.0e6"
+        ],
+        "frict0": [
+          "2*0.0001"
+        ],
+        "cohes0": [
+          "2*1.0e6"
+        ],
+        "kgroup": [
+          "0",
+          "0.0",
+          "0.0",
+          "0.0",
+          "0.0"
+        ]
+      }
+    ],
+    "gapb": [
+      {
+        "header": [
+          "2",
+          "1",
+          "0",
+          "0"
+        ],
+        "listgroupt": [
+          "4",
+          "-5"
+        ],
+        "listgroupb": [
+          "2"
+        ]
+      },
+      {
+        "header": [
+          "2",
+          "1",
+          "0",
+          "0"
+        ],
+        "listgroupt": [
+          "4",
+          "-5"
+        ],
+        "listgroupb": [
+          "3"
+        ]
+      }
+    ]
+  },
   "nrt": {
     "groups": []
   },

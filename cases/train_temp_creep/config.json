@@ -14581,44 +14581,95 @@
     }
   ],
   "runblks": 1,
-  "opr_raw": [
-    "write gid result control for each group",
-    "500*1\t\t\t\t\t\t\t\t!\t01:DISPLACEMENT",
-    "500*1\t\t\t\t\t\t\t\t!\t02:ACCELERATION",
-    "500*1\t\t\t\t\t\t\t\t!\t03:ROTATION",
-    "500*1\t\t\t\t\t\t\t\t!\t04:PORE_PRESSURE,TEMPERATURE",
-    "500*1\t\t\t\t\t\t\t\t!\t05:WATER_HEAD",
-    "500*1\t\t\t\t\t\t\t\t!\t06:TEMPERATURE",
-    "500*1\t\t\t\t\t\t\t\t!\t07:STRESS",
-    "500*1\t\t\t\t\t\t\t\t!\t08:PRINCIPALSTRESS",
-    "500*1\t\t\t\t\t\t\t\t!\t09:STRAIN         nstre+4",
-    "500*1\t\t\t\t\t\t\t\t!\t10:PLASTICSTRAIN  nstre+1",
-    "500*1\t\t\t\t\t\t\t\t!\t11:YIELD          nstre+2",
-    "500*1\t\t\t\t\t\t\t\t!\t12:YIELDSTRESS    nstre+3",
-    "500*1\t\t\t\t\t\t\t\t!\t13:NORMAL_STRESS",
-    "500*1\t\t\t\t\t\t\t\t!\t14:SHEAR_STRESS",
-    "500*1\t\t\t\t\t\t\t\t!\t15:PSTRAINMCJOINT",
-    "500*1\t\t\t\t\t\t\t\t!\t16:OPENCLOSE",
-    "500*1\t\t\t\t\t\t\t\t!\t17:NORMAL_GAPS",
-    "write element gause result for each group, only use for OUTPLOT=FORRES",
-    "500*1",
-    "irecover wpgroup wegroup wggroup wjgroup",
-    "   0        0       0       0        0",
-    "following is the beginning node and the ending node;",
-    "one line for each group",
-    "following is for elements(e1:e2,istre)",
-    "following is for gaps of contact elements(e1:e2)",
-    "following is for Sn and St of joint elements(e1:e2)",
-    "gidres,resbtime,resetime",
-    "  1      0       264   !gidres=1��GLB�е�appear�����=2:�������appear��opr����Ƶ��������3��������ߵ�Ԫ������",
-    "appear_process(1:ngroup,0)",
-    "0*0",
-    "list npout or section surface"
-  ],
+  "opr": {
+    "nodal": [
+      [
+        "500*1",
+        "01:DISPLACEMENT"
+      ],
+      [
+        "500*1",
+        "02:ACCELERATION"
+      ],
+      [
+        "500*1",
+        "03:ROTATION"
+      ],
+      [
+        "500*1",
+        "04:PORE_PRESSURE,TEMPERATURE"
+      ],
+      [
+        "500*1",
+        "05:WATER_HEAD"
+      ],
+      [
+        "500*1",
+        "06:TEMPERATURE"
+      ],
+      [
+        "500*1",
+        "07:STRESS"
+      ],
+      [
+        "500*1",
+        "08:PRINCIPALSTRESS"
+      ],
+      [
+        "500*1",
+        "09:STRAIN         nstre+4"
+      ],
+      [
+        "500*1",
+        "10:PLASTICSTRAIN  nstre+1"
+      ],
+      [
+        "500*1",
+        "11:YIELD          nstre+2"
+      ],
+      [
+        "500*1",
+        "12:YIELDSTRESS    nstre+3"
+      ],
+      [
+        "500*1",
+        "13:NORMAL_STRESS"
+      ],
+      [
+        "500*1",
+        "14:SHEAR_STRESS"
+      ],
+      [
+        "500*1",
+        "15:PSTRAINMCJOINT"
+      ],
+      [
+        "500*1",
+        "16:OPENCLOSE"
+      ],
+      [
+        "500*1",
+        "17:NORMAL_GAPS"
+      ]
+    ],
+    "elem_gauss": "500*1",
+    "recovery": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "gidres": [
+      1,
+      0,
+      264
+    ],
+    "gidres_note": "gidres=1��GLB�е�appear�����=2:�������appear��opr����Ƶ��������3��������ߵ�Ԫ������",
+    "appear": "0*0"
+  },
   "_import_notes": [
     "1.mat: all blocks typed-expressible (ELASTIC/CONCRETE incl. damage row) — raw carry dropped, region is authorable",
-    "1.opr: w*group=[1, 1, 1, 1] sizes output-group tables this generator does not write; the row was NOT imported",
-    "1.opr: carried verbatim instead (opr_raw)",
     "1.tem: ntedge=1672 pulls records this generator does not write; npipe/algo_pipe were NOT imported"
   ]
 }
