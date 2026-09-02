@@ -7,23 +7,23 @@
  igroup=           3 tvol=   3999.99999999997     
  igroup=           3 tne=        2080
  ****** ntotv= ******        4370
- time: 22:08:25
+ time: 23:31:53
  in modf_element_lib
  jgroup=           1 kinit_g=           0
  jgroup=           2 kinit_g=           0
  jgroup=           3 kinit_g=           0
  iblks=           1 runblks=           1
  iblks=           1
- time: 22:08:25
+ time: 23:31:53
  ninit=           0 iblks=           1 restart=           0
  ikindks=           0
- time(solve): 22:08:25
+ time(solve): 23:31:53
  单个方程中最大非零元素个数          10
  Neq=        3319       Iseq(neq)=       30159
  storage of PARDISO, sstore=       30159
                                              
- time(solve_set): 22:08:25
- time(solve_pcg): 22:08:25
+ time(solve_set): 23:31:53
+ time(solve_pcg): 23:31:53
  igroup=           1 matno=           1 density=  0.000000000000000E+000 facts=
   0.000000000000000E+000
  igroup=           1 order_intx=           1 ngaus=           4
@@ -45,4 +45,4 @@
  irecover=           0
   order=    5  omega= 0.21558E+03  freq= 0.34311E+02  period= 0.29145E-01 coefx=-0.12434E-01 coefy=-0.18555E+00 coefz= 0.00000E+00 mstar= 0.36338E+06 kstar= 0.16888E+11
  irecover=           0
- time: 22:08:26
+ time: 23:31:53
