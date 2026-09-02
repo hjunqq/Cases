@@ -3,26 +3,26 @@
  igroup=           1 tvol=   10.1203920000003     
  igroup=           1 tne=        4720
  ****** ntotv= ******        5628
- time: 21:54:18
+ time: 16:15:20
  in modf_element_lib
  jgroup=           1 kinit_g=           0
  iblks=           1 runblks=           1
  iblks=           1
- time: 21:54:18
+ time: 16:15:20
  ninit=           0 iblks=           1 restart=           0
  ikindks=           0
- time(solve): 21:54:18
+ time(solve): 16:15:20
  单个方程中最大非零元素个数          19
  Neq=        5624       Iseq(neq)=       70480
  storage of PARDISO, sstore=       70480
                                              
- time(solve_set): 21:54:18
- time(solve_pcg): 21:54:18
+ time(solve_set): 16:15:20
+ time(solve_pcg): 16:15:20
  nbounods=           0
  fachv=  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
  contact_state********************
  kswkw=           1 kresl=           0 kmass=           1
-Begin forming various matrix       at 2026-09-01 21:54:18 
+Begin forming various matrix       at 2026-09-02 16:15:20 
  igroup=           1 ielem=           1 alfa=   1.00000000000000     
    1.00000000000000        1.00000000000000      hmatx=
      0.54938E-01    -0.10031E-01    -0.23765E-01    -0.10031E-01     0.20062E-01    -0.87191E-02    -0.13735E-01    -0.87191E-02
@@ -42,7 +42,7 @@ Begin forming various matrix       at 2026-09-01 21:54:18
      0.28125E-03
      0.28125E-03
      0.28125E-03
-Begin assemble golbal matrix       at 2026-09-01 21:54:18 
+Begin assemble golbal matrix       at 2026-09-02 16:15:20 
 igroup=    1 ifield=1 ikh=1 ielem=     1 order_time=0  coef= 0.02500
      0.54938E-01    -0.10031E-01    -0.23765E-01    -0.10031E-01     0.20062E-01    -0.87191E-02    -0.13735E-01    -0.87191E-02
     -0.10031E-01     0.54938E-01    -0.10031E-01    -0.23765E-01    -0.87191E-02     0.20062E-01    -0.87191E-02    -0.13735E-01
@@ -65,8 +65,8 @@ igroup=    1 ifield=1 ikh=2 ielem=     1 order_time=1  coef= 1.00000
  body force
  interia force***
  in predict
-Begin factorize global matrix      at 2026-09-01 21:54:18 
-Begin solution global equation     at 2026-09-01 21:54:18 
+Begin factorize global matrix      at 2026-09-02 16:15:20 
+Begin solution global equation     at 2026-09-02 16:15:20 
  
          Convergence check for Residual force,ttime=,  5.000000000000000E-002
  total force on spring nodes of dam_foundation interface
@@ -85,11 +85,11 @@ ratio for norm= 0.7099E+00
 ratio for maxm= 0.7111E+00
                     not converged for checki=           6
  kswkw=           0 kresl=           0 kmass=           0
-Begin forming various matrix       at 2026-09-01 21:54:18 
+Begin forming various matrix       at 2026-09-02 16:15:20 
  force_external***,edge_load_group=           0
  body force
  interia force***
-Begin solution global equation     at 2026-09-01 21:54:18 
+Begin solution global equation     at 2026-09-02 16:15:20 
  
          Convergence check for Residual force,ttime=,  5.000000000000000E-002
  total force on spring nodes of dam_foundation interface
@@ -110,19 +110,19 @@ ratio for maxm= 0.1164E-14
  irecover=           0
  fachv=  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
  kswkw=           1 kresl=           0 kmass=           1
-Begin forming various matrix       at 2026-09-01 21:54:18 
-Begin assemble golbal matrix       at 2026-09-01 21:54:18 
+Begin forming various matrix       at 2026-09-02 16:15:20 
+Begin assemble golbal matrix       at 2026-09-02 16:15:20 
  force_external***,edge_load_group=           0
  body force
  interia force***
  in predict
-Begin factorize global matrix      at 2026-09-01 21:54:18 
-Begin solution global equation     at 2026-09-01 21:54:18 
+Begin factorize global matrix      at 2026-09-02 16:15:20 
+Begin solution global equation     at 2026-09-02 16:15:20 
  
          Convergence check for Residual force,ttime=,  0.100000000000000     
  total force on spring nodes of dam_foundation interface
  iblks=           1 iincs=           1 istep=           2 iiter=           1
- resid=  4.021674574985693E-016 retot=  0.104849818692672     
+ resid=  4.021674575290129E-016 retot=  0.104849818692672     
 ratio for residu norm= 0.3836E-14
  max_refor=  1.977584762613560E-016 max_tofor=  5.242490934633590E-002
 ratio for residu maxm= 0.3772E-14
@@ -136,44 +136,44 @@ ratio for norm= 0.1138E+01
 ratio for maxm= 0.1340E+01
                     not converged for checki=           6
  kswkw=           0 kresl=           0 kmass=           0
-Begin forming various matrix       at 2026-09-01 21:54:18 
+Begin forming various matrix       at 2026-09-02 16:15:20 
  force_external***,edge_load_group=           0
  body force
  interia force***
-Begin solution global equation     at 2026-09-01 21:54:18 
+Begin solution global equation     at 2026-09-02 16:15:20 
  
          Convergence check for Residual force,ttime=,  0.100000000000000     
  total force on spring nodes of dam_foundation interface
  iblks=           1 iincs=           1 istep=           2 iiter=           2
- resid=  1.376283720943599E-016 retot=  0.104849818692672     
+ resid=  1.376283799524775E-016 retot=  0.104849818692672     
 ratio for residu norm= 0.1313E-14
  max_refor=  6.591949208711867E-017 max_tofor=  5.242490934633580E-002
 ratio for residu maxm= 0.1257E-14
  
                Convergence check for temperature
- max_tatf=   1.00000000000000      max_itif=  7.390676913483279E-016
+ max_tatf=   1.00000000000000      max_itif=  7.390676914020981E-016
  iiter=           2 tatfn=   3.19367853810939      itifn=
-  1.925234387721748E-015
+  1.925234388292486E-015
 ratio for norm= 0.6028E-15
- max_tatf=   1.00000000000000      max_itif=  7.390676913483279E-016
+ max_tatf=   1.00000000000000      max_itif=  7.390676914020981E-016
 ratio for maxm= 0.7391E-15
  contact_state********************
  irecover=           0
  fachv=  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
  kswkw=           1 kresl=           0 kmass=           1
-Begin forming various matrix       at 2026-09-01 21:54:18 
-Begin assemble golbal matrix       at 2026-09-01 21:54:18 
+Begin forming various matrix       at 2026-09-02 16:15:20 
+Begin assemble golbal matrix       at 2026-09-02 16:15:20 
  force_external***,edge_load_group=           0
  body force
  interia force***
  in predict
-Begin factorize global matrix      at 2026-09-01 21:54:18 
-Begin solution global equation     at 2026-09-01 21:54:18 
+Begin factorize global matrix      at 2026-09-02 16:15:20 
+Begin solution global equation     at 2026-09-02 16:15:20 
  
          Convergence check for Residual force,ttime=,  0.150000000000000     
  total force on spring nodes of dam_foundation interface
  iblks=           1 iincs=           1 istep=           3 iiter=           1
- resid=  4.343939600584758E-016 retot=  0.127644640659817     
+ resid=  4.343903408855033E-016 retot=  0.127644640659817     
 ratio for residu norm= 0.3403E-14
  max_refor=  2.532696274926138E-016 max_tofor=  6.382232032990834E-002
 ratio for residu maxm= 0.3968E-14
@@ -187,47 +187,47 @@ ratio for norm= 0.1009E+01
 ratio for maxm= 0.1212E+01
                     not converged for checki=           6
  kswkw=           0 kresl=           0 kmass=           0
-Begin forming various matrix       at 2026-09-01 21:54:18 
+Begin forming various matrix       at 2026-09-02 16:15:20 
  force_external***,edge_load_group=           0
  body force
  interia force***
-Begin solution global equation     at 2026-09-01 21:54:18 
+Begin solution global equation     at 2026-09-02 16:15:20 
  
          Convergence check for Residual force,ttime=,  0.150000000000000     
  total force on spring nodes of dam_foundation interface
  iblks=           1 iincs=           1 istep=           3 iiter=           2
- resid=  1.517228360645016E-016 retot=  0.127644640659816     
+ resid=  1.517842737069997E-016 retot=  0.127644640659816     
 ratio for residu norm= 0.1189E-14
  max_refor=  6.938893903907228E-017 max_tofor=  6.382232032990820E-002
 ratio for residu maxm= 0.1087E-14
  
                Convergence check for temperature
- max_tatf=   1.00000000000000      max_itif=  9.790506064161675E-016
+ max_tatf=   1.00000000000000      max_itif=  9.790784088462119E-016
  iiter=           2 tatfn=   3.08269062923984      itifn=
-  2.270262662559946E-015
-ratio for norm= 0.7365E-15
- max_tatf=   1.00000000000000      max_itif=  9.790506064161675E-016
+  2.270229501670771E-015
+ratio for norm= 0.7364E-15
+ max_tatf=   1.00000000000000      max_itif=  9.790784088462119E-016
 ratio for maxm= 0.9791E-15
  contact_state********************
  irecover=           0
  fachv=  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
  kswkw=           1 kresl=           0 kmass=           1
-Begin forming various matrix       at 2026-09-01 21:54:18 
-Begin assemble golbal matrix       at 2026-09-01 21:54:18 
+Begin forming various matrix       at 2026-09-02 16:15:20 
+Begin assemble golbal matrix       at 2026-09-02 16:15:20 
  force_external***,edge_load_group=           0
  body force
  interia force***
  in predict
-Begin factorize global matrix      at 2026-09-01 21:54:18 
-Begin solution global equation     at 2026-09-01 21:54:18 
+Begin factorize global matrix      at 2026-09-02 16:15:20 
+Begin solution global equation     at 2026-09-02 16:15:20 
  
          Convergence check for Residual force,ttime=,  0.200000000000000     
  total force on spring nodes of dam_foundation interface
  iblks=           1 iincs=           1 istep=           4 iiter=           1
- resid=  4.065804404384477E-016 retot=  0.108612338237030     
-ratio for residu norm= 0.3743E-14
- max_refor=  1.769417945496343E-016 max_tofor=  5.430616911851500E-002
-ratio for residu maxm= 0.3258E-14
+ resid=  3.982905273753059E-016 retot=  0.108612338237030     
+ratio for residu norm= 0.3667E-14
+ max_refor=  1.665334536937735E-016 max_tofor=  5.430616911851500E-002
+ratio for residu maxm= 0.3067E-14
  
                Convergence check for temperature
  max_tatf=   1.00000000000000      max_itif=   1.12939887504055     
@@ -238,47 +238,47 @@ ratio for norm= 0.8612E+00
 ratio for maxm= 0.1129E+01
                     not converged for checki=           6
  kswkw=           0 kresl=           0 kmass=           0
-Begin forming various matrix       at 2026-09-01 21:54:18 
+Begin forming various matrix       at 2026-09-02 16:15:20 
  force_external***,edge_load_group=           0
  body force
  interia force***
-Begin solution global equation     at 2026-09-01 21:54:18 
+Begin solution global equation     at 2026-09-02 16:15:20 
  
          Convergence check for Residual force,ttime=,  0.200000000000000     
  total force on spring nodes of dam_foundation interface
  iblks=           1 iincs=           1 istep=           4 iiter=           2
- resid=  1.269946944685531E-016 retot=  0.108612338237030     
-ratio for residu norm= 0.1169E-14
- max_refor=  6.938893903907228E-017 max_tofor=  5.430616911851492E-002
-ratio for residu maxm= 0.1278E-14
+ resid=  1.280697321145715E-016 retot=  0.108612338237030     
+ratio for residu norm= 0.1179E-14
+ max_refor=  6.245004513516506E-017 max_tofor=  5.430616911851493E-002
+ratio for residu maxm= 0.1150E-14
  
                Convergence check for temperature
- max_tatf=   1.00000000000000      max_itif=  9.500211048727520E-016
+ max_tatf=   1.00000000000000      max_itif=  9.959323262833100E-016
  iiter=           2 tatfn=   3.24472447449698      itifn=
-  2.781457452618048E-015
-ratio for norm= 0.8572E-15
- max_tatf=   1.00000000000000      max_itif=  9.500211048727520E-016
-ratio for maxm= 0.9500E-15
+  2.984321231886763E-015
+ratio for norm= 0.9197E-15
+ max_tatf=   1.00000000000000      max_itif=  9.959323262833100E-016
+ratio for maxm= 0.9959E-15
  contact_state********************
  irecover=           0
  fachv=  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
  kswkw=           1 kresl=           0 kmass=           1
-Begin forming various matrix       at 2026-09-01 21:54:18 
-Begin assemble golbal matrix       at 2026-09-01 21:54:18 
+Begin forming various matrix       at 2026-09-02 16:15:20 
+Begin assemble golbal matrix       at 2026-09-02 16:15:20 
  force_external***,edge_load_group=           0
  body force
  interia force***
  in predict
-Begin factorize global matrix      at 2026-09-01 21:54:18 
-Begin solution global equation     at 2026-09-01 21:54:18 
+Begin factorize global matrix      at 2026-09-02 16:15:20 
+Begin solution global equation     at 2026-09-02 16:15:20 
  
          Convergence check for Residual force,ttime=,  0.250000000000000     
  total force on spring nodes of dam_foundation interface
  iblks=           1 iincs=           1 istep=           5 iiter=           1
- resid=  3.605830728083560E-016 retot=  0.121604539079285     
-ratio for residu norm= 0.2965E-14
- max_refor=  1.595945597898663E-016 max_tofor=  6.080226953964241E-002
-ratio for residu maxm= 0.2625E-14
+ resid=  4.780520408858301E-016 retot=  0.121604539079285     
+ratio for residu norm= 0.3931E-14
+ max_refor=  3.157196726277789E-016 max_tofor=  6.080226953964247E-002
+ratio for residu maxm= 0.5193E-14
  
                Convergence check for temperature
  max_tatf=   1.00000000000000      max_itif=   1.06652320041692     
@@ -289,47 +289,47 @@ ratio for norm= 0.8017E+00
 ratio for maxm= 0.1067E+01
                     not converged for checki=           6
  kswkw=           0 kresl=           0 kmass=           0
-Begin forming various matrix       at 2026-09-01 21:54:18 
+Begin forming various matrix       at 2026-09-02 16:15:20 
  force_external***,edge_load_group=           0
  body force
  interia force***
-Begin solution global equation     at 2026-09-01 21:54:18 
+Begin solution global equation     at 2026-09-02 16:15:20 
  
          Convergence check for Residual force,ttime=,  0.250000000000000     
  total force on spring nodes of dam_foundation interface
  iblks=           1 iincs=           1 istep=           5 iiter=           2
- resid=  1.879299162082038E-016 retot=  0.121604539079285     
-ratio for residu norm= 0.1545E-14
- max_refor=  1.040834085586084E-016 max_tofor=  6.080226953964242E-002
-ratio for residu maxm= 0.1712E-14
+ resid=  1.505974617955791E-016 retot=  0.121604539079285     
+ratio for residu norm= 0.1238E-14
+ max_refor=  6.245004513516506E-017 max_tofor=  6.080226953964246E-002
+ratio for residu maxm= 0.1027E-14
  
                Convergence check for temperature
- max_tatf=   1.00000000000000      max_itif=  8.344578277981507E-016
+ max_tatf=   1.00000000000000      max_itif=  1.023251787375726E-015
  iiter=           2 tatfn=   3.21958485994628      itifn=
-  2.769631615398246E-015
-ratio for norm= 0.8602E-15
- max_tatf=   1.00000000000000      max_itif=  8.344578277981507E-016
-ratio for maxm= 0.8345E-15
+  1.978070229534424E-015
+ratio for norm= 0.6144E-15
+ max_tatf=   1.00000000000000      max_itif=  1.023251787375726E-015
+ratio for maxm= 0.1023E-14
  contact_state********************
  irecover=           0
  fachv=  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
  kswkw=           1 kresl=           0 kmass=           1
-Begin forming various matrix       at 2026-09-01 21:54:18 
-Begin assemble golbal matrix       at 2026-09-01 21:54:18 
+Begin forming various matrix       at 2026-09-02 16:15:20 
+Begin assemble golbal matrix       at 2026-09-02 16:15:20 
  force_external***,edge_load_group=           0
  body force
  interia force***
  in predict
-Begin factorize global matrix      at 2026-09-01 21:54:18 
-Begin solution global equation     at 2026-09-01 21:54:18 
+Begin factorize global matrix      at 2026-09-02 16:15:20 
+Begin solution global equation     at 2026-09-02 16:15:20 
  
          Convergence check for Residual force,ttime=,  0.300000000000000     
  total force on spring nodes of dam_foundation interface
  iblks=           1 iincs=           1 istep=           6 iiter=           1
- resid=  4.064188494854195E-016 retot=  0.109941765564070     
-ratio for residu norm= 0.3697E-14
- max_refor=  2.393918396847994E-016 max_tofor=  5.497088278203494E-002
-ratio for residu maxm= 0.4355E-14
+ resid=  4.317779758082071E-016 retot=  0.109941765564069     
+ratio for residu norm= 0.3927E-14
+ max_refor=  1.734723475976807E-016 max_tofor=  5.497088278203485E-002
+ratio for residu maxm= 0.3156E-14
  
                Convergence check for temperature
  max_tatf=   1.00000000000000      max_itif=   1.01851187883279     
@@ -340,251 +340,251 @@ ratio for norm= 0.7292E+00
 ratio for maxm= 0.1019E+01
                     not converged for checki=           6
  kswkw=           0 kresl=           0 kmass=           0
-Begin forming various matrix       at 2026-09-01 21:54:18 
+Begin forming various matrix       at 2026-09-02 16:15:20 
  force_external***,edge_load_group=           0
  body force
  interia force***
-Begin solution global equation     at 2026-09-01 21:54:18 
+Begin solution global equation     at 2026-09-02 16:15:20 
  
          Convergence check for Residual force,ttime=,  0.300000000000000     
  total force on spring nodes of dam_foundation interface
  iblks=           1 iincs=           1 istep=           6 iiter=           2
- resid=  1.281393183226595E-016 retot=  0.109941765564070     
-ratio for residu norm= 0.1166E-14
- max_refor=  6.245004513516506E-017 max_tofor=  5.497088278203477E-002
-ratio for residu maxm= 0.1136E-14
+ resid=  1.790509695413124E-016 retot=  0.109941765564070     
+ratio for residu norm= 0.1629E-14
+ max_refor=  8.673617379884035E-017 max_tofor=  5.497088278203478E-002
+ratio for residu maxm= 0.1578E-14
  
                Convergence check for temperature
- max_tatf=   1.00000000000000      max_itif=  9.093193608080735E-016
+ max_tatf=   1.00000000000000      max_itif=  8.020169510683379E-016
  iiter=           2 tatfn=   3.33258909028040      itifn=
-  2.140439249732270E-015
-ratio for norm= 0.6423E-15
- max_tatf=   1.00000000000000      max_itif=  9.093193608080735E-016
-ratio for maxm= 0.9093E-15
+  2.152225522428353E-015
+ratio for norm= 0.6458E-15
+ max_tatf=   1.00000000000000      max_itif=  8.020169510683379E-016
+ratio for maxm= 0.8020E-15
  contact_state********************
  irecover=           0
  fachv=  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
  kswkw=           1 kresl=           0 kmass=           1
-Begin forming various matrix       at 2026-09-01 21:54:18 
-Begin assemble golbal matrix       at 2026-09-01 21:54:18 
+Begin forming various matrix       at 2026-09-02 16:15:20 
+Begin assemble golbal matrix       at 2026-09-02 16:15:20 
  force_external***,edge_load_group=           0
  body force
  interia force***
  in predict
-Begin factorize global matrix      at 2026-09-01 21:54:18 
-Begin solution global equation     at 2026-09-01 21:54:18 
+Begin factorize global matrix      at 2026-09-02 16:15:20 
+Begin solution global equation     at 2026-09-02 16:15:20 
  
          Convergence check for Residual force,ttime=,  0.350000000000000     
  total force on spring nodes of dam_foundation interface
  iblks=           1 iincs=           1 istep=           7 iiter=           1
- resid=  4.165282028295623E-016 retot=  0.118317565148226     
-ratio for residu norm= 0.3520E-14
- max_refor=  1.734723475976807E-016 max_tofor=  5.915878257411298E-002
-ratio for residu maxm= 0.2932E-14
+ resid=  3.788700692403580E-016 retot=  0.118317565148226     
+ratio for residu norm= 0.3202E-14
+ max_refor=  1.457167719820518E-016 max_tofor=  5.915878257411299E-002
+ratio for residu maxm= 0.2463E-14
  
                Convergence check for temperature
- max_tatf=   1.00000000000000      max_itif=  0.979824592640711     
+ max_tatf=   1.00000000000000      max_itif=  0.979824592640710     
  iiter=           1 tatfn=   3.34762217404812      itifn=
    2.31745497080688     
 ratio for norm= 0.6923E+00
- max_tatf=   1.00000000000000      max_itif=  0.979824592640711     
+ max_tatf=   1.00000000000000      max_itif=  0.979824592640710     
 ratio for maxm= 0.9798E+00
                     not converged for checki=           6
  kswkw=           0 kresl=           0 kmass=           0
-Begin forming various matrix       at 2026-09-01 21:54:18 
+Begin forming various matrix       at 2026-09-02 16:15:20 
  force_external***,edge_load_group=           0
  body force
  interia force***
-Begin solution global equation     at 2026-09-01 21:54:18 
+Begin solution global equation     at 2026-09-02 16:15:20 
  
          Convergence check for Residual force,ttime=,  0.350000000000000     
  total force on spring nodes of dam_foundation interface
  iblks=           1 iincs=           1 istep=           7 iiter=           2
- resid=  1.960502962183321E-016 retot=  0.118317565148226     
-ratio for residu norm= 0.1657E-14
- max_refor=  1.144917494144693E-016 max_tofor=  5.915878257411299E-002
-ratio for residu maxm= 0.1935E-14
+ resid=  1.570836101497065E-016 retot=  0.118317565148226     
+ratio for residu norm= 0.1328E-14
+ max_refor=  7.632783294297951E-017 max_tofor=  5.915878257411299E-002
+ratio for residu maxm= 0.1290E-14
  
                Convergence check for temperature
- max_tatf=   1.00000000000000      max_itif=  7.393995100677872E-016
+ max_tatf=   1.00000000000000      max_itif=  4.519912335711323E-016
  iiter=           2 tatfn=   3.34762217404812      itifn=
-  1.910446846845676E-015
-ratio for norm= 0.5707E-15
- max_tatf=   1.00000000000000      max_itif=  7.393995100677872E-016
-ratio for maxm= 0.7394E-15
+  1.073565799498535E-015
+ratio for norm= 0.3207E-15
+ max_tatf=   1.00000000000000      max_itif=  4.519912335711323E-016
+ratio for maxm= 0.4520E-15
  contact_state********************
  irecover=           0
  fachv=  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
  kswkw=           1 kresl=           0 kmass=           1
-Begin forming various matrix       at 2026-09-01 21:54:18 
-Begin assemble golbal matrix       at 2026-09-01 21:54:18 
+Begin forming various matrix       at 2026-09-02 16:15:20 
+Begin assemble golbal matrix       at 2026-09-02 16:15:20 
  force_external***,edge_load_group=           0
  body force
  interia force***
  in predict
-Begin factorize global matrix      at 2026-09-01 21:54:18 
-Begin solution global equation     at 2026-09-01 21:54:18 
+Begin factorize global matrix      at 2026-09-02 16:15:20 
+Begin solution global equation     at 2026-09-02 16:15:20 
  
          Convergence check for Residual force,ttime=,  0.400000000000000     
  total force on spring nodes of dam_foundation interface
  iblks=           1 iincs=           1 istep=           8 iiter=           1
- resid=  4.513926066051808E-016 retot=  0.110197775341863     
-ratio for residu norm= 0.4096E-14
- max_refor=  3.469446951953614E-016 max_tofor=  5.509888767093145E-002
-ratio for residu maxm= 0.6297E-14
+ resid=  3.121752341455542E-016 retot=  0.110197775341863     
+ratio for residu norm= 0.2833E-14
+ max_refor=  1.387778780781446E-016 max_tofor=  5.509888767093138E-002
+ratio for residu maxm= 0.2519E-14
  
                Convergence check for temperature
- max_tatf=   1.00000000000000      max_itif=  0.948273322313416     
- iiter=           1 tatfn=   3.44146177489392      itifn=
+ max_tatf=   1.00000000000000      max_itif=  0.948273322313415     
+ iiter=           1 tatfn=   3.44146177489393      itifn=
    2.22964888611458     
 ratio for norm= 0.6479E+00
- max_tatf=   1.00000000000000      max_itif=  0.948273322313416     
+ max_tatf=   1.00000000000000      max_itif=  0.948273322313415     
 ratio for maxm= 0.9483E+00
                     not converged for checki=           6
  kswkw=           0 kresl=           0 kmass=           0
-Begin forming various matrix       at 2026-09-01 21:54:18 
+Begin forming various matrix       at 2026-09-02 16:15:20 
  force_external***,edge_load_group=           0
  body force
  interia force***
-Begin solution global equation     at 2026-09-01 21:54:18 
+Begin solution global equation     at 2026-09-02 16:15:20 
  
          Convergence check for Residual force,ttime=,  0.400000000000000     
  total force on spring nodes of dam_foundation interface
  iblks=           1 iincs=           1 istep=           8 iiter=           2
- resid=  1.560401889932629E-016 retot=  0.110197775341863     
-ratio for residu norm= 0.1416E-14
- max_refor=  8.326672684688674E-017 max_tofor=  5.509888767093131E-002
-ratio for residu maxm= 0.1511E-14
+ resid=  1.736593084174792E-016 retot=  0.110197775341863     
+ratio for residu norm= 0.1576E-14
+ max_refor=  7.285838599102590E-017 max_tofor=  5.509888767093132E-002
+ratio for residu maxm= 0.1322E-14
  
                Convergence check for temperature
- max_tatf=   1.00000000000000      max_itif=  1.211697168351553E-015
+ max_tatf=   1.00000000000000      max_itif=  9.863746725493938E-016
  iiter=           2 tatfn=   3.44146177489393      itifn=
-  2.258080675624974E-015
-ratio for norm= 0.6561E-15
- max_tatf=   1.00000000000000      max_itif=  1.211697168351553E-015
-ratio for maxm= 0.1212E-14
+  1.644800097392472E-015
+ratio for norm= 0.4779E-15
+ max_tatf=   1.00000000000000      max_itif=  9.863746725493938E-016
+ratio for maxm= 0.9864E-15
  contact_state********************
  irecover=           0
  fachv=  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
  kswkw=           1 kresl=           0 kmass=           1
-Begin forming various matrix       at 2026-09-01 21:54:18 
-Begin assemble golbal matrix       at 2026-09-01 21:54:18 
+Begin forming various matrix       at 2026-09-02 16:15:20 
+Begin assemble golbal matrix       at 2026-09-02 16:15:20 
  force_external***,edge_load_group=           0
  body force
  interia force***
  in predict
-Begin factorize global matrix      at 2026-09-01 21:54:18 
-Begin solution global equation     at 2026-09-01 21:54:18 
+Begin factorize global matrix      at 2026-09-02 16:15:20 
+Begin solution global equation     at 2026-09-02 16:15:20 
  
          Convergence check for Residual force,ttime=,  0.450000000000000     
  total force on spring nodes of dam_foundation interface
  iblks=           1 iincs=           1 istep=           9 iiter=           1
- resid=  4.079983370067918E-016 retot=  0.116185471772953     
-ratio for residu norm= 0.3512E-14
- max_refor=  1.630640067418199E-016 max_tofor=  5.809273588647666E-002
-ratio for residu maxm= 0.2807E-14
+ resid=  5.159504973579500E-016 retot=  0.116185471772953     
+ratio for residu norm= 0.4441E-14
+ max_refor=  3.261280134836397E-016 max_tofor=  5.809273588647670E-002
+ratio for residu maxm= 0.5614E-14
  
                Convergence check for temperature
  max_tatf=   1.00000000000000      max_itif=  0.921531268304814     
  iiter=           1 tatfn=   3.47732935314438      itifn=
-   2.15840607241810     
+   2.15840607241809     
 ratio for norm= 0.6207E+00
  max_tatf=   1.00000000000000      max_itif=  0.921531268304814     
 ratio for maxm= 0.9215E+00
                     not converged for checki=           6
  kswkw=           0 kresl=           0 kmass=           0
-Begin forming various matrix       at 2026-09-01 21:54:18 
+Begin forming various matrix       at 2026-09-02 16:15:20 
  force_external***,edge_load_group=           0
  body force
  interia force***
-Begin solution global equation     at 2026-09-01 21:54:18 
+Begin solution global equation     at 2026-09-02 16:15:20 
  
          Convergence check for Residual force,ttime=,  0.450000000000000     
  total force on spring nodes of dam_foundation interface
  iblks=           1 iincs=           1 istep=           9 iiter=           2
- resid=  1.297482274578389E-016 retot=  0.116185471772953     
-ratio for residu norm= 0.1117E-14
- max_refor=  8.326672684688674E-017 max_tofor=  5.809273588647656E-002
-ratio for residu maxm= 0.1433E-14
+ resid=  1.940756714041121E-016 retot=  0.116185471772953     
+ratio for residu norm= 0.1670E-14
+ max_refor=  8.673617379884035E-017 max_tofor=  5.809273588647661E-002
+ratio for residu maxm= 0.1493E-14
  
                Convergence check for temperature
- max_tatf=   1.00000000000000      max_itif=  1.079152694680035E-015
+ max_tatf=   1.00000000000000      max_itif=  9.444156201612750E-016
  iiter=           2 tatfn=   3.47732935314438      itifn=
-  2.946407324937358E-015
-ratio for norm= 0.8473E-15
- max_tatf=   1.00000000000000      max_itif=  1.079152694680035E-015
-ratio for maxm= 0.1079E-14
+  1.848566134173093E-015
+ratio for norm= 0.5316E-15
+ max_tatf=   1.00000000000000      max_itif=  9.444156201612750E-016
+ratio for maxm= 0.9444E-15
  contact_state********************
  irecover=           0
  fachv=  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
  kswkw=           1 kresl=           0 kmass=           1
-Begin forming various matrix       at 2026-09-01 21:54:18 
-Begin assemble golbal matrix       at 2026-09-01 21:54:18 
+Begin forming various matrix       at 2026-09-02 16:15:20 
+Begin assemble golbal matrix       at 2026-09-02 16:15:20 
  force_external***,edge_load_group=           0
  body force
  interia force***
  in predict
-Begin factorize global matrix      at 2026-09-01 21:54:18 
-Begin solution global equation     at 2026-09-01 21:54:18 
+Begin factorize global matrix      at 2026-09-02 16:15:20 
+Begin solution global equation     at 2026-09-02 16:15:20 
  
          Convergence check for Residual force,ttime=,  0.500000000000000     
  total force on spring nodes of dam_foundation interface
  iblks=           1 iincs=           1 istep=          10 iiter=           1
- resid=  3.554543643310005E-016 retot=  0.109974723048564     
-ratio for residu norm= 0.3232E-14
- max_refor=  2.315855840429037E-016 max_tofor=  5.498736152428205E-002
-ratio for residu maxm= 0.4212E-14
+ resid=  4.734325668688800E-016 retot=  0.109974723048564     
+ratio for residu norm= 0.4305E-14
+ max_refor=  2.289834988289385E-016 max_tofor=  5.498736152428207E-002
+ratio for residu maxm= 0.4164E-14
  
                Convergence check for temperature
- max_tatf=   1.00000000000000      max_itif=  0.898619805321437     
+ max_tatf=   1.00000000000000      max_itif=  0.898619805321436     
  iiter=           1 tatfn=   3.56244959635059      itifn=
    2.09820182446847     
 ratio for norm= 0.5890E+00
- max_tatf=   1.00000000000000      max_itif=  0.898619805321437     
+ max_tatf=   1.00000000000000      max_itif=  0.898619805321436     
 ratio for maxm= 0.8986E+00
                     not converged for checki=           6
  kswkw=           0 kresl=           0 kmass=           0
-Begin forming various matrix       at 2026-09-01 21:54:18 
+Begin forming various matrix       at 2026-09-02 16:15:20 
  force_external***,edge_load_group=           0
  body force
  interia force***
-Begin solution global equation     at 2026-09-01 21:54:18 
+Begin solution global equation     at 2026-09-02 16:15:20 
  
          Convergence check for Residual force,ttime=,  0.500000000000000     
  total force on spring nodes of dam_foundation interface
  iblks=           1 iincs=           1 istep=          10 iiter=           2
- resid=  1.447520533818863E-016 retot=  0.109974723048564     
-ratio for residu norm= 0.1316E-14
- max_refor=  6.245004513516506E-017 max_tofor=  5.498736152428196E-002
-ratio for residu maxm= 0.1136E-14
+ resid=  1.744124881291061E-016 retot=  0.109974723048564     
+ratio for residu norm= 0.1586E-14
+ max_refor=  7.632783294297951E-017 max_tofor=  5.498736152428196E-002
+ratio for residu maxm= 0.1388E-14
  
                Convergence check for temperature
- max_tatf=   1.00000000000000      max_itif=  1.053895517871476E-015
+ max_tatf=   1.00000000000000      max_itif=  9.056121725544254E-016
  iiter=           2 tatfn=   3.56244959635059      itifn=
-  2.377577932434972E-015
-ratio for norm= 0.6674E-15
- max_tatf=   1.00000000000000      max_itif=  1.053895517871476E-015
-ratio for maxm= 0.1054E-14
+  2.516576544812847E-015
+ratio for norm= 0.7064E-15
+ max_tatf=   1.00000000000000      max_itif=  9.056121725544254E-016
+ratio for maxm= 0.9056E-15
  contact_state********************
  irecover=           0
  fachv=  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
  kswkw=           1 kresl=           0 kmass=           1
-Begin forming various matrix       at 2026-09-01 21:54:18 
-Begin assemble golbal matrix       at 2026-09-01 21:54:18 
+Begin forming various matrix       at 2026-09-02 16:15:20 
+Begin assemble golbal matrix       at 2026-09-02 16:15:20 
  force_external***,edge_load_group=           0
  body force
  interia force***
  in predict
-Begin factorize global matrix      at 2026-09-01 21:54:18 
-Begin solution global equation     at 2026-09-01 21:54:18 
+Begin factorize global matrix      at 2026-09-02 16:15:21 
+Begin solution global equation     at 2026-09-02 16:15:21 
  
          Convergence check for Residual force,ttime=,  0.550000000000000     
  total force on spring nodes of dam_foundation interface
  iblks=           1 iincs=           1 istep=          11 iiter=           1
- resid=  4.022143528400127E-016 retot=  0.114642426184997     
-ratio for residu norm= 0.3508E-14
- max_refor=  2.229119666630197E-016 max_tofor=  5.732121309249837E-002
-ratio for residu maxm= 0.3889E-14
+ resid=  3.487048963483042E-016 retot=  0.114642426184997     
+ratio for residu norm= 0.3042E-14
+ max_refor=  2.185751579730777E-016 max_tofor=  5.732121309249841E-002
+ratio for residu maxm= 0.3813E-14
  
                Convergence check for temperature
  max_tatf=   1.00000000000000      max_itif=  0.878353088540703     
@@ -595,47 +595,47 @@ ratio for norm= 0.5668E+00
 ratio for maxm= 0.8784E+00
                     not converged for checki=           6
  kswkw=           0 kresl=           0 kmass=           0
-Begin forming various matrix       at 2026-09-01 21:54:18 
+Begin forming various matrix       at 2026-09-02 16:15:21 
  force_external***,edge_load_group=           0
  body force
  interia force***
-Begin solution global equation     at 2026-09-01 21:54:18 
+Begin solution global equation     at 2026-09-02 16:15:21 
  
          Convergence check for Residual force,ttime=,  0.550000000000000     
  total force on spring nodes of dam_foundation interface
  iblks=           1 iincs=           1 istep=          11 iiter=           2
- resid=  1.355381100539134E-016 retot=  0.114642426184997     
-ratio for residu norm= 0.1182E-14
- max_refor=  7.285838599102590E-017 max_tofor=  5.732121309249828E-002
-ratio for residu maxm= 0.1271E-14
+ resid=  1.765616057792234E-016 retot=  0.114642426184996     
+ratio for residu norm= 0.1540E-14
+ max_refor=  6.591949208711867E-017 max_tofor=  5.732121309249825E-002
+ratio for residu maxm= 0.1150E-14
  
                Convergence check for temperature
- max_tatf=   1.00000000000000      max_itif=  9.354249760926367E-016
+ max_tatf=   1.00000000000000      max_itif=  8.218197399998400E-016
  iiter=           2 tatfn=   3.60990889796156      itifn=
-  2.181465592008478E-015
-ratio for norm= 0.6043E-15
- max_tatf=   1.00000000000000      max_itif=  9.354249760926367E-016
-ratio for maxm= 0.9354E-15
+  2.719817935838934E-015
+ratio for norm= 0.7534E-15
+ max_tatf=   1.00000000000000      max_itif=  8.218197399998400E-016
+ratio for maxm= 0.8218E-15
  contact_state********************
  irecover=           0
  fachv=  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
  kswkw=           1 kresl=           0 kmass=           1
-Begin forming various matrix       at 2026-09-01 21:54:18 
-Begin assemble golbal matrix       at 2026-09-01 21:54:18 
+Begin forming various matrix       at 2026-09-02 16:15:21 
+Begin assemble golbal matrix       at 2026-09-02 16:15:21 
  force_external***,edge_load_group=           0
  body force
  interia force***
  in predict
-Begin factorize global matrix      at 2026-09-01 21:54:18 
-Begin solution global equation     at 2026-09-01 21:54:18 
+Begin factorize global matrix      at 2026-09-02 16:15:21 
+Begin solution global equation     at 2026-09-02 16:15:21 
  
          Convergence check for Residual force,ttime=,  0.600000000000000     
  total force on spring nodes of dam_foundation interface
  iblks=           1 iincs=           1 istep=          12 iiter=           1
- resid=  3.562759703779240E-016 retot=  0.109537307264042     
-ratio for residu norm= 0.3253E-14
- max_refor=  1.448494102440634E-016 max_tofor=  5.476865363202119E-002
-ratio for residu maxm= 0.2645E-14
+ resid=  3.471831068675086E-016 retot=  0.109537307264042     
+ratio for residu norm= 0.3170E-14
+ max_refor=  1.379105163401562E-016 max_tofor=  5.476865363202119E-002
+ratio for residu maxm= 0.2518E-14
  
                Convergence check for temperature
  max_tatf=   1.00000000000000      max_itif=  0.860291288815491     
@@ -646,97 +646,97 @@ ratio for norm= 0.5417E+00
 ratio for maxm= 0.8603E+00
                     not converged for checki=           6
  kswkw=           0 kresl=           0 kmass=           0
-Begin forming various matrix       at 2026-09-01 21:54:18 
+Begin forming various matrix       at 2026-09-02 16:15:21 
  force_external***,edge_load_group=           0
  body force
  interia force***
-Begin solution global equation     at 2026-09-01 21:54:18 
+Begin solution global equation     at 2026-09-02 16:15:21 
  
          Convergence check for Residual force,ttime=,  0.600000000000000     
  total force on spring nodes of dam_foundation interface
  iblks=           1 iincs=           1 istep=          12 iiter=           2
- resid=  1.439805271692100E-016 retot=  0.109537307264042     
-ratio for residu norm= 0.1314E-14
- max_refor=  7.979727989493313E-017 max_tofor=  5.476865363202121E-002
-ratio for residu maxm= 0.1457E-14
+ resid=  1.898479034060584E-016 retot=  0.109537307264042     
+ratio for residu norm= 0.1733E-14
+ max_refor=  7.285838599102590E-017 max_tofor=  5.476865363202120E-002
+ratio for residu maxm= 0.1330E-14
  
                Convergence check for temperature
- max_tatf=   1.00000000000000      max_itif=  6.036273895437919E-016
+ max_tatf=   1.00000000000000      max_itif=  7.047502681748624E-016
  iiter=           2 tatfn=   3.69075440216345      itifn=
-  1.803689210688755E-015
-ratio for norm= 0.4887E-15
- max_tatf=   1.00000000000000      max_itif=  6.036273895437919E-016
-ratio for maxm= 0.6036E-15
+  2.174771638788099E-015
+ratio for norm= 0.5892E-15
+ max_tatf=   1.00000000000000      max_itif=  7.047502681748624E-016
+ratio for maxm= 0.7048E-15
  contact_state********************
  irecover=           0
  fachv=  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
  kswkw=           1 kresl=           0 kmass=           1
-Begin forming various matrix       at 2026-09-01 21:54:18 
-Begin assemble golbal matrix       at 2026-09-01 21:54:18 
+Begin forming various matrix       at 2026-09-02 16:15:21 
+Begin assemble golbal matrix       at 2026-09-02 16:15:21 
  force_external***,edge_load_group=           0
  body force
  interia force***
  in predict
-Begin factorize global matrix      at 2026-09-01 21:54:18 
-Begin solution global equation     at 2026-09-01 21:54:18 
+Begin factorize global matrix      at 2026-09-02 16:15:21 
+Begin solution global equation     at 2026-09-02 16:15:21 
  
          Convergence check for Residual force,ttime=,  0.650000000000000     
  total force on spring nodes of dam_foundation interface
  iblks=           1 iincs=           1 istep=          13 iiter=           1
- resid=  3.563278265803896E-016 retot=  0.113432417195357     
-ratio for residu norm= 0.3141E-14
- max_refor=  2.081668171172169E-016 max_tofor=  5.671620859767863E-002
-ratio for residu maxm= 0.3670E-14
+ resid=  3.659425738062319E-016 retot=  0.113432417195357     
+ratio for residu norm= 0.3226E-14
+ max_refor=  2.012279232133096E-016 max_tofor=  5.671620859767858E-002
+ratio for residu maxm= 0.3548E-14
  
                Convergence check for temperature
- max_tatf=   1.00000000000000      max_itif=  0.843765311121818     
+ max_tatf=   1.00000000000000      max_itif=  0.843765311121819     
  iiter=           1 tatfn=   3.74500756146591      itifn=
    1.95678309894761     
 ratio for norm= 0.5225E+00
- max_tatf=   1.00000000000000      max_itif=  0.843765311121818     
+ max_tatf=   1.00000000000000      max_itif=  0.843765311121819     
 ratio for maxm= 0.8438E+00
                     not converged for checki=           6
  kswkw=           0 kresl=           0 kmass=           0
-Begin forming various matrix       at 2026-09-01 21:54:18 
+Begin forming various matrix       at 2026-09-02 16:15:21 
  force_external***,edge_load_group=           0
  body force
  interia force***
-Begin solution global equation     at 2026-09-01 21:54:18 
+Begin solution global equation     at 2026-09-02 16:15:21 
  
          Convergence check for Residual force,ttime=,  0.650000000000000     
  total force on spring nodes of dam_foundation interface
  iblks=           1 iincs=           1 istep=          13 iiter=           2
- resid=  1.797375475208064E-016 retot=  0.113432417195357     
-ratio for residu norm= 0.1585E-14
- max_refor=  7.285838599102590E-017 max_tofor=  5.671620859767858E-002
-ratio for residu maxm= 0.1285E-14
+ resid=  1.476561744674350E-016 retot=  0.113432417195357     
+ratio for residu norm= 0.1302E-14
+ max_refor=  6.245004513516506E-017 max_tofor=  5.671620859767857E-002
+ratio for residu maxm= 0.1101E-14
  
                Convergence check for temperature
- max_tatf=   1.00000000000000      max_itif=  7.714020218123928E-016
+ max_tatf=   1.00000000000000      max_itif=  5.622953674328060E-016
  iiter=           2 tatfn=   3.74500756146591      itifn=
-  1.571710028163562E-015
-ratio for norm= 0.4197E-15
- max_tatf=   1.00000000000000      max_itif=  7.714020218123928E-016
-ratio for maxm= 0.7714E-15
+  1.450546871729975E-015
+ratio for norm= 0.3873E-15
+ max_tatf=   1.00000000000000      max_itif=  5.622953674328060E-016
+ratio for maxm= 0.5623E-15
  contact_state********************
  irecover=           0
  fachv=  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
  kswkw=           1 kresl=           0 kmass=           1
-Begin forming various matrix       at 2026-09-01 21:54:18 
-Begin assemble golbal matrix       at 2026-09-01 21:54:18 
+Begin forming various matrix       at 2026-09-02 16:15:21 
+Begin assemble golbal matrix       at 2026-09-02 16:15:21 
  force_external***,edge_load_group=           0
  body force
  interia force***
  in predict
-Begin factorize global matrix      at 2026-09-01 21:54:18 
-Begin solution global equation     at 2026-09-01 21:54:18 
+Begin factorize global matrix      at 2026-09-02 16:15:21 
+Begin solution global equation     at 2026-09-02 16:15:21 
  
          Convergence check for Residual force,ttime=,  0.700000000000000     
  total force on spring nodes of dam_foundation interface
  iblks=           1 iincs=           1 istep=          14 iiter=           1
- resid=  4.258576366842134E-016 retot=  0.109009372627577     
-ratio for residu norm= 0.3907E-14
- max_refor=  1.977584762613560E-016 max_tofor=  5.450468631378835E-002
+ resid=  4.145796208833558E-016 retot=  0.109009372627576     
+ratio for residu norm= 0.3803E-14
+ max_refor=  1.977584762613560E-016 max_tofor=  5.450468631378822E-002
 ratio for residu maxm= 0.3628E-14
  
                Convergence check for temperature
@@ -748,339 +748,339 @@ ratio for norm= 0.5015E+00
 ratio for maxm= 0.8286E+00
                     not converged for checki=           6
  kswkw=           0 kresl=           0 kmass=           0
-Begin forming various matrix       at 2026-09-01 21:54:18 
+Begin forming various matrix       at 2026-09-02 16:15:21 
  force_external***,edge_load_group=           0
  body force
  interia force***
-Begin solution global equation     at 2026-09-01 21:54:18 
+Begin solution global equation     at 2026-09-02 16:15:21 
  
          Convergence check for Residual force,ttime=,  0.700000000000000     
  total force on spring nodes of dam_foundation interface
  iblks=           1 iincs=           1 istep=          14 iiter=           2
- resid=  1.886700764870201E-016 retot=  0.109009372627577     
-ratio for residu norm= 0.1731E-14
- max_refor=  9.367506770274758E-017 max_tofor=  5.450468631378841E-002
-ratio for residu maxm= 0.1719E-14
+ resid=  1.992205143414189E-016 retot=  0.109009372627577     
+ratio for residu norm= 0.1828E-14
+ max_refor=  1.110223024625157E-016 max_tofor=  5.450468631378839E-002
+ratio for residu maxm= 0.2037E-14
  
                Convergence check for temperature
- max_tatf=   1.00000000000000      max_itif=  8.911507112999264E-016
+ max_tatf=   1.00000000000000      max_itif=  8.286332959124944E-016
  iiter=           2 tatfn=   3.82360892212166      itifn=
-  2.686128555438313E-015
-ratio for norm= 0.7025E-15
- max_tatf=   1.00000000000000      max_itif=  8.911507112999264E-016
-ratio for maxm= 0.8912E-15
+  2.687879070167270E-015
+ratio for norm= 0.7030E-15
+ max_tatf=   1.00000000000000      max_itif=  8.286332959124944E-016
+ratio for maxm= 0.8286E-15
  contact_state********************
  irecover=           0
  fachv=  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
  kswkw=           1 kresl=           0 kmass=           1
-Begin forming various matrix       at 2026-09-01 21:54:18 
-Begin assemble golbal matrix       at 2026-09-01 21:54:18 
+Begin forming various matrix       at 2026-09-02 16:15:21 
+Begin assemble golbal matrix       at 2026-09-02 16:15:21 
  force_external***,edge_load_group=           0
  body force
  interia force***
  in predict
-Begin factorize global matrix      at 2026-09-01 21:54:18 
-Begin solution global equation     at 2026-09-01 21:54:18 
+Begin factorize global matrix      at 2026-09-02 16:15:21 
+Begin solution global equation     at 2026-09-02 16:15:21 
  
          Convergence check for Residual force,ttime=,  0.750000000000000     
  total force on spring nodes of dam_foundation interface
  iblks=           1 iincs=           1 istep=          15 iiter=           1
- resid=  3.780264180340189E-016 retot=  0.112425178429189     
-ratio for residu norm= 0.3362E-14
- max_refor=  1.543903893619358E-016 max_tofor=  5.621258921459434E-002
-ratio for residu maxm= 0.2747E-14
+ resid=  5.150092228204616E-016 retot=  0.112425178429189     
+ratio for residu norm= 0.4581E-14
+ max_refor=  2.220446049250313E-016 max_tofor=  5.621258921459439E-002
+ratio for residu maxm= 0.3950E-14
  
                Convergence check for temperature
- max_tatf=   1.00000000000000      max_itif=  0.814352852674336     
+ max_tatf=   1.00000000000000      max_itif=  0.814352852674337     
  iiter=           1 tatfn=   3.88199875641494      itifn=
    1.88087585222190     
 ratio for norm= 0.4845E+00
- max_tatf=   1.00000000000000      max_itif=  0.814352852674336     
+ max_tatf=   1.00000000000000      max_itif=  0.814352852674337     
 ratio for maxm= 0.8144E+00
                     not converged for checki=           6
  kswkw=           0 kresl=           0 kmass=           0
-Begin forming various matrix       at 2026-09-01 21:54:18 
+Begin forming various matrix       at 2026-09-02 16:15:21 
  force_external***,edge_load_group=           0
  body force
  interia force***
-Begin solution global equation     at 2026-09-01 21:54:18 
+Begin solution global equation     at 2026-09-02 16:15:21 
  
          Convergence check for Residual force,ttime=,  0.750000000000000     
  total force on spring nodes of dam_foundation interface
  iblks=           1 iincs=           1 istep=          15 iiter=           2
- resid=  1.678621118037934E-016 retot=  0.112425178429189     
-ratio for residu norm= 0.1493E-14
- max_refor=  6.938893903907228E-017 max_tofor=  5.621258921459431E-002
+ resid=  1.661641352802733E-016 retot=  0.112425178429189     
+ratio for residu norm= 0.1478E-14
+ max_refor=  6.938893903907228E-017 max_tofor=  5.621258921459435E-002
 ratio for residu maxm= 0.1234E-14
  
                Convergence check for temperature
- max_tatf=   1.00000000000000      max_itif=  7.916407529781462E-016
+ max_tatf=   1.00000000000000      max_itif=  6.433691992248366E-016
  iiter=           2 tatfn=   3.88199875641494      itifn=
-  2.758255276330982E-015
-ratio for norm= 0.7105E-15
- max_tatf=   1.00000000000000      max_itif=  7.916407529781462E-016
-ratio for maxm= 0.7916E-15
+  1.347030186836153E-015
+ratio for norm= 0.3470E-15
+ max_tatf=   1.00000000000000      max_itif=  6.433691992248366E-016
+ratio for maxm= 0.6434E-15
  contact_state********************
  irecover=           0
  fachv=  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
  kswkw=           1 kresl=           0 kmass=           1
-Begin forming various matrix       at 2026-09-01 21:54:18 
-Begin assemble golbal matrix       at 2026-09-01 21:54:18 
+Begin forming various matrix       at 2026-09-02 16:15:21 
+Begin assemble golbal matrix       at 2026-09-02 16:15:21 
  force_external***,edge_load_group=           0
  body force
  interia force***
  in predict
-Begin factorize global matrix      at 2026-09-01 21:54:18 
-Begin solution global equation     at 2026-09-01 21:54:18 
+Begin factorize global matrix      at 2026-09-02 16:15:21 
+Begin solution global equation     at 2026-09-02 16:15:21 
  
          Convergence check for Residual force,ttime=,  0.800000000000000     
  total force on spring nodes of dam_foundation interface
  iblks=           1 iincs=           1 istep=          16 iiter=           1
- resid=  3.516540589183601E-016 retot=  0.108450643239773     
-ratio for residu norm= 0.3243E-14
- max_refor=  1.387778780781446E-016 max_tofor=  5.422532161988632E-002
-ratio for residu maxm= 0.2559E-14
+ resid=  3.594186740623711E-016 retot=  0.108450643239773     
+ratio for residu norm= 0.3314E-14
+ max_refor=  1.700029006457271E-016 max_tofor=  5.422532161988636E-002
+ratio for residu maxm= 0.3135E-14
  
                Convergence check for temperature
- max_tatf=   1.00000000000000      max_itif=  0.800995070486345     
+ max_tatf=   1.00000000000000      max_itif=  0.800995070486344     
  iiter=           1 tatfn=   3.95929588878262      itifn=
    1.84626414766331     
 ratio for norm= 0.4663E+00
- max_tatf=   1.00000000000000      max_itif=  0.800995070486345     
+ max_tatf=   1.00000000000000      max_itif=  0.800995070486344     
 ratio for maxm= 0.8010E+00
                     not converged for checki=           6
  kswkw=           0 kresl=           0 kmass=           0
-Begin forming various matrix       at 2026-09-01 21:54:18 
+Begin forming various matrix       at 2026-09-02 16:15:21 
  force_external***,edge_load_group=           0
  body force
  interia force***
-Begin solution global equation     at 2026-09-01 21:54:18 
+Begin solution global equation     at 2026-09-02 16:15:21 
  
          Convergence check for Residual force,ttime=,  0.800000000000000     
  total force on spring nodes of dam_foundation interface
  iblks=           1 iincs=           1 istep=          16 iiter=           2
- resid=  1.809516581304830E-016 retot=  0.108450643239773     
-ratio for residu norm= 0.1669E-14
- max_refor=  7.979727989493313E-017 max_tofor=  5.422532161988634E-002
-ratio for residu maxm= 0.1472E-14
+ resid=  1.622385962613486E-016 retot=  0.108450643239773     
+ratio for residu norm= 0.1496E-14
+ max_refor=  6.591949208711867E-017 max_tofor=  5.422532161988632E-002
+ratio for residu maxm= 0.1216E-14
  
                Convergence check for temperature
- max_tatf=   1.00000000000000      max_itif=  6.405846163844929E-016
+ max_tatf=   1.00000000000000      max_itif=  6.098769334291748E-016
  iiter=           2 tatfn=   3.95929588878262      itifn=
-  2.068586366518693E-015
-ratio for norm= 0.5225E-15
- max_tatf=   1.00000000000000      max_itif=  6.405846163844929E-016
-ratio for maxm= 0.6406E-15
+  1.531604980650046E-015
+ratio for norm= 0.3868E-15
+ max_tatf=   1.00000000000000      max_itif=  6.098769334291748E-016
+ratio for maxm= 0.6099E-15
  contact_state********************
  irecover=           0
  fachv=  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
  kswkw=           1 kresl=           0 kmass=           1
-Begin forming various matrix       at 2026-09-01 21:54:18 
-Begin assemble golbal matrix       at 2026-09-01 21:54:18 
+Begin forming various matrix       at 2026-09-02 16:15:21 
+Begin assemble golbal matrix       at 2026-09-02 16:15:21 
  force_external***,edge_load_group=           0
  body force
  interia force***
  in predict
-Begin factorize global matrix      at 2026-09-01 21:54:18 
-Begin solution global equation     at 2026-09-01 21:54:18 
+Begin factorize global matrix      at 2026-09-02 16:15:21 
+Begin solution global equation     at 2026-09-02 16:15:21 
  
          Convergence check for Residual force,ttime=,  0.850000000000000     
  total force on spring nodes of dam_foundation interface
  iblks=           1 iincs=           1 istep=          17 iiter=           1
- resid=  3.883490549464134E-016 retot=  0.111549648018475     
-ratio for residu norm= 0.3481E-14
- max_refor=  1.838806884535416E-016 max_tofor=  5.577482400923746E-002
-ratio for residu maxm= 0.3297E-14
+ resid=  3.158027992535907E-016 retot=  0.111549648018475     
+ratio for residu norm= 0.2831E-14
+ max_refor=  1.665334536937735E-016 max_tofor=  5.577482400923743E-002
+ratio for residu maxm= 0.2986E-14
  
                Convergence check for temperature
- max_tatf=   1.00000000000000      max_itif=  0.788251723758389     
+ max_tatf=   1.00000000000000      max_itif=  0.788251723758390     
  iiter=           1 tatfn=   4.02027034641009      itifn=
    1.81347192530797     
 ratio for norm= 0.4511E+00
- max_tatf=   1.00000000000000      max_itif=  0.788251723758389     
+ max_tatf=   1.00000000000000      max_itif=  0.788251723758390     
 ratio for maxm= 0.7883E+00
                     not converged for checki=           6
  kswkw=           0 kresl=           0 kmass=           0
-Begin forming various matrix       at 2026-09-01 21:54:18 
+Begin forming various matrix       at 2026-09-02 16:15:21 
  force_external***,edge_load_group=           0
  body force
  interia force***
-Begin solution global equation     at 2026-09-01 21:54:18 
+Begin solution global equation     at 2026-09-02 16:15:21 
  
          Convergence check for Residual force,ttime=,  0.850000000000000     
  total force on spring nodes of dam_foundation interface
  iblks=           1 iincs=           1 istep=          17 iiter=           2
- resid=  1.575455976755072E-016 retot=  0.111549648018475     
-ratio for residu norm= 0.1412E-14
- max_refor=  7.285838599102590E-017 max_tofor=  5.577482400923747E-002
-ratio for residu maxm= 0.1306E-14
+ resid=  1.732620389696349E-016 retot=  0.111549648018475     
+ratio for residu norm= 0.1553E-14
+ max_refor=  6.938893903907228E-017 max_tofor=  5.577482400923743E-002
+ratio for residu maxm= 0.1244E-14
  
                Convergence check for temperature
- max_tatf=   1.00000000000000      max_itif=  7.023712195022694E-016
+ max_tatf=   1.00000000000000      max_itif=  5.828216497340732E-016
  iiter=           2 tatfn=   4.02027034641009      itifn=
-  1.503665425633509E-015
-ratio for norm= 0.3740E-15
- max_tatf=   1.00000000000000      max_itif=  7.023712195022694E-016
-ratio for maxm= 0.7024E-15
+  1.964072224832972E-015
+ratio for norm= 0.4885E-15
+ max_tatf=   1.00000000000000      max_itif=  5.828216497340732E-016
+ratio for maxm= 0.5828E-15
  contact_state********************
  irecover=           0
  fachv=  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
  kswkw=           1 kresl=           0 kmass=           1
-Begin forming various matrix       at 2026-09-01 21:54:18 
-Begin assemble golbal matrix       at 2026-09-01 21:54:18 
+Begin forming various matrix       at 2026-09-02 16:15:21 
+Begin assemble golbal matrix       at 2026-09-02 16:15:21 
  force_external***,edge_load_group=           0
  body force
  interia force***
  in predict
-Begin factorize global matrix      at 2026-09-01 21:54:19 
-Begin solution global equation     at 2026-09-01 21:54:19 
+Begin factorize global matrix      at 2026-09-02 16:15:21 
+Begin solution global equation     at 2026-09-02 16:15:21 
  
          Convergence check for Residual force,ttime=,  0.900000000000000     
  total force on spring nodes of dam_foundation interface
  iblks=           1 iincs=           1 istep=          18 iiter=           1
- resid=  3.050920194274407E-016 retot=  0.107890078254136     
-ratio for residu norm= 0.2828E-14
- max_refor=  1.457167719820518E-016 max_tofor=  5.394503912706783E-002
-ratio for residu maxm= 0.2701E-14
+ resid=  4.064034077058643E-016 retot=  0.107890078254135     
+ratio for residu norm= 0.3767E-14
+ max_refor=  1.734723475976807E-016 max_tofor=  5.394503912706772E-002
+ratio for residu maxm= 0.3216E-14
  
                Convergence check for temperature
  max_tatf=   1.00000000000000      max_itif=  0.776117096120768     
- iiter=           1 tatfn=   4.09668699412669      itifn=
+ iiter=           1 tatfn=   4.09668699412670      itifn=
    1.78211915728893     
 ratio for norm= 0.4350E+00
  max_tatf=   1.00000000000000      max_itif=  0.776117096120768     
 ratio for maxm= 0.7761E+00
                     not converged for checki=           6
  kswkw=           0 kresl=           0 kmass=           0
-Begin forming various matrix       at 2026-09-01 21:54:19 
+Begin forming various matrix       at 2026-09-02 16:15:21 
  force_external***,edge_load_group=           0
  body force
  interia force***
-Begin solution global equation     at 2026-09-01 21:54:19 
+Begin solution global equation     at 2026-09-02 16:15:21 
  
          Convergence check for Residual force,ttime=,  0.900000000000000     
  total force on spring nodes of dam_foundation interface
  iblks=           1 iincs=           1 istep=          18 iiter=           2
- resid=  1.884689204027731E-016 retot=  0.107890078254135     
-ratio for residu norm= 0.1747E-14
- max_refor=  1.075528555105620E-016 max_tofor=  5.394503912706772E-002
-ratio for residu maxm= 0.1994E-14
+ resid=  2.189148583362957E-016 retot=  0.107890078254135     
+ratio for residu norm= 0.2029E-14
+ max_refor=  9.020562075079397E-017 max_tofor=  5.394503912706773E-002
+ratio for residu maxm= 0.1672E-14
  
                Convergence check for temperature
- max_tatf=   1.00000000000000      max_itif=  6.469248739495906E-016
+ max_tatf=   1.00000000000000      max_itif=  6.558159188568418E-016
  iiter=           2 tatfn=   4.09668699412669      itifn=
-  1.875461444518403E-015
-ratio for norm= 0.4578E-15
- max_tatf=   1.00000000000000      max_itif=  6.469248739495906E-016
-ratio for maxm= 0.6469E-15
+  1.793946001075397E-015
+ratio for norm= 0.4379E-15
+ max_tatf=   1.00000000000000      max_itif=  6.558159188568418E-016
+ratio for maxm= 0.6558E-15
  contact_state********************
  irecover=           0
  fachv=  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
  kswkw=           1 kresl=           0 kmass=           1
-Begin forming various matrix       at 2026-09-01 21:54:19 
-Begin assemble golbal matrix       at 2026-09-01 21:54:19 
+Begin forming various matrix       at 2026-09-02 16:15:21 
+Begin assemble golbal matrix       at 2026-09-02 16:15:21 
  force_external***,edge_load_group=           0
  body force
  interia force***
  in predict
-Begin factorize global matrix      at 2026-09-01 21:54:19 
-Begin solution global equation     at 2026-09-01 21:54:19 
+Begin factorize global matrix      at 2026-09-02 16:15:21 
+Begin solution global equation     at 2026-09-02 16:15:21 
  
          Convergence check for Residual force,ttime=,  0.950000000000000     
  total force on spring nodes of dam_foundation interface
  iblks=           1 iincs=           1 istep=          19 iiter=           1
- resid=  2.682983253584418E-016 retot=  0.110765005817250     
-ratio for residu norm= 0.2422E-14
- max_refor=  1.266348137463069E-016 max_tofor=  5.538250290862520E-002
-ratio for residu maxm= 0.2287E-14
+ resid=  2.747812765577529E-016 retot=  0.110765005817250     
+ratio for residu norm= 0.2481E-14
+ max_refor=  1.457167719820518E-016 max_tofor=  5.538250290862526E-002
+ratio for residu maxm= 0.2631E-14
  
                Convergence check for temperature
- max_tatf=   1.00000000000000      max_itif=  0.764410598392133     
+ max_tatf=   1.00000000000000      max_itif=  0.764410598392135     
  iiter=           1 tatfn=   4.15929636711875      itifn=
    1.75213284636532     
 ratio for norm= 0.4213E+00
- max_tatf=   1.00000000000000      max_itif=  0.764410598392133     
+ max_tatf=   1.00000000000000      max_itif=  0.764410598392135     
 ratio for maxm= 0.7644E+00
                     not converged for checki=           6
  kswkw=           0 kresl=           0 kmass=           0
-Begin forming various matrix       at 2026-09-01 21:54:19 
+Begin forming various matrix       at 2026-09-02 16:15:21 
  force_external***,edge_load_group=           0
  body force
  interia force***
-Begin solution global equation     at 2026-09-01 21:54:19 
+Begin solution global equation     at 2026-09-02 16:15:21 
  
          Convergence check for Residual force,ttime=,  0.950000000000000     
  total force on spring nodes of dam_foundation interface
  iblks=           1 iincs=           1 istep=          19 iiter=           2
- resid=  1.901173028102869E-016 retot=  0.110765005817250     
-ratio for residu norm= 0.1716E-14
- max_refor=  7.285838599102590E-017 max_tofor=  5.538250290862523E-002
-ratio for residu maxm= 0.1316E-14
+ resid=  1.808730387465346E-016 retot=  0.110765005817250     
+ratio for residu norm= 0.1633E-14
+ max_refor=  6.591949208711867E-017 max_tofor=  5.538250290862524E-002
+ratio for residu maxm= 0.1190E-14
  
                Convergence check for temperature
- max_tatf=   1.00000000000000      max_itif=  3.828291466007002E-016
+ max_tatf=   1.00000000000000      max_itif=  6.790594763368685E-016
  iiter=           2 tatfn=   4.15929636711875      itifn=
-  1.144142730065439E-015
-ratio for norm= 0.2751E-15
- max_tatf=   1.00000000000000      max_itif=  3.828291466007002E-016
-ratio for maxm= 0.3828E-15
+  1.276457025008044E-015
+ratio for norm= 0.3069E-15
+ max_tatf=   1.00000000000000      max_itif=  6.790594763368685E-016
+ratio for maxm= 0.6791E-15
  contact_state********************
  irecover=           0
  fachv=  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
  kswkw=           1 kresl=           0 kmass=           1
-Begin forming various matrix       at 2026-09-01 21:54:19 
-Begin assemble golbal matrix       at 2026-09-01 21:54:19 
+Begin forming various matrix       at 2026-09-02 16:15:21 
+Begin assemble golbal matrix       at 2026-09-02 16:15:21 
  force_external***,edge_load_group=           0
  body force
  interia force***
  in predict
-Begin factorize global matrix      at 2026-09-01 21:54:19 
-Begin solution global equation     at 2026-09-01 21:54:19 
+Begin factorize global matrix      at 2026-09-02 16:15:21 
+Begin solution global equation     at 2026-09-02 16:15:21 
  
          Convergence check for Residual force,ttime=,   1.00000000000000     
  total force on spring nodes of dam_foundation interface
  iblks=           1 iincs=           1 istep=          20 iiter=           1
- resid=  3.151336299920248E-016 retot=  0.107341362035616     
-ratio for residu norm= 0.2936E-14
- max_refor=  1.595945597898663E-016 max_tofor=  5.367068101780802E-002
-ratio for residu maxm= 0.2974E-14
+ resid=  2.611330010694384E-016 retot=  0.107341362035616     
+ratio for residu norm= 0.2433E-14
+ max_refor=  1.353084311261910E-016 max_tofor=  5.367068101780805E-002
+ratio for residu maxm= 0.2521E-14
  
                Convergence check for temperature
- max_tatf=   1.00000000000000      max_itif=  0.753154757873388     
+ max_tatf=   1.00000000000000      max_itif=  0.753154757873389     
  iiter=           1 tatfn=   4.23500939966166      itifn=
-   1.72326218072034     
+   1.72326218072035     
 ratio for norm= 0.4069E+00
- max_tatf=   1.00000000000000      max_itif=  0.753154757873388     
+ max_tatf=   1.00000000000000      max_itif=  0.753154757873389     
 ratio for maxm= 0.7532E+00
                     not converged for checki=           6
  kswkw=           0 kresl=           0 kmass=           0
-Begin forming various matrix       at 2026-09-01 21:54:19 
+Begin forming various matrix       at 2026-09-02 16:15:21 
  force_external***,edge_load_group=           0
  body force
  interia force***
-Begin solution global equation     at 2026-09-01 21:54:19 
+Begin solution global equation     at 2026-09-02 16:15:21 
  
          Convergence check for Residual force,ttime=,   1.00000000000000     
  total force on spring nodes of dam_foundation interface
  iblks=           1 iincs=           1 istep=          20 iiter=           2
- resid=  1.289843289658416E-016 retot=  0.107341362035616     
-ratio for residu norm= 0.1202E-14
- max_refor=  4.857225732735060E-017 max_tofor=  5.367068101780793E-002
-ratio for residu maxm= 0.9050E-15
+ resid=  1.173690808580665E-016 retot=  0.107341362035616     
+ratio for residu norm= 0.1093E-14
+ max_refor=  3.816391647148976E-017 max_tofor=  5.367068101780793E-002
+ratio for residu maxm= 0.7111E-15
  
                Convergence check for temperature
- max_tatf=   1.00000000000000      max_itif=  5.814531124367681E-016
+ max_tatf=   1.00000000000000      max_itif=  5.669215883262971E-016
  iiter=           2 tatfn=   4.23500939966166      itifn=
-  1.081401640929045E-015
-ratio for norm= 0.2553E-15
- max_tatf=   1.00000000000000      max_itif=  5.814531124367681E-016
-ratio for maxm= 0.5815E-15
+  1.530068361785465E-015
+ratio for norm= 0.3613E-15
+ max_tatf=   1.00000000000000      max_itif=  5.669215883262971E-016
+ratio for maxm= 0.5669E-15
  contact_state********************
  irecover=           0
  fachv=  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
  contact_state********************
  kswkw=           1 kresl=           0 kmass=           1
-Begin forming various matrix       at 2026-09-01 21:54:19 
+Begin forming various matrix       at 2026-09-02 16:15:21 
  igroup=           1 ielem=           1 alfa=   1.00000000000000     
    1.00000000000000        1.00000000000000      hmatx=
      0.54938E-01    -0.10031E-01    -0.23765E-01    -0.10031E-01     0.20062E-01    -0.87191E-02    -0.13735E-01    -0.87191E-02
@@ -1100,7 +1100,7 @@ Begin forming various matrix       at 2026-09-01 21:54:19
      0.28125E-03
      0.28125E-03
      0.28125E-03
-Begin assemble golbal matrix       at 2026-09-01 21:54:19 
+Begin assemble golbal matrix       at 2026-09-02 16:15:21 
 igroup=    1 ifield=1 ikh=1 ielem=     1 order_time=0  coef= 0.05000
      0.54938E-01    -0.10031E-01    -0.23765E-01    -0.10031E-01     0.20062E-01    -0.87191E-02    -0.13735E-01    -0.87191E-02
     -0.10031E-01     0.54938E-01    -0.10031E-01    -0.23765E-01    -0.87191E-02     0.20062E-01    -0.87191E-02    -0.13735E-01
@@ -1123,220 +1123,220 @@ igroup=    1 ifield=1 ikh=2 ielem=     1 order_time=1  coef= 1.00000
  body force
  interia force***
  in predict
-Begin factorize global matrix      at 2026-09-01 21:54:19 
-Begin solution global equation     at 2026-09-01 21:54:19 
+Begin factorize global matrix      at 2026-09-02 16:15:21 
+Begin solution global equation     at 2026-09-02 16:15:21 
  
          Convergence check for Residual force,ttime=,   1.10000000000000     
  total force on spring nodes of dam_foundation interface
  iblks=           1 iincs=           2 istep=           1 iiter=           1
- resid=  4.747207062536229E-016 retot=  0.109765769948771     
-ratio for residu norm= 0.4325E-14
- max_refor=  2.151057110211241E-016 max_tofor=  5.488288497438572E-002
-ratio for residu maxm= 0.3919E-14
+ resid=  4.577803377226236E-016 retot=  0.109765769948771     
+ratio for residu norm= 0.4171E-14
+ max_refor=  1.812786032395763E-016 max_tofor=  5.488288497438565E-002
+ratio for residu maxm= 0.3303E-14
  
                Convergence check for temperature
  max_tatf=   1.00000000000000      max_itif=   1.48975631960432     
  iiter=           1 tatfn=   4.36820702118425      itifn=
-   3.40454817867942     
+   3.40454817867943     
 ratio for norm= 0.7794E+00
  max_tatf=   1.00000000000000      max_itif=   1.48975631960432     
 ratio for maxm= 0.1490E+01
                     not converged for checki=           6
  kswkw=           0 kresl=           0 kmass=           0
-Begin forming various matrix       at 2026-09-01 21:54:19 
+Begin forming various matrix       at 2026-09-02 16:15:21 
  force_external***,edge_load_group=           0
  body force
  interia force***
-Begin solution global equation     at 2026-09-01 21:54:19 
+Begin solution global equation     at 2026-09-02 16:15:21 
  
          Convergence check for Residual force,ttime=,   1.10000000000000     
  total force on spring nodes of dam_foundation interface
  iblks=           1 iincs=           2 istep=           1 iiter=           2
- resid=  2.095456349812427E-016 retot=  0.109765769948771     
-ratio for residu norm= 0.1909E-14
- max_refor=  1.075528555105620E-016 max_tofor=  5.488288497438561E-002
-ratio for residu maxm= 0.1960E-14
+ resid=  1.983577468094009E-016 retot=  0.109765769948771     
+ratio for residu norm= 0.1807E-14
+ max_refor=  7.979727989493313E-017 max_tofor=  5.488288497438559E-002
+ratio for residu maxm= 0.1454E-14
  
                Convergence check for temperature
- max_tatf=   1.00000000000000      max_itif=  1.123989953445434E-015
+ max_tatf=   1.00000000000000      max_itif=  1.377920836515925E-015
  iiter=           2 tatfn=   4.36820702118425      itifn=
-  3.145237040568084E-015
-ratio for norm= 0.7200E-15
- max_tatf=   1.00000000000000      max_itif=  1.123989953445434E-015
-ratio for maxm= 0.1124E-14
+  4.115466645345397E-015
+ratio for norm= 0.9421E-15
+ max_tatf=   1.00000000000000      max_itif=  1.377920836515925E-015
+ratio for maxm= 0.1378E-14
  contact_state********************
  irecover=           0
  fachv=  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
  kswkw=           1 kresl=           0 kmass=           1
-Begin forming various matrix       at 2026-09-01 21:54:19 
-Begin assemble golbal matrix       at 2026-09-01 21:54:19 
+Begin forming various matrix       at 2026-09-02 16:15:21 
+Begin assemble golbal matrix       at 2026-09-02 16:15:21 
  force_external***,edge_load_group=           0
  body force
  interia force***
  in predict
-Begin factorize global matrix      at 2026-09-01 21:54:19 
-Begin solution global equation     at 2026-09-01 21:54:19 
+Begin factorize global matrix      at 2026-09-02 16:15:21 
+Begin solution global equation     at 2026-09-02 16:15:21 
  
          Convergence check for Residual force,ttime=,   1.20000000000000     
  total force on spring nodes of dam_foundation interface
  iblks=           1 iincs=           2 istep=           2 iiter=           1
- resid=  6.045946420812778E-016 retot=  0.106193352945682     
-ratio for residu norm= 0.5693E-14
- max_refor=  2.671474153004283E-016 max_tofor=  5.309667647284115E-002
-ratio for residu maxm= 0.5031E-14
+ resid=  6.659401631712904E-016 retot=  0.106193352945683     
+ratio for residu norm= 0.6271E-14
+ max_refor=  3.122502256758253E-016 max_tofor=  5.309667647284140E-002
+ratio for residu maxm= 0.5881E-14
  
                Convergence check for temperature
  max_tatf=   1.00000000000000      max_itif=   1.47907291067048     
  iiter=           1 tatfn=   4.51276668373276      itifn=
-   3.37718098322264     
+   3.37718098322265     
 ratio for norm= 0.7484E+00
  max_tatf=   1.00000000000000      max_itif=   1.47907291067048     
 ratio for maxm= 0.1479E+01
                     not converged for checki=           6
  kswkw=           0 kresl=           0 kmass=           0
-Begin forming various matrix       at 2026-09-01 21:54:19 
+Begin forming various matrix       at 2026-09-02 16:15:21 
  force_external***,edge_load_group=           0
  body force
  interia force***
-Begin solution global equation     at 2026-09-01 21:54:19 
+Begin solution global equation     at 2026-09-02 16:15:21 
  
          Convergence check for Residual force,ttime=,   1.20000000000000     
  total force on spring nodes of dam_foundation interface
  iblks=           1 iincs=           2 istep=           2 iiter=           2
- resid=  2.134727186897289E-016 retot=  0.106193352945682     
-ratio for residu norm= 0.2010E-14
- max_refor=  8.326672684688674E-017 max_tofor=  5.309667647284122E-002
-ratio for residu maxm= 0.1568E-14
+ resid=  2.287542309422388E-016 retot=  0.106193352945682     
+ratio for residu norm= 0.2154E-14
+ max_refor=  1.110223024625157E-016 max_tofor=  5.309667647284125E-002
+ratio for residu maxm= 0.2091E-14
  
                Convergence check for temperature
- max_tatf=   1.00000000000000      max_itif=  1.051716603608049E-015
+ max_tatf=   1.00000000000000      max_itif=  1.702045432830973E-015
  iiter=           2 tatfn=   4.51276668373276      itifn=
-  2.418286503058215E-015
-ratio for norm= 0.5359E-15
- max_tatf=   1.00000000000000      max_itif=  1.051716603608049E-015
-ratio for maxm= 0.1052E-14
+  3.758952097891444E-015
+ratio for norm= 0.8330E-15
+ max_tatf=   1.00000000000000      max_itif=  1.702045432830973E-015
+ratio for maxm= 0.1702E-14
  contact_state********************
  irecover=           0
  fachv=  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
  kswkw=           1 kresl=           0 kmass=           1
-Begin forming various matrix       at 2026-09-01 21:54:19 
-Begin assemble golbal matrix       at 2026-09-01 21:54:19 
+Begin forming various matrix       at 2026-09-02 16:15:21 
+Begin assemble golbal matrix       at 2026-09-02 16:15:21 
  force_external***,edge_load_group=           0
  body force
  interia force***
  in predict
-Begin factorize global matrix      at 2026-09-01 21:54:19 
-Begin solution global equation     at 2026-09-01 21:54:19 
+Begin factorize global matrix      at 2026-09-02 16:15:21 
+Begin solution global equation     at 2026-09-02 16:15:21 
  
          Convergence check for Residual force,ttime=,   1.30000000000000     
  total force on spring nodes of dam_foundation interface
  iblks=           1 iincs=           2 istep=           3 iiter=           1
- resid=  6.144359120845937E-016 retot=  0.108597176409068     
-ratio for residu norm= 0.5658E-14
- max_refor=  2.671474153004283E-016 max_tofor=  5.429858820453418E-002
-ratio for residu maxm= 0.4920E-14
+ resid=  6.291194784693294E-016 retot=  0.108597176409068     
+ratio for residu norm= 0.5793E-14
+ max_refor=  3.365363543395006E-016 max_tofor=  5.429858820453407E-002
+ratio for residu maxm= 0.6198E-14
  
                Convergence check for temperature
  max_tatf=   1.00000000000000      max_itif=   1.46842251134720     
  iiter=           1 tatfn=   4.64613017503952      itifn=
-   3.35041931823645     
+   3.35041931823646     
 ratio for norm= 0.7211E+00
  max_tatf=   1.00000000000000      max_itif=   1.46842251134720     
 ratio for maxm= 0.1468E+01
                     not converged for checki=           6
  kswkw=           0 kresl=           0 kmass=           0
-Begin forming various matrix       at 2026-09-01 21:54:19 
+Begin forming various matrix       at 2026-09-02 16:15:21 
  force_external***,edge_load_group=           0
  body force
  interia force***
-Begin solution global equation     at 2026-09-01 21:54:19 
+Begin solution global equation     at 2026-09-02 16:15:21 
  
          Convergence check for Residual force,ttime=,   1.30000000000000     
  total force on spring nodes of dam_foundation interface
  iblks=           1 iincs=           2 istep=           3 iiter=           2
- resid=  1.593949158048928E-016 retot=  0.108597176409068     
-ratio for residu norm= 0.1468E-14
- max_refor=  5.551115123125783E-017 max_tofor=  5.429858820453408E-002
-ratio for residu maxm= 0.1022E-14
+ resid=  1.728115233821312E-016 retot=  0.108597176409068     
+ratio for residu norm= 0.1591E-14
+ max_refor=  6.245004513516506E-017 max_tofor=  5.429858820453413E-002
+ratio for residu maxm= 0.1150E-14
  
                Convergence check for temperature
- max_tatf=   1.00000000000000      max_itif=  1.318225310826612E-015
+ max_tatf=   1.00000000000000      max_itif=  1.470751321967093E-015
  iiter=           2 tatfn=   4.64613017503952      itifn=
-  3.076892585560249E-015
-ratio for norm= 0.6622E-15
- max_tatf=   1.00000000000000      max_itif=  1.318225310826612E-015
-ratio for maxm= 0.1318E-14
+  4.694015940076041E-015
+ratio for norm= 0.1010E-14
+ max_tatf=   1.00000000000000      max_itif=  1.470751321967093E-015
+ratio for maxm= 0.1471E-14
  contact_state********************
  irecover=           0
  fachv=  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
  kswkw=           1 kresl=           0 kmass=           1
-Begin forming various matrix       at 2026-09-01 21:54:19 
-Begin assemble golbal matrix       at 2026-09-01 21:54:19 
+Begin forming various matrix       at 2026-09-02 16:15:21 
+Begin assemble golbal matrix       at 2026-09-02 16:15:21 
  force_external***,edge_load_group=           0
  body force
  interia force***
  in predict
-Begin factorize global matrix      at 2026-09-01 21:54:19 
-Begin solution global equation     at 2026-09-01 21:54:19 
+Begin factorize global matrix      at 2026-09-02 16:15:21 
+Begin solution global equation     at 2026-09-02 16:15:21 
  
          Convergence check for Residual force,ttime=,   1.40000000000000     
  total force on spring nodes of dam_foundation interface
  iblks=           1 iincs=           2 istep=           4 iiter=           1
- resid=  5.606322436085778E-016 retot=  0.105156690105144     
-ratio for residu norm= 0.5331E-14
- max_refor=  2.610758831345095E-016 max_tofor=  5.257834505257223E-002
-ratio for residu maxm= 0.4965E-14
+ resid=  3.982045195204462E-016 retot=  0.105156690105144     
+ratio for residu norm= 0.3787E-14
+ max_refor=  1.405126015541214E-016 max_tofor=  5.257834505257218E-002
+ratio for residu maxm= 0.2672E-14
  
                Convergence check for temperature
- max_tatf=   1.00000000000000      max_itif=   1.45802466147709     
+ max_tatf=   1.00000000000000      max_itif=   1.45802466147708     
  iiter=           1 tatfn=   4.78924813042587      itifn=
    3.32398678388276     
 ratio for norm= 0.6941E+00
- max_tatf=   1.00000000000000      max_itif=   1.45802466147709     
+ max_tatf=   1.00000000000000      max_itif=   1.45802466147708     
 ratio for maxm= 0.1458E+01
                     not converged for checki=           6
  kswkw=           0 kresl=           0 kmass=           0
-Begin forming various matrix       at 2026-09-01 21:54:19 
+Begin forming various matrix       at 2026-09-02 16:15:21 
  force_external***,edge_load_group=           0
  body force
  interia force***
-Begin solution global equation     at 2026-09-01 21:54:19 
+Begin solution global equation     at 2026-09-02 16:15:21 
  
          Convergence check for Residual force,ttime=,   1.40000000000000     
  total force on spring nodes of dam_foundation interface
  iblks=           1 iincs=           2 istep=           4 iiter=           2
- resid=  1.752974805527111E-016 retot=  0.105156690105144     
-ratio for residu norm= 0.1667E-14
- max_refor=  6.938893903907228E-017 max_tofor=  5.257834505257217E-002
-ratio for residu maxm= 0.1320E-14
+ resid=  1.949797668232371E-016 retot=  0.105156690105144     
+ratio for residu norm= 0.1854E-14
+ max_refor=  6.591949208711867E-017 max_tofor=  5.257834505257215E-002
+ratio for residu maxm= 0.1254E-14
  
                Convergence check for temperature
- max_tatf=   1.00000000000000      max_itif=  1.123964274333355E-015
+ max_tatf=   1.00000000000000      max_itif=  8.809098886592052E-016
  iiter=           2 tatfn=   4.78924813042587      itifn=
-  3.365233905165294E-015
-ratio for norm= 0.7027E-15
- max_tatf=   1.00000000000000      max_itif=  1.123964274333355E-015
-ratio for maxm= 0.1124E-14
+  2.677620818669378E-015
+ratio for norm= 0.5591E-15
+ max_tatf=   1.00000000000000      max_itif=  8.809098886592052E-016
+ratio for maxm= 0.8809E-15
  contact_state********************
  irecover=           0
  fachv=  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
  kswkw=           1 kresl=           0 kmass=           1
-Begin forming various matrix       at 2026-09-01 21:54:19 
-Begin assemble golbal matrix       at 2026-09-01 21:54:19 
+Begin forming various matrix       at 2026-09-02 16:15:21 
+Begin assemble golbal matrix       at 2026-09-02 16:15:21 
  force_external***,edge_load_group=           0
  body force
  interia force***
  in predict
-Begin factorize global matrix      at 2026-09-01 21:54:19 
-Begin solution global equation     at 2026-09-01 21:54:19 
+Begin factorize global matrix      at 2026-09-02 16:15:21 
+Begin solution global equation     at 2026-09-02 16:15:21 
  
          Convergence check for Residual force,ttime=,   1.50000000000000     
  total force on spring nodes of dam_foundation interface
  iblks=           1 iincs=           2 istep=           5 iiter=           1
- resid=  6.176247130624182E-016 retot=  0.107533730743178     
-ratio for residu norm= 0.5744E-14
- max_refor=  2.706168622523819E-016 max_tofor=  5.376686537158920E-002
-ratio for residu maxm= 0.5033E-14
+ resid=  6.682354474838903E-016 retot=  0.107533730743178     
+ratio for residu norm= 0.6214E-14
+ max_refor=  3.061786935099065E-016 max_tofor=  5.376686537158925E-002
+ratio for residu maxm= 0.5695E-14
  
                Convergence check for temperature
  max_tatf=   1.00000000000000      max_itif=   1.44767210426064     
@@ -1347,98 +1347,98 @@ ratio for norm= 0.6701E+00
 ratio for maxm= 0.1448E+01
                     not converged for checki=           6
  kswkw=           0 kresl=           0 kmass=           0
-Begin forming various matrix       at 2026-09-01 21:54:19 
+Begin forming various matrix       at 2026-09-02 16:15:21 
  force_external***,edge_load_group=           0
  body force
  interia force***
-Begin solution global equation     at 2026-09-01 21:54:19 
+Begin solution global equation     at 2026-09-02 16:15:21 
  
          Convergence check for Residual force,ttime=,   1.50000000000000     
  total force on spring nodes of dam_foundation interface
  iblks=           1 iincs=           2 istep=           5 iiter=           2
- resid=  1.981224591088935E-016 retot=  0.107533730743178     
-ratio for residu norm= 0.1842E-14
- max_refor=  7.719519468096792E-017 max_tofor=  5.376686537158921E-002
-ratio for residu maxm= 0.1436E-14
+ resid=  2.265028117383397E-016 retot=  0.107533730743178     
+ratio for residu norm= 0.2106E-14
+ max_refor=  7.632783294297951E-017 max_tofor=  5.376686537158921E-002
+ratio for residu maxm= 0.1420E-14
  
                Convergence check for temperature
- max_tatf=   1.00000000000000      max_itif=  1.153846247499180E-015
+ max_tatf=   1.00000000000000      max_itif=  2.235159144407024E-015
  iiter=           2 tatfn=   4.92190165452969      itifn=
-  3.321491759780445E-015
-ratio for norm= 0.6748E-15
- max_tatf=   1.00000000000000      max_itif=  1.153846247499180E-015
-ratio for maxm= 0.1154E-14
+  6.280071456562748E-015
+ratio for norm= 0.1276E-14
+ max_tatf=   1.00000000000000      max_itif=  2.235159144407024E-015
+ratio for maxm= 0.2235E-14
  contact_state********************
  irecover=           0
  fachv=  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
  kswkw=           1 kresl=           0 kmass=           1
-Begin forming various matrix       at 2026-09-01 21:54:19 
-Begin assemble golbal matrix       at 2026-09-01 21:54:19 
+Begin forming various matrix       at 2026-09-02 16:15:21 
+Begin assemble golbal matrix       at 2026-09-02 16:15:21 
  force_external***,edge_load_group=           0
  body force
  interia force***
  in predict
-Begin factorize global matrix      at 2026-09-01 21:54:19 
-Begin solution global equation     at 2026-09-01 21:54:19 
+Begin factorize global matrix      at 2026-09-02 16:15:21 
+Begin solution global equation     at 2026-09-02 16:15:21 
  
          Convergence check for Residual force,ttime=,   1.60000000000000     
  total force on spring nodes of dam_foundation interface
  iblks=           1 iincs=           2 istep=           6 iiter=           1
- resid=  7.206378319953692E-016 retot=  0.104207459854954     
-ratio for residu norm= 0.6915E-14
- max_refor=  4.440892098500626E-016 max_tofor=  5.210372992747699E-002
-ratio for residu maxm= 0.8523E-14
+ resid=  6.168840949557521E-016 retot=  0.104207459854954     
+ratio for residu norm= 0.5920E-14
+ max_refor=  2.185751579730777E-016 max_tofor=  5.210372992747694E-002
+ratio for residu maxm= 0.4195E-14
  
                Convergence check for temperature
- max_tatf=   1.00000000000000      max_itif=   1.43753725850383     
+ max_tatf=   1.00000000000000      max_itif=   1.43753725850382     
  iiter=           1 tatfn=   5.06310245810064      itifn=
    3.27252012969778     
 ratio for norm= 0.6463E+00
- max_tatf=   1.00000000000000      max_itif=   1.43753725850383     
+ max_tatf=   1.00000000000000      max_itif=   1.43753725850382     
 ratio for maxm= 0.1438E+01
                     not converged for checki=           6
  kswkw=           0 kresl=           0 kmass=           0
-Begin forming various matrix       at 2026-09-01 21:54:19 
+Begin forming various matrix       at 2026-09-02 16:15:21 
  force_external***,edge_load_group=           0
  body force
  interia force***
-Begin solution global equation     at 2026-09-01 21:54:19 
+Begin solution global equation     at 2026-09-02 16:15:21 
  
          Convergence check for Residual force,ttime=,   1.60000000000000     
  total force on spring nodes of dam_foundation interface
  iblks=           1 iincs=           2 istep=           6 iiter=           2
- resid=  1.831056060764002E-016 retot=  0.104207459854954     
-ratio for residu norm= 0.1757E-14
- max_refor=  6.245004513516506E-017 max_tofor=  5.210372992747690E-002
-ratio for residu maxm= 0.1199E-14
+ resid=  2.168633904129475E-016 retot=  0.104207459854954     
+ratio for residu norm= 0.2081E-14
+ max_refor=  8.673617379884035E-017 max_tofor=  5.210372992747692E-002
+ratio for residu maxm= 0.1665E-14
  
                Convergence check for temperature
- max_tatf=   1.00000000000000      max_itif=  2.079122900935626E-015
+ max_tatf=   1.00000000000000      max_itif=  2.003298573948959E-015
  iiter=           2 tatfn=   5.06310245810064      itifn=
-  5.002169276969047E-015
-ratio for norm= 0.9880E-15
- max_tatf=   1.00000000000000      max_itif=  2.079122900935626E-015
-ratio for maxm= 0.2079E-14
+  6.257754860702647E-015
+ratio for norm= 0.1236E-14
+ max_tatf=   1.00000000000000      max_itif=  2.003298573948959E-015
+ratio for maxm= 0.2003E-14
  contact_state********************
  irecover=           0
  fachv=  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
  kswkw=           1 kresl=           0 kmass=           1
-Begin forming various matrix       at 2026-09-01 21:54:19 
-Begin assemble golbal matrix       at 2026-09-01 21:54:19 
+Begin forming various matrix       at 2026-09-02 16:15:21 
+Begin assemble golbal matrix       at 2026-09-02 16:15:21 
  force_external***,edge_load_group=           0
  body force
  interia force***
  in predict
-Begin factorize global matrix      at 2026-09-01 21:54:19 
-Begin solution global equation     at 2026-09-01 21:54:19 
+Begin factorize global matrix      at 2026-09-02 16:15:21 
+Begin solution global equation     at 2026-09-02 16:15:21 
  
          Convergence check for Residual force,ttime=,   1.70000000000000     
  total force on spring nodes of dam_foundation interface
  iblks=           1 iincs=           2 istep=           7 iiter=           1
- resid=  4.979024447034767E-016 retot=  0.106554439146357     
-ratio for residu norm= 0.4673E-14
- max_refor=  2.324529457808922E-016 max_tofor=  5.327721957317866E-002
-ratio for residu maxm= 0.4363E-14
+ resid=  6.194584127232948E-016 retot=  0.106554439146357     
+ratio for residu norm= 0.5814E-14
+ max_refor=  2.853620117981848E-016 max_tofor=  5.327721957317851E-002
+ratio for residu maxm= 0.5356E-14
  
                Convergence check for temperature
  max_tatf=   1.00000000000000      max_itif=   1.42745429481556     
@@ -1449,47 +1449,47 @@ ratio for norm= 0.6252E+00
 ratio for maxm= 0.1427E+01
                     not converged for checki=           6
  kswkw=           0 kresl=           0 kmass=           0
-Begin forming various matrix       at 2026-09-01 21:54:19 
+Begin forming various matrix       at 2026-09-02 16:15:21 
  force_external***,edge_load_group=           0
  body force
  interia force***
-Begin solution global equation     at 2026-09-01 21:54:19 
+Begin solution global equation     at 2026-09-02 16:15:21 
  
          Convergence check for Residual force,ttime=,   1.70000000000000     
  total force on spring nodes of dam_foundation interface
  iblks=           1 iincs=           2 istep=           7 iiter=           2
- resid=  2.478746070627320E-016 retot=  0.106554439146357     
-ratio for residu norm= 0.2326E-14
- max_refor=  9.020562075079397E-017 max_tofor=  5.327721957317860E-002
-ratio for residu maxm= 0.1693E-14
+ resid=  2.106583100056686E-016 retot=  0.106554439146357     
+ratio for residu norm= 0.1977E-14
+ max_refor=  6.591949208711867E-017 max_tofor=  5.327721957317860E-002
+ratio for residu maxm= 0.1237E-14
  
                Convergence check for temperature
- max_tatf=   1.00000000000000      max_itif=  1.203699218730823E-015
+ max_tatf=   1.00000000000000      max_itif=  1.061881600860058E-015
  iiter=           2 tatfn=   5.19455968655688      itifn=
-  3.930722135836771E-015
-ratio for norm= 0.7567E-15
- max_tatf=   1.00000000000000      max_itif=  1.203699218730823E-015
-ratio for maxm= 0.1204E-14
+  3.037888611118396E-015
+ratio for norm= 0.5848E-15
+ max_tatf=   1.00000000000000      max_itif=  1.061881600860058E-015
+ratio for maxm= 0.1062E-14
  contact_state********************
  irecover=           0
  fachv=  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
  kswkw=           1 kresl=           0 kmass=           1
-Begin forming various matrix       at 2026-09-01 21:54:19 
-Begin assemble golbal matrix       at 2026-09-01 21:54:19 
+Begin forming various matrix       at 2026-09-02 16:15:21 
+Begin assemble golbal matrix       at 2026-09-02 16:15:21 
  force_external***,edge_load_group=           0
  body force
  interia force***
  in predict
-Begin factorize global matrix      at 2026-09-01 21:54:19 
-Begin solution global equation     at 2026-09-01 21:54:19 
+Begin factorize global matrix      at 2026-09-02 16:15:21 
+Begin solution global equation     at 2026-09-02 16:15:21 
  
          Convergence check for Residual force,ttime=,   1.80000000000000     
  total force on spring nodes of dam_foundation interface
  iblks=           1 iincs=           2 istep=           8 iiter=           1
- resid=  4.783888222988697E-016 retot=  0.103329238809306     
-ratio for residu norm= 0.4630E-14
- max_refor=  2.220446049250313E-016 max_tofor=  5.166461940465283E-002
-ratio for residu maxm= 0.4298E-14
+ resid=  5.027569394492987E-016 retot=  0.103329238809305     
+ratio for residu norm= 0.4866E-14
+ max_refor=  2.393918396847994E-016 max_tofor=  5.166461940465267E-002
+ratio for residu maxm= 0.4634E-14
  
                Convergence check for temperature
  max_tatf=   1.00000000000000      max_itif=   1.41756327408900     
@@ -1500,135 +1500,135 @@ ratio for norm= 0.6042E+00
 ratio for maxm= 0.1418E+01
                     not converged for checki=           6
  kswkw=           0 kresl=           0 kmass=           0
-Begin forming various matrix       at 2026-09-01 21:54:19 
+Begin forming various matrix       at 2026-09-02 16:15:21 
  force_external***,edge_load_group=           0
  body force
  interia force***
-Begin solution global equation     at 2026-09-01 21:54:19 
+Begin solution global equation     at 2026-09-02 16:15:21 
  
          Convergence check for Residual force,ttime=,   1.80000000000000     
  total force on spring nodes of dam_foundation interface
  iblks=           1 iincs=           2 istep=           8 iiter=           2
- resid=  2.156961993990678E-016 retot=  0.103329238809305     
-ratio for residu norm= 0.2087E-14
- max_refor=  9.367506770274758E-017 max_tofor=  5.166461940465264E-002
-ratio for residu maxm= 0.1813E-14
+ resid=  2.152879132102673E-016 retot=  0.103329238809305     
+ratio for residu norm= 0.2084E-14
+ max_refor=  6.591949208711867E-017 max_tofor=  5.166461940465265E-002
+ratio for residu maxm= 0.1276E-14
  
                Convergence check for temperature
- max_tatf=   1.00000000000000      max_itif=  1.127800522843417E-015
+ max_tatf=   1.00000000000000      max_itif=  1.478624341294870E-015
  iiter=           2 tatfn=   5.33363692306433      itifn=
-  3.056353387231847E-015
-ratio for norm= 0.5730E-15
- max_tatf=   1.00000000000000      max_itif=  1.127800522843417E-015
-ratio for maxm= 0.1128E-14
+  4.522782744393252E-015
+ratio for norm= 0.8480E-15
+ max_tatf=   1.00000000000000      max_itif=  1.478624341294870E-015
+ratio for maxm= 0.1479E-14
  contact_state********************
  irecover=           0
  fachv=  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
  kswkw=           1 kresl=           0 kmass=           1
-Begin forming various matrix       at 2026-09-01 21:54:19 
-Begin assemble golbal matrix       at 2026-09-01 21:54:19 
+Begin forming various matrix       at 2026-09-02 16:15:21 
+Begin assemble golbal matrix       at 2026-09-02 16:15:21 
  force_external***,edge_load_group=           0
  body force
  interia force***
  in predict
-Begin factorize global matrix      at 2026-09-01 21:54:19 
-Begin solution global equation     at 2026-09-01 21:54:19 
+Begin factorize global matrix      at 2026-09-02 16:15:21 
+Begin solution global equation     at 2026-09-02 16:15:21 
  
          Convergence check for Residual force,ttime=,   1.90000000000000     
  total force on spring nodes of dam_foundation interface
  iblks=           1 iincs=           2 istep=           9 iiter=           1
- resid=  4.928673993407662E-016 retot=  0.105644398624589     
-ratio for residu norm= 0.4665E-14
- max_refor=  2.567390744445674E-016 max_tofor=  5.282219931229477E-002
-ratio for residu maxm= 0.4860E-14
+ resid=  6.044511332975895E-016 retot=  0.105644398624589     
+ratio for residu norm= 0.5722E-14
+ max_refor=  3.330669073875470E-016 max_tofor=  5.282219931229476E-002
+ratio for residu maxm= 0.6305E-14
  
                Convergence check for temperature
- max_tatf=   1.00000000000000      max_itif=   1.40772777261410     
- iiter=           1 tatfn=   5.46365677749285      itifn=
+ max_tatf=   1.00000000000000      max_itif=   1.40772777261409     
+ iiter=           1 tatfn=   5.46365677749286      itifn=
    3.19833553469858     
 ratio for norm= 0.5854E+00
- max_tatf=   1.00000000000000      max_itif=   1.40772777261410     
+ max_tatf=   1.00000000000000      max_itif=   1.40772777261409     
 ratio for maxm= 0.1408E+01
                     not converged for checki=           6
  kswkw=           0 kresl=           0 kmass=           0
-Begin forming various matrix       at 2026-09-01 21:54:19 
+Begin forming various matrix       at 2026-09-02 16:15:21 
  force_external***,edge_load_group=           0
  body force
  interia force***
-Begin solution global equation     at 2026-09-01 21:54:19 
+Begin solution global equation     at 2026-09-02 16:15:21 
  
          Convergence check for Residual force,ttime=,   1.90000000000000     
  total force on spring nodes of dam_foundation interface
  iblks=           1 iincs=           2 istep=           9 iiter=           2
- resid=  2.268684827788672E-016 retot=  0.105644398624589     
-ratio for residu norm= 0.2147E-14
- max_refor=  1.387778780781446E-016 max_tofor=  5.282219931229475E-002
-ratio for residu maxm= 0.2627E-14
+ resid=  2.363700957980314E-016 retot=  0.105644398624589     
+ratio for residu norm= 0.2237E-14
+ max_refor=  8.673617379884035E-017 max_tofor=  5.282219931229475E-002
+ratio for residu maxm= 0.1642E-14
  
                Convergence check for temperature
- max_tatf=   1.00000000000000      max_itif=  6.506024134012529E-016
+ max_tatf=   1.00000000000000      max_itif=  1.443240964227510E-015
  iiter=           2 tatfn=   5.46365677749285      itifn=
-  1.602112203833045E-015
-ratio for norm= 0.2932E-15
- max_tatf=   1.00000000000000      max_itif=  6.506024134012529E-016
-ratio for maxm= 0.6506E-15
+  2.836422864469868E-015
+ratio for norm= 0.5191E-15
+ max_tatf=   1.00000000000000      max_itif=  1.443240964227510E-015
+ratio for maxm= 0.1443E-14
  contact_state********************
  irecover=           0
  fachv=  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
  kswkw=           1 kresl=           0 kmass=           1
-Begin forming various matrix       at 2026-09-01 21:54:19 
-Begin assemble golbal matrix       at 2026-09-01 21:54:19 
+Begin forming various matrix       at 2026-09-02 16:15:21 
+Begin assemble golbal matrix       at 2026-09-02 16:15:21 
  force_external***,edge_load_group=           0
  body force
  interia force***
  in predict
-Begin factorize global matrix      at 2026-09-01 21:54:19 
-Begin solution global equation     at 2026-09-01 21:54:19 
+Begin factorize global matrix      at 2026-09-02 16:15:22 
+Begin solution global equation     at 2026-09-02 16:15:22 
  
          Convergence check for Residual force,ttime=,   2.00000000000000     
  total force on spring nodes of dam_foundation interface
  iblks=           1 iincs=           2 istep=          10 iiter=           1
- resid=  4.897629722026721E-016 retot=  0.102510149785640     
-ratio for residu norm= 0.4778E-14
- max_refor=  2.151057110211241E-016 max_tofor=  5.125507489281989E-002
-ratio for residu maxm= 0.4197E-14
+ resid=  5.166433211649955E-016 retot=  0.102510149785640     
+ratio for residu norm= 0.5040E-14
+ max_refor=  2.341876692568690E-016 max_tofor=  5.125507489281995E-002
+ratio for residu maxm= 0.4569E-14
  
                Convergence check for temperature
- max_tatf=   1.00000000000000      max_itif=   1.39806445126723     
+ max_tatf=   1.00000000000000      max_itif=   1.39806445126722     
  iiter=           1 tatfn=   5.60057062494282      itifn=
    3.17431337607791     
 ratio for norm= 0.5668E+00
- max_tatf=   1.00000000000000      max_itif=   1.39806445126723     
+ max_tatf=   1.00000000000000      max_itif=   1.39806445126722     
 ratio for maxm= 0.1398E+01
                     not converged for checki=           6
  kswkw=           0 kresl=           0 kmass=           0
-Begin forming various matrix       at 2026-09-01 21:54:19 
+Begin forming various matrix       at 2026-09-02 16:15:22 
  force_external***,edge_load_group=           0
  body force
  interia force***
-Begin solution global equation     at 2026-09-01 21:54:19 
+Begin solution global equation     at 2026-09-02 16:15:22 
  
          Convergence check for Residual force,ttime=,   2.00000000000000     
  total force on spring nodes of dam_foundation interface
  iblks=           1 iincs=           2 istep=          10 iiter=           2
- resid=  1.885190345943963E-016 retot=  0.102510149785640     
-ratio for residu norm= 0.1839E-14
- max_refor=  5.811323644522304E-017 max_tofor=  5.125507489281995E-002
-ratio for residu maxm= 0.1134E-14
+ resid=  2.445061199291529E-016 retot=  0.102510149785640     
+ratio for residu norm= 0.2385E-14
+ max_refor=  9.714451465470120E-017 max_tofor=  5.125507489281993E-002
+ratio for residu maxm= 0.1895E-14
  
                Convergence check for temperature
- max_tatf=   1.00000000000000      max_itif=  1.682427042887311E-015
+ max_tatf=   1.00000000000000      max_itif=  8.609872678036929E-016
  iiter=           2 tatfn=   5.60057062494282      itifn=
-  4.335209119363308E-015
-ratio for norm= 0.7741E-15
- max_tatf=   1.00000000000000      max_itif=  1.682427042887311E-015
-ratio for maxm= 0.1682E-14
+  2.354245717672696E-015
+ratio for norm= 0.4204E-15
+ max_tatf=   1.00000000000000      max_itif=  8.609872678036929E-016
+ratio for maxm= 0.8610E-15
  contact_state********************
  irecover=           0
  fachv=  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
  contact_state********************
  kswkw=           1 kresl=           0 kmass=           1
-Begin forming various matrix       at 2026-09-01 21:54:19 
+Begin forming various matrix       at 2026-09-02 16:15:22 
  igroup=           1 ielem=           1 alfa=   1.00000000000000     
    1.00000000000000        1.00000000000000      hmatx=
      0.54938E-01    -0.10031E-01    -0.23765E-01    -0.10031E-01     0.20062E-01    -0.87191E-02    -0.13735E-01    -0.87191E-02
@@ -1648,7 +1648,7 @@ Begin forming various matrix       at 2026-09-01 21:54:19
      0.28125E-03
      0.28125E-03
      0.28125E-03
-Begin assemble golbal matrix       at 2026-09-01 21:54:19 
+Begin assemble golbal matrix       at 2026-09-02 16:15:22 
 igroup=    1 ifield=1 ikh=1 ielem=     1 order_time=0  coef= 0.25000
      0.54938E-01    -0.10031E-01    -0.23765E-01    -0.10031E-01     0.20062E-01    -0.87191E-02    -0.13735E-01    -0.87191E-02
     -0.10031E-01     0.54938E-01    -0.10031E-01    -0.23765E-01    -0.87191E-02     0.20062E-01    -0.87191E-02    -0.13735E-01
@@ -1671,16 +1671,16 @@ igroup=    1 ifield=1 ikh=2 ielem=     1 order_time=1  coef= 1.00000
  body force
  interia force***
  in predict
-Begin factorize global matrix      at 2026-09-01 21:54:19 
-Begin solution global equation     at 2026-09-01 21:54:19 
+Begin factorize global matrix      at 2026-09-02 16:15:22 
+Begin solution global equation     at 2026-09-02 16:15:22 
  
          Convergence check for Residual force,ttime=,   2.50000000000000     
  total force on spring nodes of dam_foundation interface
  iblks=           1 iincs=           3 istep=           1 iiter=           1
- resid=  2.842604880575570E-015 retot=  0.103291105524616     
-ratio for residu norm= 0.2752E-13
- max_refor=  1.682681771697503E-015 max_tofor=  5.164555276230873E-002
-ratio for residu maxm= 0.3258E-13
+ resid=  2.436054003235832E-015 retot=  0.103291105524615     
+ratio for residu norm= 0.2358E-13
+ max_refor=  1.169203622808368E-015 max_tofor=  5.164555276230794E-002
+ratio for residu maxm= 0.2264E-13
  
                Convergence check for temperature
  max_tatf=   1.00000000000000      max_itif=   6.96111466668413     
@@ -1691,761 +1691,761 @@ ratio for norm= 0.2528E+01
 ratio for maxm= 0.6961E+01
                     not converged for checki=           6
  kswkw=           0 kresl=           0 kmass=           0
-Begin forming various matrix       at 2026-09-01 21:54:19 
+Begin forming various matrix       at 2026-09-02 16:15:22 
  force_external***,edge_load_group=           0
  body force
  interia force***
-Begin solution global equation     at 2026-09-01 21:54:19 
+Begin solution global equation     at 2026-09-02 16:15:22 
  
          Convergence check for Residual force,ttime=,   2.50000000000000     
  total force on spring nodes of dam_foundation interface
  iblks=           1 iincs=           3 istep=           1 iiter=           2
- resid=  2.477712175063921E-016 retot=  0.103291105524615     
-ratio for residu norm= 0.2399E-14
- max_refor=  9.367506770274758E-017 max_tofor=  5.164555276230734E-002
-ratio for residu maxm= 0.1814E-14
+ resid=  2.418132086871044E-016 retot=  0.103291105524615     
+ratio for residu norm= 0.2341E-14
+ max_refor=  7.285838599102590E-017 max_tofor=  5.164555276230734E-002
+ratio for residu maxm= 0.1411E-14
  
                Convergence check for temperature
- max_tatf=   1.00000000000000      max_itif=  8.333297625596727E-015
+ max_tatf=   1.00000000000000      max_itif=  4.707387377409959E-015
  iiter=           2 tatfn=   6.25049327119144      itifn=
-  1.741758400036884E-014
-ratio for norm= 0.2787E-14
- max_tatf=   1.00000000000000      max_itif=  8.333297625596727E-015
-ratio for maxm= 0.8333E-14
+  1.284844969774400E-014
+ratio for norm= 0.2056E-14
+ max_tatf=   1.00000000000000      max_itif=  4.707387377409959E-015
+ratio for maxm= 0.4707E-14
  contact_state********************
  irecover=           0
  fachv=  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
  kswkw=           1 kresl=           0 kmass=           1
-Begin forming various matrix       at 2026-09-01 21:54:19 
-Begin assemble golbal matrix       at 2026-09-01 21:54:19 
+Begin forming various matrix       at 2026-09-02 16:15:22 
+Begin assemble golbal matrix       at 2026-09-02 16:15:22 
  force_external***,edge_load_group=           0
  body force
  interia force***
  in predict
-Begin factorize global matrix      at 2026-09-01 21:54:19 
-Begin solution global equation     at 2026-09-01 21:54:19 
+Begin factorize global matrix      at 2026-09-02 16:15:22 
+Begin solution global equation     at 2026-09-02 16:15:22 
  
          Convergence check for Residual force,ttime=,   3.00000000000000     
  total force on spring nodes of dam_foundation interface
  iblks=           1 iincs=           3 istep=           2 iiter=           1
- resid=  1.465118623701471E-015 retot=  9.891545883594520E-002
-ratio for residu norm= 0.1481E-13
- max_refor=  6.730727086790012E-016 max_tofor=  4.945772941797298E-002
-ratio for residu maxm= 0.1361E-13
+ resid=  2.975175674537534E-015 retot=  9.891545883594433E-002
+ratio for residu norm= 0.3008E-13
+ max_refor=  1.269817584415023E-015 max_tofor=  4.945772941797227E-002
+ratio for residu maxm= 0.2567E-13
  
                Convergence check for temperature
- max_tatf=   1.00000000000000      max_itif=   6.95202009142247     
+ max_tatf=   1.00000000000000      max_itif=   6.95202009142246     
  iiter=           1 tatfn=   6.88696836864443      itifn=
    15.7766082416600     
 ratio for norm= 0.2291E+01
- max_tatf=   1.00000000000000      max_itif=   6.95202009142247     
+ max_tatf=   1.00000000000000      max_itif=   6.95202009142246     
 ratio for maxm= 0.6952E+01
                     not converged for checki=           6
  kswkw=           0 kresl=           0 kmass=           0
-Begin forming various matrix       at 2026-09-01 21:54:19 
+Begin forming various matrix       at 2026-09-02 16:15:22 
  force_external***,edge_load_group=           0
  body force
  interia force***
-Begin solution global equation     at 2026-09-01 21:54:19 
+Begin solution global equation     at 2026-09-02 16:15:22 
  
          Convergence check for Residual force,ttime=,   3.00000000000000     
  total force on spring nodes of dam_foundation interface
  iblks=           1 iincs=           3 istep=           2 iiter=           2
- resid=  2.517536301981410E-016 retot=  9.891545883594502E-002
-ratio for residu norm= 0.2545E-14
- max_refor=  7.285838599102590E-017 max_tofor=  4.945772941797252E-002
+ resid=  2.775060860763491E-016 retot=  9.891545883594498E-002
+ratio for residu norm= 0.2805E-14
+ max_refor=  7.285838599102590E-017 max_tofor=  4.945772941797251E-002
 ratio for residu maxm= 0.1473E-14
  
                Convergence check for temperature
- max_tatf=   1.00000000000000      max_itif=  3.178745488343496E-015
+ max_tatf=   1.00000000000000      max_itif=  9.117892962800809E-015
  iiter=           2 tatfn=   6.88696836864444      itifn=
-  1.014334404069930E-014
-ratio for norm= 0.1473E-14
- max_tatf=   1.00000000000000      max_itif=  3.178745488343496E-015
-ratio for maxm= 0.3179E-14
+  2.803730620202040E-014
+ratio for norm= 0.4071E-14
+ max_tatf=   1.00000000000000      max_itif=  9.117892962800809E-015
+ratio for maxm= 0.9118E-14
  contact_state********************
  irecover=           0
  fachv=  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
  kswkw=           1 kresl=           0 kmass=           1
-Begin forming various matrix       at 2026-09-01 21:54:19 
-Begin assemble golbal matrix       at 2026-09-01 21:54:19 
+Begin forming various matrix       at 2026-09-02 16:15:22 
+Begin assemble golbal matrix       at 2026-09-02 16:15:22 
  force_external***,edge_load_group=           0
  body force
  interia force***
  in predict
-Begin factorize global matrix      at 2026-09-01 21:54:19 
-Begin solution global equation     at 2026-09-01 21:54:19 
+Begin factorize global matrix      at 2026-09-02 16:15:22 
+Begin solution global equation     at 2026-09-02 16:15:22 
  
          Convergence check for Residual force,ttime=,   3.50000000000000     
  total force on spring nodes of dam_foundation interface
  iblks=           1 iincs=           3 istep=           3 iiter=           1
- resid=  2.245681939944646E-015 retot=  0.100091053980291     
-ratio for residu norm= 0.2244E-13
- max_refor=  9.298117831235686E-016 max_tofor=  5.004552699014563E-002
-ratio for residu maxm= 0.1858E-13
+ resid=  2.269119199702270E-015 retot=  0.100091053980290     
+ratio for residu norm= 0.2267E-13
+ max_refor=  1.245531455751347E-015 max_tofor=  5.004552699014519E-002
+ratio for residu maxm= 0.2489E-13
  
                Convergence check for temperature
- max_tatf=   1.00000000000000      max_itif=   6.94214626296015     
+ max_tatf=   1.00000000000000      max_itif=   6.94214626296014     
  iiter=           1 tatfn=   7.50256894766927      itifn=
    15.7534386071199     
 ratio for norm= 0.2100E+01
- max_tatf=   1.00000000000000      max_itif=   6.94214626296015     
+ max_tatf=   1.00000000000000      max_itif=   6.94214626296014     
 ratio for maxm= 0.6942E+01
                     not converged for checki=           6
  kswkw=           0 kresl=           0 kmass=           0
-Begin forming various matrix       at 2026-09-01 21:54:19 
+Begin forming various matrix       at 2026-09-02 16:15:22 
  force_external***,edge_load_group=           0
  body force
  interia force***
-Begin solution global equation     at 2026-09-01 21:54:19 
+Begin solution global equation     at 2026-09-02 16:15:22 
  
          Convergence check for Residual force,ttime=,   3.50000000000000     
  total force on spring nodes of dam_foundation interface
  iblks=           1 iincs=           3 istep=           3 iiter=           2
- resid=  2.737332361441301E-016 retot=  0.100091053980290     
-ratio for residu norm= 0.2735E-14
- max_refor=  8.673617379884035E-017 max_tofor=  5.004552699014518E-002
-ratio for residu maxm= 0.1733E-14
+ resid=  2.731470246537885E-016 retot=  0.100091053980290     
+ratio for residu norm= 0.2729E-14
+ max_refor=  6.245004513516506E-017 max_tofor=  5.004552699014519E-002
+ratio for residu maxm= 0.1248E-14
  
                Convergence check for temperature
- max_tatf=   1.00000000000000      max_itif=  4.343732292620515E-015
+ max_tatf=   1.00000000000000      max_itif=  7.043119160271412E-015
  iiter=           2 tatfn=   7.50256894766927      itifn=
-  9.328492692109513E-015
-ratio for norm= 0.1243E-14
- max_tatf=   1.00000000000000      max_itif=  4.343732292620515E-015
-ratio for maxm= 0.4344E-14
+  2.230626056777349E-014
+ratio for norm= 0.2973E-14
+ max_tatf=   1.00000000000000      max_itif=  7.043119160271412E-015
+ratio for maxm= 0.7043E-14
  contact_state********************
  irecover=           0
  fachv=  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
  kswkw=           1 kresl=           0 kmass=           1
-Begin forming various matrix       at 2026-09-01 21:54:19 
-Begin assemble golbal matrix       at 2026-09-01 21:54:19 
+Begin forming various matrix       at 2026-09-02 16:15:22 
+Begin assemble golbal matrix       at 2026-09-02 16:15:22 
  force_external***,edge_load_group=           0
  body force
  interia force***
  in predict
-Begin factorize global matrix      at 2026-09-01 21:54:19 
-Begin solution global equation     at 2026-09-01 21:54:19 
+Begin factorize global matrix      at 2026-09-02 16:15:22 
+Begin solution global equation     at 2026-09-02 16:15:22 
  
          Convergence check for Residual force,ttime=,   4.00000000000000     
  total force on spring nodes of dam_foundation interface
  iblks=           1 iincs=           3 istep=           4 iiter=           1
- resid=  2.186311293764864E-015 retot=  9.602814991039547E-002
-ratio for residu norm= 0.2277E-13
- max_refor=  1.713906794265085E-015 max_tofor=  4.801407495519816E-002
-ratio for residu maxm= 0.3570E-13
+ resid=  2.978799500573939E-015 retot=  9.602814991039441E-002
+ratio for residu norm= 0.3102E-13
+ max_refor=  2.241262730962035E-015 max_tofor=  4.801407495519773E-002
+ratio for residu maxm= 0.4668E-13
  
                Convergence check for temperature
- max_tatf=   1.00000000000000      max_itif=   6.93288748781010     
+ max_tatf=   1.00000000000000      max_itif=   6.93288748781009     
  iiter=           1 tatfn=   8.11347999454699      itifn=
    15.7297352437515     
 ratio for norm= 0.1939E+01
- max_tatf=   1.00000000000000      max_itif=   6.93288748781010     
+ max_tatf=   1.00000000000000      max_itif=   6.93288748781009     
 ratio for maxm= 0.6933E+01
                     not converged for checki=           6
  kswkw=           0 kresl=           0 kmass=           0
-Begin forming various matrix       at 2026-09-01 21:54:19 
+Begin forming various matrix       at 2026-09-02 16:15:22 
  force_external***,edge_load_group=           0
  body force
  interia force***
-Begin solution global equation     at 2026-09-01 21:54:19 
+Begin solution global equation     at 2026-09-02 16:15:22 
  
          Convergence check for Residual force,ttime=,   4.00000000000000     
  total force on spring nodes of dam_foundation interface
  iblks=           1 iincs=           3 istep=           4 iiter=           2
- resid=  2.875337762467120E-016 retot=  9.602814991039603E-002
-ratio for residu norm= 0.2994E-14
- max_refor=  7.632783294297951E-017 max_tofor=  4.801407495519804E-002
-ratio for residu maxm= 0.1590E-14
+ resid=  3.367118194178443E-016 retot=  9.602814991039600E-002
+ratio for residu norm= 0.3506E-14
+ max_refor=  1.283695372222837E-016 max_tofor=  4.801407495519802E-002
+ratio for residu maxm= 0.2674E-14
  
                Convergence check for temperature
- max_tatf=   1.00000000000000      max_itif=  8.579183822062543E-015
+ max_tatf=   1.00000000000000      max_itif=  9.772032402503022E-015
  iiter=           2 tatfn=   8.11347999454699      itifn=
-  1.405992238571373E-014
-ratio for norm= 0.1733E-14
- max_tatf=   1.00000000000000      max_itif=  8.579183822062543E-015
-ratio for maxm= 0.8579E-14
+  1.815150046038281E-014
+ratio for norm= 0.2237E-14
+ max_tatf=   1.00000000000000      max_itif=  9.772032402503022E-015
+ratio for maxm= 0.9772E-14
  contact_state********************
  irecover=           0
  fachv=  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
  kswkw=           1 kresl=           0 kmass=           1
-Begin forming various matrix       at 2026-09-01 21:54:19 
-Begin assemble golbal matrix       at 2026-09-01 21:54:19 
+Begin forming various matrix       at 2026-09-02 16:15:22 
+Begin assemble golbal matrix       at 2026-09-02 16:15:22 
  force_external***,edge_load_group=           0
  body force
  interia force***
  in predict
-Begin factorize global matrix      at 2026-09-01 21:54:19 
-Begin solution global equation     at 2026-09-01 21:54:19 
+Begin factorize global matrix      at 2026-09-02 16:15:22 
+Begin solution global equation     at 2026-09-02 16:15:22 
  
          Convergence check for Residual force,ttime=,   4.50000000000000     
  total force on spring nodes of dam_foundation interface
  iblks=           1 iincs=           3 istep=           5 iiter=           1
- resid=  2.446821057447260E-015 retot=  9.742249079629199E-002
-ratio for residu norm= 0.2512E-13
- max_refor=  1.229051582729568E-015 max_tofor=  4.871124539814634E-002
-ratio for residu maxm= 0.2523E-13
+ resid=  2.852579678076780E-015 retot=  9.742249079629321E-002
+ratio for residu norm= 0.2928E-13
+ max_refor=  1.717376241217039E-015 max_tofor=  4.871124539814701E-002
+ratio for residu maxm= 0.3526E-13
  
                Convergence check for temperature
- max_tatf=   1.00000000000000      max_itif=   6.92319618818279     
+ max_tatf=   1.00000000000000      max_itif=   6.92319618818278     
  iiter=           1 tatfn=   8.71287986755887      itifn=
    15.7065722763241     
 ratio for norm= 0.1803E+01
- max_tatf=   1.00000000000000      max_itif=   6.92319618818279     
+ max_tatf=   1.00000000000000      max_itif=   6.92319618818278     
 ratio for maxm= 0.6923E+01
                     not converged for checki=           6
  kswkw=           0 kresl=           0 kmass=           0
-Begin forming various matrix       at 2026-09-01 21:54:19 
+Begin forming various matrix       at 2026-09-02 16:15:22 
  force_external***,edge_load_group=           0
  body force
  interia force***
-Begin solution global equation     at 2026-09-01 21:54:19 
+Begin solution global equation     at 2026-09-02 16:15:22 
  
          Convergence check for Residual force,ttime=,   4.50000000000000     
  total force on spring nodes of dam_foundation interface
  iblks=           1 iincs=           3 istep=           5 iiter=           2
- resid=  3.084801859295805E-016 retot=  9.742249079629171E-002
-ratio for residu norm= 0.3166E-14
- max_refor=  9.714451465470120E-017 max_tofor=  4.871124539814586E-002
-ratio for residu maxm= 0.1994E-14
+ resid=  3.167845092722971E-016 retot=  9.742249079629171E-002
+ratio for residu norm= 0.3252E-14
+ max_refor=  6.938893903907228E-017 max_tofor=  4.871124539814586E-002
+ratio for residu maxm= 0.1424E-14
  
                Convergence check for temperature
- max_tatf=   1.00000000000000      max_itif=  5.491008129231030E-015
+ max_tatf=   1.00000000000000      max_itif=  7.035201688425663E-015
  iiter=           2 tatfn=   8.71287986755887      itifn=
-  1.589289621707229E-014
-ratio for norm= 0.1824E-14
- max_tatf=   1.00000000000000      max_itif=  5.491008129231030E-015
-ratio for maxm= 0.5491E-14
+  1.509743598377721E-014
+ratio for norm= 0.1733E-14
+ max_tatf=   1.00000000000000      max_itif=  7.035201688425663E-015
+ratio for maxm= 0.7035E-14
  contact_state********************
  irecover=           0
  fachv=  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
  kswkw=           1 kresl=           0 kmass=           1
-Begin forming various matrix       at 2026-09-01 21:54:19 
-Begin assemble golbal matrix       at 2026-09-01 21:54:19 
+Begin forming various matrix       at 2026-09-02 16:15:22 
+Begin assemble golbal matrix       at 2026-09-02 16:15:22 
  force_external***,edge_load_group=           0
  body force
  interia force***
  in predict
-Begin factorize global matrix      at 2026-09-01 21:54:19 
-Begin solution global equation     at 2026-09-01 21:54:19 
+Begin factorize global matrix      at 2026-09-02 16:15:22 
+Begin solution global equation     at 2026-09-02 16:15:22 
  
          Convergence check for Residual force,ttime=,   5.00000000000000     
  total force on spring nodes of dam_foundation interface
  iblks=           1 iincs=           3 istep=           6 iiter=           1
- resid=  2.871645480758048E-015 retot=  9.355019076624460E-002
-ratio for residu norm= 0.3070E-13
- max_refor=  1.620231726562338E-015 max_tofor=  4.677509538312275E-002
-ratio for residu maxm= 0.3464E-13
+ resid=  2.318951573522529E-015 retot=  9.355019076624722E-002
+ratio for residu norm= 0.2479E-13
+ max_refor=  1.082467449009528E-015 max_tofor=  4.677509538312399E-002
+ratio for residu maxm= 0.2314E-13
  
                Convergence check for temperature
- max_tatf=   1.00000000000000      max_itif=   6.91387920254509     
- iiter=           1 tatfn=   9.31299599935983      itifn=
+ max_tatf=   1.00000000000000      max_itif=   6.91387920254508     
+ iiter=           1 tatfn=   9.31299599935981      itifn=
    15.6831180749383     
 ratio for norm= 0.1684E+01
- max_tatf=   1.00000000000000      max_itif=   6.91387920254509     
+ max_tatf=   1.00000000000000      max_itif=   6.91387920254508     
 ratio for maxm= 0.6914E+01
                     not converged for checki=           6
  kswkw=           0 kresl=           0 kmass=           0
-Begin forming various matrix       at 2026-09-01 21:54:19 
+Begin forming various matrix       at 2026-09-02 16:15:22 
  force_external***,edge_load_group=           0
  body force
  interia force***
-Begin solution global equation     at 2026-09-01 21:54:19 
+Begin solution global equation     at 2026-09-02 16:15:22 
  
          Convergence check for Residual force,ttime=,   5.00000000000000     
  total force on spring nodes of dam_foundation interface
  iblks=           1 iincs=           3 istep=           6 iiter=           2
- resid=  3.355805834650294E-016 retot=  9.355019076624620E-002
-ratio for residu norm= 0.3587E-14
- max_refor=  7.285838599102590E-017 max_tofor=  4.677509538312312E-002
+ resid=  3.329719356677809E-016 retot=  9.355019076624618E-002
+ratio for residu norm= 0.3559E-14
+ max_refor=  7.285838599102590E-017 max_tofor=  4.677509538312311E-002
 ratio for residu maxm= 0.1558E-14
  
                Convergence check for temperature
- max_tatf=   1.00000000000000      max_itif=  9.511086264646743E-015
+ max_tatf=   1.00000000000000      max_itif=  6.300791473892979E-015
  iiter=           2 tatfn=   9.31299599935981      itifn=
-  3.014287741095382E-014
-ratio for norm= 0.3237E-14
- max_tatf=   1.00000000000000      max_itif=  9.511086264646743E-015
-ratio for maxm= 0.9511E-14
+  1.321209673858487E-014
+ratio for norm= 0.1419E-14
+ max_tatf=   1.00000000000000      max_itif=  6.300791473892979E-015
+ratio for maxm= 0.6301E-14
  contact_state********************
  irecover=           0
  fachv=  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
  kswkw=           1 kresl=           0 kmass=           1
-Begin forming various matrix       at 2026-09-01 21:54:19 
-Begin assemble golbal matrix       at 2026-09-01 21:54:19 
+Begin forming various matrix       at 2026-09-02 16:15:22 
+Begin assemble golbal matrix       at 2026-09-02 16:15:22 
  force_external***,edge_load_group=           0
  body force
  interia force***
  in predict
-Begin factorize global matrix      at 2026-09-01 21:54:19 
-Begin solution global equation     at 2026-09-01 21:54:19 
+Begin factorize global matrix      at 2026-09-02 16:15:22 
+Begin solution global equation     at 2026-09-02 16:15:22 
  
          Convergence check for Residual force,ttime=,   5.50000000000000     
  total force on spring nodes of dam_foundation interface
  iblks=           1 iincs=           3 istep=           7 iiter=           1
- resid=  2.570326834894256E-015 retot=  9.507422782416239E-002
-ratio for residu norm= 0.2703E-13
- max_refor=  1.001802807376606E-015 max_tofor=  4.753711391208140E-002
-ratio for residu maxm= 0.2107E-13
+ resid=  2.721838761913610E-015 retot=  9.507422782416217E-002
+ratio for residu norm= 0.2863E-13
+ max_refor=  1.222112688825661E-015 max_tofor=  4.753711391208151E-002
+ratio for residu maxm= 0.2571E-13
  
                Convergence check for temperature
- max_tatf=   1.00000000000000      max_itif=   6.90430522417503     
+ max_tatf=   1.00000000000000      max_itif=   6.90430522417502     
  iiter=           1 tatfn=   9.90656556460373      itifn=
    15.6600181642954     
 ratio for norm= 0.1581E+01
- max_tatf=   1.00000000000000      max_itif=   6.90430522417503     
+ max_tatf=   1.00000000000000      max_itif=   6.90430522417502     
 ratio for maxm= 0.6904E+01
                     not converged for checki=           6
  kswkw=           0 kresl=           0 kmass=           0
-Begin forming various matrix       at 2026-09-01 21:54:19 
+Begin forming various matrix       at 2026-09-02 16:15:22 
  force_external***,edge_load_group=           0
  body force
  interia force***
-Begin solution global equation     at 2026-09-01 21:54:19 
+Begin solution global equation     at 2026-09-02 16:15:22 
  
          Convergence check for Residual force,ttime=,   5.50000000000000     
  total force on spring nodes of dam_foundation interface
  iblks=           1 iincs=           3 istep=           7 iiter=           2
- resid=  3.329052454488995E-016 retot=  9.507422782416251E-002
-ratio for residu norm= 0.3502E-14
- max_refor=  5.204170427930421E-017 max_tofor=  4.753711391208126E-002
-ratio for residu maxm= 0.1095E-14
+ resid=  3.484630249168402E-016 retot=  9.507422782416243E-002
+ratio for residu norm= 0.3665E-14
+ max_refor=  8.673617379884035E-017 max_tofor=  4.753711391208122E-002
+ratio for residu maxm= 0.1825E-14
  
                Convergence check for temperature
- max_tatf=   1.00000000000000      max_itif=  5.584694582050713E-015
+ max_tatf=   1.00000000000000      max_itif=  3.757432065529080E-015
  iiter=           2 tatfn=   9.90656556460372      itifn=
-  1.828121619107594E-014
-ratio for norm= 0.1845E-14
- max_tatf=   1.00000000000000      max_itif=  5.584694582050713E-015
-ratio for maxm= 0.5585E-14
+  1.266656018735145E-014
+ratio for norm= 0.1279E-14
+ max_tatf=   1.00000000000000      max_itif=  3.757432065529080E-015
+ratio for maxm= 0.3757E-14
  contact_state********************
  irecover=           0
  fachv=  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
  kswkw=           1 kresl=           0 kmass=           1
-Begin forming various matrix       at 2026-09-01 21:54:19 
-Begin assemble golbal matrix       at 2026-09-01 21:54:19 
+Begin forming various matrix       at 2026-09-02 16:15:22 
+Begin assemble golbal matrix       at 2026-09-02 16:15:22 
  force_external***,edge_load_group=           0
  body force
  interia force***
  in predict
-Begin factorize global matrix      at 2026-09-01 21:54:19 
-Begin solution global equation     at 2026-09-01 21:54:19 
+Begin factorize global matrix      at 2026-09-02 16:15:22 
+Begin solution global equation     at 2026-09-02 16:15:22 
  
          Convergence check for Residual force,ttime=,   6.00000000000000     
  total force on spring nodes of dam_foundation interface
  iblks=           1 iincs=           3 istep=           8 iiter=           1
- resid=  3.530375144871874E-015 retot=  9.132553537520843E-002
-ratio for residu norm= 0.3866E-13
- max_refor=  2.126770981547565E-015 max_tofor=  4.566276768760491E-002
-ratio for residu maxm= 0.4658E-13
+ resid=  3.037589390759351E-015 retot=  9.132553537520863E-002
+ratio for residu norm= 0.3326E-13
+ max_refor=  1.689620665601410E-015 max_tofor=  4.566276768760506E-002
+ratio for residu maxm= 0.3700E-13
  
                Convergence check for temperature
- max_tatf=   1.00000000000000      max_itif=   6.89497351564209     
+ max_tatf=   1.00000000000000      max_itif=   6.89497351564208     
  iiter=           1 tatfn=   10.5028638652128      itifn=
    15.6367606768875     
 ratio for norm= 0.1489E+01
- max_tatf=   1.00000000000000      max_itif=   6.89497351564209     
+ max_tatf=   1.00000000000000      max_itif=   6.89497351564208     
 ratio for maxm= 0.6895E+01
                     not converged for checki=           6
  kswkw=           0 kresl=           0 kmass=           0
-Begin forming various matrix       at 2026-09-01 21:54:20 
+Begin forming various matrix       at 2026-09-02 16:15:22 
  force_external***,edge_load_group=           0
  body force
  interia force***
-Begin solution global equation     at 2026-09-01 21:54:20 
+Begin solution global equation     at 2026-09-02 16:15:22 
  
          Convergence check for Residual force,ttime=,   6.00000000000000     
  total force on spring nodes of dam_foundation interface
  iblks=           1 iincs=           3 istep=           8 iiter=           2
- resid=  3.670596820150199E-016 retot=  9.132553537520753E-002
-ratio for residu norm= 0.4019E-14
- max_refor=  1.249000902703301E-016 max_tofor=  4.566276768760380E-002
-ratio for residu maxm= 0.2735E-14
+ resid=  3.423796516014632E-016 retot=  9.132553537520761E-002
+ratio for residu norm= 0.3749E-14
+ max_refor=  5.898059818321144E-017 max_tofor=  4.566276768760381E-002
+ratio for residu maxm= 0.1292E-14
  
                Convergence check for temperature
- max_tatf=   1.00000000000000      max_itif=  9.426512983562438E-015
+ max_tatf=   1.00000000000000      max_itif=  6.288097769866891E-015
  iiter=           2 tatfn=   10.5028638652128      itifn=
-  2.451140552466203E-014
-ratio for norm= 0.2334E-14
- max_tatf=   1.00000000000000      max_itif=  9.426512983562438E-015
-ratio for maxm= 0.9427E-14
+  1.591744334786370E-014
+ratio for norm= 0.1516E-14
+ max_tatf=   1.00000000000000      max_itif=  6.288097769866891E-015
+ratio for maxm= 0.6288E-14
  contact_state********************
  irecover=           0
  fachv=  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
  kswkw=           1 kresl=           0 kmass=           1
-Begin forming various matrix       at 2026-09-01 21:54:20 
-Begin assemble golbal matrix       at 2026-09-01 21:54:20 
+Begin forming various matrix       at 2026-09-02 16:15:22 
+Begin assemble golbal matrix       at 2026-09-02 16:15:22 
  force_external***,edge_load_group=           0
  body force
  interia force***
  in predict
-Begin factorize global matrix      at 2026-09-01 21:54:20 
-Begin solution global equation     at 2026-09-01 21:54:20 
+Begin factorize global matrix      at 2026-09-02 16:15:22 
+Begin solution global equation     at 2026-09-02 16:15:22 
  
          Convergence check for Residual force,ttime=,   6.50000000000000     
  total force on spring nodes of dam_foundation interface
  iblks=           1 iincs=           3 istep=           9 iiter=           1
- resid=  3.004708595030113E-015 retot=  9.292864280739677E-002
-ratio for residu norm= 0.3233E-13
- max_refor=  1.883909694910813E-015 max_tofor=  4.646432140369895E-002
-ratio for residu maxm= 0.4055E-13
+ resid=  2.082749681757879E-015 retot=  9.292864280739620E-002
+ratio for residu norm= 0.2241E-13
+ max_refor=  7.736866702856560E-016 max_tofor=  4.646432140369847E-002
+ratio for residu maxm= 0.1665E-13
  
                Convergence check for temperature
- max_tatf=   1.00000000000000      max_itif=   6.88548460893279     
+ max_tatf=   1.00000000000000      max_itif=   6.88548460893278     
  iiter=           1 tatfn=   11.0945760594642      itifn=
    15.6137523558387     
 ratio for norm= 0.1407E+01
- max_tatf=   1.00000000000000      max_itif=   6.88548460893279     
+ max_tatf=   1.00000000000000      max_itif=   6.88548460893278     
 ratio for maxm= 0.6885E+01
                     not converged for checki=           6
  kswkw=           0 kresl=           0 kmass=           0
-Begin forming various matrix       at 2026-09-01 21:54:20 
+Begin forming various matrix       at 2026-09-02 16:15:22 
  force_external***,edge_load_group=           0
  body force
  interia force***
-Begin solution global equation     at 2026-09-01 21:54:20 
+Begin solution global equation     at 2026-09-02 16:15:22 
  
          Convergence check for Residual force,ttime=,   6.50000000000000     
  total force on spring nodes of dam_foundation interface
  iblks=           1 iincs=           3 istep=           9 iiter=           2
- resid=  3.851619412693468E-016 retot=  9.292864280739546E-002
-ratio for residu norm= 0.4145E-14
- max_refor=  7.112366251504909E-017 max_tofor=  4.646432140369776E-002
-ratio for residu maxm= 0.1531E-14
+ resid=  4.036622470201347E-016 retot=  9.292864280739545E-002
+ratio for residu norm= 0.4344E-14
+ max_refor=  9.714451465470120E-017 max_tofor=  4.646432140369774E-002
+ratio for residu maxm= 0.2091E-14
  
                Convergence check for temperature
- max_tatf=   1.00000000000000      max_itif=  7.199552075358625E-015
+ max_tatf=   1.00000000000000      max_itif=  4.157850063048654E-015
  iiter=           2 tatfn=   11.0945760594642      itifn=
-  2.070351761178661E-014
-ratio for norm= 0.1866E-14
- max_tatf=   1.00000000000000      max_itif=  7.199552075358625E-015
-ratio for maxm= 0.7200E-14
+  1.129448454725068E-014
+ratio for norm= 0.1018E-14
+ max_tatf=   1.00000000000000      max_itif=  4.157850063048654E-015
+ratio for maxm= 0.4158E-14
  contact_state********************
  irecover=           0
  fachv=  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
  kswkw=           1 kresl=           0 kmass=           1
-Begin forming various matrix       at 2026-09-01 21:54:20 
-Begin assemble golbal matrix       at 2026-09-01 21:54:20 
+Begin forming various matrix       at 2026-09-02 16:15:22 
+Begin assemble golbal matrix       at 2026-09-02 16:15:22 
  force_external***,edge_load_group=           0
  body force
  interia force***
  in predict
-Begin factorize global matrix      at 2026-09-01 21:54:20 
-Begin solution global equation     at 2026-09-01 21:54:20 
+Begin factorize global matrix      at 2026-09-02 16:15:22 
+Begin solution global equation     at 2026-09-02 16:15:22 
  
          Convergence check for Residual force,ttime=,   7.00000000000000     
  total force on spring nodes of dam_foundation interface
  iblks=           1 iincs=           3 istep=          10 iiter=           1
- resid=  2.872107793907983E-015 retot=  8.926468993601480E-002
-ratio for residu norm= 0.3218E-13
- max_refor=  1.238592561847440E-015 max_tofor=  4.463234496800782E-002
-ratio for residu maxm= 0.2775E-13
+ resid=  2.520891485073336E-015 retot=  8.926468993601544E-002
+ratio for residu norm= 0.2824E-13
+ max_refor=  1.460637166772472E-015 max_tofor=  4.463234496800814E-002
+ratio for residu maxm= 0.3273E-13
  
                Convergence check for temperature
- max_tatf=   1.00000000000000      max_itif=   6.87616137108718     
+ max_tatf=   1.00000000000000      max_itif=   6.87616137108717     
  iiter=           1 tatfn=   11.6891058592509      itifn=
    15.5906637445691     
 ratio for norm= 0.1334E+01
- max_tatf=   1.00000000000000      max_itif=   6.87616137108718     
+ max_tatf=   1.00000000000000      max_itif=   6.87616137108717     
 ratio for maxm= 0.6876E+01
                     not converged for checki=           6
  kswkw=           0 kresl=           0 kmass=           0
-Begin forming various matrix       at 2026-09-01 21:54:20 
+Begin forming various matrix       at 2026-09-02 16:15:22 
  force_external***,edge_load_group=           0
  body force
  interia force***
-Begin solution global equation     at 2026-09-01 21:54:20 
+Begin solution global equation     at 2026-09-02 16:15:22 
  
          Convergence check for Residual force,ttime=,   7.00000000000000     
  total force on spring nodes of dam_foundation interface
  iblks=           1 iincs=           3 istep=          10 iiter=           2
- resid=  4.192982445593590E-016 retot=  8.926468993601649E-002
-ratio for residu norm= 0.4697E-14
- max_refor=  7.112366251504909E-017 max_tofor=  4.463234496800828E-002
-ratio for residu maxm= 0.1594E-14
+ resid=  4.505530397162643E-016 retot=  8.926468993601651E-002
+ratio for residu norm= 0.5047E-14
+ max_refor=  1.179611963664229E-016 max_tofor=  4.463234496800828E-002
+ratio for residu maxm= 0.2643E-14
  
                Convergence check for temperature
- max_tatf=   1.00000000000000      max_itif=  7.929191651750453E-015
+ max_tatf=   1.00000000000000      max_itif=  6.000246796701870E-015
  iiter=           2 tatfn=   11.6891058592509      itifn=
-  3.005681032452790E-014
-ratio for norm= 0.2571E-14
- max_tatf=   1.00000000000000      max_itif=  7.929191651750453E-015
-ratio for maxm= 0.7929E-14
+  2.064627199849176E-014
+ratio for norm= 0.1766E-14
+ max_tatf=   1.00000000000000      max_itif=  6.000246796701870E-015
+ratio for maxm= 0.6000E-14
  contact_state********************
  irecover=           0
  fachv=  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
  kswkw=           1 kresl=           0 kmass=           1
-Begin forming various matrix       at 2026-09-01 21:54:20 
-Begin assemble golbal matrix       at 2026-09-01 21:54:20 
+Begin forming various matrix       at 2026-09-02 16:15:22 
+Begin assemble golbal matrix       at 2026-09-02 16:15:22 
  force_external***,edge_load_group=           0
  body force
  interia force***
  in predict
-Begin factorize global matrix      at 2026-09-01 21:54:20 
-Begin solution global equation     at 2026-09-01 21:54:20 
+Begin factorize global matrix      at 2026-09-02 16:15:22 
+Begin solution global equation     at 2026-09-02 16:15:22 
  
          Convergence check for Residual force,ttime=,   7.50000000000000     
  total force on spring nodes of dam_foundation interface
  iblks=           1 iincs=           3 istep=          11 iiter=           1
- resid=  2.526485432605889E-015 retot=  9.091732126981608E-002
-ratio for residu norm= 0.2779E-13
- max_refor=  1.304512053934559E-015 max_tofor=  4.545866063490818E-002
-ratio for residu maxm= 0.2870E-13
+ resid=  2.262146172254379E-015 retot=  9.091732126981596E-002
+ratio for residu norm= 0.2488E-13
+ max_refor=  1.301042606982605E-015 max_tofor=  4.545866063490873E-002
+ratio for residu maxm= 0.2862E-13
  
                Convergence check for temperature
- max_tatf=   1.00000000000000      max_itif=   6.86673918133469     
+ max_tatf=   1.00000000000000      max_itif=   6.86673918133468     
  iiter=           1 tatfn=   12.2794771222589      itifn=
    15.5677630809205     
 ratio for norm= 0.1268E+01
- max_tatf=   1.00000000000000      max_itif=   6.86673918133469     
+ max_tatf=   1.00000000000000      max_itif=   6.86673918133468     
 ratio for maxm= 0.6867E+01
                     not converged for checki=           6
  kswkw=           0 kresl=           0 kmass=           0
-Begin forming various matrix       at 2026-09-01 21:54:20 
+Begin forming various matrix       at 2026-09-02 16:15:22 
  force_external***,edge_load_group=           0
  body force
  interia force***
-Begin solution global equation     at 2026-09-01 21:54:20 
+Begin solution global equation     at 2026-09-02 16:15:22 
  
          Convergence check for Residual force,ttime=,   7.50000000000000     
  total force on spring nodes of dam_foundation interface
  iblks=           1 iincs=           3 istep=          11 iiter=           2
- resid=  4.376338139455787E-016 retot=  9.091732126981525E-002
-ratio for residu norm= 0.4814E-14
- max_refor=  1.179611963664229E-016 max_tofor=  4.545866063490767E-002
-ratio for residu maxm= 0.2595E-14
+ resid=  4.145829397755684E-016 retot=  9.091732126981521E-002
+ratio for residu norm= 0.4560E-14
+ max_refor=  8.153200337090993E-017 max_tofor=  4.545866063490763E-002
+ratio for residu maxm= 0.1794E-14
  
                Convergence check for temperature
- max_tatf=   1.00000000000000      max_itif=  3.874803683467388E-015
+ max_tatf=   1.00000000000000      max_itif=  5.755091865378121E-015
  iiter=           2 tatfn=   12.2794771222589      itifn=
-  1.334114626871733E-014
-ratio for norm= 0.1086E-14
- max_tatf=   1.00000000000000      max_itif=  3.874803683467388E-015
-ratio for maxm= 0.3875E-14
+  1.248069318386071E-014
+ratio for norm= 0.1016E-14
+ max_tatf=   1.00000000000000      max_itif=  5.755091865378121E-015
+ratio for maxm= 0.5755E-14
  contact_state********************
  irecover=           0
  fachv=  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
  kswkw=           1 kresl=           0 kmass=           1
-Begin forming various matrix       at 2026-09-01 21:54:20 
-Begin assemble golbal matrix       at 2026-09-01 21:54:20 
+Begin forming various matrix       at 2026-09-02 16:15:22 
+Begin assemble golbal matrix       at 2026-09-02 16:15:22 
  force_external***,edge_load_group=           0
  body force
  interia force***
  in predict
-Begin factorize global matrix      at 2026-09-01 21:54:20 
-Begin solution global equation     at 2026-09-01 21:54:20 
+Begin factorize global matrix      at 2026-09-02 16:15:22 
+Begin solution global equation     at 2026-09-02 16:15:22 
  
          Convergence check for Residual force,ttime=,   8.00000000000000     
  total force on spring nodes of dam_foundation interface
  iblks=           1 iincs=           3 istep=          12 iiter=           1
- resid=  2.449229077433394E-015 retot=  8.731522540161613E-002
-ratio for residu norm= 0.2805E-13
- max_refor=  1.228184220991579E-015 max_tofor=  4.365761270080855E-002
-ratio for residu maxm= 0.2813E-13
+ resid=  2.617798509967760E-015 retot=  8.731522540161574E-002
+ratio for residu norm= 0.2998E-13
+ max_refor=  1.242062008799394E-015 max_tofor=  4.365761270080844E-002
+ratio for residu maxm= 0.2845E-13
  
                Convergence check for temperature
- max_tatf=   1.00000000000000      max_itif=   6.85743756750248     
+ max_tatf=   1.00000000000000      max_itif=   6.85743756750247     
  iiter=           1 tatfn=   12.8719292357402      itifn=
    15.5448272336306     
 ratio for norm= 0.1208E+01
- max_tatf=   1.00000000000000      max_itif=   6.85743756750248     
+ max_tatf=   1.00000000000000      max_itif=   6.85743756750247     
 ratio for maxm= 0.6857E+01
                     not converged for checki=           6
  kswkw=           0 kresl=           0 kmass=           0
-Begin forming various matrix       at 2026-09-01 21:54:20 
+Begin forming various matrix       at 2026-09-02 16:15:22 
  force_external***,edge_load_group=           0
  body force
  interia force***
-Begin solution global equation     at 2026-09-01 21:54:20 
+Begin solution global equation     at 2026-09-02 16:15:22 
  
          Convergence check for Residual force,ttime=,   8.00000000000000     
  total force on spring nodes of dam_foundation interface
  iblks=           1 iincs=           3 istep=          12 iiter=           2
- resid=  4.868604733728412E-016 retot=  8.731522540161644E-002
-ratio for residu norm= 0.5576E-14
- max_refor=  1.075528555105620E-016 max_tofor=  4.365761270080824E-002
-ratio for residu maxm= 0.2464E-14
+ resid=  4.885706083271889E-016 retot=  8.731522540161654E-002
+ratio for residu norm= 0.5595E-14
+ max_refor=  1.249000902703301E-016 max_tofor=  4.365761270080828E-002
+ratio for residu maxm= 0.2861E-14
  
                Convergence check for temperature
- max_tatf=   1.00000000000000      max_itif=  5.526660725580290E-015
+ max_tatf=   1.00000000000000      max_itif=  5.462672840828262E-015
  iiter=           2 tatfn=   12.8719292357402      itifn=
-  1.648174081117730E-014
-ratio for norm= 0.1280E-14
- max_tatf=   1.00000000000000      max_itif=  5.526660725580290E-015
-ratio for maxm= 0.5527E-14
+  1.482425515181514E-014
+ratio for norm= 0.1152E-14
+ max_tatf=   1.00000000000000      max_itif=  5.462672840828262E-015
+ratio for maxm= 0.5463E-14
  contact_state********************
  irecover=           0
  fachv=  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
  kswkw=           1 kresl=           0 kmass=           1
-Begin forming various matrix       at 2026-09-01 21:54:20 
-Begin assemble golbal matrix       at 2026-09-01 21:54:20 
+Begin forming various matrix       at 2026-09-02 16:15:22 
+Begin assemble golbal matrix       at 2026-09-02 16:15:22 
  force_external***,edge_load_group=           0
  body force
  interia force***
  in predict
-Begin factorize global matrix      at 2026-09-01 21:54:20 
-Begin solution global equation     at 2026-09-01 21:54:20 
+Begin factorize global matrix      at 2026-09-02 16:15:22 
+Begin solution global equation     at 2026-09-02 16:15:22 
  
          Convergence check for Residual force,ttime=,   8.50000000000000     
  total force on spring nodes of dam_foundation interface
  iblks=           1 iincs=           3 istep=          13 iiter=           1
- resid=  2.450794800681845E-015 retot=  8.900000579494825E-002
-ratio for residu norm= 0.2754E-13
- max_refor=  1.120631365481017E-015 max_tofor=  4.450000289747449E-002
-ratio for residu maxm= 0.2518E-13
+ resid=  2.566009269307905E-015 retot=  8.900000579494780E-002
+ratio for residu norm= 0.2883E-13
+ max_refor=  1.452830911130576E-015 max_tofor=  4.450000289747437E-002
+ratio for residu maxm= 0.3265E-13
  
                Convergence check for temperature
- max_tatf=   1.00000000000000      max_itif=   6.84807125738394     
+ max_tatf=   1.00000000000000      max_itif=   6.84807125738393     
  iiter=           1 tatfn=   13.4600090471434      itifn=
    15.5220431761862     
 ratio for norm= 0.1153E+01
- max_tatf=   1.00000000000000      max_itif=   6.84807125738394     
+ max_tatf=   1.00000000000000      max_itif=   6.84807125738393     
 ratio for maxm= 0.6848E+01
                     not converged for checki=           6
  kswkw=           0 kresl=           0 kmass=           0
-Begin forming various matrix       at 2026-09-01 21:54:20 
+Begin forming various matrix       at 2026-09-02 16:15:22 
  force_external***,edge_load_group=           0
  body force
  interia force***
-Begin solution global equation     at 2026-09-01 21:54:20 
+Begin solution global equation     at 2026-09-02 16:15:22 
  
          Convergence check for Residual force,ttime=,   8.50000000000000     
  total force on spring nodes of dam_foundation interface
  iblks=           1 iincs=           3 istep=          13 iiter=           2
- resid=  4.779671792553417E-016 retot=  8.900000579494727E-002
-ratio for residu norm= 0.5370E-14
- max_refor=  7.979727989493313E-017 max_tofor=  4.450000289747363E-002
-ratio for residu maxm= 0.1793E-14
+ resid=  4.915281565179668E-016 retot=  8.900000579494727E-002
+ratio for residu norm= 0.5523E-14
+ max_refor=  1.214306433183765E-016 max_tofor=  4.450000289747363E-002
+ratio for residu maxm= 0.2729E-14
  
                Convergence check for temperature
- max_tatf=   1.00000000000000      max_itif=  8.498455457537819E-015
+ max_tatf=   1.00000000000000      max_itif=  6.148655102579342E-015
  iiter=           2 tatfn=   13.4600090471435      itifn=
-  2.702664093908793E-014
-ratio for norm= 0.2008E-14
- max_tatf=   1.00000000000000      max_itif=  8.498455457537819E-015
-ratio for maxm= 0.8498E-14
+  2.033474892818558E-014
+ratio for norm= 0.1511E-14
+ max_tatf=   1.00000000000000      max_itif=  6.148655102579342E-015
+ratio for maxm= 0.6149E-14
  contact_state********************
  irecover=           0
  fachv=  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
  kswkw=           1 kresl=           0 kmass=           1
-Begin forming various matrix       at 2026-09-01 21:54:20 
-Begin assemble golbal matrix       at 2026-09-01 21:54:20 
+Begin forming various matrix       at 2026-09-02 16:15:22 
+Begin assemble golbal matrix       at 2026-09-02 16:15:22 
  force_external***,edge_load_group=           0
  body force
  interia force***
  in predict
-Begin factorize global matrix      at 2026-09-01 21:54:20 
-Begin solution global equation     at 2026-09-01 21:54:20 
+Begin factorize global matrix      at 2026-09-02 16:15:22 
+Begin solution global equation     at 2026-09-02 16:15:22 
  
          Convergence check for Residual force,ttime=,   9.00000000000000     
  total force on spring nodes of dam_foundation interface
  iblks=           1 iincs=           3 istep=          14 iiter=           1
- resid=  2.146797411013433E-015 retot=  8.544618490653132E-002
-ratio for residu norm= 0.2512E-13
- max_refor=  1.023486850826316E-015 max_tofor=  4.272309245326623E-002
-ratio for residu maxm= 0.2396E-13
+ resid=  2.257580909083950E-015 retot=  8.544618490653094E-002
+ratio for residu norm= 0.2642E-13
+ max_refor=  9.367506770274758E-016 max_tofor=  4.272309245326592E-002
+ratio for residu maxm= 0.2193E-13
  
                Convergence check for temperature
- max_tatf=   1.00000000000000      max_itif=   6.83879876204290     
+ max_tatf=   1.00000000000000      max_itif=   6.83879876204289     
  iiter=           1 tatfn=   14.0491967920715      itifn=
    15.4992503301503     
 ratio for norm= 0.1103E+01
- max_tatf=   1.00000000000000      max_itif=   6.83879876204290     
+ max_tatf=   1.00000000000000      max_itif=   6.83879876204289     
 ratio for maxm= 0.6839E+01
                     not converged for checki=           6
  kswkw=           0 kresl=           0 kmass=           0
-Begin forming various matrix       at 2026-09-01 21:54:20 
+Begin forming various matrix       at 2026-09-02 16:15:22 
  force_external***,edge_load_group=           0
  body force
  interia force***
-Begin solution global equation     at 2026-09-01 21:54:20 
+Begin solution global equation     at 2026-09-02 16:15:22 
  
          Convergence check for Residual force,ttime=,   9.00000000000000     
  total force on spring nodes of dam_foundation interface
  iblks=           1 iincs=           3 istep=          14 iiter=           2
- resid=  4.961069916054432E-016 retot=  8.544618490653078E-002
-ratio for residu norm= 0.5806E-14
- max_refor=  1.144917494144693E-016 max_tofor=  4.272309245326542E-002
-ratio for residu maxm= 0.2680E-14
+ resid=  4.876256464298048E-016 retot=  8.544618490653079E-002
+ratio for residu norm= 0.5707E-14
+ max_refor=  8.326672684688674E-017 max_tofor=  4.272309245326542E-002
+ratio for residu maxm= 0.1949E-14
  
                Convergence check for temperature
- max_tatf=   1.00000000000000      max_itif=  5.310373279270851E-015
+ max_tatf=   1.00000000000000      max_itif=  5.405656160657374E-015
  iiter=           2 tatfn=   14.0491967920715      itifn=
-  1.224535250579150E-014
-ratio for norm= 0.8716E-15
- max_tatf=   1.00000000000000      max_itif=  5.310373279270851E-015
-ratio for maxm= 0.5310E-14
+  1.400436662276097E-014
+ratio for norm= 0.9968E-15
+ max_tatf=   1.00000000000000      max_itif=  5.405656160657374E-015
+ratio for maxm= 0.5406E-14
  contact_state********************
  irecover=           0
  fachv=  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
  kswkw=           1 kresl=           0 kmass=           1
-Begin forming various matrix       at 2026-09-01 21:54:20 
-Begin assemble golbal matrix       at 2026-09-01 21:54:20 
+Begin forming various matrix       at 2026-09-02 16:15:22 
+Begin assemble golbal matrix       at 2026-09-02 16:15:22 
  force_external***,edge_load_group=           0
  body force
  interia force***
  in predict
-Begin factorize global matrix      at 2026-09-01 21:54:20 
-Begin solution global equation     at 2026-09-01 21:54:20 
+Begin factorize global matrix      at 2026-09-02 16:15:22 
+Begin solution global equation     at 2026-09-02 16:15:22 
  
          Convergence check for Residual force,ttime=,   9.50000000000000     
  total force on spring nodes of dam_foundation interface
  iblks=           1 iincs=           3 istep=          15 iiter=           1
- resid=  2.394736170014371E-015 retot=  8.715284218776959E-002
-ratio for residu norm= 0.2748E-13
- max_refor=  1.405126015541214E-015 max_tofor=  4.357642109388510E-002
-ratio for residu maxm= 0.3225E-13
+ resid=  2.631534656742985E-015 retot=  8.715284218777013E-002
+ratio for residu norm= 0.3019E-13
+ max_refor=  1.075528555105620E-015 max_tofor=  4.357642109388551E-002
+ratio for residu maxm= 0.2468E-13
  
                Convergence check for temperature
- max_tatf=   1.00000000000000      max_itif=   6.82948182650384     
+ max_tatf=   1.00000000000000      max_itif=   6.82948182650383     
  iiter=           1 tatfn=   14.6336026584480      itifn=
    15.4765876052259     
 ratio for norm= 0.1058E+01
- max_tatf=   1.00000000000000      max_itif=   6.82948182650384     
+ max_tatf=   1.00000000000000      max_itif=   6.82948182650383     
 ratio for maxm= 0.6829E+01
                     not converged for checki=           6
  kswkw=           0 kresl=           0 kmass=           0
-Begin forming various matrix       at 2026-09-01 21:54:20 
+Begin forming various matrix       at 2026-09-02 16:15:22 
  force_external***,edge_load_group=           0
  body force
  interia force***
-Begin solution global equation     at 2026-09-01 21:54:20 
+Begin solution global equation     at 2026-09-02 16:15:22 
  
          Convergence check for Residual force,ttime=,   9.50000000000000     
  total force on spring nodes of dam_foundation interface
  iblks=           1 iincs=           3 istep=          15 iiter=           2
- resid=  4.978229636671924E-016 retot=  8.715284218776947E-002
-ratio for residu norm= 0.5712E-14
- max_refor=  7.285838599102590E-017 max_tofor=  4.357642109388475E-002
-ratio for residu maxm= 0.1672E-14
+ resid=  5.622467355464207E-016 retot=  8.715284218776947E-002
+ratio for residu norm= 0.6451E-14
+ max_refor=  1.249000902703301E-016 max_tofor=  4.357642109388477E-002
+ratio for residu maxm= 0.2866E-14
  
                Convergence check for temperature
- max_tatf=   1.00000000000000      max_itif=  3.591277776715604E-015
+ max_tatf=   1.00000000000000      max_itif=  6.322120607808413E-015
  iiter=           2 tatfn=   14.6336026584480      itifn=
-  9.238003060234715E-015
-ratio for norm= 0.6313E-15
- max_tatf=   1.00000000000000      max_itif=  3.591277776715604E-015
-ratio for maxm= 0.3591E-14
+  1.600843841719983E-014
+ratio for norm= 0.1094E-14
+ max_tatf=   1.00000000000000      max_itif=  6.322120607808413E-015
+ratio for maxm= 0.6322E-14
  contact_state********************
  irecover=           0
  fachv=  0.000000000000000E+000  0.000000000000000E+000  0.000000000000000E+000
  kswkw=           1 kresl=           0 kmass=           1
-Begin forming various matrix       at 2026-09-01 21:54:20 
-Begin assemble golbal matrix       at 2026-09-01 21:54:20 
+Begin forming various matrix       at 2026-09-02 16:15:22 
+Begin assemble golbal matrix       at 2026-09-02 16:15:22 
  force_external***,edge_load_group=           0
  body force
  interia force***
  in predict
-Begin factorize global matrix      at 2026-09-01 21:54:20 
-Begin solution global equation     at 2026-09-01 21:54:20 
+Begin factorize global matrix      at 2026-09-02 16:15:22 
+Begin solution global equation     at 2026-09-02 16:15:22 
  
          Convergence check for Residual force,ttime=,   10.0000000000000     
  total force on spring nodes of dam_foundation interface
  iblks=           1 iincs=           3 istep=          16 iiter=           1
- resid=  3.224746129279308E-015 retot=  8.363915242942513E-002
-ratio for residu norm= 0.3856E-13
- max_refor=  1.595945597898663E-015 max_tofor=  4.181957621471285E-002
-ratio for residu maxm= 0.3816E-13
+ resid=  2.872476119534174E-015 retot=  8.363915242942543E-002
+ratio for residu norm= 0.3434E-13
+ max_refor=  1.519617764955683E-015 max_tofor=  4.181957621471324E-002
+ratio for residu maxm= 0.3634E-13
  
                Convergence check for temperature
  max_tatf=   1.00000000000000      max_itif=   6.82024266350022     
@@ -2456,27 +2456,27 @@ ratio for norm= 0.1015E+01
 ratio for maxm= 0.6820E+01
                     not converged for checki=           6
  kswkw=           0 kresl=           0 kmass=           0
-Begin forming various matrix       at 2026-09-01 21:54:20 
+Begin forming various matrix       at 2026-09-02 16:15:22 
  force_external***,edge_load_group=           0
  body force
  interia force***
-Begin solution global equation     at 2026-09-01 21:54:20 
+Begin solution global equation     at 2026-09-02 16:15:22 
  
          Convergence check for Residual force,ttime=,   10.0000000000000     
  total force on spring nodes of dam_foundation interface
  iblks=           1 iincs=           3 istep=          16 iiter=           2
- resid=  5.467973021923749E-016 retot=  8.363915242942462E-002
-ratio for residu norm= 0.6538E-14
- max_refor=  1.060891825777066E-016 max_tofor=  4.181957621471233E-002
-ratio for residu maxm= 0.2537E-14
+ resid=  5.653619603561317E-016 retot=  8.363915242942457E-002
+ratio for residu norm= 0.6760E-14
+ max_refor=  8.326672684688674E-017 max_tofor=  4.181957621471231E-002
+ratio for residu maxm= 0.1991E-14
  
                Convergence check for temperature
- max_tatf=   1.00000000000000      max_itif=  7.830035751178386E-015
+ max_tatf=   1.00000000000000      max_itif=  4.855230484491149E-015
  iiter=           2 tatfn=   15.2181727429903      itifn=
-  2.565020400286509E-014
-ratio for norm= 0.1685E-14
- max_tatf=   1.00000000000000      max_itif=  7.830035751178386E-015
-ratio for maxm= 0.7830E-14
+  1.493601856687234E-014
+ratio for norm= 0.9815E-15
+ max_tatf=   1.00000000000000      max_itif=  4.855230484491149E-015
+ratio for maxm= 0.4855E-14
  contact_state********************
  irecover=           0
- time: 21:54:20
+ time: 16:15:22
