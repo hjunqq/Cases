@@ -3,20 +3,20 @@
  igroup=           1 tvol=   118085.033361095     
  igroup=           1 tne=        2430
  ****** ntotv= ******        2543
- time: 12:12:08
+ time: 15:25:26
  in modf_element_lib
  jgroup=           1 kinit_g=           0
  iblks=           1 runblks=           1
  iblks=           1
- time: 12:12:08
+ time: 15:25:26
  ninit=           0 iblks=           1 restart=           0
  ikindks=           0
- time(solve): 12:12:08
+ time(solve): 15:25:26
  No. of equations        =        2450
  Max half band width     =        1463
  length half stiff matrix=      157648
- time(solve_set): 12:12:08
- time(solve_pcg): 12:12:08
+ time(solve_set): 15:25:26
+ time(solve_pcg): 15:25:26
  force_external***,edge_load_group=           0
  body force
  interia force***
@@ -32,7 +32,7 @@ igroup=    1 ifield=1 ikh=2 ielem=     1 order_time=0  coef= 1.00000
      0.00000E+00     0.00000E+00     0.00000E+00     0.00000E+00
      0.00000E+00     0.00000E+00     0.00000E+00     0.00000E+00
      0.00000E+00     0.00000E+00     0.00000E+00     0.00000E+00
- time: 12:12:08
+ time: 15:25:26
  
          Convergence check for Residual force,ttime=,   1.00000000000000     
  total force on spring nodes of dam_foundation interface
@@ -50,7 +50,7 @@ ratio for norm= 0.9797E+00
  max_tatf=   3433500.00000000      max_itif=   3416176.47081286     
 ratio for maxm= 0.9950E+00
                     not converged for checki=           4
- time: 12:12:08
+ time: 15:25:26
  
          Convergence check for Residual force,ttime=,   1.00000000000000     
  total force on spring nodes of dam_foundation interface
@@ -69,4 +69,4 @@ ratio for norm= 0.1947E-13
 ratio for maxm= 0.5275E-13
  contact_state********************
  irecover=         999
- time: 12:12:08
+ time: 15:25:26
