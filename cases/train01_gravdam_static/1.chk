@@ -5,21 +5,21 @@
  igroup=           2 tvol=   875.000000000000     
  igroup=           2 tne=        1600
  ****** ntotv= ******        3410
- time: 09:39:12
+ time: 12:12:03
  in modf_element_lib
  jgroup=           1 kinit_g=           0
  jgroup=           2 kinit_g=           0
  iblks=           1 runblks=           2
  iblks=           1
- time: 09:39:12
+ time: 12:12:03
  ninit=           0 iblks=           1 restart=           0
  ikindks=           0
- time(solve): 09:39:12
+ time(solve): 12:12:03
  No. of equations        =        1959
  Max half band width     =          84
  length half stiff matrix=      158518
- time(solve_set): 09:39:12
- time(solve_pcg): 09:39:12
+ time(solve_set): 12:12:03
+ time(solve_pcg): 12:12:03
  Increment step=           1
  cwater=           0 delgroup=           0
  force_external***,edge_load_group=           0
@@ -37,7 +37,7 @@ igroup=    1 ifield=1 ikh=1 ielem=     1 order_time=0  coef= 1.00000
     -0.88333E+09    -0.11921E-06    -0.23167E+10     0.20000E+10    -0.14333E+10     0.11921E-06     0.46333E+10    -0.20000E+10
     -0.11921E-06    -0.59833E+10     0.20000E+10    -0.36167E+10     0.11921E-06     0.23667E+10    -0.20000E+10     0.72333E+10
  residu_f1
- time: 09:39:12
+ time: 12:12:03
  residu_f2
  
          Convergence check for Residual force,ttime=,   1.00000000000000     
@@ -56,7 +56,7 @@ ratio for norm= 0.1000E+01
  max_tatf=  1.069055997103786E-002 max_itif=  1.069055997103786E-002
 ratio for maxm= 0.1000E+01
                     not converged for checki=           1
- time: 09:39:12
+ time: 12:12:03
  residu_f2
  
          Convergence check for Residual force,ttime=,   1.00000000000000     
@@ -78,15 +78,15 @@ ratio for maxm= 0.1866E-13
  irecover=           0
  iblks=           2 runblks=           2
  iblks=           2
- time: 09:39:12
+ time: 12:12:03
  ninit=           0 iblks=           2 restart=           0
  ikindks=           0
- time(solve): 09:39:12
+ time(solve): 12:12:03
  No. of equations        =        3319
  Max half band width     =          84
  length half stiff matrix=      210140
- time(solve_set): 09:39:12
- time(solve_pcg): 09:39:12
+ time(solve_set): 12:12:03
+ time(solve_pcg): 12:12:03
  Increment step=           1
  cwater=           0 delgroup=           1
  force_external***,edge_load_group=          40
@@ -95,7 +95,7 @@ ratio for maxm= 0.1866E-13
  contact_state********************
  in predict
  residu_f1
- time: 09:39:12
+ time: 12:12:03
  residu_f2
  
          Convergence check for Residual force,ttime=,   2.00000000000000     
@@ -114,7 +114,7 @@ ratio for norm= 0.1000E+01
  max_tatf=  8.120923515345357E-003 max_itif=  8.120923515345357E-003
 ratio for maxm= 0.1000E+01
                     not converged for checki=           1
- time: 09:39:12
+ time: 12:12:03
  residu_f2
  
          Convergence check for Residual force,ttime=,   2.00000000000000     
@@ -134,4 +134,4 @@ ratio for norm= 0.3559E-12
 ratio for maxm= 0.5114E-12
  contact_state********************
  irecover=           0
- time: 09:39:12
+ time: 12:12:03

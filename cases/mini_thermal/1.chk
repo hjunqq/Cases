@@ -3,25 +3,25 @@
  igroup=           1 tvol=   1900.00000000000     
  igroup=           1 tne=         250
  ****** ntotv= ******         291
- time: 09:39:12
+ time: 12:12:03
  in modf_element_lib
  jgroup=           1 kinit_g=           0
  iblks=           1 runblks=           1
  iblks=           1
- time: 09:39:12
+ time: 12:12:03
  ninit=           0 iblks=           1 restart=           0
  ikindks=           0
- time(solve): 09:39:12
+ time(solve): 12:12:03
  No. of equations        =         291
  Max half band width     =         287
  length half stiff matrix=       20602
- time(solve_set): 09:39:12
- time(solve_pcg): 09:39:12
+ time(solve_set): 12:12:03
+ time(solve_pcg): 12:12:03
  nbounods=           0
  fachv=  0.000000000000000E+000  0.000000000000000E+000
  contact_state********************
  kswkw=           1 kresl=           1 kmass=           1
-Begin forming various matrix       at 2026-09-03 09:39:12 
+Begin forming various matrix       at 2026-09-03 12:12:03 
  igroup=           1 ielem=           1 alfa=   2.50000000000000     
    2.50000000000000      hmatx=
      0.53417E+01     0.24708E+01    -0.26708E+01    -0.51417E+01
@@ -33,7 +33,7 @@ Begin forming various matrix       at 2026-09-03 09:39:12
      0.62500E-01
      0.62500E-01
      0.62500E-01
-Begin assemble golbal matrix       at 2026-09-03 09:39:12 
+Begin assemble golbal matrix       at 2026-09-03 12:12:03 
 igroup=    1 ifield=1 ikh=1 ielem=     1 order_time=0  coef=********
      0.53417E+01     0.24708E+01    -0.26708E+01    -0.51417E+01
      0.24708E+01     0.53417E+01    -0.51417E+01    -0.26708E+01
@@ -48,8 +48,8 @@ igroup=    1 ifield=1 ikh=2 ielem=     1 order_time=1  coef= 1.00000
  body force
  interia force***
  in predict
-Begin factorize global matrix      at 2026-09-03 09:39:12 
-Begin solution global equation     at 2026-09-03 09:39:12 
+Begin factorize global matrix      at 2026-09-03 12:12:03 
+Begin solution global equation     at 2026-09-03 12:12:03 
  
          Convergence check for Residual force,ttime=,   3600.00000000000     
  total force on spring nodes of dam_foundation interface
@@ -64,14 +64,14 @@ ratio for residu maxm=        NaN
  irecover=           0
  fachv=  0.000000000000000E+000  0.000000000000000E+000
  kswkw=           1 kresl=           1 kmass=           1
-Begin forming various matrix       at 2026-09-03 09:39:12 
-Begin assemble golbal matrix       at 2026-09-03 09:39:12 
+Begin forming various matrix       at 2026-09-03 12:12:03 
+Begin assemble golbal matrix       at 2026-09-03 12:12:03 
  force_external***,edge_load_group=           0
  body force
  interia force***
  in predict
-Begin factorize global matrix      at 2026-09-03 09:39:12 
-Begin solution global equation     at 2026-09-03 09:39:12 
+Begin factorize global matrix      at 2026-09-03 12:12:03 
+Begin solution global equation     at 2026-09-03 12:12:03 
  
          Convergence check for Residual force,ttime=,   7200.00000000000     
  total force on spring nodes of dam_foundation interface
@@ -86,14 +86,14 @@ ratio for residu maxm=        NaN
  irecover=           0
  fachv=  0.000000000000000E+000  0.000000000000000E+000
  kswkw=           1 kresl=           1 kmass=           1
-Begin forming various matrix       at 2026-09-03 09:39:12 
-Begin assemble golbal matrix       at 2026-09-03 09:39:12 
+Begin forming various matrix       at 2026-09-03 12:12:03 
+Begin assemble golbal matrix       at 2026-09-03 12:12:03 
  force_external***,edge_load_group=           0
  body force
  interia force***
  in predict
-Begin factorize global matrix      at 2026-09-03 09:39:12 
-Begin solution global equation     at 2026-09-03 09:39:12 
+Begin factorize global matrix      at 2026-09-03 12:12:03 
+Begin solution global equation     at 2026-09-03 12:12:03 
  
          Convergence check for Residual force,ttime=,   10800.0000000000     
  total force on spring nodes of dam_foundation interface
@@ -108,14 +108,14 @@ ratio for residu maxm=        NaN
  irecover=           0
  fachv=  0.000000000000000E+000  0.000000000000000E+000
  kswkw=           1 kresl=           1 kmass=           1
-Begin forming various matrix       at 2026-09-03 09:39:12 
-Begin assemble golbal matrix       at 2026-09-03 09:39:12 
+Begin forming various matrix       at 2026-09-03 12:12:03 
+Begin assemble golbal matrix       at 2026-09-03 12:12:03 
  force_external***,edge_load_group=           0
  body force
  interia force***
  in predict
-Begin factorize global matrix      at 2026-09-03 09:39:12 
-Begin solution global equation     at 2026-09-03 09:39:12 
+Begin factorize global matrix      at 2026-09-03 12:12:03 
+Begin solution global equation     at 2026-09-03 12:12:03 
  
          Convergence check for Residual force,ttime=,   14400.0000000000     
  total force on spring nodes of dam_foundation interface
@@ -130,14 +130,14 @@ ratio for residu maxm=        NaN
  irecover=           0
  fachv=  0.000000000000000E+000  0.000000000000000E+000
  kswkw=           1 kresl=           1 kmass=           1
-Begin forming various matrix       at 2026-09-03 09:39:12 
-Begin assemble golbal matrix       at 2026-09-03 09:39:12 
+Begin forming various matrix       at 2026-09-03 12:12:03 
+Begin assemble golbal matrix       at 2026-09-03 12:12:03 
  force_external***,edge_load_group=           0
  body force
  interia force***
  in predict
-Begin factorize global matrix      at 2026-09-03 09:39:12 
-Begin solution global equation     at 2026-09-03 09:39:12 
+Begin factorize global matrix      at 2026-09-03 12:12:03 
+Begin solution global equation     at 2026-09-03 12:12:03 
  
          Convergence check for Residual force,ttime=,   18000.0000000000     
  total force on spring nodes of dam_foundation interface
@@ -150,4 +150,4 @@ ratio for residu maxm=        NaN
                Convergence check for temperature
  contact_state********************
  irecover=           0
- time: 09:39:12
+ time: 12:12:03
