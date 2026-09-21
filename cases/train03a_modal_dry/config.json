@@ -526,5 +526,6 @@
     "contact_raw: equals the generator default stub — redundant carry dropped (authorable)",
     "tem_raw: equals the generator default stub — redundant carry dropped (authorable)"
   ],
-  "_name": "重力坝模态分析（3组：地基+坝体+上游库水域）"
+  "_name": "重力坝模态分析（3组：地基+坝体+上游库水域）",
+  "pre_raw": "'PRESCRIBE SET--NFIXSETS'\n  2  2\n  1  50  1  0  1  0  0.  0\n  1  41  42  82  83  123  124  164  165  205  206  246  247  287  288  328  329  369  370  410  411  451  452  492  493  533  534  574  575  615  616  656  657  697  698  738  739  779  780  820  821  861  862  902  903  943  944  984  985  1025\n  50*0\n  2  41  1  0  1  0  0.  0\n  1  2  3  4  5  6  7  8  9  10  11  12  13  14  15  16  17  18  19  20  21  22  23  24  25  26  27  28  29  30  31  32  33  34  35  36  37  38  39  40  41\n  41*0\n"
 }

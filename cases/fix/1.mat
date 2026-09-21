@@ -21,10 +21,13 @@ ELASTIC_ISOTROPIC         0.000E+04      0.100E+01      0.100E+01      0.240E+11
   0  0      0.100E+04
      material_serial         2
           MECHANICAL               SOLID    2
-  1
+  2
                SOLID
 ELASTIC_ISOTROPIC         0.240E+04      0.100E+01      0.100E+01      0.800E+10      0.300E+00      0.100E-04    0    0    0
   0  0      0.100E+04
+               FLUID
+  0.100E+04  0.300E+00  0.220E+10
+  0  0.100E-04  0.100E-04
      material_serial         3
           MECHANICAL               SOLID    3
   1

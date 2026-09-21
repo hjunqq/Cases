@@ -23,7 +23,7 @@ equvs_process(1:ngroup)
 appear_level(1:ngroup)                                                                                                                   
    0   0   0
 APPEAR_PROCESS(1-0nblks/1-ngroup)                                                                                                        
-   1   0   0
+   1   1   1
    1   1   1
 MATNO_PROCESS(1-nblks/1-ngroup)                                                                                                          
    1   2   3
@@ -37,7 +37,7 @@ gid_u,gid_s,gid_ms,gid_f,gid_rot,gid_v,gid_a,gid_T,gid_P,gid_Pv,gid_ep,gid_Y,gid
 res_u,res_s,res_ms,res_f,res_rot,res_v,res_a,res_T,res_P,res_Pv,res_ep,res_Y,res_FC,res_Ns,res_Ss,res_Tv,res_Pa                          
   0    0      0     0      0      0     0     0     0      0      0     0      0      0      0      0      0
 Icaddmass,swlifs2006,toth,ifswater,ifsgravity,absorb,alfa_p4,stiff_p4                                                                    
-  1          80       80     2     9.800     0.600    10.000 0.100E+21
+  1          40       40     2     9.800     0.600    10.000 0.100E+21
 ftcrack,coefMpa,ikindks,doubsig,ktan1,  ktan2,  nlocalbeam,ndimnrt,listglocbeam(1:nlocalbeam),lelenrt(1:ndimnrt)                         
  0.150E+07 0.100E+07     0     2 0.100E+09 0.100E+09     0     0
 ntrans,nlaymif,epsMIFb,gamaMIF,ifixvar0_inpb,camif,dxmif                                                                                 

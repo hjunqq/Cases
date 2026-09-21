@@ -25,5 +25,9 @@
 !/_review_2026-08/**
 !/_review_2026-08
 
+// whitelist the Claude session + research-artifact backup (see its README.md)
+!/_claude_backup/**
+!/_claude_backup
+
 // ignore all other top-level entries (other cases, loose files, .stfolder marker)
 *

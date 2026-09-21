@@ -7419,5 +7419,6 @@
   ],
   "_import_notes": [
     "1.mat: all blocks typed-expressible (ELASTIC/CONCRETE incl. damage row) — raw carry dropped, region is authorable"
-  ]
+  ],
+  "pre_raw": "'PRESCRIBE SET--NFIXSETS' \n0 1\n62\n1    3    6    12   18   28   37   51   63   79   97   119  138  162  185  213 \n238  270  299  333  365  403  440  478  516  559  601  645  693  737  787  1656 \n1658 1661 1665 1669 1679 1688 1699 1709 1719 1735 1751 1767 1782 1799 1819 1840 \n1866 1898 1944 1991 2040 2075 2103 2130 2155 2182 2207 2235 2260 \n2287 \n62*0.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
 }

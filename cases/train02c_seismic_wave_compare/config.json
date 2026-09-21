@@ -12557,5 +12557,6 @@
     "tem_raw: equals the generator default stub — redundant carry dropped (authorable)"
   ],
   "_name": "100m 重力坝 · 规范谱 20s · PGA 0.2g · VIE 黏弹性边界",
-  "_rayleigh_note": "alpha=0.7363, beta=0.003381 from modal w1=13.843, w2=15.731, xi=0.05"
+  "_rayleigh_note": "alpha=0.7363, beta=0.003381 from modal w1=13.843, w2=15.731, xi=0.05",
+  "pre_raw": "'PRESCRIBE SET--NFIXSETS'\n  2  2\n  1  14  1  0  0  0  0.  0\n  1  21  22  42  43  63  64  84  85  105  106  126  127  147\n  14*0\n  2  21  1  0  0  0  0.  0\n  1  2  3  4  5  6  7  8  9  10  11  12  13  14  15  16  17  18  19  20  21\n  21*0\n"
 }

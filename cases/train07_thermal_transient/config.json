@@ -369,5 +369,6 @@
   "tem_pipe": [
     0,
     3
-  ]
+  ],
+  "pre_raw": "====== PRESCRIBE SET--NFIXSETS iblk =      1   tnpre=         356\n  1  1\n  10  4  1  0  1  0  0.  0\n  257  258  259  260\n  4*1\n"
 }

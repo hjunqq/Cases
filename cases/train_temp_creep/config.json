@@ -14671,5 +14671,6 @@
   "_import_notes": [
     "1.mat: all blocks typed-expressible (ELASTIC/CONCRETE incl. damage row) — raw carry dropped, region is authorable",
     "1.tem: ntedge=1672 pulls records this generator does not write; npipe/algo_pipe were NOT imported"
-  ]
+  ],
+  "pre_raw": "====== PRESCRIBE SET--NFIXSETS iblk =      1   tnpre=         356\n           1           1\n10,4,5,0 1 0 0. 0    !��     1 ��ˮ�ܹܿڽ��\n257     258     259     260     \n4*1\n"
 }

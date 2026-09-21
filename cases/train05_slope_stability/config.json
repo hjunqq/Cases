@@ -674,5 +674,6 @@
   "_import_notes": [
     "1.mat: all blocks typed-expressible (ELASTIC/CONCRETE incl. damage row) — raw carry dropped, region is authorable",
     "nrt_raw: equals the generator default stub — redundant carry dropped (authorable)"
-  ]
+  ],
+  "pre_raw": "'PRESCRIBE SET--NFIXSETS'\n3 50\n1 11 1 10*0 \n1         \n3         \n10        \n19        \n31        \n47        \n65        \n87        \n115       \n149       \n186                                                                                  \n11*0.\n1 21 1 10*0 \n1      \n2      \n4      \n7      \n9      \n14     \n18     \n25     \n30     \n40     \n45     \n57     \n64     \n78     \n88     \n103    \n114    \n133    \n148    \n172    \n187    \n21*0.\n2 11 1 10*0 \n1         \n3         \n10        \n19        \n31        \n47        \n65        \n87        \n115       \n149       \n186                                                                                \n11*0.\n"
 }

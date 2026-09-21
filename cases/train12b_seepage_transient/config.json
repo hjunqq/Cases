@@ -107,5 +107,6 @@
       ]
     }
   },
-  "_completed": "补全 via seepage_transient template; BCs = train12b original up/downstream node-sets (head 100/0). Original 1.pre also referenced a transient head-curve (id 10000) whose time-history data is NOT in the case — completed as constant-head transient-to-steady. Run: quick_analysis.py . (Mode A)."
+  "_completed": "补全 via seepage_transient template; BCs = train12b original up/downstream node-sets (head 100/0). Original 1.pre also referenced a transient head-curve (id 10000) whose time-history data is NOT in the case — completed as constant-head transient-to-steady. Run: quick_analysis.py . (Mode A).",
+  "pre_raw": "'PRESCRIBE SET--NFIXSETS' \n2  131\n8 21 1 0 0 2 10000 0\n1321 1357 1394 1440 1482 1525 1572 1619 1670 1718 1768 1814 1862 1938 2024 2087 \n2131 2173 2212 2251\n2287\n21*100.\n8 21 1 0 0 0 0 0\n787 790 793 796 802 808 815 825 833 841 857 866 875 895 907 924 938 955 971 988 \n1010\n21*0\n\n\n\n"
 }

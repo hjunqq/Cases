@@ -7,23 +7,23 @@
  igroup=           3 tvol=   80.0000000000000     
  igroup=           3 tne=         230
  ****** ntotv= ******        1296
- time: 18:29:28
+ time: 10:11:07
  in modf_element_lib
  jgroup=           1 kinit_g=           0
  jgroup=           2 kinit_g=           0
  jgroup=           3 kinit_g=           0
  iblks=           1 runblks=           2
  iblks=           1
- time: 18:29:28
+ time: 10:11:07
  ninit=           0 iblks=           1 restart=           0
  ikindks=           3
- time(solve): 18:29:28
+ time(solve): 10:11:07
  单个方程中最大非零元素个数          40
  Neq=         588       Iseq(neq)=       13059
  storage of PARDISO, sstore=       13059
                                              
- time(solve_set): 18:29:28
- time(solve_pcg): 18:29:28
+ time(solve_set): 10:11:07
+ time(solve_pcg): 10:11:07
  Increment step=           1
  cwater=           0 delgroup=           0
  force_external***,edge_load_group=           0
@@ -57,7 +57,7 @@ igroup=    1 ifield=1 ikh=1 ielem=     1 order_time=0  coef= 1.00000
      0.92691E+10    -0.32306E+12     0.72828E+11     0.33104E+11    -0.16635E+12     0.36414E+11    -0.92691E+10     0.14506E+12    -0.10196E+11    -0.33104E+11     0.30939E+12    -0.20392E+11     0.18538E+11    -0.62282E+12     0.20392E+11     0.66208E+11    -0.32104E+12     0.10196E+11    -0.18538E+11     0.31343E+12    -0.36414E+11    -0.66208E+11     0.66538E+12    -0.72828E+11
     -0.23173E+10     0.72828E+11    -0.14099E+12    -0.82760E+10     0.36414E+11    -0.75310E+11    -0.16552E+11     0.10196E+11     0.35820E+11    -0.46345E+10     0.20392E+11     0.90901E+11     0.82760E+10    -0.20392E+11    -0.22226E+12     0.23173E+10    -0.10196E+11    -0.12076E+12     0.46345E+10    -0.36414E+11     0.13136E+12     0.16552E+11    -0.72828E+11     0.30124E+12
  residu_f1
- time: 18:29:28
+ time: 10:11:07
  residu_f2
  
          Convergence check for Residual force,ttime=,   1.00000000000000     
@@ -76,7 +76,7 @@ ratio for norm= 0.1000E+01
  max_tatf=  1.385334831586478E-002 max_itif=  1.385334831586478E-002
 ratio for maxm= 0.1000E+01
                     not converged for checki=           1
- time: 18:29:28
+ time: 10:11:07
  residu_f2
  
          Convergence check for Residual force,ttime=,   1.00000000000000     
@@ -98,16 +98,16 @@ ratio for maxm= 0.7414E-14
  irecover=           0
  iblks=           2 runblks=           2
  iblks=           2
- time: 18:29:28
+ time: 10:11:07
  ninit=           0 iblks=           2 restart=           0
  ikindks=           3
- time(solve): 18:29:28
+ time(solve): 10:11:07
  单个方程中最大非零元素个数          63
  Neq=        1008       Iseq(neq)=       24645
  storage of PARDISO, sstore=       24645
                                              
- time(solve_set): 18:29:28
- time(solve_pcg): 18:29:28
+ time(solve_set): 10:11:07
+ time(solve_pcg): 10:11:07
  Increment step=           1
  cwater=           0 delgroup=           2
  force_external***,edge_load_group=          30
@@ -116,7 +116,7 @@ ratio for maxm= 0.7414E-14
  contact_state********************
  in predict
  residu_f1
- time: 18:29:28
+ time: 10:11:07
  residu_f2
  
          Convergence check for Residual force,ttime=,   2.00000000000000     
@@ -135,7 +135,7 @@ ratio for norm= 0.1000E+01
  max_tatf=  2.343040170893273E-002 max_itif=  2.343040170893273E-002
 ratio for maxm= 0.1000E+01
                     not converged for checki=           1
- time: 18:29:28
+ time: 10:11:07
  residu_f2
  
          Convergence check for Residual force,ttime=,   2.00000000000000     
@@ -155,4 +155,4 @@ ratio for norm= 0.9354E-12
 ratio for maxm= 0.8960E-12
  contact_state********************
  irecover=           0
- time: 18:29:28
+ time: 10:11:07
