@@ -27,7 +27,7 @@ APPEAR_PROCESS
 MATNO_PROCESS
   1
 force_process(1:ngroup)
-  0
+  1
 average_appear
   -2
 gid_u,gid_s,gid_ms,gid_f,gid_rot,gid_v,gid_a,gid_T,gid_P,gid_Pv,gid_ep,gid_Y,gid_FC,gid_Ns,gid_Ss,gid_Mxy,gid_bem,gid_wh,gid_wv,gid_bcs

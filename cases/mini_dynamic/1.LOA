@@ -35,7 +35,7 @@
  Define body force in each BLKS
   9.81000E+00  0.00000E+00  -1.00000E+00  0.00000E+00  -1.00000E+00
  Time_curve_for_each_group  1
-  1
+  0
  nbeamload
   0
  nplateload
