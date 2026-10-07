@@ -56,7 +56,7 @@ INCLUDE (1) NAME KNAME INDEX CLASS NRFIELDS FIELDID SPECIAL
  SPTYPE NELGROUP MATNO TYPE_ALGO TYPE_STIFF TYPE_ECOINT ilayer elcod_local group_inf uplift_ic liquj
          (2) TYPE_MASS(1:NRFIELDS)
          (3) for each field: nfdof-number of freedom,listdof(1:nfdof)
-Q4    Group1         5 CO     1 U   ST   PE           8  1  0  1  1  1       0.000E+00  0  0  0
+B8    Group1         9 CO     1 U   ST   PE           8  1  0  1  1  1       0.000E+00  0  0  0
   0  0.0  0.0
   0  0
   3
